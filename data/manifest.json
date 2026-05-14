@@ -26,6 +26,54 @@
   ],
   "content": [
     {
+      "id": "nutrition-mod7-chapter",
+      "file": "nutrition_mod7_chapter_quiz.json",
+      "class": "nutrition",
+      "module": 7,
+      "type": "quiz",
+      "title": "Module 7 — Chapter Quiz",
+      "description": "10-question quiz covering core Module 7 concepts: CVD, hypertension, fatty liver, kidney disease, diabetes, and chronic disease risk factors.",
+      "topics": ["heart disease", "hypertension", "silent killer", "fatty liver", "NAFLD", "nephron", "glomerulus", "kidney stones", "CKD", "type 2 diabetes", "obesity", "gallstones", "modifiable risk factors"],
+      "questionCount": 10,
+      "tags": ["Module 7", "chapter quiz"]
+    },
+    {
+      "id": "nutrition-mod7-companion",
+      "file": "nutrition_mod7_companion_quiz.json",
+      "class": "nutrition",
+      "module": 7,
+      "type": "quiz",
+      "title": "Module 7 — Companion Quiz",
+      "description": "30-question quiz covering CVD dietary strategies, diabetes management values, cancer nutrition, metabolic syndrome, and chronic disease prevention.",
+      "topics": ["atherosclerosis", "trans fats", "soluble fiber", "hypertensive crisis", "HbA1c", "hypoglycemia", "gestational diabetes", "prediabetes", "DPP trial", "foot care", "antioxidants", "processed meat", "metabolic syndrome", "insulin resistance", "omega-3", "cancer prevention", "added sugar", "cholesterol targets"],
+      "questionCount": 30,
+      "tags": ["Module 7", "companion quiz", "NCLEX"]
+    },
+    {
+      "id": "nutrition-mod7-quiz",
+      "file": "nutrition_mod7_quiz.json",
+      "class": "nutrition",
+      "module": 7,
+      "type": "quiz",
+      "title": "Module 7 — Practice Quiz",
+      "description": "35-question NCLEX-style quiz covering liver functions, gallbladder disease, kidney disease, CVD, diabetes, and cancer nutrition.",
+      "topics": ["liver functions", "albumin synthesis", "bile", "cirrhosis", "hepatic encephalopathy", "cholecystitis", "Murphy's sign", "GFR", "CKD staging", "nephrotic syndrome", "proteinuria", "hemodialysis", "LDL", "HDL", "DASH diet", "Mediterranean diet", "A1C", "cancer cachexia", "phytochemicals"],
+      "questionCount": 35,
+      "tags": ["Module 7", "practice quiz", "NCLEX", "SATA"]
+    },
+    {
+      "id": "nutrition-mod7-full",
+      "file": "nutrition_mod7_full_quiz.json",
+      "class": "nutrition",
+      "module": 7,
+      "type": "quiz",
+      "title": "Module 7 — Full Coverage NCLEX Quiz",
+      "description": "58-question comprehensive quiz covering all Module 7 sections: cardiovascular disease, diabetes, liver disease, kidney disease, cancer, and metabolic syndrome.",
+      "topics": ["heart disease", "hypertension", "atherosclerosis", "LDL", "HDL", "trans fats", "soluble fiber", "DASH diet", "omega-3", "fatty liver", "NAFLD", "cirrhosis", "hepatic encephalopathy", "gallstones", "cholecystitis", "Murphy's sign", "GFR", "CKD", "nephrotic syndrome", "renal diet", "hemodialysis", "kidney stones", "type 2 diabetes", "HbA1c", "hypoglycemia", "gestational diabetes", "insulin resistance", "metabolic syndrome", "cancer cachexia", "antioxidants", "processed meat", "phytochemicals", "cancer prevention", "obesity"],
+      "questionCount": 58,
+      "tags": ["NCLEX", "Module 7", "full coverage", "SATA"]
+    },
+    {
       "id": "nutrition-mod8-full",
       "file": "nutrition_mod8_full_quiz.json",
       "class": "nutrition",
@@ -60,54 +108,6 @@
       "topics": ["nutrition screening", "malnutrition", "therapeutic diet", "enteral nutrition", "parenteral nutrition", "bolus feeding", "continuous feeding", "TPN", "low residue diet", "CRP", "liver", "BMI"],
       "questionCount": 10,
       "tags": ["Module 8", "case study"]
-    }
-    ,{
-      "id": "nutrition-mod7-chapter",
-      "file": "nutrition_mod7_chapter_quiz.json",
-      "class": "nutrition",
-      "module": 7,
-      "type": "quiz",
-      "title": "Module 7 — Chapter Quiz",
-      "description": "10-question quiz covering core Module 7 concepts: CVD, hypertension, fatty liver, kidney disease, diabetes, and chronic disease risk factors.",
-      "topics": ["heart disease", "hypertension", "silent killer", "fatty liver", "NAFLD", "nephron", "glomerulus", "kidney stones", "CKD", "type 2 diabetes", "obesity", "gallstones", "modifiable risk factors"],
-      "questionCount": 10,
-      "tags": ["Module 7", "chapter quiz"]
-    }
-    ,{
-      "id": "nutrition-mod7-companion",
-      "file": "nutrition_mod7_companion_quiz.json",
-      "class": "nutrition",
-      "module": 7,
-      "type": "quiz",
-      "title": "Module 7 — Companion Quiz",
-      "description": "30-question quiz covering CVD dietary strategies, diabetes management values, cancer nutrition, metabolic syndrome, and chronic disease prevention.",
-      "topics": ["atherosclerosis", "trans fats", "soluble fiber", "hypertensive crisis", "HbA1c", "hypoglycemia", "gestational diabetes", "prediabetes", "DPP trial", "foot care", "antioxidants", "processed meat", "metabolic syndrome", "insulin resistance", "omega-3", "cancer prevention", "added sugar", "cholesterol targets"],
-      "questionCount": 30,
-      "tags": ["Module 7", "companion quiz", "NCLEX"]
-    }
-    ,{
-      "id": "nutrition-mod7-quiz",
-      "file": "nutrition_mod7_quiz.json",
-      "class": "nutrition",
-      "module": 7,
-      "type": "quiz",
-      "title": "Module 7 — Practice Quiz",
-      "description": "35-question NCLEX-style quiz covering liver functions, gallbladder disease, kidney disease, CVD, diabetes, and cancer nutrition.",
-      "topics": ["liver functions", "albumin synthesis", "bile", "cirrhosis", "hepatic encephalopathy", "cholecystitis", "Murphy's sign", "GFR", "CKD staging", "nephrotic syndrome", "proteinuria", "hemodialysis", "LDL", "HDL", "DASH diet", "Mediterranean diet", "A1C", "cancer cachexia", "phytochemicals"],
-      "questionCount": 35,
-      "tags": ["Module 7", "practice quiz", "NCLEX", "SATA"]
-    }
-    ,{
-      "id": "nutrition-mod7-full",
-      "file": "nutrition_mod7_full_quiz.json",
-      "class": "nutrition",
-      "module": 7,
-      "type": "quiz",
-      "title": "Module 7 — Full Coverage NCLEX Quiz",
-      "description": "58-question comprehensive quiz covering all Module 7 sections: cardiovascular disease, diabetes, liver disease, kidney disease, cancer, and metabolic syndrome.",
-      "topics": ["heart disease", "hypertension", "atherosclerosis", "LDL", "HDL", "trans fats", "soluble fiber", "DASH diet", "omega-3", "fatty liver", "NAFLD", "cirrhosis", "hepatic encephalopathy", "gallstones", "cholecystitis", "Murphy's sign", "GFR", "CKD", "nephrotic syndrome", "renal diet", "hemodialysis", "kidney stones", "type 2 diabetes", "HbA1c", "hypoglycemia", "gestational diabetes", "insulin resistance", "metabolic syndrome", "cancer cachexia", "antioxidants", "processed meat", "phytochemicals", "cancer prevention", "obesity"],
-      "questionCount": 58,
-      "tags": ["NCLEX", "Module 7", "full coverage", "SATA"]
     }
   ]
 }
