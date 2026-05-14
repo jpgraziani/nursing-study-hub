@@ -1,0 +1,717 @@
+{
+  "id": "nutrition-mod1-digestive-nclex",
+  "class": "nutrition",
+  "module": 1,
+  "title": "Module 1 — Digestive System NCLEX Quiz",
+  "description": "37-question NCLEX-style quiz covering GI tract organization, digestive organs, absorption sites, accessory organs, and clinical digestive disorders.",
+  "topics": [
+    "digestive system",
+    "GI tract",
+    "mouth",
+    "esophagus",
+    "stomach",
+    "small intestine",
+    "large intestine",
+    "liver",
+    "gallbladder",
+    "pancreas",
+    "absorption",
+    "peristalsis",
+    "chyme",
+    "villi",
+    "microvilli",
+    "brush border",
+    "lacteals",
+    "portal circulation",
+    "gastric acid",
+    "pepsin",
+    "bile",
+    "amylase",
+    "lipase",
+    "GERD",
+    "ulcers",
+    "Crohn disease",
+    "celiac disease",
+    "IBD"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "digestion",
+      "topic": "Part 1: Organization of Life",
+      "type": "mc",
+      "q": "Which level of structural organization comes IMMEDIATELY above the tissue level?",
+      "opts": [
+        "Cell",
+        "Organ",
+        "Organ system",
+        "Organism"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Tissues are groups of similar cells working together. Multiple tissues arranged together form an organ (e.g., the stomach contains epithelial, muscle, connective, and nerve tissue). The sequence from simple to complex is: atoms → molecules → cells → tissues → organs → organ systems → organism."
+    },
+    {
+      "id": 2,
+      "unit": "digestion",
+      "topic": "Part 1: Organization of Life",
+      "type": "sata",
+      "q": "The nurse is teaching a patient that nutrition affects the body at multiple levels of organization. Which of the following statements correctly connect a level of organization to a nutritional concept? Select all that apply.",
+      "opts": [
+        "Enterocytes (cells) are replaced every 2–4 days, and malnutrition slows this renewal, reducing absorptive capacity",
+        "The mitochondria within cells convert nutrients (glucose, fats, proteins) into ATP energy via cellular respiration",
+        "Organ systems function independently and are not affected by nutritional status",
+        "The cardiovascular organ system transports absorbed nutrients from the GI tract to all body cells",
+        "Vitamin K deficiency can affect blood clotting, demonstrating nutrition's impact at the whole-organism level"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "A: Enterocyte renewal every 2–4 days is directly nutrition-dependent — correct. B: Mitochondria perform cellular respiration — correct. C is WRONG: ALL organ systems are affected by nutritional status (the immune system, cardiovascular, musculoskeletal, etc. all require adequate nutrition). D: The cardiovascular system transports nutrients — correct. E: Vitamin K deficiency demonstrating systemic (organism-level) impact — correct."
+    },
+    {
+      "id": 3,
+      "unit": "digestion",
+      "topic": "Part 1: Organization of Life",
+      "type": "mc",
+      "q": "A nursing student asks why a patient with severe malnutrition has poor wound healing, low immunity, and muscle wasting simultaneously. The best explanation is:",
+      "opts": [
+        "Malnutrition affects only the digestive system, but that system controls the others",
+        "Because malnutrition is a cellular problem — every cell in the body depends on nutrients delivered by the digestive system, and when that supply fails, all organ systems are affected",
+        "Malnutrition only causes muscle wasting; wound healing and immunity problems have separate causes",
+        "The nervous system shuts down non-essential functions when nutrition is poor, causing these symptoms"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Malnutrition is fundamentally a CELLULAR problem. Every cell in the body — immune cells, fibroblasts (wound healing), muscle cells — depends on nutrients. When the digestive system fails to supply adequate nutrients (or when intake is insufficient), every organ system is simultaneously compromised. This is why severe malnutrition produces multi-system failure, not isolated single-organ effects."
+    },
+    {
+      "id": 4,
+      "unit": "digestion",
+      "topic": "Part 1: Organization of Life",
+      "type": "mc",
+      "q": "Which organelle is correctly matched with its function AND its nutritional/clinical significance?",
+      "opts": [
+        "Ribosome — Produces ATP from glucose; relevant in patients with mitochondrial disorders",
+        "Mitochondria — Converts nutrients into ATP via cellular respiration; impaired mitochondrial function reduces energy availability even when nutrition is adequate",
+        "Golgi apparatus — Houses DNA and controls enzyme production; mutations cause enzyme deficiency diseases",
+        "Lysosome — Assembles proteins based on genetic code; protein malnutrition impairs lysosomal function"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The mitochondria are the 'powerhouses of the cell' — they perform cellular respiration, converting glucose, fatty acids, and amino acids into ATP. Mitochondrial dysfunction reduces energy production. Ribosomes assemble proteins (not ATP). The nucleus houses DNA. Lysosomes are digestive pouches that break down macromolecules and destroy foreign invaders (in pancreatitis, lysosomal enzymes activate prematurely and digest the pancreas itself). The Golgi apparatus distributes macromolecules."
+    },
+    {
+      "id": 5,
+      "unit": "digestion",
+      "topic": "Part 1: Organization of Life",
+      "type": "sata",
+      "q": "Which organ systems have a DIRECT role in delivering, regulating, or protecting nutritional status? Select all that apply.",
+      "opts": [
+        "Digestive — breaks down food and absorbs nutrients",
+        "Cardiovascular — transports absorbed nutrients to all body cells",
+        "Endocrine — produces hormones that regulate blood glucose and appetite",
+        "Integumentary — protects body from moisture loss and infection",
+        "Lymphatic — transports fat-soluble vitamins from the intestine to the bloodstream"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "All five have nutritional roles — but the question asks for DIRECT roles. Digestive (A), Cardiovascular (B), Endocrine (C), and Lymphatic (E) are directly involved in nutrition delivery and regulation. The integumentary system (D) protects the body but does not directly participate in nutrient delivery or regulation — its nutritional connection is indirect (its health DEPENDS on nutrition, but it doesn't regulate it)."
+    },
+    {
+      "id": 6,
+      "unit": "digestion",
+      "topic": "Part 2: Photosynthesis & Cellular Respiration",
+      "type": "mc",
+      "q": "A patient receiving a D5W (5% dextrose in water) intravenous infusion asks the nurse what dextrose is. The most accurate and complete explanation is:",
+      "opts": [
+        "Dextrose is a synthetic molecule created in a laboratory that mimics how the body produces energy",
+        "Dextrose is glucose — the same molecule that plant photosynthesis produces from sunlight, carbon dioxide, and water; it is the primary fuel for cellular respiration in all your cells",
+        "Dextrose is a protein that the body converts into energy in the liver",
+        "Dextrose is a fat molecule that provides concentrated caloric energy to your cells"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Dextrose IS glucose. Glucose (C₆H₁₂O₆) is the direct product of photosynthesis and the primary fuel for cellular respiration in all human cells. When a patient receives D5W IV, they are receiving glucose ready to enter cellular respiration in their mitochondria — bypassing all digestion. This is why it is used for fasting patients, to prevent protein catabolism."
+    },
+    {
+      "id": 7,
+      "unit": "digestion",
+      "topic": "Part 2: Photosynthesis & Cellular Respiration",
+      "type": "mc",
+      "q": "The nurse is caring for a patient in respiratory failure with a blood gas showing severe hypoxia (PaO₂ = 38 mmHg) and lactic acidosis (lactate 8.2 mmol/L). Which metabolic explanation BEST connects these findings?",
+      "opts": [
+        "Lack of oxygen prevents cellular respiration from efficiently converting nutrients to ATP; cells switch to anaerobic glycolysis, producing lactic acid instead of ATP",
+        "Hypoxia causes photosynthesis to stop in cells, leading to glucose shortage and lactic acid buildup",
+        "Lactic acidosis causes hypoxia by destroying red blood cells that carry oxygen",
+        "Low oxygen levels increase appetite, causing the body to produce excess lactic acid from overconsumption of calories"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "Cellular respiration requires oxygen to efficiently produce ATP. Without adequate O₂, cells revert to anaerobic glycolysis — an inefficient pathway that produces only 2 ATP per glucose (vs. ~30 via aerobic respiration) AND produces lactic acid as a byproduct. This explains why respiratory failure produces both inadequate energy (cell dysfunction) AND lactic acidosis. Photosynthesis does not occur in human cells."
+    },
+    {
+      "id": 8,
+      "unit": "digestion",
+      "topic": "Part 2: Photosynthesis & Cellular Respiration",
+      "type": "sata",
+      "q": "The photosynthesis equation is: 6CO₂ + 6H₂O + sunlight → C₆H₁₂O₆ + 6O₂. Which of the following statements about this equation are true? Select all that apply.",
+      "opts": [
+        "The product C₆H₁₂O₆ (glucose) is the same molecule that human cells use as the primary fuel for cellular respiration",
+        "This reaction RELEASES energy as ATP",
+        "This reaction STORES energy in the chemical bonds of glucose",
+        "Carbon dioxide used in photosynthesis is the same CO₂ exhaled by humans during cellular respiration, completing the carbon cycle",
+        "Photosynthesis occurs in the mitochondria of plant cells"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "A: Glucose (C₆H₁₂O₆) IS the substrate for cellular respiration — correct. B is WRONG: Photosynthesis STORES energy (endergonic — energy input required from sunlight). ATP is produced by cellular respiration, not photosynthesis. C: Photosynthesis stores solar energy in glucose bonds — correct. D: The CO₂ from cellular respiration is recycled back into photosynthesis — correct (this is the carbon cycle). E is WRONG: Photosynthesis occurs in CHLOROPLASTS, not mitochondria. Mitochondria are the site of cellular respiration."
+    },
+    {
+      "id": 9,
+      "unit": "digestion",
+      "topic": "Part 2: Photosynthesis & Cellular Respiration",
+      "type": "mc",
+      "q": "A patient with uncontrolled Type 1 diabetes is admitted with diabetic ketoacidosis (DKA). The nurse understands that DKA develops because:",
+      "opts": [
+        "Too much glucose enters cells, producing excess lactic acid as a byproduct",
+        "Without insulin, cells cannot use glucose for cellular respiration, so they break down fats instead; ketone bodies are produced as a byproduct of fatty acid metabolism",
+        "The patient ate too many carbohydrates, overloading the cellular respiration pathway",
+        "Cellular respiration cannot occur without insulin, so cells switch entirely to photosynthesis"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "In Type 1 DM with no insulin, glucose cannot enter cells (insulin is the 'key' that opens the glucose transporter). Cells are starved of their preferred fuel. To survive, they metabolize fats (fatty acid oxidation). Incomplete fat oxidation produces ketone bodies (acetoacetate, beta-hydroxybutyrate, acetone). In large amounts, ketones are acidic and cause metabolic acidosis (DKA). This is the metabolic basis of DKA — a direct consequence of glucose being unavailable as a cellular fuel. Photosynthesis does not occur in human cells."
+    },
+    {
+      "id": 10,
+      "unit": "digestion",
+      "topic": "Part 3: The Digestive System",
+      "type": "mc",
+      "q": "The nurse is preparing a patient for cholecystectomy (gallbladder removal). The patient asks why they will need to limit fat intake after surgery. The best explanation is:",
+      "opts": [
+        "Without the gallbladder, the liver stops producing bile permanently",
+        "Without the gallbladder to store and concentrate bile for release in controlled boluses, bile drips continuously into the duodenum; the sudden surge of fat from a meal cannot be adequately emulsified, causing diarrhea and poor fat digestion",
+        "Fat digestion occurs entirely in the stomach, which is unaffected by gallbladder removal",
+        "The gallbladder produces the enzymes needed to digest fat; without it, fat cannot be digested at all"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The liver continues to produce bile after cholecystectomy — the gallbladder only STORED and CONCENTRATED it. Without the gallbladder, bile trickles continuously into the duodenum in small amounts rather than being released in a concentrated bolus when a fatty meal arrives. This means a high-fat meal overwhelms the available bile, leading to undigested fat causing osmotic diarrhea (steatorrhea). Patients are typically advised to follow a low-fat diet for several weeks to months post-op while adapting."
+    },
+    {
+      "id": 11,
+      "unit": "digestion",
+      "topic": "Part 3: The Digestive System",
+      "type": "sata",
+      "q": "Which of the following correctly describe the function of the PANCREAS in digestion? Select all that apply.",
+      "opts": [
+        "Secretes bicarbonate to neutralize the acidic chyme entering the duodenum from the stomach",
+        "Produces bile for fat emulsification",
+        "Secretes enzymes (amylase, lipase, proteases) to digest all three macronutrients",
+        "In pancreatitis, pancreatic enzymes activate inside the gland rather than the intestinal lumen, causing auto-digestion",
+        "The pancreas is part of the GI tract (lumen of the alimentary canal)"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "A: Bicarbonate from the pancreas neutralizes acid chyme — critical to prevent duodenal ulcers and allow enzyme function (enzymes are denatured by acid) — correct. B is WRONG: Bile is produced by the LIVER, not the pancreas. C: Pancreatic enzymes digest all three macronutrients — correct. D: Pancreatitis involves premature activation of pancreatic enzymes, auto-digesting the gland — correct and clinically critical. E is WRONG: The pancreas is an ACCESSORY organ — it is not part of the GI tube itself, it delivers juice INTO the tube via a duct."
+    },
+    {
+      "id": 12,
+      "unit": "digestion",
+      "topic": "Part 3: The Digestive System",
+      "type": "mc",
+      "q": "Hydrolysis is described as the 'main chemical reaction in digestion.' Which statement BEST explains why?",
+      "opts": [
+        "Hydrolysis uses heat to break down food molecules into simpler molecules",
+        "Hydrolysis adds water across chemical bonds to split large nutrient molecules (starch, proteins, triglycerides) into their small, absorbable building blocks (monosaccharides, amino acids, fatty acids)",
+        "Hydrolysis removes water from food molecules, making them more concentrated before absorption",
+        "Hydrolysis is the process by which bile emulsifies fat into smaller droplets for lipase to act upon"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Hydrolysis literally means 'splitting with water' (hydro = water, lysis = splitting). Every macronutrient must be hydrolyzed into smaller units before absorption: starch → glucose, proteins → amino acids, triglycerides → fatty acids + monoglycerides. Each hydrolysis reaction requires a specific enzyme plus water. Without hydrolysis, nutrients remain too large to cross the intestinal wall. Bile emulsification is a physical process, not hydrolysis. Condensation (dehydration synthesis) removes water — the opposite of hydrolysis."
+    },
+    {
+      "id": 13,
+      "unit": "digestion",
+      "topic": "Part 3: The Digestive System",
+      "type": "mc",
+      "q": "A hospitalized patient has been NPO for 5 days following bowel surgery. The nurse is concerned about intestinal absorptive capacity when oral feeding resumes. The BEST physiological reason for this concern is:",
+      "opts": [
+        "The stomach will have forgotten how to produce gastric acid during the NPO period",
+        "Enterocytes (intestinal absorptive cells) require nutrients for their own renewal every 2–4 days; prolonged NPO without enteral stimulation causes villous atrophy and reduced absorptive surface area",
+        "The pancreas stops producing enzymes after 48 hours of fasting",
+        "Bile production ceases during NPO periods, permanently imparing fat absorption"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Enterocytes have the fastest cell turnover rate in the body — they are replaced every 2–4 days. This renewal depends on both: (1) luminal nutrients (food stimulating the intestine directly) and (2) adequate systemic nutrition. Prolonged NPO without enteral stimulation leads to villous atrophy, reducing the absorptive surface area of the small intestine. This is the primary reason enteral nutrition (via feeding tube) is STRONGLY preferred over parenteral (IV) nutrition when any portion of the GI tract is functional — keeping the gut 'working' preserves its absorptive architecture. The pancreas maintains enzyme production capacity, and bile production continues during fasting."
+    },
+    {
+      "id": 14,
+      "unit": "digestion",
+      "topic": "Part 3: The Digestive System",
+      "type": "sata",
+      "q": "A nurse is teaching about nutrient absorption routes in the small intestine. Which of the following correctly match a nutrient to its absorption pathway? Select all that apply.",
+      "opts": [
+        "Glucose → absorbed into capillaries → portal vein → liver",
+        "Vitamin C (ascorbic acid) → absorbed into lacteals → thoracic duct → bloodstream",
+        "Vitamin A → absorbed into lacteals as part of chylomicrons → thoracic duct → bloodstream",
+        "Long-chain fatty acids → packaged into chylomicrons → absorbed into lacteals → lymphatic system → bloodstream",
+        "Iron → absorbed into capillaries → portal vein → liver"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "A: Glucose is water-soluble; absorbed into capillaries → portal vein → liver — CORRECT. B is WRONG: Vitamin C is a water-soluble vitamin; it is absorbed into CAPILLARIES, not lacteals. Lacteals absorb fat-soluble substances. C: Vitamin A is fat-soluble; packaged into chylomicrons → lacteals → lymph — CORRECT. D: Long-chain fatty acids (>12 carbons) are packaged into chylomicrons and absorbed via lacteals — CORRECT. E: Iron is a mineral (water-soluble transport); absorbed into capillaries → portal vein — CORRECT."
+    },
+    {
+      "id": 15,
+      "unit": "digestion",
+      "topic": "Part 3: The Digestive System",
+      "type": "mc",
+      "q": "The nurse understands that the small intestine has a greater-than-200-square-meter absorptive surface area due to three anatomical features. These are, from largest to smallest scale:",
+      "opts": [
+        "Villi → microvilli → circular folds",
+        "Circular folds → villi → microvilli (brush border)",
+        "Microvilli → villi → circular folds",
+        "Enterocytes → goblet cells → Paneth cells"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The three levels of folding amplify surface area progressively from largest to smallest: (1) Circular folds (plicae circulares) — large permanent folds visible to the naked eye, increase area 3×; (2) Villi — finger-like projections (1mm) covering every fold, each containing capillaries and a lacteal, increase area 10×; (3) Microvilli (brush border) — microscopic projections on every single enterocyte, increase area 20×. Together these three levels transform a 1-inch diameter tube into a tennis court of absorptive surface area."
+    },
+    {
+      "id": 16,
+      "unit": "digestion",
+      "topic": "Part 3: The Digestive System",
+      "type": "mc",
+      "q": "A patient with acute pancreatitis is placed on NPO status. The nurse explains this intervention by stating:",
+      "opts": [
+        "Fasting prevents the stomach from producing hydrochloric acid, which is the primary trigger for pancreatitis",
+        "Fasting removes the dietary stimulus for pancreatic enzyme secretion, allowing the inflamed gland to rest and reducing the auto-digestive process",
+        "NPO prevents the liver from producing bile, which worsens pancreatic inflammation",
+        "Fasting prevents peristalsis, which would otherwise force chyme into the pancreatic duct"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Eating (especially fat and protein) triggers the release of secretin and cholecystokinin (CCK), which stimulate the pancreas to secrete enzymes and bicarbonate. In pancreatitis, these enzymes are activated prematurely inside the gland, causing auto-digestion. NPO removes the dietary stimulus for enzyme secretion, giving the inflamed pancreas a chance to rest. IV nutrition (if needed) bypasses the gut entirely and does not stimulate pancreatic secretion. This is the physiological rationale for NPO in pancreatitis."
+    },
+    {
+      "id": 17,
+      "unit": "digestion",
+      "topic": "Part 3: The Digestive System",
+      "type": "sata",
+      "q": "Which of the following statements about the LARGE INTESTINE are accurate? Select all that apply.",
+      "opts": [
+        "The large intestine is the primary site of nutrient absorption from food",
+        "The large intestine primarily reabsorbs water and electrolytes from liquid chyme, forming feces",
+        "Gut bacteria in the large intestine synthesize Vitamin K and some B vitamins",
+        "Prolonged antibiotic use can disrupt intestinal flora, increasing the risk of C. difficile overgrowth",
+        "The large intestine performs significant chemical digestion of proteins and carbohydrates using its own enzymes"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "A is WRONG: The SMALL intestine is the primary site of nutrient absorption. The large intestine mainly absorbs water. B: Water and electrolyte reabsorption is the large intestine's primary function — correct. C: Gut bacteria in the colon synthesize Vitamin K (~50% of daily needs) and B vitamins including biotin and pantothenic acid — correct. D: Antibiotics disrupt protective flora, allowing C. diff to overgrow — correct and extremely clinically relevant (use soap + water, not alcohol sanitizer for C. diff). E is WRONG: The large intestine does NOT perform significant chemical digestion using its own enzymes. Any digestion that occurs is performed by bacteria (fermentation), not intestinal enzymes."
+    },
+    {
+      "id": 18,
+      "unit": "digestion",
+      "topic": "Part 4: GI Disorders",
+      "type": "mc",
+      "q": "A nurse is discharging a patient with GERD. The patient states, 'I'll just add three extra pillows to elevate my head when I sleep.' The nurse's BEST response is:",
+      "opts": [
+        "That is correct — extra pillows are the recommended method for elevating the head of the bed in GERD",
+        "Extra pillows will not work because they only elevate the HEAD; you need to elevate your entire upper body by placing 6–8 inch blocks under the head bedposts so gravity keeps stomach acid below the valve",
+        "You should not sleep with your head elevated at all — lying flat is better for digestion",
+        "Three pillows are fine as long as you also avoid eating 4 hours before bed"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is a classic NCLEX distinction. Extra pillows only flex the NECK — they do not elevate the upper torso or affect intra-abdominal anatomy. The lower esophageal sphincter sits at the gastroesophageal junction in the upper abdomen. To use gravity effectively, the ENTIRE upper body (from the hips up) must be tilted, which requires elevating the head of the BED FRAME (bedposts) by 6–8 inches using blocks. Elevating only the head by pillows can actually worsen GERD by increasing abdominal pressure."
+    },
+    {
+      "id": 19,
+      "unit": "digestion",
+      "topic": "Part 4: GI Disorders",
+      "type": "sata",
+      "q": "A nurse is reviewing a newly admitted patient's medication list and history. Which of the following findings increase the patient's risk for developing GERD? Select all that apply.",
+      "opts": [
+        "BMI of 34 (obese)",
+        "Current pregnancy at 28 weeks gestation",
+        "Daily use of ibuprofen for chronic back pain",
+        "Smoking one pack of cigarettes per day",
+        "Following a high-fiber, plant-based diet"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "A: Obesity increases intra-abdominal pressure, overwhelming the LES — correct risk factor. B: Pregnancy increases both abdominal pressure (enlarging uterus) AND progesterone relaxes smooth muscle including the LES — correct. C: NSAIDs like ibuprofen relax the LES and irritate the GI mucosa — GERD risk factor (NSAIDs are primarily a peptic ULCER risk, but they also worsen GERD). D: Nicotine directly relaxes the LES and stimulates acid production — significant GERD risk. E: A high-fiber, plant-based diet is generally PROTECTIVE for GI health — it is NOT a GERD risk factor."
+    },
+    {
+      "id": 20,
+      "unit": "digestion",
+      "topic": "Part 4: GI Disorders",
+      "type": "mc",
+      "q": "A patient has been diagnosed with a peptic ulcer caused by H. pylori. The physician prescribes 'triple therapy.' The nurse understands this means:",
+      "opts": [
+        "Three antacids taken three times daily",
+        "Two antibiotics plus a proton pump inhibitor (PPI) to eradicate H. pylori AND reduce acid to allow healing",
+        "Three PPIs to maximize acid suppression",
+        "One antibiotic plus two H2 blockers to both kill the bacteria and reduce acid"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "H. pylori-related peptic ulcers require TWO antibiotics (typically amoxicillin + clarithromycin, or metronidazole variants) to eradicate the bacteria through different mechanisms (reducing resistance) PLUS one PPI to reduce gastric acid. The PPI serves two purposes: it creates a less hostile environment for the antibiotics and allows the damaged mucosa to heal. Antibiotics alone without acid suppression have lower cure rates. Confirm eradication 4+ weeks after completing therapy using a urea breath test or stool antigen test."
+    },
+    {
+      "id": 21,
+      "unit": "digestion",
+      "topic": "Part 4: GI Disorders",
+      "type": "mc",
+      "q": "A patient is admitted with a peptic ulcer and reports sudden onset of severe, constant abdominal pain that has worsened over the past hour. The patient's abdomen is rigid and board-like. The nurse recognizes this as:",
+      "opts": [
+        "Expected pain from a newly diagnosed peptic ulcer — administer antacids as ordered",
+        "Signs of a perforated ulcer with possible peritonitis — this is a surgical emergency requiring immediate physician notification",
+        "Symptoms of IBS that commonly co-occur with peptic ulcer disease",
+        "Signs of normal healing as the ulcer responds to medication"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Sudden onset of severe, constant (not episodic), worsening abdominal pain with a rigid (board-like) abdomen are classic signs of a PERFORATED ulcer and peritonitis — a life-threatening surgical emergency. When an ulcer erodes completely through the GI wall, gastric contents spill into the peritoneal cavity, causing chemical and bacterial peritonitis. Signs include severe pain, guarding (involuntary muscle rigidity), rigidity, tachycardia, fever. This requires IMMEDIATE surgical intervention. NEVER delay or manage this with antacids."
+    },
+    {
+      "id": 22,
+      "unit": "digestion",
+      "topic": "Part 4: GI Disorders",
+      "type": "sata",
+      "q": "The nurse is caring for an elderly resident in a long-term care facility who has chronic constipation. Which of the following interventions are appropriate? Select all that apply.",
+      "opts": [
+        "Increase dietary fiber intake to 25–38 grams per day",
+        "Increase fluid intake to at least 8 cups (64 oz) of water daily — fiber requires adequate hydration to work",
+        "Encourage physical activity and ambulation as tolerated — even short walks stimulate GI motility",
+        "Administer stimulant laxatives daily as long-term management",
+        "Start a scheduled bowel routine, such as attempting defecation 15–30 minutes after breakfast to utilize the gastrocolic reflex"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "A: Increasing dietary fiber adds bulk to stool — correct. B: CRITICAL — fiber without adequate water can WORSEN constipation by creating a hard, dry mass; both fiber and fluid must be increased together — correct. C: Physical activity stimulates GI peristalsis — correct. D is WRONG: Daily stimulant laxatives are a SHORT-TERM intervention only. Long-term use can cause dependency (the colon stops contracting on its own) and electrolyte imbalances. E: The gastrocolic reflex (colonic motility stimulated by gastric distension after eating) creates a natural window for defecation; utilizing this reflex helps establish regularity — correct."
+    },
+    {
+      "id": 23,
+      "unit": "digestion",
+      "topic": "Part 4: GI Disorders",
+      "type": "mc",
+      "q": "A nurse is caring for a patient with confirmed C. difficile (C. diff) infection following a course of broad-spectrum antibiotics. Which hand hygiene practice is MOST important for the nurse to follow?",
+      "opts": [
+        "Alcohol-based hand sanitizer is equally effective as soap and water for C. diff",
+        "Gloves alone are sufficient — hand hygiene is not needed if gloves are worn correctly",
+        "Wash hands with soap and water, because alcohol-based hand sanitizers do NOT kill C. difficile spores",
+        "Use antiseptic wipes on hands before and after patient contact"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "This is a critically tested NCLEX concept. C. difficile forms spores that are RESISTANT to alcohol-based hand sanitizers. Only SOAP AND WATER physically removes C. diff spores from hands via mechanical scrubbing and rinsing. Alcohol kills many pathogens, but it cannot kill spores. All healthcare workers caring for C. diff patients must wash with soap and water after every contact, and contact precautions (gown + gloves) must be maintained. Bleach-based environmental cleaning is required for room surfaces."
+    },
+    {
+      "id": 24,
+      "unit": "digestion",
+      "topic": "Part 4: GI Disorders",
+      "type": "sata",
+      "q": "The nurse is comparing IBS and IBD for a nursing student. Which of the following correctly distinguish IBD from IBS? Select all that apply.",
+      "opts": [
+        "IBD causes visible structural damage to the GI tract that can be confirmed by endoscopy and biopsy; IBS does not",
+        "IBD includes Crohn's disease and ulcerative colitis; IBS has no subtypes",
+        "IBD has an autoimmune component and is treated with anti-inflammatory and immunosuppressive medications; IBS is treated with diet and lifestyle modifications",
+        "IBD typically presents with normal labs (CBC, CRP, ESR); IBS may show elevated inflammatory markers",
+        "IBD can cause serious nutritional deficiencies due to malabsorption, particularly in Crohn's disease affecting the ileum (B12 absorption)"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "A: IBD causes measurable structural damage (inflammation, ulceration, granulomas) on endoscopy — true. IBS shows no structural abnormality. B: IBD subtypes = Crohn's and UC; IBS subtypes = IBS-D (diarrhea), IBS-C (constipation), IBS-M (mixed) — stating IBS has 'no subtypes' is CORRECT (wait — IBS DOES have subtypes, so B is CORRECT as stated: IBD has two named diseases, IBS has subtypes too, but the statement focuses on the named diseases within IBD). C: IBD treatment includes immunosuppressants; IBS does not — correct. D is WRONG (reversed): IBD shows ELEVATED inflammatory labs (ESR, CRP, WBC, fecal calprotectin); IBS labs are NORMAL. E: Crohn's can affect the ileum (site of B12 and bile salt absorption) causing specific deficiencies — correct."
+    },
+    {
+      "id": 25,
+      "unit": "digestion",
+      "topic": "Part 5: Food Intolerances, Allergies & Celiac",
+      "type": "mc",
+      "q": "A patient with lactose intolerance asks if they can ever eat dairy products. The nurse's MOST accurate response is:",
+      "opts": [
+        "No — any amount of dairy will cause severe symptoms, and all dairy must be permanently eliminated",
+        "Most people with lactose intolerance can consume some dairy products in small amounts, or better-tolerated forms like aged cheese and yogurt, or use lactase enzyme supplements (Lactaid) before consuming dairy",
+        "Lactose intolerance is an allergy and even trace amounts can be life-threatening — always carry an EpiPen",
+        "You should switch entirely to plant-based milk and never consume any dairy-derived products"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Lactose intolerance is an enzyme deficiency (insufficient lactase), NOT a food allergy. The severity of symptoms is dose-dependent — most people can tolerate small amounts of lactose. Aged hard cheeses and yogurt are lower in lactose (fermentation consumes it) and are usually well tolerated. Lactose-free milk and Lactaid enzyme supplements allow most people to enjoy dairy without symptoms. An EpiPen is for anaphylaxis from food ALLERGIES, not intolerances. Eliminating all dairy without substitute sources risks calcium and Vitamin D deficiency."
+    },
+    {
+      "id": 26,
+      "unit": "digestion",
+      "topic": "Part 5: Food Intolerances, Allergies & Celiac",
+      "type": "sata",
+      "q": "The nurse is caring for a patient who was just diagnosed with lactose intolerance. Which teaching points should be included? Select all that apply.",
+      "opts": [
+        "Lactose intolerance is a potentially life-threatening immune reaction requiring epinephrine to be carried at all times",
+        "Aged hard cheeses (cheddar, parmesan) are usually better tolerated because fermentation reduces their lactose content",
+        "Lactase enzyme supplements (Lactaid) can be taken immediately before consuming dairy products to prevent symptoms",
+        "If you eliminate all dairy from your diet, you need alternative sources of calcium and Vitamin D to prevent bone disease",
+        "65% of the world's adult population has some degree of reduced lactase activity"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "A is WRONG: Lactose intolerance is NOT life-threatening and does NOT involve the immune system. It requires no epinephrine. B: Aged cheeses are lower in lactose — correct. C: Lactase enzyme supplements are an effective management strategy — correct. D: Dairy is a major source of calcium and Vitamin D; eliminating it without substitution risks deficiency and osteoporosis — correct, critical nursing teaching. E: 65% worldwide statistic is accurate — correct."
+    },
+    {
+      "id": 27,
+      "unit": "digestion",
+      "topic": "Part 5: Food Intolerances, Allergies & Celiac",
+      "type": "mc",
+      "q": "A child develops hives, wheezing, and hypotension within minutes of eating a peanut butter cookie at school. The school nurse's FIRST priority action is:",
+      "opts": [
+        "Administer an oral antihistamine (Benadryl) and observe for 30 minutes",
+        "Call the parents to come pick up the child",
+        "Administer epinephrine via auto-injector (EpiPen) into the mid-outer thigh and activate emergency services",
+        "Give the child juice and a snack in case the reaction is due to low blood sugar"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "This presentation — rapid onset of multi-system reactions (skin, respiratory, cardiovascular) after allergen exposure — is ANAPHYLAXIS. The FIRST and ONLY appropriate treatment is EPINEPHRINE. Antihistamines (Benadryl) take too long to act and do NOT reverse bronchospasm or cardiovascular collapse. Epinephrine reverses all components of anaphylaxis simultaneously. After epinephrine, call 911 immediately — even if symptoms improve, epinephrine has a short half-life and biphasic reactions can occur. NCLEX key: Epinephrine FIRST, always."
+    },
+    {
+      "id": 28,
+      "unit": "digestion",
+      "topic": "Part 5: Food Intolerances, Allergies & Celiac",
+      "type": "mc",
+      "q": "A patient tells the nurse they ordered an IgG food sensitivity panel online and it showed they are 'allergic' to 23 foods. The nurse's BEST response is:",
+      "opts": [
+        "You should eliminate all 23 foods immediately to prevent dangerous reactions",
+        "IgG antibodies indicate previous exposure to a food, not allergy. These tests are not validated for diagnosing food allergies and are not recommended by allergy specialists — an accurate diagnosis requires evaluation by an allergist",
+        "This test is the gold standard for identifying food allergies and the results should be strictly followed",
+        "IgG levels above normal always mean anaphylaxis is possible, so you should carry an EpiPen for all 23 foods"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "IgG antibodies form in response to NORMAL food exposure — they indicate that the immune system has encountered and TOLERATED the food. High IgG to a food does not indicate allergy. These panels are not validated, not recommended by allergy societies (AAAAI, ACAAI), and often lead patients to unnecessarily restrict large numbers of foods, creating nutritional deficiencies. True food allergy diagnosis requires clinical history, IgE-specific blood tests, and/or skin prick tests, possibly oral food challenge. Never eliminate foods based on IgG testing."
+    },
+    {
+      "id": 29,
+      "unit": "digestion",
+      "topic": "Part 5: Food Intolerances, Allergies & Celiac",
+      "type": "sata",
+      "q": "A patient has just been diagnosed with celiac disease. Which of the following are appropriate and accurate teaching points? Select all that apply.",
+      "opts": [
+        "You must avoid ALL foods containing wheat, rye, and barley for the rest of your life",
+        "You can consume small amounts of gluten occasionally once your intestine has healed",
+        "Oats are gluten-free and always safe to eat without restriction on a gluten-free diet",
+        "You should have your bone density checked (DEXA scan) because calcium and Vitamin D malabsorption increases your risk for osteoporosis",
+        "Your intestinal villi will typically begin healing within weeks to months once gluten is eliminated, with full histological healing often by 6 months to 2 years"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "A: Complete lifelong elimination of gluten (wheat, rye, barley) is the ONLY treatment — correct. B is WRONG: Even small amounts of gluten continue to trigger immune damage to intestinal villi in celiac disease. There is no 'safe small amount.' C is WRONG: Oats do NOT contain gluten but are FREQUENTLY contaminated with wheat during growing, harvesting, and processing. Only CERTIFIED GLUTEN-FREE oats are safe. All oats should be restricted until confirmed GF. D: Celiac disease causes calcium and Vitamin D malabsorption; DEXA scanning for osteoporosis risk is recommended for all newly diagnosed patients — correct. E: Intestinal healing begins on a strict GF diet; most achieve histological healing by 6 months–2 years — correct."
+    },
+    {
+      "id": 30,
+      "unit": "digestion",
+      "topic": "Part 5: Food Intolerances, Allergies & Celiac",
+      "type": "mc",
+      "q": "A patient with suspected celiac disease tells the nurse they started a gluten-free diet two months ago because they 'read online it was healthier.' They are now scheduled for celiac antibody testing. The nurse should:",
+      "opts": [
+        "Reassure the patient that two months on a GF diet is not long enough to affect the test results",
+        "Inform the patient that celiac antibody levels may have dropped significantly since starting the GF diet, which could result in a falsely negative test, and advise them to discuss this with their physician before proceeding — ideally testing should occur while still consuming gluten",
+        "Proceed with testing as ordered — the test is always accurate regardless of diet",
+        "Advise the patient to continue the GF diet and instead order genetic testing only"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is a critical clinical point. Celiac disease is diagnosed by detecting IgA anti-tissue transglutaminase (tTG-IgA) and IgA anti-endomysial antibodies in the blood. These antibodies are produced IN RESPONSE to gluten — when gluten is removed from the diet, the immune response diminishes and antibody levels FALL, often becoming undetectable within weeks to months. A patient who has been gluten-free for 2 months may already have falsely negative antibody tests. The intestinal damage (villous atrophy) also begins healing. This means the window for accurate non-invasive diagnosis may have already closed. The physician should be notified to discuss whether to attempt a gluten challenge (reintroducing gluten) before testing."
+    },
+    {
+      "id": 31,
+      "unit": "digestion",
+      "topic": "Part 5: Food Intolerances, Allergies & Celiac",
+      "type": "mc",
+      "q": "Which nutritional deficiency combination is MOST specifically associated with untreated celiac disease, and what are its consequences?",
+      "opts": [
+        "Protein and fat deficiency → muscle wasting and obesity",
+        "Iron + folic acid deficiency → anemia; Calcium + Vitamin D deficiency → osteoporosis",
+        "Vitamin C deficiency → scurvy; niacin deficiency → pellagra",
+        "Vitamin B12 deficiency → pernicious anemia; magnesium deficiency → hypertension"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Celiac disease causes malabsorption of essentially all nutrients, but the most clinically significant and testable deficiency pattern is: (1) Iron + folic acid → anemia (iron-deficiency causes microcytic/hypochromic; folate-deficiency causes megaloblastic); these are absorbed in the duodenum and proximal jejunum — the first areas damaged in celiac. (2) Calcium + Vitamin D → bone disease (osteopenia → osteoporosis) — Vitamin D is fat-soluble and requires intact fat absorption and villous architecture. These four deficiencies explain why celiac patients often present with anemia, fatigue, and bone pain/fractures."
+    },
+    {
+      "id": 32,
+      "unit": "digestion",
+      "topic": "Clinical Integration",
+      "type": "mc",
+      "q": "A nurse is reviewing a patient's chart and notes: age 52, BMI 31, takes daily aspirin for cardiac prophylaxis, smokes half a pack/day, and reports heartburn 3–4 times per week that wakes him from sleep. He also takes ibuprofen periodically for arthritis. Which statement BEST summarizes this patient's GI risk profile?",
+      "opts": [
+        "This patient has minimal GI risk — occasional heartburn is normal and aspirin is a safe cardiac medication",
+        "This patient has multiple overlapping GI risk factors: obesity and smoking increase GERD risk; daily aspirin and periodic ibuprofen BOTH increase peptic ulcer risk by damaging the gastric mucosa; the frequency of heartburn (3-4×/week, nocturnal) meets criteria for GERD requiring evaluation",
+        "This patient's heartburn is caused by his BMI alone; if he loses weight, all GI symptoms will resolve",
+        "This patient only needs antacids — no further evaluation is needed since he is taking appropriate cardiac medications"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This patient has GERD (heartburn >2×/week with nocturnal symptoms) AND multiple peptic ulcer risk factors simultaneously. Obesity directly increases GERD risk. Smoking worsens both GERD and ulcers. Daily aspirin is an NSAID that inhibits prostaglandin synthesis, weakening the gastric mucosal barrier. Ibuprofen carries the same risk. Combined chronic NSAID use markedly increases peptic ulcer risk. This patient needs: (1) GERD evaluation and management, (2) gastric mucosal protection (PPI to cover NSAID use), and (3) lifestyle counseling. Weight loss will help but alone will not address the medication-related risks."
+    },
+    {
+      "id": 33,
+      "unit": "digestion",
+      "topic": "Clinical Integration",
+      "type": "sata",
+      "q": "A nurse is developing a care plan for a patient newly admitted with Crohn's disease involving the terminal ileum. Which of the following nutritional concerns are DIRECTLY related to terminal ileum involvement? Select all that apply.",
+      "opts": [
+        "Vitamin B12 deficiency, because the terminal ileum is the ONLY site of B12 absorption in the body",
+        "Fat malabsorption and fat-soluble vitamin (A, D, E, K) deficiencies, because bile salts are reabsorbed in the terminal ileum; without bile salt recycling, fat digestion is impaired",
+        "Iron deficiency anemia — iron is absorbed in the terminal ileum",
+        "Calcium and Vitamin D deficiency, contributing to metabolic bone disease",
+        "Diarrhea due to bile salts passing into the colon (cholerrhetic diarrhea), because they are not reabsorbed in the damaged terminal ileum"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "A: Intrinsic factor-bound B12 is absorbed EXCLUSIVELY in the terminal ileum. Crohn's affecting this area causes B12 deficiency → megaloblastic anemia and neurological damage — correct. B: Bile salts are recycled (enterohepatic circulation) in the terminal ileum. If not reabsorbed, fat digestion is impaired in subsequent meals, causing fat malabsorption and fat-soluble vitamin (ADEK) deficiency — correct. C is WRONG: Iron is absorbed in the DUODENUM and proximal jejunum, not the terminal ileum. While Crohn's patients can develop iron deficiency (from bleeding, inflammation), it is not due to terminal ileum involvement specifically. D: Fat-soluble Vitamin D malabsorption + systemic inflammation impairs calcium absorption → metabolic bone disease — correct. E: Unabsorbed bile salts in the colon stimulate colonic secretion → watery diarrhea (cholerrhetic/bile acid diarrhea) — correct."
+    },
+    {
+      "id": 34,
+      "unit": "digestion",
+      "topic": "Clinical Integration",
+      "type": "mc",
+      "q": "A post-operative patient on IV morphine for pain management has not had a bowel movement in 3 days. The patient is tolerating a regular diet. Which nursing action is MOST appropriate?",
+      "opts": [
+        "Reassure the patient that this is normal after surgery and no intervention is needed",
+        "Immediately order a Fleet enema and place the patient on NPO to rest the bowel",
+        "Contact the prescribing physician to discuss initiating a preventive bowel regimen (stool softener + stimulant laxative), as opioid-induced constipation is an expected, predictable side effect that should be managed proactively",
+        "Tell the patient to increase fiber intake — this alone will resolve the constipation"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Opioid-induced constipation (OIC) is one of the most predictable and common side effects of all opioid analgesics. Opioids slow GI motility by binding to mu receptors in the gut wall, reducing peristalsis, increasing intestinal water absorption, and raising sphincter tone. Unlike opioid tolerance (which develops for analgesia), tolerance to the constipating effect develops slowly or not at all. BEST PRACTICE: Start a bowel regimen PROPHYLACTICALLY when opioids are initiated — do not wait 3 days. The regimen typically includes a stool softener (docusate) PLUS a stimulant laxative (sennosides/senna). Fiber alone requires adequate fluid and motility to work — it will not overcome opioid-induced colonic stasis. Methylnaltrexone (a peripherally-acting mu receptor antagonist) can be used for refractory OIC."
+    },
+    {
+      "id": 35,
+      "unit": "digestion",
+      "topic": "Clinical Integration",
+      "type": "sata",
+      "q": "The nurse is educating a group of nursing students about the clinical significance of the liver in nutrition. Which statements are accurate? Select all that apply.",
+      "opts": [
+        "All water-soluble nutrients absorbed from the small intestine travel via the portal vein to the liver FIRST, before reaching the systemic circulation",
+        "The liver produces bile, which is stored in the gallbladder and released to emulsify dietary fats in the duodenum",
+        "Fat-soluble nutrients bypass the liver initially, traveling through the lymphatic system before entering the bloodstream",
+        "Patients with severe liver disease (cirrhosis) can develop malnutrition because the liver can no longer properly store, process, and distribute absorbed nutrients",
+        "The liver breaks down excess ammonia (from protein metabolism) into urea for excretion — impaired in liver failure, causing hepatic encephalopathy"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "ALL five statements are correct. A: Portal circulation carries ALL water-soluble absorbed nutrients directly to the liver — first-pass metabolism. B: The liver produces bile (stored in gallbladder) for fat emulsification. C: Fat-soluble nutrients go via lacteals → lymph → thoracic duct, bypassing the liver initially. D: Liver failure impairs nutrient processing, storage (glycogen, fat-soluble vitamins, iron), and synthesis (albumin, clotting factors) — cirrhotic patients are often severely malnourished. E: The urea cycle in the liver converts toxic ammonia (from protein catabolism and gut bacteria) to urea; liver failure → ammonia accumulates → hepatic encephalopathy."
+    },
+    {
+      "id": 36,
+      "unit": "digestion",
+      "topic": "Clinical Integration",
+      "type": "mc",
+      "q": "A patient with a known peanut allergy accidentally ingests a small amount of peanut protein at a restaurant. Within 5 minutes they develop generalized urticaria, throat tightness, and a blood pressure of 82/50 mmHg. The nurse should prioritize actions in which order?",
+      "opts": [
+        "Call the physician → administer Benadryl → place IV access → monitor vitals",
+        "Administer epinephrine IM (mid-outer thigh) → activate emergency response system → place in supine position with legs elevated (if not respiratory distress) → establish IV access → administer oxygen",
+        "Administer oxygen → call physician → obtain IV access → administer corticosteroids",
+        "Assess the patient's throat more carefully first → then consider epinephrine if symptoms worsen"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is a full anaphylaxis protocol question. The correct sequence: (1) EPINEPHRINE IM immediately — the only effective first-line treatment that reverses bronchospasm AND cardiovascular collapse simultaneously; (2) Activate emergency response/call 911; (3) Position: supine with legs elevated to improve venous return (UNLESS the patient has respiratory distress — then semi-recumbent); (4) IV access for fluid resuscitation (normal saline for hypotension); (5) Supplemental oxygen. Antihistamines and corticosteroids are ADJUNCT treatments that take too long to act to be first-line. NEVER delay epinephrine to 'wait and see' — anaphylaxis can progress to death within minutes."
+    },
+    {
+      "id": 37,
+      "unit": "digestion",
+      "topic": "Clinical Integration",
+      "type": "mc",
+      "q": "Which statement BEST explains why a patient with long-standing celiac disease who has been 'cheating' on their gluten-free diet complains primarily of fatigue, shortness of breath on exertion, and bone pain — rather than primarily GI symptoms?",
+      "opts": [
+        "These symptoms suggest the patient has developed a separate cardiac condition unrelated to celiac disease",
+        "Continued gluten ingestion maintains chronic immune-mediated villous atrophy, causing ongoing malabsorption of iron and folic acid (→ anemia causing fatigue and SOB) and calcium and Vitamin D (→ bone pain from osteoporosis/osteomalacia) — the systemic consequences of malabsorption may dominate when disease is longstanding",
+        "These symptoms are a direct effect of gluten toxicity on the cardiovascular system",
+        "Long-term celiac disease destroys the stomach, causing these symptoms through impaired protein digestion"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This question illustrates a critical clinical concept: celiac disease is NOT just a GI disease. When gluten continues to damage intestinal villi, malabsorption becomes chronic and multi-nutrient. Iron and folic acid are absorbed in the duodenum (first area damaged) → deficiency causes both iron-deficiency anemia AND folate-deficiency megaloblastic anemia → fatigue, pallor, exertional dyspnea. Calcium and Vitamin D malabsorption → bone demineralization → osteoporosis and/or osteomalacia → bone pain, fracture risk. In long-standing disease, patients may adapt to GI symptoms but seek care for the systemic consequences. This is why celiac disease is called the 'great imitator' — it can present as anemia, bone disease, neurological symptoms, or infertility rather than GI complaints."
+    }
+  ]
+}

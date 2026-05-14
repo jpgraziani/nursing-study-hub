@@ -1,0 +1,185 @@
+{
+  "id": "nutrition-mod4-reading",
+  "class": "nutrition",
+  "module": 4,
+  "title": "Module 4 — Reading Quiz",
+  "description": "10-question reading quiz covering B vitamins, folate, B12, electrolytes, and key mineral functions.",
+  "topics": [
+    "folate",
+    "folic acid",
+    "B12",
+    "cobalamin",
+    "electrolytes",
+    "sodium",
+    "potassium",
+    "chloride",
+    "fluid balance",
+    "nerve function",
+    "muscle contraction",
+    "megaloblastic anemia"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "micronutrients",
+      "topic": "B Vitamins — Folate",
+      "type": "mc",
+      "q": "The supplemental form of folate (folic acid) is less bioavailable than naturally occurring folate found in food.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "False. Folic acid (the synthetic, supplemental form) is MORE bioavailable than naturally occurring food folate — not less. Synthetic folic acid is absorbed at nearly 100% efficiency, while folate from whole foods such as leafy greens and legumes is only about 50–60% bioavailable. Food folate must be enzymatically converted from its polyglutamate form to the monoglutamate form before intestinal absorption, reducing efficiency. This higher bioavailability is why folic acid supplements and fortified foods are so effective for preventing neural tube defects. Nursing priority: all women of childbearing age should take 400–600 mcg of folic acid daily, ideally before conception, since the neural tube closes within the first 28 days of pregnancy — often before a woman knows she is pregnant."
+    },
+    {
+      "id": 2,
+      "unit": "micronutrients",
+      "topic": "B Vitamins — B12",
+      "type": "mc",
+      "q": "Vitamin B12 is the only vitamin that contains a metal ion and is necessary for the synthesis of DNA and hemoglobin.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "True. Vitamin B12 (cobalamin) is unique among all vitamins — it is the only one that contains a metal ion, specifically cobalt (hence the name cobalamin). This cobalt atom is embedded at the center of a corrin ring structure, making B12 chemically distinct from every other vitamin. B12 is required for two critical processes: (1) DNA synthesis — it works alongside folate to regenerate THF, which provides the methyl groups needed to produce nucleotides for cell division; and (2) hemoglobin synthesis — without B12, red blood cells cannot mature properly and become abnormally large but dysfunctional (megaloblastic/macrocytic anemia). Nursing priority: B12 deficiency is common in vegans, strict vegetarians, and elderly patients with reduced intrinsic factor production (pernicious anemia). Irreversible neurological damage can occur if deficiency goes untreated."
+    },
+    {
+      "id": 3,
+      "unit": "micronutrients",
+      "topic": "Minerals — Electrolytes",
+      "type": "mc",
+      "q": "What is a common cause of hyponatremia in athletes?",
+      "opts": [
+        "Consuming too much table salt",
+        "Drinking excessive amounts of water",
+        "Excessive sweating without replenishing electrolytes",
+        "High chloride intake"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Drinking excessive amounts of plain water (B) is the primary cause of exercise-associated hyponatremia, also called dilutional hyponatremia or water intoxication. When athletes consume large volumes of water without sodium replacement, blood sodium concentration drops dangerously low — not because sodium was lost, but because it becomes diluted. Symptoms progress from nausea and headache to confusion, seizures, and cerebral edema. Option C (excessive sweating) causes sodium loss and can contribute, but sweat actually has lower sodium concentration than blood, so sweating alone tends toward hypernatremia rather than hyponatremia. The primary driver in athletes is over-drinking plain water. Sports drinks with electrolytes prevent this. Nurses must recognize hyponatremia: serum Na+ below 135 mEq/L. A: Salt intake would raise sodium levels, not lower them. D: Chloride does not drive hyponatremia."
+    },
+    {
+      "id": 4,
+      "unit": "micronutrients",
+      "topic": "Minerals — Sodium",
+      "type": "mc",
+      "q": "Which of the following foods contributes the most sodium to the American diet?",
+      "opts": [
+        "Home-cooked meals",
+        "Natural sources of sodium in whole grains",
+        "Fresh vegetables",
+        "Processed and prepackaged foods"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Processed and prepackaged foods (D) contribute approximately 70–75% of sodium in the American diet — not the salt shaker at the table. Sodium is added during manufacturing as a preservative, flavor enhancer, and texture agent. Major sources include canned soups, deli meats, frozen meals, bread, fast food, and restaurant meals. Fresh vegetables (C) and whole grains (B) contain only trace amounts of naturally occurring sodium. Home-cooked meals (A) prepared from whole ingredients are significantly lower in sodium than restaurant or packaged equivalents. Nursing implication: when counseling patients on a sodium-restricted diet — heart failure, hypertension, CKD — the primary focus must be on eliminating processed foods. Simply telling a patient to stop salting food at the table addresses only a small fraction of their intake."
+    },
+    {
+      "id": 5,
+      "unit": "micronutrients",
+      "topic": "Water — Dehydration",
+      "type": "mc",
+      "q": "A common symptom of dehydration is _____________.",
+      "opts": [
+        "Increased urine output",
+        "Low blood pressure",
+        "Rapid weight gain",
+        "High blood pressure"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Low blood pressure (B) is a hallmark sign of dehydration. Dehydration reduces circulating blood volume (hypovolemia), which directly lowers blood pressure — severely dehydrated patients can develop hypotension and hypovolemic shock. The kidneys compensate by concentrating urine and decreasing output, so urine output decreases (opposite of A). Rapid weight gain (C) indicates fluid retention and overhydration — in fact, acute body weight loss is the most reliable early indicator of dehydration. High blood pressure (D) is associated with excess sodium and fluid overload. Classic dehydration signs nurses assess: dark amber urine, decreased skin turgor (tenting), dry mucous membranes, tachycardia, hypotension, elevated urine specific gravity (>1.030), and elevated BUN/creatinine ratio."
+    },
+    {
+      "id": 6,
+      "unit": "micronutrients",
+      "topic": "Water — Thermoregulation",
+      "type": "mc",
+      "q": "What is the primary role of water in thermoregulation?",
+      "opts": [
+        "To neutralize acids in the blood",
+        "To regulate nutrient absorption",
+        "To store heat and maintain body temperature",
+        "To increase the body's metabolic rate"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Water stores heat and maintains body temperature (C) through its exceptionally high specific heat capacity — it can absorb a large amount of thermal energy before its own temperature rises significantly. This allows the body to store metabolic heat without dangerous temperature spikes. Water also dissipates excess heat through evaporative cooling via sweating and convection at the skin surface. Without adequate hydration, the body cannot sweat effectively, leading to hyperthermia and heat stroke risk. A: Acid-base regulation involves the bicarbonate buffer system, respiratory compensation, and renal control — not water's primary thermoregulatory role. B: Nutrient absorption depends on digestive enzymes and transport proteins. D: Metabolic rate is governed by thyroid hormones and caloric intake. Water's thermoregulatory function explains why fever and high ambient temperatures dramatically increase fluid requirements."
+    },
+    {
+      "id": 7,
+      "unit": "micronutrients",
+      "topic": "Vitamins — Vitamin A",
+      "type": "mc",
+      "q": "Beta-carotene is a form of preformed vitamin A found only in animal-based foods.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "False. This statement contains two errors. First, beta-carotene is a provitamin A carotenoid — a plant pigment that the body converts to retinol (the active form) — not preformed vitamin A. Second, beta-carotene is found in plant-based foods, not animal products. It gives orange and yellow pigment to carrots, sweet potatoes, winter squash, and cantaloupe, and is also present in dark leafy greens like spinach and kale (the green chlorophyll masks the orange color). Preformed vitamin A (retinol) is found in animal products including liver, dairy, eggs, and fatty fish. This distinction matters clinically: preformed vitamin A is teratogenic in excess and hepatotoxic in large doses since it is fat-soluble and stored in the liver. Beta-carotene from food is not toxic because conversion to retinol slows when stores are full. Nursing priority: pregnant patients must avoid high-dose vitamin A supplements and limit liver consumption."
+    },
+    {
+      "id": 8,
+      "unit": "micronutrients",
+      "topic": "Vitamins — Vitamin K",
+      "type": "mc",
+      "q": "What is the main function of vitamin K in the body?",
+      "opts": [
+        "Aiding in the absorption of vitamin E",
+        "Acting as an antioxidant to protect cell membranes",
+        "Enhancing the dilation of blood vessels",
+        "Serving as a coenzyme in blood coagulation"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Vitamin K serves as a coenzyme in blood coagulation (D). It is essential for activating clotting factors II (prothrombin), VII, IX, and X through gamma-carboxylation in the liver. Without vitamin K, these proteins cannot bind calcium and initiate the clotting cascade. Warfarin (Coumadin) works by blocking vitamin K recycling — which is why patients on warfarin must maintain consistent dietary vitamin K intake rather than eliminating it. Sudden increases in leafy greens will lower the INR (increase clotting risk); sudden decreases will raise the INR (increase bleeding risk). A: Vitamin K does not aid vitamin E absorption — that is a function of dietary fat and bile. B: Vitamin E is the fat-soluble antioxidant that protects cell membranes. Critical nursing priority: newborns receive a vitamin K injection at birth because breast milk is low in vitamin K and neonates lack gut flora to produce it, placing them at risk for vitamin K deficiency bleeding."
+    },
+    {
+      "id": 9,
+      "unit": "micronutrients",
+      "topic": "Vitamins — Food Fortification",
+      "type": "mc",
+      "q": "What is the difference between fortified and enriched foods?",
+      "opts": [
+        "Enriched foods have higher levels of fiber, while fortified foods do not",
+        "Fortified foods are more natural than enriched foods",
+        "Enriched foods have nutrients added that were not originally present, while fortified foods replace lost nutrients",
+        "Fortified foods have nutrients added that were not originally present, while enriched foods have lost nutrients replaced"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Fortified foods have nutrients added that were not originally present, while enriched foods replace nutrients lost during processing (D). Fortification examples: vitamin D added to milk, folic acid added to bread flour, iodine added to table salt, calcium added to orange juice. Enrichment examples: B vitamins (thiamin, riboflavin, niacin, folate) and iron added back to white flour after grain refining strips the bran and germ. Option C has these definitions completely reversed and is incorrect. Important nuance: enrichment only partially compensates for milling — fiber, healthy fats, vitamin E, magnesium, potassium, and phytochemicals are never restored, which is why whole grains remain nutritionally superior to even enriched refined grains. A: Fiber content is unrelated to the fortification vs. enrichment distinction. B: Neither process is more 'natural' than the other — both involve intentional nutrient addition."
+    },
+    {
+      "id": 10,
+      "unit": "micronutrients",
+      "topic": "Minerals — Potassium",
+      "type": "mc",
+      "q": "Potassium is primarily stored in extracellular fluid, with a smaller amount present inside cells.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "False. This statement describes sodium, not potassium. Potassium is the principal intracellular cation — approximately 98% of the body's potassium is found inside cells (intracellular fluid), with only about 2% in the extracellular fluid. Sodium is the opposite: Na+ is the dominant extracellular cation. This is fundamental to fluid and electrolyte physiology. The Na+/K+-ATPase pump actively maintains these gradients by pumping 3 Na+ out of the cell and 2 K+ in per cycle — this electrochemical gradient is essential for nerve impulse transmission, muscle contraction, and cardiac rhythm. Nursing priority: serum potassium (which reflects only that small 2% extracellular fraction) is one of the most critical labs to monitor. Normal range: 3.5–5.0 mEq/L. Hypokalemia (5.0) also causes dangerous dysrhythmias and is a key concern in renal failure and patients on ACE inhibitors."
+    }
+  ]
+}

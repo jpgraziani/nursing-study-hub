@@ -1,0 +1,561 @@
+{
+  "id": "nutrition-sec3",
+  "class": "nutrition",
+  "module": 1,
+  "title": "Section 3 — Macronutrients Quiz",
+  "description": "30-question quiz covering carbohydrate structure, function, digestion, and clinical applications.",
+  "topics": [
+    "carbohydrates",
+    "monosaccharides",
+    "disaccharides",
+    "polysaccharides",
+    "glycogen",
+    "dietary fiber",
+    "soluble fiber",
+    "insoluble fiber",
+    "glucose",
+    "blood sugar",
+    "insulin",
+    "glycemic index",
+    "lactose intolerance",
+    "cellulose",
+    "starch",
+    "photosynthesis"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "carbs",
+      "topic": "3.1 Carbohydrates — Structure",
+      "type": "mc",
+      "q": "Which of the following best describes the basic building unit of carbohydrates?",
+      "opts": [
+        "Amino acids",
+        "Fatty acids",
+        "Monosaccharides",
+        "Nucleotides"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The correct answer is C — monosaccharides. The basic structural unit (monomer) of all carbohydrates is a monosaccharide, which is a simple sugar such as glucose, fructose, or galactose. These single units can be linked together to form disaccharides (two units) and polysaccharides (many units). Amino acids are the building blocks of proteins (A), fatty acids are components of lipids (B), and nucleotides are the building blocks of DNA and RNA (D)."
+    },
+    {
+      "id": 2,
+      "unit": "carbs",
+      "topic": "3.1 Carbohydrates — Function",
+      "type": "mc",
+      "q": "A patient is found unresponsive in her hospital room. Blood glucose is 42 mg/dL (normal: 70–100 mg/dL). The nurse understands this is a life-threatening emergency primarily because:",
+      "opts": [
+        "Muscles require glucose to maintain posture and prevent falls",
+        "The brain and red blood cells rely solely on glucose for energy and cannot use fat",
+        "Low glucose causes the kidneys to retain excess fluid, reducing blood pressure",
+        "Glucose is required for absorption of fat-soluble vitamins"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. Central nervous system cells (brain, spinal cord neurons) and red blood cells are uniquely dependent on glucose as their ONLY energy source — they cannot use fatty acids for fuel. When blood glucose drops dangerously low (hypoglycemia), brain function deteriorates rapidly, causing confusion, seizures, and loss of consciousness. This is why hypoglycemia is a medical emergency requiring immediate glucose administration. Option A is incorrect — muscles can also use fat for energy. Option C is incorrect — hypoglycemia does not cause fluid retention. Option D is incorrect — fat-soluble vitamin absorption requires dietary fat, not glucose."
+    },
+    {
+      "id": 3,
+      "unit": "carbs",
+      "topic": "3.1 Carbohydrates — Classification",
+      "type": "sata",
+      "q": "Which of the following are examples of complex carbohydrates? Select all that apply.",
+      "opts": [
+        "Starch (found in potatoes and grains)",
+        "Sucrose (table sugar)",
+        "Glycogen (stored in liver and muscle)",
+        "Dietary fiber (found in plant cell walls)",
+        "Lactose (found in milk)"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "The correct answers are A, C, and D. Complex carbohydrates are polysaccharides — molecules made of many monosaccharide units linked together. Starch (A) is the storage form of glucose in plants. Glycogen (C) is the storage form of glucose in animals, including humans, stored in the liver and muscle. Dietary fiber (D) consists of plant polysaccharides that humans cannot fully digest. Sucrose (B) is a disaccharide (simple carbohydrate) made of glucose + fructose. Lactose (E) is a disaccharide (simple carbohydrate) made of glucose + galactose. Both B and E are simple carbohydrates, not complex."
+    },
+    {
+      "id": 4,
+      "unit": "carbs",
+      "topic": "3.1 Carbohydrates — Energy",
+      "type": "mc",
+      "q": "How many kilocalories does one gram of carbohydrate provide?",
+      "opts": [
+        "2 kcal/g",
+        "4 kcal/g",
+        "7 kcal/g",
+        "9 kcal/g"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B — 4 kcal/g. This is one of the most important numbers to memorize in nutrition. The energy values for the three energy-yielding macronutrients are: carbohydrates = 4 kcal/g, proteins = 4 kcal/g, and fats = 9 kcal/g. Alcohol provides 7 kcal/g but is NOT classified as a nutrient. These values are used to calculate caloric content of foods and dietary planning."
+    },
+    {
+      "id": 5,
+      "unit": "carbs",
+      "topic": "3.1 Carbohydrates — Clinical Application",
+      "type": "mc",
+      "q": "A nurse is caring for a patient with hypoglycemia who is alert and able to swallow. Which intervention is MOST appropriate as a first response?",
+      "opts": [
+        "Administer IV dextrose (D50W) immediately",
+        "Give 15–20 grams of fast-acting simple carbohydrate by mouth (e.g., orange juice)",
+        "Offer a complex carbohydrate snack such as whole-grain crackers",
+        "Withhold all food until the physician orders a glucose tolerance test"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. The 15-15 rule for hypoglycemia management states: give 15–20 grams of fast-acting simple carbohydrate (orange juice, glucose tablets, regular soda) to a patient who is conscious and able to swallow, then recheck blood glucose in 15 minutes. Simple carbohydrates are absorbed rapidly, raising blood glucose quickly. Complex carbohydrates (C) digest more slowly and are not the right first response for acute hypoglycemia. IV dextrose (A) is reserved for unconscious or severely symptomatic patients who cannot take anything by mouth. Withholding food (D) would worsen hypoglycemia and could be life-threatening."
+    },
+    {
+      "id": 6,
+      "unit": "carbs",
+      "topic": "3.2 Lipids — Structure",
+      "type": "mc",
+      "q": "Why are lipids insoluble in water?",
+      "opts": [
+        "Because they contain nitrogen atoms that repel water molecules",
+        "Because their molecular structure is dominated by hydrocarbon chains with very few oxygen atoms, making them hydrophobic",
+        "Because they are too large to dissolve in any liquid",
+        "Because they contain phosphate groups that block water binding"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. Lipids are insoluble in water because their molecular structure is dominated by long chains of carbon and hydrogen (hydrocarbon chains) with very few oxygen atoms. Water is polar (has partial positive and negative charges), and for a substance to dissolve in water, it must also be polar or ionic. Hydrocarbon chains are nonpolar — they have no charge distribution — making lipids hydrophobic (water-fearing). This property has major clinical implications: the body must package fats into lipoproteins (such as LDL and HDL) to transport them through the watery bloodstream. Lipids do not contain nitrogen (A — that's proteins). Their insolubility is about polarity, not size (C). While phospholipids contain phosphate groups, this is not why lipids in general are insoluble (D)."
+    },
+    {
+      "id": 7,
+      "unit": "carbs",
+      "topic": "3.2 Lipids — Types",
+      "type": "mc",
+      "q": "Which type of lipid forms the bilayer of all cell membranes in the human body?",
+      "opts": [
+        "Triglycerides",
+        "Sterols",
+        "Phospholipids",
+        "Cholesterol"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The correct answer is C — phospholipids. Phospholipids have a unique structure: one end (the phosphate head) is water-soluble (hydrophilic), and the other end (the two fatty acid tails) is water-repelling (hydrophobic). When placed in an aqueous environment, phospholipids spontaneously arrange themselves into a bilayer — with hydrophilic heads facing outward (toward water) and hydrophobic tails facing inward (away from water). This bilayer forms the basic structure of every cell membrane in the body, controlling what enters and exits each cell. Triglycerides (A) are primarily for energy storage. Sterols/cholesterol (B and D) are embedded in the cell membrane but do not form the bilayer itself — they modulate membrane fluidity."
+    },
+    {
+      "id": 8,
+      "unit": "carbs",
+      "topic": "3.2 Lipids — Functions",
+      "type": "sata",
+      "q": "Which of the following are recognized functions of lipids in the human body? Select all that apply.",
+      "opts": [
+        "Providing 9 kcal per gram of energy",
+        "Serving as building blocks for steroid hormones",
+        "Enabling absorption of vitamins A, D, E, and K",
+        "Providing 4 kcal per gram as the primary fuel for the brain",
+        "Cushioning vital organs such as the kidneys"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "The correct answers are A, B, C, and E. Lipids (fats) provide 9 kcal per gram (A), making them the most energy-dense macronutrient. Sterols (a class of lipid) serve as precursors for steroid hormones including estrogen, testosterone, cortisol, and aldosterone (B). Fat-soluble vitamins A, D, E, and K require dietary fat for absorption — a very low-fat diet or fat malabsorption condition can cause deficiency of these vitamins (C). Adipose tissue cushions and protects vital organs such as the kidneys and heart (E). Option D is incorrect — the brain relies on GLUCOSE (a carbohydrate) as its primary fuel, not fat. Fat provides 9 kcal/g, not 4 kcal/g."
+    },
+    {
+      "id": 9,
+      "unit": "carbs",
+      "topic": "3.2 Lipids — Clinical Application",
+      "type": "mc",
+      "q": "A patient with Crohn's disease affecting the terminal ileum is at highest risk for deficiency of which group of nutrients due to fat malabsorption?",
+      "opts": [
+        "B vitamins and vitamin C",
+        "Vitamins A, D, E, and K",
+        "Iron and zinc",
+        "Sodium and potassium"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B — vitamins A, D, E, and K. These are the four fat-soluble vitamins. Because fat is not properly absorbed in conditions affecting the small intestine (such as Crohn's disease, cystic fibrosis, or after bariatric surgery), fat-soluble vitamins also fail to be absorbed adequately. Vitamin K deficiency is especially clinically significant because it impairs blood clotting, increasing the risk of hemorrhage. Nurses should monitor for bruising and bleeding in these patients and anticipate vitamin supplementation orders. B vitamins and vitamin C (A) are water-soluble and generally not affected by fat malabsorption. Iron (C) absorption can be reduced in Crohn's but for different reasons (inflammation, reduced absorptive surface). Electrolytes (D) are not fat-soluble."
+    },
+    {
+      "id": 10,
+      "unit": "carbs",
+      "topic": "3.3 Proteins — Structure",
+      "type": "mc",
+      "q": "Which chemical element is present in proteins but NOT found in carbohydrates or lipids?",
+      "opts": [
+        "Carbon",
+        "Hydrogen",
+        "Oxygen",
+        "Nitrogen"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "The correct answer is D — nitrogen. All three macronutrients (carbohydrates, lipids, and proteins) contain carbon, hydrogen, and oxygen. However, only proteins contain nitrogen, which is part of the amino group (-NH2) found in every amino acid. This is why protein is chemically unique among macronutrients. Some amino acids (like cysteine and methionine) also contain sulfur. Nitrogen is what makes protein biochemically indispensable — it is required to build new proteins for growth, repair, enzymes, hormones, and immune molecules."
+    },
+    {
+      "id": 11,
+      "unit": "carbs",
+      "topic": "3.3 Proteins — Essential Amino Acids",
+      "type": "mc",
+      "q": "How many amino acids are classified as 'essential' and must be obtained from the diet?",
+      "opts": [
+        "5",
+        "9",
+        "11",
+        "20"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B — 9. There are 20 total amino acids used in the human body. Of these, 9 are classified as essential (or indispensable) amino acids because the body cannot synthesize them in sufficient amounts and they must come from dietary protein. The remaining 11 are non-essential (dispensable), meaning the body can manufacture them from other compounds as long as adequate nitrogen and raw materials are available. A complete protein contains all 9 essential amino acids (animal sources: meat, dairy, eggs). Most plant proteins are incomplete — they lack or are low in one or more essential amino acids — which is why plant-based eaters must combine protein sources."
+    },
+    {
+      "id": 12,
+      "unit": "carbs",
+      "topic": "3.3 Proteins — Functions",
+      "type": "sata",
+      "q": "Which of the following are functions of proteins in the human body? Select all that apply.",
+      "opts": [
+        "Maintaining oncotic pressure in blood vessels to prevent edema",
+        "Serving as enzymes that catalyze chemical reactions",
+        "Forming the structural basis of cell membranes (phospholipid bilayer)",
+        "Producing antibodies for immune defense",
+        "Synthesizing blood clotting factors"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "The correct answers are A, B, D, and E. Proteins maintain oncotic (colloid osmotic) pressure in blood vessels — albumin is the main plasma protein that keeps fluid from leaking into tissues (A). Enzymes are proteins — virtually every chemical reaction in the body requires a protein enzyme to catalyze it (B). Antibodies (immunoglobulins) are proteins produced by B lymphocytes to identify and neutralize pathogens (D). Most blood clotting factors (including fibrinogen, prothrombin, and Factors II, VII, IX, X) are proteins (E). Option C is incorrect — the phospholipid bilayer of cell membranes is formed by phospholipids (a type of lipid), not proteins. Proteins are embedded in the membrane but do not form its bilayer structure."
+    },
+    {
+      "id": 13,
+      "unit": "carbs",
+      "topic": "3.3 Proteins — Clinical Application (Edema)",
+      "type": "mc",
+      "q": "A nurse assesses a patient with liver cirrhosis and finds significant peripheral edema and ascites (fluid in the abdomen). Lab results show serum albumin of 2.1 g/dL. The nurse understands the mechanism of this finding is:",
+      "opts": [
+        "Excess sodium intake causing osmotic water retention",
+        "Reduced plasma oncotic pressure due to low albumin, causing fluid to leak from blood vessels into tissues",
+        "Increased capillary permeability from systemic inflammation",
+        "Heart failure causing backpressure in the venous system"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. The liver produces albumin, the major plasma protein responsible for maintaining oncotic (colloid osmotic) pressure inside blood vessels. This pressure acts like a 'pull' that keeps fluid from leaking out of capillaries into surrounding tissue. When the liver is damaged (cirrhosis), albumin production drops. With low oncotic pressure, fluid moves from the bloodstream into surrounding tissues and body cavities — causing peripheral edema and ascites. Normal serum albumin is 3.5–5.0 g/dL; at 2.1 g/dL, this patient is severely hypoalbuminemic. While sodium retention (A) and venous congestion (D) can also contribute to edema in cirrhosis, the primary mechanism asked about here is the protein oncotic pressure mechanism. Increased capillary permeability (C) is more associated with sepsis/anaphylaxis."
+    },
+    {
+      "id": 14,
+      "unit": "carbs",
+      "topic": "3.4 Water — Properties",
+      "type": "mc",
+      "q": "How does the nurse best explain the chemical classification of water to a patient who asks 'is water considered an organic or inorganic nutrient?'",
+      "opts": [
+        "Water is organic because it is essential for life",
+        "Water is inorganic because it does not contain both carbon and hydrogen",
+        "Water is organic because it contains hydrogen",
+        "Water is inorganic because it contains no calories"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. The scientific distinction between organic and inorganic nutrients is based on chemical composition: organic nutrients contain BOTH carbon AND hydrogen. Water (H2O) contains hydrogen and oxygen — but no carbon. Therefore water is classified as inorganic. Note: 'organic' in chemistry has a different meaning than in everyday usage ('organic food'). In chemistry, organic simply means the molecule contains both carbon and hydrogen (and usually additional elements). Minerals are also inorganic. Carbohydrates, lipids, proteins, and vitamins all contain both carbon and hydrogen and are therefore organic nutrients."
+    },
+    {
+      "id": 15,
+      "unit": "carbs",
+      "topic": "3.4 Water — Functions",
+      "type": "sata",
+      "q": "Which of the following are functions of water in the human body? Select all that apply.",
+      "opts": [
+        "Transporting nutrients and waste products through the bloodstream",
+        "Providing 4 kcal of energy per gram",
+        "Regulating body temperature through perspiration",
+        "Cushioning the brain and spinal cord via cerebrospinal fluid",
+        "Serving as the medium for metabolic chemical reactions"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "The correct answers are A, C, D, and E. Water transports nutrients, hormones, gases, and waste products throughout the body via blood and lymph (A). Sweating is the body's primary thermoregulatory mechanism — water evaporates from the skin surface, dissipating heat and cooling the body (C). Cerebrospinal fluid, which is water-based, cushions and protects the brain and spinal cord from mechanical trauma (D). All metabolic chemical reactions in the body occur in an aqueous (water-based) environment — without water, cellular metabolism cannot function (E). Option B is incorrect — water provides ZERO calories (0 kcal/g). It is a non-energy-yielding nutrient."
+    },
+    {
+      "id": 16,
+      "unit": "carbs",
+      "topic": "3.4 Water — Clinical Application",
+      "type": "mc",
+      "q": "A nurse is assessing an elderly patient for signs of dehydration. Which combination of findings would MOST strongly suggest dehydration?",
+      "opts": [
+        "Pale urine, bradycardia, and bounding pulse",
+        "Dark concentrated urine, decreased skin turgor, dry mucous membranes, and tachycardia",
+        "Peripheral edema, weight gain, and jugular venous distension",
+        "Nausea, vomiting, and hyperactive bowel sounds"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. Classic signs of dehydration include: dark, concentrated urine (decreased urine output and increased specific gravity), decreased skin turgor (skin tenting), dry mucous membranes (mouth, lips), and tachycardia (compensatory response as the heart beats faster to maintain perfusion with reduced blood volume). Additional signs include sunken eyes, hypotension (especially orthostatic), decreased urine output, and altered mental status. Option A describes the opposite — hydrated or overhydrated. Option C describes fluid overload (edema, weight gain, JVD). Option D describes GI distress, not dehydration specifically."
+    },
+    {
+      "id": 17,
+      "unit": "carbs",
+      "topic": "3.5 Vitamins — Classification",
+      "type": "mc",
+      "q": "A patient is prescribed very high-dose supplemental Vitamin D for chronic deficiency. The nurse understands which of the following risks is MOST important to monitor?",
+      "opts": [
+        "Toxicity, because Vitamin D is fat-soluble and accumulates in fatty tissue and the liver",
+        "Renal excretion of excess Vitamin D, which will prevent any toxicity",
+        "Depletion of other B vitamins, as Vitamin D competes for the same absorption pathway",
+        "Increased risk of infection due to immunosuppressive effects"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "The correct answer is A. Vitamin D is one of the four fat-soluble vitamins (A, D, E, K). Fat-soluble vitamins are stored in fatty tissue and the liver rather than being excreted in the urine. This means they can accumulate in the body over time with excessive supplementation, leading to toxicity. Vitamin D toxicity (hypervitaminosis D) causes hypercalcemia — because Vitamin D promotes calcium absorption. Symptoms of hypercalcemia include nausea, vomiting, confusion, constipation, and in severe cases, calcium deposits in soft tissues and kidneys. Nurses should monitor calcium levels in patients on high-dose Vitamin D. Option B is incorrect — unlike water-soluble vitamins, fat-soluble vitamins are NOT excreted in urine; they are stored. Option C is incorrect — there is no such competition. Option D is incorrect — Vitamin D supports immune function."
+    },
+    {
+      "id": 18,
+      "unit": "carbs",
+      "topic": "3.5 Vitamins — Fat-Soluble",
+      "type": "mc",
+      "q": "A newborn is routinely given an intramuscular injection of which vitamin immediately after birth, and why?",
+      "opts": [
+        "Vitamin C, because newborns cannot synthesize collagen without it",
+        "Vitamin K, because newborns have limited gut bacteria to produce it and breast milk contains very little, creating a risk of hemorrhagic disease",
+        "Vitamin D, because skin synthesis of Vitamin D does not begin until 6 weeks of age",
+        "Vitamin A, because deficiency at birth causes immediate vision impairment"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. Vitamin K is essential for the synthesis of blood clotting factors (II, VII, IX, X). Newborns are at risk for hemorrhagic disease of the newborn (vitamin K deficiency bleeding) for two reasons: (1) they are born with very little Vitamin K stored (the placenta transfers minimal Vitamin K), and (2) breast milk is low in Vitamin K, and the newborn gut does not yet have the intestinal bacteria that help produce Vitamin K. An intramuscular injection of Vitamin K (phytonadione) at birth is standard of care to prevent bleeding complications, including potentially life-threatening intracranial hemorrhage. This is one of the most important clinical applications of Vitamin K knowledge."
+    },
+    {
+      "id": 19,
+      "unit": "carbs",
+      "topic": "3.5 Vitamins — Drug-Nutrient Interaction",
+      "type": "mc",
+      "q": "A patient taking warfarin (Coumadin) tells the nurse that she started eating large amounts of kale and spinach every day to 'eat healthy.' The nurse should MOST importantly respond by:",
+      "opts": [
+        "Praising the patient for making healthy food choices and encouraging her to continue",
+        "Educating the patient that sudden large increases in Vitamin K-rich foods can decrease warfarin's anticoagulant effect and alter her INR",
+        "Advising the patient to completely eliminate all green leafy vegetables from her diet",
+        "Telling the patient to take extra warfarin doses to compensate for the increased Vitamin K intake"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. Warfarin (Coumadin) works by blocking Vitamin K-dependent clotting factor synthesis. Because Vitamin K counteracts warfarin's mechanism of action, changes in dietary Vitamin K intake directly affect the INR (International Normalized Ratio) used to monitor anticoagulation. Suddenly increasing Vitamin K intake (leafy greens like kale, spinach, broccoli) can decrease warfarin's effectiveness and lower the INR — potentially increasing clot risk. The key nursing teaching point is CONSISTENCY: patients should keep their Vitamin K intake relatively stable, not eliminate it. Option A ignores the serious drug-nutrient interaction. Option C is overly restrictive and incorrect. Option D is dangerous — never advise patients to self-adjust anticoagulant doses."
+    },
+    {
+      "id": 20,
+      "unit": "carbs",
+      "topic": "3.5 Vitamins — Water-Soluble (Folate)",
+      "type": "mc",
+      "q": "A 24-year-old woman who is not currently pregnant asks the nurse why she is being advised to take folic acid supplements. The nurse's best explanation is:",
+      "opts": [
+        "Folic acid prevents iron-deficiency anemia in young women of childbearing age",
+        "Neural tube defects occur in the first 28 days of fetal development — before most women know they are pregnant — so folic acid must be taken before conception",
+        "Folic acid is required for Vitamin B12 absorption in the stomach",
+        "Folic acid supplementation is only needed once a woman is confirmed pregnant"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. Neural tube defects (such as spina bifida and anencephaly) occur when the neural tube fails to close properly during early fetal development. The neural tube closes between days 21–28 of gestation — a time when most women do not yet know they are pregnant. Because folate (Vitamin B9) is critical for proper DNA synthesis and cell division during this rapid growth phase, deficiency during this window causes irreversible neural tube defects. For this reason, all women of childbearing age are advised to consume 400 mcg of folic acid daily, regardless of pregnancy plans. Waiting until pregnancy is confirmed (D) is too late. Folic acid does not primarily prevent iron-deficiency anemia (A) — that's iron. Folic acid is not required for B12 absorption (C) — intrinsic factor serves that role."
+    },
+    {
+      "id": 21,
+      "unit": "carbs",
+      "topic": "3.5 Vitamins — Water-Soluble (B12)",
+      "type": "mc",
+      "q": "A patient with pernicious anemia is prescribed intramuscular Vitamin B12 injections rather than oral B12 tablets. The nurse explains this is necessary because:",
+      "opts": [
+        "Oral B12 is destroyed by stomach acid before it can be absorbed",
+        "Pernicious anemia is caused by the autoimmune destruction of gastric parietal cells, which produce intrinsic factor — required for B12 absorption in the terminal ileum",
+        "B12 injections work more quickly and the oral form is equally effective",
+        "Oral B12 supplements cause severe GI side effects in patients with anemia"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. Vitamin B12 absorption requires a carrier protein called intrinsic factor (IF), which is produced by parietal cells in the stomach. In pernicious anemia, the immune system destroys these parietal cells, eliminating IF production. Without IF, dietary B12 and oral B12 supplements cannot be absorbed in the terminal ileum — the only site of B12 absorption. Because the oral route is useless without intrinsic factor, B12 must be administered intramuscularly (bypassing the GI tract entirely). Untreated B12 deficiency causes megaloblastic anemia and irreversible neurological damage (demyelination). This is a classic NCLEX scenario — know WHY injections are required."
+    },
+    {
+      "id": 22,
+      "unit": "carbs",
+      "topic": "3.5 Vitamins — Water-Soluble (Deficiency Diseases)",
+      "type": "sata",
+      "q": "The nurse is reviewing vitamin deficiency diseases with a nursing student. Which of the following disease-vitamin pairings are CORRECT? Select all that apply.",
+      "opts": [
+        "Scurvy — Vitamin C deficiency",
+        "Rickets — Vitamin D deficiency in children",
+        "Pellagra — Vitamin B3 (Niacin) deficiency, presenting with the 4 D's (Diarrhea, Dermatitis, Dementia, Death)",
+        "Beriberi — Vitamin B6 (Pyridoxine) deficiency",
+        "Wernicke-Korsakoff syndrome — Vitamin B1 (Thiamin) deficiency"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "The correct answers are A, B, C, and E. Scurvy is caused by Vitamin C (ascorbic acid) deficiency — Vitamin C is required for collagen synthesis, and without it, connective tissue breaks down causing bleeding gums, poor wound healing, and joint pain (A). Rickets is caused by Vitamin D deficiency in children — without adequate Vitamin D, calcium absorption is impaired, resulting in soft, weak, bowed bones (B). Pellagra is caused by Vitamin B3 (Niacin) deficiency and classically presents with the 4 D's: Diarrhea, Dermatitis (sun-sensitive skin rash), Dementia, and eventually Death if untreated (C). Wernicke-Korsakoff syndrome occurs in chronic alcoholism due to Vitamin B1 (Thiamin) deficiency — symptoms include confusion, ataxia, and eye movement abnormalities; Korsakoff syndrome involves irreversible memory damage (E). Option D is INCORRECT — Beriberi is caused by Vitamin B1 (Thiamin) deficiency, NOT B6 (Pyridoxine). B6 deficiency causes dermatitis, glossitis, and neurological symptoms."
+    },
+    {
+      "id": 23,
+      "unit": "carbs",
+      "topic": "3.6 Minerals — Major Minerals",
+      "type": "mc",
+      "q": "A patient taking furosemide (Lasix), a loop diuretic, calls the clinic reporting muscle cramps and weakness. The nurse suspects this is most likely related to which electrolyte imbalance?",
+      "opts": [
+        "Hypernatremia (elevated sodium)",
+        "Hypercalcemia (elevated calcium)",
+        "Hypokalemia (low potassium)",
+        "Hyperphosphatemia (elevated phosphorus)"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The correct answer is C — hypokalemia (low potassium). Loop diuretics like furosemide increase urine output by blocking sodium and chloride reabsorption in the loop of Henle — but potassium is also wasted in this process. Potassium is the primary intracellular cation, essential for nerve impulse transmission and muscle contraction, including cardiac muscle. Hypokalemia (serum K+ below 3.5 mEq/L) causes classic symptoms: muscle weakness, cramps, fatigue, and — most dangerously — cardiac arrhythmias. This is why nurses always monitor potassium levels in patients on diuretics and why patients are often advised to eat potassium-rich foods (bananas, oranges, potatoes) or take potassium supplements. Never give IV potassium as an IV push — it must be diluted and infused slowly."
+    },
+    {
+      "id": 24,
+      "unit": "carbs",
+      "topic": "3.6 Minerals — Major Minerals (Calcium)",
+      "type": "mc",
+      "q": "A nurse is assessing a patient after thyroid surgery. The patient reports tingling around the lips and in the fingertips, and the nurse notes muscle spasms when inflating the blood pressure cuff. These findings are most consistent with:",
+      "opts": [
+        "Hyperkalemia — excess potassium causing nerve hypersensitivity",
+        "Hyponatremia — low sodium causing cellular swelling and nerve irritation",
+        "Hypocalcemia — low calcium causing neuromuscular irritability, evidenced by positive Trousseau's sign",
+        "Hypermagnesemia — excess magnesium causing neuromuscular blockade"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The correct answer is C. The parathyroid glands — which regulate calcium homeostasis — can be accidentally removed or damaged during thyroid surgery, causing a sudden drop in parathyroid hormone (PTH) and consequently hypocalcemia (low serum calcium). Calcium is essential for stabilizing nerve cell membranes; without adequate calcium, neurons become hyperexcitable. Classic signs of hypocalcemia include: perioral tingling (around the lips), paresthesias in the extremities, positive Trousseau's sign (carpal spasm when blood pressure cuff is inflated — exactly as described), and positive Chvostek's sign (facial muscle twitch when tapping the facial nerve). Severe hypocalcemia causes tetany and seizures. Normal serum calcium is 8.5–10.5 mg/dL. This is a classic NCLEX post-operative thyroidectomy complication scenario."
+    },
+    {
+      "id": 25,
+      "unit": "carbs",
+      "topic": "3.6 Minerals — Trace Minerals (Iron)",
+      "type": "mc",
+      "q": "A patient with iron-deficiency anemia asks the nurse why they were told to take their iron supplement with orange juice. The nurse's best response is:",
+      "opts": [
+        "Orange juice masks the unpleasant metallic taste of iron supplements",
+        "Vitamin C in orange juice enhances the absorption of non-heme iron from the gut",
+        "The acidity of orange juice dissolves the iron tablet faster",
+        "Orange juice provides folate that works together with iron to form red blood cells"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. Non-heme iron (the form found in plant foods and most iron supplements) is absorbed much less efficiently than heme iron (found in meat). Vitamin C (ascorbic acid) significantly enhances non-heme iron absorption by: (1) reducing ferric iron (Fe3+) to ferrous iron (Fe2+), which is the form that crosses the intestinal wall, and (2) forming a soluble chelate complex with iron that resists precipitation in the alkaline intestinal environment. Taking iron with Vitamin C-rich foods or supplements can increase absorption by up to 3-fold. While orange juice does have a slightly acidic pH (C), this is not the primary mechanism. Taste masking (A) is a minor practical benefit, not the clinical reason. Folate supports RBC DNA synthesis but is not the reason for orange juice with iron (D)."
+    },
+    {
+      "id": 26,
+      "unit": "carbs",
+      "topic": "3.6 Minerals — Trace Minerals (Iodine)",
+      "type": "mc",
+      "q": "A pregnant woman living in a region with iodine-deficient soil is not eating iodized salt or seafood. The nurse is most concerned about which fetal outcome?",
+      "opts": [
+        "Rickets — due to impaired calcium absorption from maternal iodine deficiency",
+        "Neural tube defects — due to impaired DNA synthesis",
+        "Cretinism — severe intellectual disability and growth retardation caused by congenital hypothyroidism from maternal iodine deficiency",
+        "Iron-deficiency anemia — because iodine is needed for iron absorption"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The correct answer is C. Iodine is required for the synthesis of thyroid hormones T3 (triiodothyronine) and T4 (thyroxine). Thyroid hormones are essential for normal brain development and growth during fetal life and early infancy. Severe iodine deficiency during pregnancy causes congenital hypothyroidism in the newborn — a condition called cretinism, characterized by severe, irreversible intellectual disability, stunted growth, deafness, and spastic diplegia. This is one of the most preventable causes of intellectual disability worldwide. Iodized salt programs were developed specifically to address this public health crisis. Rickets (A) is from Vitamin D deficiency. Neural tube defects (B) are from folate deficiency. Iodine does not affect iron absorption (D)."
+    },
+    {
+      "id": 27,
+      "unit": "carbs",
+      "topic": "3.7 Nutrient Classification",
+      "type": "mc",
+      "q": "Which of the following correctly identifies all six classes of nutrients AND classifies each as macronutrient or micronutrient?",
+      "opts": [
+        "Carbohydrates, lipids, proteins, vitamins (macro) | Minerals, water (micro)",
+        "Carbohydrates, lipids, proteins, water (macro) | Vitamins, minerals (micro)",
+        "Carbohydrates, lipids, proteins (macro) | Vitamins, minerals, water (micro)",
+        "Carbohydrates, proteins, vitamins (macro) | Lipids, minerals, water (micro)"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct answer is B. The six classes of nutrients are: carbohydrates, lipids, proteins, water, vitamins, and minerals. These are classified as macronutrients or micronutrients based on the quantity needed: Macronutrients (needed in grams per day) = carbohydrates, lipids, proteins, and water. Despite providing no calories, water is a macronutrient because of the large daily volume required (>2 liters/day). Micronutrients (needed in milligrams or micrograms per day) = vitamins and minerals. Options A, C, and D all misclassify water — water is a macronutrient, not a micronutrient."
+    },
+    {
+      "id": 28,
+      "unit": "carbs",
+      "topic": "3.7 Nutrient Classification — Organic vs. Inorganic",
+      "type": "sata",
+      "q": "A nursing instructor asks students to identify which nutrients are classified as ORGANIC. Which of the following nutrients should the students select? Select all that apply.",
+      "opts": [
+        "Carbohydrates",
+        "Minerals",
+        "Lipids",
+        "Water",
+        "Vitamins",
+        "Proteins"
+      ],
+      "correct": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "The correct answers are A, C, E, and F — carbohydrates, lipids, vitamins, and proteins. In scientific classification, an ORGANIC nutrient is defined as one that contains BOTH carbon AND hydrogen in its molecular structure. Carbohydrates contain C, H, and O (A). Lipids contain C, H, and O (C). Vitamins are organic molecules containing C and H (E). Proteins contain C, H, O, and N — and sometimes S (F). INORGANIC nutrients do NOT contain both carbon and hydrogen: Water (H2O) contains H and O but NO carbon — inorganic (D). Minerals are pure chemical elements (Na, K, Ca, Fe, etc.) — they contain no carbon or hydrogen — inorganic (B). Memory trick: organic nutrients = the 4 that can be made by living things and can be destroyed by heat/light = carbs, lipids, proteins, vitamins."
+    },
+    {
+      "id": 29,
+      "unit": "carbs",
+      "topic": "3.7 Nutrient Classification — Energy Yielding",
+      "type": "mc",
+      "q": "Alcohol provides 7 kcal per gram. Based on this fact, how should alcohol be classified according to the standard nutrient classification framework?",
+      "opts": [
+        "Alcohol is a macronutrient because it provides energy",
+        "Alcohol is a micronutrient in the vitamin category because it is organic and produced by living organisms",
+        "Alcohol provides energy but is NOT classified as a nutrient; it is a non-nutrient energy source",
+        "Alcohol is classified as a carbohydrate because it is derived from fermented sugars"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The correct answer is C. Alcohol (ethanol) provides 7 kcal per gram — more than carbohydrates or protein (4 kcal/g each), but less than fat (9 kcal/g). However, despite contributing calories, alcohol is NOT classified as a nutrient. A nutrient is defined as a substance that is required by the body to perform essential physiological functions. Alcohol is not required by the body, provides no essential building blocks, and is metabolized as a toxin by the liver. The three energy-yielding nutrients are: carbohydrates (4 kcal/g), proteins (4 kcal/g), and lipids (9 kcal/g). Understanding this distinction is important for clinical nutrition calculations and for patient education about 'empty calories.'"
+    },
+    {
+      "id": 30,
+      "unit": "carbs",
+      "topic": "3.7 Nutrient Classification — Clinical Integration",
+      "type": "mc",
+      "q": "A nursing student creates a summary card stating: 'Vitamins are organic micronutrients that provide 4 kcal per gram.' What error has the student made?",
+      "opts": [
+        "Vitamins are inorganic, not organic",
+        "Vitamins are macronutrients, not micronutrients",
+        "Vitamins do not provide calories — they are non-energy-yielding nutrients",
+        "The statement is entirely correct"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The correct answer is C. The student correctly identified that vitamins are organic and micronutrients — but made the critical error of stating they provide 4 kcal/g. Vitamins do NOT provide energy (calories). The only energy-yielding nutrients are carbohydrates (4 kcal/g), proteins (4 kcal/g), and lipids (9 kcal/g). Vitamins function primarily as coenzymes — they help activate the enzyme systems that release energy from carbohydrates, proteins, and fats — but vitamins themselves contain no caloric value. This distinction is critical for clinical nutrition calculations and NCLEX exam questions. Non-energy-yielding nutrients = water, vitamins, and minerals."
+    }
+  ]
+}

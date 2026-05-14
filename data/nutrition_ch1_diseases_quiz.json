@@ -1,0 +1,650 @@
+{
+  "id": "nutrition-ch1-diseases",
+  "class": "nutrition",
+  "module": 1,
+  "title": "Chapter 1 — Diseases & Deficiency Quiz",
+  "description": "35-question quiz covering nutrient-deficiency diseases and clinical presentations: brain, eye, skin, bone, blood, and systemic disorders.",
+  "topics": [
+    "hypoglycemia",
+    "Wernicke-Korsakoff",
+    "neural tube defects",
+    "folate",
+    "scurvy",
+    "vitamin C",
+    "rickets",
+    "vitamin D",
+    "pellagra",
+    "niacin",
+    "iron deficiency anemia",
+    "beriberi",
+    "thiamine",
+    "night blindness",
+    "vitamin A",
+    "goiter",
+    "iodine",
+    "kwashiorkor",
+    "marasmus",
+    "osteoporosis",
+    "calcium"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "disease",
+      "topic": "Brain -- Hypoglycemia",
+      "type": "mc",
+      "q": "A patient with type 1 diabetes is found confused and diaphoretic. Blood glucose is 48 mg/dL. This neurological presentation occurs primarily because:",
+      "opts": [
+        "The kidneys are retaining excess fluid, reducing cerebral perfusion",
+        "The brain and red blood cells rely solely on glucose for energy and cannot use fat",
+        "Insulin directly depresses the central nervous system at high doses",
+        "Low glucose triggers excess cortisol which crosses the blood-brain barrier"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Brain neurons and red blood cells are the only cells that rely exclusively on glucose -- they cannot oxidize fatty acids. When blood glucose drops below 70 mg/dL, brain function deteriorates rapidly: confusion, diaphoresis, irritability, and if untreated, seizures and loss of consciousness. This is why hypoglycemia is a medical emergency. A is wrong -- kidney fluid retention does not cause acute confusion. C is wrong -- insulin does not directly depress the CNS. D is wrong -- cortisol is released as a counterregulatory hormone but does not itself cause the neurological symptoms."
+    },
+    {
+      "id": 2,
+      "unit": "disease",
+      "topic": "Brain -- Wernicke-Korsakoff",
+      "type": "mc",
+      "q": "A patient with chronic alcoholism presents to the ER confused, with abnormal eye movements and unsteady gait. Which intervention must be ordered FIRST, before any glucose is given?",
+      "opts": [
+        "Oral folic acid supplementation",
+        "Intravenous thiamin (Vitamin B1)",
+        "Intravenous magnesium sulfate",
+        "Intramuscular Vitamin B12"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. This is the classic triad of Wernicke's encephalopathy (confusion, ophthalmoplegia, ataxia) caused by Vitamin B1 (Thiamin) deficiency, common in chronic alcoholism. Giving glucose BEFORE thiamin in a thiamin-deficient patient can precipitate or worsen Wernicke's -- glucose metabolism requires thiamin, so administering dextrose without thiamin exhausts remaining stores. IV thiamin must come first. A treats megaloblastic anemia, not Wernicke's. C may be needed but is not the first priority. D treats pernicious anemia."
+    },
+    {
+      "id": 3,
+      "unit": "disease",
+      "topic": "Brain -- Neural Tube Defects / Folate",
+      "type": "mc",
+      "q": "A 22-year-old woman planning pregnancy in the next year asks why her provider wants her to start folic acid NOW rather than when she gets pregnant. The nurse's best explanation is:",
+      "opts": [
+        "Folic acid takes 12 months to accumulate to therapeutic levels",
+        "Neural tube closure occurs in the first 28 days of gestation -- often before a woman knows she is pregnant",
+        "Folic acid must be started before conception to prevent iron-deficiency anemia",
+        "Folic acid prevents gestational diabetes when started early"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Neural tube defects (spina bifida, anencephaly) occur when the neural tube fails to close -- between days 21 and 28 of gestation. At that point, most women do not yet know they are pregnant. Folate is essential for DNA synthesis and cell division during this critical window. Waiting until pregnancy is confirmed is too late. The recommendation is 400 mcg folic acid daily for all women of childbearing age. A is incorrect -- no 12-month buildup is required. C and D describe different conditions not caused by folate deficiency."
+    },
+    {
+      "id": 4,
+      "unit": "disease",
+      "topic": "Brain -- B12 / Pernicious Anemia",
+      "type": "mc",
+      "q": "A patient with pernicious anemia asks why they need monthly IM B12 injections instead of oral supplements. The nurse explains:",
+      "opts": [
+        "Oral B12 is destroyed by stomach acid before absorption",
+        "Pernicious anemia destroys gastric parietal cells, eliminating intrinsic factor -- which is required for B12 absorption in the terminal ileum",
+        "B12 injections are simply more convenient",
+        "Oral B12 causes severe GI side effects in patients with anemia"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Vitamin B12 absorption requires intrinsic factor (IF), produced exclusively by gastric parietal cells. In pernicious anemia, autoimmune destruction of parietal cells eliminates IF production entirely. Without IF, oral B12 cannot be absorbed in the terminal ileum -- the only absorption site. B12 must be given IM to bypass the GI tract. Untreated B12 deficiency causes irreversible neurological damage (subacute combined degeneration of the spinal cord). A is incorrect -- B12 is not destroyed by stomach acid. C and D are not the clinical reason."
+    },
+    {
+      "id": 5,
+      "unit": "disease",
+      "topic": "Brain -- Cretinism / Iodine",
+      "type": "mc",
+      "q": "A public health nurse emphasizes iodine intake during pregnancy because severe deficiency can cause which outcome in the newborn?",
+      "opts": [
+        "Gestational hypertension and preeclampsia in the mother",
+        "Irreversible intellectual disability and growth retardation (cretinism) in the newborn",
+        "Premature neural tube closure in the first trimester",
+        "Iron-deficiency anemia from poor placental iron transfer"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Iodine is required for synthesis of thyroid hormones T3 and T4, which are essential for fetal brain development. Severe iodine deficiency during pregnancy causes congenital hypothyroidism -- cretinism -- characterized by irreversible intellectual disability, stunted growth, deafness, and spastic diplegia. This is one of the most preventable causes of intellectual disability worldwide. Iodized salt programs were created specifically to address this. A describes a different condition. C describes a folate outcome. D describes iron deficiency."
+    },
+    {
+      "id": 6,
+      "unit": "disease",
+      "topic": "Heart -- Beriberi / Thiamin",
+      "type": "mc",
+      "q": "Which form of beriberi involves cardiovascular complications including high-output heart failure and peripheral edema?",
+      "opts": [
+        "Dry beriberi -- peripheral nerve weakness and paralysis",
+        "Wet beriberi -- cardiac enlargement and high-output heart failure",
+        "Pellagra -- skin, GI, and nervous system involvement",
+        "Scurvy -- connective tissue and blood vessel breakdown"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Both forms of beriberi result from Vitamin B1 (Thiamin) deficiency. Dry beriberi affects the peripheral nervous system (weakness, paralysis). Wet beriberi affects the cardiovascular system -- high-output heart failure, cardiomegaly, tachycardia, and peripheral edema. Wet beriberi is a medical emergency requiring IV thiamin. Pellagra (C) is Niacin deficiency. Scurvy (D) is Vitamin C deficiency."
+    },
+    {
+      "id": 7,
+      "unit": "disease",
+      "topic": "Heart -- Hypokalemia / Diuretics",
+      "type": "mc",
+      "q": "A patient on furosemide (Lasix) has a potassium of 2.9 mEq/L. The nurse's PRIORITY concern is:",
+      "opts": [
+        "Constipation from reduced GI motility",
+        "Life-threatening cardiac arrhythmias from disrupted cardiac electrical conduction",
+        "Hyperglycemia from impaired insulin secretion",
+        "Hypertension from compensatory sodium retention"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Potassium is the primary intracellular cation critical for cardiac cell resting membrane potential. Hypokalemia (K+ below 3.5 mEq/L) alters the electrochemical gradient of cardiac cells, predisposing to dangerous arrhythmias including PVCs, ventricular tachycardia, and ventricular fibrillation -- immediately life-threatening. Furosemide (loop diuretic) causes potassium wasting; monitor K+ regularly in patients on diuretics. Critical nursing note: IV potassium must always be diluted and infused slowly -- never given as IV push."
+    },
+    {
+      "id": 8,
+      "unit": "disease",
+      "topic": "Heart -- Diet and Cardiovascular Risk",
+      "type": "sata",
+      "q": "Which of the following dietary patterns or nutrients are associated with INCREASED cardiovascular disease risk? Select all that apply.",
+      "opts": [
+        "High saturated fat intake raising LDL cholesterol",
+        "High dietary fiber from whole grains and vegetables",
+        "Excess sodium intake driving hypertension",
+        "Excess added sugars contributing to obesity and metabolic syndrome",
+        "High intake of fatty fish providing omega-3 fatty acids"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Correct: A, C, D. Saturated fat raises LDL cholesterol -- a major driver of atherosclerosis; DGA limits to less than 10% of calories (A). Excess sodium is a primary driver of hypertension, affecting 1 in 3 American adults; limit less than 2,300 mg/day (C). Excess added sugars contribute to obesity, elevated triglycerides, and cardiovascular disease; DGA limits to less than 10% of calories (D). High dietary fiber (B) is PROTECTIVE against cardiovascular disease. Omega-3 fatty acids from fatty fish (E) are also PROTECTIVE, reducing triglycerides and inflammation."
+    },
+    {
+      "id": 9,
+      "unit": "disease",
+      "topic": "Blood -- Iron-Deficiency Anemia",
+      "type": "mc",
+      "q": "A patient with iron-deficiency anemia is told to take their iron supplement with orange juice. The nurse explains this is because:",
+      "opts": [
+        "Orange juice improves the taste, improving adherence",
+        "Vitamin C in orange juice converts non-heme iron to its absorbable ferrous form, significantly enhancing absorption",
+        "The acidity of orange juice dissolves the tablet faster",
+        "Orange juice provides folate that works with iron in RBC production"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Non-heme iron (plant sources and most supplements) must be converted from ferric (Fe3+) to ferrous (Fe2+) form to cross the intestinal wall. Vitamin C is a powerful reducing agent that accomplishes this conversion and forms a soluble chelate preventing precipitation in the alkaline intestinal environment. Taking iron with Vitamin C can increase non-heme iron absorption up to 3-fold. In contrast, calcium and polyphenols in tea and coffee INHIBIT absorption -- patients should avoid taking iron with dairy or tea. A is minor, not the clinical reason. C is not the mechanism. D is incorrect."
+    },
+    {
+      "id": 10,
+      "unit": "disease",
+      "topic": "Blood -- Megaloblastic vs. Pernicious Anemia",
+      "type": "mc",
+      "q": "Two patients both have megaloblastic anemia. Patient A has low folate; Patient B has low B12 and neurological symptoms. The critical distinction the nurse must understand is:",
+      "opts": [
+        "They are the same and can be treated identically with folate",
+        "Giving folate to a B12-deficient patient corrects the anemia but allows neurological damage to progress -- masking a worsening condition",
+        "Patient B's neurological symptoms indicate a separate unrelated disease",
+        "Both patients require the same treatment: IM vitamin injections"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Both folate and B12 deficiency cause megaloblastic anemia through impaired DNA synthesis. The danger: giving FOLATE to a B12-deficient patient partially corrects the blood picture, creating false reassurance -- while B12 deficiency continues destroying myelin sheaths of nerve fibers, causing irreversible neurological damage. This is why determining WHICH vitamin is deficient before treating is critical. The neurological symptoms of Patient B are the distinguishing clinical feature of B12 deficiency. A is wrong -- the two require different treatments. D is wrong -- Patient A with folate deficiency is treated with oral folate, not IM injections."
+    },
+    {
+      "id": 11,
+      "unit": "disease",
+      "topic": "Blood -- Vitamin K / Newborn",
+      "type": "mc",
+      "q": "A new mother asks why her newborn received an injection immediately after birth. The nurse explains this Vitamin K injection prevents:",
+      "opts": [
+        "Rickets from impaired calcium absorption in the first days",
+        "Hemorrhagic disease of the newborn -- newborns have minimal Vitamin K stores, breast milk is low in K, and gut bacteria are not yet established",
+        "Iron-deficiency anemia from blood loss during delivery",
+        "Neonatal jaundice from immature liver function"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Newborns are at risk for Vitamin K deficiency bleeding (hemorrhagic disease of the newborn) for three reasons: (1) the placenta transfers minimal Vitamin K, leaving newborns with very low stores; (2) breast milk is naturally low in Vitamin K; and (3) newborn guts lack the intestinal bacteria that help synthesize Vitamin K. Without adequate Vitamin K for clotting factor synthesis (Factors II, VII, IX, X), newborns are at risk for life-threatening bleeding including intracranial hemorrhage. IM Vitamin K (phytonadione) at birth is standard of care worldwide. A describes Vitamin D deficiency. C and D are not related to Vitamin K."
+    },
+    {
+      "id": 12,
+      "unit": "disease",
+      "topic": "Blood -- Warfarin and Vitamin K",
+      "type": "sata",
+      "q": "A patient taking warfarin asks about Vitamin K in their diet. Which nurse statements are correct? Select all that apply.",
+      "opts": [
+        "Eliminate all green leafy vegetables from your diet",
+        "Vitamin K intake should remain CONSISTENT because sudden changes alter your INR and warfarin effectiveness",
+        "Warfarin works by blocking Vitamin K-dependent clotting factor synthesis",
+        "Foods high in Vitamin K include spinach, kale, and broccoli",
+        "A sudden large increase in Vitamin K-rich foods can decrease warfarin's anticoagulant effect"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Correct: B, C, D, E. Warfarin inhibits Vitamin K epoxide reductase, blocking synthesis of clotting factors II, VII, IX, X (C). Because Vitamin K directly counteracts warfarin, changes in dietary Vitamin K shift the INR. The key teaching is CONSISTENCY, not elimination (B). Spinach, kale, broccoli, Brussels sprouts are the highest dietary Vitamin K sources (D). A sudden large increase can partially overcome warfarin's blockade, lowering INR and increasing clot risk (E). Option A is INCORRECT -- complete elimination is not recommended; consistent moderate intake is the goal. Never advise self-adjusting warfarin doses."
+    },
+    {
+      "id": 13,
+      "unit": "disease",
+      "topic": "Bones -- Rickets vs. Osteomalacia",
+      "type": "mc",
+      "q": "Which statement correctly distinguishes rickets from osteomalacia?",
+      "opts": [
+        "Rickets is caused by Vitamin C deficiency; osteomalacia by Vitamin D deficiency",
+        "Rickets occurs in children with growing bones; osteomalacia is the adult equivalent -- both result from Vitamin D deficiency causing impaired bone mineralization",
+        "Rickets causes bone density loss; osteomalacia causes bone softening",
+        "Rickets is irreversible; osteomalacia resolves without treatment"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Both result from Vitamin D deficiency, which impairs calcium absorption and therefore impairs mineralization of bone matrix with hydroxyapatite. The distinction is age: Rickets occurs in children with open growth plates -- resulting in soft, bowed bones, skull softening, and rachitic rosary on ribs. Osteomalacia is the adult equivalent -- in adults with complete bone growth, it presents as bone pain, tenderness, and increased fracture risk. A is incorrect -- both involve Vitamin D deficiency. C confuses osteomalacia with osteoporosis (which is reduced density, not softening). D is incorrect -- both are treatable with Vitamin D and calcium."
+    },
+    {
+      "id": 14,
+      "unit": "disease",
+      "topic": "Bones -- Hypocalcemia Post-Thyroidectomy",
+      "type": "mc",
+      "q": "A patient on postoperative day 1 after total thyroidectomy reports perioral tingling and fingertip paresthesias. The nurse notes muscle spasms when inflating the blood pressure cuff. These findings indicate:",
+      "opts": [
+        "Hyperkalemia from cellular potassium release during surgery",
+        "Hypocalcemia from inadvertent removal or damage to the parathyroid glands during thyroid surgery",
+        "Vitamin D toxicity from preoperative supplementation",
+        "Hyponatremia from IV fluid administration during surgery"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. The parathyroid glands -- on the posterior surface of the thyroid -- produce PTH, the primary calcium regulator. During thyroidectomy, they can be accidentally removed or have blood supply damaged, causing sudden PTH drop and hypocalcemia. Calcium stabilizes nerve cell membranes; without it, neurons become hyperexcitable. Classic signs: perioral tingling, paresthesias, positive Trousseau's sign (carpopedal spasm with BP cuff inflation -- as described), positive Chvostek's sign. Normal serum calcium is 8.5-10.5 mg/dL. Severe hypocalcemia causes tetany and seizures. Keep IV calcium gluconate at the bedside post-thyroidectomy."
+    },
+    {
+      "id": 15,
+      "unit": "disease",
+      "topic": "Bones -- Dental Caries / Added Sugars",
+      "type": "mc",
+      "q": "The nurse is educating a parent about nutrition for their 18-month-old. Which statement about added sugars is correct?",
+      "opts": [
+        "Children under 2 can have up to 10% of calories from added sugars",
+        "The Dietary Guidelines recommend avoiding added sugars entirely for children under 2 years",
+        "Dental caries in toddlers are caused by natural fruit sugars, not added sugars",
+        "Fluoride supplementation eliminates the need to restrict sugars in young children"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. The 2020-2025 Dietary Guidelines specifically recommend zero added sugars for children under 2 -- complete avoidance, not just limitation. This is stricter than the less-than-10% guideline for older children and adults. Reasons: added sugars provide empty calories, feed acid-producing oral bacteria causing dental caries, and early sugar exposure shapes lifelong taste preferences. A is incorrect -- the limit for under-2 is zero. C is incorrect -- added sugars (not natural sugars in whole fruit) are the primary concern. D is incorrect -- fluoride helps enamel resist acid but does not negate sugar harm."
+    },
+    {
+      "id": 16,
+      "unit": "disease",
+      "topic": "Eyes -- Vitamin A Deficiency",
+      "type": "mc",
+      "q": "A child presents with difficulty seeing in dim light. If this deficiency is untreated, it can progress to:",
+      "opts": [
+        "Cataracts from oxidative lens damage",
+        "Total irreversible blindness (xerophthalmia) from corneal ulceration and scarring",
+        "Glaucoma from increased intraocular pressure",
+        "Macular degeneration from retinal photoreceptor loss"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Night blindness is an early, reversible sign of Vitamin A deficiency. Vitamin A is required to synthesize rhodopsin, the visual pigment in rod cells. As deficiency advances, it also damages the cornea and conjunctiva -- causing xerophthalmia (dry eye), corneal ulceration, corneal perforation, and irreversible scarring and blindness. Vitamin A deficiency is the leading cause of preventable blindness in children worldwide. A (cataracts) are from oxidative damage, not Vitamin A deficiency. C (glaucoma) involves intraocular pressure. D (macular degeneration) involves a different mechanism."
+    },
+    {
+      "id": 17,
+      "unit": "disease",
+      "topic": "Thyroid -- Iodine and Hypothyroidism",
+      "type": "mc",
+      "q": "A patient presents with fatigue, weight gain, cold intolerance, constipation, dry skin, and an enlarged thyroid. Lab: elevated TSH. This presentation is consistent with:",
+      "opts": [
+        "Hyperthyroidism from excess iodine intake",
+        "Hypothyroidism and goiter from iodine deficiency -- iodine is required for T3 and T4 synthesis",
+        "Iron-deficiency anemia causing reduced oxygen delivery",
+        "Cushing syndrome from excess cortisol"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Classic hypothyroidism with goiter. Iodine is an essential component of thyroid hormones T3 and T4. With insufficient iodine, the thyroid cannot produce adequate hormones; the pituitary increases TSH to stimulate the thyroid, causing enlargement (goiter). Hypothyroid symptoms (fatigue, weight gain, cold intolerance, constipation, dry skin, bradycardia) result from reduced metabolic rate. Iodized salt dramatically reduced goiter prevalence in the US after its introduction in the 1920s. A describes hyperthyroidism -- opposite symptoms. C and D are unrelated to iodine."
+    },
+    {
+      "id": 18,
+      "unit": "disease",
+      "topic": "Skin -- Scurvy / Vitamin C",
+      "type": "mc",
+      "q": "An elderly man living alone on crackers, tea, and canned meat presents with bleeding gums, multiple unexplained bruises, and wounds that have not healed for weeks. Which deficiency best explains this?",
+      "opts": [
+        "Vitamin K deficiency -- impaired clotting factor synthesis",
+        "Vitamin C deficiency -- impaired collagen synthesis causing vascular and connective tissue breakdown (scurvy)",
+        "Iron deficiency -- impaired oxygen delivery to healing tissues",
+        "Protein deficiency -- reduced albumin impairing immune function"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Classic scurvy from Vitamin C (ascorbic acid) deficiency. Vitamin C is essential for collagen synthesis -- required for hydroxylation of proline and lysine that give collagen its strength. Without collagen: blood vessel walls weaken (causing easy bruising and bleeding gums), wound healing fails (collagen is the structural scaffold for repair), and connective tissue deteriorates. Scurvy is now seen in elderly with limited diets, alcoholics, and food-insecure individuals. The diet described contains essentially no fresh fruits or vegetables. A (Vitamin K) primarily affects clotting, not wound healing and connective tissue. C and D can impair healing but don't produce the full picture."
+    },
+    {
+      "id": 19,
+      "unit": "disease",
+      "topic": "Skin -- Pellagra / Niacin",
+      "type": "mc",
+      "q": "A patient has a sun-sensitive scaly rash on exposed skin, chronic diarrhea, and confusion. The nurse recognizes this as Pellagra, caused by deficiency of:",
+      "opts": [
+        "Vitamin B1 (Thiamin)",
+        "Vitamin B3 (Niacin)",
+        "Vitamin B9 (Folate)",
+        "Vitamin B12 (Cobalamin)"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Pellagra is caused by Vitamin B3 (Niacin) deficiency and is remembered by the '4 D's': Dermatitis (sun-sensitive, scaly, hyperpigmented rash on exposed skin), Diarrhea, Dementia, and Death if untreated. Niacin functions as a coenzyme in energy metabolism (NAD/NADH). B1 deficiency (A) causes Beriberi and Wernicke-Korsakoff. B9 deficiency (C) causes megaloblastic anemia and neural tube defects. B12 deficiency (D) causes pernicious anemia and neurological damage."
+    },
+    {
+      "id": 20,
+      "unit": "disease",
+      "topic": "Skin -- Protein and Edema / Cirrhosis",
+      "type": "mc",
+      "q": "A patient with end-stage liver disease has serum albumin of 1.8 g/dL and significant ascites (abdominal fluid). The mechanism of this fluid accumulation is:",
+      "opts": [
+        "Excess sodium intake causing osmotic fluid retention in the peritoneal cavity",
+        "Low serum albumin reducing oncotic pressure, allowing fluid to leak from blood vessels into the peritoneal space",
+        "High portal pressure alone forces fluid into the abdomen regardless of protein status",
+        "Impaired lymphatic drainage from liver inflammation"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Albumin is the major plasma protein produced by the liver. It creates oncotic pressure -- the osmotic 'pull' keeping fluid inside blood vessels. When the liver is severely damaged and albumin production drops, oncotic pressure falls and fluid shifts from the intravascular space into surrounding tissues and body cavities, causing peripheral edema and ascites. Normal albumin is 3.5-5.0 g/dL; at 1.8 g/dL, this patient is critically low. While portal hypertension also contributes to ascites in cirrhosis, the oncotic pressure mechanism from hypoalbuminemia is the nutritional/protein mechanism. A and D are not the primary mechanisms."
+    },
+    {
+      "id": 21,
+      "unit": "disease",
+      "topic": "Skin -- B Vitamin Deficiency Signs",
+      "type": "sata",
+      "q": "Which of the following B vitamin deficiency-to-symptom pairings are CORRECT? Select all that apply.",
+      "opts": [
+        "Vitamin B2 (Riboflavin) -- cracks at corners of mouth (angular cheilitis) and inflamed tongue (glossitis)",
+        "Vitamin B3 (Niacin) -- sun-sensitive scaly rash on exposed skin (Pellagra dermatitis)",
+        "Vitamin B7 (Biotin) -- hair loss and brittle nails",
+        "Vitamin B9 (Folate) -- yellow-orange skin discoloration (carotenemia)",
+        "Vitamin B6 (Pyridoxine) -- seborrheic dermatitis and glossitis"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "Correct: A, B, C, E. Riboflavin (B2) deficiency causes ariboflavinosis: angular cheilitis (painful corner-of-mouth cracks), glossitis (inflamed magenta tongue), and skin rash (A). Niacin (B3) deficiency causes Pellagra with photosensitive, scaly, hyperpigmented dermatitis on sun-exposed areas (B). Biotin (B7) deficiency causes hair thinning and loss, brittle nails, and skin rash -- notably triggered by raw egg white consumption (avidin binds and blocks biotin absorption) (C). Pyridoxine (B6) deficiency causes seborrheic dermatitis, glossitis, and cheilosis (E). Option D is INCORRECT -- yellow-orange skin (carotenemia) is from excess beta-carotene intake, not folate deficiency. Folate deficiency causes megaloblastic anemia and neural tube defects."
+    },
+    {
+      "id": 22,
+      "unit": "disease",
+      "topic": "Liver & GI -- Alcohol",
+      "type": "mc",
+      "q": "The Dietary Guidelines for Americans classifies alcohol as which of the following?",
+      "opts": [
+        "A macronutrient providing 4 kcal/g, similar to carbohydrates",
+        "A non-nutrient energy source providing 7 kcal/g -- excess intake is linked to liver disease, cancer, and cardiovascular harm",
+        "A micronutrient that provides antioxidant protection in small doses",
+        "A carbohydrate derivative providing 9 kcal/g"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Alcohol (ethanol) provides 7 kcal/gram -- more than carbohydrates or protein (4 kcal/g) but less than fat (9 kcal/g). Despite contributing calories, alcohol is NOT a nutrient -- the body does not require it for any essential physiological function. It is metabolized as a toxin primarily by the liver. Excess intake is linked to liver disease (fatty liver to hepatitis to cirrhosis), multiple cancers, and cardiovascular harm. The DGA recommends no more than 1 drink/day for women, 2 drinks/day for men -- and less is better. A is wrong -- alcohol is not 4 kcal/g. C is wrong -- alcohol is not a micronutrient. D is wrong -- 9 kcal/g is fat."
+    },
+    {
+      "id": 23,
+      "unit": "disease",
+      "topic": "Liver & GI -- Hypochloremia / Bulimia",
+      "type": "mc",
+      "q": "A patient with a history of bulimia nervosa presents with weakness, muscle cramps, and metabolic alkalosis. Which electrolyte imbalance is most directly responsible for the metabolic alkalosis?",
+      "opts": [
+        "Hypokalemia from vomiting-induced potassium loss",
+        "Hypochloremia from loss of stomach acid (HCl) through purging -- loss of H+ and Cl- raises blood pH",
+        "Hyponatremia from dilutional effects of excess fluid intake",
+        "Hypocalcemia from poor dietary calcium intake"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Stomach acid is HCl (hydrochloric acid). Each HCl molecule contains one H+ (hydrogen ion) and one Cl- (chloride ion). Chronic purging loses large amounts of HCl. The loss of H+ directly raises blood pH (metabolic alkalosis -- excess base relative to acid). Simultaneously, chloride drops (hypochloremia). This is the classic metabolic abnormality in purging-type eating disorders: hypochloremic metabolic alkalosis, often with hypokalemia. A (hypokalemia) also occurs with vomiting and worsens the picture, but the direct cause of alkalosis is loss of H+ from HCl, not potassium loss. This combination in a young patient should prompt screening for purging behavior."
+    },
+    {
+      "id": 24,
+      "unit": "disease",
+      "topic": "Immune -- Zinc and Wound Healing",
+      "type": "mc",
+      "q": "A post-surgical patient's wound is not healing despite adequate protein intake. Serum zinc is low. Zinc deficiency impairs wound healing primarily because:",
+      "opts": [
+        "Zinc is required to synthesize Vitamin C, which is necessary for collagen production",
+        "Zinc is essential for protein synthesis, cell division, and immune function -- all directly required for tissue repair",
+        "Zinc deficiency causes anemia, reducing oxygen delivery to the healing wound",
+        "Zinc is needed to activate Vitamin K, which controls bleeding at the wound site"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Zinc is required for: (1) protein and DNA synthesis -- building new cells and collagen at the wound site; (2) cell division and proliferation -- healing requires rapid multiplication of fibroblasts and epithelial cells; and (3) immune function -- zinc supports neutrophil and macrophage activity that clear bacteria and debris. Zinc deficiency significantly slows all three healing stages: inflammatory, proliferative, and remodeling. Zinc deficiency is common after bariatric surgery and in malnutrition. A is incorrect -- zinc is not required for Vitamin C synthesis. C is incorrect -- zinc deficiency does not directly cause anemia. D is incorrect -- zinc does not activate Vitamin K."
+    },
+    {
+      "id": 25,
+      "unit": "disease",
+      "topic": "Immune -- Nutrition and Immunity",
+      "type": "sata",
+      "q": "Which of the following nutrients have documented roles in supporting immune system function? Select all that apply.",
+      "opts": [
+        "Vitamin A -- maintains mucosal barrier integrity and supports immune cell function",
+        "Vitamin C -- antioxidant that supports white blood cell function and collagen-based barriers",
+        "Vitamin D -- modulates immune cell activity and inflammatory responses",
+        "Zinc -- required for T-cell development and antibody production",
+        "Sodium -- primary driver of immune cell activation"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Correct: A, B, C, D. Vitamin A maintains mucous membrane integrity (GI and respiratory tracts) -- the first-line barrier against pathogens -- and supports immune cell differentiation; deficiency sharply increases infection susceptibility (A). Vitamin C protects immune cells from oxidative damage during inflammation and supports collagen-based tissue barriers (B). Vitamin D modulates both innate and adaptive immune responses; deficiency is linked to increased respiratory infections and impaired vaccine response (C). Zinc is essential for T-lymphocyte development, macrophage function, and antibody production; deficiency causes significant immune impairment (D). Sodium (E) is NOT a driver of immune activation -- it is an electrolyte for fluid balance and nerve function, not immune stimulation."
+    },
+    {
+      "id": 26,
+      "unit": "disease",
+      "topic": "Multi-System -- Fat-Soluble Vitamin Toxicity",
+      "type": "mc",
+      "q": "A patient takes very high-dose Vitamin A supplements for 'skin health' without medical supervision. The nurse's primary concern is:",
+      "opts": [
+        "Hypocalcemia from Vitamin A competing with calcium absorption",
+        "Toxicity with liver damage and increased intracranial pressure -- Vitamin A is fat-soluble and accumulates in fatty tissue and the liver",
+        "Renal stones from excess Vitamin A excreted through the kidneys",
+        "Anemia from Vitamin A interfering with iron absorption"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Vitamin A is fat-soluble (along with D, E, K) and accumulates in fatty tissue and the liver -- unlike water-soluble vitamins that are excreted in urine. Chronic high-dose supplementation leads to toxicity (hypervitaminosis A): nausea, vomiting, liver damage, dry scaly skin, hair loss, bone pain, and most dangerously, increased intracranial pressure (pseudotumor cerebri) causing headaches and vision changes. Vitamin A is also teratogenic in high doses. The safety margin between the RDA and UL is smaller for fat-soluble vitamins. A, C, and D are not mechanisms of Vitamin A toxicity."
+    },
+    {
+      "id": 27,
+      "unit": "disease",
+      "topic": "Multi-System -- Selenium / Keshan Disease",
+      "type": "mc",
+      "q": "Selenium deficiency is associated with which of the following conditions?",
+      "opts": [
+        "Pellagra -- a deficiency disease of skin, GI, and nervous system",
+        "Keshan disease -- a form of cardiomyopathy found in selenium-deficient populations",
+        "Wilson's disease -- a copper accumulation disorder",
+        "Wernicke-Korsakoff syndrome -- a thiamin deficiency neurological condition"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Selenium is a trace mineral that functions as an antioxidant -- it is a cofactor for glutathione peroxidase enzymes that neutralize reactive oxygen species. Selenium deficiency is associated with Keshan disease, a form of dilated cardiomyopathy first described in selenium-poor regions of China. It causes heart enlargement, heart failure, and arrhythmias. Selenium works synergistically with Vitamin E as part of the body's antioxidant defense. A (Pellagra) is Niacin deficiency. C (Wilson's disease) is a copper accumulation disorder -- not a deficiency. D (Wernicke-Korsakoff) is Thiamin deficiency."
+    },
+    {
+      "id": 28,
+      "unit": "disease",
+      "topic": "Multi-System -- Processed Meats and Cancer",
+      "type": "mc",
+      "q": "The WHO has classified processed meats (bacon, hot dogs, deli meats) as Group 1 carcinogens. This classification means:",
+      "opts": [
+        "There is only theoretical evidence from animal studies",
+        "There is sufficient evidence in humans that processed meats CAUSE cancer -- the same evidence level as tobacco smoking",
+        "Processed meats are mildly associated with cancer but evidence is weak",
+        "Processed meats cause cancer only when consumed with high saturated fat"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. The WHO International Agency for Research on Cancer (IARC) Group 1 classification means sufficient evidence exists in human studies that the substance CAUSES cancer. Processed meats are linked specifically to colorectal cancer. Red meat is Group 2A (probably carcinogenic). This is why Harvard's Healthy Eating Plate recommends limiting red meat and avoiding processed meats entirely. Note: Group 1 is about strength of evidence, not magnitude of risk -- the absolute risk from processed meats is lower than from tobacco, even sharing the same evidence category. A, C, and D misrepresent what Group 1 classification means."
+    },
+    {
+      "id": 29,
+      "unit": "disease",
+      "topic": "Multi-System -- Deficiency Disease Matching",
+      "type": "sata",
+      "q": "Which of the following nutrient deficiency-to-disease pairings are CORRECT? Select all that apply.",
+      "opts": [
+        "Vitamin C deficiency -- Scurvy (bleeding gums, poor wound healing)",
+        "Vitamin D deficiency -- Rickets in children / Osteomalacia in adults",
+        "Vitamin B1 (Thiamin) deficiency -- Pellagra (the 4 D's)",
+        "Iodine deficiency -- Goiter and hypothyroidism",
+        "Iron deficiency -- Most common nutritional deficiency worldwide; fatigue, pallor, tachycardia"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "Correct: A, B, D, E. Vitamin C deficiency causes Scurvy -- impaired collagen synthesis leading to bleeding gums, poor wound healing, perifollicular hemorrhages (A). Vitamin D deficiency causes Rickets in children (soft bowed bones) and Osteomalacia in adults (B). Iodine deficiency causes goiter and hypothyroidism, and cretinism in newborns of deficient mothers (D). Iron deficiency is the most common nutritional deficiency worldwide, causing iron-deficiency anemia: fatigue, pallor, tachycardia, shortness of breath (E). Option C is INCORRECT -- Pellagra is caused by Vitamin B3 (NIACIN) deficiency, NOT B1. Thiamin (B1) deficiency causes Beriberi and Wernicke-Korsakoff syndrome."
+    },
+    {
+      "id": 30,
+      "unit": "disease",
+      "topic": "Multi-System -- Vitamin D Toxicity",
+      "type": "mc",
+      "q": "A patient has been taking 5 times the RDA of Vitamin D daily for several months. The nurse monitors for which specific complication of Vitamin D toxicity?",
+      "opts": [
+        "Iron-deficiency anemia from Vitamin D competing with iron absorption",
+        "Hypercalcemia -- Vitamin D toxicity causes excess calcium absorption, leading to kidney stones, soft tissue calcification, and arrhythmias",
+        "Pellagra-like symptoms from Vitamin D depleting Niacin stores",
+        "Hyponatremia from Vitamin D-induced fluid retention"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Vitamin D is fat-soluble and accumulates in the body, which is why it has a Tolerable Upper Intake Level (UL). The toxicity mechanism is not direct vitamin toxicity but its downstream effect: Vitamin D dramatically increases calcium absorption in the gut. With chronically high Vitamin D, excessive calcium is absorbed, causing hypercalcemia. Symptoms: nausea, vomiting, constipation, excessive thirst and urination ('stones, bones, groans, and psychiatric moans'), kidney stones, calcification of blood vessels and soft tissues, and cardiac arrhythmias in severe cases. Fat-soluble vitamins have a smaller safety margin -- the RDA-to-UL gap is narrow. A, C, and D are not mechanisms of Vitamin D toxicity."
+    },
+    {
+      "id": 31,
+      "unit": "disease",
+      "topic": "Multi-System -- Nutritional Assessment",
+      "type": "mc",
+      "q": "A nurse wants to evaluate a patient's nutritional status over the PAST 2-3 DAYS specifically. Which laboratory value is MOST appropriate?",
+      "opts": [
+        "Serum albumin -- reflects protein stores over the past 20 days",
+        "Serum prealbumin (transthyretin) -- short half-life of 2-3 days makes it a sensitive indicator of acute nutritional changes",
+        "Complete blood count -- reflects overall health status",
+        "Serum glucose -- reflects immediate carbohydrate intake"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Serum prealbumin (transthyretin) has a half-life of only 2-3 days, making it a rapidly responsive indicator of acute changes in nutritional status and protein synthesis. It rises quickly with adequate nutrition and falls quickly with protein-calorie malnutrition or acute illness -- making it ideal for monitoring short-term treatment response. Serum albumin (A) has a half-life of approximately 18-20 days -- it reflects longer-term protein status but is slow to respond to acute changes. Normal albumin is 3.5-5.0 g/dL; below 3.5 indicates hypoalbuminemia. Both values are used clinically, but prealbumin is the better choice for monitoring short-term nutritional status."
+    },
+    {
+      "id": 32,
+      "unit": "disease",
+      "topic": "Multi-System -- Diet and Leading Causes of Death",
+      "type": "sata",
+      "q": "According to the chapter, nutrition is directly associated with which of the following leading causes of death in the United States? Select all that apply.",
+      "opts": [
+        "Heart disease",
+        "Accidents and injuries",
+        "Cancer",
+        "Diabetes",
+        "Stroke"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Correct: A, C, D, E. The chapter states nutrition is associated with four of the top ten leading causes of death in the US: heart disease, cancer, diabetes, and stroke. Heart disease (A) is linked to saturated fat, trans fat, sodium, and excess calories. Cancer (C) is linked to processed meats, red meat, alcohol, and excess body fat. Diabetes (D) is strongly linked to excess added sugars, refined carbohydrates, and obesity. Stroke (E) is linked to hypertension from excess sodium and atherosclerosis from unhealthy fat. Accidents and injuries (B) result from trauma, not nutritional status."
+    },
+    {
+      "id": 33,
+      "unit": "disease",
+      "topic": "Multi-System -- Magnesium Deficiency",
+      "type": "mc",
+      "q": "A patient with type 2 diabetes and chronic alcoholism has a serum magnesium of 1.1 mEq/L (normal: 1.5-2.5 mEq/L). The nurse anticipates which complications?",
+      "opts": [
+        "Polyuria and polydipsia from osmotic diuresis",
+        "Muscle cramps, cardiac arrhythmias, and worsened hypertension -- magnesium is required for over 300 enzymatic reactions including neuromuscular and cardiac function",
+        "Peripheral neuropathy from magnesium blocking Vitamin B12 nerve uptake",
+        "Goiter from magnesium deficiency impairing thyroid hormone synthesis"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Magnesium is required as a cofactor for over 300 enzymatic reactions -- including all ATP reactions, DNA/protein synthesis, and neuromuscular function. Hypomagnesemia causes: muscle cramps and tremors, cardiac arrhythmias (including Torsades de Pointes with prolonged QT), and hypertension (magnesium acts as a natural calcium channel blocker in vascular smooth muscle). Chronic alcoholism and diabetes are the two most common causes -- alcohol causes renal Mg wasting; hyperglycemia causes osmotic diuresis wasting Mg in urine. Critical nursing point: hypomagnesemia causes REFRACTORY hypokalemia -- potassium will not normalize until magnesium is replaced first. A, C, and D are not consequences of hypomagnesemia."
+    },
+    {
+      "id": 34,
+      "unit": "disease",
+      "topic": "Multi-System -- Fluoride",
+      "type": "mc",
+      "q": "A patient questions why fluoride is added to drinking water. The nurse correctly explains:",
+      "opts": [
+        "Fluoride is added to treat iron-deficiency anemia in communities with low dietary iron",
+        "Fluoride incorporates into tooth enamel forming fluorapatite, making it harder and more resistant to acid attack from bacteria -- dramatically reducing dental caries rates",
+        "Fluoride prevents osteoporosis by increasing calcium absorption",
+        "Fluoride prevents thyroid disease in iodine-deficient communities"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Fluoride incorporates into the crystalline structure of tooth enamel, converting hydroxyapatite into the more acid-resistant fluorapatite. Oral bacteria metabolize sugars and produce lactic acid that demineralizes enamel causing cavities. Fluorapatite resists this acid attack far better than regular enamel, dramatically reducing dental caries. Community water fluoridation is listed by the CDC as one of the 10 great public health achievements of the 20th century, reducing tooth decay by approximately 25% in children and adults. A is incorrect -- fluoride does not treat anemia. C is incorrect -- Vitamin D and calcium prevent osteoporosis. D is incorrect -- iodine prevents thyroid disease, not fluoride."
+    },
+    {
+      "id": 35,
+      "unit": "disease",
+      "topic": "Multi-System -- Wilson's Disease / Copper",
+      "type": "mc",
+      "q": "Wilson's disease is a rare genetic disorder involving copper metabolism. Which statement correctly describes it?",
+      "opts": [
+        "Wilson's disease is caused by copper deficiency and is treated by copper supplementation",
+        "Wilson's disease involves pathological copper ACCUMULATION in the liver, brain, and eyes -- the opposite of copper deficiency",
+        "Wilson's disease is the same as hemochromatosis, which involves iron accumulation",
+        "Wilson's disease is caused by selenium toxicity interfering with copper metabolism"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct: B. Wilson's disease is an autosomal recessive genetic disorder of copper transport (ATP7B gene mutation) causing copper to accumulate in the liver (hepatotoxicity), brain (neurological symptoms), and corneas (Kayser-Fleischer rings -- golden-brown rings visible at the corneal margins). It is the OPPOSITE of copper deficiency -- it is a copper EXCESS/ACCUMULATION disorder. Treatment includes copper-chelating agents (penicillamine, trientine) and zinc supplementation (zinc blocks copper absorption in the gut). A is incorrect -- Wilson's requires REDUCING copper, not supplementing. C is incorrect -- hemochromatosis is an IRON accumulation disorder. D is incorrect."
+    }
+  ]
+}

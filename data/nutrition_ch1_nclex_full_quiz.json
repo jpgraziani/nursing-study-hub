@@ -1,0 +1,711 @@
+{
+  "id": "nutrition-ch1-nclex-full",
+  "class": "nutrition",
+  "module": 1,
+  "title": "Chapter 1 — Full Coverage NCLEX Quiz",
+  "description": "39-question comprehensive NCLEX-style quiz covering nutrition foundations, dietary guidelines, health definitions, and nutrient roles.",
+  "topics": [
+    "WHO health definition",
+    "dietary guidelines",
+    "nutrient density",
+    "macronutrients",
+    "micronutrients",
+    "energy balance",
+    "MyPlate",
+    "food labels",
+    "DRI",
+    "EAR",
+    "RDA",
+    "UL",
+    "AMDR",
+    "phytochemicals",
+    "functional foods",
+    "nutritional genomics"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "intro",
+      "topic": "Nutrition & Health",
+      "type": "mc",
+      "q": "According to the World Health Organization (WHO), health is BEST defined as:",
+      "opts": [
+        "The absence of disease or infirmity",
+        "A state of complete physical well-being",
+        "A state of complete physical, mental, and social well-being — not merely the absence of disease",
+        "Optimal functioning of all major organ systems"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The WHO defines health as 'a state of complete physical, mental, and social well-being and not merely the absence of disease or infirmity.' This is foundational for holistic nursing. Nutrition affects all three dimensions — physical, mental (mood, cognition), and social (food culture, eating behaviors). Simply treating disease without addressing diet, mental health, and social factors is incomplete care."
+    },
+    {
+      "id": 2,
+      "unit": "intro",
+      "topic": "Nutrition & Health",
+      "type": "mc",
+      "q": "Nutrition is associated with how many of the top 10 leading causes of death in the United States?",
+      "opts": [
+        "Two: heart disease and cancer",
+        "Three: heart disease, cancer, and stroke",
+        "Four: heart disease, cancer, diabetes, and stroke",
+        "Six of the top ten causes"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Nutrition is associated with FOUR of the top 10 leading causes of death in the US: heart disease, cancer, diabetes, and stroke. This is why nutrition assessment is a core nursing responsibility across virtually every clinical setting — from the ICU to the outpatient clinic."
+    },
+    {
+      "id": 3,
+      "unit": "intro",
+      "topic": "Nutrition & Health",
+      "type": "mc",
+      "q": "A 2019 study found that depressed young adults who followed a Mediterranean-style eating pattern for 3 weeks had decreased depression. Researchers proposed two mechanisms. What were they?",
+      "opts": [
+        "Increased caloric intake and improved sleep quality",
+        "Decreased systemic inflammation and positive changes in the gut microbiome",
+        "Higher protein intake and increased Vitamin D levels",
+        "Reduced alcohol consumption and regular exercise"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The two proposed mechanisms are: (1) decreased systemic inflammation — unhealthy diets promote chronic inflammation, which is linked to depression; and (2) positive changes in the gut microbiome — the gut-brain axis connects gut bacteria to brain chemistry and mood. This is still emerging science, but it reinforces the importance of asking about diet even in mental health contexts."
+    },
+    {
+      "id": 4,
+      "unit": "intro",
+      "topic": "Nutrition & Health",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which of the following are recognized factors that drive individual food choices?",
+      "opts": [
+        "Taste, texture, and appearance of food",
+        "Economic access to food",
+        "Cultural background and religious practices",
+        "Only physiological hunger signals",
+        "Advertising and peer/social influence",
+        "Emotional state and personal habits"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "Food choices are driven by many factors including taste/texture/appearance, economics (food deserts), culture and religion, advertising, social pressure, and emotions. Food choices are NOT driven solely by physiological hunger — this is why simply telling patients to 'eat healthier' is inadequate without addressing the real barriers they face."
+    },
+    {
+      "id": 5,
+      "unit": "intro",
+      "topic": "Nutrition & Health",
+      "type": "mc",
+      "q": "A patient reports feeling full for a long time after eating a high-protein, high-fiber meal. The nutritional term for this prolonged feeling of fullness is:",
+      "opts": [
+        "Anorexia",
+        "Homeostasis",
+        "Satiety",
+        "Metabolism"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Satiety is the feeling of fullness and satisfaction that follows eating. High-fiber and high-protein foods slow digestion, extending satiety and helping manage appetite. This is clinically relevant for weight management counseling — choosing meals that maximize satiety helps patients eat less overall without feeling deprived."
+    },
+    {
+      "id": 6,
+      "unit": "intro",
+      "topic": "Introduction to Molecules",
+      "type": "mc",
+      "q": "Which four elements make up the bulk of all living organisms and are found in all macronutrients?",
+      "opts": [
+        "Sodium, potassium, calcium, and iron",
+        "Hydrogen, carbon, nitrogen, and oxygen",
+        "Carbon, sulfur, phosphorus, and magnesium",
+        "Oxygen, iron, zinc, and iodine"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Hydrogen (H), Carbon (C), Nitrogen (N), and Oxygen (O) — remembered as CHON — make up the bulk of all living things. These four elements form the backbone of all macronutrients. Carbon and hydrogen must BOTH be present for a nutrient to be classified as organic. Nitrogen is the element that makes proteins unique among macronutrients."
+    },
+    {
+      "id": 7,
+      "unit": "intro",
+      "topic": "Introduction to Molecules",
+      "type": "mc",
+      "q": "For most biological elements (carbon, nitrogen, oxygen), the outer electron shell is considered stable when it contains how many electrons?",
+      "opts": [
+        "2 electrons",
+        "4 electrons",
+        "6 electrons",
+        "8 electrons"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "The second and third electron shells are stable when filled with 8 electrons. The first shell is stable with 2 electrons. This 'rule of 8' (the octet rule) drives chemical bonding — atoms bond with other atoms to achieve full outer shells. This is why carbon (with 4 outer electrons) forms 4 bonds, making it the versatile backbone of all biological molecules."
+    },
+    {
+      "id": 8,
+      "unit": "intro",
+      "topic": "Introduction to Molecules",
+      "type": "mc",
+      "q": "When two atoms share electrons so both atoms achieve stable, filled outer shells, this is called a:",
+      "opts": [
+        "Ionic bond",
+        "Hydrogen bond",
+        "Covalent bond",
+        "Peptide bond"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "A covalent bond forms when atoms share electrons to fill their outer shells. Covalent bonds are the strongest, most stable bonds in biology — they hold together all macronutrient molecules (carbohydrates, lipids, proteins). When these bonds are broken during digestion and metabolism, the stored energy is released and used to power cellular processes."
+    },
+    {
+      "id": 9,
+      "unit": "intro",
+      "topic": "Introduction to Molecules",
+      "type": "mc",
+      "q": "The three classes of biological macromolecules studied in nutrition are:",
+      "opts": [
+        "Vitamins, minerals, and water",
+        "Glucose, fatty acids, and amino acids",
+        "Carbohydrates, lipids, and proteins",
+        "Fiber, starch, and glycogen"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The three biological macromolecules (macronutrients) are carbohydrates, lipids, and proteins. They are formed when atoms of C, H, O, and N bond together and provide the body's building materials and energy. Vitamins and minerals are micronutrients. Glucose, fatty acids, and amino acids are the breakdown products (monomers) of macronutrients, not the macronutrients themselves."
+    },
+    {
+      "id": 10,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "Which of the following correctly lists ALL six classes of nutrients?",
+      "opts": [
+        "Carbohydrates, proteins, fats, vitamins, minerals, and fiber",
+        "Carbohydrates, lipids, proteins, water, vitamins, and minerals",
+        "Carbohydrates, lipids, proteins, phytochemicals, vitamins, and minerals",
+        "Macronutrients, micronutrients, water, fiber, antioxidants, and phytochemicals"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The six classes of nutrients are: carbohydrates, lipids, proteins, water, vitamins, and minerals. Fiber is a type of carbohydrate — not a separate class. Phytochemicals are not technically nutrients — they are non-nutrient plant compounds. This list is absolutely foundational. Memorize it."
+    },
+    {
+      "id": 11,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which of the following are classified as MACRONUTRIENTS?",
+      "opts": [
+        "Carbohydrates",
+        "Vitamins",
+        "Lipids (fats)",
+        "Minerals",
+        "Proteins",
+        "Water"
+      ],
+      "correct": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "Macronutrients are needed in large amounts: carbohydrates, lipids, proteins, and water. Water is a macronutrient because we require it in large quantities, but unlike the other three it yields no energy. Vitamins and minerals are micronutrients — needed in much smaller amounts. This distinction matters clinically for calculating caloric intake and nutritional assessment."
+    },
+    {
+      "id": 12,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "Which of the following correctly states the caloric yield per gram of the three energy-yielding macronutrients?",
+      "opts": [
+        "Carbohydrates = 9 kcal/g; proteins = 4 kcal/g; fats = 4 kcal/g",
+        "Carbohydrates = 4 kcal/g; proteins = 4 kcal/g; fats = 9 kcal/g",
+        "All three macronutrients provide 4 kcal/g equally",
+        "Fats = 4 kcal/g; proteins = 7 kcal/g; carbohydrates = 9 kcal/g"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Carbohydrates = 4 kcal/g, Proteins = 4 kcal/g, Fats = 9 kcal/g. Fat is the most energy-dense macronutrient — more than double carbs or protein. Alcohol provides 7 kcal/g but is NOT a nutrient. These values are essential for calculating caloric intake from Nutrition Facts labels and for designing nutrition care plans."
+    },
+    {
+      "id": 13,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "Which cell types rely SOLELY on glucose (carbohydrates) for energy under normal conditions?",
+      "opts": [
+        "Liver cells and adipocytes",
+        "CNS cells and red blood cells",
+        "Skeletal muscle and cardiac cells",
+        "Kidney tubular cells and pancreatic beta cells"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The brain/CNS and red blood cells rely exclusively on glucose for energy — they cannot effectively use fatty acids. This is why hypoglycemia rapidly impairs neurological function (confusion, dizziness, seizures) and why blood glucose maintenance is critical in nursing care. It also explains why severely carbohydrate-restricted diets can impair cognitive function."
+    },
+    {
+      "id": 14,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "Lipids differ chemically from carbohydrates in one critical way. Which correctly identifies this difference?",
+      "opts": [
+        "Lipids contain nitrogen; carbohydrates do not",
+        "Lipids are insoluble in water; carbohydrates are water-soluble",
+        "Lipids provide 4 kcal/g; carbohydrates provide 9 kcal/g",
+        "Lipids are inorganic; carbohydrates are organic"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Both lipids and carbohydrates contain carbon, hydrogen, and oxygen — but lipids are INSOLUBLE in water while carbohydrates are water-soluble. This is why fats require special transport mechanisms (lipoproteins like LDL and HDL) in the bloodstream, and why bile acids are needed to emulsify fat during digestion. Both are organic nutrients."
+    },
+    {
+      "id": 15,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "Proteins are chemically unique among macronutrients because they contain which additional element not found in carbohydrates or fats?",
+      "opts": [
+        "Phosphorus",
+        "Sulfur",
+        "Nitrogen",
+        "Iron"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Proteins contain carbon, oxygen, hydrogen, AND nitrogen — the nitrogen comes from amino groups (-NH2) in every amino acid. Carbohydrates and fats contain only C, H, and O. The presence of nitrogen is what makes protein metabolism unique: breaking down excess protein produces nitrogenous waste (urea), which the kidneys must excrete. This is critical in kidney disease — damaged kidneys struggle to excrete urea, so protein intake must be monitored."
+    },
+    {
+      "id": 16,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which nutrients are classified as ORGANIC?",
+      "opts": [
+        "Carbohydrates",
+        "Water",
+        "Lipids",
+        "Minerals",
+        "Proteins",
+        "Vitamins"
+      ],
+      "correct": [
+        0,
+        2,
+        4,
+        5
+      ],
+      "rationale": "Organic nutrients contain BOTH carbon AND hydrogen: carbohydrates, lipids, proteins, and vitamins. Water contains hydrogen and oxygen but NOT carbon — it is inorganic. Minerals are inorganic elements in their simplest form. Organic nutrients can be created by living organisms and can be destroyed by heat, light, or oxidation — which is why cooking methods affect nutritional value."
+    },
+    {
+      "id": 17,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "A nurse explains that minerals cannot be destroyed by cooking or heat. What is the correct reason for this?",
+      "opts": [
+        "Minerals are organic molecules that are heat-stable",
+        "Minerals are inorganic — already in their simplest elemental form; they cannot be broken down further",
+        "Minerals are water-soluble and simply dissolve into cooking water",
+        "Minerals are stored in fat tissue and protected from heat degradation"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Minerals are inorganic elements already in their simplest chemical form. They cannot be created or destroyed. They are absorbed essentially 'as-is' from food, used for their functions, then excreted. In contrast, organic nutrients (vitamins especially) can be destroyed by heat, light, and oxygen. Vitamin C, for example, is significantly degraded by prolonged cooking."
+    },
+    {
+      "id": 18,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "A patient taking large doses of supplemental Vitamin A and Vitamin D concerns the nurse MOST because:",
+      "opts": [
+        "These water-soluble vitamins will be rapidly excreted in urine",
+        "These fat-soluble vitamins accumulate in tissue with a smaller margin between RDA and UL — making toxicity more likely",
+        "High doses of these vitamins directly precipitate kidney stones",
+        "Fat-soluble vitamins cannot be absorbed without a high-fat diet"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Vitamins A, D, E, and K are fat-soluble — stored in fatty tissue and the liver rather than excreted in urine. Because they accumulate, the margin between the RDA and UL is SMALLER than for water-soluble vitamins, making toxicity from excessive supplementation more likely. Vitamin D toxicity causes hypercalcemia (excess calcium in blood); Vitamin A toxicity can cause liver damage, bone abnormalities, and birth defects. Always assess supplement use!"
+    },
+    {
+      "id": 19,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "Which vitamin deficiency causes pellagra — characterized by the 4 D's: Diarrhea, Dermatitis, Dementia, and Death?",
+      "opts": [
+        "Vitamin C (ascorbic acid)",
+        "Vitamin B12 (cobalamin)",
+        "Vitamin B3 (niacin)",
+        "Vitamin D (cholecalciferol)"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Niacin (Vitamin B3) deficiency causes pellagra. The 4 D's are: Diarrhea, Dermatitis (rash in sun-exposed areas), Dementia, and Death if untreated. It was historically common in populations relying on corn without traditional lime processing (nixtamalization). Vitamin C deficiency = scurvy. B12 deficiency = pernicious anemia + neurological damage. Vitamin D deficiency = rickets (children) or osteomalacia (adults)."
+    },
+    {
+      "id": 20,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "Folate (Vitamin B9) is critically important in early pregnancy. Why are women of childbearing age advised to take 400 mcg/day even BEFORE confirming pregnancy?",
+      "opts": [
+        "Because folate is stored in fat tissue and must be built up in advance",
+        "Because neural tube closure occurs in the first 28 days — often before a woman knows she is pregnant",
+        "Because folate is only absorbed during the first trimester",
+        "Because folate prevents morning sickness only if taken before conception"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Neural tube defects (spina bifida, anencephaly) develop when the neural tube fails to close properly — and this closure happens within the first 28 days of pregnancy, typically before a woman knows she is pregnant. Because folate is water-soluble (not stored in significant amounts), it must be consumed regularly. This is why folic acid fortification of grain products has been mandatory in the US since 1998 and why all women of childbearing age should take a daily supplement containing 400 mcg folic acid."
+    },
+    {
+      "id": 21,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "A patient with hypothyroidism asks about dietary minerals. Which trace mineral is essential for thyroid hormone synthesis?",
+      "opts": [
+        "Iron",
+        "Zinc",
+        "Chromium",
+        "Iodine"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Iodine is required for the synthesis of thyroid hormones T3 (triiodothyronine) and T4 (thyroxine), which regulate metabolism, growth, and development. Iodine deficiency causes hypothyroidism and goiter (enlarged thyroid gland). Iodized salt and seafood are primary dietary sources. This is especially important for pregnant women — iodine deficiency during pregnancy can cause cretinism (severe intellectual disability) in the newborn."
+    },
+    {
+      "id": 22,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "Which major mineral is responsible for maintaining fluid balance, transmitting nerve impulses, AND is the primary driver of hypertension when consumed in excess?",
+      "opts": [
+        "Potassium",
+        "Calcium",
+        "Sodium",
+        "Magnesium"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Sodium is essential for fluid balance, nerve impulse transmission, and muscle contraction — but excess sodium raises blood pressure by causing the body to retain water, increasing blood volume and vascular pressure. The DGA recommends limiting sodium to less than 2,300 mg/day. Most Americans consume significantly more, largely from processed and restaurant foods. Sodium reduction is one of the most impactful dietary interventions for hypertension management."
+    },
+    {
+      "id": 23,
+      "unit": "intro",
+      "topic": "Classification of Nutrients",
+      "type": "mc",
+      "q": "Iron-deficiency anemia is the most common nutritional deficiency worldwide. Which trace mineral function explains why iron deficiency causes fatigue and pallor?",
+      "opts": [
+        "Iron is needed for insulin production",
+        "Iron carries oxygen in hemoglobin within red blood cells",
+        "Iron activates Vitamin D for calcium absorption",
+        "Iron is required for thyroid hormone production"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Iron is a critical component of hemoglobin — the protein in red blood cells that carries oxygen from the lungs to all tissues. When iron is deficient, the body cannot produce adequate functional hemoglobin, reducing oxygen delivery to tissues and causing: fatigue, pallor, tachycardia (heart working harder to compensate), shortness of breath, and decreased exercise tolerance. Vitamin C enhances non-heme iron absorption and is often recommended alongside iron supplements."
+    },
+    {
+      "id": 24,
+      "unit": "intro",
+      "topic": "Dietary Reference Intakes",
+      "type": "mc",
+      "q": "The Dietary Reference Intakes (DRIs) are intended for which population?",
+      "opts": [
+        "All people worldwide regardless of health status",
+        "Generally healthy people in the US and Canada",
+        "Americans only, including those with chronic diseases",
+        "All populations globally including developing nations"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "DRIs are developed by the National Academies of Sciences, Engineering, and Medicine specifically for GENERALLY HEALTHY people in the US and Canada. People with chronic conditions (kidney disease, liver disease, diabetes) may have significantly different nutrient requirements and need individualized guidance from a registered dietitian. This is an important nursing consideration when using DRI values to counsel patients."
+    },
+    {
+      "id": 25,
+      "unit": "intro",
+      "topic": "Dietary Reference Intakes",
+      "type": "mc",
+      "q": "The Estimated Average Requirement (EAR) is the amount of a nutrient that meets the needs of what percentage of the healthy population?",
+      "opts": [
+        "25%",
+        "50%",
+        "75%",
+        "97-98%"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The EAR meets the needs of exactly 50% of the population — half will fall short of their actual requirement at this intake level. This is why the EAR is NOT used as an individual recommendation. Its primary purpose is as the mathematical foundation for calculating the RDA. Using the EAR as a population recommendation would leave half the population nutrient-deficient."
+    },
+    {
+      "id": 26,
+      "unit": "intro",
+      "topic": "Dietary Reference Intakes",
+      "type": "mc",
+      "q": "The RDA is set higher than the EAR to cover 97-98% of the population. How is the RDA mathematically calculated from the EAR?",
+      "opts": [
+        "RDA = EAR × 2",
+        "RDA = EAR + 2 standard deviations",
+        "RDA = EAR + 50% of the EAR value",
+        "RDA = EAR, adjusted for age and sex only"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The RDA = EAR + 2 standard deviations. Adding 2 standard deviations above the average (EAR) extends the coverage to include 97.5% of the population on the bell curve. This is why the RDA is the gold-standard individual daily intake target — if you're consuming at or above the RDA, you are very likely meeting your body's actual requirement for that nutrient."
+    },
+    {
+      "id": 27,
+      "unit": "intro",
+      "topic": "Dietary Reference Intakes",
+      "type": "mc",
+      "q": "Which DRI value is used as the intake goal for infants, since insufficient research exists to establish an EAR or RDA for this age group?",
+      "opts": [
+        "Estimated Energy Requirement (EER)",
+        "Tolerable Upper Intake Level (UL)",
+        "Adequate Intake (AI)",
+        "Acceptable Macronutrient Distribution Range (AMDR)"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "All DRI values for infants are Adequate Intakes (AIs), derived from the average nutrient content of human breast milk. The AI is used whenever insufficient scientific evidence exists to establish an EAR (and therefore an RDA). It is based on observing what healthy populations actually consume. The AI is less precise than the RDA but represents our best available estimate of adequacy."
+    },
+    {
+      "id": 28,
+      "unit": "intro",
+      "topic": "Dietary Reference Intakes",
+      "type": "mc",
+      "q": "A nurse counsels a patient taking high-dose supplements. Which statement about the Tolerable Upper Intake Level (UL) is MOST accurate?",
+      "opts": [
+        "The UL represents the optimal daily intake for maximum health benefits",
+        "A nutrient with no established UL is completely safe in any amount",
+        "The UL is the highest level of continuous intake unlikely to cause adverse health effects",
+        "The UL and RDA are the same value for most nutrients"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The UL is the highest level of CONTINUOUS daily intake that is unlikely to cause adverse effects in almost all healthy individuals — it is a safety ceiling, not a target. If a nutrient lacks a UL, this means toxicity data is insufficient — NOT that it's safe in unlimited amounts. Nurses should advise patients not to exceed the UL without physician guidance, especially for fat-soluble vitamins (A, D, E, K) which have smaller margins of safety."
+    },
+    {
+      "id": 29,
+      "unit": "intro",
+      "topic": "Dietary Reference Intakes",
+      "type": "mc",
+      "q": "The AMDR for carbohydrates is 45-65% of total calories. A patient follows a strict low-carbohydrate diet with only 8% of calories from carbs. What is TRUE about this diet?",
+      "opts": [
+        "8% carbs falls within the AMDR if protein is adequate",
+        "This falls short of the carbohydrate AMDR and necessarily forces fat and/or protein above their AMDRs",
+        "AMDR concerns only apply if total calories exceed 2,000/day",
+        "The AMDR does not apply to therapeutic low-carbohydrate diets"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The AMDR for carbohydrates is 45-65% of total calories. At 8%, this is far below the recommended range. Because all three macronutrients must sum to 100% of calories, reducing carbs to 8% mathematically forces fat (AMDR: 20-35%) and/or protein (AMDR: 10-35%) above their recommended ranges. Not meeting AMDR guidelines is associated with increased risk of health complications — though some therapeutic diets are intentionally designed this way under medical supervision."
+    },
+    {
+      "id": 30,
+      "unit": "intro",
+      "topic": "Dietary Reference Intakes",
+      "type": "mc",
+      "q": "Why is the EER (Estimated Energy Requirement) set at the AVERAGE caloric need rather than at the 97-98th percentile like the RDA?",
+      "opts": [
+        "Because calories are harder to measure than nutrients",
+        "Because if EER covered 97-98% of people, most would consume far more calories than needed, causing widespread weight gain",
+        "Because caloric needs don't vary between individuals",
+        "Because the FDA, not the National Academies, sets caloric recommendations"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Unlike most nutrients — where the body can store or excrete excess — excess calories are stored as body fat. If the EER were set to cover 97-98% of the population (like the RDA), it would dramatically overestimate most people's needs, and following it would cause significant weight gain for the majority. This is a fundamental difference: for nutrients, consuming somewhat above the RDA is generally fine; for calories, consistent excess leads directly to obesity."
+    },
+    {
+      "id": 31,
+      "unit": "intro",
+      "topic": "Food Labels",
+      "type": "mc",
+      "q": "A patient eats an entire can of vegetable soup. The label shows 680mg sodium per 1-cup serving; the can contains 2 servings. What is the patient's total sodium intake, and what percentage of the recommended daily limit does this represent?",
+      "opts": [
+        "680mg = 29% DV",
+        "1,360mg = approximately 56% DV",
+        "1,360mg = approximately 29% DV",
+        "680mg = 14% DV"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "680mg × 2 servings = 1,360mg total sodium. The DGA recommends <2,300mg/day (100% DV). 1,360 ÷ 2,300 ≈ 59%, approximately 56% DV (label math may round slightly). This is a critical teaching point: ALWAYS check the serving size first and multiply all values by the number of servings actually consumed. For a hypertensive patient, this one can of soup consumes over half their daily sodium budget."
+    },
+    {
+      "id": 32,
+      "unit": "intro",
+      "topic": "Food Labels",
+      "type": "mc",
+      "q": "The ingredients list on a cereal box reads: Sugar, Whole Wheat Flour, Corn Starch, Salt... What does this ingredient order tell the nurse?",
+      "opts": [
+        "Whole wheat flour is the primary ingredient because it is most nutritious",
+        "Sugar is the most prevalent ingredient by weight — more than the whole wheat flour",
+        "The cereal is nutrient-dense because it contains whole wheat flour",
+        "Salt content is highest because it appears fourth"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Ingredients are listed from MOST to LEAST prevalent by WEIGHT. Sugar listed first means sugar is the single largest ingredient in this cereal by weight — more than the whole wheat flour. This is a practical label-reading skill to teach patients and is important for identifying products with excessive added sugars, regardless of the health claims on the front of the box."
+    },
+    {
+      "id": 33,
+      "unit": "intro",
+      "topic": "Food Labels",
+      "type": "mc",
+      "q": "A food label shows 45% DV for iron per serving. How should the nurse interpret this for a patient with iron-deficiency anemia?",
+      "opts": [
+        "The food is low in iron (5% DV or less = low)",
+        "The food is a good source of iron (10-19% DV)",
+        "The food is high in iron — one serving provides nearly half the daily requirement",
+        "45% DV means the patient only needs 55% more iron today"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Per FDA %DV guidelines: 5% or less = low; 10-19% = good source; 20% or more = HIGH. At 45% DV, this food is an excellent source of iron — one serving provides nearly half the daily recommended amount. For a patient with iron-deficiency anemia, this is a valuable food choice. The nurse should also teach that Vitamin C consumed alongside iron-rich foods significantly enhances absorption."
+    },
+    {
+      "id": 34,
+      "unit": "intro",
+      "topic": "Food Labels",
+      "type": "mc",
+      "q": "A yogurt label on the FRONT reads 'Supports Immune and Digestive Health.' This is an example of what type of food label claim?",
+      "opts": [
+        "An authorized health claim with strong scientific backing",
+        "A qualified health claim with moderate evidence",
+        "A structure-function claim — vague, not disease-specific, not specifically FDA-approved",
+        "A nutrient content claim regulated by specific FDA standards"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "'Supports immune and digestive health' is a structure-function claim — vague statements about nutrients playing a role in normal body processes. Structure-function claims CANNOT state that a food will treat, cure, or prevent any disease. They are allowed by the FDA but not specifically reviewed or approved, as long as the language stays vague. This contrasts with authorized health claims (e.g., the oatmeal/cholesterol claim), which require strong scientific evidence and specific FDA approval."
+    },
+    {
+      "id": 35,
+      "unit": "intro",
+      "topic": "Healthy Diet Tools",
+      "type": "mc",
+      "q": "According to the 2020-2025 Dietary Guidelines, the recommended daily limit for sodium is:",
+      "opts": [
+        "1,000 mg/day",
+        "1,500 mg/day",
+        "2,300 mg/day",
+        "3,500 mg/day"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The DGA recommends less than 2,300 mg/day of sodium for adults and even less for children under age 14. Most Americans consume significantly more — the average is approximately 3,400 mg/day. Excess sodium is a primary driver of hypertension, which affects one-third of American adults. The main sources are processed foods, restaurant meals, and canned goods — not the salt shaker."
+    },
+    {
+      "id": 36,
+      "unit": "intro",
+      "topic": "Healthy Diet Tools",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: According to the 2020-2025 Dietary Guidelines for Americans, which of the following should be LIMITED in the diet?",
+      "opts": [
+        "Added sugars above 10% of daily calories",
+        "Whole grains",
+        "Saturated fat above 10% of daily calories",
+        "Sodium above 2,300mg/day",
+        "Seafood",
+        "Alcoholic beverages beyond 1 drink/day for women or 2 drinks/day for men"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "The DGA recommends limiting: added sugars (<10% of calories), saturated fat (<10% of calories), sodium (<2,300mg/day), and alcohol (≤1 drink/day women, ≤2 drinks/day men — less is better for health). Whole grains and seafood are ENCOURAGED — the DGA recommends at least 8 oz of seafood per week. Whole grains provide fiber and micronutrients that most Americans are deficient in."
+    },
+    {
+      "id": 37,
+      "unit": "intro",
+      "topic": "Healthy Diet Tools",
+      "type": "mc",
+      "q": "A patient is comparing MyPlate and the Harvard Healthy Eating Plate. Which recommendation from the Harvard Healthy Eating Plate DIFFERS from USDA MyPlate?",
+      "opts": [
+        "Fill half the plate with fruits and vegetables",
+        "At least half of grains should be whole grains",
+        "Limit dairy to 1-2 servings/day instead of MyPlate's recommended 3 cups/day",
+        "Include a variety of protein sources"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "A key difference: MyPlate recommends 3 cups of dairy/day; Harvard's HEP recommends limiting dairy to 1-2 servings/day and encourages non-dairy calcium sources (collards, bok choy, fortified soy milk). HEP also explicitly advises limiting red meat and AVOIDING processed meats (bacon, cold cuts), which MyPlate doesn't mention. HEP is based purely on nutritional science; MyPlate may reflect industry lobbying. Both fill half the plate with fruits and vegetables."
+    },
+    {
+      "id": 38,
+      "unit": "intro",
+      "topic": "Healthy Diet Tools",
+      "type": "mc",
+      "q": "Which of the four characteristics of a healthful diet refers to eating DIFFERENT foods within each food group to ensure all nutrient needs are met and reduce risk of excess intake of any single compound?",
+      "opts": [
+        "Adequacy",
+        "Balance",
+        "Moderation",
+        "Variety"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Variety means consuming different foods within each food group on a regular basis. Eating a varied diet: (1) ensures you obtain the full range of nutrients, including those not yet fully studied; (2) prevents excess intake of any single potentially harmful compound; and (3) helps people enjoy healthier foods over time through repeated exposure. A monotonous diet — even if technically adequate — carries greater risk of both deficiencies and excesses."
+    },
+    {
+      "id": 39,
+      "unit": "intro",
+      "topic": "Healthy Diet Tools",
+      "type": "mc",
+      "q": "A nurse is explaining nutrient density to a patient managing their weight. Which BEST describes a nutrient-dense food?",
+      "opts": [
+        "Any food that is low in calories",
+        "A food high in vitamins, minerals, fiber, and/or protein relative to its calories, with little added fat, sugar, or sodium",
+        "A food that has been fortified with extra vitamins and minerals",
+        "Any natural, unprocessed food regardless of nutrient content"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Nutrient density measures how much nutritional value (vitamins, minerals, fiber, protein) a food provides per calorie, with minimal added solid fats, sugars, refined starches, or sodium. For example, plain nonfat yogurt is nutrient-dense (high calcium, protein, B12 per calorie). Whole milk yogurt with added sugar is less nutrient-dense. For patients managing weight, nutrient-dense foods allow them to meet nutritional needs without excess calories — critical for sustainable weight management."
+    }
+  ]
+}

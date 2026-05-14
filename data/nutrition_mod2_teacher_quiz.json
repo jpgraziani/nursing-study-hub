@@ -1,0 +1,191 @@
+{
+  "id": "nutrition-mod2-teacher",
+  "class": "nutrition",
+  "module": 2,
+  "title": "Module 2 — Teacher Review Quiz",
+  "description": "10-question quiz covering hunger hormones, obesity interventions, prenatal weight factors, energy balance, and body weight regulation.",
+  "topics": [
+    "ghrelin",
+    "leptin",
+    "hunger hormones",
+    "obesity",
+    "BMI",
+    "energy balance",
+    "prenatal factors",
+    "set point theory",
+    "weight regulation",
+    "bariatric surgery",
+    "physical activity",
+    "satiety"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "obesity",
+      "topic": "Hunger Hormones",
+      "type": "mc",
+      "q": "The hormone ________, often called the \"hunger hormone,\" is released from the upper portion of the stomach when it is empty and signals the brain to initiate the search for food.",
+      "opts": [
+        "Leptin",
+        "Insulin",
+        "Cholecystokinin",
+        "Ghrelin"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "GHRELIN is the 'hunger hormone' — it is released by the stomach when it is EMPTY and travels to the brain (hypothalamus) to trigger hunger and food-seeking behavior. Ghrelin levels rise before meals and fall after eating. It is also one reason weight regain is so common after dieting — ghrelin levels increase when body weight drops, persistently signaling hunger. LEPTIN is the opposite: released by fat cells, it signals satiety and tells the brain the body has enough energy stored. INSULIN is a pancreatic hormone that lowers blood glucose after eating. CHOLECYSTOKININ (CCK) is released by the small intestine in response to fat/protein and signals fullness."
+    },
+    {
+      "id": 2,
+      "unit": "obesity",
+      "topic": "Obesity — Individual Interventions",
+      "type": "mc",
+      "q": "Which of the following is NOT listed as a suggested action to address the obesity epidemic at the individual level?",
+      "opts": [
+        "Request changes to school lunch programs",
+        "Eat out less and choose low-calorie options when dining out",
+        "Decrease portion sizes when eating or serving food",
+        "Walk or bike to work when feasible"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "Requesting changes to school lunch programs is a POLICY/SOCIETAL level intervention, not an individual one. Individual-level actions focus on personal choices: eating out less, reducing portion sizes, increasing physical activity (walking or biking), choosing lower-calorie options, reducing screen time, and cooking more meals at home. Distinguishing between individual-level vs. community/policy-level strategies is important because obesity is a complex problem requiring action at BOTH levels — individual willpower alone is insufficient without supportive environments."
+    },
+    {
+      "id": 3,
+      "unit": "obesity",
+      "topic": "Obesity — Prenatal Factors",
+      "type": "mc",
+      "q": "Which factor has been shown to increase the likelihood of obesity in offspring later in life?",
+      "opts": [
+        "Mothers experiencing famine during pregnancy",
+        "Increased physical activity of mothers during pregnancy",
+        "Maternal consumption of high-protein diets during pregnancy",
+        "Exposure to remote controls and electronic devices"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "Mothers experiencing famine (severe caloric restriction) during pregnancy is associated with increased risk of obesity, metabolic syndrome, and cardiovascular disease in their offspring later in life. This is an example of EPIGENETICS — the prenatal environment can alter gene expression without changing the DNA itself. The 'thrifty phenotype' hypothesis suggests that when a fetus is exposed to famine, it adapts to expect a low-calorie environment. If the baby is then born into an environment with abundant food, this mismatch increases obesity risk. Increased maternal physical activity is generally PROTECTIVE, not harmful. Remote controls and electronics have no direct prenatal effect."
+    },
+    {
+      "id": 4,
+      "unit": "obesity",
+      "topic": "Societal Influences on Eating",
+      "type": "mc",
+      "q": "How do societal influences impact eating behaviors?",
+      "opts": [
+        "Cultural influences have no significant effect on eating habits within the United States.",
+        "Eating with someone who eats a large amount typically reduces food intake.",
+        "Proximity to quick-service restaurants directly causes poor health outcomes.",
+        "Increased portion sizes over the decades contribute to higher calorie consumption."
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Increased portion sizes over the decades is a well-documented contributor to higher calorie consumption. Portion sizes of common foods (sodas, fast food meals, restaurant entrees) have grown dramatically since the 1970s — a 'portion distortion' effect where people consume more without realizing it because larger portions look 'normal.' The other options are incorrect: Cultural influences DO significantly affect eating habits. Eating with someone who eats a large amount tends to INCREASE (not reduce) food intake — social eating is associated with eating more. Proximity to fast-food restaurants is associated with higher consumption, but 'directly causes' is too strong — correlation is not causation."
+    },
+    {
+      "id": 5,
+      "unit": "obesity",
+      "topic": "BMI Classifications",
+      "type": "mc",
+      "q": "Body Mass Index (BMI) classifies individuals as overweight if their BMI is _____________ and obese if their BMI is _____________.",
+      "opts": [
+        "Overweight: 25–29.9 | Obese: ≥30",
+        "Overweight: 18.5–20 | Obese: >20",
+        "Overweight: 30–34.5 | Obese: >35",
+        "Overweight: 20–24.5 | Obese: >25"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "The standard BMI classifications are: Underweight = <18.5 | Normal = 18.5–24.9 | Overweight = 25–29.9 | Obese = ≥30. BMI is calculated as weight (kg) ÷ height (m²). These are critical numbers to memorize for NCLEX. Important limitation: BMI does not distinguish between fat mass and lean muscle mass. A very muscular athlete may have a high BMI but low body fat. BMI also does not indicate WHERE fat is distributed — abdominal (visceral) fat is more metabolically dangerous than subcutaneous fat even at the same BMI. Despite its limitations, BMI remains a widely used screening tool in clinical practice."
+    },
+    {
+      "id": 6,
+      "unit": "obesity",
+      "topic": "Global Obesity Statistics",
+      "type": "mc",
+      "q": "Worldwide obesity has nearly _______ since 1975, and 39% of adults and 18% of children in the world are _______.",
+      "opts": [
+        "Doubled | Obese",
+        "Tripled | Obese",
+        "Tripled | Overweight",
+        "Doubled | Overweight"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The correct answer is TRIPLED and OVERWEIGHT. Worldwide obesity has nearly TRIPLED since 1975. As of the data in the text, 39% of adults and 18% of children worldwide are classified as OVERWEIGHT (not obese — obese is a subset of overweight). The distinction between overweight and obese matters: overweight = BMI 25–29.9; obese = BMI ≥30. This is a frequently tested detail — students often confuse 'obese' with 'overweight' in statistics. The rapid rise in obesity is linked to modernization, increased availability of energy-dense processed foods, and decreased physical activity."
+    },
+    {
+      "id": 7,
+      "unit": "obesity",
+      "topic": "Obesogenic Environment",
+      "type": "mc",
+      "q": "Which of the following factors contributed to the obesogenic environment according to the text?",
+      "opts": [
+        "Decreased vehicle ownership since 1960",
+        "Decreased mechanization in factory work",
+        "Increased consumption of meals at home",
+        "More than four hours daily watching screens for non-work activities"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Spending more than four hours daily watching screens for non-work activities is identified as a factor in the obesogenic environment — it promotes sedentary behavior and displaces time that could be used for physical activity. An 'obesogenic environment' is one that promotes weight gain through reduced opportunities for physical activity and increased access to calorie-dense foods. The other options are OPPOSITE of what actually happened: Vehicle ownership INCREASED since 1960 (more driving, less walking). Factory work became MORE mechanized (fewer calories burned at work). People are eating OUT more (not at home) — restaurant and fast food portion sizes and calorie counts tend to be higher than home cooking."
+    },
+    {
+      "id": 8,
+      "unit": "obesity",
+      "topic": "Eating Disorders",
+      "type": "mc",
+      "q": "Orthorexia is officially recognized as an eating disorder in the DSM-5.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "FALSE. Orthorexia (an obsessive focus on eating only 'pure' or 'healthy' foods to the point of significant distress or impairment) is NOT officially recognized as a distinct eating disorder in the DSM-5. It is a commonly discussed concept and clinically relevant condition, but it currently falls under 'Other Specified Feeding or Eating Disorder' (OSFED) if it meets criteria, rather than having its own diagnostic category. This is different from Anorexia Nervosa, Bulimia Nervosa, Binge Eating Disorder, and Avoidant/Restrictive Food Intake Disorder (ARFID) — all of which ARE formally recognized in the DSM-5."
+    },
+    {
+      "id": 9,
+      "unit": "obesity",
+      "topic": "Weight Regain",
+      "type": "mc",
+      "q": "What is the main reason many people regain weight after losing it?",
+      "opts": [
+        "Lack of willpower",
+        "Unrealistic exercise routines",
+        "Consuming nutrient-dense foods",
+        "Physiological and hormonal adaptations promoting weight regain"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "The primary reason for weight regain is PHYSIOLOGICAL AND HORMONAL ADAPTATIONS — not simply a lack of willpower. When body weight drops, the body responds with multiple mechanisms designed to restore its previous weight (set point theory): Ghrelin (hunger hormone) increases, driving hunger. Leptin (satiety hormone) decreases, reducing feelings of fullness. Resting metabolic rate decreases (the body becomes more energy-efficient). These adaptations can persist for years after weight loss, making maintaining weight loss biologically challenging. This is critical for patient counseling — framing weight regain as a hormonal/physiological phenomenon (not a character flaw) reduces stigma and supports compassionate care."
+    },
+    {
+      "id": 10,
+      "unit": "obesity",
+      "topic": "Global Obesity Causes",
+      "type": "mc",
+      "q": "The obesity epidemic worldwide is mainly caused by the increased intake of __________ food and decreased level of __________ activity, which are associated with modernization, industrialization, and urbanization.",
+      "opts": [
+        "Fortified | Sedentary",
+        "Nutrient dense | Organized",
+        "Processed | Physical",
+        "Energy dense | Physical"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "The correct answer is ENERGY DENSE foods and decreased PHYSICAL activity. The global obesity epidemic is primarily driven by: (1) Increased availability and consumption of energy-dense foods — high in calories, fat, and added sugar, often low in fiber and micronutrients. (2) Decreased physical activity due to more sedentary jobs, transportation by vehicle, mechanized labor, and screen-based leisure. 'Processed' is close but not the exact textbook language — energy-dense is the more precise term because it captures both processed foods AND large portions of calorie-dense whole foods. Modernization and urbanization reshape food systems and built environments in ways that make energy-dense eating and sedentary living the path of least resistance."
+    }
+  ]
+}

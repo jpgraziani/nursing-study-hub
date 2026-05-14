@@ -1,0 +1,665 @@
+{
+  "id": "nutrition-mod6-full",
+  "class": "nutrition",
+  "module": 6,
+  "title": "Module 6 — Full Coverage Quiz",
+  "description": "35-question quiz covering free radicals, antioxidants, phytochemicals, cancer prevention, cardiovascular disease, and chronic disease nutrition.",
+  "topics": [
+    "free radicals",
+    "antioxidants",
+    "vitamin C",
+    "vitamin E",
+    "beta-carotene",
+    "selenium",
+    "phytochemicals",
+    "lycopene",
+    "flavonoids",
+    "cruciferous vegetables",
+    "cancer prevention",
+    "cardiovascular disease",
+    "LDL oxidation",
+    "inflammation",
+    "reactive oxygen species",
+    "oxidative stress",
+    "Mediterranean diet",
+    "plant-based diet"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "antioxidant",
+      "topic": "Free Radicals & Antioxidants",
+      "type": "mc",
+      "q": "What is the fundamental characteristic of a free radical that makes it chemically dangerous?",
+      "opts": [
+        "It has too many protons in its nucleus",
+        "It has an unpaired electron in its outer shell, making it unstable and highly reactive",
+        "It contains too much oxygen and becomes acidic",
+        "It is produced exclusively by external environmental sources like pollution and UV radiation"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The defining characteristic of a free radical is an UNPAIRED ELECTRON in its outer shell. Atoms are most stable when electrons orbit the nucleus in pairs. The unpaired electron makes the free radical unstable and extremely reactive — it will steal electrons from nearby stable molecules to stabilize itself. This electron theft (oxidation) then turns the victimized molecule into a free radical, initiating a chain reaction. Free radicals ARE produced internally (normal metabolism, immune activity) — option D is wrong because internal production is normal and constant."
+    },
+    {
+      "id": 2,
+      "unit": "antioxidant",
+      "topic": "Free Radicals & Antioxidants",
+      "type": "mc",
+      "q": "A nursing student states that 'all free radicals must be eliminated because they serve no useful purpose in the body.' The instructor should correct this by explaining:",
+      "opts": [
+        "Free radicals serve no useful purpose and should indeed be eliminated",
+        "Free radicals at low levels play important roles in immune defense and cell-to-cell signaling",
+        "Free radicals only become dangerous when antioxidant intake is zero",
+        "Free radicals are exclusively produced by tobacco smoke and UV radiation"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Free radicals are NOT entirely harmful. At LOW levels, they serve important physiological functions: (1) IMMUNE DEFENSE — immune cells deliberately produce free radicals (like superoxide and hydrogen peroxide) to kill invading bacteria in a process called respiratory burst, and (2) CELL SIGNALING — free radicals participate in normal intracellular communication. The problem is OXIDATIVE STRESS — when free radical production overwhelms antioxidant defenses. Trying to eliminate all free radicals would actually impair immune function. Option C is wrong because oxidative stress occurs when there are too many free radicals relative to antioxidants — not necessarily zero antioxidants."
+    },
+    {
+      "id": 3,
+      "unit": "antioxidant",
+      "topic": "Free Radicals & Antioxidants",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Which of the following conditions and diseases have been linked to chronic oxidative stress?",
+      "opts": [
+        "Cancer",
+        "Cardiovascular disease (atherosclerosis)",
+        "Alzheimer's disease",
+        "Lactose intolerance",
+        "Type 2 diabetes",
+        "Cataracts"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "CORRECT: Cancer (free radical damage to DNA causes mutations), cardiovascular disease (oxidized LDL leads to atherosclerotic plaques), Alzheimer's disease (oxidative damage to neurons), type 2 diabetes (oxidative stress damages beta cells and impairs insulin signaling), and cataracts (oxidative damage to lens proteins) are all strongly associated with chronic oxidative stress. NOT correct: Lactose intolerance is caused by deficiency of the enzyme lactase — it is a digestive enzyme deficiency, completely unrelated to oxidative stress or free radical damage. This is a classic NCLEX-style distractor."
+    },
+    {
+      "id": 4,
+      "unit": "antioxidant",
+      "topic": "Free Radicals & Antioxidants",
+      "type": "mc",
+      "q": "Research on antioxidant supplements (high-dose vitamin E and beta-carotene) has shown which of the following outcomes?",
+      "opts": [
+        "Antioxidant supplements reliably prevent cancer and cardiovascular disease",
+        "High-dose beta-carotene increased lung cancer risk in smokers; high-dose vitamin E increased prostate cancer risk in men",
+        "Antioxidant supplements are always safe because they simply add what foods provide",
+        "The research is incomplete and antioxidant supplements should be taken liberally until more data is available"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Multiple large clinical trials demonstrated alarming results: high-dose beta-carotene supplements INCREASED lung cancer risk in smokers (CARET trial), and high-dose vitamin E supplements (>400 IU) INCREASED prostate cancer risk in men (SELECT trial) and were associated with increased hemorrhage, stroke, and death. Researchers hypothesize this occurs because (1) free radicals serve important functions and flooding the body overwhelms normal balance, and (2) the benefits of antioxidant-rich foods come from the whole food PACKAGE — fiber, phytochemicals, and nutrient synergy — that cannot be replicated in a pill. Option C is dangerously wrong: more is not better with fat-soluble vitamins and antioxidants. The evidence-based recommendation: get antioxidants from WHOLE FOODS, not supplements."
+    },
+    {
+      "id": 5,
+      "unit": "antioxidant",
+      "topic": "Free Radicals & Antioxidants",
+      "type": "mc",
+      "q": "How do antioxidants neutralize free radicals?",
+      "opts": [
+        "They destroy free radicals by converting them to harmless water molecules",
+        "They donate an electron to stabilize the free radical without themselves becoming dangerously reactive",
+        "They capture free radicals inside special protein cages where they cannot cause damage",
+        "They speed up the elimination of free radicals through urine and bile"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Antioxidants work by DONATING an electron to the free radical, filling the unpaired electron gap and stabilizing it. The antioxidant technically becomes a free radical itself after donating — but antioxidants are structurally special: they are not very reactive and have mechanisms for quick re-stabilization. For example, vitamin E donates an electron to a free radical and becomes oxidized, but vitamin C can then donate an electron back to vitamin E, regenerating it. This antioxidant 'recycling' network is one reason why getting a variety of antioxidants from whole foods is more protective than taking a single isolated antioxidant supplement."
+    },
+    {
+      "id": 6,
+      "unit": "vitE",
+      "topic": "Vitamin E",
+      "type": "mc",
+      "q": "Why is vitamin E's fat-solubility particularly important for protecting cardiovascular health?",
+      "opts": [
+        "It allows vitamin E to be excreted in urine, preventing toxicity from accumulating",
+        "Fat-solubility allows vitamin E to reside within LDL particles and cell membranes, protecting lipids from oxidative damage that leads to atherosclerosis",
+        "Fat-solubility allows vitamin E to raise HDL cholesterol directly",
+        "Fat-solubility means vitamin E can be stored indefinitely without toxicity risk"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Because vitamin E is fat-soluble, it is found embedded within FAT-CONTAINING structures throughout the body — including LDL cholesterol particles and the phospholipid bilayer of cell membranes. This positioning puts it exactly where protection is most needed. When free radicals attack LDL, they can oxidize the lipid components — and it is this OXIDIZED LDL that triggers the inflammatory cascade leading to atherosclerotic plaque formation. Vitamin E, residing within LDL, acts as a first-line defender against this oxidation. Option D is wrong: fat-solubility actually CREATES toxicity risk because it is stored in body fat rather than excreted in urine (unlike water-soluble vitamins). Option C is wrong: vitamin E does not directly raise HDL."
+    },
+    {
+      "id": 7,
+      "unit": "vitE",
+      "topic": "Vitamin E",
+      "type": "mc",
+      "q": "A patient is prescribed a fat-soluble vitamin E supplement. The nurse explains that vitamin E absorption requires:",
+      "opts": [
+        "Taking the supplement on an empty stomach for best absorption",
+        "Consuming some dietary fat in the same meal, because fat-soluble vitamins require fat and bile for absorption",
+        "Drinking at least 8 oz of water to ensure proper dissolution",
+        "Taking it with a calcium supplement to prevent competition for absorption"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "All fat-soluble vitamins (A, D, E, K — remember ADEK) require dietary fat present in the same meal for adequate absorption. Fat is needed to stimulate bile release from the gallbladder, and bile is required for emulsification — breaking fat into small droplets so lipase can digest it and micelles can form to carry fat-soluble vitamins to the intestinal wall. Taking a fat-soluble vitamin supplement with a fat-free meal will significantly reduce its absorption. Patients should be counseled to take fat-soluble vitamin supplements with a meal that contains some fat. This is also clinically relevant for patients with fat malabsorption disorders — they will have poor absorption of ALL fat-soluble vitamins regardless of dietary intake."
+    },
+    {
+      "id": 8,
+      "unit": "vitE",
+      "topic": "Vitamin E",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Which patients are at highest risk for vitamin E deficiency?",
+      "opts": [
+        "A patient with Crohn's disease involving the small intestine",
+        "A patient recovering from bariatric (weight-loss) surgery",
+        "A healthy adult eating a standard American diet",
+        "A patient with cystic fibrosis",
+        "A patient with chronic pancreatitis"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Crohn's disease (impairs small intestinal absorption — fat and fat-soluble vitamins are absorbed in the small intestine), bariatric surgery (especially procedures bypassing segments of small intestine — reduces absorptive surface for all fat-soluble vitamins), cystic fibrosis (impaired pancreatic enzyme secretion → fat malabsorption → fat-soluble vitamin deficiency — CF patients almost universally require fat-soluble vitamin supplementation), and chronic pancreatitis (insufficient lipase → fat malabsorption → fat-soluble vitamin deficiency) are all correct. NOT correct: A healthy adult on a standard American diet typically gets adequate (though sometimes borderline) vitamin E from vegetable oils, nuts, and seeds. Outright deficiency in healthy people is very rare."
+    },
+    {
+      "id": 9,
+      "unit": "vitC",
+      "topic": "Vitamin C (Scurvy & Functions)",
+      "type": "mc",
+      "q": "A 52-year-old man who lives alone and eats mostly crackers, canned soup, and coffee presents with bleeding gums, multiple skin bruises without trauma, joint pain, and extreme fatigue. He has not eaten fruits or vegetables in several months. The nurse suspects:",
+      "opts": [
+        "Iron deficiency anemia",
+        "Vitamin K deficiency from poor diet",
+        "Scurvy from vitamin C deficiency",
+        "Thrombocytopenia from bone marrow dysfunction"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "This is a classic presentation of SCURVY — vitamin C deficiency. Vitamin C is REQUIRED for collagen synthesis. Without adequate vitamin C, collagen fibers in blood vessel walls, gums, and connective tissue cannot be properly cross-linked and maintained. The result: blood vessels break easily (bleeding gums, spontaneous bruising), wounds don't heal, joints become painful (synovial fluid and cartilage depend on collagen), and fatigue develops. The dietary history is the key clue — weeks to months of essentially NO fruit or vegetable intake. At-risk populations: elderly living alone, people with alcohol use disorder, food insecurity, severe dietary restrictions. Always screen for food access and dietary variety, especially in elderly or isolated patients."
+    },
+    {
+      "id": 10,
+      "unit": "vitC",
+      "topic": "Vitamin C (Functions)",
+      "type": "mc",
+      "q": "A patient with iron-deficiency anemia is a vegetarian who eats spinach and lentils as her primary iron sources. The most evidence-based dietary counseling to improve iron absorption is:",
+      "opts": [
+        "Switch to red meat because vegetarian iron sources cannot be absorbed",
+        "Avoid calcium-containing foods because calcium blocks all iron absorption",
+        "Consume vitamin C-rich foods (e.g., bell pepper, orange juice) WITH iron-rich meals to enhance non-heme iron absorption",
+        "Take an iron supplement at night when stomach acid is lowest"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Non-heme iron (from plant sources) is absorbed in the ferric form (Fe3+) at much lower rates than heme iron from meat (15-35% vs. 2-10% for non-heme). However, vitamin C (ascorbic acid) dramatically increases non-heme iron absorption by reducing Fe3+ to Fe2+ (ferrous form), which is much more readily absorbed. Consuming vitamin C WITH iron-rich plant foods in the SAME MEAL can increase absorption up to 3-fold. This is a free, safe, practical, and evidence-based nursing intervention: 'Have some orange juice or bell pepper strips with your spinach and lentil meals.' Option D is wrong — iron is actually best absorbed when stomach acid is present (empty stomach or acidic environment), though GI side effects often require it to be taken with food."
+    },
+    {
+      "id": 11,
+      "unit": "vitC",
+      "topic": "Vitamin C (Supplements & Cold)",
+      "type": "mc",
+      "q": "A patient tells the nurse he takes 2,000 mg of vitamin C every day during cold season and an extra 2,000 mg as soon as he feels cold symptoms starting. The nurse's most accurate response is:",
+      "opts": [
+        "This is an excellent strategy — high-dose vitamin C is proven to prevent colds and reduce their severity",
+        "The dose is safe but unnecessary — vitamin C supplements taken consistently before symptoms may slightly reduce cold duration, but have no benefit once symptoms have started",
+        "This strategy is dangerous — vitamin C is toxic at any dose above 200 mg",
+        "There is no scientific evidence that vitamin C has any effect on the common cold under any circumstances"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Per a 2013 Cochrane Collaboration systematic review of 29 studies: (1) Vitamin C does NOT prevent the common cold in the general population, (2) If taken CONSISTENTLY every day BEFORE symptoms begin, it may reduce cold duration by ~8% in adults and ~14% in children — roughly 1-2 days, (3) If taken AFTER symptoms develop, vitamin C does NOT reduce duration or severity. So the patient's strategy of taking an extra 2,000 mg once symptoms start offers no benefit for that cold episode. Additionally, 2,000 mg/day is at the UL — regular intake at this level may increase kidney stone risk. The evidence-based recommendation is adequate dietary vitamin C from fruits and vegetables, not megadose supplements."
+    },
+    {
+      "id": 12,
+      "unit": "vitC",
+      "topic": "Vitamin C (Deficiency & Groups)",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Which of the following individuals are at increased risk for vitamin C deficiency?",
+      "opts": [
+        "A person who smokes a pack of cigarettes per day",
+        "An elderly man living alone who eats mostly processed foods",
+        "A college athlete who exercises daily and eats a balanced diet",
+        "A person experiencing food insecurity with limited access to fresh fruits and vegetables",
+        "A patient with alcohol use disorder"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Smokers require +35 mg/day above the RDA because smoking generates massive quantities of free radicals that consume vitamin C rapidly — smokers have significantly lower plasma vitamin C than nonsmokers. Elderly individuals living alone with limited cooking and poor dietary variety frequently have inadequate fruit and vegetable intake. Food insecurity limits access to fresh produce which are the primary vitamin C sources. Alcohol use disorder frequently leads to severe nutritional deficiencies including vitamin C from poor dietary intake and impaired absorption. NOT correct: An athlete eating a balanced diet is unlikely to be deficient — regular exercise may mildly increase oxidative stress, but adequate dietary intake from fruits and vegetables provides more than sufficient vitamin C."
+    },
+    {
+      "id": 13,
+      "unit": "selenium",
+      "topic": "Selenium",
+      "type": "mc",
+      "q": "A patient has been eating 6-8 Brazil nuts daily for several months as a 'health food' habit. She now presents with brittle nails, hair loss, and an unusual garlic-like odor on her breath. The nurse recognizes this presentation as consistent with:",
+      "opts": [
+        "Zinc toxicity from excess nut consumption",
+        "Selenium toxicity (selenosis) from excessive selenium intake",
+        "Vitamin E deficiency from unbalanced nut consumption",
+        "Biotin deficiency causing nail and hair changes"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Brazil nuts are extraordinarily rich in selenium — a single nut can contain 68-91 mcg of selenium, and the RDA is only 55 mcg/day. The UL is 400 mcg/day. Eating 6-8 Brazil nuts daily far exceeds the UL. Selenium toxicity (selenosis) has a characteristic clinical presentation: brittle, breaking hair and nails, GI discomfort, skin rashes, garlic-like odor on breath (from dimethyl selenide, a volatile selenium compound exhaled through the lungs), fatigue, and irritability. This is a real clinical scenario nurses encounter because many patients believe 'natural foods are always safe.' Reassure the patient that selenium is essential and beneficial at appropriate amounts, but Brazil nuts should be limited to 1-3 per day at most. The garlic odor on breath is the unique clinical distinguisher for selenium toxicity."
+    },
+    {
+      "id": 14,
+      "unit": "selenium",
+      "topic": "Selenium",
+      "type": "mc",
+      "q": "Selenium's most important role in the body's antioxidant defense network is:",
+      "opts": [
+        "Directly neutralizing free radicals by donating hydrogen atoms",
+        "Functioning as a structural component of antioxidant enzymes (like glutathione peroxidase) that regenerate vitamin C and protect lipids, sparing vitamin E",
+        "Binding to LDL cholesterol to prevent its oxidation",
+        "Stimulating the liver to produce more endogenous antioxidant enzymes through hormonal signaling"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Selenium is incorporated into SELENOPROTEINS — proteins that contain selenium as an essential part of their structure and active site. The most important antioxidant selenoproteins are the GLUTATHIONE PEROXIDASES — enzyme systems that use selenium to neutralize hydrogen peroxide and protect lipid membranes from free radical attack. In doing so, they spare vitamin E (vitamin E doesn't have to work as hard) and regenerate vitamin C. This is why selenium, vitamin C, and vitamin E function as an interconnected antioxidant team — they protect each other and work synergistically. A deficiency of one affects the effectiveness of the others. This also explains why whole-food antioxidant intake is superior to any single isolated supplement."
+    },
+    {
+      "id": 15,
+      "unit": "bioactive",
+      "topic": "Bioactive Compounds — Overview",
+      "type": "mc",
+      "q": "Which of the following best describes 'bioactive compounds' and distinguishes them from essential nutrients?",
+      "opts": [
+        "Bioactive compounds are another term for vitamins and minerals — there is no meaningful distinction",
+        "Bioactive compounds are nonessential biomolecules in foods that influence metabolic processes and promote health, but are not required for basic growth and survival",
+        "Bioactive compounds are only found in supplements, not in whole foods",
+        "Bioactive compounds are isolated from plants and are more potent when taken in supplement form"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Bioactive compounds are definitionally NONESSENTIAL — the body will not develop a classic deficiency disease without them, distinguishing them from essential nutrients like vitamins and minerals. However, 'nonessential' doesn't mean 'unimportant' — research consistently shows that diets rich in bioactive compounds are associated with lower rates of chronic disease. Phytochemicals (plant-derived bioactives) include polyphenols, terpenes, and organosulfur compounds. Other bioactives include probiotics, omega-3 fatty acids, phytosterols, and isoflavones. Option D is wrong and clinically important: bioactive compounds are found in WHOLE FOODS, and supplement forms have generally not replicated the benefits seen from whole dietary patterns — reinforcing the food-first principle."
+    },
+    {
+      "id": 16,
+      "unit": "bioactive",
+      "topic": "Bioactive Compounds — Dietary Patterns",
+      "type": "mc",
+      "q": "Which of the following dietary patterns has the strongest evidence base for reducing cardiovascular disease, type 2 diabetes, and certain cancers — and is considered a model of bioactive compound-rich eating?",
+      "opts": [
+        "The Standard American Diet (SAD) with added antioxidant supplements",
+        "The Mediterranean diet, emphasizing olive oil, fatty fish, fruits, vegetables, whole grains, legumes, nuts, and herbs",
+        "A strict low-carbohydrate diet eliminating all grains and legumes",
+        "The paleo diet excluding all dairy and grains"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The Mediterranean diet has the most robust and consistent evidence base of any dietary pattern. Large-scale studies (PREDIMED trial, multiple meta-analyses) demonstrate significant reductions in major cardiovascular events, CVD mortality, type 2 diabetes incidence, certain cancers, and cognitive decline. Researchers believe the BIOACTIVE COMPOUNDS — polyphenols in olive oil, flavonoids in fruits and vegetables, omega-3s in fatty fish, sulfur compounds in garlic and onions, phytosterols in nuts — working synergistically are major contributors to these benefits. The DASH diet is similarly well-evidenced, especially for blood pressure reduction. Neither low-carbohydrate nor paleo diets have comparable long-term outcome data for disease prevention."
+    },
+    {
+      "id": 17,
+      "unit": "polyphenol",
+      "topic": "Polyphenols — Flavonoids",
+      "type": "mc",
+      "q": "A patient with rheumatoid arthritis asks about the popular supplement curcumin (from turmeric). The nurse provides evidence-based counseling. Which statement is MOST accurate?",
+      "opts": [
+        "Curcumin supplements are proven to be equivalent to NSAIDs for joint pain management",
+        "Curcumin has anti-inflammatory properties, but its bioavailability is very low; combining turmeric with black pepper (piperine) significantly increases absorption",
+        "Curcumin is only beneficial when consumed as a supplement, not from turmeric in food",
+        "Curcumin should be avoided in autoimmune conditions because it stimulates the immune system"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Curcumin (the active compound in turmeric) does have demonstrated anti-inflammatory and antioxidant properties in laboratory and some clinical studies. However, its major limitation is VERY LOW BIOAVAILABILITY — curcumin is poorly absorbed from the GI tract, rapidly metabolized, and quickly eliminated. The critical practical insight: piperine, an alkaloid found in black pepper, increases curcumin bioavailability by approximately 2,000% by inhibiting the enzymes that break it down. Cooking turmeric with black pepper together (as done traditionally in Indian cuisine) makes the curcumin far more bioavailable than taking curcumin alone. Counsel patients to use turmeric and black pepper together in cooking. High-dose curcumin supplements may interact with anticoagulants and other medications — always advise discussing supplements with their physician."
+    },
+    {
+      "id": 18,
+      "unit": "polyphenol",
+      "topic": "Polyphenols — Anthocyanins",
+      "type": "mc",
+      "q": "Which pigment in fruits and vegetables is responsible for the red, purple, and blue colors of berries, acai, purple cabbage, and blue potatoes — and also provides antioxidant and cardiovascular benefits?",
+      "opts": [
+        "Carotenoids",
+        "Chlorophyll",
+        "Anthocyanins",
+        "Lycopene"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Anthocyanins are water-soluble pigments that produce the vivid red, purple, and blue colors in berries, acai, currants, red grapes, purple cabbage, and blue potatoes. Anthocyanins are flavonoid polyphenols with multiple demonstrated biological activities: potent antioxidant and free radical scavenging activity, vasorelaxation (blood vessel relaxation), antimicrobial properties, and protective effects for visual and neurological health. They are associated with reduced risk of CVD and certain cancers. Preparation note: mild heat (blanching) is recommended to preserve anthocyanin bioactivity, while aggressive boiling may degrade them. Carotenoids produce yellow, orange, and red pigments (carrots, tomatoes, sweet potatoes). Chlorophyll produces green color. Lycopene is a specific carotenoid found in tomatoes associated with prostate cancer protection."
+    },
+    {
+      "id": 19,
+      "unit": "polyphenol",
+      "topic": "Polyphenols — Isoflavones",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A 52-year-old postmenopausal woman asks about natural ways to address bone density loss, hot flashes, and cardiovascular risk. Which of the following statements about isoflavones and soy foods are evidence-based?",
+      "opts": [
+        "Regular whole soy food intake (tofu, edamame, soy milk) may reduce hot flash frequency due to isoflavones' weak estrogen-like activity",
+        "Soy protein intake greater than 10g/day has been associated with reduced fracture risk in postmenopausal women",
+        "All women with a history of breast cancer should completely avoid all soy foods",
+        "Isoflavones have demonstrated cardiovascular benefits including reducing blood lipid levels and inflammation",
+        "Soy foods are only found in supplement form and cannot be obtained from the diet alone"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "CORRECT: Isoflavones (phytoestrogens in soy) bind weakly to estrogen receptors and can exert mild estrogen-like effects — women in Japan who consume soy throughout life report significantly fewer menopausal symptoms than women in North America. Soy protein >10g/day reduces fracture risk in postmenopausal women. Isoflavones have consistent CVD benefits: lower blood lipids, reduce inflammation, lower blood pressure. NOT CORRECT: Complete soy food avoidance for breast cancer survivors is an outdated recommendation not supported by current evidence — moderate whole soy food intake is now considered safe and potentially protective for breast cancer survivors (high-dose isoflavone supplements are a different consideration). Soy foods are widely available in whole food form: tofu, edamame, soy milk, miso, tempeh."
+    },
+    {
+      "id": 20,
+      "unit": "polyphenol",
+      "topic": "Polyphenols — Resveratrol",
+      "type": "mc",
+      "q": "Resveratrol is associated with the 'French paradox.' Which of the following best explains this term?",
+      "opts": [
+        "France has high rates of cardiovascular disease despite low saturated fat intake — attributed to red wine consumption",
+        "France has paradoxically low rates of heart disease despite high saturated fat consumption — partially attributed to resveratrol in red wine",
+        "France has better healthcare than other countries, creating a paradox in health outcomes",
+        "The French diet is paradoxically high in omega-6 fatty acids but low in inflammatory disease"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The 'French paradox' refers to the epidemiological observation that France has surprisingly LOW rates of coronary heart disease despite having a diet high in saturated fats (cheese, butter, pastry). This seemed to contradict established cardiovascular risk models. One hypothesis is that regular, moderate red wine consumption — rich in resveratrol (a stilbene polyphenol) and other flavonoids — provides cardiovascular protection. Resveratrol has anti-inflammatory, antiplatelet, and cardioprotective properties in laboratory and observational studies. Clinical trials on resveratrol supplements have had mixed results. Critical nursing note: NO health authority recommends that non-drinkers START consuming alcohol for cardiovascular benefits. Other factors in French cardiovascular health include smaller portion sizes, slower eating, more fresh produce, and different food patterns overall."
+    },
+    {
+      "id": 21,
+      "unit": "sulfur",
+      "topic": "Sulfur Compounds (Garlic & Cruciferous)",
+      "type": "mc",
+      "q": "A patient's oncologist recommends increasing intake of cruciferous vegetables (broccoli, kale, Brussels sprouts, cabbage) as part of a cancer prevention strategy. The nurse educates the patient that to maximize the bioactive sulfur compounds in these vegetables, they should be eaten:",
+      "opts": [
+        "Well-boiled until very soft to break down any harmful compounds",
+        "Raw or lightly steamed, and cut or crushed before eating to activate the bioactive compounds",
+        "Only when fresh — frozen cruciferous vegetables contain no bioactive compounds",
+        "Cooked at high temperature to release the sulfur compounds from plant cell walls"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Two critical preparation principles for cruciferous vegetables: (1) ACTIVATION requires MECHANICAL DISRUPTION — cutting, crushing, or chewing breaks plant cell walls and brings together enzymes and their substrates, converting inactive glucosinolates into their bioactive forms (sulforaphane and other active compounds). Whole, uncut broccoli sitting on a cutting board has minimal bioactive sulfur compound activity. (2) HEAT SENSITIVITY — the enzyme myrosinase, which activates glucosinolates, is heat-sensitive. Extensive boiling significantly reduces sulforaphane content. Lightly steaming or eating raw maximizes bioactivity. Frozen cruciferous vegetables CAN retain bioactive compounds if properly processed, though fresh is generally superior. This is an important and practical patient education point — food preparation method matters as much as food choice."
+    },
+    {
+      "id": 22,
+      "unit": "sulfur",
+      "topic": "Sulfur Compounds (Garlic — Allicin)",
+      "type": "mc",
+      "q": "Allicin, the primary organosulfur compound in garlic, contributes to cardiovascular health through which mechanism?",
+      "opts": [
+        "It directly blocks cholesterol synthesis in the liver, similar to statin medications",
+        "It promotes nitric oxide production in blood vessels, causing vasodilation and lowering blood pressure, while also inhibiting platelet aggregation and cholesterol plaque formation",
+        "It binds bile acids in the GI tract, preventing their reabsorption similar to soluble fiber",
+        "It activates PPAR-gamma receptors in adipose tissue to reduce systemic inflammation"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Allicin (formed when garlic is cut or crushed — the enzyme alliinase converts alliin to allicin) exerts cardiovascular benefits through multiple mechanisms: (1) It promotes production of NITRIC OXIDE (NO) in blood vessel endothelial cells — NO causes smooth muscle relaxation → vasodilation → lower blood pressure → reduced hypertension risk, (2) It INHIBITS PLATELET AGGREGATION — antiplatelet effects reduce excessive blood clot formation that can cause MI or stroke, (3) It INHIBITS CHOLESTEROL PLAQUE FORMATION — interferes with formation of atherosclerotic plaques. To maximize allicin: crush or mince garlic and let it sit for 10-15 minutes before cooking — this allows the alliinase reaction to complete. High cooking temperatures denature allicin. Raw garlic or supplements may be more bioactive but also cause GI upset."
+    },
+    {
+      "id": 23,
+      "unit": "sulfur",
+      "topic": "Sulfur Compounds",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Which foods are significant sources of organosulfur bioactive compounds?",
+      "opts": [
+        "Broccoli",
+        "Salmon",
+        "Garlic",
+        "Kale",
+        "Onions",
+        "Bananas"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Broccoli (cruciferous vegetable — rich in glucosinolates and sulforaphane), garlic (allium vegetable — allicin and other organosulfur compounds), kale (cruciferous — glucosinolates, sulforaphane), and onions (allium — allicin, quercetin, and organosulfur compounds). NOT correct: Salmon is an excellent food (rich in omega-3 EPA/DHA), but it is NOT a source of organosulfur compounds. Bananas are a source of potassium and prebiotics (resistant starch) but not organosulfur compounds. Key foods to remember: the 'pungent' category — cruciferous (broccoli, kale, Brussels sprouts, cabbage, bok choy, cauliflower) and allium vegetables (garlic, onions, leeks, shallots, chives) — are the sulfur compound-rich foods."
+    },
+    {
+      "id": 24,
+      "unit": "phytosterol",
+      "topic": "Phytosterols & Stanols",
+      "type": "mc",
+      "q": "A patient with hypercholesterolemia is asking about dietary ways to lower LDL cholesterol beyond just reducing saturated fat intake. The nurse correctly explains that phytosterols (plant sterols) can help because:",
+      "opts": [
+        "Phytosterols bind to LDL receptors in the liver and increase LDL clearance from the blood",
+        "Phytosterols compete with dietary cholesterol for absorption in the small intestine, reducing cholesterol absorbed into the body",
+        "Phytosterols activate enzymes that break down stored cholesterol in adipose tissue",
+        "Phytosterols convert LDL to HDL in the bloodstream through enzymatic reactions"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Phytosterols are structurally similar to cholesterol, which allows them to COMPETE WITH CHOLESTEROL for the same absorption pathways in the small intestine. Phytosterols displace cholesterol from micelles (the transport vehicles for fat absorption), reducing the amount of dietary cholesterol absorbed. They also facilitate excretion of cholesterol in feces. The result is LOWER SERUM LDL. Dietary sources: nuts, seeds, legumes, unrefined plant oils. Some functional foods (certain margarines, orange juices) are enriched with phytosterols. Phytosterols work through a different mechanism than statins (which block liver cholesterol synthesis) — they can be combined with statin therapy for additive LDL-lowering benefit. The effect: approximately 1-2g of phytosterols/day can reduce LDL by 5-15%."
+    },
+    {
+      "id": 25,
+      "unit": "probiotics",
+      "topic": "Probiotics & Prebiotics",
+      "type": "mc",
+      "q": "A patient has just completed a 10-day course of broad-spectrum antibiotics and is experiencing persistent diarrhea. The nurse recognizes this as antibiotic-associated diarrhea (AAD) and recommends:",
+      "opts": [
+        "Stopping all dairy intake immediately as dairy worsens diarrhea",
+        "Taking high-dose loperamide (Imodium) to stop the diarrhea mechanically",
+        "Including probiotic-containing foods (yogurt, kefir) or physician-ordered probiotic supplements to help restore gut microbiome balance",
+        "Restarting the antibiotics at a lower dose to prevent further disruption"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Broad-spectrum antibiotics kill not just pathogenic bacteria but also BENEFICIAL gut bacteria, disrupting the gut microbiome (dysbiosis). This allows pathogenic organisms to overgrow — most concerning is Clostridioides difficile (C. diff), which can cause severe colitis. Probiotic-containing foods (yogurt, kefir) and probiotic supplements help RESTORE gut microbiome diversity and balance by introducing beneficial bacteria, inhibiting pathogen overgrowth, and helping rebuild the protective bacterial community. Many clinical guidelines now support probiotic use during and after antibiotic therapy to prevent AAD. Some hospitals have specific probiotic protocols. Always follow physician/NP orders. Stopping dairy is NOT indicated unless the patient has lactose intolerance — dairy-based yogurt and kefir are actually beneficial. Loperamide should not be the primary intervention when the diarrhea has an underlying cause that needs to be addressed."
+    },
+    {
+      "id": 26,
+      "unit": "probiotics",
+      "topic": "Probiotics & Prebiotics",
+      "type": "mc",
+      "q": "What distinguishes a prebiotic from a probiotic?",
+      "opts": [
+        "Prebiotics are live beneficial bacteria; probiotics are the food substances that feed them",
+        "Probiotics are live beneficial bacteria or yeasts found in fermented foods; prebiotics are indigestible carbohydrates (types of fiber) that selectively feed and stimulate beneficial bacteria in the colon",
+        "Prebiotics and probiotics are two names for the same thing",
+        "Probiotics are found only in supplement form; prebiotics are only available from food"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Clear distinction: PROBIOTICS = LIVE beneficial microorganisms (bacteria, yeasts) consumed in fermented foods (yogurt, kefir, kimchi, sauerkraut, miso, kombucha) or supplements. They directly add beneficial bacteria to the gut microbiome. PREBIOTICS = INDIGESTIBLE CARBOHYDRATES (specific types of dietary fiber) that cannot be broken down by human digestive enzymes, but ARE fermented by beneficial gut bacteria as a fuel source, selectively stimulating their growth and activity. Food sources: garlic, onions, leeks, whole grains, legumes, cocoa, most fruits and vegetables. A useful analogy: probiotics are the bacteria (the garden plants), and prebiotics are their fertilizer. Both together (a symbiotic relationship) are called SYNBIOTICS — eating both promotes the most robust gut microbiome."
+    },
+    {
+      "id": 27,
+      "unit": "probiotics",
+      "topic": "Probiotics & Prebiotics — Gut-Brain Axis",
+      "type": "mc",
+      "q": "The gut-brain axis refers to which concept in nutrition and health?",
+      "opts": [
+        "The pathway by which glucose from the gut travels to the brain as its primary fuel source",
+        "The bidirectional communication network between the gut microbiota and the brain, through which gut bacteria influence neurotransmitter production, mood, and cognitive function",
+        "The way in which the brain signals hunger and satiety to the gastrointestinal tract only",
+        "The absorption of omega-3 fatty acids in the gut and their incorporation into brain tissue"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The GUT-BRAIN AXIS is a bidirectional (two-way) communication system between the gut microbiome and the central nervous system. Gut bacteria influence brain function through several mechanisms: (1) producing NEUROTRANSMITTERS — gut bacteria produce serotonin (up to 95% of the body's serotonin is in the gut!), GABA, dopamine precursors, and other neuroactive compounds, (2) producing SHORT-CHAIN FATTY ACIDS that cross the blood-brain barrier and affect brain chemistry, (3) modulating the VAGUS NERVE, which directly connects gut and brain. Emerging research links gut microbiome disruption (dysbiosis) to depression, anxiety, cognitive decline, and neurological conditions. Probiotic intake has been associated with mood enhancement and reduced depression symptoms in some studies. This is a rapidly evolving area — as a future nurse, you will see this science applied clinically in coming years."
+    },
+    {
+      "id": 28,
+      "unit": "probiotics",
+      "topic": "Probiotics & Prebiotics",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Which of the following are food sources of probiotics?",
+      "opts": [
+        "Kefir",
+        "Kimchi",
+        "Almonds",
+        "Yogurt with 'Live and Active Cultures'",
+        "Sauerkraut",
+        "White bread"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Kefir (fermented milk drink with up to 20 billion CFU; well-tolerated by many with lactose intolerance), kimchi (Korean fermented cabbage; contains lactic acid bacteria; ongoing research on gut microbiota benefits), yogurt with 'Live and Active Cultures' seal (requires minimum 100 million CFU; contains Lactobacillus bulgaricus and Streptococcus thermophiles at minimum), and sauerkraut (fermented cabbage; some benefit for IBS symptoms). NOT correct: Almonds are an excellent food (vitamin E, healthy fats, magnesium) and contain PREBIOTICS (they feed beneficial bacteria) but are NOT a source of probiotics (live bacteria). White bread is made with yeast but the baking process kills the yeast — no live organisms survive. Sourdough bread (made with live starter culture) is a probiotic food — regular white bread is not."
+    },
+    {
+      "id": 29,
+      "unit": "omega3",
+      "topic": "Omega-3 Fatty Acids — Eicosanoids",
+      "type": "mc",
+      "q": "What are eicosanoids and why does the balance between omega-3 and omega-6 fatty acids in the diet matter?",
+      "opts": [
+        "Eicosanoids are storage fats — omega-3s store as muscle fat and omega-6s store as visceral fat",
+        "Eicosanoids are hormone-like signaling molecules made from fatty acids; omega-3s tend to produce anti-inflammatory eicosanoids while omega-6s produce pro-inflammatory ones — making the dietary ratio clinically important",
+        "Eicosanoids are digestive enzymes that require omega fatty acids as cofactors",
+        "Eicosanoids are a type of phospholipid; the omega-3/6 ratio determines which type is built into cell membranes"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Eicosanoids are HORMONE-LIKE MOLECULES (including prostaglandins, thromboxanes, and leukotrienes) made from 20-carbon fatty acids (eicosa = 20 in Greek). They are not true hormones — they act locally at the cell level. Omega-3 and omega-6 fatty acids are both incorporated into cell membrane phospholipids. When cells need to generate eicosanoids (in response to tissue damage, infection, or signaling needs), they release these fatty acids from membranes and convert them: omega-6 → PRO-inflammatory, platelet-aggregating, and blood pressure-raising eicosanoids; omega-3 (EPA/DHA) → ANTI-inflammatory, platelet-inhibiting, and blood pressure-reducing eicosanoids. BOTH types are necessary. The problem in the Standard American Diet: the ratio is heavily skewed toward omega-6 (soybean/corn oil) with insufficient omega-3, tilting the balance toward chronic low-grade inflammation — linked to CVD, arthritis, depression, and metabolic disease."
+    },
+    {
+      "id": 30,
+      "unit": "omega3",
+      "topic": "Omega-3 Fatty Acids — Food Sources",
+      "type": "mc",
+      "q": "A vegan patient who is 6 weeks pregnant asks the nurse about meeting her DHA needs since she does not eat fish. The nurse's best response is:",
+      "opts": [
+        "Vegan patients cannot meet DHA needs and must consume fish during pregnancy",
+        "Flaxseeds and walnuts provide abundant DHA so no additional measures are needed",
+        "Plant sources like flaxseeds provide ALA which converts to EPA and DHA, but conversion is limited; algae-based DHA supplements are the best plant-derived source of preformed DHA and should be discussed with her physician",
+        "Taking any omega-3 supplement is safe in pregnancy without physician consultation"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "This is a clinically important question. ALA (alpha-linolenic acid) from plant sources (flaxseeds, chia seeds, walnuts) IS an omega-3 — but it must be converted to EPA and then DHA in the body. This conversion is LIMITED — estimated at 5-15% for EPA and much less for DHA. DHA is critical for fetal BRAIN and EYE development — the fetal brain accumulates large amounts of DHA during the third trimester and early postnatal period. A vegan/vegetarian pregnant patient who doesn't eat fish may be at risk for inadequate DHA for fetal neurodevelopment. The solution: ALGAE-BASED DHA supplements, which are the direct source from which fish get their DHA (fish don't synthesize DHA — they get it from eating algae). Algae DHA supplements are vegan, safe, and provide preformed DHA. Always direct patient to discuss supplements with her OB/midwife before starting."
+    },
+    {
+      "id": 31,
+      "unit": "omega3",
+      "topic": "Omega-3 Fatty Acids",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Which of the following are established or strongly supported clinical benefits of adequate omega-3 fatty acid (EPA/DHA) intake?",
+      "opts": [
+        "Reduction of elevated triglycerides",
+        "Improved neurological development in infants",
+        "Relief from dry eye syndrome",
+        "Cure for established cardiovascular disease",
+        "Anti-inflammatory benefit in rheumatoid arthritis",
+        "Treatment of iron-deficiency anemia"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "CORRECT: Omega-3 EPA/DHA reduces elevated triglycerides — this is one of the most well-established and FDA-approved uses of omega-3 supplementation (prescription-dose fish oil like Vascepa is approved for very high triglycerides). DHA is essential for fetal and infant neurological and visual development — inadequate intake during pregnancy and lactation impairs brain development. Omega-3s relieve dry eye syndrome by reducing inflammation in the lacrimal glands and improving tear quality. Omega-3s reduce joint inflammation in rheumatoid arthritis, decreasing morning stiffness and tender joints. NOT correct: Omega-3s do not cure established CVD — they reduce risk and may slow progression, but cannot reverse existing disease. Iron-deficiency anemia requires iron replacement — omega-3s play no role in iron metabolism or red blood cell production."
+    },
+    {
+      "id": 32,
+      "unit": "general",
+      "topic": "Comprehensive Review",
+      "type": "mc",
+      "q": "A nurse is providing comprehensive dietary counseling to a patient at high risk for cardiovascular disease, type 2 diabetes, and certain cancers. Which dietary pattern would provide the broadest evidence-based protection through multiple bioactive compounds?",
+      "opts": [
+        "A high-protein, low-fat diet emphasizing lean meat and very few plant foods",
+        "A diet rich in colorful fruits and vegetables, whole grains, legumes, nuts, fatty fish, olive oil, garlic, and onions — consistent with the Mediterranean or DASH patterns",
+        "A diet eliminating all fats to prevent cardiovascular disease",
+        "A diet eliminating all carbohydrates to prevent type 2 diabetes"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The Mediterranean/DASH dietary pattern maximizes bioactive compound diversity by including: fruits and vegetables (flavonoids, anthocyanins, vitamin C, carotenoids), whole grains (phenolic acids, fiber/prebiotics), legumes (isoflavones, phytosterols, prebiotics), nuts (vitamin E, phytosterols, selenium, healthy fats), fatty fish (EPA/DHA omega-3s), olive oil (oleocanthal — an anti-inflammatory polyphenol; lignans; monounsaturated fats), and garlic/onions (allicin, quercetin, organosulfur compounds). These compounds work SYNERGISTICALLY — each provides different mechanisms of protection that complement each other. No single supplement can replicate this complexity. This is why whole dietary patterns consistently outperform individual nutrient supplementation in long-term clinical trials."
+    },
+    {
+      "id": 33,
+      "unit": "general",
+      "topic": "Comprehensive Review — Supplement Safety",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Which of the following statements about antioxidant and bioactive compound supplementation are evidence-based and correct?",
+      "opts": [
+        "High-dose beta-carotene supplements increased lung cancer risk in smokers in clinical trials",
+        "Getting antioxidants from whole foods is generally superior to taking antioxidant supplements",
+        "Vitamin C supplements reliably prevent the common cold and should be taken by all patients to stay healthy",
+        "High-dose vitamin E supplements (>400 IU) have been associated with increased prostate cancer risk and hemorrhage",
+        "A diet rich in bioactive compounds from diverse whole foods provides synergistic benefits that supplement pills cannot replicate"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Beta-carotene supplements increased lung cancer in smokers (CARET trial — one of the most alarming supplement safety findings). Whole food antioxidant sources are consistently superior to supplements — food provides nutrient synergy, fiber, and the complete phytochemical package. High-dose vitamin E supplements are linked to increased prostate cancer (SELECT trial) and hemorrhage/death risk. Whole food dietary patterns provide synergistic bioactive compound benefits that isolated supplements cannot replicate. NOT correct: Vitamin C supplements do NOT prevent the common cold in the general population — a 2013 Cochrane review of 29 studies showed no prevention benefit. If taken consistently before symptoms, duration may reduce by ~8% (adults) — but this does not support 'reliably prevent' language, and taking them AFTER symptoms develop provides no benefit."
+    },
+    {
+      "id": 34,
+      "unit": "general",
+      "topic": "Comprehensive Review — Mechanisms",
+      "type": "mc",
+      "q": "Which of the following BEST explains why oxidized LDL is more dangerous than normal (non-oxidized) LDL cholesterol?",
+      "opts": [
+        "Oxidized LDL travels faster through the bloodstream, increasing the risk of blood clots",
+        "Oxidized LDL is recognized as foreign and damaged by macrophages in arterial walls, triggering an inflammatory response that forms fatty streaks and atherosclerotic plaques — the root cause of coronary artery disease, MI, and stroke",
+        "Oxidized LDL prevents HDL from collecting cholesterol from tissues",
+        "Oxidized LDL is converted into VLDL by the liver, increasing triglyceride levels"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "LDL oxidation is the KEY mechanism of atherosclerosis. Normal LDL delivers cholesterol to cells — this is its normal function. But when free radicals attack LDL, the oxidized LDL (ox-LDL) is recognized as damaged and 'foreign' by MACROPHAGES (immune cells) in arterial walls. Macrophages engulf enormous quantities of ox-LDL in an attempt to remove it, but become overwhelmed and transform into FOAM CELLS — lipid-laden, dysfunctional immune cells that accumulate in vessel walls and form FATTY STREAKS, the earliest atherosclerotic lesions. These progress to fibrous plaques and eventually to plaque rupture triggering MI or stroke. This is why antioxidants (especially vitamin E within LDL particles) that protect LDL from oxidation are cardiovascular protective — and why smoking (massive oxidative stress) dramatically accelerates atherosclerosis."
+    },
+    {
+      "id": 35,
+      "unit": "general",
+      "topic": "Comprehensive Review — All Bioactives",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A student nurse is reviewing Module 6. Which of the following statements are CORRECT?",
+      "opts": [
+        "Vitamin C enhances non-heme iron absorption and helps regenerate vitamin E after it acts as an antioxidant",
+        "Selenium is a component of antioxidant enzymes that protect lipids from free radical damage and spare vitamin E",
+        "Allicin in garlic promotes nitric oxide production, reducing blood pressure through vasodilation",
+        "Phytosterols raise LDL cholesterol by blocking HDL receptor activity",
+        "Prebiotics are indigestible carbohydrates that serve as fuel for beneficial gut bacteria",
+        "The AMDR (Acceptable Macronutrient Distribution Range) for protein is 45-65% of total calories"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "CORRECT: Vitamin C enhances non-heme iron absorption AND regenerates oxidized vitamin E — both are critical clinical functions. Selenium is incorporated into glutathione peroxidase and other antioxidant selenoproteins that protect lipids and spare vitamin E — the antioxidant team concept. Allicin promotes nitric oxide production in blood vessels causing vasodilation → lower blood pressure — the cardiovascular mechanism of garlic. Prebiotics are indigestible carbohydrates (dietary fibers) fermented by colonic bacteria, stimulating their growth. NOT correct: Phytosterols LOWER LDL (they compete with cholesterol absorption in the small intestine and facilitate cholesterol excretion) — they do NOT raise it. The AMDR for PROTEIN is 10-35% of total calories — 45-65% is the AMDR for CARBOHYDRATES. Confusing these two has appeared on NCLEX before and will likely appear again."
+    }
+  ]
+}

@@ -1,0 +1,616 @@
+{
+  "id": "nutrition-mod1-part3",
+  "class": "nutrition",
+  "module": 1,
+  "title": "Module 1 — Part 3 Digestive System Quiz",
+  "description": "32-question quiz covering digestive system organization, GI tract anatomy, absorption mechanisms, and accessory organ functions.",
+  "topics": [
+    "GI tract organization",
+    "layers of GI wall",
+    "mucosa",
+    "submucosa",
+    "muscularis",
+    "serosa",
+    "enteric nervous system",
+    "stomach anatomy",
+    "fundus",
+    "pylorus",
+    "duodenum",
+    "jejunum",
+    "ileum",
+    "cecum",
+    "colon",
+    "rectum",
+    "ileocecal valve",
+    "sphincters",
+    "gastric emptying",
+    "segmentation",
+    "haustra"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "digestion",
+      "topic": "3.1 Overview & Organization",
+      "type": "mc",
+      "q": "Which of the following is the correct description of the GI tract?",
+      "opts": [
+        "A group of accessory organs that secrete digestive juices into a central collection chamber",
+        "A continuous, one-way muscular tube approximately 25 feet long running from the mouth to the anus",
+        "A series of separate chambers connected by valves where food is stored between digestive steps",
+        "The collective term for the liver, gallbladder, and pancreas"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The GI (gastrointestinal) tract is a continuous one-way tube approximately 25 feet (7.5 meters) long beginning at the mouth and ending at the anus. Food inside the lumen is technically 'outside' the body until nutrients are absorbed across the intestinal wall. The liver, gallbladder, and pancreas are the ACCESSORY organs — separate from the GI tube itself but connected to it by ducts through which they deliver digestive secretions."
+    },
+    {
+      "id": 2,
+      "unit": "digestion",
+      "topic": "3.1 Overview & Organization",
+      "type": "sata",
+      "q": "Which of the following are correctly identified as ACCESSORY digestive organs? Select all that apply.",
+      "opts": [
+        "Liver",
+        "Pancreas",
+        "Stomach",
+        "Gallbladder",
+        "Salivary glands",
+        "Small intestine"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "The four accessory organs are the liver, pancreas, gallbladder, and salivary glands. They are NOT part of the GI tube itself — they deliver digestive secretions into the tube via ducts. The stomach and small intestine are parts of the GI TRACT (the tube), not accessory organs. A helpful memory tip: accessory organs = the ones that deliver products TO the tube without being part of it."
+    },
+    {
+      "id": 3,
+      "unit": "digestion",
+      "topic": "3.1 Overview & Organization",
+      "type": "mc",
+      "q": "A patient is scheduled for a cholecystectomy (gallbladder removal). The nurse correctly explains that after surgery the patient should initially follow a low-fat diet because:",
+      "opts": [
+        "The liver will no longer produce bile after the gallbladder is removed",
+        "Without the gallbladder to store and concentrate bile, bile cannot be released in adequate boluses to match high-fat meals — fat may go undigested, causing diarrhea",
+        "The gallbladder produces the enzymes needed to digest fat, so fat cannot be digested without it",
+        "Dietary fat is absorbed in the gallbladder, and without it, all dietary fat will be lost in the stool"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The liver CONTINUES to produce bile after cholecystectomy — the gallbladder only stored and concentrated it. Without the gallbladder, bile trickles continuously in small amounts rather than being released in a concentrated bolus when fat arrives in the duodenum. A high-fat meal overwhelms the available bile → inadequate emulsification → undigested fat causes osmotic diarrhea (steatorrhea). Over weeks, most patients adapt as bile flow adjusts. Fat digestion and enzyme production are not gallbladder functions."
+    },
+    {
+      "id": 4,
+      "unit": "digestion",
+      "topic": "3.1 Overview & Organization",
+      "type": "mc",
+      "q": "The nurse is explaining why a patient with acute pancreatitis is being kept NPO (nothing by mouth). The best physiological rationale is:",
+      "opts": [
+        "Fasting stops the liver from producing bile, which is the main trigger of pancreatitis",
+        "Eating stimulates hormone release (secretin and CCK) that signals the pancreas to secrete enzymes; in pancreatitis, these enzymes activate inside the gland and auto-digest it — removing the dietary stimulus allows the gland to rest",
+        "NPO prevents the stomach from producing HCl, which is what damages the pancreas",
+        "All GI organs are connected, so resting the stomach by NPO directly rests the pancreas"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "When you eat (especially protein and fat), your duodenum releases secretin (triggers pancreatic bicarbonate) and CCK (triggers pancreatic enzymes and bile). In pancreatitis, pancreatic enzymes are activated prematurely inside the gland itself — causing the pancreas to auto-digest (hence the severe pain and elevated lipase/amylase labs). NPO removes the hormonal stimulus for pancreatic secretion, allowing the inflamed gland to rest and heal. This is the core physiological rationale for NPO in pancreatitis management."
+    },
+    {
+      "id": 5,
+      "unit": "digestion",
+      "topic": "3.2 Five Activities of Digestion",
+      "type": "mc",
+      "q": "Which of the five activities of digestion is described as 'the entry of food into the GI tract through the mouth'?",
+      "opts": [
+        "Absorption",
+        "Chemical digestion",
+        "Mechanical digestion",
+        "Ingestion"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Ingestion is the first of the five activities of digestion. It refers to the entry of food into the GI tract via the mouth. It includes mastication (chewing), which performs mechanical digestion simultaneously. The five activities in order are: (1) Ingestion, (2) Mechanical Digestion, (3) Chemical Digestion, (4) Absorption, (5) Excretion/Defecation."
+    },
+    {
+      "id": 6,
+      "unit": "digestion",
+      "topic": "3.2 Five Activities of Digestion",
+      "type": "sata",
+      "q": "A nurse is teaching a patient about digestion. Which of the following statements correctly describe CHEMICAL digestion? Select all that apply.",
+      "opts": [
+        "Chemical digestion involves physically breaking food into smaller pieces to increase surface area",
+        "Chemical digestion uses enzymes to break large nutrient molecules into smaller, absorbable building blocks",
+        "The main chemical reaction in digestion is hydrolysis — splitting molecules by adding water",
+        "Chemical digestion of carbohydrates begins in the mouth with salivary amylase",
+        "Chemical digestion of protein begins in the STOMACH, not the mouth"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "B: Chemical digestion uses enzymes to break macromolecules down to absorbable units — correct. C: Hydrolysis (splitting with water + enzyme) is the primary chemical reaction in all digestion — correct. D: Salivary amylase in the mouth begins starch (carbohydrate) digestion — correct. E: Protein digestion does NOT begin in the mouth — it begins in the STOMACH with pepsin (activated by HCl) — correct. A is WRONG: physically breaking food into smaller pieces describes MECHANICAL digestion (chewing, churning), not chemical digestion. Chemical digestion changes the molecular structure of nutrients; mechanical digestion does not."
+    },
+    {
+      "id": 7,
+      "unit": "digestion",
+      "topic": "3.2 Five Activities of Digestion",
+      "type": "mc",
+      "q": "Which activity of digestion is described as 'nutrients crossing the intestinal wall to enter the bloodstream or lymph'?",
+      "opts": [
+        "Ingestion",
+        "Mechanical digestion",
+        "Absorption",
+        "Excretion"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Absorption is the fourth activity of digestion. It is the process by which digested nutrients cross the intestinal wall (enterocytes) and enter either the capillaries (water-soluble nutrients) or lacteals (fat-soluble nutrients). This is the GOAL of the entire digestive process. It occurs primarily in the small intestine. Diseases that damage the intestinal lining (celiac disease, Crohn's) impair absorption — making it the most clinically critical activity of digestion from a nutritional standpoint."
+    },
+    {
+      "id": 8,
+      "unit": "digestion",
+      "topic": "3.3 Peristalsis & Segmentation",
+      "type": "mc",
+      "q": "A post-operative patient who had an exploratory laparotomy is being monitored. The nurse auscultates the abdomen and notes complete absence of bowel sounds. This finding is MOST consistent with:",
+      "opts": [
+        "Normal post-operative recovery — bowel sounds are always absent after abdominal surgery and no action is needed",
+        "Ileus — paralysis of GI peristalsis, a known complication of abdominal surgery; the absence of peristalsis means the GI tract cannot propel contents forward",
+        "Segmentation that has increased to an abnormal rate",
+        "A sign that the patient is ready for oral intake"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Absent bowel sounds after abdominal surgery indicate post-operative ileus — a temporary paralysis of GI peristalsis. Without peristalsis, the GI tract cannot propel contents forward. This causes abdominal distension, nausea, inability to tolerate oral intake, and potentially vomiting of GI contents. It is a common complication, not a normal expectation. The return of bowel sounds indicates resuming peristalsis — a key milestone before advancing diet. Early ambulation after surgery is one of the most effective ways to stimulate GI motility recovery."
+    },
+    {
+      "id": 9,
+      "unit": "digestion",
+      "topic": "3.3 Peristalsis & Segmentation",
+      "type": "sata",
+      "q": "Which of the following correctly describe SEGMENTATION? Select all that apply.",
+      "opts": [
+        "Segmentation propels food forward from the mouth toward the anus",
+        "Segmentation involves localized contractions that mix chyme back and forth within the small intestine",
+        "Segmentation increases contact between nutrients and absorptive cells (villi), improving absorption",
+        "Segmentation occurs primarily in the SMALL INTESTINE",
+        "Segmentation moves food in the same direction as peristalsis"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "B: Segmentation consists of localized contractions that move chyme back and forth — correct. C: By mixing chyme with digestive juices and keeping it in prolonged contact with the villi, segmentation maximizes absorption — correct. D: Segmentation primarily occurs in the small intestine, where absorption is happening — correct. A is WRONG: Segmentation is NON-propulsive — it does NOT move food forward. That is the job of peristalsis. E is WRONG for the same reason — segmentation moves food back and forth, not directionally like peristalsis."
+    },
+    {
+      "id": 10,
+      "unit": "digestion",
+      "topic": "3.3 Peristalsis & Segmentation",
+      "type": "mc",
+      "q": "A patient on IV morphine for severe post-operative pain has not had a bowel movement in 4 days. The MOST appropriate nursing action is:",
+      "opts": [
+        "Reassure the patient that this is expected and no intervention is needed until day 7",
+        "Immediately obtain an abdominal X-ray to rule out bowel obstruction and stop all pain medications",
+        "Contact the physician to initiate a bowel regimen (stool softener + stimulant laxative), as opioid-induced constipation is a predictable and preventable side effect that should be managed proactively",
+        "Encourage the patient to increase fiber intake, which will resolve the constipation"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Opioid-induced constipation (OIC) is among the most predictable and common side effects of all opioid analgesics. Opioids bind to mu receptors in the enteric nervous system and throughout the GI tract, directly SLOWING peristalsis, increasing intestinal water absorption, and raising sphincter tone. Unlike opioid analgesic tolerance, tolerance to the constipating effect develops slowly or not at all. BEST PRACTICE: A bowel regimen should be initiated PROACTIVELY on day 1 of opioid therapy — not after constipation develops. The standard regimen: stool softener (docusate) + stimulant laxative (senna). Fiber alone cannot overcome opioid-induced colonic stasis."
+    },
+    {
+      "id": 11,
+      "unit": "digestion",
+      "topic": "3.3 Peristalsis & Segmentation",
+      "type": "mc",
+      "q": "The nurse explains to a student nurse that peristalsis is so powerful that food reaches the stomach even when a patient is lying completely flat. This is because:",
+      "opts": [
+        "Gravity helps food fall through the esophagus regardless of position",
+        "Peristalsis is an involuntary, muscular wave of contraction and relaxation controlled by the enteric nervous system — it actively propels food forward regardless of body position",
+        "Stomach suction creates negative pressure that pulls food downward",
+        "The esophageal sphincters are always open, allowing free passage of food by gravity"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Peristalsis is driven by the enteric nervous system (the 'brain of the gut') — it is completely involuntary and does not depend on gravity. Sequential waves of smooth muscle contraction squeeze behind the food bolus, while relaxation opens the tube ahead of it, actively propelling food forward regardless of body orientation. This has a clinical implication: placing a patient in an upright position after meals reduces GERD risk by using GRAVITY as an additional barrier against reflux — but peristalsis itself works in any position."
+    },
+    {
+      "id": 12,
+      "unit": "digestion",
+      "topic": "3.4 Chemical Digestion: Enzymes & Hydrolysis",
+      "type": "mc",
+      "q": "A patient with chronic pancreatitis has severely reduced pancreatic enzyme secretion. Which clinical finding would the nurse MOST expect?",
+      "opts": [
+        "Difficulty digesting carbohydrates only, since the stomach handles all protein and fat digestion",
+        "Malabsorption of fat (steatorrhea — fatty, foul-smelling stools), weight loss, and potential fat-soluble vitamin deficiency (A, D, E, K)",
+        "Inability to produce saliva, since the pancreas controls all digestive secretions",
+        "Increased gastric acid, since the pancreas normally neutralizes all stomach acid before it reaches the intestine"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Pancreatic lipase is the PRIMARY fat-digesting enzyme. Without it, dietary fat cannot be broken down into absorbable fatty acids and monoglycerides. Undigested fat passes into the large intestine, drawing water in osmotically (diarrhea) and producing steatorrhea (fatty, pale, foul-smelling, floating stools). Prolonged fat malabsorption also causes deficiency of fat-soluble vitamins (A, D, E, K) because their absorption depends on fat digestion and bile emulsification. Treatment: pancreatic enzyme replacement therapy (PERT) taken WITH meals. Saliva is produced by the salivary glands (separate from the pancreas)."
+    },
+    {
+      "id": 13,
+      "unit": "digestion",
+      "topic": "3.4 Chemical Digestion: Enzymes & Hydrolysis",
+      "type": "sata",
+      "q": "Which of the following statements about HYDROLYSIS are correct? Select all that apply.",
+      "opts": [
+        "Hydrolysis splits large molecules into smaller ones by adding water across a chemical bond",
+        "Hydrolysis requires a specific enzyme to facilitate each reaction",
+        "If the enzyme lactase is absent, lactose will be hydrolyzed by a different enzyme instead",
+        "Hydrolysis is the main chemical reaction in ALL digestion of the three macronutrients",
+        "Without hydrolysis, absorbed nutrients would be toxic to cells"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "A: Hydrolysis adds water across a bond to split a larger molecule — correct. B: Each hydrolysis reaction requires a specific enzyme (amylase for starch, lactase for lactose, lipase for triglycerides, pepsin for proteins) — correct. C is WRONG: There is NO substitute enzyme for lactase. If lactase is absent, lactose cannot be hydrolyzed. It passes undigested to the large intestine where bacteria ferment it — causing gas, bloating, and diarrhea (lactose intolerance). D: Hydrolysis is the primary chemical reaction in the digestion of all three macronutrients — correct. E is WRONG: Without hydrolysis, nutrients cannot be ABSORBED (they are too large to cross the intestinal wall). The issue is malabsorption, not toxicity."
+    },
+    {
+      "id": 14,
+      "unit": "digestion",
+      "topic": "3.4 Chemical Digestion: Enzymes & Hydrolysis",
+      "type": "mc",
+      "q": "The nurse understands that pancreatic enzymes are secreted as INACTIVE precursors (zymogens) rather than in their active form. The clinical relevance of this fact is:",
+      "opts": [
+        "Active enzymes would be too expensive to produce metabolically",
+        "If enzymes were active inside the pancreas, they would digest the gland itself — this is exactly what happens in pancreatitis when zymogens are prematurely activated inside the gland",
+        "Inactive enzymes travel faster through pancreatic ducts",
+        "The pancreas intentionally inactivates enzymes to allow the stomach to digest food first"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Pancreatic proteases (trypsin, chymotrypsin) and lipase are powerful enough to digest biological tissue. If they were active inside the pancreas, they would auto-digest the gland. The zymogen strategy keeps them inactive until they reach the duodenum, where enterokinase (a brush-border enzyme) activates trypsinogen → trypsin, which then activates the other zymogens. In ACUTE PANCREATITIS, zymogens are prematurely activated inside the pancreatic acinar cells — leading to auto-digestion of the pancreas, severe inflammation, elevated serum lipase and amylase, and exquisite abdominal pain."
+    },
+    {
+      "id": 15,
+      "unit": "digestion",
+      "topic": "3.4 Chemical Digestion: Enzymes & Hydrolysis",
+      "type": "mc",
+      "q": "The nurse is reviewing a patient's lab results and notes markedly elevated serum amylase and lipase. These findings are MOST directly associated with:",
+      "opts": [
+        "Liver disease — the liver produces amylase and lipase",
+        "Pancreatitis — amylase and lipase are pancreatic enzymes that leak into the bloodstream when the pancreas is inflamed and damaged",
+        "Celiac disease — enzyme levels rise when villi are damaged",
+        "Lactose intolerance — the body overproduces amylase to compensate for missing lactase"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Amylase and lipase are produced by the PANCREAS. In pancreatitis (inflammation of the pancreas), these enzymes leak from damaged acinar cells into the bloodstream. Serum amylase typically rises within 6–12 hours of onset and normalizes in 3–5 days. Serum lipase rises slightly later but persists longer (5–14 days), making it more specific for pancreatitis. Elevated amylase + lipase (typically >3× upper limit of normal) is a hallmark lab finding for acute pancreatitis. The liver produces ALT, AST, alkaline phosphatase, and bilirubin — not amylase or lipase."
+    },
+    {
+      "id": 16,
+      "unit": "digestion",
+      "topic": "3.5 Mouth & Esophagus",
+      "type": "mc",
+      "q": "A nurse is assessing a patient who just received chemotherapy and has severe oral mucositis. Which statement BEST explains why this patient is at high risk for nutritional deficiencies?",
+      "opts": [
+        "Mucositis only causes pain and has no effect on nutrition, since the stomach handles all digestion",
+        "Mucositis impairs mastication and swallowing, reducing both mechanical and chemical digestion in the mouth — the very first stage of digestion — which reduces intake and compromises all subsequent digestive steps",
+        "The salivary glands are part of the colon, so mucositis affects only the large intestine",
+        "Mucositis destroys pancreatic enzymes, making chemical digestion impossible"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Oral mucositis from chemotherapy or radiation causes painful inflammation and ulceration of the oral mucosa, tongue, and pharynx. This impairs: (1) MASTICATION — patients cannot chew, reducing mechanical breakdown; (2) SALIVARY GLAND FUNCTION — reduced saliva impairs bolus formation and initiates chemical digestion (amylase begins starch digestion); (3) SWALLOWING — painful or impossible, severely limiting oral intake. Since digestion is a sequential process, impairment at the FIRST STAGE compromises everything downstream. These patients often require nutritional support (liquid diets, tube feeding, TPN) and aggressive oral care. Pain management is essential to maintain any oral intake."
+    },
+    {
+      "id": 17,
+      "unit": "digestion",
+      "topic": "3.5 Mouth & Esophagus",
+      "type": "sata",
+      "q": "Which of the following correctly describe functions of the ESOPHAGUS? Select all that apply.",
+      "opts": [
+        "Transport of the food bolus from the mouth to the stomach via peristalsis",
+        "Chemical digestion of carbohydrates using esophageal amylase",
+        "The lower esophageal sphincter (LES) normally stays closed to prevent gastric acid from entering the esophagus",
+        "A weakened or inappropriately relaxed LES is the fundamental mechanism of GERD",
+        "Absorption of fat-soluble vitamins in the esophageal mucosa"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "A: The esophagus transports the bolus from pharynx to stomach via peristalsis — correct. C: The LES should remain closed between swallows to protect the esophageal mucosa from acid — correct. D: GERD occurs when the LES weakens or relaxes inappropriately, allowing gastric acid to reflux into the esophagus — correct. B is WRONG: There is NO chemical digestion in the esophagus. Any salivary amylase from the mouth is simply carried through; the esophagus contributes no digestive secretions. E is WRONG: Absorption occurs in the SMALL INTESTINE — not the esophagus."
+    },
+    {
+      "id": 18,
+      "unit": "digestion",
+      "topic": "3.5 Stomach",
+      "type": "mc",
+      "q": "A patient asks the nurse why their physician ordered omeprazole (a proton pump inhibitor, PPI) to be taken 30–60 minutes BEFORE breakfast rather than after eating. The nurse's best response is:",
+      "opts": [
+        "PPIs need to be absorbed on an empty stomach to prevent nausea",
+        "PPIs block the proton pump (acid-producing mechanism) in parietal cells — the pump must be active and stimulated by food to be effectively blocked; taking the PPI before a meal ensures maximum acid suppression when acid production is highest",
+        "PPIs work best when mixed with food to activate them chemically",
+        "The timing does not matter — PPIs can be taken at any time with equal effectiveness"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "PPIs (omeprazole, pantoprazole, esomeprazole, lansoprazole) work by irreversibly blocking the H⁺/K⁺ ATPase (proton pump) in gastric parietal cells. The drug only binds to ACTIVE (stimulated) pumps. After a meal, parietal cells are maximally stimulated to produce acid, activating the greatest number of pumps. Taking the PPI 30–60 minutes before a meal ensures peak blood levels when those pumps are being activated by food — achieving maximum suppression. This is one of the most commonly tested medication timing questions in nursing pharmacology."
+    },
+    {
+      "id": 19,
+      "unit": "digestion",
+      "topic": "3.5 Stomach",
+      "type": "sata",
+      "q": "Which of the following are functions of HYDROCHLORIC ACID (HCl) in the stomach? Select all that apply.",
+      "opts": [
+        "Activates pepsinogen into its active form, pepsin",
+        "Emulsifies dietary fats into small droplets for digestion",
+        "Denatures (unfolds) dietary proteins, exposing peptide bonds to enzymatic attack",
+        "Destroys many ingested bacteria and pathogens — first line of microbial defense",
+        "Neutralizes the chyme when it enters the duodenum"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "A: HCl converts inactive pepsinogen → active pepsin — correct. C: The acid environment denatures the three-dimensional structure of dietary proteins, unfolding them so pepsin can access and cleave the peptide bonds — correct. D: The highly acidic environment (pH 1.5–3.5) kills the majority of ingested pathogens — correct (this is why long-term PPI use increases infection risk). B is WRONG: FAT EMULSIFICATION is performed by BILE (from the liver/gallbladder), not HCl. HCl has no fat-processing role. E is WRONG: PANCREATIC BICARBONATE neutralizes acid chyme when it enters the duodenum — not HCl (HCl acidifies; bicarbonate alkalinizes)."
+    },
+    {
+      "id": 20,
+      "unit": "digestion",
+      "topic": "3.5 Stomach",
+      "type": "mc",
+      "q": "Which statement about gastric emptying rates is MOST important for a nurse to understand when planning pre-operative care?",
+      "opts": [
+        "All foods empty from the stomach at the same rate, so 6 hours NPO is sufficient for all food types",
+        "High-fat meals can remain in the stomach for 4–5 hours, while clear liquids empty in about 2 hours — this is why pre-operative fasting guidelines specify 8 hours for solids and only 2 hours for clear liquids",
+        "Protein digestion is faster than carbohydrate digestion, so high-protein pre-op snacks are encouraged",
+        "Gastric emptying rate does not affect aspiration risk during anesthesia"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Gastric emptying rate varies significantly by macronutrient content: carbohydrates empty fastest (1–2 hours), protein next (3–4 hours), and high-fat meals slowest (4–5 hours). During anesthesia, the LES relaxes, protective airway reflexes are lost, and aspiration of gastric contents causes aspiration pneumonia — a potentially fatal complication. Pre-op NPO guidelines reflect these emptying rates: 8 hours for solid food (fat-containing), 2 hours for clear liquids. Confirming NPO compliance and correct timing is a critical nursing pre-operative assessment."
+    },
+    {
+      "id": 21,
+      "unit": "digestion",
+      "topic": "3.5 Stomach",
+      "type": "mc",
+      "q": "Parietal cells in the stomach produce intrinsic factor in addition to HCl. A patient who undergoes total gastrectomy (complete stomach removal) will require which lifelong intervention, and why?",
+      "opts": [
+        "Daily iron supplements, because the stomach produces the iron-binding protein haptoglobin",
+        "Lifelong Vitamin B12 injections (or high-dose sublingual B12), because intrinsic factor is required to absorb B12 in the terminal ileum — without a stomach, no intrinsic factor is produced, making oral B12 absorption impossible",
+        "Daily calcium supplements, because gastric acid is needed to absorb all minerals",
+        "Oral pancreatic enzymes, because the stomach produces all digestive enzymes"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Intrinsic factor (IF) is produced exclusively by gastric PARIETAL CELLS. It is a glycoprotein that binds dietary Vitamin B12 in the stomach, forming a complex that can be absorbed by specific receptors in the TERMINAL ILEUM. Without a stomach, no IF is produced. Without IF, dietary B12 cannot be absorbed — regardless of how much B12 is consumed orally. These patients develop B12 deficiency → megaloblastic anemia + potentially irreversible neurological damage (subacute combined degeneration). Treatment: B12 injections bypass the need for GI absorption entirely. This is tested frequently in NCLEX questions about gastrectomy complications."
+    },
+    {
+      "id": 22,
+      "unit": "digestion",
+      "topic": "3.5 Small Intestine",
+      "type": "mc",
+      "q": "A nurse is explaining why the small intestine is the primary site of absorption. The BEST explanation includes:",
+      "opts": [
+        "The small intestine is the longest part of the GI tract, so food spends more time there by default",
+        "The small intestine has the lowest pH of any GI organ, activating all digestive enzymes simultaneously",
+        "Three levels of structural amplification — circular folds, villi, and microvilli — give the small intestine over 200 square meters of absorptive surface area, approximately the size of a tennis court",
+        "The small intestine is directly connected to the liver, allowing absorbed nutrients to be immediately metabolized"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The extraordinary absorptive capacity of the small intestine is due to three nested levels of surface area amplification: (1) Circular folds (plicae circulares) — large permanent folds, increase area ~3×; (2) Villi — finger-like projections covered with enterocytes, each containing capillaries and a lacteal, increase area ~10×; (3) Microvilli (brush border) — microscopic projections on every enterocyte, increase area ~20×. Together they create >200 m² of absorptive surface in a tube only ~1 inch in diameter. This architecture is specifically designed to maximize nutrient contact with absorptive cells. Celiac disease destroys this architecture by flattening villi — this explains why it causes global malabsorption of all nutrients."
+    },
+    {
+      "id": 23,
+      "unit": "digestion",
+      "topic": "3.5 Small Intestine",
+      "type": "sata",
+      "q": "Which of the following are correctly matched to their absorption route in the small intestine? Select all that apply.",
+      "opts": [
+        "Glucose → absorbed into capillaries → portal vein → liver",
+        "Vitamin C → absorbed into lacteals → lymphatic system",
+        "Vitamin D → absorbed into lacteals (as part of chylomicrons) → lymphatic system → bloodstream",
+        "Long-chain fatty acids → packaged into chylomicrons → absorbed into lacteals → thoracic duct → bloodstream",
+        "Iron → absorbed into capillaries → portal vein → liver"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "A: Glucose is water-soluble; absorbed into capillaries → portal vein → liver — correct. B is WRONG: Vitamin C is a WATER-soluble vitamin; it is absorbed into CAPILLARIES, not lacteals. The lacteal route is for FAT-soluble substances only. C: Vitamin D is fat-soluble; absorbed via lacteals as part of chylomicrons — correct. D: Long-chain fatty acids (>12 carbons) are packaged into chylomicrons in enterocytes, then absorbed into lacteals — correct. E: Iron is a mineral with water-soluble transport; absorbed into capillaries → portal vein → liver — correct."
+    },
+    {
+      "id": 24,
+      "unit": "digestion",
+      "topic": "3.5 Small Intestine",
+      "type": "mc",
+      "q": "The nurse understands that fat-soluble vitamins (A, D, E, K) are MORE likely to cause toxicity than water-soluble vitamins when taken in excess. The best explanation is:",
+      "opts": [
+        "Fat-soluble vitamins are more chemically reactive than water-soluble vitamins, making them toxic at lower doses",
+        "Fat-soluble vitamins are absorbed via the lymphatic system and stored in fatty tissues and the liver; they cannot be excreted in urine when consumed in excess, so they accumulate. Water-soluble vitamins in excess are simply excreted in urine.",
+        "Fat-soluble vitamins require HCl to be absorbed; this excess acid causes toxicity",
+        "Water-soluble vitamins have higher molecular weights that prevent them from reaching toxic concentrations"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Fat-soluble vitamins (A, D, E, K) are absorbed via lacteals and stored in FATTY TISSUES and the LIVER — they have no efficient excretion pathway for excess amounts. When consumed in excess (through mega-dose supplements), they accumulate progressively. Water-soluble vitamins (B vitamins, Vitamin C) dissolve in water, circulate freely, and are readily excreted by the kidneys in urine when blood levels exceed the renal threshold. This is why water-soluble vitamin toxicity is rare (the kidneys remove the excess) while fat-soluble vitamin toxicity is clinically important — especially for Vitamins A and D, which have narrow therapeutic windows."
+    },
+    {
+      "id": 25,
+      "unit": "digestion",
+      "topic": "3.5 Small Intestine",
+      "type": "mc",
+      "q": "A patient with Crohn's disease affecting only the TERMINAL ILEUM is at highest risk for which specific deficiency, and why?",
+      "opts": [
+        "Iron deficiency, because iron is absorbed exclusively in the terminal ileum",
+        "Vitamin B12 deficiency, because the terminal ileum is the ONLY site in the body that absorbs Vitamin B12 (bound to intrinsic factor) — no other segment of the GI tract can compensate",
+        "Vitamin C deficiency, because Vitamin C requires terminal ileum transporters",
+        "Fat deficiency, because all fat absorption occurs exclusively in the terminal ileum"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The terminal ileum has TWO functions no other GI segment can replicate: (1) Vitamin B12 absorption — specific receptors in the terminal ileum bind the B12-intrinsic factor complex and absorb it. This is EXCLUSIVE to the terminal ileum. If the terminal ileum is inflamed, resected, or bypassed, B12 absorption fails → megaloblastic anemia AND subacute combined degeneration of the spinal cord (neurological damage). (2) Bile salt reabsorption (enterohepatic circulation) — also exclusive to the terminal ileum. Iron is absorbed in the DUODENUM/proximal jejunum. Fat and most nutrients are absorbed throughout the length of the jejunum and ileum. B12 is specifically NCLEX-tested in the context of terminal ileum Crohn's or ileal resection."
+    },
+    {
+      "id": 26,
+      "unit": "digestion",
+      "topic": "3.5 Small Intestine",
+      "type": "sata",
+      "q": "The nurse is caring for a patient who has been on total parenteral nutrition (TPN — IV nutrition bypassing the GI tract entirely) for 3 weeks following bowel surgery. Which of the following complications related to intestinal structure and function should the nurse anticipate? Select all that apply.",
+      "opts": [
+        "Villous atrophy — without luminal nutrients and enteral stimulation, enterocyte renewal slows and villi flatten and shorten",
+        "Reduced absorptive capacity of the small intestine when oral feedings resume",
+        "Gut bacterial overgrowth and immune dysfunction due to lack of enteral stimulation of GALT (gut-associated lymphoid tissue)",
+        "The pancreas stops producing enzymes permanently after 3 weeks without oral intake",
+        "Increased risk of cholestasis (impaired bile flow) — TPN-associated cholestasis is a known complication of prolonged TPN use"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "A: Enterocytes renew every 2–4 days and require luminal nutrients for optimal turnover. Without enteral stimulation, villi atrophy — correct. B: Villous atrophy means reduced absorptive surface area; refeeding after prolonged TPN must be done gradually — correct. C: GALT (60–70% of immune cells) lines the GI tract and requires luminal stimulation to maintain function; TPN bypasses this — correct. D is WRONG: The pancreas does NOT permanently stop enzyme production from 3 weeks of NPO/TPN. Exocrine function resumes when oral/enteral feeding resumes. E: TPN-associated liver disease (including cholestasis) is a well-documented complication of prolonged TPN — correct. This is why enteral nutrition is ALWAYS preferred when any portion of the GI tract is functional: 'If the gut works, use it.'"
+    },
+    {
+      "id": 27,
+      "unit": "digestion",
+      "topic": "3.5 Large Intestine",
+      "type": "mc",
+      "q": "A patient develops profuse, watery diarrhea and is diagnosed with C. difficile (C. diff) infection after a 10-day course of broad-spectrum antibiotics. The nurse implements contact precautions and which specific hand hygiene practice?",
+      "opts": [
+        "Alcohol-based hand sanitizer only — more effective than soap and water for all pathogens",
+        "Soap and water handwashing — alcohol-based sanitizers do NOT kill C. difficile spores",
+        "Antiseptic wipes applied to gloves before and after patient contact",
+        "Gloves alone are sufficient — hand hygiene is not required if gloves are worn correctly"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "C. difficile forms SPORES — dormant structures that are resistant to alcohol-based hand sanitizers. Alcohol kills many bacteria and viruses but cannot destroy C. diff spores. Only SOAP AND WATER removes spores from hands by mechanical friction and rinsing. This is a critically tested NCLEX infection control concept. Nursing actions for C. diff: (1) Contact precautions — gown + gloves; (2) SOAP AND WATER handwashing — not alcohol sanitizer; (3) Bleach-based (1:10 dilution) environmental cleaning of patient room surfaces; (4) Dedicated patient equipment; (5) Private room if possible."
+    },
+    {
+      "id": 28,
+      "unit": "digestion",
+      "topic": "3.5 Large Intestine",
+      "type": "sata",
+      "q": "The nurse is teaching a patient about the role of the LARGE INTESTINE in health. Which of the following statements are accurate? Select all that apply.",
+      "opts": [
+        "The large intestine is the primary site of nutrient (carbohydrate, protein, fat) absorption",
+        "The large intestine's primary function is reabsorption of water and electrolytes from chyme, producing semi-solid feces",
+        "Gut bacteria in the large intestine synthesize approximately 50% of the body's Vitamin K",
+        "Dietary fiber that reaches the large intestine is fermented by gut bacteria to produce short-chain fatty acids (SCFAs) that nourish colonocytes",
+        "Disruption of gut flora by antibiotics can allow C. difficile to overgrow, causing colitis"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "A is WRONG: Nutrient absorption (carbohydrates, proteins, fats) occurs in the SMALL INTESTINE, not the large intestine. The large intestine absorbs mainly water and some electrolytes. B: Water reabsorption is the primary function of the colon — correct. C: Gut bacteria synthesize ~50% of daily Vitamin K — correct (clinically important for patients on warfarin + antibiotics). D: Fiber fermentation produces butyrate, propionate, and acetate — the primary fuel for colonocytes and contributors to colonic health — correct. E: Antibiotics deplete protective flora → C. diff overgrowth → antibiotic-associated colitis — correct."
+    },
+    {
+      "id": 29,
+      "unit": "digestion",
+      "topic": "3.5 Large Intestine",
+      "type": "mc",
+      "q": "A nurse is caring for a patient on long-term warfarin therapy who was just started on a 14-day course of broad-spectrum antibiotics for a severe infection. Which lab value should the nurse MOST closely monitor, and why?",
+      "opts": [
+        "Serum amylase — antibiotics damage the pancreas, reducing enzyme production",
+        "INR (International Normalized Ratio) — broad-spectrum antibiotics kill gut bacteria that produce approximately 50% of the body's Vitamin K; reduced Vitamin K availability decreases production of clotting factors, increasing INR and bleeding risk in a patient already on warfarin",
+        "Serum glucose — antibiotics block glucose absorption in the colon",
+        "Serum calcium — gut bacteria are responsible for all calcium absorption"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Gut bacteria in the large intestine synthesize approximately 50% of the body's daily Vitamin K requirement. Broad-spectrum antibiotics decimate these bacteria, reducing Vitamin K production. Since Vitamin K is required for synthesis of clotting factors II, VII, IX, and X, reduced Vitamin K → reduced clotting factor production → ELEVATED INR (more anticoagulation). In a patient already anticoagulated with warfarin, this interaction can push the INR dangerously high → severe bleeding risk. Close INR monitoring during and after antibiotic courses is essential for warfarin patients. This is a classic drug-nutrient interaction tested on NCLEX."
+    },
+    {
+      "id": 30,
+      "unit": "digestion",
+      "topic": "Clinical Integration",
+      "type": "mc",
+      "q": "A student nurse asks the preceptor why patients receiving enteral tube feedings (nutrition delivered directly to the stomach or small intestine via a feeding tube) are generally considered healthier for the GI tract than patients receiving total parenteral nutrition (TPN — nutrition delivered intravenously). The best response is:",
+      "opts": [
+        "Enteral feedings cost less, which makes them less stressful for the patient",
+        "Enteral feedings stimulate the GI tract — maintaining enterocyte renewal, preserving villous architecture, stimulating GALT immune function, and preventing the villous atrophy and immune dysfunction associated with prolonged TPN",
+        "TPN provides more complete nutrition than enteral feedings",
+        "Enteral feedings bypass the liver, reducing the metabolic burden on that organ"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The principle 'If the gut works, use it' reflects critical physiology. Enteral nutrition — even if delivered via tube — keeps luminal nutrients in contact with enterocytes, which: (1) Maintains enterocyte renewal (every 2–4 days) and prevents villous atrophy; (2) Stimulates brush-border enzyme production; (3) Activates gut-associated lymphoid tissue (GALT), maintaining immune function; (4) Promotes bile flow (preventing TPN-associated cholestasis). TPN, by completely bypassing the GI tract, deprives enterocytes of luminal stimulation, causing villous atrophy, immune dysfunction, and increased infection risk over time. Enteral nutrition should always be used when ANY portion of the GI tract is functional."
+    },
+    {
+      "id": 31,
+      "unit": "digestion",
+      "topic": "Clinical Integration",
+      "type": "sata",
+      "q": "A nurse is reviewing the digestive process from beginning to end. Place the following events in the correct sequence by identifying which statements are in the RIGHT order for the digestion of a meal. Select all that apply.",
+      "opts": [
+        "Salivary amylase begins starch digestion in the mouth; lingual lipase begins fat digestion",
+        "The bolus is propelled through the esophagus by peristalsis to the stomach",
+        "HCl and pepsin begin protein digestion in the stomach; churning creates chyme",
+        "Pancreatic bicarbonate neutralizes acid chyme in the duodenum; bile emulsifies fat; pancreatic enzymes complete macronutrient digestion",
+        "Nutrients are absorbed across villi into capillaries (water-soluble) or lacteals (fat-soluble) in the small intestine",
+        "Water and electrolytes are reabsorbed in the large intestine; gut bacteria ferment fiber; feces is formed and stored for defecation"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "ALL six statements are correct AND in the correct sequence. This question tests your knowledge of the complete digestive process from mouth to large intestine. (1) Mouth: amylase (starch) + lingual lipase (fat) + mechanical chewing → bolus. (2) Esophagus: peristalsis carries bolus to stomach. (3) Stomach: HCl + pepsin + churning → chyme. (4) Duodenum: bicarbonate + bile + pancreatic enzymes complete digestion. (5) Jejunum/Ileum: absorption via capillaries (water-soluble) and lacteals (fat-soluble). (6) Large intestine: water reabsorption, fermentation, feces formation. All six correctly describe this process in order."
+    },
+    {
+      "id": 32,
+      "unit": "digestion",
+      "topic": "Clinical Integration",
+      "type": "mc",
+      "q": "A patient with newly diagnosed celiac disease asks why they developed anemia, bone pain, and fatigue even though they were eating a 'normal' diet with plenty of meat and vegetables. The nurse's BEST explanation is:",
+      "opts": [
+        "These symptoms are unrelated to celiac disease — they must have another condition",
+        "In celiac disease, gluten triggers an autoimmune attack that flattens the intestinal villi — the tiny absorptive projections in the small intestine. Without villi, the absorptive surface area collapses, causing malabsorption of iron and folic acid (→ anemia and fatigue) and calcium and Vitamin D (→ bone pain and osteoporosis risk) — regardless of how nutritious the diet is",
+        "Celiac disease only affects the large intestine, reducing water absorption and causing dehydration-related fatigue",
+        "The meat and vegetables in their diet contain gluten, which is why symptoms developed"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is the key clinical teaching point about celiac disease: it is not the DIET that is deficient — it is the ABILITY TO ABSORB from any diet that is impaired. Gluten triggers an autoimmune response that destroys the small intestinal villi (villous atrophy). Without villi and microvilli, the absorptive surface area collapses from 200 m² to a fraction of that. Iron and folic acid, absorbed in the duodenum and proximal jejunum (first areas damaged), become deficient → iron-deficiency anemia + folate-deficiency megaloblastic anemia → fatigue, pallor, exertional dyspnea. Calcium and Vitamin D malabsorption → bone demineralization → bone pain and osteoporosis. No matter how nutrient-rich the food is, it cannot be absorbed through flattened villi."
+    }
+  ]
+}

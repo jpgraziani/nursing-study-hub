@@ -1,0 +1,696 @@
+{
+  "id": "nutrition-mod3-full",
+  "class": "nutrition",
+  "module": 3,
+  "title": "Module 3 — Full Coverage Quiz",
+  "description": "38-question NCLEX-style quiz covering carbohydrate types, digestion, absorption, fiber, glycemic response, and clinical applications.",
+  "topics": [
+    "carbohydrates",
+    "simple sugars",
+    "complex carbohydrates",
+    "dietary fiber",
+    "soluble fiber",
+    "insoluble fiber",
+    "glycemic index",
+    "glycemic load",
+    "blood glucose",
+    "insulin response",
+    "lactose intolerance",
+    "cellulose",
+    "pectin",
+    "resistant starch",
+    "glycogen storage",
+    "diabetes and carbs"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "carb",
+      "topic": "Carbohydrates – Types",
+      "type": "mc",
+      "q": "Which of the following correctly identifies all THREE monosaccharides?",
+      "opts": [
+        "Glucose, sucrose, lactose",
+        "Glucose, fructose, galactose",
+        "Maltose, glucose, fructose",
+        "Starch, glycogen, cellulose"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The three monosaccharides are glucose, fructose, and galactose — the smallest carbohydrate units that require NO digestion before absorption. All three share the same chemical formula (C6H12O6) but have different arrangements. Sucrose, lactose, and maltose are disaccharides (two sugar units). Starch, glycogen, and cellulose are polysaccharides."
+    },
+    {
+      "id": 2,
+      "unit": "carb",
+      "topic": "Carbohydrates – Types",
+      "type": "mc",
+      "q": "A patient asks why she experiences bloating and diarrhea every time she drinks milk. The nurse explains this is most likely due to a deficiency in which enzyme?",
+      "opts": [
+        "Salivary amylase",
+        "Pancreatic lipase",
+        "Lactase",
+        "Sucrase"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Lactose intolerance occurs when the small intestine produces insufficient lactase — the enzyme that breaks down lactose (glucose + galactose) into its monosaccharide components. Without enough lactase, undigested lactose passes to the large intestine where bacteria ferment it, producing gas, bloating, and diarrhea. Salivary amylase digests starch. Pancreatic lipase digests fats. Sucrase digests sucrose."
+    },
+    {
+      "id": 3,
+      "unit": "carb",
+      "topic": "Carbohydrates – Guidelines",
+      "type": "mc",
+      "q": "The Recommended Dietary Allowance (RDA) for total carbohydrate in adults is 130 g/day. This figure is based primarily on:",
+      "opts": [
+        "The minimum amount needed to prevent obesity",
+        "The minimum amount of glucose required by the brain",
+        "The average carbohydrate intake of Americans",
+        "The amount needed to prevent ketoacidosis in all patients"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The RDA of 130 g/day is the MINIMUM required to meet the brain's glucose needs. The brain preferentially uses glucose and cannot efficiently switch to other fuels without adaptation time. Consuming below 130 g/day will typically push the body into ketosis, where the liver produces ketones from fat to provide alternative fuel. This is not about obesity prevention or average intake."
+    },
+    {
+      "id": 4,
+      "unit": "carb",
+      "topic": "Carbohydrates – Guidelines",
+      "type": "mc",
+      "q": "A patient on a 2,000-calorie diet asks how much added sugar is acceptable per day. According to the 2020 Dietary Guidelines, the nurse should advise:",
+      "opts": [
+        "Less than 25 grams (about 6 teaspoons)",
+        "Less than 50 grams (about 12 teaspoons)",
+        "Less than 75 grams (about 18 teaspoons)",
+        "No specific limit — naturally occurring sugars only should be restricted"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The 2020 Dietary Guidelines recommend that added sugars make up LESS than 10% of total daily calories. For a 2,000-calorie diet: 10% × 2,000 = 200 calories from added sugar. Since 1 gram of carbohydrate = 4 calories: 200 ÷ 4 = 50 grams, which equals about 12.5 teaspoons (4 grams/teaspoon). The key conversion: 4 grams sugar = 1 teaspoon. This is critical patient education, especially for diabetic patients."
+    },
+    {
+      "id": 5,
+      "unit": "carb",
+      "topic": "Carbohydrates – Digestion",
+      "type": "mc",
+      "q": "During carbohydrate digestion, which location is responsible for the MAJORITY of enzymatic digestion and absorption?",
+      "opts": [
+        "Mouth — via salivary amylase",
+        "Stomach — via gastric acid",
+        "Small intestine — via pancreatic amylase and brush border enzymes",
+        "Large intestine — via gut bacteria fermentation"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The small intestine is the major site of carbohydrate digestion AND absorption. Pancreatic amylase breaks starch into oligosaccharides and maltose. Then enterocyte (brush border) enzymes — maltase, sucrase, and lactase — complete the breakdown to monosaccharides for absorption. The mouth has salivary amylase for starch (minor role). The stomach inactivates salivary amylase via HCl and does little chemical digestion of carbs. The large intestine ferments fiber (not absorption of carbs)."
+    },
+    {
+      "id": 6,
+      "unit": "carb",
+      "topic": "Carbohydrates – Digestion",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Which of the following carbohydrates are enzymatically digested before absorption into the bloodstream?",
+      "opts": [
+        "Glucose",
+        "Sucrose",
+        "Lactose",
+        "Starch",
+        "Fiber"
+      ],
+      "correct": [
+        1,
+        2,
+        3
+      ],
+      "rationale": "CORRECT: Sucrose (digested by sucrase → glucose + fructose), Lactose (digested by lactase → glucose + galactose), and Starch (digested by amylase then maltase → glucose). NOT correct: Glucose is already a monosaccharide — no digestion needed, absorbed as-is. Fiber cannot be enzymatically digested by humans (we lack the enzymes); some is fermented by gut bacteria in the large intestine but is NOT absorbed as a carbohydrate."
+    },
+    {
+      "id": 7,
+      "unit": "carb",
+      "topic": "Carbohydrates – Blood Glucose Regulation",
+      "type": "mc",
+      "q": "Insulin is released from the beta cells of the pancreas. Which best describes insulin's primary mechanism of action?",
+      "opts": [
+        "It stimulates the liver to break down glycogen into glucose",
+        "It opens GLUT-4 glucose transporters on cell membranes, allowing glucose to enter cells",
+        "It converts amino acids into glucose through gluconeogenesis",
+        "It stimulates the kidneys to reabsorb glucose from urine"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Insulin works by binding to receptors on cell membranes, which triggers GLUT-4 glucose transporter proteins to move to the cell surface and open, allowing glucose to enter the cell. This decreases blood glucose. Think of it as: insulin = the KEY, GLUT-4 = the LOCK. In Type 2 diabetes, cells stop responding to insulin (insulin resistance), so the locks don't work even when the key is there. Glycogen breakdown is the function of GLUCAGON. Gluconeogenesis is stimulated by glucagon. The kidneys don't normally reabsorb glucose (glycosuria occurs when blood glucose is too high and overwhelms renal threshold)."
+    },
+    {
+      "id": 8,
+      "unit": "carb",
+      "topic": "Carbohydrates – Blood Glucose Regulation",
+      "type": "mc",
+      "q": "A patient who has been fasting for 36 hours is found to have sweet-smelling breath, dry mouth, and reduced appetite. The nurse recognizes these as signs of:",
+      "opts": [
+        "Hypoglycemia",
+        "Diabetic ketoacidosis",
+        "Ketosis",
+        "Hyperglycemia"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "After approximately 24 hours of fasting or very low carbohydrate intake, glycogen stores are depleted. The liver begins producing ketones from fatty acids as an alternative fuel. Accumulation of ketones in the blood is called ketosis. Classic signs include: sweet/fruity breath (acetone is exhaled), dry mouth, and reduced appetite (ketones suppress hunger). This is different from diabetic ketoacidosis (DKA), which involves dangerously HIGH and uncontrolled ketone production with acidosis, primarily in Type 1 diabetics with no insulin. Ketosis in a fasting context is a normal metabolic adaptation, not an emergency by itself."
+    },
+    {
+      "id": 9,
+      "unit": "carb",
+      "topic": "Carbohydrates – Diabetes",
+      "type": "mc",
+      "q": "Which statement correctly distinguishes Type 1 from Type 2 diabetes mellitus?",
+      "opts": [
+        "Type 1 is caused by insulin resistance; Type 2 involves absolute lack of insulin",
+        "Type 1 involves autoimmune destruction of beta cells; Type 2 begins with insulin resistance",
+        "Type 1 is always diet-controlled; Type 2 always requires insulin",
+        "Both types are caused by obesity and poor diet"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Type 1 DM is an autoimmune disease where the immune system destroys the beta cells of the pancreas — resulting in little or no insulin production. Insulin injections are REQUIRED. Type 2 DM begins with insulin resistance (cells stop responding to insulin) — the pancreas initially produces MORE insulin to compensate, but eventually fatigues and produces less. Type 2 is strongly associated with abdominal obesity but is not exclusively caused by diet. It is initially managed with lifestyle changes and oral medications, though insulin may be added later."
+    },
+    {
+      "id": 10,
+      "unit": "carb",
+      "topic": "Carbohydrates – Diabetes",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A nurse is developing a teaching plan for a patient with newly diagnosed Type 2 diabetes. Which lifestyle interventions should be included?",
+      "opts": [
+        "Eliminate all carbohydrates from the diet",
+        "Increase physical activity to improve insulin sensitivity",
+        "Eat regular, balanced meals following dietary guidelines",
+        "Manage stress levels and prioritize adequate sleep",
+        "Monitor blood glucose levels as directed"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Exercise improves insulin sensitivity and helps maintain healthy weight. Regular balanced meals (not carb elimination) help regulate blood glucose — carbs should emphasize whole food sources. Stress management and adequate sleep support blood glucose regulation. Blood glucose monitoring is essential. NOT correct: Eliminating all carbohydrates is not recommended and not sustainable. The goal is to emphasize whole food carb sources (high fiber) which blunt blood sugar spikes, not to eliminate carbs entirely."
+    },
+    {
+      "id": 11,
+      "unit": "carb",
+      "topic": "Carbohydrates – Diabetes",
+      "type": "mc",
+      "q": "A patient with gestational diabetes is concerned about future health risks. The nurse should educate her that gestational diabetes:",
+      "opts": [
+        "Has no connection to future diabetes risk once the pregnancy ends",
+        "Increases the risk of developing Type 2 diabetes later in life",
+        "Is always permanent and requires lifelong insulin",
+        "Affects only the mother, not the baby, during pregnancy"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "While gestational diabetes typically resolves after delivery, women who have it are at significantly increased risk of developing Type 2 diabetes later in life. It serves as an important warning sign. Additionally, gestational diabetes DOES affect the fetus — elevated maternal blood glucose crosses the placenta, causing excess fetal growth (macrosomia), which can complicate delivery. These women need ongoing monitoring and lifestyle counseling post-delivery."
+    },
+    {
+      "id": 12,
+      "unit": "carb",
+      "topic": "Carbohydrates – Fiber",
+      "type": "mc",
+      "q": "A nurse is counseling a patient with high LDL cholesterol. Which type of dietary fiber is most beneficial for lowering blood cholesterol, and through what mechanism?",
+      "opts": [
+        "Insoluble fiber — speeds transit time and reduces fat absorption",
+        "Soluble fiber — forms a viscous gel that binds cholesterol and bile acids in the GI tract",
+        "Soluble fiber — directly converts LDL to HDL in the bloodstream",
+        "Insoluble fiber — reduces carbohydrate absorption and lowers blood glucose"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Soluble fiber (found in oats, beans, apples, psyllium) dissolves in water and forms a viscous gel in the digestive tract. This gel binds cholesterol and bile acids (which are made from cholesterol) in the GI tract, preventing their reabsorption. The liver must then pull more LDL cholesterol from the blood to make new bile, lowering blood LDL levels. Insoluble fiber (wheat bran, vegetables) helps prevent constipation by adding bulk to stool but does not significantly lower cholesterol."
+    },
+    {
+      "id": 13,
+      "unit": "carb",
+      "topic": "Carbohydrates – Whole Grains",
+      "type": "mc",
+      "q": "Which of the following best explains why whole grains are nutritionally superior to refined grains, even when the refined grain is 'enriched'?",
+      "opts": [
+        "Whole grains have fewer calories per serving than refined grains",
+        "Refined grains retain the bran but lose the endosperm",
+        "Enriched refined grains have nutrients added back, but fiber, healthy fats, and many micronutrients are not restored",
+        "Whole grains contain more starch, which is a better energy source than fiber"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Refining removes the BRAN (fiber, B vitamins, antioxidants) and GERM (healthy fats, additional B vitamins, minerals), leaving only the starchy endosperm. Enrichment adds back some B vitamins (thiamin, riboflavin, niacin) and iron, and fortification adds folic acid — but FIBER, protein, healthy fats, vitamin E, magnesium, potassium, and many phytochemicals are NOT restored. This is why whole grains offer substantially greater nutritional density even compared to enriched refined grains."
+    },
+    {
+      "id": 14,
+      "unit": "carb",
+      "topic": "Carbohydrates – Sugar & Substitutes",
+      "type": "mc",
+      "q": "A patient asks about switching from regular soda to diet soda to lose weight. The nurse provides evidence-based counseling. Which statement is MOST accurate?",
+      "opts": [
+        "Diet soda is calorie-free and will definitely help with long-term weight loss",
+        "Short-term calorie reduction may occur, but long-term studies show no clear weight loss benefit, and gut microbiome effects are a concern",
+        "Diet soda is more dangerous than regular soda and should be completely avoided",
+        "Artificial sweeteners are equivalent to natural sugar in all metabolic effects"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Short-term studies show that switching from sugar-sweetened to artificially sweetened beverages can reduce calorie intake initially. However, long-term systematic reviews and observational studies show no clear benefit for weight loss and actually show correlation with higher BMI, metabolic syndrome, and type 2 diabetes (though causality is debated). Emerging research also shows that some artificial sweeteners (including stevia and saccharin) can alter gut microbiota. The most evidence-based recommendation is to shift toward WATER rather than diet soda as the long-term beverage goal."
+    },
+    {
+      "id": 15,
+      "unit": "lipid",
+      "topic": "Lipids – Functions",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Which of the following are established functions of dietary fat in the body?",
+      "opts": [
+        "Absorption and transport of fat-soluble vitamins A, D, E, and K",
+        "Synthesis of bile acids and sex hormones",
+        "Providing 4 calories per gram of energy",
+        "Insulating the body and protecting vital organs",
+        "Forming the phospholipid bilayer of cell membranes"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Fat aids absorption of fat-soluble vitamins (A, D, E, K) — a patient on a very low-fat diet is at risk for these deficiencies. Cholesterol (a lipid) is used to synthesize bile acids, vitamin D, and sex hormones. Adipose tissue insulates the body and visceral fat cushions organs. Phospholipids form all cell membranes. NOT correct: Fat provides 9 calories per gram — NOT 4. Carbohydrates and proteins provide 4 calories per gram. This is a key NCLEX distinction."
+    },
+    {
+      "id": 16,
+      "unit": "lipid",
+      "topic": "Lipids – Types",
+      "type": "mc",
+      "q": "A nursing student states, 'Phospholipids are hydrophobic on both ends, which is why they form the cell membrane.' The instructor should correct this by explaining that:",
+      "opts": [
+        "Phospholipids are hydrophilic on both ends",
+        "Phospholipids have a hydrophilic phosphate head and hydrophobic fatty acid tails — they are amphiphilic",
+        "Phospholipids are hydrophobic on both ends, which is correct",
+        "Phospholipids have only one fatty acid tail, which makes them fully water-soluble"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Phospholipids are AMPHIPHILIC — meaning they have BOTH water-attracting and water-repelling regions. The PHOSPHATE HEAD (attached to glycerol) is HYDROPHILIC (water-loving). The two FATTY ACID TAILS are HYDROPHOBIC (water-repelling). In the cell membrane bilayer, the hydrophilic heads face OUTWARD toward the watery environments inside and outside the cell, while the hydrophobic tails face INWARD, away from water. This structure creates a selective barrier for the cell."
+    },
+    {
+      "id": 17,
+      "unit": "lipid",
+      "topic": "Lipids – Fatty Acids",
+      "type": "mc",
+      "q": "Which type of fat has been shown to increase LDL cholesterol AND decrease HDL cholesterol, making it the most harmful dietary fat for cardiovascular health?",
+      "opts": [
+        "Saturated fatty acids",
+        "Monounsaturated fatty acids",
+        "Trans fatty acids (industrial)",
+        "Polyunsaturated omega-3 fatty acids"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Industrial trans fatty acids (formed by partial hydrogenation of vegetable oils) are uniquely harmful because they BOTH raise LDL ('bad' cholesterol) AND lower HDL ('good' cholesterol). This double negative effect makes them worse than saturated fat. Research estimated that eliminating industrial trans fats from the food supply could prevent up to 19% of heart attacks. The FDA has largely phased them out of the U.S. food supply. Look for 'partially hydrogenated oil' on ingredient labels. Saturated fat raises LDL but does not lower HDL. Monounsaturated and omega-3 fatty acids are associated with improved lipid profiles."
+    },
+    {
+      "id": 18,
+      "unit": "lipid",
+      "topic": "Lipids – Essential Fatty Acids",
+      "type": "mc",
+      "q": "Which statement about essential fatty acids is correct?",
+      "opts": [
+        "Saturated fatty acids are essential because the body cannot synthesize them",
+        "The two essential fatty acids are linoleic acid (omega-6) and alpha-linolenic acid (omega-3)",
+        "EPA and DHA are essential fatty acids that must always come from dietary fish",
+        "Omega-3 and omega-6 fatty acids are nonessential because the body can synthesize all it needs"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The two essential fatty acids (EFAs) are linoleic acid (LA, an omega-6) and alpha-linolenic acid (ALA, an omega-3). These MUST come from the diet because the body cannot synthesize them. EPA and DHA (long-chain omega-3s important for heart and brain health) can be synthesized from ALA in the body, so they are NOT technically essential — but the conversion rate is limited, making dietary sources (fatty fish, seafood) beneficial. EFA deficiency causes dry/scaly skin, poor wound healing, increased infections, and growth failure in infants."
+    },
+    {
+      "id": 19,
+      "unit": "lipid",
+      "topic": "Lipids – Digestion & Absorption",
+      "type": "mc",
+      "q": "Which substance is MOST responsible for emulsifying large fat droplets in the small intestine to allow enzymatic digestion?",
+      "opts": [
+        "Salivary amylase",
+        "Gastric lipase",
+        "Bile (from the liver/gallbladder)",
+        "Pancreatic protease"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Bile is the critical emulsifier for fat digestion. It is produced in the LIVER, stored in the GALLBLADDER, and released into the DUODENUM when fat enters the small intestine. Bile salts have both hydrophobic and hydrophilic sides (amphiphilic), allowing them to break large fat globules into small droplets — a process called emulsification. This dramatically increases the surface area for pancreatic LIPASE to enzymatically digest triglycerides. Patients with gallbladder disease or bile duct obstruction will have impaired fat digestion and fat-soluble vitamin deficiencies."
+    },
+    {
+      "id": 20,
+      "unit": "lipid",
+      "topic": "Lipids – Digestion & Absorption",
+      "type": "mc",
+      "q": "After digestion in the small intestine, how are long-chain fatty acids transported from the enterocyte into circulation?",
+      "opts": [
+        "They diffuse directly into capillaries and enter the portal bloodstream",
+        "They are packaged into chylomicrons that enter the lymphatic system first, then reach the bloodstream via the thoracic duct",
+        "They are converted to glucose by the liver before entering the bloodstream",
+        "They are packaged into VLDL in the enterocyte and enter the blood directly"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Long-chain fatty acids (along with monoglycerides and fat-soluble vitamins) are reassembled into triglycerides inside the enterocyte, then packaged into CHYLOMICRONS — large lipoproteins. Chylomicrons are TOO LARGE to enter capillaries directly, so they enter the LYMPHATIC SYSTEM (via lacteals/lymph vessels in the intestinal villi), travel through the thoracic duct, and eventually enter the bloodstream near the heart. Short and medium-chain fatty acids can bypass this and go directly into the portal blood. VLDL is made in the LIVER, not the enterocyte."
+    },
+    {
+      "id": 21,
+      "unit": "lipid",
+      "topic": "Lipids – Lipoproteins",
+      "type": "mc",
+      "q": "A patient's lipid panel shows elevated LDL and low HDL. The nurse correctly interprets this as:",
+      "opts": [
+        "No cardiovascular concern — LDL and HDL levels are unrelated to heart disease",
+        "Increased risk of atherosclerosis due to excess cholesterol delivery to arterial walls combined with reduced cholesterol removal",
+        "Protective against heart disease because high LDL means more cholesterol is available for cell repair",
+        "Consistent with normal aging and requires no intervention"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "LDL (low-density lipoprotein) delivers cholesterol to body cells. When LDL is ELEVATED, excess cholesterol can become lodged in arterial walls, forming fatty plaques — this is atherosclerosis. HDL (high-density lipoprotein) scavenges cholesterol from peripheral tissues and returns it to the liver for disposal. Low HDL means less cholesterol is being cleared. Together, high LDL + low HDL significantly increases cardiovascular disease risk: coronary artery disease, MI, stroke, peripheral artery disease, and CKD. Lowering LDL is the PRIMARY treatment target."
+    },
+    {
+      "id": 22,
+      "unit": "lipid",
+      "topic": "Lipids – Lipoproteins",
+      "type": "mc",
+      "q": "Which lipoprotein is formed in the small intestine and primarily delivers DIETARY triglycerides to body cells via the lymphatic system?",
+      "opts": [
+        "VLDL",
+        "LDL",
+        "Chylomicron",
+        "HDL"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Chylomicrons are formed in the enterocytes (small intestine cells) after fat digestion. They are the LARGEST and LEAST DENSE lipoproteins, composed mainly of dietary triglycerides. Their job is to deliver dietary fat to body cells (adipose, muscle, heart) via the lymph system. As triglycerides are removed from chylomicrons by lipoprotein lipase on cell surfaces, they shrink. The remnants return to the liver. VLDL is made in the LIVER and delivers liver-derived triglycerides. LDL delivers cholesterol. HDL collects cholesterol."
+    },
+    {
+      "id": 23,
+      "unit": "lipid",
+      "topic": "Lipids – Heart Health",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Which dietary strategies are evidence-based recommendations for reducing cardiovascular disease risk through dietary fat modification?",
+      "opts": [
+        "Replace saturated fats with polyunsaturated fats (PUFA)",
+        "Replace saturated fats with refined carbohydrates and white bread",
+        "Consume at least 8 oz of seafood per week (especially fatty fish)",
+        "Limit trans fats (partially hydrogenated oils) as much as possible",
+        "Choose nuts, seeds, and plant oils (olive/canola) over butter and tropical oils"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Replacing saturated fat with PUFA reduces heart disease risk. Consuming fatty fish provides EPA/DHA omega-3s which reduce triglycerides and inflammation. Limiting trans fats is critical. Nuts, seeds, and plant oils provide heart-healthy mono- and polyunsaturated fats. NOT correct: Replacing saturated fats with REFINED carbohydrates actually INCREASES cardiovascular risk by raising triglycerides and lowering HDL. The key is to replace saturated fat with UNSATURATED fats, not with processed carbs."
+    },
+    {
+      "id": 24,
+      "unit": "lipid",
+      "topic": "Lipids – Recommendations",
+      "type": "mc",
+      "q": "According to the Acceptable Macronutrient Distribution Range (AMDR) for adults, what percentage of total daily calories should come from fat?",
+      "opts": [
+        "10–20%",
+        "20–35%",
+        "35–45%",
+        "45–65%"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The AMDR for total fat intake for adults is 20–35% of total calories, with most fat coming from poly- and monounsaturated sources. Additionally, saturated fat should be limited to <10% of total calories, and trans fats should be minimized. The AMDR for carbohydrates is 45–65% and for protein is 10–35%. Since fat provides 9 cal/g (vs. 4 cal/g for carbs and protein), even a moderate percentage of calories from fat represents a relatively small gram amount."
+    },
+    {
+      "id": 25,
+      "unit": "protein",
+      "topic": "Protein – Structure",
+      "type": "mc",
+      "q": "What makes each of the 20 amino acids unique from one another?",
+      "opts": [
+        "The number of peptide bonds they form",
+        "The length of their polypeptide chains",
+        "Their unique R group (side chain)",
+        "The number of nitrogen atoms in their amino group"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "All 20 amino acids share the same basic structure: a central carbon bonded to a hydrogen, an amino group (–NH2), and a carboxylic acid group (–COOH). What makes each amino acid unique is its SIDE CHAIN (R group). The R group varies in size, shape, charge, polarity, and chemical properties — ranging from a single hydrogen atom (glycine) to complex ring structures (tryptophan). These differences determine how amino acids interact with each other, which ultimately determines the protein's 3D shape and function."
+    },
+    {
+      "id": 26,
+      "unit": "protein",
+      "topic": "Protein – Structure",
+      "type": "mc",
+      "q": "A patient with sickle cell anemia asks why a single genetic mutation causes such severe disease. The nurse explains the fundamental concept:",
+      "opts": [
+        "A single DNA change alters one amino acid in hemoglobin's sequence, changing its 3D shape and destroying its function",
+        "Sickle cell anemia is caused by too much protein in the diet, not genetics",
+        "A single mutation destroys all 9 essential amino acids simultaneously",
+        "The mutation only affects non-essential amino acids, which have no structural role"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "This question illustrates the critical concept that SHAPE DETERMINES FUNCTION in proteins. Sickle cell anemia is caused by a single amino acid substitution in the hemoglobin beta chain (valine replaces glutamic acid at position 6). This single change alters hemoglobin's 3D structure, causing red blood cells to become crescent (sickle) shaped. Sickled cells are rigid, sticky, and cannot carry oxygen normally, and they block blood vessels. This also illustrates why denaturation (any structural change) destroys protein function."
+    },
+    {
+      "id": 27,
+      "unit": "protein",
+      "topic": "Protein – Essential vs. Nonessential",
+      "type": "mc",
+      "q": "A nursing student is preparing a teaching plan about essential amino acids. Which statement is CORRECT?",
+      "opts": [
+        "Essential amino acids are less important than nonessential amino acids for body function",
+        "Essential amino acids must be obtained from the diet because the body cannot synthesize them in sufficient amounts",
+        "The body can make all 20 amino acids, so dietary protein is not truly necessary",
+        "There are 11 essential and 9 nonessential amino acids"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Essential amino acids MUST come from the diet because the body cannot synthesize them (or cannot synthesize them in sufficient quantities). There are 9 essential amino acids: Histidine, Isoleucine, Leucine, Lysine, Methionine, Phenylalanine, Threonine, Tryptophan, and Valine (mnemonic: HI-LMPTTV or 'His Isolde Love Met Phe Thr Trp Val'). There are 11 NONessential amino acids. The word 'essential' refers to their dietary requirement, not relative importance — all 20 are functionally important. Some nonessential amino acids become 'conditionally essential' during illness or rapid growth."
+    },
+    {
+      "id": 28,
+      "unit": "protein",
+      "topic": "Protein – Functions",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A patient admitted with severe malnutrition has a serum albumin of 1.8 g/dL (normal: 3.5–5.0 g/dL). Which clinical manifestations should the nurse anticipate?",
+      "opts": [
+        "Peripheral and dependent edema",
+        "Impaired immune function and increased infection risk",
+        "Hyperglycemia from excess glucose in the blood",
+        "Poor wound healing",
+        "Muscle wasting and weakness"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Low albumin = low oncotic pressure → fluid leaks from blood vessels into tissues → EDEMA. Antibodies and immune proteins are made from amino acids → protein deficiency → impaired immunity. Collagen synthesis requires protein → poor wound healing. Muscle wasting occurs when the body catabolizes muscle protein for energy or amino acids. NOT correct: Hyperglycemia is not a direct consequence of low protein/albumin. The edema in kwashiorkor (protein deficiency with adequate calories) is the classic clinical manifestation and the direct result of low albumin."
+    },
+    {
+      "id": 29,
+      "unit": "protein",
+      "topic": "Protein – Functions",
+      "type": "mc",
+      "q": "Which protein function explains why blood pH is maintained within the narrow range of 7.35–7.45?",
+      "opts": [
+        "Collagen provides structural rigidity to blood vessels, stabilizing pH",
+        "Albumin and hemoglobin act as buffers, binding or releasing hydrogen ions to resist pH changes",
+        "Enzyme proteins digest carbohydrates, preventing acidic byproducts from forming",
+        "Transport proteins carry cholesterol, which is alkaline and neutralizes blood acid"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Proteins act as critical BUFFERS in the blood. Albumin (the most abundant blood protein) is slightly acidic and negatively charged, balancing positive ions like H+, Ca2+, K+, and Mg2+ in the blood. Hemoglobin also participates in acid-base balance by binding hydrogen ions. Without adequate protein (e.g., in severe malnutrition), blood pH regulation is impaired. This is clinically relevant in patients with liver disease (can't synthesize albumin), kidney disease (can't excrete nitrogen waste), and severe protein malnutrition."
+    },
+    {
+      "id": 30,
+      "unit": "protein",
+      "topic": "Protein – Digestion",
+      "type": "mc",
+      "q": "A physician orders insulin via the oral route. The nurse should question this order because:",
+      "opts": [
+        "Insulin is absorbed too slowly when given orally",
+        "Insulin is a protein that will be denatured by stomach acid (HCl) and enzymatically digested, destroying its function before absorption",
+        "Oral insulin causes severe hyperglycemia",
+        "Insulin cannot be absorbed by the GI tract regardless of route"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Insulin is a PROTEIN. When given orally, it undergoes the same fate as all dietary proteins: stomach HCl (pH 1.5–3.5) denatures it (destroys its 3D structure and function), then proteolytic enzymes (pepsin in the stomach, trypsin and chymotrypsin in the small intestine) break it into individual amino acids. By the time it would reach the bloodstream, it would just be amino acids — not functional insulin. This is why insulin MUST be injected (subcutaneous, intravenous, or via pump) to reach the bloodstream intact. This is a real and important clinical safety principle."
+    },
+    {
+      "id": 31,
+      "unit": "protein",
+      "topic": "Protein – Digestion",
+      "type": "mc",
+      "q": "In which organ does the majority of protein digestion occur, and which two enzymes are primarily responsible?",
+      "opts": [
+        "Stomach — pepsin and gastric lipase",
+        "Small intestine — trypsin and chymotrypsin",
+        "Large intestine — trypsin and lactase",
+        "Liver — amylase and pepsin"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "While protein digestion BEGINS in the stomach (HCl denatures protein; pepsin starts breaking peptide bonds), the MAJORITY of protein digestion occurs in the SMALL INTESTINE. The pancreas secretes trypsin and chymotrypsin, which further break polypeptides into tripeptides, dipeptides, and individual amino acids. Enterocytes on the small intestine also produce additional proteases. The resulting amino acids are absorbed into the bloodstream via active transport and travel to the LIVER first. The large intestine has minimal role in protein digestion (undigested proteins in the colon are excreted in feces)."
+    },
+    {
+      "id": 32,
+      "unit": "protein",
+      "topic": "Protein – Guidelines",
+      "type": "mc",
+      "q": "A 70 kg adult male patient recovering from abdominal surgery asks how much protein he needs. The nurse calculates his protein requirement based on the RDA of 0.8 g/kg body weight per day. What is his estimated protein need?",
+      "opts": [
+        "28 grams per day",
+        "56 grams per day",
+        "84 grams per day",
+        "112 grams per day"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Calculation: 0.8 g/kg × 70 kg = 56 grams of protein per day. This is the RDA for a sedentary healthy adult — the MINIMUM amount to maintain nitrogen balance. However, this patient is RECOVERING FROM SURGERY. Post-surgical patients have increased protein needs for tissue repair and wound healing (positive nitrogen balance). The nurse should note this and potentially advocate for increased protein intake (closer to 1.0–1.5 g/kg) to support healing. Athletes need 1.2–2.0 g/kg. Pregnant/lactating women need additional protein above the RDA."
+    },
+    {
+      "id": 33,
+      "unit": "protein",
+      "topic": "Protein – Nitrogen Balance",
+      "type": "mc",
+      "q": "A burn patient is showing signs of significant muscle wasting and weight loss despite adequate caloric support. The nurse recognizes this is consistent with which nitrogen balance state?",
+      "opts": [
+        "Positive nitrogen balance — the body is building new tissue",
+        "Nitrogen balance — intake equals output",
+        "Negative nitrogen balance — the body is breaking down protein faster than it can be replaced",
+        "Zero nitrogen balance — no protein metabolism is occurring"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Negative nitrogen balance occurs when nitrogen EXCRETION exceeds nitrogen INTAKE — meaning the body is CATABOLIZING more protein (muscle, structural proteins) than it's rebuilding. This is seen in: burns (massive protein loss from wound exudate + inflammatory response), cancer, sepsis, starvation, severe illness, and major surgery. These patients need SIGNIFICANTLY more protein than the RDA (up to 1.5–2.0 g/kg/day in major burns) to recover. Serum albumin and prealbumin levels clinically reflect protein status. Positive nitrogen balance = body building tissue (pregnancy, growth, healing). Nitrogen balance = healthy adult maintenance."
+    },
+    {
+      "id": 34,
+      "unit": "protein",
+      "topic": "Protein – Deficiency",
+      "type": "mc",
+      "q": "A nurse is caring for an infant in a global health setting who has adequate caloric intake but is consuming a protein-deficient diet. Which condition is most likely, and what is its hallmark sign?",
+      "opts": [
+        "Marasmus — extreme emaciation and muscle wasting without edema",
+        "Kwashiorkor — edema (swollen abdomen and feet) due to low albumin",
+        "Pellagra — a niacin deficiency with dermatitis and dementia",
+        "Rickets — vitamin D deficiency causing bone deformities"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Kwashiorkor occurs when caloric intake is ADEQUATE but protein intake is severely deficient (e.g., child weaned to watery low-protein porridge). The hallmark is EDEMA — swelling of the abdomen and feet. The mechanism: insufficient protein → low albumin synthesis → decreased oncotic pressure → fluid leaks from blood vessels into tissues → edema. Other features: peeling skin, irritability, liver malfunction, poor growth, weakness. Marasmus involves deficiency of BOTH protein AND calories — results in extreme wasting and emaciation WITHOUT edema. Pellagra is B3 (niacin) deficiency. Rickets is vitamin D deficiency."
+    },
+    {
+      "id": 35,
+      "unit": "protein",
+      "topic": "Protein – Quality",
+      "type": "mc",
+      "q": "A patient following a vegan diet asks if she can meet her protein needs without eating meat or dairy. The nurse's best response is:",
+      "opts": [
+        "No — plant proteins are always incomplete and insufficient for human health",
+        "Yes — by combining complementary plant proteins throughout the day (e.g., beans and grains), all essential amino acids can be obtained",
+        "Yes — but only soy and quinoa count as adequate protein sources; all other plants are inadequate",
+        "No — the digestibility of plant proteins is too low to meet daily requirements"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "A well-planned vegan diet CAN meet protein needs. Most plant proteins are 'incomplete' (deficient in one or more essential amino acids), but by combining COMPLEMENTARY PROTEINS — different plant foods whose amino acid profiles compensate for each other — all 9 essential amino acids can be obtained. Examples: rice + beans, hummus + pita, peanut butter + bread. These foods do NOT need to be eaten at the same meal — consuming them within the same day is sufficient. Soy and quinoa are complete proteins on their own. Plant proteins are slightly less digestible than animal proteins (85–91% vs. 95%+) but this is compensated by eating adequate variety and quantity."
+    },
+    {
+      "id": 36,
+      "unit": "protein",
+      "topic": "Protein – Excess/Disease",
+      "type": "mc",
+      "q": "A patient with Stage 3 chronic kidney disease (CKD) asks if he should follow a high-protein diet he read about online. The nurse advises him that:",
+      "opts": [
+        "High-protein diets are recommended for CKD patients to prevent muscle wasting",
+        "Patients with CKD should limit protein to approximately the RDA (0.8 g/kg/day) to reduce the kidneys' burden of filtering and excreting nitrogen waste",
+        "Protein intake has no impact on kidney disease progression",
+        "All protein sources are equally harmful for kidney patients, including plant proteins"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "In chronic kidney disease (CKD), damaged kidneys have impaired ability to filter and excrete urea (nitrogen waste from protein catabolism). High protein intake increases the nitrogen load, accelerating kidney damage. CKD patients should limit protein to approximately the RDA (0.8 g/kg/day) or as individually prescribed. However, protein CANNOT be eliminated — a study found that a very low-protein diet (0.6 g/kg) in CKD patients increased mortality risk without preventing kidney failure. This is a key clinical nuance: restrict protein but don't eliminate it. High protein from lean meat/plant sources is generally NOT problematic for healthy kidneys."
+    },
+    {
+      "id": 37,
+      "unit": "protein",
+      "topic": "Protein – Sustainability/Safety",
+      "type": "mc",
+      "q": "The FDA banned the use of antibiotics for growth promotion in livestock (2017) primarily to address which public health concern?",
+      "opts": [
+        "Increasing the price of antibiotic medications",
+        "Reducing the risk of antibiotic-resistant bacterial infections in humans",
+        "Preventing livestock from becoming overweight",
+        "Improving the flavor and nutritional quality of meat"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The overuse of antibiotics in food animals creates selective pressure for antibiotic-resistant bacteria. These resistant bacteria can spread to humans via: contaminated meat, contaminated produce (through manure/water), and environmental spread. At least 2.8 million Americans are infected with antibiotic-resistant bacteria each year, killing at least 35,000. Antibiotic-resistant infections can be caused by livestock-associated bacteria in about 1 in 5 cases. As a nurse, this is clinically relevant: MRSA and other resistant infections are increasingly difficult to treat. Key food safety practices (proper cooking temperatures, hand washing, separate cutting boards) reduce exposure risk."
+    },
+    {
+      "id": 38,
+      "unit": "protein",
+      "topic": "Protein – Comprehensive Review",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A student nurse is reviewing macronutrient metabolism. Which of the following statements are CORRECT?",
+      "opts": [
+        "Fat provides 9 kcal/gram while carbohydrates and proteins provide 4 kcal/gram each",
+        "Glycogen is the storage form of carbohydrate in animals, stored in the liver and muscle",
+        "Both trans fats and saturated fats increase LDL cholesterol, but only trans fats also decrease HDL",
+        "Albumin is a transport and buffering protein — low albumin causes edema by reducing oncotic pressure",
+        "The Acceptable Macronutrient Distribution Range (AMDR) for protein is 45–65% of total calories"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "CORRECT: Fat = 9 cal/g; carbs and protein = 4 cal/g each — foundational number for any diet calculation. Glycogen is the animal storage form of carbohydrate (liver glycogen for blood glucose; muscle glycogen for muscle fuel). Trans fats BOTH raise LDL AND lower HDL (uniquely harmful); saturated fats raise LDL but do not lower HDL to the same degree. Low albumin causes fluid to leak from blood vessels → edema — classic in malnutrition, liver disease, nephrotic syndrome. NOT correct: The AMDR for PROTEIN is 10–35% of total calories. 45–65% is the AMDR for CARBOHYDRATES. Confusing these is a very common mistake."
+    }
+  ]
+}

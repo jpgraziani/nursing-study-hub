@@ -1,0 +1,721 @@
+{
+  "id": "nutrition-mod4-micronutrients",
+  "class": "nutrition",
+  "module": 4,
+  "title": "Module 4 — Micronutrients & Water Quiz",
+  "description": "38-question NCLEX-style quiz covering fat-soluble and water-soluble vitamins, minerals, electrolytes, hydration, and clinical deficiency and toxicity states.",
+  "topics": [
+    "fat-soluble vitamins",
+    "vitamin A",
+    "vitamin D",
+    "vitamin E",
+    "vitamin K",
+    "water-soluble vitamins",
+    "vitamin C",
+    "B vitamins",
+    "thiamine",
+    "riboflavin",
+    "niacin",
+    "folate",
+    "B12",
+    "biotin",
+    "pantothenic acid",
+    "minerals",
+    "calcium",
+    "iron",
+    "zinc",
+    "magnesium",
+    "phosphorus",
+    "potassium",
+    "sodium",
+    "electrolytes",
+    "hydration",
+    "dehydration",
+    "water intoxication",
+    "bioavailability"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "micronutrients",
+      "topic": "Fat/Water-Soluble Vitamins",
+      "type": "mc",
+      "q": "A patient has Crohn's disease and has been on a low-fat diet for months. Which group of vitamins is she at greatest risk of becoming deficient in?",
+      "opts": [
+        "Vitamins A, D, E, and K",
+        "Vitamins B1, B2, B6, and B12",
+        "Vitamins C and B9 (folate)",
+        "Niacin and pantothenic acid"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "Fat-soluble vitamins (A, D, E, K) require dietary fat for absorption. They are packaged into chylomicrons and absorbed via the lymphatic system. A low-fat diet impairs this process, and Crohn's disease further reduces absorption in the small intestine. Water-soluble vitamins (B-complex, C) are absorbed directly into the bloodstream and do not require fat for absorption."
+    },
+    {
+      "id": 2,
+      "unit": "micronutrients",
+      "topic": "Fat-Soluble Vitamin Toxicity",
+      "type": "mc",
+      "q": "Why is toxicity MORE likely with fat-soluble vitamins than with water-soluble vitamins?",
+      "opts": [
+        "Fat-soluble vitamins are absorbed more slowly",
+        "Fat-soluble vitamins are stored in adipose tissue and liver, allowing accumulation over time",
+        "Fat-soluble vitamins have higher ULs than water-soluble vitamins",
+        "Water-soluble vitamins are destroyed by cooking, reducing exposure"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Fat-soluble vitamins (A, D, E, K) are stored in adipose tissue and the liver. This storage capacity means they accumulate with repeated excess intake, eventually reaching toxic levels. Water-soluble vitamins are not significantly stored — excess is filtered by the kidneys and excreted in urine, making toxicity rare."
+    },
+    {
+      "id": 3,
+      "unit": "micronutrients",
+      "topic": "Bioavailability",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which of the following factors reduce the bioavailability of nutrients from food?",
+      "opts": [
+        "Boiling vegetables in large amounts of water",
+        "Consuming vitamin C with non-heme iron",
+        "Chronic alcohol use",
+        "Age-related decline in gastric acid production",
+        "Eating fat-containing foods with fat-soluble vitamins"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Boiling leaches water-soluble vitamins into the cooking water. Chronic alcohol use impairs absorption and metabolism of thiamin, folate, B6, and other nutrients. Age-related gastric acid decline impairs B12 and mineral absorption. Consuming vitamin C with iron ENHANCES iron absorption (wrong answer). Eating fat with fat-soluble vitamins ENHANCES absorption (wrong answer). The question asks what REDUCES bioavailability."
+    },
+    {
+      "id": 4,
+      "unit": "micronutrients",
+      "topic": "Thiamin (B1)",
+      "type": "mc",
+      "q": "A nurse is caring for a patient with severe alcoholism who is admitted with confusion, unsteady gait, and abnormal eye movements. What is the priority nursing action before administering IV dextrose (glucose)?",
+      "opts": [
+        "Administer IV thiamin (vitamin B1)",
+        "Check blood glucose level",
+        "Administer IV folate",
+        "Give oral multivitamin supplement"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "This patient is showing classic signs of Wernicke encephalopathy (confusion, ataxia, eye movement abnormalities) caused by thiamin deficiency. Administering glucose BEFORE thiamin in a thiamin-deficient patient can precipitate or worsen Wernicke encephalopathy, because glucose metabolism requires thiamin as a coenzyme. IV thiamin must be given first. Oral supplements are not appropriate for an acutely ill patient — IV administration is required."
+    },
+    {
+      "id": 5,
+      "unit": "micronutrients",
+      "topic": "Thiamin (B1)",
+      "type": "mc",
+      "q": "Which condition is characterized by the 'classic triad' of confusion, ataxia, and eye movement abnormalities, and is most commonly seen in patients with severe alcoholism?",
+      "opts": [
+        "Pellagra",
+        "Beriberi",
+        "Wernicke-Korsakoff syndrome",
+        "Pernicious anemia"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Wernicke-Korsakoff syndrome results from severe thiamin (B1) deficiency, most commonly caused by alcoholism (alcohol inhibits thiamin absorption). The classic triad is confusion, ataxia (loss of coordination), and ophthalmoplegia (abnormal eye movements). Untreated it progresses to coma and death. Beriberi is another thiamin deficiency disease affecting the cardiovascular and nervous systems, but the Wernicke-Korsakoff presentation is the specific syndrome described here."
+    },
+    {
+      "id": 6,
+      "unit": "micronutrients",
+      "topic": "Riboflavin (B2)",
+      "type": "mc",
+      "q": "A patient taking high-dose riboflavin supplements calls to report that her urine has turned bright yellow. What is the most appropriate nursing response?",
+      "opts": [
+        "Advise her to stop taking riboflavin immediately and call her physician",
+        "Reassure her this is a harmless side effect of excess riboflavin being excreted by the kidneys",
+        "Tell her the yellow color indicates liver damage and to go to the ER",
+        "Advise her to drink more water to dilute her urine"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Bright yellow urine from riboflavin supplements is completely harmless. Riboflavin is water-soluble, and any excess is filtered by the kidneys and excreted in urine. The flavin component of riboflavin gives urine its bright yellow color. This is the expected, benign result of excess intake — not a sign of toxicity or organ damage. Reassurance is the correct response."
+    },
+    {
+      "id": 7,
+      "unit": "micronutrients",
+      "topic": "Niacin (B3)",
+      "type": "mc",
+      "q": "A patient taking over-the-counter niacin supplements calls to report that his face, arms, and chest turned red and felt warm and itchy about 30 minutes after taking his supplement. What is this phenomenon called and what is its clinical significance?",
+      "opts": [
+        "Pellagra — this indicates niacin toxicity and requires immediate medical attention",
+        "Niacin flush — a common, generally harmless vasodilation effect at doses at or above 35 mg",
+        "An allergic reaction — the patient should take antihistamines and seek care",
+        "A sign of riboflavin deficiency co-occurring with niacin toxicity"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Niacin flush is caused by vasodilation of small blood vessels and occurs at doses of 35 mg or more (the UL for supplemental niacin). It causes redness, warmth, burning, tingling, and itching of the face, arms, and chest. While unpleasant, it is generally harmless and transient. More serious toxicity signs (headache, dizziness, blood pressure drops) may occur at higher doses. This is NOT an allergic reaction and is NOT pellagra (which is deficiency)."
+    },
+    {
+      "id": 8,
+      "unit": "micronutrients",
+      "topic": "Niacin (B3) — Pellagra",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which of the following are classic signs/symptoms of pellagra (niacin/B3 deficiency)?",
+      "opts": [
+        "Diarrhea",
+        "Dermatitis (skin inflammation)",
+        "Dementia",
+        "Night blindness",
+        "Death (if untreated)"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "Pellagra is remembered as the '4 D's': Diarrhea, Dermatitis, Dementia, and Death (if untreated). Night blindness is a sign of vitamin A deficiency, not niacin deficiency. Pellagra was historically common in populations relying heavily on untreated corn as a dietary staple, because the niacin in corn is bound to sugars and not bioavailable without nixtamalization (treatment with alkali)."
+    },
+    {
+      "id": 9,
+      "unit": "micronutrients",
+      "topic": "Folate (B9)",
+      "type": "mc",
+      "q": "A 24-year-old woman who is planning to become pregnant asks about nutrition. Which recommendation is MOST important to give her regarding neural tube defect prevention?",
+      "opts": [
+        "Start taking 400 mcg of folic acid at least one month before conception and continue through pregnancy",
+        "Increase dietary folate from leafy greens during the second trimester when brain development occurs",
+        "Take a high-dose vitamin A supplement during the first trimester",
+        "Begin folic acid supplementation immediately upon a positive pregnancy test"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "Neural tube defects (spina bifida, anencephaly) develop in the first 28 days after conception — often before a woman knows she is pregnant. This is why supplementation must begin at least ONE MONTH before conception. Waiting until a positive pregnancy test is too late. Folic acid (supplemental form) is more bioavailable than food folate and is the form recommended for supplementation. High-dose vitamin A supplements are CONTRAINDICATED in pregnancy due to teratogenic risk."
+    },
+    {
+      "id": 10,
+      "unit": "micronutrients",
+      "topic": "Folate vs. B12 Anemia",
+      "type": "mc",
+      "q": "A patient has macrocytic megaloblastic anemia. The physician gives folate supplements which improve the blood count. However, the patient develops worsening neurological symptoms including numbness and balance problems. What most likely occurred?",
+      "opts": [
+        "Folate toxicity caused the neurological symptoms",
+        "The patient had vitamin B12 deficiency; folate corrected the anemia but masked the underlying B12 deficiency allowing neurological damage to continue",
+        "The patient also developed iron deficiency anemia",
+        "The patient developed niacin deficiency from the supplements"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is the classic folate-masking-B12-deficiency scenario. Both folate and B12 deficiency cause macrocytic megaloblastic anemia. Giving folate supplements can correct the anemia even when B12 is the true underlying deficiency. However, B12 deficiency also causes demyelination (destruction of the myelin sheath around nerves) leading to irreversible neurological damage. Folate does NOT treat the neurological component. This is precisely why the folate UL is set at 1,000 mcg/day — to prevent masking B12 deficiency."
+    },
+    {
+      "id": 11,
+      "unit": "micronutrients",
+      "topic": "Vitamin B12",
+      "type": "mc",
+      "q": "A 68-year-old patient has macrocytic anemia and is diagnosed with pernicious anemia. Which treatment is MOST appropriate?",
+      "opts": [
+        "High-dose oral folate supplementation",
+        "Dietary counseling to increase B12-rich food intake",
+        "Intramuscular B12 injections to bypass the gastrointestinal tract",
+        "Oral iron supplementation"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Pernicious anemia is caused by lack of intrinsic factor (a protein secreted by gastric parietal cells that is required for B12 absorption in the small intestine). Because the GI absorption mechanism is broken, simply eating more B12-rich foods or taking oral supplements will not work — the B12 cannot be absorbed normally. Intramuscular B12 injections bypass the GI tract entirely and deliver B12 directly into the bloodstream. Very high-dose oral B12 can also be used (some passive absorption occurs without intrinsic factor), but IM injection is the classic treatment."
+    },
+    {
+      "id": 12,
+      "unit": "micronutrients",
+      "topic": "Vitamin C",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which of the following are functions of vitamin C (ascorbic acid) in the body?",
+      "opts": [
+        "Collagen synthesis",
+        "Regeneration of vitamin E after it has been oxidized",
+        "Enhancement of non-heme iron absorption from plant foods",
+        "Synthesis of thyroid hormone",
+        "Antioxidant activity (scavenging free radicals)"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "Vitamin C (1) is essential for collagen synthesis — it acts as the 'glue' holding collagen fibers together, which is why scurvy causes wound reopening and bleeding; (2) regenerates oxidized vitamin E back to its active antioxidant form; (3) dramatically enhances non-heme iron absorption when consumed together (important for vegetarians/vegans); and (4) acts as a potent antioxidant. Thyroid hormone synthesis requires IODINE and TYROSINE, not vitamin C."
+    },
+    {
+      "id": 13,
+      "unit": "micronutrients",
+      "topic": "Vitamin A",
+      "type": "mc",
+      "q": "What is the earliest clinical sign of vitamin A deficiency?",
+      "opts": [
+        "Scurvy (bleeding gums)",
+        "Night blindness (difficulty seeing in low light)",
+        "Pellagra (dermatitis)",
+        "Megaloblastic anemia"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The earliest sign of vitamin A deficiency is night blindness — difficulty seeing in dim light conditions. This occurs because vitamin A (as retinal) is required to form rhodopsin, the photosensitive pigment in the rod cells of the retina that enables low-light vision. Prolonged severe deficiency progresses to xerophthalmia (dry eyes), corneal ulceration, and eventually permanent blindness. Vitamin A deficiency is the number one cause of preventable blindness worldwide."
+    },
+    {
+      "id": 14,
+      "unit": "micronutrients",
+      "topic": "Vitamin A",
+      "type": "mc",
+      "q": "A pregnant patient mentions she has been taking high-dose vitamin A supplements because she read they are good for immune health. What is the priority nursing action?",
+      "opts": [
+        "Encourage her to continue — vitamin A is important for fetal development",
+        "Advise her to stop preformed vitamin A supplements immediately — excess vitamin A is teratogenic",
+        "Tell her to switch to beta-carotene supplements instead and take twice the dose",
+        "Advise her to reduce vitamin C intake to balance vitamin A levels"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "High-dose preformed vitamin A (retinol) is teratogenic — it causes birth defects at doses above the UL of 3,000 mcg/day. The beta-carotene form (from plants) does NOT cause toxicity because the body converts only as much as it needs to active vitamin A. However, telling a patient to take twice the dose of beta-carotene supplements is not appropriate. The priority is to stop the preformed vitamin A supplement. Prenatal vitamins contain safe, controlled amounts of vitamin A."
+    },
+    {
+      "id": 15,
+      "unit": "micronutrients",
+      "topic": "Vitamin D",
+      "type": "mc",
+      "q": "A patient with chronic kidney disease (stage 4) asks why she is vitamin D deficient despite taking vitamin D supplements and spending time outdoors. What is the BEST explanation?",
+      "opts": [
+        "Vitamin D is water-soluble and is excreted before it can be used",
+        "Her skin cannot synthesize vitamin D because of kidney disease",
+        "The kidneys are required to convert vitamin D to its active form (calcitriol); impaired kidneys cannot complete this conversion",
+        "Vitamin D requires intrinsic factor for absorption, which is reduced in kidney disease"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Vitamin D activation requires two steps: (1) the liver converts dietary/skin-synthesized vitamin D to calcidiol (25-OH-D), and (2) the kidneys convert calcidiol to calcitriol, the biologically active form. In chronic kidney disease, this second step is impaired. Patients with CKD often require a prescription form of active vitamin D (calcitriol) rather than standard supplements. Intrinsic factor is required for B12 absorption — not vitamin D."
+    },
+    {
+      "id": 16,
+      "unit": "micronutrients",
+      "topic": "Vitamin D",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which groups are at HIGH risk for vitamin D deficiency?",
+      "opts": [
+        "Elderly patients",
+        "Individuals with darker skin pigmentation",
+        "People living in northern latitudes during winter",
+        "Athletes who exercise outdoors",
+        "Patients with Crohn's disease or celiac disease"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "Elderly (reduced skin synthesis + impaired kidney activation), people with darker skin (melanin blocks UVB synthesis), those in northern latitudes in winter (reduced UVB exposure), and those with malabsorption disorders (Crohn's, celiac — fat malabsorption impairs fat-soluble vitamin absorption) are all high-risk. Athletes who exercise outdoors typically have increased sun exposure, which would enhance — not reduce — vitamin D synthesis."
+    },
+    {
+      "id": 17,
+      "unit": "micronutrients",
+      "topic": "Vitamin K",
+      "type": "mc",
+      "q": "Why is a single intramuscular injection of vitamin K given to all newborns at birth?",
+      "opts": [
+        "Newborns cannot absorb vitamin K from breast milk",
+        "Newborns have sterile guts (no bacteria to produce vitamin K), low vitamin K stores, and breast milk is low in vitamin K — creating a risk of life-threatening bleeding",
+        "Vitamin K injections prevent jaundice in newborns",
+        "Newborns have immature kidneys that cannot regulate vitamin K levels"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Newborns are at risk for vitamin K-dependent bleeding (hemorrhagic disease of the newborn) for three reasons: (1) the newborn gut is sterile — bacteria that normally produce vitamin K have not yet colonized; (2) the placenta transfers vitamin K poorly, so newborns are born with low stores; and (3) breast milk is low in vitamin K. The IM injection provides immediate protection while gut colonization occurs. This practice has essentially eliminated vitamin K-dependent bleeding disorders in newborns."
+    },
+    {
+      "id": 18,
+      "unit": "micronutrients",
+      "topic": "Vitamin K — Warfarin",
+      "type": "mc",
+      "q": "A patient on warfarin (Coumadin) for atrial fibrillation mentions he started eating large amounts of kale, spinach, and broccoli every day after his doctor told him to eat healthier. His INR is now sub-therapeutic (too low). What is the most likely explanation?",
+      "opts": [
+        "His kidneys are excreting warfarin too quickly due to increased vegetable fiber",
+        "Increased vitamin K intake from leafy greens antagonizes warfarin's anticoagulant effect, reducing its effectiveness",
+        "Vitamin C in vegetables is breaking down the warfarin molecule",
+        "Eating vegetables increases vitamin D, which degrades warfarin"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Warfarin works by inhibiting vitamin K-dependent clotting factors. A sudden large increase in vitamin K intake from leafy green vegetables provides the body with more of the substrate that warfarin is trying to block, reducing warfarin's effectiveness and allowing clotting to occur more readily (sub-therapeutic INR). The key teaching point: patients on warfarin should not avoid vitamin K but must MAINTAIN CONSISTENT vitamin K intake. Sudden changes — in either direction — disrupt anticoagulation control."
+    },
+    {
+      "id": 19,
+      "unit": "micronutrients",
+      "topic": "Free Radicals / Antioxidants",
+      "type": "mc",
+      "q": "Which of the following best describes how antioxidants neutralize free radicals?",
+      "opts": [
+        "They bind to free radicals and destroy them using enzymes",
+        "They donate one of their own electrons to the free radical, stabilizing it without becoming unstable themselves",
+        "They increase the body's ability to repair DNA damaged by free radicals",
+        "They block the mitochondria from producing free radicals during energy metabolism"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Free radicals are unstable because they have an unpaired electron. Antioxidants neutralize them by donating one of their own electrons to the free radical, creating a stable compound. Antioxidants are able to do this without becoming highly reactive themselves because their molecular structure allows them to safely hold the unpaired electron. This electron donation reaction is the fundamental mechanism of antioxidant activity."
+    },
+    {
+      "id": 20,
+      "unit": "micronutrients",
+      "topic": "Free Radicals / Antioxidants",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which of the following are EXOGENOUS sources of free radicals?",
+      "opts": [
+        "Cigarette smoking",
+        "Mitochondrial energy production",
+        "UV radiation from sunlight",
+        "Air pollution and ozone",
+        "Normal immune cell activity (killing pathogens)"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Exogenous means from OUTSIDE the body. Cigarette smoking, UV radiation, air pollution, ozone, asbestos, heavy metals, and radiation are all exogenous free radical sources. Mitochondrial energy production and immune cell activity (using free radicals to destroy pathogens) are ENDOGENOUS — coming from inside the body. Understanding this distinction is important for patient education about lifestyle modifications to reduce oxidative stress."
+    },
+    {
+      "id": 21,
+      "unit": "micronutrients",
+      "topic": "Antioxidant Supplements",
+      "type": "mc",
+      "q": "A patient asks if she should take high-dose antioxidant supplements because she heard they prevent cancer and aging. What is the evidence-based response?",
+      "opts": [
+        "Yes, antioxidant supplements are proven to prevent cancer and should be taken by everyone",
+        "Antioxidant supplements have not been shown to prevent chronic disease in general populations, and some (like high-dose beta-carotene) have actually increased cancer risk in high-risk groups like smokers",
+        "Antioxidant supplements are recommended for all patients over age 50",
+        "Only fat-soluble antioxidants have been studied — water-soluble ones are safe to take in large doses"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The scientific evidence does NOT support antioxidant supplements for prevention of chronic disease. The CARET trial showed that high-dose vitamin A and beta-carotene supplements INCREASED lung cancer risk by 28% in high-risk participants (smokers and asbestos-exposed workers). The benefits of antioxidants come from whole foods — particularly colorful fruits and vegetables — not isolated supplements. Educate patients to get antioxidants from diet rather than high-dose pills."
+    },
+    {
+      "id": 22,
+      "unit": "micronutrients",
+      "topic": "Sodium",
+      "type": "mc",
+      "q": "A marathon runner collapses after drinking large amounts of plain water during a 4-hour race. Lab work shows a serum sodium of 122 mEq/L (normal: 135-145). Which condition does this represent?",
+      "opts": [
+        "Hypernatremia from excessive sweating",
+        "Hyponatremia (water intoxication) from dilution of blood sodium by excess water intake",
+        "Iron deficiency anemia from prolonged exertion",
+        "Dehydration from inadequate fluid intake"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is exercise-associated hyponatremia (also called water intoxication). When athletes drink excessive amounts of plain water without replacing electrolytes, they dilute the sodium concentration in their blood. Hyponatremia symptoms include nausea, muscle cramps, confusion, seizures, and death. Sports drinks containing sodium are recommended for exercise lasting more than 60 minutes in hot/humid conditions. This is NOT caused by excessive sodium loss in sweat — it is caused by dilution."
+    },
+    {
+      "id": 23,
+      "unit": "micronutrients",
+      "topic": "Potassium",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which patients are at greatest risk for hypokalemia (low potassium)?",
+      "opts": [
+        "A patient taking furosemide (a loop diuretic) for heart failure",
+        "A patient with chronic diarrhea and vomiting",
+        "A patient eating a diet high in fresh fruits and vegetables",
+        "A patient with chronic kidney disease who consumes potassium supplements",
+        "A patient who has recently had multiple episodes of vomiting from chemotherapy"
+      ],
+      "correct": [
+        0,
+        1,
+        4
+      ],
+      "rationale": "Hypokalemia (low potassium) is most commonly caused by diuretics (especially loop and thiazide diuretics, which increase potassium excretion in urine), GI losses from vomiting and diarrhea, and certain medications. A patient eating fresh fruits and vegetables has good potassium intake and is protected. A patient with CKD taking potassium supplements is at risk for HYPERKALEMIA (too much potassium) because impaired kidneys cannot excrete the excess."
+    },
+    {
+      "id": 24,
+      "unit": "micronutrients",
+      "topic": "Calcium",
+      "type": "mc",
+      "q": "A patient with chronic low calcium intake has a serum calcium level that remains normal on lab work. How is this possible?",
+      "opts": [
+        "Low calcium diets cause the kidneys to manufacture calcium from other minerals",
+        "When blood calcium drops, PTH stimulates osteoclasts to break down bone and release calcium into the blood, maintaining normal serum levels at the expense of bone density",
+        "The intestine increases absorption efficiency enough to compensate for any dietary deficiency",
+        "Calcium levels in blood are not related to dietary intake"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is one of the most clinically important concepts in calcium physiology: normal serum calcium does NOT indicate adequate dietary intake. When blood calcium drops (due to low dietary intake), the parathyroid glands release PTH, which drives osteoclasts to break down bone tissue and release stored calcium into the blood. This maintains normal serum levels but slowly depletes bone mineral density — the mechanism underlying osteoporosis. You cannot use a normal serum calcium level to conclude that a patient has adequate dietary calcium."
+    },
+    {
+      "id": 25,
+      "unit": "micronutrients",
+      "topic": "Calcium — PTH/Calcitonin",
+      "type": "mc",
+      "q": "When blood calcium levels become TOO HIGH, which hormone is released and what does it do?",
+      "opts": [
+        "PTH is released; it stimulates osteoclasts to release more calcium from bone",
+        "Calcitonin (from the thyroid) is released; it increases calcium excretion in urine, inhibits bone resorption, and prevents further intestinal calcium absorption",
+        "Aldosterone is released; it causes the kidneys to retain calcium",
+        "ADH is released; it dilutes blood calcium by retaining water"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "When blood calcium is too high, the thyroid gland releases calcitonin. Calcitonin lowers blood calcium through three mechanisms: increasing calcium excretion in urine, inhibiting osteoclast activity (reducing bone resorption), and preventing further calcium absorption in the intestine. PTH does the opposite — it raises blood calcium. This PTH/calcitonin system creates a homeostatic balance that tightly regulates blood calcium. Think: Calcitonin 'calms' blood calcium down."
+    },
+    {
+      "id": 26,
+      "unit": "micronutrients",
+      "topic": "Calcium — Osteoporosis",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which of the following factors INCREASE the risk of developing osteoporosis?",
+      "opts": [
+        "Post-menopausal status (estrogen decline)",
+        "Adequate vitamin D intake throughout life",
+        "Cigarette smoking",
+        "Physical inactivity / sedentary lifestyle",
+        "Chronic low calcium dietary intake"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Post-menopausal estrogen decline increases bone resorption and decreases calcium absorption — making this the highest-risk demographic for osteoporosis. Smoking, physical inactivity, and chronically low calcium intake are all modifiable risk factors. Adequate vitamin D throughout life is PROTECTIVE against osteoporosis — it enhances calcium absorption and maintains bone density. Regular weight-bearing exercise is also protective."
+    },
+    {
+      "id": 27,
+      "unit": "micronutrients",
+      "topic": "Magnesium",
+      "type": "mc",
+      "q": "A patient presents with nausea, low blood pressure, muscle weakness, and an irregular heartbeat after starting high-dose magnesium supplements. What is the most likely explanation?",
+      "opts": [
+        "This is a normal adaptation to increased magnesium intake",
+        "These are signs of magnesium supplement toxicity; the UL for supplemental magnesium (350 mg/day) has been exceeded",
+        "These symptoms indicate magnesium deficiency from the supplements interfering with absorption",
+        "Magnesium supplements cause iron deficiency, which explains these symptoms"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Too much magnesium from FOOD is safe because the kidneys excrete excess efficiently. However, magnesium from SUPPLEMENTS can reach toxic levels. Symptoms of magnesium toxicity include hypotension (low blood pressure), nausea, vomiting, muscle weakness, and cardiac arrhythmias — which can progress to respiratory depression and cardiac arrest at very high levels. The UL applies only to supplemental magnesium (350 mg/day). In clinical settings, IV magnesium toxicity is treated with calcium gluconate as an antidote."
+    },
+    {
+      "id": 28,
+      "unit": "micronutrients",
+      "topic": "Iron — IDA",
+      "type": "mc",
+      "q": "A 22-year-old woman presents with fatigue, pallor, shortness of breath on exertion, and pica (craving to eat ice). CBC shows small, pale red blood cells with low hemoglobin. Which type of anemia does this most likely represent?",
+      "opts": [
+        "Macrocytic megaloblastic anemia (folate or B12 deficiency)",
+        "Microcytic hypochromic anemia (iron deficiency)",
+        "Pernicious anemia (intrinsic factor deficiency)",
+        "Hemolytic anemia (red blood cell destruction)"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Iron deficiency anemia produces SMALL (microcytic) and PALE (hypochromic) red blood cells because iron is required to make hemoglobin. Without enough hemoglobin, cells are pale and smaller. Pica (craving non-food substances like ice, dirt, or starch) is a classic associated symptom. Compare with folate/B12 deficiency, which produces LARGE (macrocytic) red blood cells. In women of childbearing age, the most common cause is menstrual blood loss."
+    },
+    {
+      "id": 29,
+      "unit": "micronutrients",
+      "topic": "Iron Absorption",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which of the following strategies would INCREASE iron absorption for a vegetarian patient with iron deficiency anemia?",
+      "opts": [
+        "Drinking orange juice (vitamin C) with iron-containing meals",
+        "Drinking coffee or tea with iron-containing meals",
+        "Eating iron-fortified cereals alongside high-calcium dairy",
+        "Choosing lentils and spinach as iron sources",
+        "Avoiding tea and coffee within an hour of eating iron-rich foods"
+      ],
+      "correct": [
+        0,
+        3,
+        4
+      ],
+      "rationale": "Vitamin C dramatically enhances non-heme iron absorption — drinking orange juice with plant-based iron sources is one of the best strategies. Lentils and spinach are good plant-based iron sources. Avoiding tea and coffee near meals is beneficial because tannins and polyphenols in both drinks inhibit iron absorption. Calcium inhibits iron absorption, so combining high-calcium dairy with iron-rich foods at the same meal reduces iron absorption. Coffee and tea with meals are inhibitors, not enhancers."
+    },
+    {
+      "id": 30,
+      "unit": "micronutrients",
+      "topic": "Iodine",
+      "type": "mc",
+      "q": "A patient presents with fatigue, weight gain, cold intolerance, constipation, and a visibly enlarged neck. He has lived in a remote inland region for most of his life. What condition does this represent and what is the most likely nutritional cause?",
+      "opts": [
+        "Vitamin B12 deficiency causing pernicious anemia",
+        "Iodine deficiency causing hypothyroidism and goiter",
+        "Iron deficiency anemia causing fatigue and cold intolerance",
+        "Vitamin D deficiency causing osteomalacia"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This presentation is classic for iodine deficiency. Iodine is required for thyroid hormone synthesis. Without adequate iodine, thyroid hormone levels fall (hypothyroidism), causing: fatigue, weight gain, cold intolerance, constipation, and depression. The thyroid gland enlarges (goiter) in an attempt to capture more iodine from the blood. Living in an inland region away from seafood sources and with iodine-poor soil explains the dietary deficiency. The primary preventive measure is use of iodized salt."
+    },
+    {
+      "id": 31,
+      "unit": "micronutrients",
+      "topic": "Fluid Balance — Compartments",
+      "type": "mc",
+      "q": "Which statement correctly describes the distribution of body water?",
+      "opts": [
+        "Most body water is found in blood plasma",
+        "About 55% of body water is intracellular; sodium dominates extracellular fluid while potassium dominates intracellular fluid",
+        "The extracellular fluid compartment contains more water than the intracellular compartment",
+        "Men and women have equal percentages of body water"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Approximately 55% of body water is intracellular (inside cells), while approximately 45% is extracellular (interstitial fluid + blood plasma + other). Potassium is the primary cation (positive ion) inside cells; sodium is the primary cation outside cells. This concentration gradient is maintained by the sodium-potassium pump. Men average about 60% body water; women about 55% (due to higher average body fat percentage, which is nearly water-free)."
+    },
+    {
+      "id": 32,
+      "unit": "micronutrients",
+      "topic": "Osmosis / Tonicity",
+      "type": "mc",
+      "q": "A nurse hangs a hypotonic IV solution for a patient. What will happen to the patient's red blood cells?",
+      "opts": [
+        "Red blood cells will shrink (crenate) as water moves out",
+        "Red blood cells will remain unchanged",
+        "Red blood cells will swell as water moves INTO the cells from the less concentrated extracellular fluid",
+        "Red blood cells will lyse immediately and cause hemolysis"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "In a hypotonic solution, the extracellular fluid has a LOWER solute concentration than the inside of the red blood cells. Water moves by osmosis from low concentration to high concentration — from the extracellular fluid INTO the cells. This causes cells to swell. If the imbalance is severe, cells can lyse (burst). This is why hypotonic fluids must be used carefully. Hypertonic solutions cause the opposite — water moves OUT of cells, causing them to shrink (crenate/become spiky)."
+    },
+    {
+      "id": 33,
+      "unit": "micronutrients",
+      "topic": "ADH / Fluid Regulation",
+      "type": "mc",
+      "q": "A patient is admitted with low blood volume following significant blood loss. Which hormonal response will the body mount to conserve fluid?",
+      "opts": [
+        "Decreased ADH to increase urine output",
+        "Increased ADH from the posterior pituitary and increased aldosterone from the adrenal cortex — both working to retain water and sodium",
+        "Calcitonin release to redistribute fluid from bones",
+        "Decreased renin to allow more fluid to be excreted"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "When blood volume drops, the body mounts a fluid-conserving hormonal response: (1) Decreased pressure in the kidneys triggers renin release, which activates angiotensin, which stimulates aldosterone from the adrenal cortex — aldosterone tells the kidneys to reabsorb sodium (water follows); (2) The hypothalamus also releases ADH (antidiuretic hormone), which tells the kidneys to reabsorb water and produce concentrated urine. Both hormones work together to restore blood volume."
+    },
+    {
+      "id": 34,
+      "unit": "micronutrients",
+      "topic": "Dehydration",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which of the following are signs and symptoms of dehydration?",
+      "opts": [
+        "Dark concentrated urine",
+        "Thirst and dry mouth",
+        "Low blood pressure",
+        "Bright yellow urine from riboflavin excretion",
+        "Dizziness and rapid heart rate"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "Dehydration causes: dark, concentrated urine (kidneys conserve water); thirst and dry mouth (hypothalamus activates thirst mechanism); low blood pressure (reduced blood volume); dizziness and rapid heart rate (compensatory response to low blood volume — heart beats faster to maintain perfusion). Bright yellow urine from riboflavin excretion is a separate phenomenon from supplement intake and does NOT indicate dehydration — it is caused by excess B2 being excreted and occurs regardless of hydration status."
+    },
+    {
+      "id": 35,
+      "unit": "micronutrients",
+      "topic": "Heat Stroke",
+      "type": "mc",
+      "q": "An athlete is brought in after collapsing during a summer outdoor event. He is confused, has hot, dry skin, and his temperature is 106°F. What is the priority nursing action?",
+      "opts": [
+        "Give him cool water to drink and have him rest in the shade",
+        "Initiate rapid cooling measures immediately (ice packs, cool water immersion) and activate emergency services",
+        "Administer oral electrolyte solution and monitor",
+        "Check blood glucose and give oral glucose if low"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Hot, dry skin + temperature above 105.1°F + confusion = HEAT STROKE. This is a life-threatening emergency. The absence of sweating means the body's cooling mechanism has completely failed. PRIORITY: initiate immediate rapid cooling — apply ice packs to axilla, groin, and neck; immerse or douse with cold water; fan the patient. Call 911. IV fluids may be given if the patient is conscious. DO NOT give oral fluids to a confused patient (aspiration risk). Death results from central nervous system failure."
+    },
+    {
+      "id": 36,
+      "unit": "micronutrients",
+      "topic": "Water Functions",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY: Which of the following correctly describe functions of water in the human body?",
+      "opts": [
+        "Water acts as a transportation medium, dissolving and carrying nutrients, hormones, and waste products",
+        "Water serves as a lubricant in joints (synovial fluid) and surrounds the brain (cerebrospinal fluid)",
+        "Water regulates body temperature through sweating and evaporative cooling",
+        "Water is required as a medium for all enzymatic reactions in the body",
+        "Water stores carbohydrates for use during exercise"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Water's four major functions are: (1) transportation vehicle (blood is 78% water, dissolves and carries nutrients, gases, and waste); (2) lubricant/shock absorber (synovial fluid in joints, cerebrospinal fluid around brain, amniotic fluid, mucus); (3) temperature regulator (sweat evaporation cools the body; the hypothalamus coordinates thermoregulation); and (4) medium for chemical reactions (all enzymatic reactions occur in an aqueous environment; hydrolysis during digestion requires water). Water does NOT store carbohydrates — glycogen does."
+    },
+    {
+      "id": 37,
+      "unit": "micronutrients",
+      "topic": "Fortified vs. Enriched",
+      "type": "mc",
+      "q": "Calcium-fortified orange juice and vitamin D-fortified milk both contain nutrients that do not naturally occur in significant amounts in those foods. What is the correct term for this process?",
+      "opts": [
+        "Enrichment — replacing nutrients lost during processing",
+        "Fortification — adding nutrients that do not naturally occur in significant amounts in that food",
+        "Supplementation — standard across all commercial food products",
+        "Nixtamalization — the process of adding minerals to food"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Fortification means adding nutrients that do not naturally occur in significant amounts in that food. Neither orange juice nor milk naturally contain meaningful levels of the added nutrients (calcium in OJ, vitamin D in milk). Enrichment, by contrast, means REPLACING nutrients that were lost during processing — for example, B vitamins and iron are added back to refined white flour after the milling process removes them from the wheat bran. These are distinct processes with distinct definitions."
+    },
+    {
+      "id": 38,
+      "unit": "micronutrients",
+      "topic": "Selenium",
+      "type": "mc",
+      "q": "A patient who has been eating 10-12 Brazil nuts daily for several months develops hair loss, nail brittleness, and GI distress. What is the most likely diagnosis?",
+      "opts": [
+        "Selenium deficiency (selenosis)",
+        "Selenium toxicity (selenosis) from chronic excess selenium intake",
+        "Zinc deficiency from phytates in nuts blocking absorption",
+        "Vitamin E toxicity from the high fat content of Brazil nuts"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Selenosis is selenium TOXICITY. Brazil nuts contain an extraordinarily high amount of selenium — approximately 544 mcg per ounce (6-8 nuts), while the RDA is only 55 mcg/day and the UL is 400 mcg/day. Eating 10-12 Brazil nuts daily provides many times the UL. Signs of selenosis include: hair loss, brittle nails, nausea, diarrhea, fatigue, and lesions of the skin and nervous system. Selenium deficiency would present differently (more similar to hypothyroid symptoms). This is a classic board-style question on nutrient toxicity."
+    }
+  ]
+}

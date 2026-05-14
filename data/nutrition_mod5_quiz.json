@@ -1,0 +1,703 @@
+{
+  "id": "nutrition-mod5-full",
+  "class": "nutrition",
+  "module": 5,
+  "title": "Module 5 — Full Coverage Quiz",
+  "description": "38-question NCLEX-style quiz covering pregnancy nutrition, fetal development, critical periods, weight gain guidelines, breastfeeding, and infant nutrition.",
+  "topics": [
+    "pregnancy",
+    "critical periods",
+    "neural tube defects",
+    "folate",
+    "folic acid",
+    "weight gain",
+    "macronutrients in pregnancy",
+    "iron in pregnancy",
+    "calcium",
+    "vitamin D",
+    "omega-3",
+    "DHA",
+    "breastfeeding",
+    "colostrum",
+    "prolactin",
+    "oxytocin",
+    "infant nutrition",
+    "solid foods",
+    "extrusion reflex",
+    "gestational diabetes",
+    "morning sickness",
+    "preeclampsia"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "preg",
+      "topic": "Pregnancy – Critical Periods",
+      "type": "mc",
+      "q": "A patient presents to prenatal care at 10 weeks gestation and admits she did not take folic acid before conception. The nurse understands that the most critical window for folic acid in preventing neural tube defects has already passed because:",
+      "opts": [
+        "Neural tube closure occurs at weeks 3–4 of gestation",
+        "Folic acid only works during the third trimester",
+        "The neural tube does not form until week 10",
+        "Folic acid is only needed if the mother has a family history of NTDs"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "Neural tube closure occurs at approximately weeks 3–4 of gestation — before most women even know they are pregnant. By week 10, the embryonic stage is essentially complete and the fetal stage has begun. This is why folic acid supplementation must begin BEFORE conception, not after a pregnancy is confirmed. The recommended intake during pregnancy is 600 mcg/day (up from 400 mcg). Women of childbearing age are advised to consume 400 mcg daily as a preventive measure. Folic acid also supports the extra blood production required throughout pregnancy."
+    },
+    {
+      "id": 2,
+      "unit": "preg",
+      "topic": "Pregnancy – Weight Gain",
+      "type": "mc",
+      "q": "A patient at 30 weeks gestation has a pre-pregnancy BMI of 27. She asks how much total weight she should gain. The nurse correctly advises:",
+      "opts": [
+        "28–40 lb because she needs extra reserves",
+        "25–35 lb — standard recommendation regardless of BMI",
+        "15–25 lb because she was overweight at the start",
+        "11–20 lb because her BMI was over 25"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "For a pre-pregnancy BMI of 25–29.9 (overweight category), the recommended total weight gain is 15–25 lb. Weight gain guidelines are individualized to starting BMI: Underweight (30): 11–20 lb. Gaining more than recommended increases risk for cesarean delivery and long-term obesity. Gaining less than recommended increases risk for low birth weight and preterm delivery."
+    },
+    {
+      "id": 3,
+      "unit": "preg",
+      "topic": "Pregnancy – Macronutrients",
+      "type": "mc",
+      "q": "A pregnant patient at 20 weeks asks if she needs to eat more now that she is in her second trimester. The nurse correctly advises:",
+      "opts": [
+        "No additional calories are needed throughout pregnancy",
+        "An additional 340 kcal/day above her pre-pregnancy intake",
+        "An additional 450 kcal/day — the same as the third trimester",
+        "No calories are needed in the second trimester but 700 extra in the third"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Energy needs during pregnancy increase in stages: First trimester: no additional calories needed — the fetus is tiny and metabolic demands are not yet significantly elevated. Second trimester: +340 kcal/day — rapid fetal growth begins and maternal metabolism increases. Third trimester: +450 kcal/day — maximum fetal growth, placenta, and fluid demands. A key principle: energy increases are proportionally LESS than micronutrient increases during pregnancy, so choosing nutrient-dense foods is critical. Simply adding empty calories is not appropriate."
+    },
+    {
+      "id": 4,
+      "unit": "preg",
+      "topic": "Pregnancy – Iron",
+      "type": "mc",
+      "q": "A pregnant patient with a well-balanced diet asks if she still needs to take an iron supplement. The nurse correctly responds:",
+      "opts": [
+        "No — a well-balanced diet provides all the iron needed during pregnancy",
+        "Yes — iron is the one micronutrient that cannot be obtained in adequate amounts from food alone during pregnancy",
+        "Only if her hemoglobin drops below normal",
+        "Only during the third trimester when blood volume peaks"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Iron is unique among pregnancy micronutrients — it is the ONE nutrient that CANNOT be adequately met from food alone even with a perfect diet. Pregnancy iron RDA is 27 mg/day (up from 18 mg). The increased need supports: expanded maternal blood volume, fetal and placental iron stores, and preparation for blood loss during delivery. Iron supplements in the form of ferrous salts are standard for all pregnant women. Iron absorption is enhanced by consuming Vitamin C-rich foods simultaneously (orange juice, strawberries, broccoli) and impaired by calcium-rich foods taken at the same time."
+    },
+    {
+      "id": 5,
+      "unit": "preg",
+      "topic": "Pregnancy – Foods to Avoid",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A pregnant patient asks the nurse which foods she should avoid or limit during pregnancy. Which responses are correct?",
+      "opts": [
+        "Avoid all alcohol — there is no safe amount during pregnancy",
+        "Limit caffeine to less than 200 mg/day",
+        "Avoid swordfish, shark, and king mackerel due to high mercury content",
+        "Avoid all fish — fish is unsafe during pregnancy",
+        "Limit soft unpasteurized cheeses and deli meats due to Listeria risk"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "CORRECT: Alcohol — no safe amount during pregnancy. Causes Fetal Alcohol Spectrum Disorders (FASDs) including brain damage, heart defects, and facial abnormalities. Effects are most severe in the first trimester during organ development. Caffeine — limit to <200 mg/day; high intake linked to low birth weight. High-mercury fish — shark, swordfish, king mackerel should be avoided; they damage fetal nervous system. Unpasteurized soft cheeses and deli meats carry Listeria monocytogenes risk — pregnant women are 10x more susceptible than healthy adults. Listeria causes miscarriage and newborn meningitis. NOT correct: Fish is NOT unsafe — in fact, 8–12 oz of varied low-mercury fish weekly is RECOMMENDED. Fatty fish provides omega-3s critical for fetal brain/eye development."
+    },
+    {
+      "id": 6,
+      "unit": "preg",
+      "topic": "Pregnancy – Gestational Diabetes",
+      "type": "mc",
+      "q": "A patient is diagnosed with gestational diabetes at 26 weeks. After delivery, her glucose normalizes. The nurse's most important patient education should include:",
+      "opts": [
+        "She has been cured — no further monitoring for diabetes is needed",
+        "She has a 50% lifetime risk of developing Type 2 diabetes, especially if overweight",
+        "She will need insulin for the rest of her life",
+        "Gestational diabetes will return with any future pregnancies"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Gestational diabetes typically resolves after delivery, but it is a significant warning sign: women with gestational diabetes have approximately a 50% lifetime risk of developing Type 2 diabetes, particularly if they remain overweight. The mechanism — insulin resistance triggered by placental hormones — is similar to Type 2 DM pathophysiology. Additionally, elevated maternal blood glucose crosses the placenta causing fetal hyperglycemia, macrosomia (large baby), and difficult delivery. Post-delivery education must emphasize: ongoing weight management, regular glucose monitoring, healthy diet and exercise, and understanding that each subsequent pregnancy carries repeat risk."
+    },
+    {
+      "id": 7,
+      "unit": "preg",
+      "topic": "Pregnancy – Complications",
+      "type": "mc",
+      "q": "A nurse is reviewing a patient's prenatal record and notes elevated blood pressure, proteinuria, and ankle edema in the third trimester. The nurse recognizes this clinical picture as:",
+      "opts": [
+        "Gestational diabetes — managed with insulin",
+        "Preeclampsia — a serious complication that can progress to life-threatening eclampsia",
+        "Normal third trimester findings requiring no intervention",
+        "Anemia from iron deficiency during pregnancy"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Preeclampsia is a serious complication characterized by: elevated blood pressure + proteinuria + fluid retention and edema, typically after 20 weeks gestation. It arises from untreated gestational hypertension. If preeclampsia is allowed to progress, it becomes eclampsia — life-threatening seizures for both mother and fetus. Risk factors include: first pregnancy, family history, obesity, pre-existing hypertension or kidney disease, multiples. Gestational hypertension alone (without proteinuria) can prevent adequate placental blood flow, causing fetal growth restriction and low birth weight."
+    },
+    {
+      "id": 8,
+      "unit": "infant",
+      "topic": "Breastfeeding – Physiology",
+      "type": "mc",
+      "q": "A new mother reports her breast milk seems to 'not come in' and is worried. The nurse explains the hormonal mechanism of milk production. Which correctly describes the role of prolactin?",
+      "opts": [
+        "Prolactin causes milk ejection (letdown) when the baby begins nursing",
+        "Prolactin is released from the posterior pituitary and controls uterine contractions",
+        "Prolactin is released from the anterior pituitary and stimulates milk PRODUCTION in the alveoli",
+        "Prolactin suppresses milk production and must decline before milk flow begins"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Prolactin is released from the ANTERIOR pituitary gland when the infant suckles at the breast. It signals the alveoli (milk-producing glands in the breast) to produce milk. The more the infant nurses, the more prolactin is released — milk production is supply-and-demand driven. Oxytocin (released from the POSTERIOR pituitary) is the hormone responsible for milk EJECTION (letdown) — it causes alveoli to contract and push milk into the ducts. Mnemonic: ProLACTin = PRODUCTION; OxyTOCin = Ejection (TOCin = TOCO = contractions). Oxytocin also causes uterine contractions postpartum, which helps the uterus involute."
+    },
+    {
+      "id": 9,
+      "unit": "infant",
+      "topic": "Breastfeeding – Benefits",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A new mother asks why the nurse is encouraging breastfeeding so strongly. Which benefits of breastfeeding are evidence-based?",
+      "opts": [
+        "Reduces incidence of infant ear infections, diarrhea, and respiratory illness",
+        "Reduces the mother's risk of breast and ovarian cancers",
+        "Provides passive immunity through immunoglobulins in colostrum",
+        "Reduces the infant's risk of SIDS",
+        "Completely eliminates the risk of Type 1 diabetes in the child"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "CORRECT: Breastfed infants have lower rates of ear infections, diarrhea, respiratory illness, GI problems, and asthma — due to immunoglobulins, enzymes, and white blood cells in breast milk. Breastfeeding reduces the mother's lifetime risk of breast cancer and ovarian cancer, plus reduces her risk of Type 2 diabetes. Colostrum (the first milk) is packed with immunoglobulins that provide passive immunity during the newborn's most vulnerable days. Breastfeeding is associated with reduced SIDS risk. NOT correct: Breastfeeding MAY protect against Type 1 diabetes (research ongoing), but it does NOT completely eliminate the risk. Saying it does is an overstatement not supported by current evidence."
+    },
+    {
+      "id": 10,
+      "unit": "infant",
+      "topic": "Breastfeeding – Colostrum",
+      "type": "mc",
+      "q": "A new mother produces very little fluid from her breasts in the first two days and is concerned she is not making enough milk. The nurse correctly explains:",
+      "opts": [
+        "She is correct to be worried — low colostrum volume indicates a milk supply problem",
+        "The thick yellowish fluid she is producing is colostrum — small in volume but extremely concentrated in immunoglobulins, fat-soluble vitamins, and antibodies that give the newborn passive immunity",
+        "She should supplement with formula immediately until milk volume increases",
+        "Colostrum is nutritionally inferior to mature milk and should be avoided if possible"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Colostrum is the first fluid produced by the breast, from birth through approximately days 3–5. It is: thick and yellowish in color, LOW in volume (a few milliliters per feeding — this is NORMAL), extremely HIGH in immunoglobulins (antibodies), fat-soluble vitamins, and minerals. Colostrum provides passive immunity to the newborn during the most critical early days. The small volume is appropriate because the newborn's stomach capacity is only about 5–7 mL. Colostrum transitions to transitional milk (days 3–14) and then mature milk (by end of week 2). Mature milk has foremilk (watery, vitamins, protein) and hindmilk (high fat — needed for weight gain)."
+    },
+    {
+      "id": 11,
+      "unit": "infant",
+      "topic": "Breastfeeding – Contraindications",
+      "type": "mc",
+      "q": "Which of the following represents a TRUE contraindication to breastfeeding?",
+      "opts": [
+        "The mother has a history of breast cancer (currently in remission, not on treatment)",
+        "The mother is HIV positive",
+        "The mother had gestational diabetes during pregnancy",
+        "The mother smokes cigarettes occasionally"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "HIV is a TRUE contraindication to breastfeeding — the HIV virus can be transmitted through breast milk. Other true contraindications include: active chemotherapy or radiation treatment for cancer, and active excessive alcohol use or illicit drug use. NOT contraindications: A history of breast cancer (currently in remission and not on treatment) is not a contraindication — many women who had breast cancer successfully breastfeed. Gestational diabetes resolves after delivery and does not contraindicate breastfeeding. Cigarette smoking is strongly discouraged but is not listed as an absolute contraindication — the recommendation is cessation, not formula feeding. This is a nuanced NCLEX distinction."
+    },
+    {
+      "id": 12,
+      "unit": "infant",
+      "topic": "Breastfeeding – Energy Needs",
+      "type": "mc",
+      "q": "A breastfeeding mother asks if breastfeeding will help her lose the pregnancy weight. The nurse's most accurate response is:",
+      "opts": [
+        "Breastfeeding has no effect on postpartum weight loss",
+        "Yes — lactation requires 500 kcal/day total, with 170 kcal coming from maternal fat stores, which promotes gradual weight loss",
+        "Breastfeeding causes rapid weight loss and mothers must eat as much as possible to compensate",
+        "Breastfeeding only helps with weight loss if combined with a strict calorie-restricted diet"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The daily caloric cost of lactation is approximately 500 kcal/day. Of that: 330 kcal/day comes from increased dietary intake (during the first 6 months), 170 kcal/day is drawn from stored maternal fat (the fat accumulated during pregnancy for exactly this purpose). This fat mobilization is why exclusive breastfeeding is associated with greater postpartum weight loss compared to non-exclusive breastfeeding. During the second 6 months of lactation, dietary needs increase to +400 kcal/day. Fluid needs also increase — 13 cups/day are recommended to maintain adequate milk production."
+    },
+    {
+      "id": 13,
+      "unit": "infant",
+      "topic": "Infancy – Vitamin K",
+      "type": "mc",
+      "q": "A newborn is admitted to the nursery and the nurse prepares to administer a Vitamin K injection. The parents ask why this is necessary. The best explanation is:",
+      "opts": [
+        "All newborns are Vitamin K deficient due to poor maternal diet",
+        "Newborns are born with very limited Vitamin K stores and breast milk is low in Vitamin K — without the injection, they are at risk for life-threatening bleeding (hemorrhagic disease of the newborn)",
+        "Vitamin K stimulates breast milk production in the first 24 hours",
+        "The injection prevents iron deficiency anemia in the first month of life"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Newborns are born with extremely limited Vitamin K stores. Vitamin K is essential for the synthesis of clotting factors. Breast milk is also low in Vitamin K. Without supplementation, newborns are at serious risk for Vitamin K Deficiency Bleeding (VKDB), formerly called hemorrhagic disease of the newborn — which can cause life-threatening internal bleeding, including intracranial hemorrhage. The American Academy of Pediatrics (AAP) has recommended the Vitamin K injection at birth since 1961. This is a standard of care — parents who decline should receive thorough education about the serious risks. Parents sometimes confuse this with Vitamin D (a separate supplement given to breastfed infants later)."
+    },
+    {
+      "id": 14,
+      "unit": "infant",
+      "topic": "Infancy – Solid Foods",
+      "type": "mc",
+      "q": "A parent calls the nurse concerned that her 4-month-old seems hungry and wants to start solid foods. The nurse advises:",
+      "opts": [
+        "Starting solids at 4 months is recommended if the baby seems hungry",
+        "Exclusive breastfeeding or formula should continue until 6 months — starting solids too early increases food allergy risk and the infant's GI tract is not developmentally ready",
+        "Solids can begin as early as 2 months for formula-fed infants",
+        "Begin solids but only rice cereal, which is hypoallergenic"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Both the AAP and WHO recommend exclusive breastfeeding (or formula) for the first 6 months. Starting solids before 6 months: the infant's GI tract is not developmentally ready, the extrusion reflex (tongue pushes food out) is still active, and early solid food introduction is associated with increased risk of food allergies and obesity. Readiness signs at ~6 months: can sit with minimal support, good head control, extrusion reflex has faded, shows interest in food (opens mouth, leans forward). When solids are introduced, start one new food at a time (wait 3–5 days between new foods) to identify allergies. Iron-fortified cereals are a recommended first food because infant iron stores deplete around 6 months."
+    },
+    {
+      "id": 15,
+      "unit": "infant",
+      "topic": "Infancy – Vitamin D",
+      "type": "mc",
+      "q": "A mother who is exclusively breastfeeding her newborn asks if she needs to give her baby any supplements. The nurse correctly advises:",
+      "opts": [
+        "No supplements are needed — breast milk provides complete nutrition for the first 6 months",
+        "A Vitamin D supplement (drops) is recommended because breast milk is low in Vitamin D and deficiency causes rickets",
+        "Vitamin D and iron supplements should both begin immediately at birth",
+        "Cow's milk should be introduced at 3 months to provide Vitamin D"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Breast milk is low in Vitamin D. Without supplementation, exclusively breastfed infants are at risk for Vitamin D deficiency, which causes rickets — soft, deformed bones due to impaired calcium absorption. The AAP recommends 400 IU (10 mcg) of Vitamin D drops daily for all breastfed infants beginning within the first few days of life. Risk is highest in: infants with darker skin (less efficient Vitamin D synthesis from sunlight), infants with minimal sun exposure, and infants in northern latitudes. Note: Iron supplementation from breast milk is adequate for approximately the first 6 months because babies are born with stored iron. At 6 months, iron from solids or supplements becomes necessary."
+    },
+    {
+      "id": 16,
+      "unit": "infant",
+      "topic": "Infancy – Macronutrients",
+      "type": "mc",
+      "q": "A student nurse asks why breast milk is so high in fat compared to other foods, and why this is appropriate for infants. The nurse educator explains:",
+      "opts": [
+        "High fat intake in infancy causes obesity and should be limited after 3 months",
+        "Fat makes up 30–40% of breast milk calories because neural pathway and brain development depend on adequate fat intake in the first year of life",
+        "Infants should be on a low-fat diet similar to adult recommendations",
+        "The high fat content of breast milk is a design flaw — formula is formulated to correct this"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Fat provides 30–40% of breast milk calories — and this is INTENTIONAL and necessary. The infant brain grows at its most rapid pace in the first two years of life. Fat is the primary structural component of myelin (the insulation around nerve fibers) and brain cell membranes. DHA (docosahexaenoic acid) and ARA (arachidonic acid) in breast milk are specifically critical for brain and vision development. Attempting to limit fat in infancy would impair neurological development. Low-fat dietary recommendations do NOT apply to infants. Saturated fats and trans fats are the exceptions — these inhibit the development of neural pathways and should be avoided once the infant is over 6 months old and eating some solid foods."
+    },
+    {
+      "id": 17,
+      "unit": "toddler",
+      "topic": "Toddler – Iron Deficiency Anemia",
+      "type": "mc",
+      "q": "The nurse is assessing a 2-year-old patient who presents with fatigue, pale skin, and irritability. The parent reports the child drinks about 32 oz of cow's milk per day and eats few solid foods. The nurse suspects:",
+      "opts": [
+        "Normal toddler behavior — no intervention needed",
+        "Iron deficiency anemia — cow's milk is low in iron and can suppress appetite for iron-rich foods",
+        "Vitamin D deficiency from inadequate sun exposure",
+        "Protein deficiency from inadequate breast milk"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is a classic presentation of iron deficiency anemia (IDA) in a toddler. The clinical picture: pale skin (pallor), fatigue, irritability — all classic signs of IDA. The cause: excessive cow's milk intake. Cow's milk contains virtually no iron. Worse, large amounts of cow's milk fill the stomach, suppressing appetite for iron-rich solid foods. Additionally, the calcium in cow's milk can inhibit iron absorption. IDA in toddlers can cause intellectual, behavioral, and motor developmental delays — this is why it is treated seriously. Treatment: iron-rich foods (lean meats, legumes, iron-fortified cereals, eggs), Vitamin C to enhance absorption, and possibly ferrous sulfate supplements. The AAP recommends limiting cow's milk to 16–24 oz/day in toddlers."
+    },
+    {
+      "id": 18,
+      "unit": "toddler",
+      "topic": "Toddler – Division of Responsibility",
+      "type": "mc",
+      "q": "A parent reports that her 3-year-old son has been refusing all vegetables for two weeks and will only eat mac and cheese. The parent asks if she should force him to eat or hide vegetables in his food. The nurse's best response based on Ellyn Satter's Division of Responsibility is:",
+      "opts": [
+        "Force feeding vegetables is appropriate for toddlers because nutrition is non-negotiable",
+        "Parents should continue to offer vegetables alongside preferred foods without pressure — the child is responsible for whether and how much to eat",
+        "Hiding vegetables in food is the recommended approach to ensure adequate intake",
+        "The child should be allowed to eat only mac and cheese until the phase passes on its own"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Ellyn Satter's Division of Responsibility (sDOR) is the gold-standard framework for feeding children. The PARENT is responsible for: what is offered, when meals occur, and where meals are eaten. The CHILD is responsible for: whether to eat and how much to eat. Applying this to picky eating: continue offering vegetables as part of balanced meals without pressure, praise, or threats. Pressuring children to eat — even positively (praise, rewards) — BACKFIRES and can prolong food refusal. Hiding vegetables in food undermines trust and the child's ability to learn to accept the food. A food jag (eating only preferred foods for a period) is DEVELOPMENTALLY NORMAL in toddlers. Growth slows after infancy, reducing appetite — this is not a medical emergency."
+    },
+    {
+      "id": 19,
+      "unit": "toddler",
+      "topic": "Toddler – Childhood Obesity",
+      "type": "mc",
+      "q": "During a well-child visit, the nurse discusses early childhood obesity prevention with parents of a 2-year-old. Which statement by the nurse is most evidence-based?",
+      "opts": [
+        "Put the child on a calorie-restricted diet to prevent fat cell formation",
+        "Adipose cells created during childhood persist permanently — preventing excess fat cell formation early is more effective than treating adult obesity later",
+        "Children who are overweight at age 2 always normalize their weight by adolescence",
+        "Screen time of up to 3 hours per day is acceptable for toddlers"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "During early childhood, adipose tissue undergoes both hyperplasia (creation of new fat cells) and hypertrophy (enlargement of existing fat cells). New fat cells created during childhood persist throughout the lifespan — they can shrink but cannot be eliminated once formed. This is why preventing obesity during toddler years is more effective than treating it in adulthood. Childhood obesity tends to track into adolescence and adulthood. Prevention strategies: structured family meals, limited screen time (AAP recommends <1 hour/day for ages 2–5), access to fruits and vegetables, physical activity throughout the day. Calorie-restricted diets are NOT recommended for young children — they need adequate nutrition for development."
+    },
+    {
+      "id": 20,
+      "unit": "child",
+      "topic": "Childhood – Nutrition",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A school nurse is reviewing nutritional priorities for children ages 4–8. Which statements are correct?",
+      "opts": [
+        "Calcium and Vitamin D are the two most important micronutrients for bone density in this age group",
+        "Children ages 4–8 require 17–25 g of fiber per day",
+        "The AMDR for fat in children ages 4–8 is 30–40%, the same as infants",
+        "Family meals are associated with higher fruit and vegetable consumption and long-term reduced substance use",
+        "TV advertising for sugary/fatty foods is a significant evidence-based influence on children's food choices"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Calcium (1,000 mg) and Vitamin D (15 mcg) are the foundation of childhood bone building — inadequate intake sets up osteoporosis decades later. Children ages 4–8 need 17–25 g/day of fiber to support GI health and maintain healthy weight. Research consistently shows that regular family meals are associated with greater fruit/vegetable intake, healthier weights, and reduced likelihood of drug, alcohol, and tobacco use in adolescence. TV advertising is an evidence-based influence on children's food preferences — a significant challenge for parents promoting healthy eating. NOT correct: The AMDR for fat in children ages 4–8 is 25–35%, NOT 30–40%. Fat percentage decreases from toddler/infant years (30–40%) as children mature. The brain's most rapid growth phase is complete, reducing the requirement for extremely high fat intake."
+    },
+    {
+      "id": 21,
+      "unit": "teen",
+      "topic": "Adolescence – Bone Building",
+      "type": "mc",
+      "q": "A 14-year-old female patient asks why her doctor keeps telling her to drink more milk and eat dairy products. The nurse explains the most important reason is:",
+      "opts": [
+        "Dairy provides protein necessary for muscle development during puberty",
+        "Calcium is at its highest RDA during adolescence (1,300 mg) because this is the peak bone-building window — bone mass established now will protect against osteoporosis decades later",
+        "Dairy prevents iron deficiency anemia in adolescent girls",
+        "The fat in dairy products supports brain development in teenagers"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The calcium RDA of 1,300 mg is the HIGHEST calcium recommendation at any point in the entire human lifecycle — for both adolescent males and females. This is because puberty is the peak window for bone mineralization: the long bones are reaching their final length and bone mineral density is being maximized. Bone mass built during adolescence directly determines osteoporosis risk in later life — women who enter adulthood with higher peak bone mass have a significantly lower risk of osteoporotic fractures after menopause. Calcium paired with Vitamin D (15 mcg) and weight-bearing exercise is the preventive triad for lifelong bone health. Note: dairy is actually a concern for iron — calcium impairs iron absorption, which matters for adolescent girls who also need 15 mg of iron/day after menstruation begins."
+    },
+    {
+      "id": 22,
+      "unit": "teen",
+      "topic": "Adolescence – Iron Needs",
+      "type": "mc",
+      "q": "Which correctly identifies the difference in iron recommendations between adolescent males and females (ages 14–18)?",
+      "opts": [
+        "Both require 15 mg/day — iron needs are identical regardless of sex",
+        "Females require 15 mg/day (due to menstrual losses); males require 11 mg/day (for lean body mass growth)",
+        "Males require more iron than females because they have greater muscle mass",
+        "Both require only 8 mg/day — adult recommendations apply at age 14"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Adolescent females (14–18) need 15 mg of iron per day because menstruation begins during this period, causing monthly iron losses. If these losses are not replaced, iron deficiency anemia develops — with consequences including fatigue, impaired cognition, and reduced athletic performance. Adolescent males (14–18) need 11 mg of iron per day — less than females, but higher than adult men (8 mg), because they are rapidly building lean body mass and muscle tissue. Iron is a component of myoglobin (muscle oxygen storage) as well as hemoglobin. Both sexes share the same calcium requirement (1,300 mg) — the sex difference in this age group is specifically iron. This is a classic NCLEX distinction."
+    },
+    {
+      "id": 23,
+      "unit": "teen",
+      "topic": "Adolescence – Growth",
+      "type": "mc",
+      "q": "A parent asks when her adolescent son will stop growing. The nurse correctly advises:",
+      "opts": [
+        "Boys stop growing at age 16, the same as girls",
+        "Boys typically stop growing taller between ages 18–20, later than girls who typically stop at about age 16",
+        "Both sexes stop growing at age 14 when puberty ends",
+        "Height growth continues until age 25 for both sexes"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "There is a clinically important sex difference in the duration of growth during adolescence. Girls typically reach their final height around age 16, after which vertical growth essentially stops. Boys continue growing taller until approximately ages 18–20. This is why boys often experience a growth spurt later and ultimately grow taller on average. Puberty is the second-fastest growth period in the lifecycle (after the prenatal period): girls grow 2–8 inches; boys grow 4–12 inches. Body composition also diverges — adolescent girls experience significant increases in body fat; boys experience increases in lean/skeletal mass and decreases in body fat percentage."
+    },
+    {
+      "id": 24,
+      "unit": "adult",
+      "topic": "Adulthood – Menopause",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A 50-year-old female patient experiencing perimenopausal symptoms asks the nurse about dietary strategies to manage her health. Which recommendations are evidence-based?",
+      "opts": [
+        "Increase calcium intake and ensure adequate Vitamin D to slow bone loss",
+        "Avoid caffeine, spicy foods, and alcohol to reduce hot flash frequency",
+        "Take iron supplements — iron needs increase significantly at menopause",
+        "Increase intake of B6, B12, and folate to control homocysteine and reduce cardiovascular risk",
+        "Engage in weight-bearing exercise to protect bone density"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Calcium (increases to 1,200 mg at age 51) and Vitamin D are critical — estrogen was protecting bones; its decline accelerates bone loss. Caffeine, spicy foods, and alcohol are evidence-based triggers for hot flashes — reducing them is a dietary intervention with real symptom benefit. B6, B12, and folate metabolize homocysteine — a metabolic byproduct that damages arterial walls. Elevated homocysteine is an independent CVD risk factor, making these B vitamins increasingly important in midlife. Weight-bearing exercise (walking, strength training) is essential for maintaining bone density when pharmacological support is not used. NOT correct: Iron needs actually DECREASE at menopause (from 18 mg to 8 mg) because menstruation ceases. Supplementing iron unnecessarily in postmenopausal women can cause iron overload."
+    },
+    {
+      "id": 25,
+      "unit": "adult",
+      "topic": "Adulthood – Homocysteine",
+      "type": "mc",
+      "q": "A middle-aged patient's lab results show elevated homocysteine. The nurse explains this is a risk factor for cardiovascular disease and recommends increasing dietary intake of:",
+      "opts": [
+        "Omega-3 fatty acids and Vitamin C",
+        "B6, B12, and folate — these vitamins are required to metabolize homocysteine",
+        "Calcium and Vitamin D to reduce arterial calcification",
+        "Iron and zinc to support red blood cell production"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Homocysteine is a metabolic byproduct of amino acid metabolism (specifically methionine). Elevated homocysteine levels damage arterial walls, promote atherosclerosis, and significantly increase the risk of cardiovascular disease and stroke. Vitamins B6, B12, and folate are all required as cofactors in the enzymatic pathways that convert homocysteine to non-toxic byproducts. Deficiency of any of these B vitamins impairs homocysteine clearance, causing blood levels to rise. This is especially relevant in: middle age and beyond, patients on metformin (depletes B12), patients with low dietary intake of B vitamins, and elderly patients with atrophic gastritis (impairs B12 absorption)."
+    },
+    {
+      "id": 26,
+      "unit": "senior",
+      "topic": "Senior Years – Sarcopenia",
+      "type": "mc",
+      "q": "A 74-year-old patient's family reports he has been losing weight and muscle mass despite eating three meals a day. His caloric intake appears adequate. The nurse suspects the most likely nutritional cause is:",
+      "opts": [
+        "Excessive carbohydrate intake causing fat storage at the expense of muscle",
+        "Inadequate protein intake — elderly patients need 1.2–2.0 g/kg/day to prevent sarcopenia, higher than the standard adult RDA",
+        "Vitamin D deficiency affecting muscle metabolism",
+        "Excessive fiber intake reducing protein absorption"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Sarcopenia is the age-related loss of muscle mass and strength that accelerates after age 60. Despite having lower total calorie needs, elderly patients actually require MORE protein per kilogram of body weight than younger adults: 1.2–2.0 g/kg/day (compared to the standard adult RDA of 0.8 g/kg). Even a 'normal' protein intake by adult standards may be inadequate for an elderly person who is losing muscle. Additional factors contributing to sarcopenia: decreased physical activity, reduced anabolic hormones (testosterone, GH, IGF-1), impaired protein synthesis efficiency with aging. Prevention and treatment: increased dietary protein (lean meats, eggs, dairy, legumes), resistance exercise, and adequate Vitamin D all help preserve muscle mass."
+    },
+    {
+      "id": 27,
+      "unit": "senior",
+      "topic": "Senior Years – Dehydration Risk",
+      "type": "mc",
+      "q": "An 80-year-old patient denies feeling thirsty despite not having any fluids for 8 hours. The nurse understands this is concerning because:",
+      "opts": [
+        "Elderly patients have an enhanced thirst response and should never go 8 hours without fluids",
+        "The elderly have a BLUNTED thirst response, meaning they can become severely dehydrated without feeling thirsty — scheduled fluid intake is essential",
+        "Dehydration in the elderly is always symptomatic with dry mouth and skin changes",
+        "Fluid needs decrease significantly with age, so 8 hours without fluids is acceptable"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Two age-related changes combine to make dehydration a major risk in elderly patients: (1) Blunted thirst response — the hypothalamic thirst center becomes less sensitive with aging, so elderly patients may not feel thirsty even when significantly dehydrated. (2) Reduced kidney efficiency — aging kidneys are less able to concentrate urine, meaning they continue excreting water even when the patient is dehydrated. The clinical result: elderly patients can develop severe dehydration silently, without obvious symptoms, leading to: confusion (often first sign), falls, urinary tract infections, acute kidney injury, and cardiac complications. Nursing intervention: scheduled fluid offering at regular intervals (every 1–2 hours) rather than waiting for the patient to request fluids."
+    },
+    {
+      "id": 28,
+      "unit": "senior",
+      "topic": "Senior Years – B12 Deficiency",
+      "type": "mc",
+      "q": "An 80-year-old patient presents with new-onset confusion, memory loss, and personality changes. Before attributing this to dementia, the nurse recognizes that which nutritional deficiency should be ruled out?",
+      "opts": [
+        "Vitamin D deficiency causing hypocalcemia",
+        "Vitamin B12 deficiency — atrophic gastritis is common in the elderly and impairs B12 absorption; deficiency causes neurological symptoms that can mimic dementia and are REVERSIBLE if caught",
+        "Iron deficiency anemia presenting with cognitive changes",
+        "Omega-3 deficiency affecting brain function"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Vitamin B12 deficiency in elderly patients is a crucial reversible cause of cognitive impairment that can mimic dementia. The mechanism: atrophic gastritis (inflammation and thinning of the stomach lining) is common in people over 60. It reduces production of intrinsic factor, which is required for B12 absorption in the ileum. Without intrinsic factor, B12 deficiency develops even when dietary intake is adequate. Neurological consequences of B12 deficiency: memory loss, confusion, personality changes, peripheral neuropathy, depression. These are REVERSIBLE with B12 supplementation — something true dementia is not. This is why B12 should ALWAYS be checked before a dementia diagnosis is made in an elderly patient. Crystalline B12 in supplements is absorbed without intrinsic factor, bypassing the absorption problem."
+    },
+    {
+      "id": 29,
+      "unit": "senior",
+      "topic": "Senior Years – Dysphagia",
+      "type": "mc",
+      "q": "A post-stroke patient is noted to have a wet, gurgly voice after meals and is coughing during eating. The nurse's priority action is:",
+      "opts": [
+        "Encourage the patient to eat more slowly and take smaller bites",
+        "Consult speech therapy for dysphagia evaluation and dietary modification to prevent aspiration pneumonia",
+        "Document the finding and monitor at the next meal",
+        "Have the patient drink more water to clear the throat"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "A wet, gurgly voice quality after eating and coughing during meals are classic signs of dysphagia (impaired swallowing) with aspiration. This is a priority patient safety concern. Aspiration occurs when food or liquid enters the airway rather than the esophagus, causing aspiration pneumonia — a potentially life-threatening complication. Post-stroke patients are at extremely high risk because the brainstem controls swallowing, and stroke damage can impair this reflex. Management requires an interprofessional team: speech-language pathologist evaluates swallowing function, physician/dietitian modify diet consistency (chopped, pureed, thickened liquids). Silent aspiration (no cough reflex) is especially dangerous and occurs in patients with dementia or large strokes."
+    },
+    {
+      "id": 30,
+      "unit": "senior",
+      "topic": "Senior Years – Anorexia of Aging",
+      "type": "mc",
+      "q": "An 82-year-old female patient has lost 12 lb over the past 3 months. She reports she has little appetite and skips meals frequently. The nurse recognizes this as:",
+      "opts": [
+        "Normal aging — all elderly patients lose weight and appetite",
+        "The anorexia of aging — a serious condition characterized by inadequate intake leading to immune deficiency, falls, muscle loss, and cognitive decline",
+        "Likely eating disorder requiring psychiatric referral",
+        "A natural end-of-life process that does not require intervention"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The anorexia of aging is a recognized medical condition — NOT a normal part of aging — characterized by chronically poor food intake leading to dangerous weight loss. Consequences: immune deficiency (increased infection risk), frequent falls, accelerated sarcopenia (muscle loss), and cognitive deficits. Common causes include: depression, dementia, disability, medication side effects (many medications suppress appetite), sensory decline (decreased taste/smell), social isolation, financial barriers to food access. Interventions: frequent small meals, calorie-dense healthy foods (nuts, avocado, full-fat dairy, whole grain pasta), oral nutritional supplements between meals, treatment of underlying depression, weekly weight monitoring. Note: Both obesity AND underweight are concerns in elderly patients — both increase morbidity and mortality."
+    },
+    {
+      "id": 31,
+      "unit": "senior",
+      "topic": "Senior Years – Micronutrients",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Which of the following micronutrient changes are correct for adults over age 71?",
+      "opts": [
+        "Vitamin D increases from 15 mcg to 20 mcg/day",
+        "Calcium increases to 1,200 mg/day for both men and women",
+        "Iron increases to compensate for reduced absorption in older GI tract",
+        "Protein needs increase to 1.2–2.0 g/kg/day to prevent sarcopenia",
+        "Vitamin B6 increases to help reduce cardiovascular disease risk through homocysteine management"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Vitamin D increases to 20 mcg/day at age 71 (up from 15 mcg) — less efficient skin synthesis and reduced dietary intake make this necessary. Calcium increases to 1,200 mg for women at age 51 and for men at age 71 — not to build bone (that window is closed) but to slow bone resorption. Protein 1.2–2.0 g/kg/day is higher than the standard adult RDA (0.8 g/kg) specifically to counteract sarcopenia. Vitamin B6 rises to 1.7 mg (men) / 1.5 mg (women) to help metabolize homocysteine and protect cardiovascular health. NOT correct: Iron needs do NOT increase with aging. For women, iron actually DECREASES postmenopause from 18 mg to 8 mg (same as men). The reduced absorption from atrophic gastritis affects B12 and minerals, but the RDA for iron decreases, not increases."
+    },
+    {
+      "id": 32,
+      "unit": "feeding",
+      "topic": "Feeding – Division of Responsibility",
+      "type": "mc",
+      "q": "According to Ellyn Satter's Division of Responsibility in Feeding, which is the nurse's BEST advice for a parent whose 5-year-old refuses to eat dinner?",
+      "opts": [
+        "Allow the child to eat only preferred foods to ensure adequate calorie intake",
+        "Follow the Division of Responsibility: the parent provides nutritious options at structured mealtimes; the child decides whether and how much to eat — pressure and coaxing are counterproductive",
+        "Reward the child with dessert if they finish their vegetables",
+        "Make a separate meal of the child's preferred foods to ensure they eat something"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Ellyn Satter's Division of Responsibility is the evidence-based gold standard for feeding children. Parent's role: WHAT is served, WHEN meals occur, WHERE meals take place. Child's role: WHETHER to eat and HOW MUCH to eat. Deviating from this by: making separate meals, rewarding with dessert, cajoling, or pressuring — all undermine the child's developing internal regulatory systems and can create lasting negative relationships with food. Research shows that pressure (even positive pressure like praise or rewards) backfires and can INCREASE food refusal. The goal is competent eaters who trust their own hunger and satiety signals — this is built over years, not overnight."
+    },
+    {
+      "id": 33,
+      "unit": "feeding",
+      "topic": "Feeding – Eating Competence",
+      "type": "mc",
+      "q": "A patient on a strict calorie-counting diet reports she constantly thinks about food, feels out of control around sweets, and binges on 'forbidden' foods when stressed. The nurse recognizes this pattern most reflects:",
+      "opts": [
+        "Normal dieting behavior that should be encouraged to continue",
+        "Control-based restrained eating — research shows restrained eaters consume MORE when exposed to restricted foods; this approach is counterproductive and promotes the behaviors she is describing",
+        "Binge eating disorder requiring immediate psychiatric referral",
+        "Successful dietary restraint that will eventually lead to weight loss"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This patient is demonstrating the documented consequences of restrained eating (control-based eating), as described in Satter's Eating Competence model. Research finding: restrained eaters — those who rigidly follow external food rules — paradoxically consume MORE food when exposed to 'forbidden' foods than intuitive eaters do. The psychological mechanism: restriction creates preoccupation with food and strips away internal regulatory cues (hunger/satiety). Eating Competence proposes the opposite approach: permission (eat foods you enjoy in satisfying amounts based on hunger/satiety) combined with discipline (structured meals, attention to internal cues). This approach is associated with better nutritional outcomes, healthier weight, and improved relationship with food."
+    },
+    {
+      "id": 34,
+      "unit": "feeding",
+      "topic": "Feeding – Family Meals",
+      "type": "mc",
+      "q": "A public health nurse is developing a community health promotion program for families with children. Which statement best supports the value of regular family meals?",
+      "opts": [
+        "Family meals improve nutrition primarily by exposing children to more vegetables, with no other documented benefits",
+        "Research shows children who regularly eat family meals consume more fruits and vegetables, maintain healthier weights, and are significantly less likely to use drugs, alcohol, or tobacco as teenagers",
+        "Family meals are beneficial only for children under age 5; benefits disappear in adolescence",
+        "The main benefit of family meals is reducing food costs for families"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The evidence base for family meals is remarkably strong and extends well beyond nutrition. Research consistently shows that children who regularly share meals with family: eat more fruits and vegetables, have healthier body weights, perform better academically, have stronger family connections, and are significantly less likely to use alcohol, drugs, or tobacco during adolescence. The mechanism is multifactorial: structured mealtimes provide stability, parent modeling of healthy eating behaviors, opportunity for family communication and bonding, reduced exposure to fast food, and regular nutritious food access. This makes family meal promotion a legitimate, evidence-based public health intervention — not just a social nicety."
+    },
+    {
+      "id": 35,
+      "unit": "preg",
+      "topic": "Pregnancy – Protein Calculation",
+      "type": "mc",
+      "q": "A pregnant patient in her second trimester weighs 140 lb pre-pregnancy. Using the formula (pre-pregnancy weight in kg × 0.8 g/kg/day) + 25 g, what is her estimated daily protein need?",
+      "opts": [
+        "49 g/day",
+        "76 g/day",
+        "101 g/day",
+        "136 g/day"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Step 1: Convert 140 lb to kg: 140 ÷ 2.2 = 63.6 kg. Step 2: Multiply by RDA: 63.6 kg × 0.8 g/kg/day = 50.9 g. Step 3: Add the pregnancy increment (+25 g in 2nd and 3rd trimester): 50.9 + 25 = ~76 g/day. This extra protein supports: synthesis of new maternal and fetal tissues, increased blood volume, amniotic fluid production, placenta development, and fetal organ formation. Note: the +25 g addition only applies in the 2nd and 3rd trimesters (not the first). Best protein sources: lean red meat, poultry, fish, legumes, eggs, low-fat dairy, nuts, seeds."
+    },
+    {
+      "id": 36,
+      "unit": "infant",
+      "topic": "Infant/Toddler – Formula Safety",
+      "type": "mc",
+      "q": "A new mother is preparing powdered infant formula and asks if she can mix extra powder to give her baby more nutrition. The nurse's most important response is:",
+      "opts": [
+        "Extra powder provides more nutrients and is beneficial for rapid infant growth",
+        "Over-concentrated formula provides too much protein and too little water, which can cause dehydration and impair immature kidney function — always follow instructions exactly",
+        "A little extra powder is fine as long as the baby seems hungry",
+        "Double-concentrate formula should be used for premature infants"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Formula preparation safety is critically important because infant kidneys are immature. Two errors and their consequences: Over-concentrated formula (too much powder): excess protein creates a high solute load the infant's kidneys cannot excrete efficiently → dehydration, metabolic acidosis, and renal injury. Diluted formula (too little powder): inadequate calories and protein → failure to thrive, malnutrition, and if severely diluted, hyponatremia (water intoxication). Both errors are dangerous. Always follow manufacturer instructions exactly. Use safe water (not contaminated), sterilize equipment, refrigerate prepared formula, and discard unused prepared formula after 24 hours. This is a patient safety nursing priority."
+    },
+    {
+      "id": 37,
+      "unit": "teen",
+      "topic": "Adolescence – Energy Needs",
+      "type": "mc",
+      "q": "A nurse is educating a 16-year-old male athlete about his nutritional needs. Which statement is most accurate?",
+      "opts": [
+        "Adolescents have lower energy needs than adults — a 2,000 kcal diet is appropriate",
+        "Nutrient needs are greater during adolescence than at any point in the lifecycle except during pregnancy — active teenage boys may need 2,000–3,200 kcal/day",
+        "Athletes should restrict carbohydrates to promote fat burning during competition",
+        "Teen athletes should focus only on protein and not worry about total caloric intake"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Adolescence is characterized by the greatest nutrient demands in the lifecycle outside of pregnancy. Energy requirements for males ages 14–18 range from 2,000–3,200 kcal/day depending on activity level. A physically active teenage boy with regular sports training may need calories at the high end or beyond this range. Inadequate energy intake during adolescent sports participation leads to: impaired growth, reduced bone density, decreased performance, hormonal disruption, and in severe cases, the Relative Energy Deficiency in Sport (RED-S) syndrome. Carbohydrates are the primary fuel for athletic performance — restricting them in teen athletes is counterproductive and potentially harmful. Protein needs are also elevated but excessive protein supplementation (protein shakes beyond food sources) is generally not necessary for most adolescent athletes."
+    },
+    {
+      "id": 38,
+      "unit": "senior",
+      "topic": "Lifecycle – Comprehensive Review",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A nursing student is reviewing micronutrient changes across the lifecycle for an exam. Which of the following statements are CORRECT?",
+      "opts": [
+        "Folate requirement INCREASES during pregnancy to 600 mcg to prevent neural tube defects and support extra blood production",
+        "Calcium RDA is highest during adolescence (1,300 mg) because this is the peak bone-building window",
+        "Iron requirement DECREASES after menopause from 18 mg to 8 mg because menstruation has ceased",
+        "Vitamin D increases to 20 mcg/day at age 71+ due to less efficient skin synthesis",
+        "The protein AMDR (as a percentage of calories) increases in older adults compared to younger adults to prevent sarcopenia"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "CORRECT: Folate 600 mcg during pregnancy — up from 400 mcg — is essential for neural tube closure (weeks 3–4) and increased blood production throughout pregnancy. Calcium 1,300 mg is the highest RDA at any life stage — peak bone building occurs during adolescence and determines lifelong fracture risk. Iron drops from 18 mg to 8 mg postmenopause — the higher female requirement was due to menstrual losses; postmenopause women need the same as adult men. Vitamin D increases to 20 mcg at age 71+ because skin synthesis efficiency declines and dietary intake is often low. NOT correct: The protein AMDR (percentage of calories) stays the same (10–35%) across adulthood. What increases in older adults is the GRAMS PER KG recommendation (from 0.8 g/kg to 1.2–2.0 g/kg) — this is distinct from the percentage range. The AMDR itself does not change."
+    }
+  ]
+}

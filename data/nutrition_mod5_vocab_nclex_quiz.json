@@ -1,0 +1,268 @@
+{
+  "id": "nutrition-mod5-vocab",
+  "class": "nutrition",
+  "module": 5,
+  "title": "Module 5 — Vocabulary & NCLEX Quiz",
+  "description": "14-question quiz covering Module 5 key terms and NCLEX-style clinical applications: prolactin, oxytocin, colostrum, and infant reflexes.",
+  "topics": [
+    "prolactin",
+    "oxytocin",
+    "colostrum",
+    "extrusion reflex",
+    "let-down reflex",
+    "rooting reflex",
+    "critical period",
+    "teratogen",
+    "neural tube",
+    "placenta",
+    "amniotic fluid",
+    "meconium"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "lifecycle",
+      "topic": "Prolactin vs. Oxytocin",
+      "type": "mc",
+      "q": "A new mother reports her breast milk is not 'letting down' when her infant begins to nurse. The nurse explains this involves which hormone?",
+      "opts": [
+        "Prolactin — it triggers milk ejection when the infant suckles",
+        "Oxytocin — it causes alveoli to contract and eject milk through the ducts",
+        "Estrogen — it stimulates the alveoli to produce milk",
+        "Progesterone — it controls the timing of milk letdown"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Oxytocin (posterior pituitary) is responsible for milk EJECTION (letdown) — it causes the alveoli to contract and push milk into the ducts. Prolactin (anterior pituitary) is responsible for milk PRODUCTION. Memory trick: ProLACTin = production of LACTation; OxyTOCin = ejection (TOCO = contractions). Oxytocin also causes postpartum uterine contractions, which is why breastfeeding mothers may feel cramping during nursing."
+    },
+    {
+      "id": 2,
+      "unit": "lifecycle",
+      "topic": "Colostrum",
+      "type": "mc",
+      "q": "A mother on postpartum day 2 is worried because she is only producing a few milliliters of fluid from her breasts. The nurse correctly explains:",
+      "opts": [
+        "This indicates a milk supply problem and formula should be supplemented immediately",
+        "The thick yellowish fluid is colostrum — it is low in volume by design and extremely concentrated with immunoglobulins that provide the newborn with passive immunity",
+        "Colostrum is nutritionally inferior to mature milk and production should be stimulated faster",
+        "This is abnormal and requires urgent lactation consultation"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Colostrum is the first milk produced — thick, yellowish, and intentionally low in volume because a newborn's stomach holds only 5–7 mL. Despite the small quantity, colostrum is extraordinarily concentrated with immunoglobulins (antibodies), fat-soluble vitamins, and minerals, providing the newborn with passive immunity during the most critical days of life. Transitional milk follows at days 3–14, then mature milk by end of week 2."
+    },
+    {
+      "id": 3,
+      "unit": "lifecycle",
+      "topic": "Extrusion Reflex",
+      "type": "mc",
+      "q": "A parent wants to start rice cereal with her 4-month-old because the baby seems hungry. The nurse's best response is:",
+      "opts": [
+        "Rice cereal is safe at any age and appropriate for a hungry infant",
+        "Solid foods should not begin until 6 months — the extrusion reflex is still active and early solids increase allergy and obesity risk",
+        "Starting solids at 4 months is recommended if the baby is formula-fed",
+        "The baby can start solids once they can hold a spoon independently"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The extrusion reflex — the automatic tongue thrust that pushes food out of the mouth — is present until approximately 6 months. It is a physiological signal that the GI tract is not yet developmentally ready for solids. Both the AAP and WHO recommend exclusive breastfeeding or formula for the first 6 months. Early solid food introduction is associated with increased risk of food allergies, GI irritation, and obesity. Readiness signs at ~6 months: fading extrusion reflex, head control, ability to sit with support, interest in food."
+    },
+    {
+      "id": 4,
+      "unit": "lifecycle",
+      "topic": "Critical Periods",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A patient at 6 weeks gestation asks why her doctor is so concerned about her nutrition and medication use already. The nurse explains that critical periods of development mean:",
+      "opts": [
+        "The embryo is forming organ system infrastructure (nervous system, heart, limbs, palate) during weeks 3–10 and is extremely vulnerable now",
+        "Damage from alcohol, poor nutrition, or medications during critical periods can cause permanent organ defects",
+        "The third trimester is the only critical period — early pregnancy is relatively safe",
+        "Many women are unaware they are pregnant during the most critical weeks, making preconception nutrition essential",
+        "Once the fetal stage begins at week 11, all organ development is complete and risks disappear"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "CORRECT: Weeks 3–10 (embryonic stage) are the critical period — organ system infrastructure is being laid down and the embryo is most vulnerable to teratogens. Damage during these windows can be permanent. Because neural tube closure happens at weeks 3–4, many women are not yet aware of their pregnancy during the most critical window — this is why preconception folic acid supplementation is essential. NOT correct: The third trimester is not the only critical period — the embryonic stage is far more critical for organ formation. The fetal stage involves growth and maturation of already-formed organs, but the foundational architecture was set earlier."
+    },
+    {
+      "id": 5,
+      "unit": "lifecycle",
+      "topic": "Sarcopenia",
+      "type": "mc",
+      "q": "A nurse is assessing an 80-year-old patient who has lost significant muscle mass despite adequate caloric intake. The nurse recognizes this as sarcopenia and knows the most effective nutritional intervention is:",
+      "opts": [
+        "Reduce total protein to decrease kidney workload in aging patients",
+        "Increase protein intake to 1.2–2.0 g/kg/day — elderly patients require more protein per kilogram than the standard adult RDA to preserve muscle mass",
+        "Eliminate fat from the diet to reduce weight and improve muscle-to-fat ratio",
+        "Increase carbohydrate intake to provide energy for muscle repair"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Sarcopenia — age-related muscle loss — accelerates when protein intake is insufficient. Despite requiring fewer total calories, elderly patients need MORE protein per kilogram: 1.2–2.0 g/kg/day vs. the standard adult RDA of 0.8 g/kg/day. Even an intake that seems adequate by adult standards may be too low for an elderly patient. Combined with resistance exercise and adequate Vitamin D, increased protein is the primary nutritional intervention for sarcopenia. Reducing protein is only appropriate in advanced CKD where the kidneys cannot excrete nitrogen waste."
+    },
+    {
+      "id": 6,
+      "unit": "lifecycle",
+      "topic": "Pica",
+      "type": "mc",
+      "q": "A pregnant patient at 14 weeks gestation mentions she has been eating clay from her backyard. The nurse recognizes this as pica and should prioritize assessing for:",
+      "opts": [
+        "Hyperemesis gravidarum — nausea and vomiting driving unusual cravings",
+        "Iron deficiency anemia — pica is strongly associated with iron deficiency and is most common in pregnant women",
+        "Gestational diabetes — elevated glucose increases cravings for non-food substances",
+        "Preeclampsia — protein loss in urine causes mineral cravings"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Pica is the craving and consumption of non-food substances such as dirt, clay, laundry starch, or ice. It is most prevalent in pregnant women and young children. While the exact cause is not fully understood, pica during pregnancy is strongly associated with iron deficiency anemia — a connection supported by multiple studies. Assessment should include CBC, serum ferritin, and iron studies. The patient should also be counseled about risks of consuming contaminated soil (parasites, heavy metals, bacteria)."
+    },
+    {
+      "id": 7,
+      "unit": "lifecycle",
+      "topic": "Dysphagia",
+      "type": "mc",
+      "q": "A nurse is caring for a post-stroke patient who coughs repeatedly during meals and has a wet, gurgly voice quality. The priority nursing intervention is:",
+      "opts": [
+        "Encourage the patient to drink water to clear the throat after each bite",
+        "Consult speech therapy immediately — these are signs of dysphagia with aspiration risk, which can lead to aspiration pneumonia",
+        "Document the finding and continue monitoring the patient's oral intake",
+        "Place the patient on a clear liquid diet until the coughing resolves"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "A wet, gurgly voice and coughing during meals are hallmark signs of dysphagia with aspiration. Aspiration — food or liquid entering the airway rather than the esophagus — causes aspiration pneumonia, a leading cause of death in post-stroke patients. This is a priority patient safety finding requiring immediate speech therapy consultation. Speech therapists perform swallowing evaluations and prescribe appropriate diet texture modifications (minced, pureed, thickened liquids). Silent aspiration (no cough) is even more dangerous and common in patients with diminished sensation post-stroke."
+    },
+    {
+      "id": 8,
+      "unit": "lifecycle",
+      "topic": "Division of Responsibility",
+      "type": "mc",
+      "q": "A parent tells the nurse: 'I reward my child with dessert if she finishes her vegetables.' Based on Ellyn Satter's Division of Responsibility, the nurse should advise:",
+      "opts": [
+        "This is an effective strategy — positive reinforcement promotes healthy eating habits",
+        "Using dessert as a reward is a form of pressure that crosses the division of responsibility and can backfire, increasing the child's resistance to vegetables and fixation on dessert",
+        "Rewards are appropriate as long as they are not food-based items",
+        "The strategy is fine for children over age 5 but not for toddlers"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Satter's Division of Responsibility establishes that the PARENT decides what, when, and where food is offered. The CHILD decides whether and how much to eat. Using dessert as a reward is a form of POSITIVE PRESSURE that crosses this boundary. Research shows food-based rewards increase the desirability of the reward food (dessert) and decrease the appeal of the required food (vegetables). Whether pressure is positive (rewards, bribes, praise) or negative (threats, punishment), it backfires and creates unhealthy food relationships. Recommended approach: offer both vegetables and dessert as normal parts of the meal without conditions."
+    },
+    {
+      "id": 9,
+      "unit": "lifecycle",
+      "topic": "Placenta",
+      "type": "mc",
+      "q": "A nursing student asks how fetal waste products are removed from the body during pregnancy since the fetus cannot excrete them independently. The nurse educator explains:",
+      "opts": [
+        "The fetal kidneys are fully functional by 8 weeks and excrete waste directly into amniotic fluid",
+        "The placenta transfers fetal waste products to the maternal bloodstream for excretion by the mother's organs",
+        "The amniotic sac neutralizes waste products chemically",
+        "The fetal liver converts all waste to harmless compounds that accumulate until birth"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The placenta is the fetus's lungs, kidneys, and digestive system all in one. It provides oxygen and nutrients from maternal blood to fetal blood and transfers fetal carbon dioxide and metabolic waste products back to the maternal circulation for the mother's organs to process and excrete. The placenta also produces critical pregnancy hormones (hCG, progesterone, estrogen). Conditions impairing placental function (preeclampsia, placental insufficiency) directly compromise fetal nutrition and waste removal, leading to intrauterine growth restriction."
+    },
+    {
+      "id": 10,
+      "unit": "lifecycle",
+      "topic": "Preventive Nutrition",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A middle-aged patient asks what dietary changes can help prevent chronic disease as she ages. Based on preventive nutrition principles, which responses are correct?",
+      "opts": [
+        "Increase intake of colorful fruits and vegetables for their antioxidant content to reduce cancer risk",
+        "Consume fatty fish (salmon, mackerel, tuna) regularly for omega-3 fatty acids that help prevent coronary artery disease",
+        "Switch all dietary fat to saturated fat from animal products for best health outcomes",
+        "Ensure adequate B6, B12, and folate intake to control homocysteine levels and reduce cardiovascular disease risk",
+        "Limit refined carbohydrates and added sugars to reduce inflammation and chronic disease risk"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: Colorful fruits and vegetables provide antioxidants that reduce oxidative stress linked to cancer and CVD. Omega-3 fatty acids from oily fish reduce triglycerides, inflammation, and cardiovascular events. B6, B12, and folate metabolize homocysteine — elevated homocysteine damages arterial walls and increases CVD risk. Limiting refined carbohydrates reduces blood sugar spikes, triglycerides, and chronic disease risk. NOT correct: Increasing saturated fat from animal products increases LDL cholesterol and cardiovascular risk. Preventive nutrition recommends replacing saturated fats with mono- and polyunsaturated fats from plant oils, avocados, nuts, and fatty fish."
+    },
+    {
+      "id": 11,
+      "unit": "lifecycle",
+      "topic": "Eating Competence",
+      "type": "mc",
+      "q": "A patient on a strict calorie-counting diet says she feels out of control around food, binges on 'forbidden' foods when stressed, and thinks about food constantly. According to Satter's Eating Competence model, this pattern most reflects:",
+      "opts": [
+        "Successful dietary restraint that just needs more willpower to maintain",
+        "Control-based eating — external restriction suppresses internal hunger and satiety cues, and research shows restrained eaters consume MORE when exposed to restricted foods",
+        "Normal dieting behavior with expected short-term side effects",
+        "An eating disorder requiring immediate psychiatric referral"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This patient is demonstrating the documented consequences of control-based (restrained) eating — the opposite of eating competence. Research finding: restrained eaters paradoxically consume MORE food when exposed to 'forbidden' foods than intuitive eaters do. The restriction creates food preoccupation and undermines internal regulatory signals. Eating competence proposes the opposite: permission to eat enjoyable foods in satisfying amounts based on internal hunger/satiety cues, combined with the discipline of structured meals. This approach produces better nutritional outcomes, healthier weight, and improved relationship with food."
+    },
+    {
+      "id": 12,
+      "unit": "lifecycle",
+      "topic": "Menopause",
+      "type": "mc",
+      "q": "A 52-year-old patient who recently stopped menstruating asks if she still needs to take her iron supplement. The nurse correctly advises:",
+      "opts": [
+        "Yes — iron needs increase after menopause due to reduced absorption in the aging GI tract",
+        "No — iron requirements decrease from 18 mg to 8 mg after menopause because iron losses from menstruation have ceased",
+        "Yes — the same 18 mg/day is required throughout adulthood regardless of menstrual status",
+        "Iron supplements are never needed in women over 50 under any circumstances"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Iron requirements in adult women are elevated to 18 mg/day primarily to compensate for monthly menstrual blood losses. After menopause, when menstruation ceases, the iron RDA drops to 8 mg/day — the same as adult men. Continuing high-dose iron supplementation unnecessarily post-menopause can lead to iron overload, which is associated with liver damage, joint pain, and cardiovascular disease (excess iron promotes oxidative stress). The nurse should advise discontinuing routine iron supplementation unless there is a specific medical indication such as diagnosed iron deficiency anemia."
+    },
+    {
+      "id": 13,
+      "unit": "lifecycle",
+      "topic": "Foremilk vs. Hindmilk",
+      "type": "mc",
+      "q": "A breastfeeding mother reports her 6-week-old infant feeds frequently but seems unsatisfied and is gaining weight slowly. The nurse learns the mother switches breasts every 5 minutes. The nurse's best advice is:",
+      "opts": [
+        "Feeding 5 minutes per breast is optimal — the weight gain issue is unrelated to feeding technique",
+        "The infant may not be getting adequate hindmilk — allow the infant to drain one breast fully before switching to ensure the fat-rich hindmilk is received",
+        "Switch breasts even more frequently to stimulate milk production on both sides equally",
+        "The infant needs formula supplementation because hindmilk is only produced after 2 months of breastfeeding"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Breast milk changes composition during each feeding. Foremilk (early): higher in water, vitamins, and protein — quenches thirst. Hindmilk (after initial release): significantly higher in fat — provides the calories and satiety needed for weight gain. If the mother switches breasts too soon, the infant receives mostly foremilk from each side and never gets adequate fat-rich hindmilk. This causes: apparent frequent hunger, poor weight gain, and sometimes green foamy stools. Advice: let the infant fully drain one breast (it will detach on its own) before offering the second."
+    },
+    {
+      "id": 14,
+      "unit": "lifecycle",
+      "topic": "Food Jag",
+      "type": "mc",
+      "q": "A parent calls the nurse concerned because her 2-year-old has eaten only peanut butter sandwiches and apple slices for the past 10 days and refuses everything else. The nurse advises:",
+      "opts": [
+        "The child needs a medical evaluation for a feeding disorder",
+        "This is a food jag — a normal toddler behavior. Continue providing the preferred foods alongside other offerings without pressure; forcing eating prolongs the jag and creates negative food associations",
+        "Eliminate the preferred foods entirely to force dietary variety",
+        "This indicates a nutritional emergency requiring immediate dietitian referral"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "A food jag is a developmental phase in toddlers during which the child insists on eating only the same few foods repeatedly. It is NORMAL — toddlers are asserting independence and their growth (and appetite) has slowed since infancy. Key guidance based on Satter's Division of Responsibility: continue offering variety at structured meals, include the preferred foods as part of the meal without making them exclusive, do NOT pressure or force eating (this prolongs the jag and creates negative associations), and trust the child to expand their diet over time. Most food jags resolve within weeks when parents follow this approach calmly."
+    }
+  ]
+}

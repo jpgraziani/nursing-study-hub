@@ -1,0 +1,185 @@
+{
+  "id": "nutrition-mod6-reading",
+  "class": "nutrition",
+  "module": 6,
+  "title": "Module 6 — Reading Quiz",
+  "description": "10-question true/false and multiple-choice quiz on Module 6 reading content: cruciferous vegetables, antioxidants, and phytochemical mechanisms.",
+  "topics": [
+    "cruciferous vegetables",
+    "phytochemicals",
+    "antioxidants",
+    "sulforaphane",
+    "indoles",
+    "bioactive compounds",
+    "cooking and nutrients",
+    "cancer risk reduction",
+    "plant compounds",
+    "free radicals"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "antioxidants",
+      "topic": "Cruciferous Vegetables",
+      "type": "tf",
+      "q": "Cooking cruciferous vegetables at high temperatures enhances their bioactive sulfur compounds.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "High temperature cooking DESTROYS the bioactive sulfur compounds in cruciferous vegetables — it does not enhance them. The enzyme myrosinase converts inactive glucosinolates into active sulforaphane, but myrosinase is heat-sensitive and is denatured by high cooking temperatures, shutting down the reaction entirely. For maximum bioactivity: cut or crush the vegetable first, let it sit a few minutes, then eat raw or lightly steam."
+    },
+    {
+      "id": 2,
+      "unit": "antioxidants",
+      "topic": "Carotenoids",
+      "type": "mc",
+      "q": "What role do carotenoids play in human health?",
+      "opts": [
+        "They help prevent chronic diseases such as CVD and cancer",
+        "They are the primary source of vitamin D",
+        "They mainly assist in protein synthesis",
+        "They are only important for skin pigmentation"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "Carotenoids are plant pigments that function as antioxidants — neutralizing free radicals and reducing the oxidative stress that drives chronic disease. Some (like beta-carotene) are also converted to vitamin A, supporting immune function and vision. Vitamin D comes from sunlight and fatty fish, not carotenoids. Carotenoids have no role in protein synthesis. Skin pigmentation is a minor side effect, not their primary function."
+    },
+    {
+      "id": 3,
+      "unit": "antioxidants",
+      "topic": "Polyphenols — Resveratrol",
+      "type": "mc",
+      "q": "Which compound is responsible for the 'French paradox' and is primarily found in grapes and red wine?",
+      "opts": [
+        "Isoflavones",
+        "Lignans",
+        "Quercetin",
+        "Resveratrol"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Resveratrol is a stilbene polyphenol found in red grape skins, red wine, berries, and peanuts. The French paradox is France's surprisingly low heart disease rates despite high saturated fat consumption — partially attributed to resveratrol in red wine. Isoflavones are in soybeans; lignans are in olive oil and whole grains; quercetin is a flavonoid in citrus and onions. None of these are the French paradox compound."
+    },
+    {
+      "id": 4,
+      "unit": "antioxidants",
+      "topic": "Selenium",
+      "type": "mc",
+      "q": "Which of the following is NOT a function of selenium in the body?",
+      "opts": [
+        "Antioxidant and immune protection",
+        "DNA synthesis",
+        "Calcium absorption",
+        "Thyroid hormone metabolism"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Selenium has no role in calcium absorption — that is the function of vitamin D. Selenium's actual functions: (1) antioxidant protection via glutathione peroxidase enzymes that neutralize free radicals and spare vitamin E, (2) DNA synthesis and repair via selenoproteins, (3) thyroid hormone metabolism — selenium converts inactive T4 to active T3. Memory tool: selenium = reproduction, thyroid, DNA, and antioxidant protection."
+    },
+    {
+      "id": 5,
+      "unit": "antioxidants",
+      "topic": "Vitamin E",
+      "type": "mc",
+      "q": "____________ is the primary antioxidant form of vitamin E in the body.",
+      "opts": [
+        "Gamma-tocopherol",
+        "Alpha-tocopherol",
+        "Ascorbic acid",
+        "Beta-carotene"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Vitamin E is a family of 8 compounds but alpha-tocopherol is the form the body preferentially absorbs, retains, and uses as its primary antioxidant. Gamma-tocopherol is more abundant in the American diet but is preferentially excreted. Ascorbic acid is vitamin C — a water-soluble antioxidant that regenerates oxidized vitamin E. Beta-carotene is a carotenoid and vitamin A precursor, not vitamin E."
+    },
+    {
+      "id": 6,
+      "unit": "antioxidants",
+      "topic": "Free Radicals & Oxidative Stress",
+      "type": "mc",
+      "q": "What can excessive exposure to free radical-producing environmental factors lead to?",
+      "opts": [
+        "Oxidative stress and potential damage to DNA, proteins, and lipids",
+        "A decrease in the risk of chronic diseases",
+        "Increased production of antioxidants in the body",
+        "Improved immune response"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "When environmental free radical sources (tobacco, UV, pollution, heavy metals) overwhelm antioxidant defenses, oxidative stress results — damaging DNA (mutations → cancer), proteins (enzymes and immune proteins lose function), and lipids (cell membranes damaged; LDL oxidation → atherosclerosis). The other options describe the opposite of what actually happens — oxidative stress INCREASES chronic disease risk and IMPAIRS immune function."
+    },
+    {
+      "id": 7,
+      "unit": "antioxidants",
+      "topic": "Probiotics",
+      "type": "tf",
+      "q": "Research has proven that probiotic foods always provide a significant and lasting impact on gut health.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The word 'always' makes this false. Probiotics are well-supported for specific situations (antibiotic-associated diarrhea, C. diff risk, IBS) but do not universally provide significant and lasting impact. Strain specificity matters — different strains do different things. Individual variation matters. And many probiotic bacteria are transient — they do not permanently colonize the gut. On test questions: always, never, proven, and only are red flag words that usually signal a false statement."
+    },
+    {
+      "id": 8,
+      "unit": "antioxidants",
+      "topic": "Gut-Brain Axis",
+      "type": "mc",
+      "q": "What is the 'gut-brain axis' referring to?",
+      "opts": [
+        "The link between gut bacteria and the immune system",
+        "The relationship between neurotransmitters and digestive enzymes",
+        "The connection between gut microbiota and brain function",
+        "The process of digestion in the brain"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The gut-brain axis is the bidirectional communication network between the gut microbiome and the central nervous system — signals travel both directions constantly. It communicates via four main routes: the vagus nerve, the immune system, microbial metabolites (short-chain fatty acids), and neurotransmitter production (90% of serotonin is produced in the gut). Option A describes only one pathway. Option B mixes unrelated concepts. Option D is simply incorrect."
+    },
+    {
+      "id": 9,
+      "unit": "antioxidants",
+      "topic": "Bioactive Compounds — Synergy",
+      "type": "tf",
+      "q": "Bioactive compounds, such as polyphenols and carotenoids, act synergistically to promote health effects.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "True. Synergy means the combined effect of multiple compounds working together exceeds the sum of each working alone. Examples: vitamin C regenerates vitamin E; selenium enzymes regenerate vitamin C and spare vitamin E; curcumin bioavailability increases dramatically with piperine (black pepper); carotenoid absorption requires dietary fat. This synergy is why whole food dietary patterns consistently outperform isolated supplements — you cannot put thousands of interacting bioactive compounds into a single pill."
+    },
+    {
+      "id": 10,
+      "unit": "antioxidants",
+      "topic": "Polyphenols — Health Benefits",
+      "type": "mc",
+      "q": "What are some of the health benefits associated with diets rich in polyphenols?",
+      "opts": [
+        "Reduced bioavailability of nutrients",
+        "Increased risk of neurodegenerative disease",
+        "Increased oxidative damage in the body",
+        "Reduced risk of cancer, cardiovascular disease, and type 2 diabetes"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Polyphenols are antioxidants working through multiple mechanisms — neutralizing free radicals, reducing inflammation, protecting LDL from oxidation, promoting apoptosis in damaged cells, and supporting beneficial gut bacteria. The other three options describe the exact opposite of polyphenol effects. Polyphenols reduce (not increase) neurodegenerative disease risk and oxidative damage. They do not meaningfully block nutrient absorption in a normal varied diet."
+    }
+  ]
+}

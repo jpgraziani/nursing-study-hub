@@ -1,0 +1,192 @@
+{
+  "id": "nutrition-ch1-reading",
+  "class": "nutrition",
+  "module": 1,
+  "title": "Chapter 1 — Intro Reading Quiz",
+  "description": "10-question quiz covering food habits, dietary principles, sustainable choices, and the foundations of nutrition science.",
+  "topics": [
+    "food habits",
+    "dietary principles",
+    "variety",
+    "balance",
+    "moderation",
+    "sustainable food",
+    "nutrient density",
+    "food culture",
+    "nutrition science",
+    "dietary guidelines"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "intro",
+      "topic": "Food Habits & Development",
+      "type": "mc",
+      "q": "Which of the following best describes how early food experiences can influence adult eating habits?",
+      "opts": [
+        "Early food experiences have no impact on adult food preferences",
+        "Pleasant family meal experiences in childhood tend to promote better eating habits in adulthood",
+        "Adults always prefer the same foods they ate as children",
+        "Forcing children to eat certain foods guarantees they will like them as adults"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Research consistently shows that positive, relaxed family meal environments during childhood are associated with better dietary patterns in adulthood — including greater food variety and healthier overall eating behaviors. Option A is incorrect because early food experiences do shape preferences and habits significantly. Option C is wrong because preferences evolve — adults don't always prefer childhood foods. Option D is actually the opposite of what research shows: forced feeding tends to create negative associations with those foods, reducing (not increasing) the likelihood the child will enjoy them later."
+    },
+    {
+      "id": 2,
+      "unit": "intro",
+      "topic": "Sustainable Food Choices",
+      "type": "mc",
+      "q": "What is a key factor driving sustainable food choices according to the text?",
+      "opts": [
+        "Growing awareness of diet as both a public and personal issue",
+        "The lower cost of sustainable foods",
+        "The influence of social media",
+        "Pressure from government regulations"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "The text identifies growing public and personal awareness — the recognition that dietary choices affect both individual health AND broader environmental and societal outcomes — as the key driver of sustainable food choices. Sustainable foods are often MORE expensive, not less (option B is incorrect). Social media influence and government regulations play roles but are not identified as the key driving factor in this context. The awareness piece is central: when people understand that what they eat has consequences beyond their own plate, behavior tends to shift."
+    },
+    {
+      "id": 3,
+      "unit": "intro",
+      "topic": "Dietary Principles — Variety",
+      "type": "mc",
+      "q": "What is the main benefit of eating a varied diet?",
+      "opts": [
+        "It makes meal planning easier",
+        "It reduces food costs",
+        "It ensures adequate amounts of all essential nutrients are consumed",
+        "It guarantees weight loss"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Dietary variety is one of the foundational principles of healthy eating because no single food or food group contains all the essential nutrients in adequate amounts. By eating a wide variety of foods — different fruits, vegetables, grains, proteins, and dairy — you are far more likely to obtain the full spectrum of vitamins, minerals, essential amino acids, and fatty acids the body requires. Meal planning and cost may or may not be affected by variety. Weight loss depends on caloric balance, not variety alone — in fact, variety can sometimes increase total caloric intake. This is why dietary guidelines consistently emphasize variety as a core principle."
+    },
+    {
+      "id": 4,
+      "unit": "intro",
+      "topic": "Dietary Principles — Moderation",
+      "type": "mc",
+      "q": "According to the text, why is moderation important in a healthy diet?",
+      "opts": [
+        "It completely eliminates unhealthy foods",
+        "It focuses on maximizing nutrient intake at every meal",
+        "It allows small portions of higher-calorie foods, making healthy eating more sustainable",
+        "It creates strict rules about food choices"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Moderation means consuming foods — including less nutritious choices — in reasonable amounts rather than eliminating them entirely. This approach is clinically and psychologically important: overly restrictive eating patterns tend to be unsustainable, leading to cycles of restriction and overeating. Moderation makes a healthy diet livable long-term. Option A is incorrect because moderation does not eliminate foods. Option B describes something closer to nutrient density than moderation. Option D is the opposite of what moderation represents — it removes strict rules, not creates them. In patient education, teaching moderation rather than elimination is generally more effective for long-term dietary adherence."
+    },
+    {
+      "id": 5,
+      "unit": "intro",
+      "topic": "Research Literacy — Study Validity",
+      "type": "mc",
+      "q": "It is important to understand the methods used by researchers — such as how many people were in the study and how long it lasted — in order to assess how valid the study results are.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "TRUE. Critical evaluation of research methodology is fundamental to nutrition literacy and evidence-based nursing practice. Sample size matters enormously — a study with 20 participants has far less statistical power and generalizability than one with 20,000. Study duration matters — short studies may miss long-term effects. Other methodological factors include: Was it randomized and controlled? Was there a placebo group? Were confounding variables controlled? Who funded the study? This is why nutrition science can seem contradictory — a poorly designed small study may reach opposite conclusions from a well-designed large trial. As a future nurse, you will need to critically evaluate the evidence behind clinical recommendations."
+    },
+    {
+      "id": 6,
+      "unit": "intro",
+      "topic": "Digestion — Stomach Function",
+      "type": "mc",
+      "q": "Why is the stomach described as a 'temporary holding chamber'?",
+      "opts": [
+        "Because food can be ingested more quickly than it can be digested and absorbed by the small intestine",
+        "Because it can only hold food for 30 minutes",
+        "Because it immediately releases all food into the small intestine",
+        "Because it only processes certain types of nutrients"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "The stomach functions as a temporary reservoir because humans can eat a meal relatively quickly — in minutes — but the small intestine (where the vast majority of digestion and absorption actually occurs) requires hours to process that food. The stomach churns food into chyme, begins protein digestion with pepsin and HCl, and then releases chyme into the duodenum gradually — regulated by the pyloric sphincter — at a rate the small intestine can handle. This controlled release prevents the small intestine from being overwhelmed. Option B is incorrect — gastric emptying time varies from 2-5 hours depending on meal composition. Option C is the opposite of how the pyloric sphincter works. Option D is incorrect — the stomach processes multiple macronutrients."
+    },
+    {
+      "id": 7,
+      "unit": "intro",
+      "topic": "Dietary Reference Intakes (DRIs)",
+      "type": "mc",
+      "q": "Dietary Reference Intakes (DRIs) do NOT:",
+      "opts": [
+        "Specifically address individuals whose requirements are affected by a disease state",
+        "Replace the older Recommended Daily Allowances",
+        "Attempt to establish maximum safe levels of tolerance for nutrients",
+        "Attempt to estimate required nutrients to improve long-term health"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "DRIs are established for healthy population groups — they do NOT account for the altered nutrient needs of individuals with disease states (e.g., renal disease requiring protein restriction, or malabsorption conditions requiring higher vitamin supplementation). Clinical nutrition for diseased patients uses specialized guidelines, not standard DRIs. Options B, C, and D are all things DRIs DO: they replaced older RDAs (B), they include the Tolerable Upper Intake Level as a safety ceiling (C), and they are designed with long-term health optimization in mind — not just preventing acute deficiency (D). This distinction matters in nursing: you cannot simply apply standard DRI values to most of your patients, who will often have altered requirements due to illness."
+    },
+    {
+      "id": 8,
+      "unit": "intro",
+      "topic": "Factors Influencing Food Choices",
+      "type": "mc",
+      "q": "Cultural, economic, and religious reasons are all influences on one's food choices.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "TRUE. Food choice is multifactorial. Cultural background shapes food preferences, cooking methods, meal patterns, and the social meaning of food. Economic factors determine food access and affordability — food insecurity is a major determinant of dietary quality. Religious beliefs directly restrict or prescribe certain foods (kosher laws, halal requirements, Hindu vegetarianism, Catholic fasting practices, etc.). Additional influences include geography, food availability, personal taste preferences, health knowledge, emotional state, family habits, and food marketing. For nurses, this means dietary counseling must account for the patient's full cultural, economic, and religious context — a diet recommendation that ignores these factors will not be followed."
+    },
+    {
+      "id": 9,
+      "unit": "intro",
+      "topic": "Dietary Reference Intakes — Components",
+      "type": "mc",
+      "q": "Which of the following does NOT go into determining the Dietary Reference Intakes for nutrients?",
+      "opts": [
+        "Tolerable Upper Intake Level (UL)",
+        "Estimated Average Requirement (EAR)",
+        "Acceptable Macronutrient Distribution Range (AMDR)",
+        "Adequate Intake (AI)"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The Acceptable Macronutrient Distribution Range (AMDR) is a separate concept from the DRI framework — it expresses recommended intake ranges for macronutrients as a PERCENTAGE of total calories (Carbohydrates: 45-65%, Fat: 20-35%, Protein: 10-35%), not as an absolute daily intake quantity. The DRI framework itself consists of: the Estimated Average Requirement (EAR — meets the needs of 50% of healthy people), the Recommended Dietary Allowance (RDA — meets the needs of 97-98% of healthy people), the Adequate Intake (AI — used when insufficient evidence exists to establish an EAR/RDA), and the Tolerable Upper Intake Level (UL — maximum daily intake unlikely to cause harm). AMDR is related to macronutrient guidance but is not one of the four DRI reference values."
+    },
+    {
+      "id": 10,
+      "unit": "intro",
+      "topic": "Definition & Scope of Nutrition",
+      "type": "sata",
+      "q": "The study of nutrition includes (select all that apply):",
+      "opts": [
+        "Study of how food intake and choices affect body weight",
+        "Study of how behavioral, social, and environmental factors influence eating habits",
+        "Study of what nutrients are found in foods and needed by the body",
+        "Study of how nutrients are digested, absorbed, and used by the body",
+        "Study of how food intake and choices affect risk for chronic disease"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "All five are correct — this is a 'select all that apply' question where every option applies. Nutrition as a scientific discipline is broad and integrative. It encompasses: the biochemical composition of foods and the nutrients within them (C); the physiology of digestion, absorption, and metabolism (D); how dietary patterns affect body weight and energy balance (A); how food choices influence risk for chronic diseases like diabetes, cardiovascular disease, cancer, and osteoporosis (E); and the behavioral, social, cultural, and environmental factors that determine what people eat (B). This multidisciplinary scope is why nutrition connects to nursing, public health, biochemistry, psychology, sociology, and medicine simultaneously. A thorough understanding of all five dimensions is needed for effective patient nutrition counseling."
+    }
+  ]
+}

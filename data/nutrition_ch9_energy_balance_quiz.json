@@ -1,0 +1,722 @@
+{
+  "id": "nutrition-ch9-energy",
+  "class": "nutrition",
+  "module": 9,
+  "title": "Chapter 9 — Energy Balance & Disordered Eating Quiz",
+  "description": "38-question NCLEX-style quiz covering adipose tissue, energy balance, BMR, disordered eating, eating disorders, and weight management.",
+  "topics": [
+    "adipose tissue",
+    "fat cells",
+    "energy balance",
+    "BMR",
+    "basal metabolic rate",
+    "resting metabolic rate",
+    "thermic effect of food",
+    "obesity",
+    "disordered eating",
+    "anorexia nervosa",
+    "bulimia nervosa",
+    "binge eating disorder",
+    "ARFID",
+    "body image",
+    "set point",
+    "leptin",
+    "ghrelin",
+    "weight management",
+    "BMI",
+    "weight loss interventions"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "energy",
+      "topic": "9.1 — Adipose Tissue",
+      "type": "mc",
+      "q": "A child who was obese during childhood grows into a healthy-weight adult through diet and exercise. Compared to a peer who was always lean, how does this adult's adipose tissue differ?",
+      "opts": [
+        "The formerly obese adult has fewer, larger fat cells",
+        "The formerly obese adult has the same number and size of fat cells as the always-lean peer",
+        "The formerly obese adult has a greater number of fat cells, though each cell may be smaller",
+        "The formerly obese adult's body has destroyed excess fat cells through apoptosis"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Correct Answer: C. During childhood and puberty, adipose tissue grows through BOTH hyperplasia (more cells) AND hypertrophy (bigger cells). Once adulthood is reached, new fat cells are rarely created. When a formerly obese child loses weight as an adult, the fat cells shrink (atrophy) but the total NUMBER of fat cells remains elevated compared to someone who was always lean. This is a critical reason why weight regain is so common — more fat cells means a greater potential to store fat quickly."
+    },
+    {
+      "id": 2,
+      "unit": "energy",
+      "topic": "9.1 — Obesity Rates",
+      "type": "mc",
+      "q": "According to US data from 2017–2018, approximately what percentage of American adults are classified as obese?",
+      "opts": [
+        "30%",
+        "42.4%",
+        "18.5%",
+        "55%"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B — 42.4%. This is up from 30% in 1999, reflecting a dramatic increase over two decades. Additionally, 9.2% of adults have severe obesity. The 30% figure is where rates stood in 1999. The 18.5% figure is the obesity rate among children and adolescents aged 2–19. Obesity rates in the US remain among the highest in the world."
+    },
+    {
+      "id": 3,
+      "unit": "energy",
+      "topic": "9.2 — BMI",
+      "type": "mc",
+      "q": "A patient has a BMI of 27.5 kg/m². How would this be classified, and what is the primary clinical concern at this level?",
+      "opts": [
+        "Healthy weight; no clinical concern",
+        "Overweight; gradual increase in chronic disease risk begins",
+        "Obese; immediate intervention required",
+        "Underweight; nutritional supplementation needed"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B — Overweight. BMI 25–29.9 = Overweight. Risk for chronic diseases (heart disease, type 2 diabetes, gallstones, osteoarthritis, sleep apnea, and certain cancers) begins to increase at BMI ≥25 and rises progressively. BMI < 18.5 = Underweight; 18.5–24.9 = Healthy Weight; ≥30 = Obese."
+    },
+    {
+      "id": 4,
+      "unit": "energy",
+      "topic": "9.2 — BMI Limitations",
+      "type": "mc",
+      "q": "A 25-year-old competitive bodybuilder has a BMI of 31 kg/m². What is the most accurate statement about using BMI to assess this patient's health risk?",
+      "opts": [
+        "BMI confirms this patient is obese and at high risk for cardiovascular disease",
+        "BMI overestimates body fat in highly muscular individuals; additional assessments are needed",
+        "BMI is always accurate regardless of body composition",
+        "BMI is not useful for adults under 30"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. BMI does not distinguish between fat mass and lean (muscle) mass. Because muscle is denser than fat, a highly muscular person can have a high BMI despite having very low body fat percentage. BMI should always be interpreted in context and supplemented with measures of body composition (body fat %, waist circumference) and clinical assessment. BMI also tends to underestimate body fat in older adults who have lost muscle mass."
+    },
+    {
+      "id": 5,
+      "unit": "energy",
+      "topic": "9.2 — Body Composition Methods",
+      "type": "mc",
+      "q": "A nurse is educating a patient who will be undergoing bioelectric impedance analysis (BIA) to measure body fat percentage. Which instruction is most important to give the patient prior to the test?",
+      "opts": [
+        "\"Eat a high-fat meal 1 hour before the test\"",
+        "\"Make sure you are well-hydrated before testing\"",
+        "\"Exercise intensely the morning of the test to stimulate metabolism\"",
+        "\"Fast for 24 hours before the test to ensure accuracy\""
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. BIA works by sending a low-level electrical current through the body. The current moves faster through hydrated lean tissue (muscle is ~75% water) and slower through fat tissue (<25% water). Because the measurement is heavily dependent on body water content, accurate results require proper hydration. Exercise causes sweat-related dehydration, and fasting or diuretic use can also alter hydration status — all of which would skew BIA results."
+    },
+    {
+      "id": 6,
+      "unit": "energy",
+      "topic": "9.2 — Fat Distribution",
+      "type": "mc",
+      "q": "Which type of body fat is most strongly associated with metabolic disease risk and is described as being metabolically active and releasing inflammatory factors?",
+      "opts": [
+        "Subcutaneous fat",
+        "Visceral fat",
+        "Intramuscular fat",
+        "Brown adipose tissue"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B — Visceral fat. Visceral fat is deposited around the abdominal organs. Unlike subcutaneous fat (which lies under the skin and is less metabolically active), visceral fat actively secretes hormones and inflammatory cytokines that contribute to insulin resistance, cardiovascular disease, and metabolic syndrome. This is why abdominal obesity (\"apple shape\") carries much higher disease risk than fat distributed around the hips and thighs (\"pear shape\")."
+    },
+    {
+      "id": 7,
+      "unit": "energy",
+      "topic": "9.2 — Waist Circumference",
+      "type": "mc",
+      "q": "A female patient's waist circumference measures 38 inches. Based on established risk thresholds, how should the nurse interpret this finding?",
+      "opts": [
+        "Low risk — within normal limits",
+        "Increased risk — exceeds the 35-inch threshold for women",
+        "Borderline — only men have waist circumference risk thresholds",
+        "Critical — this requires immediate surgical referral"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. For women, a waist circumference greater than 35 inches indicates increased health risk from abdominal obesity. For men, the threshold is greater than 40 inches. A measurement of 38 inches in a female patient clearly exceeds her risk threshold and warrants counseling and follow-up. Low risk thresholds are less than 31.5 inches for women and less than 37 inches for men."
+    },
+    {
+      "id": 8,
+      "unit": "energy",
+      "topic": "9.3 — Energy Balance / Macronutrients",
+      "type": "mc",
+      "q": "A patient asks, \"If I eat too much protein, does it just get excreted?\" What is the most accurate nursing response?",
+      "opts": [
+        "Yes — excess protein is eliminated entirely in the urine",
+        "No — the nitrogen from excess amino acids is excreted as urea, but the carbon skeleton can be converted to glucose or stored as fat",
+        "Excess protein is stored as muscle tissue",
+        "Protein cannot be converted to fat under any circumstances"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. When protein is consumed in excess, the body removes the nitrogen from amino acids through deamination. This nitrogen is converted to urea and excreted in urine. The remaining carbon skeleton is not wasted — it can be converted to glucose (gluconeogenesis) when carbohydrate is unavailable, or stored as fat (lipogenesis) when energy is already adequate. Excess protein is NOT stored as additional muscle tissue — resistance training combined with adequate (not excess) protein stimulates muscle synthesis."
+    },
+    {
+      "id": 9,
+      "unit": "energy",
+      "topic": "9.3 — EER / PA Values",
+      "type": "mc",
+      "q": "When using the Estimated Energy Requirement (EER) formula, a nurse needs to assign a Physical Activity (PA) value to a patient who works a desk job and does not exercise, but does perform routine tasks of independent living. Which PA value is correct for this female patient?",
+      "opts": [
+        "1.27",
+        "1.12",
+        "1.00",
+        "1.45"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Correct Answer: C — 1.00 (Sedentary). A sedentary PA value of 1.00 applies to individuals with no physical activity beyond what is required for independent living. This is a desk job worker who does not exercise. The PA values are: Sedentary 1.00 (M)/1.00 (F); Low Active 1.11/1.12; Moderate Active 1.25/1.27; Very Active 1.48/1.45. Note: most people overestimate their activity level. 1.12 would apply to a woman walking up to 3 miles/day."
+    },
+    {
+      "id": 10,
+      "unit": "energy",
+      "topic": "9.3 — TDEE Components",
+      "type": "mc",
+      "q": "For most non-athlete adults, which component accounts for the largest share of Total Daily Energy Expenditure (TDEE)?",
+      "opts": [
+        "Physical activity",
+        "Thermic effect of food (TEF)",
+        "Basal metabolic rate (BMR)",
+        "Non-exercise activity thermogenesis (NEAT)"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Correct Answer: C — BMR. Basal Metabolic Rate (BMR) accounts for 50–70% of TDEE and represents energy used to maintain vital functions at rest (breathing, heartbeat, liver/kidney function, brain function, temperature regulation). Physical activity contributes 15–30%, TEF about 10%, and NEAT varies widely. Even if someone is sedentary, the majority of their caloric needs are already accounted for by basal metabolism."
+    },
+    {
+      "id": 11,
+      "unit": "energy",
+      "topic": "9.3 — BMR Factors",
+      "type": "sata",
+      "q": "Which of the following conditions would INCREASE a patient's basal metabolic rate (BMR)? Select all that apply.",
+      "opts": [
+        "Pregnancy",
+        "Hypothyroidism",
+        "High fever (elevated body temperature)",
+        "Physiologic stress / critical illness",
+        "Severe caloric restriction (prolonged fasting)",
+        "High muscle mass"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        5
+      ],
+      "rationale": "Correct Answers: A, C, D, F. Pregnancy, fever, physiologic stress/critical illness, and high muscle mass all increase BMR. Muscle tissue is more metabolically active than fat, so greater muscle mass means higher resting caloric burn. Fever and physiologic stress activate the sympathetic nervous system and metabolic processes. Pregnancy increases demands for fetal growth and development. Hypothyroidism (B) DECREASES BMR — low thyroid hormone slows metabolism, leading to weight gain. Severe caloric restriction (E) also DECREASES BMR — the body adapts by slowing metabolism to conserve energy, which is why dieting causes a metabolic slowdown and weight plateaus."
+    },
+    {
+      "id": 12,
+      "unit": "energy",
+      "topic": "9.3 — BMR/Thyroid",
+      "type": "mc",
+      "q": "A patient on the medical floor has hypothyroidism and complains of unexplained weight gain despite not eating more than usual. What is the physiological explanation?",
+      "opts": [
+        "Hypothyroidism causes increased appetite through elevated ghrelin",
+        "Low thyroid hormone levels decrease BMR, meaning the body burns fewer calories at rest",
+        "Hypothyroidism increases water retention which causes weight gain, not fat accumulation",
+        "Hypothyroidism blocks insulin secretion, leading to excess glucose storage as fat"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. Thyroid hormone is a primary regulator of BMR. When thyroid hormone is low (hypothyroidism), the body's resting metabolic rate decreases — meaning fewer calories are burned at rest. Even with normal food intake, the caloric surplus leads to weight gain. The inverse is true for hyperthyroidism: elevated thyroid hormone increases BMR, causing weight loss despite normal or increased eating. This is why thyroid status is assessed in patients experiencing unexplained weight changes."
+    },
+    {
+      "id": 13,
+      "unit": "energy",
+      "topic": "9.3 — TEF/NEAT",
+      "type": "mc",
+      "q": "Non-exercise activity thermogenesis (NEAT) includes which of the following?",
+      "opts": [
+        "Running 5 miles on a treadmill",
+        "Digesting a large holiday meal",
+        "Fidgeting, typing, standing, and doing yard work",
+        "Energy used to maintain breathing and heartbeat at rest"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Correct Answer: C. NEAT is defined as energy expended for all activities except sleeping, eating, and sports-like exercise. It includes things like fidgeting, typing, walking around, standing, household chores, and yard work. NEAT is highly variable between individuals and can account for up to 2,000 kcal/day. Answer A (running) is structured exercise. Answer B (digesting food) is TEF. Answer D (breathing/heartbeat) is BMR."
+    },
+    {
+      "id": 14,
+      "unit": "energy",
+      "topic": "9.4 — Hunger/Satiety Hormones",
+      "type": "mc",
+      "q": "A patient asks why they feel so hungry before meals. Which hormone is primarily responsible for signaling hunger when the stomach is empty?",
+      "opts": [
+        "Leptin",
+        "Insulin",
+        "Ghrelin",
+        "Cholecystokinin"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Correct Answer: C — Ghrelin. Ghrelin is the \"hunger hormone\" produced by the upper stomach when it is empty. It travels through the bloodstream to the hypothalamus, where it triggers signals promoting food-seeking behavior and appetite. Ghrelin levels rise before meals and fall after eating. Leptin is the satiety hormone produced by fat tissue for long-term energy regulation. Cholecystokinin promotes satiety and is released from the duodenum in response to fat/protein intake."
+    },
+    {
+      "id": 15,
+      "unit": "energy",
+      "topic": "9.4 — Leptin Resistance",
+      "type": "mc",
+      "q": "Why does administering exogenous leptin typically fail to produce sustained weight loss in obese patients?",
+      "opts": [
+        "Obese patients naturally produce too little leptin for supplementation to be effective",
+        "Obese patients develop leptin resistance, where the hypothalamus stops responding normally to leptin signals",
+        "Leptin increases ghrelin production, counteracting any appetite suppression",
+        "Leptin is immediately broken down in the liver before reaching the hypothalamus"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. Leptin resistance is one of the central mechanisms underlying obesity. Leptin is produced by fat tissue — obese patients actually produce MORE leptin than lean patients because they have more fat. However, their hypothalamus becomes desensitized and stops responding normally to the leptin signal. As a result, the \"I'm full\" and \"stop eating\" messages fail to register properly. Adding more leptin externally does not overcome this receptor-level resistance, which is why leptin therapy has been largely ineffective for treating common obesity."
+    },
+    {
+      "id": 16,
+      "unit": "energy",
+      "topic": "9.4 — Physiological Hunger Signals",
+      "type": "sata",
+      "q": "Which of the following physiological mechanisms promote SATIETY (the feeling of fullness)? Select all that apply.",
+      "opts": [
+        "Gastric distension (stomach stretching after eating)",
+        "Rising blood glucose levels after carbohydrate intake",
+        "Ghrelin release from the empty stomach",
+        "Leptin release from fat tissue signaling positive energy balance",
+        "Fiber in the intestines stimulating fullness signals"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "Correct Answers: A, B, D, E. Satiety is promoted by gastric distension (stomach stretch sends neural signals to stop eating), rising blood glucose after carb digestion (early satiety signal), leptin from fat tissue (long-term satiety regulation), and fiber in the intestines (mechanical fullness). Ghrelin (C) is the HUNGER hormone — it promotes appetite when the stomach is empty, not satiety."
+    },
+    {
+      "id": 17,
+      "unit": "energy",
+      "topic": "9.5 — Energy Expenditure Factors",
+      "type": "mc",
+      "q": "Research on offspring born to mothers who experienced famine during pregnancy found that these children had higher rates of obesity as adults. What concept does this best illustrate?",
+      "opts": [
+        "Hyperplasia of adipose tissue during fetal development",
+        "Epigenetic programming of energy metabolism in response to the prenatal nutritional environment",
+        "Transmission of a defective leptin gene from mother to child",
+        "The obesogenic environment in post-war Germany"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B — Epigenetics. This is a classic example of epigenetic programming. When a fetus is exposed to severe nutrient scarcity in the womb, its metabolic programming adapts to expect scarce food resources. This results in more efficient fat storage and altered energy metabolism. When these individuals are later exposed to adequate or excess nutrition, they are disproportionately prone to obesity. This concept explains why maternal nutrition during pregnancy affects the offspring's health for decades — not just through genetic inheritance, but through epigenetic modification of gene expression."
+    },
+    {
+      "id": 18,
+      "unit": "energy",
+      "topic": "9.6 — Health Risks of Obesity",
+      "type": "sata",
+      "q": "A patient has a BMI of 34. Which of the following chronic conditions is this patient at increased risk for due to obesity? Select all that apply.",
+      "opts": [
+        "Type 2 diabetes mellitus",
+        "Osteoporosis",
+        "Obstructive sleep apnea",
+        "Non-alcoholic fatty liver disease (NAFLD)",
+        "Endometrial cancer",
+        "Osteoarthritis"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Correct Answers: A, C, D, E, F. Obesity increases risk for T2DM (visceral fat drives insulin resistance), obstructive sleep apnea (fat deposits in the pharynx obstruct the airway), NAFLD (excess fat stored in the liver), endometrial cancer (adipose tissue produces excess estrogen), and osteoarthritis (mechanical joint loading + inflammatory adipokines). Osteoporosis (B) is NOT associated with obesity — in fact, excess weight can be mildly protective for bone density because weight-bearing stimulates bone formation. Osteoporosis is more associated with underweight, anorexia, low estrogen states, and aging."
+    },
+    {
+      "id": 19,
+      "unit": "energy",
+      "topic": "9.6 — Binge Eating Disorder",
+      "type": "mc",
+      "q": "Which of the following most accurately distinguishes Binge Eating Disorder (BED) from Bulimia Nervosa?",
+      "opts": [
+        "BED involves purging behaviors after bingeing; bulimia does not",
+        "BED involves recurrent bingeing WITHOUT compensatory behaviors; bulimia involves bingeing WITH purging",
+        "BED only affects women; bulimia affects both sexes",
+        "BED is associated with extreme underweight; bulimia is associated with overweight"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. The key distinction: Bulimia = binge + purge (vomiting, laxatives, diuretics, excessive exercise, or fasting). BED = binge WITHOUT any compensatory purging behaviors. Because the excess calories from binges are retained in BED, patients are often overweight or obese. BED is the most common eating disorder in the US, affecting 3.5% of women and 2.0% of men. Both disorders are associated with guilt, shame, and depression, and both affect men and women."
+    },
+    {
+      "id": 20,
+      "unit": "energy",
+      "topic": "9.7 — Underweight Risks",
+      "type": "mc",
+      "q": "A patient with a BMI of 17.0 is admitted for a pre-operative workup. Which health complication is most directly associated with being underweight?",
+      "opts": [
+        "Type 2 diabetes",
+        "Delayed wound healing and increased susceptibility to infection",
+        "Gallbladder disease",
+        "Sleep apnea"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. Underweight (BMI < 18.5) is associated with nutritional deficiencies that impair wound healing (inadequate protein for tissue repair), immune function (inadequate calories, protein, vitamins, and minerals → increased infection risk), hormonal abnormalities (amenorrhea, growth delays), osteoporosis, and iron deficiency anemia. This is clinically critical for preoperative patients — poor nutritional status significantly increases surgical risk, impairs recovery, and raises the likelihood of post-operative infections."
+    },
+    {
+      "id": 21,
+      "unit": "energy",
+      "topic": "9.7 — Anorexia Nervosa",
+      "type": "mc",
+      "q": "A 19-year-old female patient is admitted with a suspected eating disorder. The nurse notes she is severely underweight, has lanugo on her arms, and her heart rate is 46 bpm. Which eating disorder does this presentation most suggest, and what is the priority nursing assessment?",
+      "opts": [
+        "Bulimia nervosa; priority assessment is dental erosion",
+        "Anorexia nervosa; priority assessment is cardiac rhythm and electrolytes",
+        "Binge eating disorder; priority assessment is blood glucose",
+        "Orthorexia; priority assessment is vitamin D levels"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. Severe underweight + lanugo (fine body hair growth due to loss of fat insulation) + bradycardia (HR 46) = classic anorexia nervosa presentation. Lanugo is the body's attempt to conserve warmth when subcutaneous fat is gone. Bradycardia is a serious cardiac complication of severe caloric restriction. The PRIORITY nursing assessment is cardiac rhythm (arrhythmias from electrolyte imbalances — especially hypokalemia — are the leading cause of death in anorexia) and electrolytes. Anorexia has the highest mortality of any mental illness."
+    },
+    {
+      "id": 22,
+      "unit": "energy",
+      "topic": "9.7 — Bulimia Nervosa",
+      "type": "sata",
+      "q": "A nurse is assessing a patient suspected of having bulimia nervosa. Which physical findings would be consistent with this diagnosis? Select all that apply.",
+      "opts": [
+        "Severe dental enamel erosion",
+        "Calluses on the knuckles (Russell's sign)",
+        "Extremely low BMI (emaciated appearance)",
+        "Electrolyte imbalances (particularly hypokalemia)",
+        "Normal or slightly overweight BMI",
+        "Swollen parotid glands (chipmunk cheeks)"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Correct Answers: A, B, D, E, F. Bulimia signs include: dental enamel erosion (from stomach acid in repeated vomiting), Russell's sign (calluses on knuckles from using fingers to induce vomiting), electrolyte imbalances especially hypokalemia (from vomiting and laxative/diuretic use — can cause fatal arrhythmias), normal or overweight BMI (unlike anorexia — this is why bulimia is harder to detect), and swollen parotid glands from repeated stimulation during vomiting. Extremely low BMI (C) is characteristic of ANOREXIA, not bulimia. This distinction is crucial for clinical identification."
+    },
+    {
+      "id": 23,
+      "unit": "energy",
+      "topic": "9.7 — Eating Disorder Comparison",
+      "type": "mc",
+      "q": "Which eating disorder carries the highest mortality rate among all mental illnesses?",
+      "opts": [
+        "Binge eating disorder (BED)",
+        "Bulimia nervosa",
+        "Anorexia nervosa",
+        "Orthorexia"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Correct Answer: C — Anorexia nervosa. Anorexia has the highest mortality of any mental illness. Death can result from cardiac arrhythmia (due to electrolyte imbalances, especially hypokalemia), multi-organ failure, or suicide. Those aged 15–24 with anorexia have 10 times the mortality risk compared to their peers. Only about one-third of people with anorexia seek treatment. Early identification and intervention by nurses is critical."
+    },
+    {
+      "id": 24,
+      "unit": "energy",
+      "topic": "9.7 — Other Eating Disorders",
+      "type": "mc",
+      "q": "A 5-year-old child is brought to the clinic because parents are concerned she has been eating dirt and chalk. This pattern of consuming non-food substances is best described as:",
+      "opts": [
+        "ARFID",
+        "Orthorexia",
+        "Pica",
+        "Night eating syndrome"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Correct Answer: C — Pica. Pica is the persistent craving and consumption of non-food substances such as dirt, clay, chalk, ice, hair, or paper. It is most commonly observed in children, pregnant women, and individuals with developmental or intellectual disabilities. Clinically, nurses should assess for nutritional deficiencies (especially iron) in patients with pica, as iron deficiency anemia is a common underlying trigger. ARFID involves extreme restriction of food types, orthorexia is obsession with \"healthy\" eating, and night eating syndrome is a pattern of eating excessively at night."
+    },
+    {
+      "id": 25,
+      "unit": "energy",
+      "topic": "9.7 — Eating Disorder Treatment",
+      "type": "sata",
+      "q": "A nurse is preparing a care plan for a patient with anorexia nervosa being admitted for inpatient treatment. Which of the following are priority nursing interventions? Select all that apply.",
+      "opts": [
+        "Monitor cardiac rhythm and electrolyte levels",
+        "Rapidly advance caloric intake to restore weight as quickly as possible",
+        "Assess for suicidal ideation and self-harm",
+        "Monitor vital signs including blood pressure and heart rate",
+        "Monitor for signs of refeeding syndrome when reintroducing nutrition",
+        "Encourage gradual, supervised nutrition restoration with multidisciplinary team involvement"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Correct Answers: A, C, D, E, F. Priority nursing interventions include cardiac monitoring + electrolytes (hypokalemia → fatal arrhythmias), suicidal ideation assessment (anorexia has the highest suicide risk of any mental illness), vital sign monitoring (bradycardia and hypotension are common), refeeding syndrome monitoring (phosphate shifts when nutrition is reintroduced after starvation can cause cardiac failure and death), and supervised gradual nutrition restoration with a multidisciplinary team. Rapidly advancing caloric intake (B) is DANGEROUS — refeeding syndrome occurs when severely malnourished patients receive rapid nutrition repletion, causing life-threatening electrolyte shifts. Refeeding must always be gradual and medically supervised."
+    },
+    {
+      "id": 26,
+      "unit": "energy",
+      "topic": "9.8 — Successful Weight Loss",
+      "type": "mc",
+      "q": "What is the formal clinical definition of \"successful weight loss\"?",
+      "opts": [
+        "Losing any amount of weight through dieting over the course of one month",
+        "Intentionally losing at least 10% of body weight and keeping it off for at least one year",
+        "Reaching a BMI below 25 through any means",
+        "Losing 30 or more pounds through bariatric surgery"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. Successful weight loss is formally defined as intentionally losing at least 10% of initial body weight and maintaining that loss for at least one year. By this standard, fewer than 20% of weight-loss attempts are successful long-term. Within 5 years, over 80% of people have regained their lost weight. This is not due to lack of motivation — physiological adaptations (reduced BMR, hormonal changes increasing hunger) actively drive weight regain."
+    },
+    {
+      "id": 27,
+      "unit": "energy",
+      "topic": "9.8 — Weight Regain Biology",
+      "type": "mc",
+      "q": "A patient is frustrated after regaining weight she lost on a diet, saying \"I just have no willpower.\" Which response by the nurse is most evidence-based?",
+      "opts": [
+        "\"You're right — adherence is the key to long-term success.\"",
+        "\"Weight regain happens because the body physiologically fights weight loss — your hunger hormones increase and your metabolism slows, making it very difficult to keep the weight off. This is not a failure of willpower.\"",
+        "\"You should try a stricter diet — the less you eat, the more your metabolism will improve.\"",
+        "\"This happens to everyone — there is nothing you can do about it biologically.\""
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. Research clearly demonstrates that weight regain is primarily driven by physiology, not psychology. For each kg of weight lost, the body reduces energy expenditure by 20–30 kcal/day through metabolic adaptation. Simultaneously, hormonal changes (reduced leptin, altered gut hormones) increase appetite by ~100 kcal/day. These adaptations create powerful biological pressure to regain weight. Telling patients this is a biology problem — not a willpower failure — is evidence-based, reduces shame, and builds therapeutic alliance. Severe caloric restriction (Answer C) actually LOWERS BMR further, making the problem worse."
+    },
+    {
+      "id": 28,
+      "unit": "energy",
+      "topic": "9.8 — Weight Loss Recommendations",
+      "type": "mc",
+      "q": "What rate of weight loss is generally recommended by health professionals as safe and sustainable?",
+      "opts": [
+        "5–10 lbs per week",
+        "0.5–2.0 lbs per week",
+        "3–4 lbs per week",
+        "10 lbs in the first month, then 1 lb per month thereafter"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B — 0.5–2.0 lbs per week. This rate is recommended because it is achievable through reasonable caloric reduction and physical activity, minimizes lean muscle mass loss, and is more sustainable long-term. Rapid weight loss (choices A and C) often results in loss of lean muscle mass, nutrient deficiencies, gallstone formation, and rapid regain. Even modest loss of 5–10% of body weight can meaningfully improve blood pressure, blood glucose, and cholesterol levels."
+    },
+    {
+      "id": 29,
+      "unit": "energy",
+      "topic": "9.8 — Bariatric Surgery",
+      "type": "mc",
+      "q": "A patient who underwent Roux-en-Y gastric bypass 6 months ago presents with fatigue, pallor, and paresthesias of the feet. Which nutritional deficiency is the most likely cause?",
+      "opts": [
+        "Vitamin C deficiency",
+        "Vitamin B12 and/or iron deficiency",
+        "Vitamin K deficiency",
+        "Sodium deficiency"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B — Vitamin B12 and/or iron deficiency. Roux-en-Y gastric bypass reroutes food so it bypasses the duodenum and upper jejunum — the primary sites of vitamin B12, iron, folate, and calcium absorption. B12 deficiency presents with neurological symptoms (paresthesias, peripheral neuropathy, ataxia) and megaloblastic anemia. Iron deficiency causes microcytic anemia with fatigue and pallor. Post-bariatric patients require lifelong supplementation of B12, iron, folate, and calcium. Nurses must assess all gastric bypass patients for these deficiencies at every encounter."
+    },
+    {
+      "id": 30,
+      "unit": "energy",
+      "topic": "9.8 — Bariatric Surgery Types",
+      "type": "mc",
+      "q": "Which bariatric surgery is unique in that it is the only reversible procedure?",
+      "opts": [
+        "Gastric bypass (Roux-en-Y)",
+        "Sleeve gastrectomy",
+        "Laparoscopic adjustable gastric banding (LAGB)",
+        "Biliopancreatic diversion"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Correct Answer: C — LAGB (Laparoscopic Adjustable Gastric Banding). LAGB is the only reversible bariatric surgery because the band is not permanently attached — it can be adjusted (inflated or deflated via a subcutaneous port) and removed if complications arise. Sleeve gastrectomy is permanent — 80% of the stomach is removed. Gastric bypass is very difficult to reverse, though technically possible in emergencies. LAGB has slower initial weight loss than the other procedures and requires strict dietary adherence."
+    },
+    {
+      "id": 31,
+      "unit": "energy",
+      "topic": "9.8 — Sleeve Gastrectomy",
+      "type": "mc",
+      "q": "After sleeve gastrectomy, patients often report feeling less hungry than before surgery. What is the physiological explanation for this?",
+      "opts": [
+        "The smaller stomach produces more leptin, increasing satiety",
+        "The portion of the stomach that produces ghrelin is surgically removed, reducing hunger hormone levels",
+        "The reduced stomach size stimulates the vagus nerve to suppress appetite centrally",
+        "The surgery disrupts taste receptors, making food less appealing"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. Ghrelin, the hunger hormone, is produced primarily in the fundus (upper portion) of the stomach. During sleeve gastrectomy, approximately 80% of the stomach is removed — including the fundus where ghrelin-producing cells are concentrated. With far fewer ghrelin-producing cells, patients experience significantly reduced hunger after surgery. This hormonal benefit is an advantage of sleeve gastrectomy over gastric banding (which leaves the entire stomach intact and ghrelin-producing capacity unchanged)."
+    },
+    {
+      "id": 32,
+      "unit": "energy",
+      "topic": "9.3 — Macronutrient Calories",
+      "type": "mc",
+      "q": "A patient's daily diet consists of 250g carbohydrate, 80g protein, and 60g fat. How many total kilocalories does this diet provide?",
+      "opts": [
+        "1,660 kcal",
+        "1,860 kcal",
+        "2,060 kcal",
+        "1,460 kcal"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B — 1,860 kcal. Calculation: Carbohydrate: 250g × 4 kcal/g = 1,000 kcal. Protein: 80g × 4 kcal/g = 320 kcal. Fat: 60g × 9 kcal/g = 540 kcal. Total = 1,000 + 320 + 540 = 1,860 kcal. Key to memorize: Carbohydrate = 4 kcal/g, Protein = 4 kcal/g, Fat = 9 kcal/g. Fat is more than twice as calorie-dense as carbohydrate or protein — which is why high-fat foods contribute disproportionately to caloric intake."
+    },
+    {
+      "id": 33,
+      "unit": "energy",
+      "topic": "9.1/9.6 — Obesogenic Environment",
+      "type": "mc",
+      "q": "Which of the following BEST exemplifies an obesogenic environment factor at the societal level?",
+      "opts": [
+        "A patient choosing to eat fast food twice a week",
+        "Low-income neighborhoods lacking safe parks, affordable healthy food, and walkable infrastructure",
+        "An individual's genetic predisposition to obesity",
+        "A patient's psychological relationship with food"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. Obesogenic environment factors are structural, systemic barriers that make unhealthy choices the default for populations — not individual choices. Lack of safe parks, absence of affordable healthy food, non-walkable neighborhoods, and food deserts are all societal-level factors that disproportionately affect lower-income communities. Socioeconomic status is inversely correlated with obesity rates — as income decreases, obesity rates increase. Answer A is individual behavioral, C is genetic, and D is psychological — all contributing factors but not \"societal-level environmental\" factors."
+    },
+    {
+      "id": 34,
+      "unit": "energy",
+      "topic": "9.7 — Disordered Eating",
+      "type": "sata",
+      "q": "Which of the following behaviors are considered signs of disordered eating? Select all that apply.",
+      "opts": [
+        "Feeling intense guilt or shame after eating certain foods",
+        "Chronic weight fluctuations with repeated dieting cycles",
+        "Preoccupation with food and body image that negatively impacts daily functioning",
+        "Eating three balanced meals per day without skipping",
+        "Using fasting or purging to \"make up\" for foods consumed",
+        "Rigid rituals and routines surrounding food and exercise"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "Correct Answers: A, B, C, E, F. Disordered eating encompasses a wide spectrum of problematic behaviors: guilt/shame about eating, yo-yo dieting cycles, preoccupation with food/weight/body image interfering with life, compensatory fasting or purging, and rigid food or exercise rituals. Eating three balanced meals without skipping (D) describes healthy eating behavior, not disordered eating. Importantly, a person does not need to meet full diagnostic criteria for an eating disorder to have clinically significant disordered eating that poses health risks."
+    },
+    {
+      "id": 35,
+      "unit": "energy",
+      "topic": "9.4/9.5 — Energy Intake & Expenditure Integration",
+      "type": "mc",
+      "q": "A patient who works night shifts reports she eats most of her calories between midnight and 5 AM, feels very tired during the day, and exercises infrequently. How would a nurse best explain the relationship between her behaviors and weight gain risk?",
+      "opts": [
+        "Night eating does not affect metabolism — only total daily calories matter",
+        "Her irregular eating schedule, sedentary behavior, and fatigue-driven food choices likely contribute to positive energy balance and weight gain risk",
+        "Night shift work lowers BMR, making weight gain inevitable regardless of behaviors",
+        "Since she exercises occasionally, her weight gain risk is minimal"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Correct Answer: B. This is a multifactorial energy balance issue. Behavioral factors contributing to weight gain risk include: sedentary lifestyle (low TDEE from physical activity), fatigue driving food choices toward convenient, energy-dense options, night eating syndrome (potentially disrupted circadian rhythm affecting metabolism and appetite hormones), and psychological behavioral cues overriding physiological hunger signals. As a nurse, counseling should address all contributing factors holistically — not just telling the patient to \"eat less and move more.\" Understanding the interplay of social, behavioral, and physiological factors is essential for evidence-based nutritional guidance."
+    },
+    {
+      "id": 36,
+      "unit": "energy",
+      "topic": "9.2 — Body Composition Assessment",
+      "type": "mc",
+      "q": "Which body composition assessment method is most accurate AND also serves as the diagnostic standard for osteoporosis?",
+      "opts": [
+        "Skinfold measurement",
+        "BodPod (air displacement plethysmography)",
+        "Dual-energy X-Ray Absorptiometry (DEXA)",
+        "Bioelectric Impedance Analysis (BIA)"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Correct Answer: C — DEXA. DEXA uses two low-dose X-ray beams to measure bone density, lean tissue mass, and fat mass — making it the most accurate body composition assessment available. It is also the gold standard clinical tool for diagnosing osteoporosis because it precisely measures bone mineral density. The major limitation is cost (machines exceed $100,000) and limited availability outside medical/research settings. BIA is practical and widely available but less accurate. Skinfold is inexpensive but operator-dependent."
+    },
+    {
+      "id": 37,
+      "unit": "energy",
+      "topic": "9.9 — Multi-level Interventions",
+      "type": "sata",
+      "q": "A community health nurse is developing a presentation on combating the obesity epidemic. Which of the following are evidence-based strategies at the INDIVIDUAL level? Select all that apply.",
+      "opts": [
+        "Taking the stairs instead of the elevator",
+        "Advocating for national policies supporting affordable healthy food",
+        "Purchasing fewer prepared foods and cooking whole foods more often",
+        "Decreasing portion sizes when eating or serving food",
+        "Reducing non-work screen time",
+        "Supporting changes in school lunch programs"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Correct Answers: A, C, D, E. Individual-level strategies are those that individuals can implement on their own: taking stairs (increases NEAT), cooking whole foods more often (reduces processed food intake), decreasing portion sizes, and reducing sedentary screen time. National policy advocacy (B) is a national-level strategy. Supporting school lunch program changes (F) is a community-level strategy. Understanding the distinction between individual, community, and national intervention levels is important for community health nursing practice."
+    },
+    {
+      "id": 38,
+      "unit": "energy",
+      "topic": "Integration — Full Chapter",
+      "type": "sata",
+      "q": "A nurse is caring for a 45-year-old male patient with a BMI of 38, waist circumference of 44 inches, type 2 diabetes, hypertension, and a recent diagnosis of sleep apnea. Which of the following statements about this patient's condition are accurate? Select all that apply.",
+      "opts": [
+        "His waist circumference exceeds the 40-inch risk threshold for men, indicating abdominal obesity",
+        "His BMI of 38 classifies him as obese",
+        "Even a 5–10% reduction in body weight could meaningfully improve his blood pressure, blood glucose, and sleep apnea",
+        "His visceral fat is likely contributing to insulin resistance and cardiovascular risk",
+        "He qualifies for consideration of bariatric surgery based on BMI and comorbidities",
+        "If he undergoes gastric bypass, he will need lifelong supplementation of iron, B12, folate, and calcium"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Correct Answers: A, B, C, D, E, F — ALL statements are correct. A: 44 inches > 40-inch male threshold = abdominal obesity confirmed. B: BMI 38 > 30 = obese. C: Even 5–10% weight loss (about 17–34 lbs for this patient) can significantly improve T2DM glycemic control, blood pressure, and sleep apnea severity. D: Waist circumference of 44 inches indicates excess visceral fat, which releases inflammatory factors driving insulin resistance and cardiovascular disease. E: BMI ≥ 35 with serious comorbidities (T2DM, HTN, sleep apnea) qualifies for bariatric surgery consideration. F: Gastric bypass bypasses the duodenum and proximal jejunum — primary absorption sites for B12, iron, folate, and calcium — requiring lifelong supplementation."
+    }
+  ]
+}

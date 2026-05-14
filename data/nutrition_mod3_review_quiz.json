@@ -1,0 +1,193 @@
+{
+  "id": "nutrition-mod3-review",
+  "class": "nutrition",
+  "module": 3,
+  "title": "Module 3 — Review Quiz",
+  "description": "10-question review quiz covering enzyme function, amino acids, carbohydrate digestion, macronutrient absorption, and digestive processes.",
+  "topics": [
+    "enzyme function",
+    "amino acids",
+    "carbohydrate digestion",
+    "protein digestion",
+    "fat digestion",
+    "absorption",
+    "bile",
+    "pancreatic enzymes",
+    "villi",
+    "microvilli",
+    "chyme",
+    "peristalsis"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "digestion",
+      "topic": "Enzyme Function",
+      "type": "mc",
+      "q": "What is the main function of enzymes in the body?",
+      "opts": [
+        "To transport nutrients across cell membranes",
+        "To catalyze chemical reactions and lower energy requirements",
+        "To provide structural support to tissues",
+        "To regulate fluid balance in blood"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "B is correct. Enzymes are biological catalysts that speed up chemical reactions by lowering activation energy — the energy needed to start a reaction — without being consumed in the process. Every metabolic reaction sustaining life depends on enzymes.\n    Why others are wrong:\n    • A: Transporting nutrients across membranes is done by carrier and transport proteins, not enzymes.\n    • C: Structural support is the job of structural proteins like collagen and elastin.\n    • D: Fluid balance in blood is regulated by albumin and electrolytes (sodium, potassium). | Critical lab values ARE enzyme levels — elevated amylase/lipase = pancreatitis; elevated AST/ALT = liver damage; elevated troponin = myocardial infarction. Enzymes leak into blood when cells are damaged."
+    },
+    {
+      "id": 2,
+      "unit": "digestion",
+      "topic": "Amino Acid Structure",
+      "type": "mc",
+      "q": "The ____________ is what makes amino acids different from one another.",
+      "opts": [
+        "The carboxylic acid group",
+        "The side chain (R group)",
+        "The hydrogen atom",
+        "The central carbon atom"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "B is correct. Every amino acid shares the same backbone: central carbon, amino group (NH₂), carboxylic acid group (COOH), and hydrogen atom — all identical in every amino acid. The R group (side chain) is the one variable component that determines each amino acid's individual identity, charge, polarity, and function.\n    Why others are wrong:\n    • A: Carboxylic acid group is present in ALL amino acids — not unique.\n    • C: Hydrogen atom is universal to all amino acids.\n    • D: Central carbon is shared equally by every amino acid. | Sickle cell anemia results from ONE R group substitution in hemoglobin (valine replaces glutamic acid) — changing the protein's shape under low oxygen and causing life-threatening RBC sickling."
+    },
+    {
+      "id": 3,
+      "unit": "digestion",
+      "topic": "Carbohydrate Digestion",
+      "type": "mc",
+      "q": "What is the primary goal of carbohydrate digestion?",
+      "opts": [
+        "To convert starch into fiber",
+        "To produce short-chain fatty acids for energy",
+        "To eliminate undigested carbohydrates from the body",
+        "To break polysaccharides and disaccharides into monosaccharides"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "D is correct. The fundamental rule of digestion: nutrients must be reduced to their smallest absorbable units. For carbohydrates, that means monosaccharides (glucose, fructose, galactose). The process: salivary amylase (mouth) → pancreatic amylase (small intestine) → brush border enzymes (maltase, sucrase, lactase) → absorption via GLUT transporters.\n    Why others are wrong:\n    • A: Impossible — starch cannot be converted to fiber during digestion; fiber resists digestion.\n    • B: Short-chain fatty acid production occurs when gut bacteria FERMENT fiber in the large intestine — that's fermentation, not digestion.\n    • C: Fiber elimination is what happens to indigestible carbs — it's the exception, not the goal. | Lactose intolerance: patients lack sufficient lactase to break lactose (disaccharide) into glucose + galactose. Undigested lactose fermented by bacteria → gas, bloating, cramping, diarrhea. Assess dairy sensitivity in patients with unexplained GI complaints."
+    },
+    {
+      "id": 4,
+      "unit": "digestion",
+      "topic": "Fat Functions",
+      "type": "mc",
+      "q": "Which of the following is NOT a function of fat in the body?",
+      "opts": [
+        "Providing long-term energy storage",
+        "Insulating and protecting internal organs",
+        "Synthesizing all essential fatty acids",
+        "Regulating hormones and brain activity"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "C is correct (NOT a function). Essential fatty acids — linoleic acid (omega-6) and alpha-linolenic acid (omega-3) — are called 'essential' precisely because the body CANNOT synthesize them. We lack the necessary enzymes. They must come from diet. Saying fat synthesizes essential fatty acids contradicts the very definition of 'essential.'\n    Why others ARE legitimate functions:\n    • A: Fat = 9 kcal/gram; adipose tissue stores energy for fasting and illness — primary long-term reserve.\n    • B: Visceral fat cushions organs; subcutaneous fat provides thermal insulation.\n    • D: Steroid hormones (estrogen, testosterone, cortisol) require fat as building blocks; brain is ~60% fat by dry weight. | Patients on long-term TPN without IV fat emulsions can develop essential fatty acid deficiency → dry scaly skin, poor wound healing, impaired immune function. Fat emulsions in TPN formulas are not optional."
+    },
+    {
+      "id": 5,
+      "unit": "digestion",
+      "topic": "Blood Glucose Regulation",
+      "type": "mc",
+      "q": "What is the primary role of insulin in blood glucose regulation?",
+      "opts": [
+        "Stimulating the breakdown of glycogen in the liver",
+        "Converting fatty acids into ketones",
+        "Stimulating gluconeogenesis from amino acids",
+        "Triggering glucose transporters to allow glucose into cells"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "D is correct. Insulin (released by pancreatic beta cells when glucose is high) triggers GLUT4 transporters to move to the surface of muscle and fat cells, allowing glucose to move from blood into cells. Insulin is the 'storage hormone' — when insulin is high, the body is in fed/storage mode: glucose enters cells, excess stored as glycogen, further excess as fat, fat breakdown suppressed.\n    Why others are wrong:\n    • A: Glycogen breakdown (glycogenolysis) is triggered by GLUCAGON when glucose is LOW — opposite of insulin's role.\n    • B: Ketogenesis happens when insulin is ABSENT (starvation, DKA) — insulin actively suppresses ketone production.\n    • C: Gluconeogenesis is triggered by glucagon and cortisol when glucose is low — insulin suppresses this process. | Type 1 DM: no insulin → GLUT4 never triggered → cells starve → fat breakdown → ketones → DKA (Kussmaul respirations, fruity breath, hyperglycemia, ketonuria). Type 2 DM: insulin present but cells are resistant. This mechanism explains WHY Type 1 requires insulin replacement."
+    },
+    {
+      "id": 6,
+      "unit": "digestion",
+      "topic": "Carbohydrates in Food Groups",
+      "type": "mc",
+      "q": "True or False: The USDA food groups of fruits, vegetables, grains, dairy, and protein all contain some form of carbohydrates.",
+      "opts": [
+        "True — all five USDA food groups contain carbohydrates",
+        "False — the protein foods group (meat, poultry, eggs) contains essentially no carbohydrates",
+        "True — even meat contains small amounts of glycogen",
+        "False — dairy does not contain carbohydrates"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "B is correct (False). While fruits, vegetables, grains, and dairy all contain carbohydrates, pure animal proteins — meat, poultry, seafood, and eggs — contain essentially zero carbohydrates. The protein foods group cannot universally be called a carbohydrate source.\n    Why others are wrong:\n    • A: Incorrect — the protein foods group does not universally contain carbs.\n    • C: While meat contains trace glycogen, it is nutritionally insignificant and not clinically counted as a carbohydrate source.\n    • D: Dairy DOES contain lactose (a disaccharide) — dairy is absolutely a carbohydrate source. | Essential for diabetic patient teaching: grains, fruits, starchy vegetables drive blood glucose spikes; meat, poultry, fish, eggs do NOT. This knowledge is foundational for carbohydrate counting and meal planning education."
+    },
+    {
+      "id": 7,
+      "unit": "digestion",
+      "topic": "Fat Storage & Energy Balance",
+      "type": "mc",
+      "q": "Why is having a high-fat diet not directly linked to storing more fat?",
+      "opts": [
+        "Because all dietary fat is immediately used for energy",
+        "Because the body cannot store dietary fat",
+        "Because fat is less calorically dense than other nutrients",
+        "Because fat storage depends on total calories consumed versus calories needed, regardless of source"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "D is correct. Fat storage is driven by caloric surplus — consuming more calories than the body needs — regardless of whether those extra calories came from fat, carbohydrates, or protein. All three macronutrients can be stored as body fat when consumed in excess: excess carbs → de novo lipogenesis when glycogen stores are full; excess protein → deaminated and carbon skeleton converted to fat.\n    Why others are wrong:\n    • A: False — dietary fat is packaged as triglycerides and stored in adipose tissue when not needed for immediate energy.\n    • B: The opposite — the body is highly efficient at storing dietary fat, requiring minimal energy for conversion.\n    • C: Completely backwards — fat = 9 kcal/gram vs carbs/protein = 4 kcal/gram. Fat is the MOST calorically dense macronutrient. | Patient education: teaching 'total caloric balance matters more than fat avoidance' is evidence-based. Low-fat processed foods loaded with added sugars cause just as much weight gain. Focus counseling on total caloric intake and diet quality."
+    },
+    {
+      "id": 8,
+      "unit": "digestion",
+      "topic": "Fat-Soluble Vitamins",
+      "type": "mc",
+      "q": "Why are dietary fats important for the absorption of certain nutrients?",
+      "opts": [
+        "They provide a direct source of vitamins A, C, and E",
+        "They increase the bioavailability of fat-soluble vitamins and phytochemicals",
+        "They are digested faster than carbohydrates and proteins",
+        "They prevent the destruction of vitamins during cooking"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "B is correct. Fat-soluble vitamins (A, D, E, K — remember ADEK) require dietary fat present in the same meal to be absorbed. Fat enables micelle formation in the small intestine, which packages these vitamins for absorption through the intestinal lining. They then travel via chylomicrons through the lymphatic system. The same applies to phytochemicals like lycopene and beta-carotene.\n    Why others are wrong:\n    • A: Fat doesn't PROVIDE these vitamins — it AIDS their absorption. Also, Vitamin C is WATER-SOLUBLE; fat has no role in its absorption.\n    • C: The opposite — fat is the SLOWEST macronutrient to digest, requiring bile emulsification + pancreatic lipase.\n    • D: Fat does not protect heat-sensitive vitamins (C, B vitamins) from cooking degradation. | Fat malabsorption conditions (Crohn's, cystic fibrosis, post-bariatric surgery) → ADEK deficiencies. Also: fat-soluble vitamins are STORED (not excreted) → toxicity is possible. Vitamin A toxicity: liver damage, birth defects. Vitamin D toxicity: hypercalcemia → arrhythmias, kidney stones. Always assess supplement use."
+    },
+    {
+      "id": 9,
+      "unit": "digestion",
+      "topic": "Fatty Acid Types",
+      "type": "mc",
+      "q": "Which of the following is a good source of monounsaturated fatty acids (MUFA)?",
+      "opts": [
+        "Salmon",
+        "Butter",
+        "Coconut oil",
+        "Olive oil"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "D is correct. Olive oil is predominantly oleic acid, an omega-9 monounsaturated fatty acid (~70-80% of its composition). Monounsaturated = ONE double bond between carbons → liquid at room temp but thickens when chilled. Olive oil is the cornerstone of the Mediterranean diet and lowers LDL while preserving/raising HDL.\n    Why others are wrong:\n    • A — Salmon: rich in omega-3 POLYUNSATURATED fatty acids (EPA and DHA) — multiple double bonds, not one.\n    • B — Butter: primarily SATURATED fat — no double bonds, solid at room temperature confirms this.\n    • C — Coconut oil: despite plant origin and health marketing, ~90% SATURATED fat — solid at room temperature; NOT heart-healthy. | For cardiovascular patients: replacing saturated fats with MUFAs (butter → olive oil) is an evidence-based intervention that reduces LDL. Counsel patients that coconut oil is NOT a healthy fat despite popular belief. Mediterranean diet reduces major cardiovascular events."
+    },
+    {
+      "id": 10,
+      "unit": "digestion",
+      "topic": "Lipid Digestion",
+      "type": "mc",
+      "q": "True or False: The majority of enzymatic digestion of lipids occurs in the stomach.",
+      "opts": [
+        "True — gastric lipase handles most fat breakdown",
+        "False — the majority of fat digestion occurs in the small intestine",
+        "True — the stomach's acidic environment is ideal for lipase activity",
+        "False — most fat digestion occurs in the large intestine"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "B is correct (False). The majority of enzymatic fat digestion occurs in the SMALL INTESTINE (~70-90%), not the stomach. The stomach gastric lipase accounts for only 10-30%. The small intestine is where bile (from gallbladder) emulsifies fat into tiny droplets and pancreatic lipase breaks triglycerides into monoglycerides and free fatty acids. Products → micelles → absorbed by enterocytes → chylomicrons → lymphatic system.\n    Why others are wrong:\n    • A: Gastric lipase contributes only 10-30% — not the majority.\n    • C: Actually the opposite — the stomach's acidic environment is not ideal; the small intestine's slightly alkaline environment is optimal for lipase function.\n    • D: No significant fat digestion occurs in the large intestine. Some fermentation of fiber occurs there, but that involves bacteria, not lipase enzymes. | Cholecystectomy: no bile storage → impaired fat digestion with large meals → advise smaller, lower-fat meals. Pancreatitis/pancreatic insufficiency: insufficient lipase → STEATORRHEA (fatty, floating, foul-smelling stools) + fat-soluble vitamin deficiencies (ADEK). Recognize steatorrhea as a sign of fat malabsorption."
+    }
+  ]
+}
