@@ -1,0 +1,657 @@
+{
+  "id": "nutrition-mod7-quiz",
+  "class": "nutrition",
+  "module": 7,
+  "title": "Module 7 — Practice Quiz",
+  "description": "35-question NCLEX-style quiz covering liver functions, gallbladder disease, kidney disease, CVD, diabetes, and cancer nutrition with SATA questions.",
+  "topics": [
+    "liver functions",
+    "albumin synthesis",
+    "bile production",
+    "detoxification",
+    "cirrhosis",
+    "hepatic encephalopathy",
+    "cholecystitis",
+    "gallstones",
+    "Murphy's sign",
+    "choledocholithiasis",
+    "GFR",
+    "CKD staging",
+    "nephrotic syndrome",
+    "proteinuria",
+    "hemodialysis",
+    "renal diet",
+    "LDL cholesterol",
+    "HDL cholesterol",
+    "DASH diet",
+    "Mediterranean diet",
+    "insulin resistance",
+    "A1C",
+    "cancer cachexia",
+    "carcinogens",
+    "phytochemicals"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "general",
+      "topic": "Liver — Functions",
+      "type": "mc",
+      "q": "A patient with advanced liver disease develops generalized edema despite being well hydrated. The nurse understands that the PRIMARY reason for this edema is:",
+      "opts": [
+        "Increased sodium intake causing fluid retention",
+        "Decreased albumin synthesis by the damaged liver, resulting in low oncotic pressure",
+        "Elevated blood pressure compressing peripheral lymphatics",
+        "Excessive portal blood flow pushing fluid into tissues"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The liver synthesizes albumin, the primary plasma protein responsible for maintaining oncotic (colloid osmotic) pressure in the bloodstream. Oncotic pressure keeps fluid inside blood vessels. When the liver is damaged, albumin production drops → low serum albumin → low oncotic pressure → fluid leaks from vessels into tissues and the peritoneal cavity → edema and ascites. This is separate from sodium intake, blood pressure, or portal hypertension (though portal hypertension contributes independently). Low albumin is the direct mechanism."
+    },
+    {
+      "id": 2,
+      "unit": "general",
+      "topic": "Liver — Fat-Soluble Vitamins",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A patient with cirrhosis is at increased risk for deficiency of which of the following vitamins? Select all that apply.",
+      "opts": [
+        "Vitamin A",
+        "Vitamin B12 (initially from reduced dietary intake — storage intact early)",
+        "Vitamin D",
+        "Vitamin E",
+        "Vitamin K",
+        "Vitamin C"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "The CORRECT answers are Vitamins A, D, E, and K — all fat-soluble vitamins. Fat-soluble vitamins require BILE for absorption. The liver produces bile; when the liver is damaged, bile production is impaired → fat-soluble vitamin malabsorption. Additionally, the liver stores fat-soluble vitamins, so a damaged liver has reduced storage capacity. Vitamin B12 is water-soluble and stored in the liver — deficiency develops slowly and is not primarily due to bile impairment. Vitamin C is water-soluble — not bile-dependent. Vitamins A, D, E, and K are the classic fat-soluble vitamins consistently affected in liver/gallbladder disease."
+    },
+    {
+      "id": 3,
+      "unit": "general",
+      "topic": "Fatty Liver Disease",
+      "type": "mc",
+      "q": "A 48-year-old patient with obesity and type 2 diabetes has a routine blood draw showing elevated ALT of 78 U/L (normal: 7–56 U/L) and AST of 55 U/L (normal: 10–40 U/L). He is asymptomatic. The nurse should understand that these findings most likely indicate:",
+      "opts": [
+        "Normal variation — these values are only slightly elevated and require no follow-up",
+        "Acute viral hepatitis requiring immediate isolation",
+        "Early nonalcoholic fatty liver disease (NAFLD) — the liver is under metabolic stress but still functioning",
+        "End-stage liver disease — transplant evaluation should begin immediately"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Elevated ALT and AST in an obese patient with T2D who is asymptomatic is the classic presentation of early NAFLD (nonalcoholic fatty liver disease). ALT and AST are intracellular liver enzymes that leak into the bloodstream when liver cells are damaged — even mildly elevated values signal hepatocellular stress. This patient has major risk factors for NAFLD: obesity (which causes insulin resistance and increased hepatic fat synthesis) and T2D. It is NOT normal variation — elevated liver enzymes always warrant investigation. It is NOT acute hepatitis (no symptoms, no exposure history). It is NOT end-stage disease — this patient has no cirrhotic complications (ascites, varices, encephalopathy). The nurse's role: educate about weight loss (even 5–10% body weight significantly reduces hepatic fat), dietary improvement, and alcohol avoidance."
+    },
+    {
+      "id": 4,
+      "unit": "general",
+      "topic": "Fatty Liver Disease",
+      "type": "mc",
+      "q": "Which of the following interventions is MOST effective in treating nonalcoholic fatty liver disease (NAFLD) in an overweight patient?",
+      "opts": [
+        "Initiating high-protein, low-carbohydrate diet therapy only",
+        "Prescribing liver transplant evaluation",
+        "Achieving gradual weight loss of 5–10% of body weight through diet and exercise",
+        "Eliminating all dietary fat to prevent further liver fat accumulation"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The most effective treatment for NAFLD is gradual weight loss of 5–10% of body weight. This reduces the metabolic stress driving hepatic fat accumulation, decreases insulin resistance, and can actually reverse hepatic steatosis and even early NASH. Diet and exercise work together — diet quality matters (reduce refined sugars, saturated fats, ultra-processed foods; increase fiber and vegetables), but it is the weight loss itself that drives liver improvement. High-protein only diets without weight loss are insufficient. Liver transplant is for end-stage, irreversible disease — NAFLD is reversible with lifestyle change. Eliminating ALL dietary fat is not recommended (fats are essential nutrients) and is not the mechanism of liver fat accumulation."
+    },
+    {
+      "id": 5,
+      "unit": "general",
+      "topic": "Hepatitis — Transmission",
+      "type": "mc",
+      "q": "A nurse working in an urgent care clinic sees a patient with suspected Hepatitis A infection. The patient asks how he likely got infected. The nurse should explain that Hepatitis A is most commonly transmitted through:",
+      "opts": [
+        "Sexual contact and blood exposure from shared needles",
+        "Contaminated food or water via the fecal-oral route",
+        "Mother-to-infant transmission during childbirth",
+        "Inhalation of airborne particles from an infected person"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Hepatitis A (HAV) is transmitted via the FECAL-ORAL ROUTE — contaminated food, water, or surfaces. Common scenarios include: eating food prepared by an infected person who did not wash hands, drinking contaminated water, raw shellfish from contaminated water, travel to areas with poor sanitation. This is why HAV outbreaks occur in restaurants and among close contacts. HAV does NOT spread through blood/needles or sexual contact in the same way HBV/HCV do (though sexual transmission involving fecal-oral exposure is possible). HAV does NOT spread airborne. Mother-to-infant transmission is associated with HBV, not HAV. Key nursing education: handwashing is the primary prevention tool; vaccine is available and highly effective."
+    },
+    {
+      "id": 6,
+      "unit": "general",
+      "topic": "Hepatitis — Types Comparison",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A nursing student is studying viral hepatitis for an exam. Which of the following statements are CORRECT?",
+      "opts": [
+        "Hepatitis C (HCV) has no available vaccine",
+        "Hepatitis B (HBV) can be transmitted from mother to baby during childbirth",
+        "Hepatitis A (HAV) most commonly becomes a chronic lifelong infection",
+        "Hepatitis C is the most common cause of liver transplants in the United States",
+        "Alcohol is permitted in small amounts during hepatitis treatment to aid appetite"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "CORRECT: (1) No vaccine exists for Hepatitis C — this is why HCV is such a public health challenge and why it has become the leading cause of liver transplants. (2) HBV is transmitted via blood, sexual contact, AND vertical transmission (mother to baby at birth) — this is why neonates born to HBsAg-positive mothers receive Hepatitis B immunoglobulin (HBIG) AND hepatitis B vaccine within 12 hours of birth. (4) HCV chronic infection leads to cirrhosis in approximately 20–30% of people and is the #1 cause of liver transplants in the U.S. INCORRECT: (3) HAV does NOT become chronic — it is self-limiting and resolves completely; the liver heals. HBV and HCV are the viruses that become chronic. (5) Alcohol is ABSOLUTELY CONTRAINDICATED during any hepatitis infection — it dramatically worsens liver inflammation and accelerates permanent damage."
+    },
+    {
+      "id": 7,
+      "unit": "general",
+      "topic": "Hepatitis — Jaundice",
+      "type": "mc",
+      "q": "A patient admitted for hepatitis develops yellowing of the skin and sclera. The nurse explains this occurs because:",
+      "opts": [
+        "Excessive beta-carotene from dietary sources is depositing in the skin",
+        "The damaged liver cannot adequately conjugate and excrete bilirubin, which then accumulates in tissues",
+        "Bile is leaking directly into the subcutaneous tissues from the damaged gallbladder",
+        "Elevated white blood cells from infection are depositing in peripheral capillaries"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Jaundice (icterus) = yellowing of skin and sclera due to elevated bilirubin. Bilirubin is a breakdown product of hemoglobin from old red blood cells. The normal pathway: RBCs break down → unconjugated bilirubin binds to albumin → travels to liver → liver conjugates bilirubin (makes it water-soluble) → excreted in bile into the intestine → colors stool brown. When the liver is damaged, it cannot conjugate bilirubin efficiently → bilirubin accumulates in blood → deposits in tissues (skin, sclera). Assess: bilirubin becomes visible in sclera first (at levels around 2–3 mg/dL). Also assess urine: excess bilirubin spills into urine → dark 'tea-colored' urine. Stools become pale/clay-colored (no bilirubin reaching the intestine). Note: beta-carotene can make skin yellow-orange (carotenemia) but does NOT affect the SCLERA — this distinguishes jaundice from carotenemia."
+    },
+    {
+      "id": 8,
+      "unit": "general",
+      "topic": "Cirrhosis — Pathophysiology",
+      "type": "mc",
+      "q": "A patient with end-stage cirrhosis has been increasingly confused, difficult to arouse, and his family reports a personality change over the past week. Labs show ammonia level of 112 mcg/dL (normal: 15–45 mcg/dL). The nurse should recognize this presentation as:",
+      "opts": [
+        "Hypoglycemia from poor oral intake requiring immediate dextrose administration",
+        "Hepatic encephalopathy — impaired liver unable to convert ammonia to urea, causing neurotoxic ammonia buildup",
+        "Wernicke's encephalopathy from thiamine deficiency — give thiamine IV immediately",
+        "Opioid-induced sedation from pain medications"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Hepatic encephalopathy results from the liver's inability to convert ammonia (produced by gut bacterial breakdown of protein) into urea for excretion. Ammonia accumulates in the bloodstream and crosses the blood-brain barrier, causing a range of neurological changes: from mild confusion and personality changes to stupor and coma (hepatic coma). An ammonia level of 112 mcg/dL is significantly elevated and explains this presentation. Nursing actions: assess for asterixis (liver flap), check mental status, prepare to administer lactulose (traps ammonia as ammonium in the colon, then excretes it) and rifaximin (antibiotic reducing ammonia-producing gut bacteria). While Wernicke's encephalopathy from thiamine deficiency is important to consider in alcoholic patients, the high ammonia level clearly points to hepatic encephalopathy as the primary diagnosis."
+    },
+    {
+      "id": 9,
+      "unit": "general",
+      "topic": "Cirrhosis — Complications",
+      "type": "mc",
+      "q": "A patient with cirrhosis suddenly begins vomiting large amounts of bright red blood. He is pale, diaphoretic, and his blood pressure is 82/50. The nurse's PRIORITY action is:",
+      "opts": [
+        "Administer oral lactulose to reduce ammonia levels",
+        "Position the patient in reverse Trendelenburg to reduce portal pressure",
+        "Call for immediate emergency assistance, prepare for large-bore IV access, and anticipate endoscopy for esophageal variceal hemorrhage",
+        "Encourage the patient to cough to clear the airway"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "This patient is experiencing a RUPTURED ESOPHAGEAL VARIX — a life-threatening emergency. Esophageal varices are dilated, fragile veins that form in the esophagus due to portal hypertension (blood backs up from the scarred liver into the portal venous system, forcing blood through alternate vessels that are not designed for high pressure). When they rupture, massive upper GI hemorrhage can rapidly cause hemorrhagic shock. Priority actions in order: (1) Call for help — rapid response/code team (2) Large-bore IV access (16 gauge or larger) × 2 (3) Type and crossmatch for blood transfusion (4) NPO — nothing by mouth (5) Anticipate emergency endoscopy for banding or sclerotherapy of the varices (6) Consider octreotide infusion (reduces portal pressure). Lactulose is for encephalopathy — irrelevant here. Reverse Trendelenburg would worsen hemorrhagic shock. Encouraging coughing is dangerous with active hemorrhage."
+    },
+    {
+      "id": 10,
+      "unit": "general",
+      "topic": "Cirrhosis — Ascites",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A nurse is caring for a patient with cirrhosis and ascites. Which nursing interventions are appropriate?",
+      "opts": [
+        "Restrict dietary sodium to 2,000 mg per day",
+        "Administer diuretics (spironolactone/furosemide) as prescribed",
+        "Encourage a high-protein, high-sodium diet to rebuild liver function",
+        "Measure abdominal girth daily at the same landmark",
+        "Weigh the patient daily at the same time in the same clothing"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: (1) Sodium restriction to 2,000 mg/day is a cornerstone of ascites management — reducing sodium intake reduces fluid retention. (2) Diuretics are prescribed to mobilize ascitic fluid — spironolactone (aldosterone antagonist) is first-line; furosemide is often added. (3) Daily abdominal girth measurements track fluid accumulation — use the same anatomical landmark (usually the umbilicus), mark the spot with a pen for consistency. (5) Daily weights at the same time detect fluid gain or loss — 1 kg = approximately 1 L of fluid. Goal: 0.5 kg/day weight loss (too rapid = risk of AKI). INCORRECT: (3) High-SODIUM diet is contraindicated in ascites — sodium drives fluid retention and worsens ascites. High-protein is needed for nutrition (as protein restriction is no longer recommended to prevent encephalopathy), but sodium must still be restricted."
+    },
+    {
+      "id": 11,
+      "unit": "general",
+      "topic": "Cirrhosis — Nutrition",
+      "type": "mc",
+      "q": "A patient with cirrhosis and hepatic encephalopathy asks the nurse if he should stop eating protein to help his confusion. The nurse's BEST response is:",
+      "opts": [
+        "Yes — protein restriction below 40 g/day is required to prevent ammonia production",
+        "No — protein restriction worsens malnutrition and mortality in cirrhosis. Protein should be maintained at 1.0–1.5 g/kg/day and spread throughout the day",
+        "Yes — all animal proteins must be eliminated, but plant proteins are unlimited",
+        "No — protein intake should be tripled to help the liver regenerate"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is a critical nursing education point that represents a shift from older medical teaching. Historically, protein was restricted in hepatic encephalopathy to reduce ammonia production. Current evidence shows that protein restriction WORSENS malnutrition and increases mortality in cirrhosis patients. Cirrhosis patients are almost universally malnourished and NEED protein (1.0–1.5 g/kg/day of dry body weight). Instead of restricting protein, the approach is to: (1) Spread protein intake across 4–6 small meals throughout the day (prevents the fasting state that accelerates catabolism), (2) Use lactulose and rifaximin to reduce ammonia at the gut level, (3) Consider branched-chain amino acid (BCAA) supplementation in refractory cases. While plant proteins (which generate less ammonia) are preferred in some settings, total protein restriction is not the answer."
+    },
+    {
+      "id": 12,
+      "unit": "general",
+      "topic": "Cirrhosis — Lactulose",
+      "type": "mc",
+      "q": "A patient with hepatic encephalopathy is prescribed lactulose 30 mL TID. After 3 days, the patient reports having 4–5 loose stools per day. The nurse should:",
+      "opts": [
+        "Hold the lactulose — diarrhea indicates the medication is causing harm",
+        "Double the dose — more diarrhea is better for clearing ammonia",
+        "Recognize this as the expected therapeutic goal; 2–3 soft stools per day is the target; with 4–5 stools, consider a dose reduction",
+        "Administer an antidiarrheal medication to stop the diarrhea"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Lactulose works by two mechanisms: (1) It is metabolized by gut bacteria into lactic and acetic acid, acidifying the colon. In an acidic environment, ammonia (NH3) is converted to ammonium (NH4+), which is charged and cannot be absorbed through the intestinal wall. (2) The osmotic effect of lactulose draws water into the colon, causing loose stools that carry the ammonium out of the body. The THERAPEUTIC TARGET is 2–3 soft stools per day — enough to excrete ammonia without causing problematic diarrhea or electrolyte imbalances. At 4–5 stools per day, the dose is slightly too high and should be titrated down. Holding the drug completely would allow ammonia to reaccumulate. Antidiarrheal medications should NOT be given — you need the ammonia-clearing effect."
+    },
+    {
+      "id": 13,
+      "unit": "general",
+      "topic": "Gallstones — Pathophysiology",
+      "type": "mc",
+      "q": "A 38-year-old woman who is pregnant and obese presents with intense right upper quadrant pain that began 45 minutes after eating a meal of fried chicken. The pain radiates to her right shoulder. Which condition is most consistent with her presentation?",
+      "opts": [
+        "Acute pancreatitis — epigastric pain radiating to the back",
+        "Peptic ulcer disease — gnawing midepigastric pain relieved by food",
+        "Biliary colic from gallstones — RUQ pain after fatty meals, radiating to right shoulder, in a patient with classic risk factors",
+        "Appendicitis — pain starting periumbilically and migrating to RLQ"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "This is the CLASSIC presentation of biliary colic. Risk factors are the '4 Fs' — Female, Fat, Fertile (pregnant), Forty — this patient has three of four. Pathophysiology: a gallstone partially or fully blocks the cystic duct when the gallbladder contracts in response to fat (triggered by CCK release). The gallbladder squeezes against the obstruction → intense, steady (not truly colicky) RUQ pain → can radiate to right shoulder (referred pain via the phrenic nerve, as the gallbladder lies near the diaphragm). Pain onset 30–60 min after a fatty meal is classic. Pancreatitis causes epigastric pain radiating to the back, not typically shoulder pain. PUD is NOT triggered by fatty meals and is relieved (not worsened) by food in some cases. Appendicitis causes RLQ pain (McBurney's point), not RUQ."
+    },
+    {
+      "id": 14,
+      "unit": "general",
+      "topic": "Gallstones — Cholecystitis",
+      "type": "mc",
+      "q": "During assessment of a patient with suspected acute cholecystitis, the nurse presses on the patient's right upper quadrant and asks him to take a deep breath. The patient suddenly stops inhaling with a grimace. The nurse documents this finding as:",
+      "opts": [
+        "Rovsing's sign — indicating peritoneal irritation from appendicitis",
+        "Murphy's sign — a positive finding strongly associated with acute cholecystitis",
+        "Cullen's sign — ecchymosis around the umbilicus indicating retroperitoneal hemorrhage",
+        "McBurney's sign — point tenderness indicating appendicitis"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Murphy's sign is a classic physical examination finding for acute cholecystitis. During deep inspiration, the inflamed gallbladder descends and contacts the examiner's fingers palpating the RUQ — this causes sharp pain that makes the patient 'catch' their breath and stop inhaling. A positive Murphy's sign is highly suggestive of acute cholecystitis. Distinguishing the signs: Rovsing's sign = pressing LLQ causes pain in RLQ → appendicitis. Cullen's sign = periumbilical ecchymosis → retroperitoneal hemorrhage (pancreatitis, ruptured aortic aneurysm). McBurney's point = tenderness at 2/3 of the way from umbilicus to ASIS → appendicitis. None of these are as specific as Murphy's sign for cholecystitis."
+    },
+    {
+      "id": 15,
+      "unit": "general",
+      "topic": "Gallstones — Jaundice",
+      "type": "mc",
+      "q": "A patient with known gallstones develops jaundice and elevated bilirubin. The nurse recognizes that jaundice in this context MOST likely indicates:",
+      "opts": [
+        "The gallstones have dissolved, and bilirubin is now being properly metabolized",
+        "A stone has migrated into the common bile duct (choledocholithiasis), obstructing bile flow",
+        "The patient has developed hepatitis B from the gallstone procedure",
+        "Normal postoperative bilirubin elevation after cholecystectomy"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "When a gallstone migrates from the gallbladder into the common bile duct (choledocholithiasis), it blocks the drainage of bile from the liver into the duodenum. Bile containing conjugated bilirubin backs up into the liver and enters the bloodstream → obstructive jaundice. Key clinical features of obstructive jaundice: yellowing of skin/sclera, dark urine (bilirubin in urine), pale/clay-colored stools (no bilirubin reaching intestine), and elevated direct (conjugated) bilirubin on labs. If the obstruction also blocks pancreatic duct drainage and causes infection, the patient develops Charcot's Triad: fever + jaundice + RUQ pain = cholangitis — a medical emergency requiring immediate IV antibiotics and biliary decompression. An important complication to anticipate: obstruction impairs fat absorption → Vitamin K deficiency → elevated PT/INR → increased bleeding risk prior to any procedure."
+    },
+    {
+      "id": 16,
+      "unit": "general",
+      "topic": "Gallstones — Post-Op Teaching",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A nurse is providing discharge education to a patient who just had a laparoscopic cholecystectomy. Which statements should be included?",
+      "opts": [
+        "Your gallbladder has been removed — your liver still produces bile, but it will now drip continuously into your intestine rather than being released in concentrated amounts when you eat fat",
+        "You should eat a low-fat diet for several weeks after surgery to prevent diarrhea",
+        "You will never be able to eat fat again now that your gallbladder is gone",
+        "Report any fever, increasing abdominal pain, or yellowing of skin to your provider — these could indicate a complication",
+        "Alcohol is safe to consume in moderation after cholecystectomy"
+      ],
+      "correct": [
+        0,
+        1,
+        3
+      ],
+      "rationale": "CORRECT: (1) This is an accurate and important explanation. The liver STILL makes bile — the gallbladder only stores and concentrates it. Without the gallbladder, bile drips continuously into the duodenum. This means the patient cannot handle large, high-fat meals all at once because there is no concentrated bile bolus available. (2) A low-fat diet for 4–6 weeks post-op allows the body to adjust to the continuous bile drip; most patients eventually tolerate a normal diet. (4) These are signs of serious complications: fever + pain = infection or bile leak; jaundice = retained common bile duct stone — all require prompt medical evaluation. INCORRECT: (3) Fat intake does NOT need to be eliminated permanently — most patients return to a normal diet within a few weeks to months. (5) Alcohol is not specifically contraindicated post-cholecystectomy, but it is not something the nurse should tell patients is 'safe' — this is beyond nursing scope for discharge teaching and depends on individual medical history."
+    },
+    {
+      "id": 17,
+      "unit": "general",
+      "topic": "Nephrotic Syndrome",
+      "type": "mc",
+      "q": "A 6-year-old child presents with severe puffiness around the eyes in the morning, abdominal distension, and frothy urine. A 24-hour urine protein is 5.2 g/day (normal: <150 mg/day). Serum albumin is 1.8 g/dL (normal: 3.5–5.0 g/dL). This presentation is MOST consistent with:",
+      "opts": [
+        "Nephritic syndrome — characterized by hematuria and hypertension",
+        "Nephrotic syndrome — massive proteinuria, hypoalbuminemia, edema, and hyperlipidemia",
+        "Acute kidney injury from dehydration — restore fluids immediately",
+        "Normal childhood finding — periorbital edema is common in children after sleep"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is a textbook presentation of nephrotic syndrome. The four hallmarks: (1) Massive proteinuria >3.5 g/day — this child has 5.2 g/day (2) Hypoalbuminemia — albumin 1.8 g/dL is critically low (normal 3.5–5.0) (3) Edema — periorbital edema in the morning is the classic pediatric presentation (gravity pulls fluid to dependent areas; lying flat overnight → eyes; standing during day → feet/ankles) (4) Hyperlipidemia — liver compensates for protein loss by making more lipoproteins. Also: 'foamy' or frothy urine indicates protein in urine (proteinuria). In children, most common cause is Minimal Change Disease, which responds well to corticosteroids. Nephritic syndrome has COLA-COLORED urine (hematuria), oliguria, and hypertension — not massive proteinuria. Periorbital edema is never normal and should always be investigated."
+    },
+    {
+      "id": 18,
+      "unit": "general",
+      "topic": "Nephrotic Syndrome — Cascade",
+      "type": "mc",
+      "q": "A patient with nephrotic syndrome develops hyperlipidemia despite following a heart-healthy diet. The nurse explains this occurs because:",
+      "opts": [
+        "The kidney disease triggers the pancreas to release excess insulin, stimulating lipid synthesis",
+        "Fat-soluble vitamins accumulate in the blood when they cannot be absorbed, becoming lipoproteins",
+        "As plasma proteins fall, the liver compensates by producing more lipoproteins, and lipid clearance is impaired because lipid-transport proteins are also lost in the urine",
+        "The dietary sodium restriction prescribed for nephrotic syndrome indirectly stimulates cholesterol production"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Hyperlipidemia in nephrotic syndrome follows a specific cascade: (1) Glomerular permeability increases → plasma proteins spill into urine → plasma protein levels fall (2) Low plasma oncotic pressure signals the liver to increase protein synthesis — including albumin AND lipoproteins (LDL, VLDL) (3) Additionally, lipid-transport proteins that normally help clear lipids from the bloodstream are also lost in the urine → lipid clearance decreases. The result: elevated total cholesterol, LDL, and triglycerides — despite a healthy diet. This is why lipid-lowering medications (statins) are often prescribed for nephrotic syndrome patients. The mechanism has nothing to do with insulin, fat-soluble vitamin accumulation, or sodium restriction."
+    },
+    {
+      "id": 19,
+      "unit": "general",
+      "topic": "AKI — Types",
+      "type": "mc",
+      "q": "A 72-year-old patient is admitted with fever, tachycardia, hypotension, and decreased urine output. Blood pressure is 82/48. BUN is 45 mg/dL, Creatinine is 1.9 mg/dL (BUN:Creatinine ratio = 23:1). The nurse recognizes this AKI is MOST likely:",
+      "opts": [
+        "Post-renal AKI — caused by urinary tract obstruction",
+        "Intra-renal AKI — caused by direct nephron damage from infection",
+        "Pre-renal AKI — kidneys are not receiving adequate blood flow due to septic shock",
+        "Chronic kidney disease — this has been developing for months"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Pre-renal AKI occurs when the kidneys do not receive enough blood flow — the kidneys themselves are structurally intact. Causes: hypovolemia, hemorrhage, septic shock, cardiogenic shock, severe dehydration. Key lab indicator: BUN:Creatinine ratio >20:1. In this patient, the ratio is 23:1 — because in pre-renal states, urea (BUN) is proportionally more concentrated than creatinine (the kidney reabsorbs more water and urea when blood flow is reduced). This patient has clear signs of septic shock: fever, tachycardia, hypotension. Treatment is restoration of blood flow — IV fluids, vasopressors for septic shock, treat the underlying infection. The kidney function should recover IF perfusion is restored quickly. Intra-renal AKI would be from direct kidney damage (ATN from nephrotoxins or ischemia). Post-renal would present with bilateral obstruction (usually oliguria or anuria with a palpable bladder). CKD is not acute."
+    },
+    {
+      "id": 20,
+      "unit": "general",
+      "topic": "AKI — Hyperkalemia",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A patient with AKI has a potassium level of 6.8 mEq/L (normal: 3.5–5.0). The nurse should anticipate which of the following orders?",
+      "opts": [
+        "Calcium gluconate IV — to stabilize the cardiac membrane",
+        "Regular insulin + Dextrose 50% IV — to shift potassium into cells temporarily",
+        "Potassium chloride supplement — to balance electrolytes",
+        "Sodium polystyrene sulfonate (Kayexalate) — to remove potassium from the body via the GI tract",
+        "Place the patient on continuous cardiac monitoring"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "A potassium of 6.8 mEq/L is severely elevated and life-threatening — hyperkalemia causes fatal cardiac arrhythmias (peaked T waves → widened QRS → ventricular fibrillation). ALL of these are appropriate EXCEPT giving MORE potassium: (1) Calcium gluconate IV — stabilizes the cardiac membrane IMMEDIATELY (within minutes); does not lower potassium, but prevents arrhythmia while other treatments work. Give first. (2) Insulin + Dextrose — insulin drives K+ into cells temporarily (effect lasts 4–6 hours; must give dextrose to prevent hypoglycemia). (4) Kayexalate (sodium polystyrene sulfonate) or newer agents (patiromer, sodium zirconium cyclosilicate) — actually remove K+ from the body via the GI tract over several hours. (5) Cardiac monitor is mandatory — hyperkalemia changes the ECG before the patient has symptoms; peaked T waves are the earliest EKG sign. INCORRECT: Potassium chloride would worsen hyperkalemia and could be immediately fatal."
+    },
+    {
+      "id": 21,
+      "unit": "general",
+      "topic": "AKI — Nephrotoxins",
+      "type": "mc",
+      "q": "A patient with mild AKI (Creatinine 2.1 mg/dL) reports taking ibuprofen 800 mg three times daily for back pain. The nurse's PRIORITY action is:",
+      "opts": [
+        "Continue the ibuprofen — it is an OTC medication and safe for everyone",
+        "Educate the patient to stop the ibuprofen and report this finding to the provider immediately, as NSAIDs reduce renal perfusion and can significantly worsen AKI",
+        "Increase fluid intake to compensate for the NSAID-induced fluid changes",
+        "Switch to acetaminophen and naproxen to provide equivalent pain relief without kidney risk"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "NSAIDs (ibuprofen, naproxen, indomethacin, ketorolac) are nephrotoxic — they work by inhibiting prostaglandins, which normally dilate the afferent arteriole to maintain GFR. In a patient with existing AKI or compromised renal function, the kidneys are DEPENDENT on prostaglandins to maintain blood flow. Blocking prostaglandins → afferent arteriole constricts → GFR drops further → AKI worsens. This is one of the most common causes of iatrogenic (treatment-caused) worsening of kidney disease. The NSAID must be stopped immediately. Naproxen is also an NSAID and equally nephrotoxic. Acetaminophen is relatively safer for kidneys (though hepatotoxic in excess) — but the nurse should not unilaterally switch pain medications; report to the provider who will determine the best pain management approach."
+    },
+    {
+      "id": 22,
+      "unit": "general",
+      "topic": "CKD — Causes and Staging",
+      "type": "mc",
+      "q": "A patient with a 15-year history of poorly controlled Type 2 diabetes and hypertension has a GFR of 22 mL/min. The nurse understands that this patient:",
+      "opts": [
+        "Has Stage 2 CKD and requires no dietary modifications yet",
+        "Has Stage 4 CKD (severely reduced kidney function) and should be preparing for renal replacement therapy",
+        "Has normal kidney function — GFR of 22 is within the acceptable range for older adults",
+        "Has Stage 1 CKD with normal kidney function but markers of kidney damage"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "CKD staging: Stage 1 (GFR ≥90), Stage 2 (60–89), Stage 3 (30–59), Stage 4 (15–29), Stage 5/ESRD (<15). A GFR of 22 places this patient in STAGE 4 — severely reduced kidney function. At this stage, the kidneys retain only about 15–25% of normal function. Key actions: (1) Refer to nephrology (2) Prepare the patient for renal replacement therapy — educate about hemodialysis, peritoneal dialysis, and kidney transplant options (3) Create dialysis access if hemodialysis is planned (AV fistula takes 3–6 months to mature — must be placed early) (4) Strict dietary management: protein restriction, phosphate restriction, potassium monitoring, sodium and fluid restriction, vitamin D supplementation, phosphate binders. This patient's history (T2D + hypertension) accounts for >60% of all CKD cases — these two conditions are the most common causes of CKD worldwide."
+    },
+    {
+      "id": 23,
+      "unit": "general",
+      "topic": "CKD — Anemia",
+      "type": "mc",
+      "q": "A patient with Stage 4 CKD has a hemoglobin of 8.2 g/dL (normal: 12–16 for women; 13.5–17.5 for men). He reports fatigue and dyspnea on exertion. The PRIMARY mechanism for anemia in CKD is:",
+      "opts": [
+        "Iron deficiency from dietary restriction in the renal diet",
+        "Decreased erythropoietin (EPO) production by the failing kidneys, resulting in reduced red blood cell production",
+        "Bleeding from esophageal varices causing blood loss",
+        "Bone marrow suppression from uremic toxin accumulation"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The PRIMARY cause of anemia in CKD is decreased erythropoietin (EPO) production. EPO is a hormone produced by the kidneys (specifically by peritubular fibroblasts in the cortex) that signals bone marrow to produce red blood cells. When kidney function declines, EPO production falls → bone marrow slows RBC production → normocytic, normochromic anemia (normal-sized, normal-color cells, just fewer of them). Treatment: Erythropoiesis-Stimulating Agents (ESAs) — epoetin alfa (Epogen) or darbepoetin alfa (Aranesp) replace the missing EPO and stimulate RBC production. Iron deficiency can worsen CKD anemia but is not the PRIMARY mechanism. Esophageal varices are a complication of cirrhosis, not CKD. Uremic toxins do contribute to bone marrow suppression but this is a secondary mechanism compared to EPO deficiency."
+    },
+    {
+      "id": 24,
+      "unit": "general",
+      "topic": "CKD — Bone Disease",
+      "type": "mc",
+      "q": "A patient with CKD Stage 3 is found to have low calcium (7.8 mg/dL), elevated phosphorus (5.9 mg/dL), and elevated PTH (parathyroid hormone). The nurse understands that this combination results from:",
+      "opts": [
+        "Excess dietary calcium intake depositing in kidneys and removing it from blood",
+        "The kidneys' failure to activate vitamin D (cannot convert to calcitriol) → poor calcium absorption → hypocalcemia → PTH released to pull calcium from bones → renal osteodystrophy",
+        "Hyperparathyroidism causing the kidneys to excrete excess calcium",
+        "Protein restriction in the renal diet removing calcium-binding proteins from blood"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is the classic cascade of renal osteodystrophy: (1) Damaged kidneys cannot convert 25-OH vitamin D to 1,25-(OH)2 vitamin D (calcitriol — the active form) (2) Without active vitamin D, calcium absorption from the intestine is impaired → low serum calcium (hypocalcemia) (3) Low calcium signals the parathyroid glands to secrete PTH (parathyroid hormone) (4) PTH mobilizes calcium from bones to restore blood calcium → over time, bones lose calcium → renal osteodystrophy (bone pain, fractures, deformity) (5) Additionally, impaired phosphate excretion by damaged kidneys → elevated phosphate → phosphate binds calcium → drives calcium even lower, worsening the cycle. Treatment: active vitamin D (calcitriol) supplementation, calcium supplements, phosphate binders with meals, dietary phosphate restriction."
+    },
+    {
+      "id": 25,
+      "unit": "general",
+      "topic": "CKD — Renal Diet",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A nurse is educating a patient with Stage 4 CKD who is NOT yet on dialysis about dietary restrictions. Which of the following instructions are correct?",
+      "opts": [
+        "Limit protein intake to reduce nitrogen waste and slow kidney damage",
+        "Avoid foods high in potassium such as bananas, oranges, and potatoes",
+        "Use a salt substitute containing potassium chloride in place of table salt",
+        "Take phosphate binder medication WITH meals — not before or after",
+        "Restrict fluid intake based on your urine output plus approximately 500 mL"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: (1) Protein restriction (0.6–0.8 g/kg/day) reduces the production of nitrogenous waste, slowing the rate of GFR decline and reducing uremic symptoms. (2) Hyperkalemia is common in CKD — kidneys cannot excrete potassium → high-potassium foods (bananas, oranges, potatoes, tomatoes, avocado, nuts, dark chocolate, whole grains) must be limited. (4) Phosphate binders MUST be taken WITH MEALS — they work by binding dietary phosphate in the GI tract, preventing absorption. Taking them at other times is completely ineffective. (5) Fluid restriction calculation: urine output + 500 mL (to replace insensible losses through respiration and perspiration). This prevents fluid overload in patients with impaired urine output. INCORRECT: (3) Salt SUBSTITUTES containing potassium chloride are DANGEROUS in CKD — they replace sodium chloride with potassium chloride, which can cause severe, potentially fatal hyperkalemia. This is a critical safety education point — patients must read labels carefully."
+    },
+    {
+      "id": 26,
+      "unit": "general",
+      "topic": "CKD — Dialysis",
+      "type": "mc",
+      "q": "A patient on hemodialysis has an AV fistula in his left forearm. During nursing assessment, the nurse notes the thrill (vibration) is absent and the bruit (whooshing sound) is no longer audible. The nurse's PRIORITY action is:",
+      "opts": [
+        "Check blood pressure in the left arm to assess circulation",
+        "Draw blood from the fistula for the morning labs to save time",
+        "Report the finding to the provider immediately — absent thrill and bruit indicate possible AV fistula thrombosis",
+        "Apply a warm compress to the arm and check again in 2 hours"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "A functioning AV fistula has a characteristic THRILL (palpable buzzing/vibration) and BRUIT (audible whooshing sound) caused by the high-flow arterial blood entering the vein. Loss of thrill and bruit indicates fistula THROMBOSIS (clotting) — a serious complication that can result in permanent loss of the dialysis access. This must be reported IMMEDIATELY because there is a limited window for intervention (declotting, angioplasty, or thrombolysis). Critically: a nurse should NEVER use the fistula arm for: blood pressure measurement, venipuncture, IV access, or any compression — all of these can cause thrombosis or damage the fistula. Check the fistula (thrill + bruit) every shift as part of routine assessment. A warm compress is insufficient and inappropriate — immediate reporting is required."
+    },
+    {
+      "id": 27,
+      "unit": "general",
+      "topic": "CKD — Dialysis Protein",
+      "type": "mc",
+      "q": "A patient has been managing CKD with a protein-restricted diet (0.7 g/kg/day). She has now been started on hemodialysis three times per week. The nurse should educate her that her protein intake should:",
+      "opts": [
+        "Remain the same — the dietary restriction from before dialysis does not change",
+        "Be eliminated entirely — dialysis removes all needed nutrients",
+        "Increase to 1.2–1.5 g/kg/day — hemodialysis removes amino acids and protein, which must be replaced",
+        "Be reduced further — dialysis cleans the blood and reduces the need for protein"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "This is one of the most important — and counterintuitive — nutritional facts in renal care. PRE-DIALYSIS CKD → restrict protein (0.6–0.8 g/kg/day) to reduce nitrogen waste that damaged kidneys cannot excrete. ON HEMODIALYSIS → INCREASE protein (1.2–1.5 g/kg/day) because: (1) Each hemodialysis session removes amino acids and protein across the dialysis membrane (2) Dialysis patients are in a chronic catabolic state — muscle wasting is common (3) The dialysis machine is now performing the filtration function, so the nitrogen waste concern is dramatically reduced. Failure to increase protein after starting dialysis leads to protein-energy malnutrition, accelerated muscle wasting, increased infection risk, and higher mortality. This shift in protein recommendation from pre-dialysis to dialysis is tested frequently on NCLEX."
+    },
+    {
+      "id": 28,
+      "unit": "general",
+      "topic": "Kidney Stones — Presentation",
+      "type": "mc",
+      "q": "A 34-year-old man arrives in the emergency department with sudden onset of severe flank pain (rated 10/10), radiating from his left side to his groin. He is restless, diaphoretic, and unable to find a comfortable position. Urinalysis shows hematuria. The nurse anticipates:",
+      "opts": [
+        "Acute appendicitis — prepare for surgical consult",
+        "Renal colic from a kidney stone — prepare for pain management, IV fluids, and urine straining",
+        "Aortic aneurysm — immediate vascular surgery notification",
+        "Musculoskeletal strain — ice packs and NSAIDs"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is a classic presentation of renal colic from a kidney stone (nephrolithiasis). Key features: (1) Sudden severe flank pain that radiates to the groin — follows the path of the ureter as the stone moves (2) Restlessness — patients with renal colic cannot lie still (unlike peritonitis where patients stay very still) (3) Diaphoresis from pain severity (4) Hematuria — the stone scrapes the ureter, causing bleeding. Nursing priorities: (1) Pain management — IV opioids (morphine or hydromorphone) + ketorolac (IV NSAID) are most effective; use NSAIDs cautiously if renal function is impaired (2) IV fluids to support hydration and flush the urinary tract (3) STRAIN ALL URINE — use a fine-mesh strainer to catch the stone; send for composition analysis (4) Monitor urine output (5) Prepare for CT scan (gold standard imaging). Aortic aneurysm pain is typically tearing/ripping and felt in the back/abdomen — patient often appears pale and shocky with pulsatile abdominal mass."
+    },
+    {
+      "id": 29,
+      "unit": "general",
+      "topic": "Kidney Stones — Types and Diet",
+      "type": "mc",
+      "q": "A patient passes a kidney stone that is identified as a calcium oxalate stone. The nurse should educate the patient to:",
+      "opts": [
+        "Eliminate all dietary calcium to prevent future calcium stones",
+        "Increase fluid intake to >2 L of urine output per day, limit oxalate-rich foods (spinach, nuts, chocolate), reduce sodium intake, and maintain normal dietary calcium",
+        "Follow a high-calcium diet to bind excess oxalate in the bloodstream",
+        "Eat a purine-rich diet to prevent calcium from precipitating"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Calcium oxalate stone prevention requires a multifaceted approach: (1) INCREASE FLUIDS — the single most important intervention for ALL stone types. Goal: >2 L urine output per day; 12–16 cups of fluid daily; urine should be pale yellow. (2) LIMIT OXALATE-RICH FOODS — spinach, nuts (especially almonds, cashews), chocolate, tea, beets, sweet potatoes, rhubarb. These foods raise urinary oxalate concentration. (3) REDUCE SODIUM — high sodium intake increases calcium excretion in the urine (hypercalciuria), promoting stone formation. (4) MAINTAIN NORMAL DIETARY CALCIUM — do NOT restrict calcium. Counterintuitively, low calcium diet INCREASES stone risk because dietary calcium normally binds oxalate in the GI tract, preventing its absorption. Without enough dietary calcium, more oxalate is absorbed → hyperoxaluria → more stones. Calcium supplements (not dietary calcium) taken between meals may slightly increase risk and should be taken WITH meals if needed."
+    },
+    {
+      "id": 30,
+      "unit": "general",
+      "topic": "Kidney Stones — Types",
+      "type": "mc",
+      "q": "A patient with gout is told he has uric acid kidney stones. The nurse should explain that these stones form because:",
+      "opts": [
+        "Too much calcium is excreted in the urine, combining with uric acid to form stones",
+        "High uric acid levels (from purine-rich diet or gout) lead to supersaturation of uric acid in the urine, especially when urine is acidic",
+        "Urinary tract infection with Proteus bacteria creates an alkaline environment that crystallizes uric acid",
+        "Vitamin C supplementation raises urinary pH, causing uric acid to precipitate"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Uric acid stones form when urine contains high concentrations of uric acid AND the urine is persistently acidic (low pH). Uric acid is the end product of purine metabolism. Purines are found in: red meat, organ meats (liver, kidney), shellfish, anchovies, sardines, beer, and fructose-rich beverages. Patients with gout have elevated serum uric acid and excessive urinary uric acid excretion. In acidic urine (pH <5.5), uric acid is insoluble and precipitates into crystals → stones. Treatment strategy: (1) Increase fluids → dilute urine (2) Reduce purine-rich foods (3) Alkalinize urine with potassium citrate (raising pH above 6.0–6.5 keeps uric acid dissolved) (4) Allopurinol — reduces uric acid production. Struvite stones (from infection) form in alkaline urine — different mechanism. Calcium stones are a separate entity."
+    },
+    {
+      "id": 31,
+      "unit": "general",
+      "topic": "Kidney Stones — Urine Straining",
+      "type": "mc",
+      "q": "A patient with suspected kidney stones has been instructed to strain all urine. He asks the nurse why this is necessary. The nurse's BEST explanation is:",
+      "opts": [
+        "Straining reduces pain by filtering out sharp stone fragments before they exit",
+        "Urine straining captures the stone if it passes, allowing laboratory analysis of the stone's composition to guide specific prevention strategies",
+        "Straining prevents urinary tract infections by filtering bacteria from the urine",
+        "The stone must be captured before disposal because it is a biohazard"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Straining urine serves a specific clinical purpose: catching the stone if and when it passes. The stone is then sent for COMPOSITION ANALYSIS in the laboratory. Different stone types (calcium oxalate, uric acid, struvite, cystine, calcium phosphate) require completely different prevention strategies. Without knowing what the stone is made of, the prevention plan would be a guess. For example: uric acid stones → reduce purines, alkalinize urine; calcium oxalate stones → limit oxalate foods, normal calcium intake; struvite stones → treat recurrent UTIs. Instruct the patient to use a fine-mesh strainer (or gauze) every time they urinate, transfer any captured material to a clean container, and bring it to the clinic. Also, the nurse can inspect strained urine for cloudiness (infection), blood, and measure output. The reason is clinical — not a biohazard protocol."
+    },
+    {
+      "id": 32,
+      "unit": "general",
+      "topic": "Chronic Disease — Risk Factors",
+      "type": "mc",
+      "q": "A 52-year-old patient with central obesity, fasting blood glucose of 108 mg/dL, triglycerides of 180 mg/dL, HDL of 35 mg/dL, and blood pressure of 138/88 mmHg is at HIGH risk for which conditions?",
+      "opts": [
+        "Only kidney stones — the metabolic findings are unrelated to other diseases",
+        "Metabolic syndrome — this cluster of findings dramatically increases risk for Type 2 diabetes, cardiovascular disease, and fatty liver disease",
+        "Only hypertension — the other findings are within acceptable limits",
+        "Hepatitis B — obesity and glucose elevation are direct risk factors for viral hepatitis"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This patient meets the criteria for METABOLIC SYNDROME — a cluster of conditions that together dramatically increase the risk for Type 2 diabetes, cardiovascular disease, stroke, and nonalcoholic fatty liver disease. Diagnostic criteria (need central obesity + ≥2 of the following): (1) Triglycerides ≥150 mg/dL → this patient has 180 (2) HDL <40 mg/dL in men → this patient has 35 (3) Blood pressure ≥130/85 → this patient has 138/88 (4) Fasting glucose ≥100 mg/dL (prediabetic range) → this patient has 108. Central obesity = the driver of insulin resistance = the root cause of the entire syndrome. People with metabolic syndrome have 9–30 times greater risk of developing Type 2 diabetes. NAFLD is almost universally present in metabolic syndrome. This patient needs aggressive lifestyle intervention: 5–10% weight loss, diet change, exercise, smoking cessation if applicable."
+    },
+    {
+      "id": 33,
+      "unit": "general",
+      "topic": "Chronic Disease — Cancer and Diet",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. Based on the American Institute for Cancer Research (AICR) guidelines, which dietary and lifestyle factors are associated with REDUCED cancer risk?",
+      "opts": [
+        "Consuming a plant-based diet rich in fruits, vegetables, and whole grains",
+        "Consuming processed and red meats daily as primary protein sources",
+        "Maintaining a healthy body weight throughout life",
+        "Engaging in at least 30 minutes of physical activity most days",
+        "Consuming alcohol in moderation (1 drink/day for women)"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "CORRECT cancer risk reduction strategies: (1) Plant-based diet — fruits and vegetables contain antioxidants, phytochemicals, and fiber. Cruciferous vegetables (broccoli, cauliflower, Brussels sprouts) have specific cancer-protective compounds. High fiber intake reduces colon cancer risk. (3) Healthy body weight — obesity is linked to multiple cancers including colon, uterus, pancreas, esophagus, kidney, and breast. Adipose tissue produces inflammatory cytokines and excess estrogen that promote cell proliferation. (4) Physical activity — regular exercise reduces risk of breast and colon cancers specifically, likely through reduced inflammation, improved immune function, and weight control. NOT protective: (2) Processed and red meats are classified as GROUP 1 carcinogens by the WHO — red meat is Group 2A. High-temperature cooking (grilling, smoking) creates carcinogenic compounds. (5) Alcohol is linked to cancers of the mouth, throat, esophagus, breast, and colon — there is no established 'safe' level of alcohol for cancer prevention. The AICR recommends avoiding alcohol entirely for cancer prevention."
+    },
+    {
+      "id": 34,
+      "unit": "general",
+      "topic": "CVD and Lipids — Applied",
+      "type": "mc",
+      "q": "A patient asks the nurse to explain the difference between LDL and HDL cholesterol and which one they should try to lower. The nurse's BEST explanation is:",
+      "opts": [
+        "LDL and HDL are identical — only total cholesterol matters clinically",
+        "LDL (low-density lipoprotein) is 'bad' cholesterol that deposits on arterial walls, causing plaque. HDL (high-density lipoprotein) is 'good' cholesterol that removes LDL from circulation. The goal is to lower LDL and raise HDL",
+        "HDL is the dangerous lipoprotein — a patient should try to lower it with medication",
+        "LDL is produced by exercise and is beneficial; HDL is from dietary fat and is harmful"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "LDL = Low-Density Lipoprotein = 'Lousy' cholesterol. LDLs transport cholesterol to body cells. When LDL levels are HIGH (especially in the context of a diet high in saturated fat, which downregulates LDL receptors), excess LDL deposits cholesterol on arterial walls → atherosclerotic plaque → cardiovascular disease, MI, stroke. HDL = High-Density Lipoprotein = 'Helpful Hero' cholesterol. HDLs scavenge excess LDL from the bloodstream and arterial walls and return it to the liver for excretion. High HDL is PROTECTIVE. Ideal values: Total cholesterol <200 mg/dL; LDL <100 mg/dL (or <70 in high-risk); HDL >60 mg/dL (protective); Triglycerides <150 mg/dL. Ways to raise HDL: exercise, omega-3 fatty acids, stop smoking, moderate unsaturated fat intake. Ways to lower LDL: reduce saturated and trans fats, increase soluble fiber, add plant sterols, statins."
+    },
+    {
+      "id": 35,
+      "unit": "general",
+      "topic": "Liver — Herbal Supplements",
+      "type": "mc",
+      "q": "A patient with hepatitis asks if she can take kava supplements to help with anxiety since they are 'natural and safe.' The nurse's BEST response is:",
+      "opts": [
+        "Yes — natural supplements are always safer than pharmaceutical medications for liver conditions",
+        "Yes — kava specifically is recommended for liver disease patients to reduce stress",
+        "No — kava has been associated with significant hepatotoxicity (liver damage) and should be avoided, especially in patients with pre-existing liver disease",
+        "The nurse should not advise on supplements — refer only to a naturopathic physician"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "'Natural' does NOT equal 'safe' — this is a critical patient education point. Kava (Piper methysticum) is a plant-based supplement used for anxiety and stress that has well-documented hepatotoxicity. It is listed among the herbal supplements that can cause significant liver damage, including: kava, chaparral, Ma Huang (ephedra), germander, jin bu huan, pennyroyal, and comfrey. In a patient with pre-existing hepatitis, the liver is already inflamed and damaged — any additional hepatotoxic substance can dramatically accelerate liver damage and even cause acute liver failure. The nurse should educate the patient that 'natural' and 'herbal' supplements are not regulated by the FDA in the same way as drugs, are not free of side effects, and MUST be discussed with the physician before use in patients with ANY liver disease. This is within nursing scope — nurses provide medication and supplement safety education."
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "id": "nutrition-mod7-chapter",
+  "class": "nutrition",
+  "module": 7,
+  "title": "Module 7 — Chapter Quiz",
+  "description": "10-question quiz covering core Module 7 concepts: CVD, hypertension, fatty liver, kidney disease, diabetes, and chronic disease risk factors.",
+  "topics": [
+    "heart disease",
+    "hypertension",
+    "silent killer",
+    "fatty liver",
+    "NAFLD",
+    "AFLD",
+    "nephron",
+    "glomerulus",
+    "kidney stones",
+    "CKD",
+    "protein restriction",
+    "type 2 diabetes",
+    "obesity",
+    "modifiable risk factors",
+    "gallstones",
+    "risk factors vs causation"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "cvd",
+      "topic": "Cardiovascular Disease — Leading Cause of Death",
+      "type": "mc",
+      "q": "Which of the following is the leading cause of death in the United States for both men and women?",
+      "opts": [
+        "Heart disease",
+        "Diabetes",
+        "Stroke",
+        "Cancer"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "Heart disease is the leading cause of death in the United States, accounting for roughly one in every four deaths. The other options are significant but rank lower: Cancer is #2, Stroke is #5, and Diabetes falls in the top 10 but lower than both heart disease and cancer. One important nuance: for American Indians/Alaska Natives and Asians/Pacific Islanders specifically, heart disease ranks second only to cancer — but for the general U.S. population across both sexes, heart disease is #1. Wrong answers: Diabetes and Stroke are not in the top two causes of death. Cancer is #2 but not #1."
+    },
+    {
+      "id": 2,
+      "unit": "cvd",
+      "topic": "Hypertension — The Silent Killer",
+      "type": "mc",
+      "q": "What is the primary reason hypertension is called the 'silent killer'?",
+      "opts": [
+        "It only affects elderly individuals",
+        "It is difficult to diagnose even with medical testing",
+        "It causes immediate and severe symptoms",
+        "It has no symptoms until it reaches dangerously high levels"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Hypertension earns the nickname 'silent killer' because a person can have dangerously elevated blood pressure for years with absolutely no symptoms — no headache, no chest pain, no warning signs whatsoever — while irreversible damage accumulates in arteries, the heart, the kidneys, and the eyes. Symptoms typically do not appear until blood pressure reaches crisis levels (≥180/120 mmHg). Wrong answers: Hypertension affects one in three American adults of all ages — not just elderly. Diagnosis is simple — a blood pressure cuff reading at any clinic. It does NOT cause immediate severe symptoms — that is the exact opposite of why it is dangerous. Nursing implication: patient education and routine monitoring are everything because patients who feel fine often stop taking their antihypertensive medications."
+    },
+    {
+      "id": 3,
+      "unit": "liver",
+      "topic": "Fatty Liver Disease — Treatment",
+      "type": "mc",
+      "q": "What is the most effective way to treat fatty liver disease?",
+      "opts": [
+        "Only using medication",
+        "Taking painkillers",
+        "Increasing intake of fatty foods",
+        "Cutting back on alcohol and improving metabolic health"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "The most effective treatment for fatty liver is always eliminating the root cause. For alcoholic fatty liver disease (AFLD): complete alcohol cessation. For nonalcoholic fatty liver disease (NAFLD): weight loss of 5–10% of body weight through diet improvement and exercise, which can reverse fat accumulation and normalize liver enzymes. Fatty liver is reversible if caught early and addressed. Wrong answers: No FDA-approved medication directly treats fatty liver — lifestyle change IS the treatment. Painkillers are not only ineffective but potentially harmful — acetaminophen at high doses and NSAIDs can worsen liver damage in a stressed liver. Increasing fatty foods would significantly worsen hepatic steatosis by increasing the fat burden the liver already cannot process and export."
+    },
+    {
+      "id": 4,
+      "unit": "general",
+      "topic": "Chronic Disease — Risk Factors vs. Causation",
+      "type": "mc",
+      "q": "Why can't we say that a sedentary lifestyle directly causes cardiovascular disease?",
+      "opts": [
+        "Because everyone who has a sedentary lifestyle will develop the disease",
+        "Because risk factors indicate correlation, not causation",
+        "Because cardiovascular disease is caused only by genetics",
+        "Because exercise has no impact on heart health"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "A risk factor indicates correlation — a statistical association between a behavior or condition and increased likelihood of disease — not causation. A cause is a direct, certain, specific relationship (like a virus causing infection). A sedentary lifestyle is correlated with CVD: people who are sedentary develop it at higher rates, but you cannot point to any one person and say their inactivity caused their heart disease. A person with zero conventional risk factors can have a heart attack at 45; a person with multiple risk factors may live to 95 without cardiac events. Chronic disease almost always develops from multiple interacting risk factors over time, not any single one. Wrong answers: If everyone with a sedentary lifestyle developed CVD, that would argue for causation, not against it. CVD is absolutely influenced by lifestyle — genetics is ONE non-modifiable factor among many. Exercise is one of the most powerful modifiable protections against CVD — the opposite of no impact."
+    },
+    {
+      "id": 5,
+      "unit": "kidney",
+      "topic": "CKD — Dietary Management",
+      "type": "mc",
+      "q": "What type of diet is often recommended for individuals with chronic kidney disease (pre-dialysis)?",
+      "opts": [
+        "Low-protein diet",
+        "High-carbohydrate diet",
+        "Low-fat diet",
+        "High-protein diet"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "For pre-dialysis CKD patients, protein is restricted to 0.6–0.8 g/kg/day. Every gram of protein metabolized produces nitrogen waste products (urea, creatinine, ammonia) that damaged kidneys struggle to filter and excrete. Reducing protein intake reduces that filtration burden and helps slow GFR decline. This is the protein paradox: pre-dialysis CKD = RESTRICT protein; on hemodialysis = INCREASE protein (1.2–1.5 g/kg/day) because dialysis removes amino acids during each session. Always clarify dialysis status before answering any CKD protein question — the answer is completely opposite. Wrong answers: High-protein diet is correct for DIALYSIS patients but harmful to pre-dialysis kidneys. High-carbohydrate diet can worsen blood glucose control — important because diabetes is the #1 cause of CKD. Low-fat diet is not the primary CKD dietary concern; fat recommendations are generally similar to the general population."
+    },
+    {
+      "id": 6,
+      "unit": "kidney",
+      "topic": "Nephron — Structure and Function",
+      "type": "mc",
+      "q": "Which part of the nephron acts as a gateway, allowing fluid and small solutes to pass into the tubules while blocking blood cells and large proteins?",
+      "opts": [
+        "Ureter",
+        "Glomerulus",
+        "Collecting duct",
+        "Renal pelvis"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The glomerulus is a tiny ball of capillaries that filters blood under pressure — the gateway of the nephron. It allows water, glucose, electrolytes, urea, creatinine, and other small molecules through into the tubule as filtrate, while blocking blood cells and large plasma proteins like albumin. Protein in urine (proteinuria) always signals glomerular damage. Flow of urine through the system: Glomerulus → Tubule (reabsorbs what the body needs) → Collecting duct (ADH decides water fate) → Renal pelvis (collects urine) → Ureter (carries urine to bladder) → Bladder (stores) → Urethra (excretes). Wrong answers: The ureter is not part of the nephron at all — it carries finished urine from kidney to bladder. The collecting duct is the last segment where ADH acts on free water. The renal pelvis is the funnel-shaped structure that collects finished urine — downstream of the nephron."
+    },
+    {
+      "id": 7,
+      "unit": "kidney",
+      "topic": "Kidney Stones — Prevention",
+      "type": "tf",
+      "q": "True or False: Drinking 12 to 16 cups of fluid a day can help reduce the chances of forming kidney stones.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "TRUE. Aggressive hydration is the single most important intervention for preventing kidney stones regardless of stone type. The goal is urine output greater than 2 liters per day, requiring roughly 12–16 cups (3–4 liters) of total daily fluid intake to account for insensible losses. More fluid = more dilute urine = lower concentration of stone-forming substances = crystals far less likely to form. Teach patients: urine should be pale yellow or nearly clear — dark yellow means concentrated urine and high stone risk. Hydration applies to ALL five stone types (calcium oxalate, calcium phosphate, uric acid, struvite, cystine). Every other prevention strategy is specific to the stone type, but hydration helps all of them."
+    },
+    {
+      "id": 8,
+      "unit": "general",
+      "topic": "Chronic Disease — Modifiable vs. Non-Modifiable Risk Factors",
+      "type": "mc",
+      "q": "Which of the following is a modifiable risk factor for chronic disease?",
+      "opts": [
+        "Gender",
+        "Age",
+        "Dietary choices",
+        "Genetics"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Dietary choices are modifiable — they can be changed through intervention to measurably reduce the risk of heart disease, diabetes, hypertension, certain cancers, and fatty liver disease. Modifiable risk factors also include: physical activity level, body weight, smoking status, alcohol use, blood pressure control, and blood sugar management. Wrong answers: Gender (biological sex) is non-modifiable — it is a factor you assess and incorporate into screening decisions, not something you intervene on. Age is non-modifiable — risk for most chronic diseases increases with age and you cannot stop the clock. Genetics is non-modifiable — family history tells you who needs more aggressive intervention, but the genes themselves are fixed. Nursing application: when counseling patients about chronic disease prevention, your entire conversation focuses on the modifiable risk factors — those are where your education makes a real difference."
+    },
+    {
+      "id": 9,
+      "unit": "liver",
+      "topic": "Gallstones — Clinical Presentation",
+      "type": "tf",
+      "q": "True or False: Gallstones always cause severe symptoms and complications.",
+      "opts": [
+        "True",
+        "False"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "FALSE. Most gallstones are completely asymptomatic — they sit quietly in the gallbladder indefinitely and are discovered by accident on imaging done for an unrelated reason. The statement is wrong on two levels: NOT always symptomatic, and NOT always severe when symptoms do occur. Symptoms only start when a stone moves and blocks the cystic duct or common bile duct. The clinical spectrum when symptoms do occur: biliary colic (intense RUQ pain after fatty meals — can resolve spontaneously), cholecystitis (inflamed gallbladder, positive Murphy's sign, fever — needs treatment), choledocholithiasis (stone in common bile duct — obstructive jaundice), cholangitis (Charcot's Triad: fever + jaundice + RUQ pain — medical emergency), gallbladder rupture → peritonitis (most severe). Nursing implication: asymptomatic gallstones are typically monitored rather than treated. The decision to intervene is made when symptoms appear, not simply because stones are present."
+    },
+    {
+      "id": 10,
+      "unit": "diabetes",
+      "topic": "Type 2 Diabetes — Primary Risk Factor",
+      "type": "mc",
+      "q": "What is the primary risk factor for developing Type 2 Diabetes (T2D)?",
+      "opts": [
+        "Low protein intake",
+        "Drinking too much water",
+        "Excessive protein consumption",
+        "Obesity"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Obesity is the single most important and most common risk factor for Type 2 diabetes, which is why the rise in T2D tracks almost perfectly with the rise in obesity rates over the past 30 years. Mechanism: excess visceral fat releases inflammatory cytokines and free fatty acids that interfere with insulin signaling → insulin resistance → pancreas compensates by making more insulin → beta cells eventually exhaust → glucose builds up in blood = T2D. Key fact: losing just 5–7% of body weight combined with 150 minutes of moderate exercise per week reduced T2D risk by 58% in the Diabetes Prevention Program trial — more effective than metformin alone. Wrong answers: Low protein intake has no established causal link to T2D. Drinking too much water has no connection to T2D — excessive thirst and urination are symptoms OF diabetes, not causes. Excessive protein consumption is not a primary risk factor for developing diabetes; it is a dietary consideration in managing existing CKD and T2D."
+    }
+  ]
+}

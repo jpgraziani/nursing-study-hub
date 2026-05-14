@@ -1,0 +1,553 @@
+{
+  "id": "nutrition-mod7-companion",
+  "class": "nutrition",
+  "module": 7,
+  "title": "Module 7 — Companion Quiz",
+  "description": "30-question quiz covering CVD dietary strategies, diabetes management values, cancer nutrition, metabolic syndrome, and chronic disease prevention.",
+  "topics": [
+    "atherosclerosis",
+    "trans fats",
+    "soluble fiber",
+    "hypertensive crisis",
+    "orthostatic hypotension",
+    "blood pressure",
+    "HbA1c",
+    "hypoglycemia",
+    "gestational diabetes",
+    "prediabetes",
+    "DPP trial",
+    "foot care",
+    "three Ps of diabetes",
+    "antioxidants",
+    "processed meat",
+    "benign vs malignant",
+    "metabolic syndrome",
+    "insulin resistance",
+    "cholesterol targets",
+    "omega-3",
+    "plant-based diet",
+    "cancer prevention",
+    "added sugar",
+    "fiber recommendations"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "cvd",
+      "topic": "CVD — Atherosclerosis Progression",
+      "type": "mc",
+      "q": "Which of the following CORRECTLY describes the sequence of events in atherosclerosis from beginning to end?",
+      "opts": [
+        "Plaque rupture → LDL oxidation → foam cell formation → fatty streak → fibrous plaque",
+        "LDL oxidizes in arterial wall → macrophages engulf oxidized LDL and become foam cells → fatty streak forms → fibrous plaque develops → plaque can rupture → blood clot → MI or stroke",
+        "Calcium deposits in arteries → LDL accumulates → immune response → plaque forms",
+        "HDL deposits cholesterol on arterial walls → inflammation → plaque → rupture"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The correct sequence of atherosclerosis: LDL infiltrates the arterial wall and becomes oxidized (free radicals from smoking, inflammation, etc. attack LDL) → oxidized LDL triggers an immune response → macrophages (immune cells) engulf the oxidized LDL and become foam cells → foam cells accumulate under the arterial lining and form a fatty streak → over time, the fatty streak calcifies and becomes a fibrous plaque → the plaque narrows the arterial lumen → the fibrous cap of a plaque can rupture due to a spike in blood pressure or inflammation → the body forms a blood clot at the rupture site → if the clot blocks a coronary artery = MI; cerebral artery = stroke. HDL does the opposite — it removes LDL from arterial walls, protecting against atherosclerosis."
+    },
+    {
+      "id": 2,
+      "unit": "cvd",
+      "topic": "CVD — Dietary Strategies",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A patient asks what dietary changes will most directly help reduce their cardiovascular disease risk. Based on evidence-based guidelines, which of the following are correct recommendations?",
+      "opts": [
+        "Increase intake of soluble fiber (oats, beans, apples, psyllium) to reduce LDL cholesterol absorption",
+        "Eliminate trans fats completely — no safe level of consumption exists",
+        "Increase saturated fat intake from animal products to raise HDL cholesterol",
+        "Eat fatty fish at least twice per week for omega-3 fatty acids",
+        "Replace refined starches and added sugars with whole grains, vegetables, and fruits"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "CORRECT: (1) Soluble fiber forms a viscous gel in the GI tract that binds cholesterol and bile acids, preventing their reabsorption → lowers LDL by 5–10%. (2) Trans fats are the worst dietary fat for cardiovascular health — they raise LDL AND lower HDL simultaneously. No safe level exists; the FDA has removed GRAS status from partially hydrogenated oils. (4) Omega-3 fatty acids from fatty fish (salmon, herring, mackerel, sardines) reduce triglycerides, lower inflammation, and reduce arrhythmia risk. (5) Refined carbohydrates and added sugars specifically drive triglyceride elevation — replacing with whole foods addresses this. INCORRECT: (3) Saturated fat increases LDL cholesterol by downregulating LDL receptors — it does NOT raise HDL meaningfully and should be limited to <10% of total calories."
+    },
+    {
+      "id": 3,
+      "unit": "cvd",
+      "topic": "CVD — Trans Fats",
+      "type": "mc",
+      "q": "A patient reads a food label and sees 'partially hydrogenated vegetable oil' listed as an ingredient. The nurse explains that this means the food contains trans fats. Why are trans fats considered WORSE for cardiovascular health than even saturated fat?",
+      "opts": [
+        "Trans fats are absorbed faster than saturated fats and overwhelm the liver",
+        "Trans fats both raise LDL (bad cholesterol) AND lower HDL (good cholesterol) simultaneously — a doubly harmful effect on cardiovascular risk",
+        "Trans fats cause direct damage to heart muscle cells on contact",
+        "Trans fats are only harmful in people who already have high cholesterol"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Trans fats have a uniquely damaging effect on the lipid profile: they simultaneously RAISE LDL and LOWER HDL. Saturated fat raises LDL but does not lower HDL — so trans fats produce a doubly negative effect. This is why there is no safe level of industrial trans fat consumption and why the FDA revoked GRAS (Generally Recognized As Safe) status for partially hydrogenated oils and required their phase-out. On nutrition labels: even if a product states '0 grams of trans fat,' it may still contain up to 0.5 grams per serving — if partially hydrogenated oil appears in the ingredient list, the product contains trans fats. Key teaching: avoid ANY product listing hydrogenated or partially hydrogenated oils."
+    },
+    {
+      "id": 4,
+      "unit": "cvd",
+      "topic": "CVD — Soluble Fiber Mechanism",
+      "type": "mc",
+      "q": "A patient with high LDL cholesterol asks why their cardiologist recommended eating more oatmeal and beans specifically. The nurse's BEST explanation of how soluble fiber lowers LDL is:",
+      "opts": [
+        "Soluble fiber absorbs fat in the stomach before it can be digested, preventing all dietary fat from entering the bloodstream",
+        "Soluble fiber forms a viscous gel in the GI tract that binds cholesterol and bile acids, preventing their absorption — forcing the liver to pull cholesterol from the blood to make more bile salts",
+        "Soluble fiber speeds up digestion so cholesterol passes through the intestine too quickly to be absorbed",
+        "Soluble fiber stimulates the liver to produce more HDL, which then removes LDL from the bloodstream"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Soluble fiber (found in oats, beans, lentils, apples, psyllium, barley) forms a viscous, gel-like substance when dissolved in water in the GI tract. This gel physically traps cholesterol and bile acids (which are made from cholesterol) and prevents their absorption into the bloodstream. They are instead excreted in stool. When bile acids are lost, the liver must synthesize new ones — and to do that, it pulls cholesterol from the bloodstream to use as raw material. This lowers circulating LDL levels. Studies show high soluble fiber intake can reduce LDL by 5–10%. This is why oatmeal specifically is heart-healthy — its soluble fiber (beta-glucan) is particularly effective at this mechanism."
+    },
+    {
+      "id": 5,
+      "unit": "cvd",
+      "topic": "CVD — Hypertensive Crisis vs. Urgency",
+      "type": "mc",
+      "q": "A patient arrives in the emergency department with a blood pressure of 195/122 mmHg and is reporting severe headache, vision changes, and confusion. The nurse recognizes this as:",
+      "opts": [
+        "Hypertensive urgency — elevated BP without end-organ damage requiring oral medication only",
+        "Hypertensive emergency — severely elevated BP WITH evidence of end-organ damage (neurological symptoms) requiring IV antihypertensive therapy in an ICU",
+        "Orthostatic hypotension — the patient stood up too quickly from a sitting position",
+        "Normal variation — blood pressure this high is common in older adults and requires no acute intervention"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The distinction between hypertensive urgency and hypertensive emergency is critical: BOTH involve BP ≥180/120 mmHg. The difference is end-organ damage. Hypertensive URGENCY: BP ≥180/120 with no acute end-organ damage → managed with oral antihypertensives, often as an outpatient. Hypertensive EMERGENCY: BP ≥180/120 WITH evidence of acute end-organ damage → neurological (confusion, headache, vision changes, stroke), cardiac (chest pain, MI, pulmonary edema), or renal (acute kidney injury) → requires IV antihypertensives in an ICU setting. Critical rule: do NOT drop blood pressure too rapidly — goal is approximately 25% reduction in the first hour. Dropping BP too fast can cause cerebral ischemia because the brain has adapted to the chronically high pressure."
+    },
+    {
+      "id": 6,
+      "unit": "cvd",
+      "topic": "CVD — Orthostatic Hypotension",
+      "type": "mc",
+      "q": "A nurse is assessing a patient on antihypertensive medications who reports dizziness and lightheadedness every time she stands up from a chair. To confirm orthostatic hypotension, the nurse should:",
+      "opts": [
+        "Measure blood pressure only while the patient is standing and compare to the normal range",
+        "Measure blood pressure in lying, sitting, and standing positions — a drop in systolic BP ≥20 mmHg or diastolic ≥10 mmHg within 3 minutes of standing confirms orthostatic hypotension",
+        "Perform a tilt table test in the cardiac catheterization lab",
+        "Administer a fluid bolus and see if symptoms resolve"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Orthostatic hypotension (postural hypotension) is defined as a drop in systolic BP ≥20 mmHg OR diastolic BP ≥10 mmHg within 3 minutes of moving from lying or sitting to standing. Assessment technique: measure BP lying → sitting → standing, with 1–2 minutes between positions. Common causes: antihypertensive medications, dehydration, prolonged bed rest, autonomic neuropathy (especially in diabetic patients), and older age. Nursing interventions: teach the patient to rise slowly (dangle legs at the bedside first), ensure adequate hydration, review medications with provider, implement fall precautions — this is a HIGH fall risk situation. Document all three readings in the chart."
+    },
+    {
+      "id": 7,
+      "unit": "cvd",
+      "topic": "CVD — Blood Pressure Numbers",
+      "type": "mc",
+      "q": "A 42-year-old patient has a blood pressure reading of 132/84 mmHg at a routine checkup. He has no other medical conditions. The nurse correctly classifies this as:",
+      "opts": [
+        "Normal — below 120/80 is normal; this reading is within acceptable limits",
+        "Elevated blood pressure — systolic 120–129 with diastolic <80",
+        "Stage 1 Hypertension — systolic 130–139 OR diastolic 80–89",
+        "Stage 2 Hypertension — systolic ≥140 OR diastolic ≥90"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Current blood pressure classifications (AHA/ACC 2017 guidelines): Normal: <120/<80. Elevated: systolic 120–129 AND diastolic <80. Stage 1 HTN: systolic 130–139 OR diastolic 80–89. Stage 2 HTN: systolic ≥140 OR diastolic ≥90. Hypertensive Crisis: ≥180/≥120. This patient's reading of 132/84 falls in Stage 1 Hypertension — systolic 132 (130–139 range) AND diastolic 84 (80–89 range). Management at Stage 1 without additional risk factors typically begins with lifestyle modification: DASH diet, sodium restriction (<2,400 mg/day), weight loss if needed, regular aerobic exercise, smoking cessation, and alcohol moderation. Medication is added if lifestyle changes are insufficient after 3–6 months."
+    },
+    {
+      "id": 8,
+      "unit": "diabetes",
+      "topic": "Diabetes — Blood Glucose & HbA1c Values",
+      "type": "mc",
+      "q": "A fasting blood glucose of 118 mg/dL and an HbA1c of 6.1% on a routine lab draw would classify a patient as:",
+      "opts": [
+        "Normal — both values are within the healthy range",
+        "Prediabetic — fasting glucose 100–125 mg/dL AND HbA1c 5.7–6.4% both fall in the prediabetes range",
+        "Diabetic — both values exceed the diagnostic threshold for diabetes",
+        "Hypoglycemic — these values indicate dangerously low blood sugar"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Blood glucose and HbA1c classification: Normal: fasting glucose 70–99 mg/dL; HbA1c <5.7%. Prediabetes: fasting glucose 100–125 mg/dL; HbA1c 5.7–6.4%. Diabetes: fasting glucose ≥126 mg/dL; HbA1c ≥6.5%. This patient's fasting glucose of 118 mg/dL (within 100–125 range) and HbA1c of 6.1% (within 5.7–6.4% range) both fall squarely in the prediabetes category. Clinical importance: prediabetes is a critical intervention window. Without lifestyle change, most prediabetic patients develop T2D within 10 years. With lifestyle intervention (5–7% weight loss + 150 min/week exercise), risk of developing T2D is reduced by 58% — more effective than metformin alone (31% reduction)."
+    },
+    {
+      "id": 9,
+      "unit": "diabetes",
+      "topic": "Diabetes — HbA1c Interpretation",
+      "type": "mc",
+      "q": "A patient with Type 2 diabetes has an HbA1c of 8.9%. The nurse explains what this result means:",
+      "opts": [
+        "The patient's blood glucose was normal in the past 24 hours — HbA1c only reflects very recent glucose levels",
+        "HbA1c reflects average blood glucose over the past 2–3 months; a value of 8.9% indicates poorly controlled diabetes and significantly elevated average blood glucose — increasing the risk of long-term complications",
+        "HbA1c of 8.9% is within the normal range for a person with diabetes",
+        "HbA1c measures kidney function, not blood glucose control"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "HbA1c (glycosylated hemoglobin) measures the percentage of hemoglobin molecules that have glucose permanently attached. Because red blood cells live for approximately 2–3 months, the HbA1c reflects average blood glucose over that entire time period — it cannot be manipulated by eating well the day before the test. Normal: <5.7%. Prediabetes: 5.7–6.4%. Diabetic (diagnostic): ≥6.5%. Target for most diabetic patients: <7% (individualized). This patient's HbA1c of 8.9% is significantly above the target, indicating poorly controlled diabetes and substantially increased risk of retinopathy, nephropathy, neuropathy, and cardiovascular disease. Estimated average glucose at 8.9% ≈ 209 mg/dL."
+    },
+    {
+      "id": 10,
+      "unit": "diabetes",
+      "topic": "Diabetes — Hypoglycemia Treatment",
+      "type": "mc",
+      "q": "A nurse finds a patient with Type 1 diabetes who is awake but confused, diaphoretic, and trembling. A bedside glucose check reads 48 mg/dL. The nurse's IMMEDIATE action is:",
+      "opts": [
+        "Administer the patient's scheduled insulin dose and reassess in 30 minutes",
+        "Give 15 grams of fast-acting carbohydrates (such as 4 oz of fruit juice), recheck blood glucose in 15 minutes, and repeat if still below 70 mg/dL",
+        "Call the physician and wait for orders before doing anything",
+        "Restrict food and fluids until the physician evaluates the patient"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Hypoglycemia (<70 mg/dL) with symptoms in a conscious patient: give 15 grams of fast-acting carbohydrates IMMEDIATELY — 4 oz (120 mL) fruit juice, 4 oz regular soda, 3–4 glucose tablets, or 1 tablespoon of honey. Recheck blood glucose in 15 minutes. If still <70 mg/dL → repeat 15 grams carbs → recheck again (the '15-15 rule'). Once glucose normalizes, give a small snack containing protein if the next meal is more than 1 hour away. Administering insulin to a hypoglycemic patient would be immediately life-threatening — glucose at 48 mg/dL with symptoms is already dangerously low. Never restrict food from a hypoglycemic patient. Waiting for orders when a patient is symptomatic at 48 mg/dL delays life-saving treatment unnecessarily."
+    },
+    {
+      "id": 11,
+      "unit": "diabetes",
+      "topic": "Diabetes — Hypoglycemia in Unconscious Patient",
+      "type": "mc",
+      "q": "A Type 1 diabetic patient is found unresponsive with a glucose of 32 mg/dL. The patient cannot swallow safely. The nurse should anticipate which intervention?",
+      "opts": [
+        "Pour orange juice slowly into the patient's mouth to raise glucose",
+        "Administer glucagon intramuscularly OR prepare IV dextrose (D50W) and notify the provider immediately",
+        "Administer a small dose of regular insulin to stabilize the glucose",
+        "Apply a glucose gel to the patient's lips and wait 30 minutes"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "An unconscious hypoglycemic patient CANNOT safely receive anything by mouth — aspiration risk is too high. Two options: (1) Glucagon IM or subcutaneous injection — stimulates the liver to release stored glycogen as glucose; available as an emergency kit (GlucaGen) for home use; works within 10–15 minutes. (2) IV Dextrose (D50W — 50% dextrose solution) — the fastest and most reliable treatment in a hospital setting; raises blood glucose within minutes. Call for emergency help immediately. Do NOT pour liquids into the mouth of an unconscious patient — this is a life-threatening aspiration risk. Insulin in a hypoglycemic patient is immediately fatal. Glucose gel on the lips is a last resort in the community but not the standard of care in a hospital setting."
+    },
+    {
+      "id": 12,
+      "unit": "diabetes",
+      "topic": "Diabetes — Gestational Diabetes",
+      "type": "mc",
+      "q": "A pregnant patient at 26 weeks gestation is diagnosed with gestational diabetes. The nurse should educate her that:",
+      "opts": [
+        "Gestational diabetes is harmless and requires no treatment since it always resolves after delivery",
+        "Gestational diabetes can cause the baby to grow excessively large (macrosomia), complicate delivery, and give the baby a higher lifetime risk of obesity and T2D; the mother has a 40–60% lifetime risk of developing T2D herself",
+        "Gestational diabetes only affects the mother and has no impact on the baby's health",
+        "Gestational diabetes means she will definitely need insulin injections for the rest of her life"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Gestational diabetes is serious for both mother and baby. For the BABY: excess maternal glucose crosses the placenta → stimulates fetal insulin production → causes excessive fat deposition → macrosomia (birth weight >9 lbs) → complicates delivery (shoulder dystocia, increased C-section risk), and the baby has higher lifetime risk of obesity and T2D. For the MOTHER: typically resolves after delivery, BUT the mother carries a 40–60% lifetime risk of developing T2D within 10 years. Standard screening: 24–28 weeks of gestation with a glucose challenge test. Management: dietary changes (carbohydrate distribution, glycemic index focus), blood glucose monitoring, physical activity, and insulin if needed. It absolutely requires treatment — uncontrolled gestational diabetes significantly increases maternal and fetal morbidity."
+    },
+    {
+      "id": 13,
+      "unit": "diabetes",
+      "topic": "Diabetes — Prediabetes and DPP Trial",
+      "type": "mc",
+      "q": "A patient with prediabetes asks if there is anything she can do to prevent developing Type 2 diabetes. The nurse's response should be based on the Diabetes Prevention Program (DPP) trial, which found:",
+      "opts": [
+        "There is nothing that can reliably prevent T2D once prediabetes develops — medication should be started immediately",
+        "Intensive lifestyle intervention (5–7% weight loss + 150 minutes/week of moderate exercise) reduced T2D risk by 58% — more effective than metformin medication alone (31% reduction)",
+        "A ketogenic diet is the only dietary intervention proven to prevent T2D",
+        "Only bariatric surgery has been shown to prevent T2D in prediabetic patients"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The Diabetes Prevention Program trial is one of the most important pieces of evidence in preventive medicine. It studied over 3,200 participants at high risk for T2D and found: Intensive lifestyle intervention (achieving 5–7% body weight loss through diet and 150+ minutes/week of moderate-intensity physical activity like brisk walking) = 58% reduction in T2D risk. Metformin medication alone = 31% reduction. Lifestyle was nearly twice as effective as the medication. The lifestyle intervention does NOT require perfection — just 5–7% of body weight (that's 10–14 lbs for a 200 lb person) and 30 minutes of brisk walking 5 days/week. This is within reach for most patients. The nurse's role: convey that lifestyle change is genuinely powerful and achievable."
+    },
+    {
+      "id": 14,
+      "unit": "diabetes",
+      "topic": "Diabetes — Foot Care Education",
+      "type": "mc",
+      "q": "A patient with Type 2 diabetes and peripheral neuropathy asks why her podiatrist keeps emphasizing foot care. The nurse explains that peripheral neuropathy increases the risk of amputation because:",
+      "opts": [
+        "Neuropathy causes blood vessels in the feet to rupture spontaneously",
+        "Loss of protective sensation means the patient cannot feel cuts, blisters, or pressure injuries — minor wounds become infected and may progress to tissue death requiring amputation because poor circulation limits healing",
+        "Neuropathy causes bones in the foot to fracture easily",
+        "Neuropathy causes the immune system to attack foot tissue directly"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Diabetic peripheral neuropathy damages sensory nerves in the feet, causing loss of protective sensation. The patient literally cannot feel pain. A small blister from ill-fitting shoes, a cut from walking barefoot, or pressure from a wrinkle in a sock can go unnoticed for days or weeks. Meanwhile: poor circulation from diabetic vascular disease slows healing → the wound becomes infected → infection spreads because impaired immune function and poor perfusion limit the body's ability to fight it → tissue death (gangrene) → amputation. Diabetes is the #1 cause of non-traumatic lower limb amputations. Daily foot inspection is one of the highest-priority patient education points for any diabetic patient — inspect every day, including between toes and the soles, using a mirror if needed. Never walk barefoot. Report ANY wound immediately."
+    },
+    {
+      "id": 15,
+      "unit": "diabetes",
+      "topic": "Diabetes — Three Ps",
+      "type": "mc",
+      "q": "A patient newly diagnosed with Type 1 diabetes asks why she has been so thirsty, urinating frequently, and always hungry despite eating more than usual. The nurse explains these are called the 'Three Ps' — which combination is correct?",
+      "opts": [
+        "Polydipsia (excessive thirst), Polyuria (frequent urination), Polyphagia (increased hunger)",
+        "Polycythemia, Polyarthritis, Polyneuropathy",
+        "Polyphagia (excessive thirst), Polyuria (frequent urination), Polydipsia (increased hunger)",
+        "Polypnea (rapid breathing), Polydipsia (excessive thirst), Polyuria (frequent urination)"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "The Three Ps of diabetes — a classic NCLEX topic: Polydipsia = excessive thirst (high blood glucose draws water out of cells by osmosis → dehydration → intense thirst). Polyuria = frequent, large-volume urination (excess glucose in blood spills into urine once it exceeds the renal threshold → glucose in urine draws water with it osmotically → large urine volumes → further dehydration). Polyphagia = increased hunger (without insulin, glucose cannot enter cells → cells are starving despite high blood glucose → the body signals intense hunger). In T1D these symptoms appear rapidly (days to weeks). In T2D, onset is gradual and symptoms may be subtle or absent for years — which is why so many T2D cases go undiagnosed."
+    },
+    {
+      "id": 16,
+      "unit": "cancer",
+      "topic": "Cancer — Normal vs. Cancer Cells",
+      "type": "mc",
+      "q": "Which of the following BEST describes why cancer cells are able to survive and grow when the immune system normally destroys abnormal cells?",
+      "opts": [
+        "Cancer cells release more oxygen, which makes the immune system less effective in that area",
+        "Cancer cells develop mechanisms to evade immune detection — they disguise themselves so the immune system cannot identify and destroy them quickly enough",
+        "Cancer cells secrete antibodies that neutralize white blood cells before they can attack",
+        "Cancer cells are identical to normal cells and therefore the immune system has no way to distinguish them"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "One of the hallmarks of cancer cells is immune evasion. Normal cells that are damaged or abnormal are identified by the immune system (specifically cytotoxic T cells and natural killer cells) and eliminated through apoptosis or direct immune attack. Cancer cells develop various strategies to escape this surveillance: they may downregulate surface proteins that signal 'I am abnormal,' express proteins that actively suppress immune cell activity (PD-L1 checkpoint proteins are an example — this is the basis of modern immunotherapy drugs that block these 'checkpoints' and restore immune killing of cancer). Cancer cells are NOT identical to normal cells — they are genetically and structurally different; the immune system often partially recognizes them but cannot eliminate them fast enough as they multiply."
+    },
+    {
+      "id": 17,
+      "unit": "cancer",
+      "topic": "Cancer — Antioxidant Supplements",
+      "type": "mc",
+      "q": "A patient with a strong family history of cancer asks if she should take high-dose antioxidant supplements (Vitamin E and beta-carotene) to protect herself from cancer. The nurse's evidence-based response is:",
+      "opts": [
+        "Yes — the more antioxidants the better; high-dose supplements provide maximum protection",
+        "Yes — beta-carotene specifically has been proven to reduce lung cancer risk in all populations",
+        "No — high-dose antioxidant supplements have NOT been shown to reliably reduce cancer risk and in some populations (high-dose beta-carotene in smokers, high-dose Vitamin E in men) have actually INCREASED cancer risk. Get antioxidants from whole foods instead",
+        "No — antioxidants in any form are harmful to cancer patients and should be avoided"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "This is a critical evidence-based nursing education point. Decades of research have produced a counterintuitive finding: high-dose antioxidant SUPPLEMENTS do not protect against cancer and may cause harm. Specific findings: High-dose beta-carotene supplements in smokers — increased lung cancer risk. High-dose Vitamin E supplements in men — increased prostate cancer risk; also linked to increased hemorrhage risk. Researchers believe this happens because free radicals serve important physiological functions (including killing cancer cells), and flooding the body with supplements disrupts this balance. The benefits of antioxidant-rich foods come from the entire food package — fiber, phytochemicals, and synergistic nutrient interactions — that cannot be replicated in a pill. Recommendation: eat a colorful, plant-rich diet rather than taking supplements."
+    },
+    {
+      "id": 18,
+      "unit": "cancer",
+      "topic": "Cancer — Processed Meat Classification",
+      "type": "mc",
+      "q": "A patient who eats bacon and deli meats every day tells the nurse they are not worried about cancer risk because they don't smoke. The nurse should inform the patient that:",
+      "opts": [
+        "Processed meats are completely safe in moderation and have no documented cancer risk",
+        "Processed meats are classified by the World Health Organization as Group 1 carcinogens — definitively carcinogenic — specifically linked to colorectal cancer risk, regardless of smoking status",
+        "Only red meat poses cancer risk; processed deli meats are considered safe by current guidelines",
+        "The cancer risk from processed meat is so small it requires no dietary change"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The World Health Organization's International Agency for Research on Cancer (IARC) classified processed meat as a Group 1 carcinogen in 2015 — meaning there is sufficient evidence in humans that it causes cancer (the same category as tobacco and asbestos, for colorectal cancer specifically). Processed meat includes: bacon, hot dogs, sausage, pepperoni, salami, deli meats (ham, turkey, roast beef), beef jerky, and canned meat. Red meat (beef, pork, lamb, veal) is classified as Group 2A — probably carcinogenic. The mechanism involves: nitrosamines (formed from preservatives), heterocyclic amines (from high-heat cooking), and heme iron promoting cancer-promoting reactions. This is one of the most important but least-known cancer prevention facts for patient education — most people have no idea their daily bacon carries a definitive carcinogen classification."
+    },
+    {
+      "id": 19,
+      "unit": "cancer",
+      "topic": "Cancer — Benign vs. Malignant Tumors",
+      "type": "mc",
+      "q": "A patient is told that a biopsy of a lump in her breast came back 'benign.' She asks the nurse what this means compared to a malignant tumor. The nurse's BEST explanation is:",
+      "opts": [
+        "Benign means the tumor is cancerous but has not yet spread",
+        "Benign tumors are non-cancerous — they do not invade surrounding tissues or spread to distant organs. Malignant tumors are cancerous — they can invade nearby tissues and spread (metastasize) through the bloodstream or lymphatic system to distant organs",
+        "Benign and malignant are interchangeable terms for the same type of tumor",
+        "Benign tumors are always harmless and never require any monitoring or follow-up"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Benign vs. malignant is a fundamental oncology distinction: BENIGN tumors — non-cancerous; grow slowly; have a well-defined border; do NOT invade surrounding tissue; do NOT metastasize (spread to distant organs); once removed, usually do not recur; may still cause problems if they press on vital structures (e.g., a benign brain tumor can be life-threatening due to location even though it is not malignant). MALIGNANT tumors — cancerous; grow rapidly; invade surrounding tissue; can break off and travel via bloodstream or lymphatics to form metastatic tumors in distant organs; may recur after removal; require systemic treatment if metastatic. The patient's benign biopsy result is very good news — but even benign tumors may warrant monitoring, depending on their location and size."
+    },
+    {
+      "id": 20,
+      "unit": "cancer",
+      "topic": "Cancer — TIA vs. Stroke Concepts Applied to Cancer Staging",
+      "type": "mc",
+      "q": "The TNM staging system is used to characterize cancer after diagnosis. What does each letter stand for and why does staging matter clinically?",
+      "opts": [
+        "Toxicity, Necrosis, Metaplasia — used to determine chemotherapy dosing",
+        "Tumor size, Node involvement (lymph nodes), Metastasis — staging determines treatment options, predicts prognosis, and guides the intensity of therapy",
+        "Time, Nutrition status, Mutation type — used to predict survival time",
+        "Tissue type, Neovascularization, Microscopy — used to identify cancer type under a microscope"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The TNM system is the most widely used cancer staging framework: T (Tumor) = size and extent of the primary tumor (T1–T4, with higher numbers indicating larger/more invasive tumors). N (Node) = whether cancer has spread to regional lymph nodes (N0 = no node involvement; N1–N3 = increasing node involvement). M (Metastasis) = whether cancer has spread to distant organs (M0 = no metastasis; M1 = distant metastasis present). Staging matters because it determines: which treatments are appropriate (surgery, radiation, chemotherapy, immunotherapy), whether the goal is curative or palliative, prognosis (predicted outcomes), and eligibility for clinical trials. Stage I (localized, small, no nodes, no metastasis) has dramatically better outcomes than Stage IV (metastatic disease). Early detection — when cancer is at Stage I or II — is the single most powerful factor in improving cancer survival rates."
+    },
+    {
+      "id": 21,
+      "unit": "general",
+      "topic": "Metabolic Syndrome — Diagnostic Criteria",
+      "type": "mc",
+      "q": "A patient has the following findings: central obesity (large waist circumference), fasting glucose of 104 mg/dL, triglycerides of 165 mg/dL, HDL of 38 mg/dL, and blood pressure of 128/82 mmHg. How many of the metabolic syndrome criteria does this patient meet, and do they qualify for a diagnosis?",
+      "opts": [
+        "1 criterion met — does not qualify for metabolic syndrome",
+        "2 criteria met — does not qualify (need central obesity + 2 additional)",
+        "Central obesity + all 4 additional criteria met — definitely qualifies for metabolic syndrome",
+        "Central obesity + 3 of 4 additional criteria met (fasting glucose ≥100 ✓, triglycerides ≥150 ✓, HDL <40 in men ✓, BP ≥130/85 ✗) — qualifies for metabolic syndrome since central obesity + ≥2 additional criteria are required"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Metabolic syndrome diagnosis requires CENTRAL OBESITY plus any 2 of the following 4 additional criteria: (1) Triglycerides ≥150 mg/dL — this patient has 165 ✓. (2) HDL <40 mg/dL in men / <50 mg/dL in women — this patient (assuming male) has 38 ✓. (3) BP ≥130/85 mmHg — this patient has 128/82 — does NOT meet this criterion ✗. (4) Fasting glucose ≥100 mg/dL — this patient has 104 ✓. Patient has central obesity + 3 additional criteria (triglycerides, HDL, fasting glucose) — QUALIFIES for metabolic syndrome diagnosis. The insulin resistance driving all these findings is the root cause. Treatment: lifestyle-first — 5–10% weight loss addresses all criteria simultaneously by addressing the underlying insulin resistance."
+    },
+    {
+      "id": 22,
+      "unit": "general",
+      "topic": "Metabolic Syndrome — Insulin Resistance Mechanism",
+      "type": "mc",
+      "q": "Why does treating just one component of metabolic syndrome (e.g., only lowering blood pressure with medication) while ignoring the others represent an incomplete approach to care?",
+      "opts": [
+        "Because blood pressure medication is too expensive and other treatments are more cost-effective",
+        "Because all five components of metabolic syndrome share the same root cause — insulin resistance driven by excess visceral fat — and medication addressing only one branch leaves the underlying driver untreated",
+        "Because blood pressure medications cause the other components of metabolic syndrome to worsen",
+        "Because dietary changes alone can never reduce blood pressure in metabolic syndrome patients"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Metabolic syndrome is not five separate problems that happen to coexist — it is one root problem (insulin resistance from excess visceral fat) creating five downstream consequences simultaneously. Excess visceral fat releases inflammatory cytokines and free fatty acids that impair insulin signaling throughout the body → this drives: elevated blood glucose (cells can't respond to insulin), elevated triglycerides (liver overproduces VLDL due to insulin resistance), low HDL (triglyceride-rich HDL is catabolized faster), elevated blood pressure (insulin resistance affects vascular tone and sodium retention), and central fat accumulation (insulin resistance promotes fat storage). Giving metformin for glucose without addressing obesity and inactivity is like treating a leaky dam by bailing water from one hole while the other three holes remain open. Lifestyle change — specifically weight loss — addresses the root and improves all five criteria simultaneously."
+    },
+    {
+      "id": 23,
+      "unit": "general",
+      "topic": "Metabolic Syndrome — Obesity and Cancer",
+      "type": "mc",
+      "q": "A patient says she is not worried about her obesity because 'it just affects my heart and diabetes.' The nurse should educate her that obesity is also a confirmed risk factor for at least how many different types of cancer?",
+      "opts": [
+        "2 types of cancer — only colon and breast cancer",
+        "5 types of cancer — colon, breast, uterus, pancreas, and prostate",
+        "At least 13 types of cancer — including colon, uterine, pancreatic, esophageal, kidney, breast (post-menopausal), liver, ovarian, thyroid, gallbladder, stomach, multiple myeloma, and meningioma",
+        "Obesity has not been scientifically linked to cancer — only to cardiovascular disease and diabetes"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Obesity is a confirmed risk factor for at least 13 different cancers, according to the CDC and IARC. The mechanism: adipose (fat) tissue is metabolically active — it produces excess estrogen (promoting hormone-sensitive cancers like uterine and post-menopausal breast cancer), inflammatory cytokines (promoting cell proliferation and inhibiting apoptosis), and insulin and insulin-like growth factors (stimulating cancer cell growth). The 13+ cancers linked to excess body weight: colon and rectum, uterus (endometrium), esophagus (adenocarcinoma), pancreas, kidney, liver, post-menopausal breast, ovary, thyroid, gallbladder, stomach (gastric cardia), multiple myeloma, and meningioma. This is patient education gold — most people have no idea about the cancer connection. Framing this honestly and empathetically (not as blame) is an important nursing communication skill."
+    },
+    {
+      "id": 24,
+      "unit": "cvd",
+      "topic": "CVD — Cholesterol Target Values",
+      "type": "mc",
+      "q": "A patient's lipid panel results are: Total cholesterol 224 mg/dL, LDL 148 mg/dL, HDL 38 mg/dL, Triglycerides 188 mg/dL. Which of the following CORRECTLY identifies all the abnormal values?",
+      "opts": [
+        "Only the total cholesterol is abnormal — the others are within normal limits",
+        "Total cholesterol, LDL, HDL, and triglycerides are all outside their optimal ranges — this is a high-risk lipid profile",
+        "Only HDL is abnormal — low HDL is the only truly dangerous finding",
+        "LDL and triglycerides are normal; only total cholesterol and HDL need attention"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Normal/optimal lipid values: Total cholesterol <200 mg/dL — this patient has 224 ✗ (elevated). LDL <100 mg/dL (optimal; <129 mg/dL is near optimal) — this patient has 148 ✗ (elevated). HDL >60 mg/dL is protective; <40 mg/dL in men is a risk factor — this patient has 38 ✗ (too low). Triglycerides <150 mg/dL — this patient has 188 ✗ (elevated). ALL FOUR values are outside optimal ranges — this represents a high-risk lipid profile that significantly increases cardiovascular disease risk. This patient needs: dietary intervention (reduce saturated and trans fats, increase soluble fiber, add omega-3s, reduce refined carbohydrates for triglycerides), physical activity (raises HDL specifically), and likely statin therapy for LDL reduction."
+    },
+    {
+      "id": 25,
+      "unit": "diabetes",
+      "topic": "Diabetes — Key Numbers Summary",
+      "type": "mc",
+      "q": "A nurse is reviewing lab values for a patient with known Type 2 diabetes. Which of the following sets of values represents WELL-CONTROLLED diabetes?",
+      "opts": [
+        "Fasting glucose 185 mg/dL, HbA1c 9.2%, average glucose ~220 mg/dL",
+        "Fasting glucose 88 mg/dL, HbA1c 6.4%, average glucose ~138 mg/dL — within normal limits for a well-controlled diabetic",
+        "Fasting glucose 165 mg/dL, HbA1c 7.2% — borderline but acceptable for most T2D patients",
+        "Fasting glucose 48 mg/dL, HbA1c 5.1% — optimal control means glucose should be as low as possible"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Well-controlled Type 2 diabetes targets: Fasting blood glucose: 70–130 mg/dL before meals. HbA1c: <7% for most patients (individualized — some patients, such as the elderly or those with frequent hypoglycemia, may have a target of <8%). Option A: HbA1c 9.2% = very poorly controlled; estimated average glucose ~220 mg/dL. Option B: Fasting 88 mg/dL (within 70–130 ✓) and HbA1c 6.4% (below 7% target ✓) = well controlled. Option C: HbA1c 7.2% is above target for most patients but may be acceptable for some. Option D: Fasting of 48 mg/dL = hypoglycemia; HbA1c of 5.1% may indicate over-treatment causing dangerous hypoglycemia episodes — too low is NOT the goal. Hypoglycemia can be more immediately dangerous than moderate hyperglycemia."
+    },
+    {
+      "id": 26,
+      "unit": "general",
+      "topic": "Chronic Disease — Fiber Recommendations",
+      "type": "mc",
+      "q": "A patient asks the nurse how much dietary fiber she should consume each day. Based on current guidelines, the nurse should recommend:",
+      "opts": [
+        "5–10 grams per day — just enough to prevent constipation",
+        "14 grams of fiber for every 1,000 calories consumed; approximately 25 grams per day for women and 38 grams per day for men",
+        "50 grams per day regardless of caloric intake or sex",
+        "Fiber intake does not matter as long as you take a probiotic supplement"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Current fiber recommendations from the Academy of Nutrition and Dietetics and the DRI committee: 14 grams per 1,000 calories consumed. This translates to approximately: 25 grams per day for women and 38 grams per day for men (based on typical adult caloric intakes). These recommendations are based on the intake levels known to prevent cardiovascular disease. Most Americans consume less than half the recommended amount — approximately 15 grams/day on average. Benefits of adequate fiber: lower LDL cholesterol (soluble fiber), reduced colon cancer risk, blood glucose regulation (slows absorption), improved satiety and weight management, gut microbiome support, and reduced risk of diverticular disease. Sources: beans, lentils, vegetables, whole grains, fruits, nuts, and seeds."
+    },
+    {
+      "id": 27,
+      "unit": "general",
+      "topic": "Chronic Disease — Added Sugar Limits",
+      "type": "mc",
+      "q": "The American Heart Association recommends limiting added sugar intake. Which of the following reflects the AHA's daily added sugar recommendation?",
+      "opts": [
+        "No more than 50 grams (12.5 teaspoons) per day for all adults",
+        "No more than 25 grams (6 teaspoons) per day for women; no more than 36 grams (9 teaspoons) per day for men",
+        "No more than 100 grams (25 teaspoons) per day for active adults",
+        "Added sugars should be completely eliminated from the diet"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "AHA recommendations for added sugar (not naturally occurring sugars in whole fruit or dairy): Women: ≤25 grams (≤6 teaspoons) per day = 100 calories. Men: ≤36 grams (≤9 teaspoons) per day = 150 calories. The Dietary Guidelines for Americans and WHO recommend limiting added sugars to <10% of total calories. The average American consumes approximately 77 grams (~19 teaspoons) of added sugar per day — more than double the AHA recommendation. To put this in perspective: a single 12 oz can of regular soda contains approximately 39 grams (~10 teaspoons) of added sugar, which exceeds both the daily AHA recommendations in a single beverage. Added sugars drive triglyceride elevation, contribute to obesity and metabolic syndrome, and when they replace nutrient-dense foods, lead to micronutrient deficiencies."
+    },
+    {
+      "id": 28,
+      "unit": "general",
+      "topic": "Chronic Disease — Modifiable vs. Non-Modifiable",
+      "type": "sata",
+      "q": "SELECT ALL THAT APPLY. A 50-year-old male patient with obesity, a father who had a heart attack at 55, and a personal history of smoking has come in for a wellness visit. Which of the following are MODIFIABLE risk factors the nurse should target in education?",
+      "opts": [
+        "His age — 50 years old",
+        "His smoking history — he quit 2 years ago but smoked for 20 years",
+        "His current obesity — BMI 34",
+        "His father's heart attack at 55 — family history of premature CVD",
+        "His diet — he eats a high saturated fat, low fiber diet",
+        "His sedentary lifestyle — he reports no regular exercise"
+      ],
+      "correct": [
+        2,
+        4,
+        5
+      ],
+      "rationale": "MODIFIABLE risk factors — things the patient can change now: (3) Current obesity — BMI 34 is class 1 obesity; weight loss is directly actionable and will reduce CVD, T2D, and cancer risk. (5) Diet — a high saturated fat, low fiber diet can be changed through education and support. (6) Sedentary lifestyle — 150 minutes per week of moderate exercise is achievable and significantly reduces CVD risk. NON-MODIFIABLE: (1) Age — 50 years cannot be changed. (4) Family history of premature CVD — his father's heart attack at 55 cannot be changed; this is a significant non-modifiable risk factor that intensifies the need to address the modifiable ones. PARTIALLY MODIFIABLE: (2) Smoking history — he quit 2 years ago, which is excellent — the damage from 20 years of smoking decreases over time but past exposure cannot be fully undone. His cessation status is a success to reinforce, not an active modifiable target."
+    },
+    {
+      "id": 29,
+      "unit": "cvd",
+      "topic": "CVD — Omega-3 Fatty Acids",
+      "type": "mc",
+      "q": "A patient asks why her cardiologist recommended eating fatty fish at least twice per week. The nurse correctly explains that omega-3 fatty acids (EPA and DHA) found in fatty fish:",
+      "opts": [
+        "Raise LDL cholesterol levels to protect arteries from inflammation",
+        "Reduce triglycerides, decrease inflammation, reduce arrhythmia risk, and support overall cardiovascular health",
+        "Are only beneficial for people who already have heart disease — healthy people do not need omega-3s",
+        "Can be taken in unlimited amounts as supplements since they are natural and have no side effects"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Omega-3 fatty acids — specifically EPA (eicosapentaenoic acid) and DHA (docosahexaenoic acid) from fatty fish — have multiple cardiovascular benefits: Lower triglycerides (most potent dietary intervention for elevated triglycerides), Anti-inflammatory effects (omega-3s are metabolically converted to anti-inflammatory eicosanoids vs. omega-6s which are pro-inflammatory), Reduce arrhythmia risk (stabilize cardiac cell membranes), Mild blood pressure reduction, and Anti-thrombotic effects (slightly reduce platelet aggregation). Best food sources: salmon, mackerel, herring, sardines, albacore tuna, lake trout. Omega-3 supplements: at very high doses (>3 grams/day) may increase bleeding risk and should be used cautiously in patients on anticoagulants. Omega-3s are beneficial for everyone, not just those with heart disease — prevention is the primary purpose."
+    },
+    {
+      "id": 30,
+      "unit": "cancer",
+      "topic": "Cancer — Plant-Based Diet and Cancer Prevention",
+      "type": "mc",
+      "q": "A patient asks why cruciferous vegetables specifically — like broccoli, cauliflower, Brussels sprouts, and kale — are often highlighted in cancer prevention guidelines. The nurse's BEST explanation is:",
+      "opts": [
+        "Cruciferous vegetables are only beneficial for preventing skin cancer from UV exposure",
+        "Cruciferous vegetables contain specific compounds called glucosinolates that are converted to isothiocyanates in the body — these compounds have well-studied cancer-protective properties and have been linked to reduced risk of several cancers including endometrial, esophageal, and colorectal cancer",
+        "Cruciferous vegetables prevent cancer only if eaten raw — cooking destroys all beneficial compounds",
+        "Cruciferous vegetables are highlighted primarily because they contain the most vitamin C of any vegetable group"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Cruciferous vegetables (broccoli, cauliflower, Brussels sprouts, kale, cabbage, bok choy, arugula, radishes) contain glucosinolates — sulfur-containing compounds that are broken down during chewing and digestion into biologically active isothiocyanates (such as sulforaphane) and indoles. These compounds have multiple cancer-protective mechanisms: they stimulate detoxification enzymes that neutralize carcinogens, promote apoptosis (programmed cell death) in abnormal cells, inhibit angiogenesis (blood vessel formation that feeds tumors), and have anti-inflammatory properties. Epidemiological studies consistently show associations between higher cruciferous vegetable intake and reduced risk of several cancers. Cooking DOES reduce some glucosinolates — light steaming preserves more than boiling — but cooked cruciferous vegetables still retain significant protective compounds. They also contain vitamin C, but this is not the primary cancer-protective mechanism."
+    }
+  ]
+}
