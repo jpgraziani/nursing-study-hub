@@ -1,0 +1,80 @@
+{
+  "id": "nutrition-mod8-case",
+  "class": "nutrition",
+  "module": 8,
+  "title": "Module 8 — Case Study Questions",
+  "description": "10-question quiz based on Module 8 assessment and intervention concepts covering nutrition screening, enteral nutrition, parenteral nutrition, therapeutic diets, and clinical application.",
+  "topics": ["nutrition screening", "malnutrition", "therapeutic diet", "enteral nutrition", "parenteral nutrition", "bolus feeding", "continuous feeding", "TPN", "low residue diet", "CRP", "liver", "BMI", "indirect calorimetry"],
+  "questions": [
+    {
+      "id": 1, "unit": "parenteral", "topic": "Parenteral Nutrition", "type": "mc",
+      "q": "Central parenteral nutrition (CPN) can provide higher concentrations of nutrition due to the larger vein used for administration. This statement is:",
+      "opts": ["True — central veins have rapid, high-volume blood flow that immediately dilutes hyperosmolar TPN formula, allowing delivery of highly concentrated nutrition", "False — central veins provide no advantage over peripheral veins for TPN delivery", "True — but only for patients on dialysis", "False — TPN concentration is the same regardless of which vein is used"],
+      "correct": [0],
+      "rationale": "This is TRUE. CPN is delivered through a large central vein — typically the superior vena cava — which has rapid, high-volume blood flow that immediately dilutes the concentrated formula. This is what allows delivery of the high-osmolarity, calorie-dense solutions required for TPN. Peripheral veins cannot tolerate these concentrations and would develop thrombophlebitis."
+    },
+    {
+      "id": 2, "unit": "assess", "topic": "Nutrition Screening", "type": "mc",
+      "q": "When is a nutrition screening typically done for a patient admitted to a hospital or healthcare facility?",
+      "opts": ["Within the first 48 hours", "After 72 hours", "Within the first 24 hours", "Within the first 12 hours"],
+      "correct": [2],
+      "rationale": "Nutrition screening must be completed within the first 24 hours of hospital admission. This is a standard clinical requirement and a nursing responsibility. Early identification allows intervention before the patient's status deteriorates further from reduced intake, NPO orders, increased metabolic demands, or medication side effects. If screening reveals risk, the patient is referred to an RD for full assessment."
+    },
+    {
+      "id": 3, "unit": "energy", "topic": "Energy Estimation", "type": "mc",
+      "q": "What is the most accurate method for measuring energy needs in hospital patients?",
+      "opts": ["Food frequency questionnaire", "Indirect calorimetry", "Predictive equations", "Direct observation"],
+      "correct": [1],
+      "rationale": "Indirect calorimetry is the gold standard — it measures actual oxygen consumption (VO₂) and carbon dioxide production (VCO₂) to calculate real-time caloric expenditure. Predictive equations (Mifflin-St. Jeor, Harris-Benedict) are useful bedside tools but are estimates based on population averages. A food frequency questionnaire assesses dietary patterns, not energy expenditure. Direct observation watches what a patient eats, not what they need."
+    },
+    {
+      "id": 4, "unit": "enteral", "topic": "Enteral Nutrition", "type": "mc",
+      "q": "What is the difference between bolus feedings and continuous feedings?",
+      "opts": ["Bolus feedings are given only at mealtimes while continuous feedings are provided in small amounts throughout the day", "There is no difference; both are the same", "Bolus feedings are given continuously, while continuous feedings are given at set mealtimes", "Continuous feedings are provided only in the morning"],
+      "correct": [0],
+      "rationale": "Bolus feedings deliver large volumes (250–500 mL) over 15–30 minutes at set mealtimes — used ONLY with gastric tubes because the stomach can handle volume. Continuous feedings deliver a slow, steady stream via pump over 16–24 hours — REQUIRED for small intestine tubes (NJ, ND, J-tube) because the jejunum cannot tolerate large volumes. The other options are all factually incorrect."
+    },
+    {
+      "id": 5, "unit": "parenteral", "topic": "Parenteral Nutrition", "type": "mc",
+      "q": "What factors are considered to determine a patient's nutritional needs for parenteral nutrition?",
+      "opts": ["Age and lifestyle choices", "BMI and lab test results only", "Health history, BMI, and lab test results", "Health history and weight alone"],
+      "correct": [2],
+      "rationale": "Determining nutritional needs for TPN requires a comprehensive picture: health history provides context about conditions, medications, and metabolic demands; BMI and weight establish caloric and protein targets (25–30 kcal/kg/day starting point); lab results (electrolytes, blood glucose, liver and kidney function) allow individualized TPN formulation. TPN is compounded by a pharmacist in 24-hour doses and adjusted continuously as labs change. No single factor is sufficient."
+    },
+    {
+      "id": 6, "unit": "assess", "topic": "Nutrition Assessment — Care Process", "type": "mc",
+      "q": "The nutrition care process includes four main steps. Which answer correctly lists them in order?",
+      "opts": ["Screening, assessment, monitoring, discharge planning", "Assessment, diagnosis, intervention, monitoring and evaluation", "Intervention, assessment, diagnosis, monitoring", "Diagnosis, screening, intervention, documentation"],
+      "correct": [1],
+      "rationale": "The four-step nutrition care process is: (1) Assessment — gathering anthropometric, biochemical, dietary, and historical data; (2) Diagnosis — identifying nutrition problems using the PES format; (3) Intervention — implementing the nutrition plan through diet modification, education, EN/TPN, and counseling; (4) Monitoring & Evaluation — tracking outcomes and adjusting the plan. This mirrors the nursing process and is cyclical."
+    },
+    {
+      "id": 7, "unit": "enteral", "topic": "Enteral Nutrition", "type": "mc",
+      "q": "What is the typical fasting requirement before a hospital procedure for inserting a feeding tube?",
+      "opts": ["No fasting is required", "Fast for at least eight hours", "Fast for 24 hours", "Fast for 12 hours"],
+      "correct": [1],
+      "rationale": "For procedures involving sedation or anesthesia (endoscopic PEG placement, surgical placement), an eight-hour fast prevents aspiration — the number one risk when protective reflexes are suppressed under sedation. 24 hours is unnecessarily long and worsens malnutrition. 12 hours exceeds clinical requirements. Note: bedside nasal tube placement without sedation may not require this fast."
+    },
+    {
+      "id": 8, "unit": "assess", "topic": "Nutrition Assessment — Anthropometrics", "type": "mc",
+      "q": "What is the significance of the 5th and 85th percentiles on a BMI growth chart for children?",
+      "opts": ["They are used to assess hydration levels", "They indicate the average growth pattern for all children", "They determine daily caloric needs", "They help identify undernutrition and overnutrition"],
+      "correct": [3],
+      "rationale": "In pediatric nutrition assessment, BMI is compared to age- and sex-specific percentiles. Below the 5th percentile signals undernutrition risk. At or above the 85th percentile signals overnutrition/overweight risk (at or above 95th percentile = obese). Children's BMI must be compared to percentile charts because healthy BMI changes as children grow — a single number means nothing without that age context."
+    },
+    {
+      "id": 9, "unit": "diets", "topic": "Therapeutic Diets", "type": "mc",
+      "q": "How does a low-residue diet differ from a low-fiber diet?",
+      "opts": ["It increases protein intake for muscle repair", "It eliminates all fats from the diet", "It further reduces foods that leave undigested material in the colon", "It includes only clear liquids"],
+      "correct": [2],
+      "rationale": "A low-fiber diet limits insoluble fiber (whole grains, raw vegetables, seeds) to reduce bulk and bowel stimulation. A low-residue diet goes further by also restricting other foods that leave colonic residue even without high fiber content — certain dairy products, dried fruits, etc. Both are used for bowel rest — Crohn's flares, post-GI surgery, radiation, partial obstruction. Neither increases protein, eliminates all fat, or consists of only clear liquids."
+    },
+    {
+      "id": 10, "unit": "enteral", "topic": "Enteral Nutrition", "type": "mc",
+      "q": "What is the primary purpose of tube feeding (enteral nutrition)?",
+      "opts": ["To provide hydration only", "To aid in weight loss", "To supply nutrients and fluids when chewing or swallowing is not safe", "To improve oral health"],
+      "correct": [2],
+      "rationale": "The primary purpose of enteral nutrition is to deliver the nutrients and fluids a patient needs through a feeding tube that bypasses the normal oral route when a patient cannot safely chew or swallow. The guiding principle is 'if the gut works, use it.' It is not a hydration-only tool (IV fluids handle that separately), not a weight loss intervention, and has no relationship to oral health."
+    }
+  ]
+}

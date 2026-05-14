@@ -1,0 +1,65 @@
+{
+  "site": {
+    "title": "Nursing Study Hub",
+    "subtitle": "Jonathan's Interactive Study Center",
+    "version": "1.0.0"
+  },
+  "classes": [
+    {
+      "id": "nutrition",
+      "name": "Nutrition & Biology",
+      "code": "BIO 127IN",
+      "color": "#1A3A5C",
+      "accent": "#4A9EDB",
+      "icon": "🧬",
+      "term": "Spring 2026"
+    },
+    {
+      "id": "psych",
+      "name": "Psychology 2",
+      "code": "PSY 202",
+      "color": "#4A1570",
+      "accent": "#A855F7",
+      "icon": "🧠",
+      "term": "Summer 2026"
+    }
+  ],
+  "content": [
+    {
+      "id": "nutrition-mod8-full",
+      "file": "nutrition_mod8_full_quiz.json",
+      "class": "nutrition",
+      "module": 8,
+      "type": "quiz",
+      "title": "Module 8 — Full Coverage NCLEX Quiz",
+      "description": "57-question comprehensive quiz covering all Module 8 sections",
+      "topics": ["nutrition assessment", "nutrition screening", "biochemical data", "anthropometrics", "therapeutic diets", "enteral nutrition", "parenteral nutrition", "drug interactions", "energy estimation", "documentation", "ADIME", "SOAP", "PES statement", "albumin", "prealbumin", "CRP", "tube feeding", "TPN", "warfarin", "grapefruit", "liver", "refeeding syndrome", "aspiration", "indirect calorimetry", "Mifflin St Jeor"],
+      "questionCount": 57,
+      "tags": ["NCLEX", "Module 8", "full coverage"]
+    },
+    {
+      "id": "nutrition-mod8-short",
+      "file": "nutrition_mod8_short_quiz.json",
+      "class": "nutrition",
+      "module": 8,
+      "type": "quiz",
+      "title": "Module 8 — Short Answer Practice",
+      "description": "10-question short answer quiz on key Module 8 concepts",
+      "topics": ["nutrition screening", "malnutrition risks", "COPD nutrition", "protein energy malnutrition", "high calorie diet", "multidisciplinary care", "CRP", "liver", "inflammation"],
+      "questionCount": 10,
+      "tags": ["Module 8", "short answer"]
+    },
+    {
+      "id": "nutrition-mod8-case",
+      "file": "nutrition_mod8_case_quiz.json",
+      "class": "nutrition",
+      "module": 8,
+      "type": "quiz",
+      "title": "Module 8 — Case Study Questions",
+      "description": "10-question quiz based on module 8 assessment and intervention concepts",
+      "topics": ["nutrition screening", "malnutrition", "therapeutic diet", "enteral nutrition", "parenteral nutrition", "bolus feeding", "continuous feeding", "TPN", "low residue diet", "CRP", "liver", "BMI"],
+      "questionCount": 10,
+      "tags": ["Module 8", "case study"]
+    }
+  ]
+}

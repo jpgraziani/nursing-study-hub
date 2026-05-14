@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Nursing Study Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+
+<!-- ── SIDEBAR ─────────────────────────────────── -->
+<aside id="sidebar">
+  <div class="sidebar-header">
+    <div class="logo">
+      <span class="logo-icon">⚕</span>
+      <div>
+        <div class="logo-title">Study Hub</div>
+        <div class="logo-sub">Jonathan's Notes</div>
+      </div>
+    </div>
+    <button id="sidebar-toggle" onclick="toggleSidebar()" aria-label="Close sidebar">✕</button>
+  </div>
+
+  <nav id="sidebar-nav">
+    <div class="nav-section-label">Dashboard</div>
+    <a class="nav-link active" onclick="showView('home')" href="#">
+      <span class="nav-icon">⌂</span> Home
+    </a>
+    <a class="nav-link" onclick="showView('search')" href="#">
+      <span class="nav-icon">⌕</span> Search All Content
+    </a>
+
+    <div class="nav-section-label" style="margin-top:20px">Classes</div>
+    <div id="class-nav"></div>
+  </nav>
+
+  <div class="sidebar-footer">
+    <button class="theme-btn" onclick="toggleTheme()">
+      <span id="theme-icon">☾</span> <span id="theme-label">Dark Mode</span>
+    </button>
+  </div>
+</aside>
+
+<!-- ── MAIN ────────────────────────────────────── -->
+<div id="app">
+
+  <!-- Top bar -->
+  <header id="topbar">
+    <button id="menu-btn" onclick="toggleSidebar()">☰</button>
+    <div id="breadcrumb"></div>
+    <div id="search-mini-wrap">
+      <input id="search-mini" type="text" placeholder="Search everything…" oninput="miniSearch(this.value)" autocomplete="off">
+      <div id="search-mini-results"></div>
+    </div>
+  </header>
+
+  <!-- Views -->
+  <main id="main-content">
+
+    <!-- HOME VIEW -->
+    <div id="view-home" class="view active">
+      <div class="hero">
+        <div class="hero-text">
+          <h1>Nursing Study Hub</h1>
+          <p>All your quizzes and study material in one place. Search across every class, every module, every topic.</p>
+        </div>
+        <div class="hero-search">
+          <input id="hero-search" type="text" placeholder="Search topics, concepts, terms…" oninput="heroSearch(this.value)" autocomplete="off">
+          <div id="hero-search-results"></div>
+        </div>
+      </div>
+      <div id="home-classes"></div>
+      <div id="home-recent" class="home-section" style="display:none">
+        <h2 class="section-title">Recently Scored</h2>
+        <div id="recent-scores"></div>
+      </div>
+    </div>
+
+    <!-- CLASS VIEW -->
+    <div id="view-class" class="view">
+      <div id="class-header"></div>
+      <div id="class-content"></div>
+    </div>
+
+    <!-- SEARCH VIEW -->
+    <div id="view-search" class="view">
+      <div class="search-hero">
+        <h2>Search All Content</h2>
+        <div class="search-bar-wrap">
+          <input id="full-search" type="text" placeholder="Try 'liver', 'TPN', 'warfarin', 'assessment'…" oninput="fullSearch(this.value)" autocomplete="off">
+        </div>
+        <div id="search-filters"></div>
+      </div>
+      <div id="search-results"></div>
+    </div>
+
+    <!-- QUIZ VIEW -->
+    <div id="view-quiz" class="view">
+      <div id="quiz-area"></div>
+    </div>
+
+  </main>
+</div>
+
+<script src="site.js"></script>
+</body>
+</html>

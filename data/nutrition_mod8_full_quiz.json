@@ -1,0 +1,409 @@
+{
+  "id": "nutrition-mod8-full",
+  "class": "nutrition",
+  "module": 8,
+  "title": "Module 8 — Full Coverage NCLEX Quiz",
+  "description": "57-question comprehensive quiz covering all Module 8 sections including nutrition assessment, therapeutic diets, enteral nutrition, parenteral nutrition, drug-nutrient interactions, energy estimation, and documentation.",
+  "topics": ["nutrition assessment", "nutrition screening", "biochemical data", "anthropometrics", "therapeutic diets", "enteral nutrition", "parenteral nutrition", "drug interactions", "energy estimation", "documentation", "ADIME", "SOAP", "PES statement", "albumin", "prealbumin", "CRP", "tube feeding", "TPN", "warfarin", "grapefruit", "liver", "refeeding syndrome", "aspiration", "indirect calorimetry", "Mifflin St Jeor"],
+  "questions": [
+    {
+      "id": 1, "unit": "assess", "topic": "Nutrition Assessment — Screening", "type": "mc",
+      "q": "A patient is admitted to the hospital at 3 PM. By when must the initial nutrition screening be completed?",
+      "opts": ["By 3 PM the following day — within 24 hours of admission", "Within 48 hours, once the physician has reviewed the chart", "Only after lab results are available", "When the registered dietitian is next available"],
+      "correct": [0],
+      "rationale": "Nutrition screening must occur within the FIRST 24 HOURS of admission — this is a standard clinical requirement, not a guideline. Any member of the healthcare team can perform it, but it typically falls to the admitting nurse. If screening identifies risk, the patient is referred to the RD for a full assessment. Waiting for labs (C) or the dietitian (D) bypasses the nurse's screening role entirely. 48 hours (B) is too late per established standards."
+    },
+    {
+      "id": 2, "unit": "assess", "topic": "Nutrition Assessment — Team Roles", "type": "mc",
+      "q": "Which healthcare professional is specifically qualified to provide medical nutrition therapy, write a nutrition diagnosis, and create a personalized nutrition plan?",
+      "opts": ["The bedside nurse", "The physician", "The registered dietitian (RD)", "The pharmacist"],
+      "correct": [2],
+      "rationale": "The registered dietitian (RD) is credentialed specifically for medical nutrition therapy — this includes comprehensive nutrition assessment, writing PES-format nutrition diagnoses, creating individualized nutrition plans, and monitoring their effectiveness. The nurse (A) screens, monitors, and administers the plan but does not prescribe it. The physician (B) oversees medical care and orders consults but depends on the RD for nutrition expertise. The pharmacist (D) manages drug-nutrient interactions and TPN formulas but does not create diet plans."
+    },
+    {
+      "id": 3, "unit": "assess", "topic": "Nutrition Assessment — Historical Data", "type": "sata",
+      "q": "A nurse is completing a nutrition history intake for a newly admitted patient. Select ALL categories that are part of a complete nutrition history.",
+      "opts": ["Prescription and over-the-counter medications", "Dietary and herbal supplements", "Food allergies and intolerances", "The patient's insurance provider", "Socioeconomic status and food availability", "Physical activity level and exercise habits"],
+      "correct": [0, 1, 2, 4, 5],
+      "rationale": "A complete nutrition history covers four domains: medical history, medication and supplement history, personal and social history, and food and nutrition history. Medications (A), supplements (B), food allergies (C), socioeconomic status/food availability (E), and physical activity (F) all fall within these domains. Insurance provider (D) is an administrative matter — not a nutrition assessment component."
+    },
+    {
+      "id": 4, "unit": "assess", "topic": "Nutrition Assessment — Food Intake Methods", "type": "mc",
+      "q": "Which dietary assessment method provides the MOST detailed, individualized picture of a patient's actual daily eating behaviors?",
+      "opts": ["24-hour diet recall", "Food frequency questionnaire", "Food record kept over 3–7 days", "Direct observation at one mealtime"],
+      "correct": [2],
+      "rationale": "A food record (diet diary) kept over 3–7 days captures portion sizes, meal timing, food preparation methods, and eating patterns across multiple days — providing the most detailed and individualized picture of actual intake. The 24-hour recall (A) gives only a single-day snapshot and relies on memory. The food frequency questionnaire (B) identifies long-term patterns but lacks precision on amounts. Direct observation (D) captures one meal and cannot represent the patient's typical intake."
+    },
+    {
+      "id": 5, "unit": "assess", "topic": "Nutrition Assessment — Food Intake Methods", "type": "mc",
+      "q": "A patient is being screened in an outpatient clinic for chronic disease risk related to long-term dietary habits. Which assessment method is MOST appropriate?",
+      "opts": ["24-hour diet recall", "Food frequency questionnaire", "Direct observation", "Food record"],
+      "correct": [1],
+      "rationale": "The food frequency questionnaire is designed to identify long-term eating patterns by asking how often specific food categories are consumed over weeks or months. This makes it ideal for chronic disease risk screening. The 24-hour recall (A) gives a snapshot of one recent day, not long-term habits. Direct observation (C) captures one mealtime. A food record (D) requires 3–7 days of patient logging — more intensive than needed for initial chronic disease screening."
+    },
+    {
+      "id": 6, "unit": "assess", "topic": "Nutrition Assessment — Anthropometrics", "type": "mc",
+      "q": "A patient weighed 180 lbs six months ago and now weighs 162 lbs. How should the nurse interpret this weight change?",
+      "opts": ["A normal fluctuation that does not require further assessment", "A 10% weight loss over 6 months — a clinical indicator of probable protein-energy malnutrition requiring further assessment", "A significant loss but only concerning if the patient also has lab abnormalities", "Clinically insignificant since BMI is still within normal range"],
+      "correct": [1],
+      "rationale": "A weight loss of 10% or more over 6 months is a recognized clinical threshold for probable protein-energy malnutrition (PEM) — this patient lost exactly 10% [(180-162)/180 × 100]. This meets the benchmark and warrants immediate further assessment regardless of other findings. Normal fluctuation (A) is minor (1-2 lbs). Lab abnormalities (C) are not required to trigger concern. BMI status (D) does not negate the significance of a 10% loss over 6 months."
+    },
+    {
+      "id": 7, "unit": "assess", "topic": "Nutrition Assessment — Anthropometrics", "type": "mc",
+      "q": "A pediatric patient's BMI plots at the 4th percentile on the growth chart. How should this be interpreted?",
+      "opts": ["Normal — below the 5th percentile is acceptable for small-framed children", "Below the 5th percentile — this signals undernutrition risk and warrants further assessment", "Overnutrition risk — percentile values below 50 indicate low weight", "This finding is only significant in children under age 2"],
+      "correct": [1],
+      "rationale": "In pediatric nutrition assessment, a BMI below the 5th percentile signals undernutrition risk and requires further evaluation. The 5th and 85th percentiles are the key cutoff points on growth charts — below 5th = undernutrition risk; at or above 85th = overnutrition risk. Pediatric BMI must always be compared to age- and sex-specific percentile charts because healthy BMI changes with development."
+    },
+    {
+      "id": 8, "unit": "assess", "topic": "Nutrition Assessment — Biochemical Data", "type": "mc",
+      "q": "Which serum protein has the SHORTEST half-life and is therefore the MOST sensitive to acute, short-term changes in nutritional status?",
+      "opts": ["Albumin (~20-day half-life)", "Transferrin (~8–10-day half-life)", "Prealbumin/Transthyretin (~2-day half-life)", "C-reactive protein"],
+      "correct": [2],
+      "rationale": "Prealbumin (transthyretin) has the shortest half-life at approximately 2 days, making it the most responsive marker to recent or acute changes in protein status. Albumin (A) has a ~20-day half-life and reflects chronic/long-term nutritional status. Transferrin (B) has an intermediate half-life (~8–10 days). CRP (D) is an inflammatory marker, not a nutritional protein — but it is essential context for interpreting the others, since inflammation suppresses albumin and prealbumin independently of nutrition."
+    },
+    {
+      "id": 9, "unit": "assess", "topic": "Nutrition Assessment — Biochemical Data", "type": "mc",
+      "q": "A patient has a serum albumin of 2.9 g/dL and a markedly elevated C-reactive protein. What is the BEST clinical interpretation?",
+      "opts": ["The low albumin confirms severe malnutrition as the sole cause", "The elevated CRP is unrelated to albumin levels", "Low albumin likely reflects BOTH active inflammation suppressing production AND possible underlying malnutrition — CRP is essential context", "Normal finding — albumin below 3.0 is acceptable during hospitalization"],
+      "correct": [2],
+      "rationale": "During active inflammation, the liver shifts protein production away from albumin toward acute-phase immune proteins — dropping albumin even in well-nourished patients. An elevated CRP confirms this inflammatory state. This means the low albumin reflects a combination of true malnutrition AND inflammation-driven suppression. An albumin of 2.9 g/dL is below the normal range of 3.5–5.0 g/dL and is not acceptable."
+    },
+    {
+      "id": 10, "unit": "assess", "topic": "Nutrition Assessment — Physical Exam", "type": "mc",
+      "q": "During a physical assessment, a nurse notes a patient has spoon-shaped, pale nails. Which nutrient deficiency does this finding suggest?",
+      "opts": ["Vitamin C deficiency", "Zinc deficiency", "Iron deficiency", "Vitamin D deficiency"],
+      "correct": [2],
+      "rationale": "Spoon-shaped nails (koilonychia) and pale nail beds are classic physical signs of iron deficiency anemia. The pallor reflects reduced hemoglobin, and the spoon shape results from structural changes in the nail from inadequate iron. Vitamin C deficiency (A) causes corkscrew hair and bleeding gums. Zinc deficiency (B) causes poor taste sensation and poor wound healing. Vitamin D deficiency (D) causes bowed legs and bone pain."
+    },
+    {
+      "id": 11, "unit": "assess", "topic": "Nutrition Assessment — Physical Exam", "type": "sata",
+      "q": "The nurse is performing a physical examination as part of a nutrition assessment. Select ALL findings that suggest possible nutrient deficiency.",
+      "opts": ["Dull, brittle hair that falls out easily", "Bright, clear eyes that adjust to light normally", "Bleeding gums and sores at the corners of the mouth", "Smooth, firm, pink nails", "Dry, rough skin with poor wound healing", "Peripheral edema in both lower legs"],
+      "correct": [0, 2, 4, 5],
+      "rationale": "Dull, brittle hair (A) suggests PEM or vitamin C deficiency. Bleeding gums and lip corner sores (C) suggest vitamin C and/or B vitamin deficiencies. Dry, rough skin with poor wound healing (E) suggests PEM, vitamin C, zinc, or essential fatty acid deficiency. Peripheral edema (F) can indicate protein deficiency (low oncotic pressure from low albumin). Bright eyes adjusting normally to light (B) are a sign of good nutrition. Smooth, firm, pink nails (D) are normal."
+    },
+    {
+      "id": 12, "unit": "assess", "topic": "Nutrition Assessment — Care Process", "type": "mc",
+      "q": "The registered dietitian documents: 'Inadequate protein-energy intake related to dysphagia from stroke as evidenced by 10% weight loss in 5 weeks and prealbumin of 10 mg/dL.' What documentation format is being used?",
+      "opts": ["SOAP note", "ADIME format", "PES statement", "Nursing care plan"],
+      "correct": [2],
+      "rationale": "This is a PES statement — the standard format for writing a nutrition diagnosis. PES = Problem (inadequate protein-energy intake), Etiology (related to dysphagia from stroke), Signs & Symptoms (as evidenced by 10% weight loss and low prealbumin). SOAP (A) is a broader documentation structure. ADIME (B) is the full nutrition care documentation framework containing the PES within the Diagnosis section. A nursing care plan (D) uses a different structure."
+    },
+    {
+      "id": 13, "unit": "assess", "topic": "Nutrition Assessment — Documentation", "type": "mc",
+      "q": "Which documentation format organizes nutrition care notes into Assessment, Diagnosis, Intervention, and Monitoring & Evaluation sections?",
+      "opts": ["SOAP", "PES", "ADIME", "SBAR"],
+      "correct": [2],
+      "rationale": "ADIME stands for Assessment, Diagnosis, Intervention, and Monitoring & Evaluation — it is the standard structured format used by registered dietitians to document the complete nutrition care process. SOAP (A) stands for Subjective, Objective, Assessment, and Plan. PES (B) is the format for writing the nutrition diagnosis itself — embedded within ADIME. SBAR (D) is a communication tool, not a documentation format."
+    },
+    {
+      "id": 14, "unit": "assess", "topic": "Nutrition Assessment — Screening Data", "type": "mc",
+      "q": "When a patient is admitted to a hospital, which category of information is used during the nutrition screening to flag risk?",
+      "opts": ["Only laboratory test results and BMI", "Only the patient's current chief complaint", "Multiple categories including admission data, anthropometric data, functional assessment, historical information, laboratory results, and signs and symptoms", "Only information the physician has already documented"],
+      "correct": [2],
+      "rationale": "Nutrition screening at admission draws from multiple data categories: admission data (age, diagnosis, severity), anthropometric data (height, weight, BMI, unintentional weight changes), functional assessment data (handgrip strength, mobility), historical information (chronic illness, medications, dietary restrictions), laboratory results (low serum proteins, anemia), and signs/symptoms (reduced appetite, dysphagia, edema, pressure sores). Relying on any one category alone would miss significant risk indicators."
+    },
+    {
+      "id": 15, "unit": "energy", "topic": "Energy Estimation — Indirect Calorimetry", "type": "mc",
+      "q": "What makes indirect calorimetry the gold standard for measuring energy expenditure in hospitalized patients?",
+      "opts": ["It uses the patient's weight and height to estimate caloric needs mathematically", "It measures actual oxygen consumption and carbon dioxide production to calculate real-time energy expenditure", "It is the least expensive and most widely available method", "It relies on population-average equations that are validated for all patient types"],
+      "correct": [1],
+      "rationale": "Indirect calorimetry measures what the patient's body is actually doing in real time — analyzing the gases they breathe in and out (VO₂ and VCO₂) to calculate true caloric expenditure. This makes it far more accurate than any estimation method because it captures the individual patient's actual metabolic state, which is significantly altered by illness, fever, stress hormones, ventilation, and medications. Predictive equations (A and D) are estimates based on population averages."
+    },
+    {
+      "id": 16, "unit": "energy", "topic": "Energy Estimation — Mifflin-St. Jeor", "type": "mc",
+      "q": "A nurse is calculating estimated energy needs for a female patient using the Mifflin-St. Jeor equation. Which formula is correct?",
+      "opts": ["10 × weight(kg) + 6.25 × height(cm) – 5 × age + 5", "10 × weight(kg) + 6.25 × height(cm) – 5 × age – 161", "88.362 + (13.397 × weight) + (4.799 × height) – (5.677 × age)", "447.593 + (9.247 × weight) + (3.098 × height) – (4.330 × age)"],
+      "correct": [1],
+      "rationale": "The Mifflin-St. Jeor equation for women is: 10 × weight(kg) + 6.25 × height(cm) – 5 × age – 161. The difference between male and female versions is the final constant: men add +5, women subtract –161. Option A is the male Mifflin-St. Jeor formula. Options C and D are the Harris-Benedict equations for men and women respectively."
+    },
+    {
+      "id": 17, "unit": "energy", "topic": "Energy Estimation — Harris-Benedict", "type": "mc",
+      "q": "When is the Harris-Benedict equation typically preferred over the Mifflin-St. Jeor equation for estimating energy needs?",
+      "opts": ["For pediatric patients under age 12", "For obese patients, where it provides a more accurate estimate", "For patients receiving enteral nutrition only", "For patients who are ambulatory and physically active"],
+      "correct": [1],
+      "rationale": "The Harris-Benedict equation is commonly used for obese patients, where it tends to provide more accurate energy estimates than the Mifflin-St. Jeor equation. The Mifflin-St. Jeor is the standard first-choice equation for most adult patients. Neither equation replaces indirect calorimetry but both provide practical bedside estimates."
+    },
+    {
+      "id": 18, "unit": "energy", "topic": "Energy Estimation — RMR Application", "type": "mc",
+      "q": "After calculating a patient's resting metabolic rate (RMR) using a predictive equation, what additional factors must be applied to determine their TOTAL daily caloric needs?",
+      "opts": ["No adjustments needed — RMR equals total daily caloric needs", "Activity factors and stress/illness factors are applied to RMR to account for movement and metabolic demands of disease", "Only the patient's age and sex need to be added", "RMR is only used for patients who are completely bedridden"],
+      "correct": [1],
+      "rationale": "RMR represents only the energy burned at rest — it does not account for physical activity or the additional metabolic demands of illness, infection, surgery, or trauma. To get total energy needs, RMR is multiplied by an activity factor and a stress/injury factor. A bedridden patient may need a small activity adjustment, while a burn patient may require a much larger stress factor."
+    },
+    {
+      "id": 19, "unit": "energy", "topic": "Energy Estimation — Clinical Application", "type": "mc",
+      "q": "A critically ill patient on mechanical ventilation requires precise caloric dosing. Which method provides the MOST accurate energy expenditure measurement?",
+      "opts": ["Mifflin-St. Jeor predictive equation", "Harris-Benedict equation with a stress factor", "Indirect calorimetry", "24-hour food record"],
+      "correct": [2],
+      "rationale": "Indirect calorimetry is the gold standard precisely because critically ill patients on ventilators have drastically altered metabolic rates that predictive equations cannot reliably estimate. Mechanical ventilation, fever, sepsis, sedation, and critical illness all change energy expenditure in ways population-based equations cannot capture individually. A 24-hour food record (D) measures what a patient ate, not what they need."
+    },
+    {
+      "id": 20, "unit": "diets", "topic": "Therapeutic Diets — Texture Modifications", "type": "mc",
+      "q": "A patient had a stroke three days ago and has severe dysphagia with poor lip and tongue control. Which diet texture is MOST appropriate?",
+      "opts": ["Regular/general diet", "Mechanically altered/soft diet", "Pureed food diet", "Clear liquid diet"],
+      "correct": [2],
+      "rationale": "A pureed food diet — completely smooth, lump-free — is indicated for patients with severe dysphagia, poor lip and tongue control, or oral hypersensitivity. These patients cannot safely manage any solid texture or lumps. A mechanically altered/soft diet (B) includes mashed or soft foods — still too challenging for severe dysphagia. A regular diet (A) would create aspiration risk. A clear liquid diet (D) is for bowel rest, not a long-term solution for oral motor impairment."
+    },
+    {
+      "id": 21, "unit": "diets", "topic": "Therapeutic Diets — Clear vs Full Liquid", "type": "mc",
+      "q": "What is a key clinical difference between a clear liquid diet and a full liquid diet?",
+      "opts": ["There is no clinical difference — both are used interchangeably", "A clear liquid diet leaves minimal colonic residue and is nutritionally inadequate for long-term use; a full liquid diet includes a wider range of liquids and better meets nutritional needs", "A full liquid diet is more restrictive than a clear liquid diet", "Clear liquids include dairy products while full liquids do not"],
+      "correct": [1],
+      "rationale": "A clear liquid diet contains only transparent fluids and foods that melt at body temperature — it leaves minimal colonic residue but is nutritionally inadequate beyond short-term use (24–48 hours). It is used for bowel prep, post-GI surgery, or transitioning from IV feeding. A full liquid diet includes milk, cream soups, thinned cereals, pudding — and better meets caloric and protein needs. Full liquid is LESS restrictive, not more. Dairy is in FULL liquid, not clear."
+    },
+    {
+      "id": 22, "unit": "diets", "topic": "Therapeutic Diets — Clear Liquid Limitations", "type": "mc",
+      "q": "A patient has been on a clear liquid diet for 5 days following bowel surgery. The nurse should recognize this as a concern because:",
+      "opts": ["Clear liquid diets are too high in protein and may stress the kidneys", "Clear liquid diets are nutritionally inadequate and not intended for use beyond 24–48 hours without additional nutritional support", "Patients on clear liquid diets always require supplemental IV fluids", "Clear liquid diets cause hyperglycemia in most patients"],
+      "correct": [1],
+      "rationale": "A clear liquid diet is nutritionally inadequate — it provides minimal protein, calories, vitamins, or minerals. It is intended for SHORT-TERM use only (typically 24–48 hours) and should be advanced as soon as clinically possible. Five days on clear liquids without additional nutritional support would significantly worsen malnutrition and impair surgical wound healing, immune function, and recovery."
+    },
+    {
+      "id": 23, "unit": "diets", "topic": "Therapeutic Diets — Fat-Restricted", "type": "mc",
+      "q": "A fat-restricted diet limits fat to less than 1 gram per serving. Which patient would MOST benefit from this diet?",
+      "opts": ["A patient with hypertension and fluid retention", "A patient with pancreatitis and fat malabsorption", "A patient who is underweight and needs to gain weight", "A patient with type 2 diabetes managing blood glucose"],
+      "correct": [1],
+      "rationale": "A fat-restricted diet (<1g fat per serving) is indicated for conditions involving fat malabsorption or fat intolerance, particularly pancreatitis, gallbladder disease, chylothorax, and malabsorption syndromes. When the body cannot properly digest or absorb fat, high dietary fat causes GI distress and fat loss through stool (steatorrhea). Hypertension with fluid retention (A) calls for a low-sodium diet. An underweight patient (C) needs high-calorie — fat restriction would be counterproductive."
+    },
+    {
+      "id": 24, "unit": "diets", "topic": "Therapeutic Diets — Low Fiber vs Low Residue", "type": "mc",
+      "q": "How does a low-residue diet differ from a low-fiber diet?",
+      "opts": ["They are identical — the terms are interchangeable", "A low-residue diet goes further by also restricting foods that leave undigested colonic residue beyond just fiber, such as certain dairy products and dried fruits", "A low-fiber diet is more restrictive than a low-residue diet", "A low-residue diet only restricts meat products"],
+      "correct": [1],
+      "rationale": "A low-fiber diet restricts insoluble fiber to reduce bulk and bowel stimulation. A low-residue diet goes one step further — it also eliminates other foods that leave colonic residue regardless of fiber content, including certain dairy products and dried fruits. Both reduce bowel activity and are used for bowel rest, Crohn's disease flares, and post-GI surgery recovery. Low-residue is the stricter of the two."
+    },
+    {
+      "id": 25, "unit": "diets", "topic": "Therapeutic Diets — Low Sodium", "type": "mc",
+      "q": "A patient with congestive heart failure is prescribed a low-sodium diet. What is the typical daily sodium limit, and why is restriction clinically important?",
+      "opts": ["Less than 500 mg/day — sodium causes direct cardiac toxicity", "2,000–3,000 mg/day — restricting sodium reduces fluid retention, decreasing preload on the failing heart and reducing edema", "5,000 mg/day — only a slight reduction from normal intake is needed", "There is no set limit — patients should simply avoid adding salt at the table"],
+      "correct": [1],
+      "rationale": "The standard low-sodium diet limits intake to 2,000–3,000 mg/day. Sodium causes the body to retain water — excess sodium = excess fluid retention = increased circulating blood volume = increased preload and workload on the failing heart. Reducing sodium reduces fluid retention, decreases edema, eases breathing, and reduces cardiac workload. Most dietary sodium comes from processed foods, not the salt shaker."
+    },
+    {
+      "id": 26, "unit": "diets", "topic": "Therapeutic Diets — High Calorie High Protein", "type": "mc",
+      "q": "A patient recovering from major burns requires a high-calorie, high-protein diet. What percentage of daily calories from fat is typical in this diet?",
+      "opts": ["Less than 10% of calories from fat", "20–25% of calories from fat — the standard macronutrient distribution", "35% or more of calories from fat — fat is used as a calorie-dense energy source to meet high metabolic demands", "Fat is eliminated entirely and replaced with carbohydrate and protein only"],
+      "correct": [2],
+      "rationale": "A high-calorie, high-protein diet typically provides 35% or more of daily calories from fat. Fat is the most calorie-dense macronutrient (9 kcal/gram vs 4 kcal/gram for protein and carbohydrate), making it an efficient way to pack significant calories into the volume of food a patient can tolerate. This diet is used for burns, cancer, major surgery recovery, severe malnutrition, and conditions causing significant wasting."
+    },
+    {
+      "id": 27, "unit": "diets", "topic": "Therapeutic Diets — Renal Diet", "type": "mc",
+      "q": "A patient with chronic kidney disease (CKD) NOT on dialysis is placed on a renal diet. Which combination of restrictions is MOST appropriate?",
+      "opts": ["High protein, high potassium, high phosphorus to support kidney function", "Restricted protein, potassium, phosphorus, and sodium with fluid monitoring", "Unrestricted intake with only fluid restriction", "High calorie, high sodium to maintain blood pressure"],
+      "correct": [1],
+      "rationale": "CKD patients not on dialysis require restriction of protein (reducing uremic waste), potassium (kidneys cannot excrete excess, risking fatal cardiac arrhythmias from hyperkalemia), phosphorus (hyperphosphatemia causes bone disease and vascular calcification), and sodium (reduces fluid retention and blood pressure). Increasing protein (A) worsens uremia. Unrestricted intake (C) ignores dangerous electrolyte accumulation."
+    },
+    {
+      "id": 28, "unit": "diets", "topic": "Therapeutic Diets — Enteral Formula Selection", "type": "mc",
+      "q": "A patient with impaired GI digestion and absorption requires enteral nutrition. The clinical team determines the patient cannot adequately break down standard formula. Which formula type is MOST appropriate?",
+      "opts": ["Standard formula with moderate fiber", "High-calorie, high-protein formula", "Elemental formula", "Renal-insufficiency formula"],
+      "correct": [2],
+      "rationale": "Elemental formulas contain nutrients already broken down to their simplest forms — free amino acids, simple sugars, and medium-chain triglycerides (MCTs) that are absorbed without bile salts or complex enzymatic processes. They require minimal digestive processing, making them ideal for patients with impaired digestion/absorption such as short bowel syndrome, severe Crohn's disease, or pancreatitis."
+    },
+    {
+      "id": 29, "unit": "diets", "topic": "Therapeutic Diets — Diabetic Diet", "type": "mc",
+      "q": "A patient with type 2 diabetes is admitted. Which dietary modification is most central to their therapeutic diet?",
+      "opts": ["Eliminating all carbohydrates from the diet", "Restricting sodium to 1,500 mg/day", "Controlled, consistent carbohydrate intake with limited refined sugars and consistent meal timing", "Unrestricted carbohydrates with high protein to offset glucose spikes"],
+      "correct": [2],
+      "rationale": "The diabetic/carbohydrate-controlled diet centers on consistent carbohydrate intake across meals — not eliminating carbohydrates entirely. Consistent timing and amounts allow insulin to be matched to glucose load, keeping blood sugar stable. Refined sugars and high-glycemic foods are limited because they cause rapid glucose spikes. Eliminating all carbohydrates (A) is neither practical nor recommended."
+    },
+    {
+      "id": 30, "unit": "enteral", "topic": "Enteral Nutrition — Decision Making", "type": "mc",
+      "q": "A patient cannot eat by mouth but has a fully functional GI tract. What is the MOST appropriate nutrition intervention?",
+      "opts": ["Total parenteral nutrition (TPN) via central vein", "Peripheral parenteral nutrition (PPN) as a supplement", "Enteral nutrition via feeding tube", "Oral nutritional supplements with encouragement"],
+      "correct": [2],
+      "rationale": "The guiding principle of nutrition support is: 'If the gut works, use it.' When the GI tract is functional, enteral nutrition is ALWAYS preferred over parenteral nutrition. EN maintains gut integrity, preserves gut mucosal cells, supports healthy gut bacteria, is safer, less costly, and carries significantly fewer serious complications. TPN (A) is reserved for non-functional GI tracts."
+    },
+    {
+      "id": 31, "unit": "enteral", "topic": "Enteral Nutrition — Short-term Tubes", "type": "mc",
+      "q": "A patient is expected to need tube feeding for approximately 3 weeks. Which feeding tube is MOST appropriate?",
+      "opts": ["Gastrostomy tube (G-tube) via PEG procedure", "Jejunostomy tube (J-tube)", "Nasogastric (NG) tube", "GJ-tube"],
+      "correct": [2],
+      "rationale": "Nasal feeding tubes (NG, ND, NJ) are appropriate for SHORT-TERM use — less than 4–6 weeks. A 3-week duration falls within this window, making an NG tube the appropriate choice. Surgically or endoscopically placed tubes (G-tube via PEG, J-tube, GJ-tube) are indicated when tube feeding is needed for MORE than 4–6 weeks."
+    },
+    {
+      "id": 32, "unit": "enteral", "topic": "Enteral Nutrition — Long-term Tubes", "type": "mc",
+      "q": "A patient with ALS has progressive difficulty swallowing and is expected to require tube feeding for at least 6 months. Which tube is MOST appropriate, and what feeding schedule will it allow?",
+      "opts": ["NG tube — continuous feeding only", "NJ tube — bolus feeding three times daily", "G-tube (PEG) — bolus feeding is possible because the stomach can handle volume", "ND tube — used for any duration with either bolus or continuous feeding"],
+      "correct": [2],
+      "rationale": "For long-term tube feeding (>4–6 weeks), a gastrostomy tube (G-tube) placed via PEG procedure is the standard choice. The G-tube delivers formula directly into the stomach, which has the natural capacity to receive and store large volumes — making BOLUS feeding possible (250–500 mL over 15–30 minutes, 3–6 times daily). NG tube (A) is for short-term only. NJ tubes (B) require continuous feeding, not bolus."
+    },
+    {
+      "id": 33, "unit": "enteral", "topic": "Enteral Nutrition — Small Intestine Tubes", "type": "mc",
+      "q": "Why is continuous pump feeding REQUIRED for nasojejunal (NJ) and jejunostomy (J-tube) feedings, rather than bolus feeding?",
+      "opts": ["Pump feeding is required for infection control purposes", "The small intestine lacks the storage capacity of the stomach and cannot tolerate large volumes — bolus delivery would cause osmotic diarrhea and dumping syndrome", "Pump feeding is simply a personal preference — bolus is equally safe", "Small intestine tubes cannot physically accommodate bolus volumes due to tube diameter"],
+      "correct": [1],
+      "rationale": "Unlike the stomach, which is designed to receive and store large meal volumes, the small intestine receives only small, continuous amounts of chyme under normal physiological conditions. Delivering a large bolus directly into the jejunum bypasses the stomach's buffering function and overwhelms the small intestine, causing osmotic diarrhea, severe cramping, and dumping syndrome."
+    },
+    {
+      "id": 34, "unit": "enteral", "topic": "Enteral Nutrition — Safety Before Feeding", "type": "mc",
+      "q": "Before initiating an NG tube feeding, what is the PRIORITY nursing action?",
+      "opts": ["Warm the formula to body temperature to prevent cramping", "Verify correct tube placement", "Position the patient supine to reduce patient discomfort", "Flush the tube with 60 mL of carbonated beverage to clear any residue"],
+      "correct": [1],
+      "rationale": "Verifying NG tube placement BEFORE every feeding is the priority safety action. An NG tube that has migrated into the lung or esophagus would deliver formula into the airway, causing aspiration pneumonia — a potentially fatal complication. Supine positioning (C) is CONTRAINDICATED — HOB must be elevated 30–45 degrees. Carbonated beverages (D) are NEVER used in feeding tubes."
+    },
+    {
+      "id": 35, "unit": "enteral", "topic": "Enteral Nutrition — HOB & Aspiration", "type": "mc",
+      "q": "What is the minimum head-of-bed elevation required during tube feedings and for how long afterward to prevent aspiration pneumonia?",
+      "opts": ["15 degrees during feeding only", "30–45 degrees during feeding and for at least 30–60 minutes after", "60–90 degrees (fully upright) at all times", "No specific position is required — aspiration risk is the same in all positions"],
+      "correct": [1],
+      "rationale": "The head of bed must be elevated at least 30–45 degrees during ALL tube feedings and maintained for at least 30–60 minutes afterward. This is the primary nursing intervention for aspiration prevention. Gravity helps keep gastric contents in the stomach rather than allowing reflux into the trachea. 15 degrees (A) is insufficient. Position does significantly affect aspiration risk (D is false)."
+    },
+    {
+      "id": 36, "unit": "enteral", "topic": "Enteral Nutrition — G-tube Emergency", "type": "mc",
+      "q": "A G-tube that was placed 2 weeks ago accidentally falls out. What is the CORRECT nursing action?",
+      "opts": ["Document the incident and notify the provider at their earliest convenience", "Replace the tube at the bedside immediately using a spare catheter", "Treat this as a medical emergency — notify the provider immediately and prepare for urgent replacement or ER transfer", "Reassure the patient that the tract will remain open for several days"],
+      "correct": [2],
+      "rationale": "A G-tube displaced within the first 6–8 weeks of placement is a MEDICAL EMERGENCY. The tract between the stomach and abdominal wall has not yet fully matured — it begins closing within HOURS of tube removal. If the tract closes before the tube is replaced, emergency surgery may be required. This patient's tube has been in only 2 weeks — well within the danger window. The tract closes rapidly, not after several days (D is dangerously false)."
+    },
+    {
+      "id": 37, "unit": "enteral", "topic": "Enteral Nutrition — Tube Care", "type": "mc",
+      "q": "How often should a balloon-tipped gastrostomy tube be routinely replaced?",
+      "opts": ["Every 2–3 weeks", "Every 3–6 months", "Every year", "Only when it stops functioning"],
+      "correct": [1],
+      "rationale": "Balloon-tipped gastrostomy tubes require scheduled replacement every 3–6 months because the balloon gradually loses its integrity and can deflate, causing tube displacement. Hard-tipped (bumper-tipped) tubes require replacement every 12 months (annually). Regular scheduled replacement prevents unexpected tube failure."
+    },
+    {
+      "id": 38, "unit": "enteral", "topic": "Enteral Nutrition — Refeeding Syndrome", "type": "sata",
+      "q": "A severely malnourished patient begins enteral nutrition after 3 weeks of very limited intake. Select ALL electrolyte abnormalities associated with refeeding syndrome.",
+      "opts": ["Hypophosphatemia (phosphate drops)", "Hyperkalemia (potassium rises)", "Hypokalemia (potassium drops)", "Hypomagnesemia (magnesium drops)", "Hypercalcemia (calcium rises)", "Hyponatremia (sodium drops)"],
+      "correct": [0, 2, 3],
+      "rationale": "Refeeding syndrome occurs when insulin release in response to carbohydrate refeeding drives electrolytes from the extracellular space INTO cells, dropping serum levels. The three classic electrolyte abnormalities are: Hypophosphatemia (A), Hypokalemia (C), and Hypomagnesemia (D). Potassium DROPS, not rises — hyperkalemia (B) is not a feature of refeeding syndrome. Calcium (E) and sodium (F) are not the primary electrolytes affected."
+    },
+    {
+      "id": 39, "unit": "enteral", "topic": "Enteral Nutrition — Flushing", "type": "mc",
+      "q": "When should a nurse flush a patient's feeding tube with warm water?",
+      "opts": ["Only when the tube appears clogged", "Once daily at the start of the shift", "Before AND after every feeding and every medication administration, and on days when the tube is not being used", "Only before feedings to check tube patency"],
+      "correct": [2],
+      "rationale": "Feeding tubes must be flushed with warm water before AND after every feeding and before AND after every medication administration. The tube must also be flushed even on days when it is not being used — to prevent clogging from dried secretions or residual formula. Waiting until the tube is clogged (A) means the intervention is already too late."
+    },
+    {
+      "id": 40, "unit": "enteral", "topic": "Enteral Nutrition — Formula Types", "type": "mc",
+      "q": "A patient with chronic kidney disease on dialysis requires enteral nutrition. Which formula modification is MOST important?",
+      "opts": ["High fiber to improve bowel regularity", "Elemental formula to ease digestion", "Restricted protein, potassium, phosphorus, sodium, and fluid volume", "High-calorie formula with extra fat"],
+      "correct": [2],
+      "rationale": "Renal-insufficiency formulas restrict protein (to reduce uremic waste), potassium (hyperkalemia is life-threatening), phosphorus (hyperphosphatemia causes bone disease and cardiovascular calcification), and sodium (reduces fluid retention). Fluid volume is also often restricted. These restrictions must be maintained even in tube-fed patients — the formula is the entire nutrition source and must be therapeutically appropriate."
+    },
+    {
+      "id": 41, "unit": "parenteral", "topic": "Parenteral Nutrition — PPN vs TPN", "type": "mc",
+      "q": "What is the key difference between partial parenteral nutrition (PPN) and total parenteral nutrition (TPN)?",
+      "opts": ["PPN is delivered through a central vein while TPN uses a peripheral vein", "PPN supplements other feeding and uses a peripheral vein; TPN provides complete nutrition and requires a central vein due to high osmolarity", "There is no meaningful clinical difference between PPN and TPN", "TPN is only used in pediatric patients"],
+      "correct": [1],
+      "rationale": "PPN (Partial Parenteral Nutrition) supplements other forms of nutrition and is delivered through a peripheral vein using lower-concentration solutions. TPN (Total Parenteral Nutrition) provides ALL of the patient's nutrition intravenously and must be delivered through a CENTRAL vein because TPN formulas are highly concentrated and hyperosmolar — they would destroy peripheral veins."
+    },
+    {
+      "id": 42, "unit": "parenteral", "topic": "Parenteral Nutrition — TPN Contents", "type": "sata",
+      "q": "Total parenteral nutrition (TPN) is a custom-compounded formula tailored to each patient. Select ALL components that TPN can contain.",
+      "opts": ["Dextrose (glucose) as the carbohydrate source", "Crystalline amino acid solutions as the protein source", "Whole food blended to liquid form", "Lipid emulsions providing fat and essential fatty acids", "Vitamins and minerals based on lab values", "Water for hydration"],
+      "correct": [0, 1, 3, 4, 5],
+      "rationale": "TPN contains all six essential nutrient categories: dextrose/glucose (A) as the carbohydrate and primary energy source; crystalline amino acid solutions (B) providing protein; lipid emulsions (D) providing fat and essential fatty acids; vitamins and minerals (E) added based on lab results; and water (F) — the formula volume itself provides hydration. Whole food blended to liquid (C) is enteral formula — you cannot put whole food through an IV catheter."
+    },
+    {
+      "id": 43, "unit": "parenteral", "topic": "Parenteral Nutrition — TPN Access", "type": "mc",
+      "q": "Why must total parenteral nutrition (TPN) always be delivered through a CENTRAL vein rather than a peripheral vein?",
+      "opts": ["Central veins are more accessible and easier to access for long-term use", "TPN is a hyperosmolar solution that would cause thrombophlebitis and permanent vein damage if infused through small peripheral veins", "Only central veins have the valve systems that prevent formula backflow", "Peripheral veins cannot accommodate the size of catheter required for TPN infusion"],
+      "correct": [1],
+      "rationale": "TPN formulas are highly concentrated and hyperosmolar. Peripheral veins have thin walls and relatively slow blood flow. Infusing hyperosmolar solutions through them causes chemical irritation, thrombophlebitis (inflammation and clot formation), and permanent vein damage. Central veins — particularly the superior vena cava — have rapid, high-volume blood flow that immediately dilutes the concentrated TPN formula, preventing vein damage."
+    },
+    {
+      "id": 44, "unit": "parenteral", "topic": "Parenteral Nutrition — Catheter Types", "type": "mc",
+      "q": "A patient requires TPN for 4 weeks and will be discharged home to continue it. Which catheter type is MOST appropriate?",
+      "opts": ["Standard peripheral IV in the forearm", "PICC line (Peripherally Inserted Central Catheter)", "Fully implanted port (Port-a-Cath)", "Nasal feeding tube"],
+      "correct": [1],
+      "rationale": "A PICC line is the standard choice for TPN when central access is needed for less than approximately 6 weeks. It is inserted into a vein in the upper arm and advanced until the tip reaches the superior vena cava. PICC placement is less invasive than surgically tunneled or implanted devices and is suitable for home use after proper training. An implanted port (C) is best for intermittent long-term access over months to years — excessive for 4 weeks."
+    },
+    {
+      "id": 45, "unit": "parenteral", "topic": "Parenteral Nutrition — Monitoring", "type": "mc",
+      "q": "Which complication is MOST common during TPN administration and requires blood glucose monitoring every 4–6 hours?",
+      "opts": ["Hyponatremia", "Hyperglycemia", "Hypocalcemia", "Respiratory alkalosis"],
+      "correct": [1],
+      "rationale": "Hyperglycemia is the MOST COMMON complication of TPN. TPN contains high concentrations of dextrose which can overwhelm the patient's insulin response — especially in critically ill, stressed, or diabetic patients. Stress hormones released during illness also independently elevate blood glucose. Blood glucose must be monitored every 4–6 hours during TPN infusion and managed with insulin per protocol."
+    },
+    {
+      "id": 46, "unit": "parenteral", "topic": "Parenteral Nutrition — Stopping TPN", "type": "mc",
+      "q": "A patient's TPN bag runs out and a replacement will not be available for 90 minutes. What is the PRIORITY nursing action?",
+      "opts": ["Allow the IV line to run dry and document the gap", "Hang normal saline at the same rate to maintain fluid balance", "Hang D10W (10% dextrose in water) at the same rate as the TPN", "Stop all IV fluids and monitor blood glucose every 30 minutes"],
+      "correct": [2],
+      "rationale": "When TPN must be stopped abruptly, the patient is at immediate risk for REBOUND HYPOGLYCEMIA. During TPN infusion, the body increases insulin secretion in response to continuous high glucose. When the glucose source disappears suddenly, insulin levels remain elevated while blood glucose drops rapidly. Hang D10W at the SAME infusion rate to provide a continuing glucose source until TPN can be restarted. Normal saline (B) provides no glucose."
+    },
+    {
+      "id": 47, "unit": "parenteral", "topic": "Parenteral Nutrition — Complications", "type": "sata",
+      "q": "A patient has been receiving TPN for 8 weeks. Select ALL complications the nurse should be actively monitoring for.",
+      "opts": ["Catheter-related bloodstream infection (sepsis)", "GI tract atrophy from prolonged bowel disuse", "Hyperglycemia", "TPN-associated liver disease (PNALD)", "Gallbladder sludge from lack of biliary stimulation", "Bone demineralization from mineral imbalances"],
+      "correct": [0, 1, 2, 3, 4, 5],
+      "rationale": "ALL six are recognized TPN complications. CRBSI/sepsis (A) is the most acutely dangerous — bacteria from the IV catheter cause life-threatening sepsis. GI atrophy (B) begins after approximately 2 weeks of bowel disuse. Hyperglycemia (C) is the most common complication. PNALD (D) affects up to 50% of patients after 5–7 years of TPN. Gallbladder sludge (E) results from lack of cholecystokinin stimulation. Bone demineralization (F) develops from long-term calcium, magnesium, and vitamin D imbalances."
+    },
+    {
+      "id": 48, "unit": "parenteral", "topic": "Parenteral Nutrition — PNALD", "type": "mc",
+      "q": "Parenteral nutrition-associated liver disease (PNALD) is a serious long-term complication of TPN. Approximately what percentage of long-term TPN patients develop liver disease after 5–7 years?",
+      "opts": ["Less than 5%", "10–15%", "25–30%", "Up to 50%"],
+      "correct": [3],
+      "rationale": "PNALD affects up to 50% of patients who receive long-term TPN after 5–7 years. Contributing factors include diminished gut bacteria from bowel disuse, the composition of lipid emulsions in TPN, and absence of enteral stimulation of the gut-liver axis. Monitoring liver function tests (aminotransferases, bilirubin) is essential throughout TPN therapy."
+    },
+    {
+      "id": 49, "unit": "parenteral", "topic": "Parenteral Nutrition — Transition", "type": "mc",
+      "q": "A patient is transitioning from TPN to oral feeding after 2 weeks. What is the CORRECT approach?",
+      "opts": ["Stop TPN immediately and start a regular solid diet", "Begin with clear liquids and advance gradually through full liquids to solid food, tapering TPN rate as oral intake increases", "Continue TPN at full rate while simultaneously eating full meals", "Switch directly from TPN to a high-protein soft diet without intermediate steps"],
+      "correct": [1],
+      "rationale": "Transitioning from TPN must be gradual: (1) Abrupt TPN cessation causes rebound hypoglycemia — insulin levels remain elevated after discontinuation. (2) The GI tract may have some degree of atrophy after 2 weeks of disuse. The correct sequence: clear liquids → full liquids → soft/regular diet, with TPN rate TAPERED DOWN as oral intake increases to prevent overfeeding. Stopping TPN immediately (A) causes hypoglycemia."
+    },
+    {
+      "id": 50, "unit": "parenteral", "topic": "Parenteral Nutrition — TPN Prep and Storage", "type": "mc",
+      "q": "How must TPN formulas be stored, how long can they be stored, and what must be done before infusing a refrigerated bag?",
+      "opts": ["Store at room temperature for up to 30 days; no preparation needed before use", "Refrigerate; can be stored up to 7 days; remove from refrigerator a few hours before use to allow warming to room temperature", "Freeze for up to 6 months; thaw in microwave before use", "Refrigerate; use within 24 hours only; infuse directly from refrigerator"],
+      "correct": [1],
+      "rationale": "TPN formulas are compounded by a pharmacist in 24-hour doses and must be REFRIGERATED until needed. They can be stored for up to 7 days under refrigeration. Before infusion, the bag must be removed from the refrigerator a few hours prior to use to allow it to come to room temperature — infusing cold TPN can cause vasoconstriction and patient discomfort."
+    },
+    {
+      "id": 51, "unit": "drugs", "topic": "Drug-Nutrient Interactions — Warfarin & Vitamin K", "type": "mc",
+      "q": "A patient taking warfarin tells the nurse they plan to start eating leafy green vegetables every day. What is the BEST nursing response?",
+      "opts": ["That is great — vitamin K in leafy greens will help your blood clot more safely with warfarin", "You should completely eliminate all leafy green vegetables from your diet while on warfarin", "Consistency is key — you do not need to eliminate leafy greens, but your vitamin K intake needs to stay consistent from week to week so your INR can be calibrated to your usual diet", "Leafy greens have no effect on warfarin and you can eat any amount freely"],
+      "correct": [2],
+      "rationale": "Vitamin K directly OPPOSES warfarin's mechanism of action. However, the clinical solution is NOT to eliminate vitamin K foods but to maintain CONSISTENT intake. If a patient suddenly increases vitamin K (eating more leafy greens daily), warfarin becomes LESS effective and clot risk rises. If they suddenly decrease intake, warfarin becomes MORE potent and bleeding risk rises. A stable, consistent vitamin K intake allows the warfarin dose to be accurately calibrated."
+    },
+    {
+      "id": 52, "unit": "drugs", "topic": "Drug-Nutrient Interactions — Grapefruit", "type": "mc",
+      "q": "Grapefruit juice inhibits which enzyme, and what is the clinical consequence of this interaction?",
+      "opts": ["It inhibits CYP2D6, causing increased warfarin levels", "It inhibits CYP3A4 in the intestinal wall, preventing drug metabolism and causing drug blood levels to rise to potentially toxic concentrations", "It inhibits vitamin K epoxide reductase, antagonizing warfarin", "It stimulates drug metabolism, making medications less effective"],
+      "correct": [1],
+      "rationale": "Grapefruit and grapefruit juice contain furanocoumarins that inhibit the CYP3A4 enzyme in the intestinal wall — the enzyme normally responsible for metabolizing many drugs during absorption. When CYP3A4 is inhibited, drugs enter the bloodstream at much higher concentrations than intended, potentially reaching toxic levels. This interaction affects 85+ medications including many statins, cyclosporine, and calcium channel blockers. The effect can last 24 hours from a single serving."
+    },
+    {
+      "id": 53, "unit": "drugs", "topic": "Drug-Nutrient Interactions — MAOI & Tyramine", "type": "mc",
+      "q": "A patient is prescribed phenelzine (an MAOI). Which food group must be strictly avoided to prevent a hypertensive crisis?",
+      "opts": ["Citrus fruits and vitamin C-rich foods", "Dairy products including milk and yogurt", "Aged, cured, and fermented foods containing tyramine (aged cheeses, cured meats, soy sauce, red wine)", "High-fiber foods like whole grains and legumes"],
+      "correct": [2],
+      "rationale": "MAOIs inhibit the enzyme that normally breaks down tyramine in the gut and liver. Tyramine is found in aged, cured, fermented, and pickled foods. When tyramine accumulates because it cannot be metabolized, it triggers massive norepinephrine release causing a HYPERTENSIVE CRISIS — dangerously elevated blood pressure that can cause stroke, intracranial hemorrhage, or death. This is life-threatening but entirely preventable."
+    },
+    {
+      "id": 54, "unit": "drugs", "topic": "Drug-Nutrient Interactions — Dairy & Antibiotics", "type": "mc",
+      "q": "A patient is prescribed tetracycline for a skin infection. The nurse should instruct the patient to:",
+      "opts": ["Take tetracycline with a full glass of milk to prevent stomach upset", "Avoid dairy products and calcium-containing antacids within 2–4 hours of tetracycline administration", "Increase calcium intake while on tetracycline to prevent bone loss", "Take tetracycline with grapefruit juice to enhance absorption"],
+      "correct": [1],
+      "rationale": "Calcium in dairy products and calcium-containing antacids chelates (chemically binds) tetracycline in the GI tract, forming an insoluble complex that cannot be absorbed into the bloodstream. The antibiotic literally passes through without entering the body — the infection will not be treated. Tetracycline must be taken on an empty stomach, separated by at least 2–4 hours from dairy, calcium supplements, and calcium-containing antacids."
+    },
+    {
+      "id": 55, "unit": "drugs", "topic": "Drug-Nutrient Interactions — St. John's Wort", "type": "mc",
+      "q": "A patient taking cyclosporine after a kidney transplant mentions they started taking St. John's Wort for post-transplant depression. What is the PRIMARY nursing concern?",
+      "opts": ["St. John's Wort enhances cyclosporine absorption and may cause toxicity", "St. John's Wort induces CYP enzymes, dramatically reducing cyclosporine blood levels and risking organ rejection", "St. John's Wort has no known interaction with immunosuppressant medications", "St. John's Wort will cause serotonin syndrome when combined with cyclosporine"],
+      "correct": [1],
+      "rationale": "St. John's Wort is a potent inducer of CYP3A4 and P-glycoprotein. By inducing these pathways, it dramatically SPEEDS UP the breakdown and elimination of cyclosporine, causing blood levels to drop far below the therapeutic range. In a transplant patient, sub-therapeutic cyclosporine levels mean the immune system will attack and destroy the transplanted kidney. This is a life-threatening interaction that has caused documented cases of acute organ rejection."
+    },
+    {
+      "id": 56, "unit": "drugs", "topic": "Drug-Nutrient Interactions — Drug-Condition", "type": "mc",
+      "q": "A patient with hypertension asks their nurse if they can take ibuprofen for back pain. What drug-condition interaction should the nurse explain?",
+      "opts": ["Ibuprofen causes hyperglycemia, which is dangerous with hypertension", "NSAIDs like ibuprofen can raise blood pressure, worsen fluid retention, and reduce the effectiveness of antihypertensive medications — making them risky for patients with hypertension", "Ibuprofen has no effect on blood pressure and is safe for hypertensive patients", "Ibuprofen lowers blood pressure and would actually be beneficial"],
+      "correct": [1],
+      "rationale": "NSAIDs like ibuprofen cause renal prostaglandin inhibition, which leads to sodium and water retention — raising blood pressure and worsening fluid retention. NSAIDs can also directly antagonize the effects of many antihypertensive medications (ACE inhibitors, ARBs, diuretics), reducing their effectiveness. Acetaminophen is generally the safer OTC pain reliever for hypertensive patients."
+    },
+    {
+      "id": 57, "unit": "drugs", "topic": "Drug-Nutrient Interactions — Metformin & B12", "type": "mc",
+      "q": "A patient has been taking metformin for type 2 diabetes for 8 years. Which nutrient deficiency should be monitored, and why?",
+      "opts": ["Iron deficiency — metformin causes GI bleeding that depletes iron stores", "Vitamin D deficiency — metformin blocks vitamin D synthesis in the skin", "Vitamin B12 deficiency — long-term metformin use reduces B12 absorption in the terminal ileum", "Calcium deficiency — metformin chelates calcium in the GI tract"],
+      "correct": [2],
+      "rationale": "Long-term metformin use is associated with reduced vitamin B12 absorption through the terminal ileum. Metformin appears to interfere with calcium-dependent B12 absorption. B12 deficiency from metformin can cause peripheral neuropathy, fatigue, cognitive changes, and megaloblastic anemia — symptoms easily mistaken for diabetic neuropathy. Current guidelines recommend periodic B12 level monitoring for patients on long-term metformin."
+    }
+  ]
+}

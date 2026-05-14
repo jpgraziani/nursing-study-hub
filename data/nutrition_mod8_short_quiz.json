@@ -1,0 +1,80 @@
+{
+  "id": "nutrition-mod8-short",
+  "class": "nutrition",
+  "module": 8,
+  "title": "Module 8 — Short Answer Practice",
+  "description": "10-question short answer quiz covering key Module 8 concepts including nutrition screening, assessment, therapeutic diets, enteral and parenteral nutrition, and clinical application.",
+  "topics": ["nutrition screening", "malnutrition risks", "COPD nutrition", "protein energy malnutrition", "high calorie diet", "multidisciplinary care", "CRP", "liver", "inflammation", "enteral nutrition", "parenteral nutrition"],
+  "questions": [
+    {
+      "id": 1, "unit": "assess", "topic": "Nutrition Screening", "type": "mc",
+      "q": "Why is a nutrition screening conducted within the first 24 hours of hospital admission?",
+      "opts": ["To satisfy hospital paperwork requirements before the physician sees the patient", "Because many patients arrive already nutritionally compromised, and early identification allows intervention before status deteriorates further", "To determine which medications the patient needs", "Because nutrition screening is only accurate within the first day and loses reliability after that"],
+      "correct": [1],
+      "rationale": "Nutrition screening must happen within the first 24 hours because malnutrition is common and frequently overlooked in hospitalized patients. Many arrive already compromised from illness, poor appetite, or increased metabolic demands of their condition. Early identification allows the care team to intervene before the patient's status worsens further from NPO orders, medication side effects, reduced intake, and illness-driven nutrient losses. This is a standard nursing responsibility."
+    },
+    {
+      "id": 2, "unit": "assess", "topic": "Nutrition Assessment", "type": "mc",
+      "q": "What are some of the common risks of malnutrition in hospitalized patients?",
+      "opts": ["Improved wound healing and shorter hospital stays", "Increased muscle strength, enhanced immune response, and faster recovery", "Impaired immune function, delayed wound healing, muscle wasting, increased pressure injury risk, and longer hospital stays", "Malnutrition primarily affects only elderly patients and has minimal impact on younger adults"],
+      "correct": [2],
+      "rationale": "Malnutrition creates a cascade of complications: impaired immune function increases infection susceptibility; delayed wound healing occurs because the body lacks protein and micronutrients for collagen synthesis; muscle wasting reduces strength including respiratory muscle strength; pressure injury risk increases; hospital stays lengthen; readmission rates rise; and mortality risk climbs. Cognitively, malnutrition causes fatigue, confusion, and depression that impair participation in recovery."
+    },
+    {
+      "id": 3, "unit": "assess", "topic": "Clinical Application", "type": "mc",
+      "q": "How does chronic obstructive pulmonary disease (COPD) affect a patient's energy and protein needs?",
+      "opts": ["COPD decreases energy needs because patients are less physically active", "COPD has no significant effect on nutritional requirements", "COPD only affects protein needs but not caloric needs", "COPD dramatically increases both energy and protein needs due to elevated work of breathing, systemic inflammation driving muscle breakdown, and reduced food intake from dyspnea with eating"],
+      "correct": [3],
+      "rationale": "COPD increases energy and protein needs through three mechanisms: (1) The work of breathing can account for up to 10x more caloric expenditure than in healthy individuals. (2) Systemic inflammation accelerates muscle catabolism, breaking down protein for fuel even when some dietary intake is present. (3) Dyspnea with eating makes mealtimes exhausting and progressively reduces intake. Evidence-based targets: 30–35 kcal/kg/day and 1.2–1.5 g protein/kg/day."
+    },
+    {
+      "id": 4, "unit": "assess", "topic": "Nutrition Assessment", "type": "mc",
+      "q": "Which combination of findings would MOST strongly indicate protein-energy malnutrition (PEM) in a hospitalized patient?",
+      "opts": ["A BMI of 22 with no reported weight changes and normal lab values", "Elevated CRP alone with no other findings", "8% unintentional weight loss over 3 months, albumin 3.2 g/dL, elevated CRP, visible muscle wasting, and a dietary history of inadequate protein intake", "Mild edema in the lower extremities with normal weight"],
+      "correct": [2],
+      "rationale": "PEM is diagnosed from multiple converging indicators. Unintentional weight loss of 8% over 3 months exceeds the clinical threshold (5% in 1 month or 10% in 6 months = significant PEM risk). Albumin of 3.2 g/dL is below the 3.5 g/dL lower limit of normal. Elevated CRP confirms active inflammation independently suppressing albumin. Visible muscle wasting is physical confirmation. No single finding alone is sufficient — it is the full clinical picture."
+    },
+    {
+      "id": 5, "unit": "diets", "topic": "Therapeutic Diets", "type": "mc",
+      "q": "Why would a high-calorie, high-protein diet be prescribed for a malnourished patient with elevated metabolic demands?",
+      "opts": ["Because high-fat diets are always recommended for respiratory patients regardless of nutritional status", "To promote rapid weight loss and reduce strain on the body", "The patient's body is in a catabolic state — sufficient calories stop muscle breakdown for fuel, and sufficient protein provides building blocks to rebuild depleted tissue, plasma proteins, and immune function", "High-calorie diets are only prescribed based on physician preference, not nutritional evidence"],
+      "correct": [2],
+      "rationale": "A catabolic state means the body is breaking down its own muscle and tissue faster than it can rebuild. Illness raises energy expenditure, inflammation accelerates protein catabolism, and reduced intake prevents replacement of what is lost. A high-calorie diet achieves positive energy balance. High protein provides amino acids to repair muscle, restore depleted plasma proteins like albumin and transferrin, and support immune function. Targets: 30–35 kcal/kg/day and 1.2–1.5 g protein/kg/day."
+    },
+    {
+      "id": 6, "unit": "assess", "topic": "Clinical Application", "type": "mc",
+      "q": "A patient's weight loss continues despite a high-calorie, high-protein nutrition intervention. What is the MOST appropriate next step?",
+      "opts": ["Discontinue the high-protein diet and switch to a clear liquid diet", "Immediately start total parenteral nutrition (TPN) without further assessment", "Reassess adherence and barriers, increase caloric targets, consider enteral nutrition if oral intake remains insufficient, review medications, and reassess inflammation with repeat labs", "No changes are needed — weight loss during hospitalization is always expected"],
+      "correct": [2],
+      "rationale": "Continuing weight loss requires a systematic approach. Step 1: Evaluate adherence and identify barriers. Step 2: Increase caloric targets to 35–40 kcal/kg/day, protein toward 1.5 g/kg/day. Step 3: If oral intake remains insufficient, consider supplemental enteral nutrition. Step 4: Review medications for appetite suppression or malabsorption. Step 5: Repeat CRP — uncontrolled inflammation drives catabolism regardless of protein intake."
+    },
+    {
+      "id": 7, "unit": "assess", "topic": "Clinical Application", "type": "mc",
+      "q": "What are common barriers a patient might face when trying to follow a high-calorie, high-protein diet?",
+      "opts": ["There are no significant barriers — eating more food is straightforward", "The only barrier is cost since protein foods are expensive", "Dyspnea with eating, early satiety, conflicting dietary restrictions, financial constraints, and depression or illness-related anorexia suppressing appetite", "Barriers to dietary adherence only apply to patients over 70 years of age"],
+      "correct": [2],
+      "rationale": "Multiple real barriers can undermine adherence. Dyspnea with eating is a direct physiological barrier — chewing, swallowing, and gastric distension all compete with limited airflow; this is not lack of motivation. Early satiety occurs because a full stomach pushes the diaphragm upward, restricting breathing. Conflicting restrictions (low sodium + carb control + high-calorie) feel contradictory. Financial barriers exist — high-protein whole foods cost more than processed foods. Depression and illness-related anorexia directly suppress the desire to eat."
+    },
+    {
+      "id": 8, "unit": "assess", "topic": "Nutrition Assessment", "type": "mc",
+      "q": "How can a nurse most effectively monitor and support a patient's nutritional intake during hospitalization?",
+      "opts": ["Leave all nutrition monitoring entirely to the dietitian — it is not a nursing responsibility", "Only check weight at admission and discharge", "Document actual food intake at every meal, observe and report tolerance issues, position the patient appropriately during meals, consistently offer supplements, track weekly weights, and monitor lab trends", "Remind the patient verbally to eat more and document that reminder once per shift"],
+      "correct": [2],
+      "rationale": "The nurse plays a central ongoing role in nutrition monitoring. Documenting actual food intake — what percentage was consumed at each meal — is essential data for the dietitian. Observing tolerance (nausea, dyspnea, early satiety) and reporting changes allows timely plan adjustments. Positioning the patient upright at 30–45 degrees during meals reduces gastric pressure. Consistently offering protein supplements prevents them from being skipped. Accurate weekly weights track trends. Monitoring albumin, prealbumin, and CRP keeps the full team informed."
+    },
+    {
+      "id": 9, "unit": "assess", "topic": "Clinical Application", "type": "mc",
+      "q": "Why is a multidisciplinary approach essential in clinical nutrition care?",
+      "opts": ["It is required by law but has no proven clinical benefit", "Only the physician and dietitian need to be involved — other team members do not contribute meaningfully to nutrition care", "Nutrition intersects with virtually every aspect of patient care and no single profession can manage it alone — each discipline contributes unique expertise that fills gaps the others cannot", "A multidisciplinary approach is only necessary for patients with eating disorders or severe malnutrition"],
+      "correct": [2],
+      "rationale": "Nutrition is never an isolated clinical problem. Physician: overall medical management and orders. RD: comprehensive assessment, PES diagnosis, nutrition prescription. Nurse: monitors daily intake, administers supplements and nutrition support, observes tolerance, educates patient. Pharmacist: drug-nutrient interactions, TPN formula review. Other specialists (respiratory, social work) address overlapping factors. When disciplines work in silos, care gaps appear — patients receive plans that are incomplete or incompatible with their other treatments."
+    },
+    {
+      "id": 10, "unit": "assess", "topic": "Nutrition Assessment", "type": "mc",
+      "q": "How does C-reactive protein (CRP) help assess nutritional and inflammatory status in hospitalized patients?",
+      "opts": ["CRP directly measures how many calories a patient has consumed in the past 24 hours", "CRP directly measures protein stores and can replace albumin testing", "Elevated CRP signals active inflammation, which is essential context for interpreting albumin — because inflammation suppresses albumin production independently of nutrition, low albumin does not automatically confirm malnutrition", "CRP is only relevant for patients with known infections and has no role in routine nutrition assessment"],
+      "correct": [2],
+      "rationale": "CRP is an acute-phase protein produced by the liver during active inflammation. During inflammation, the liver diverts protein production away from albumin toward immune response proteins — dropping albumin even in adequately nourished patients. This means low albumin can result from inflammation alone, malnutrition alone, or both simultaneously. Without CRP context, low albumin might be misattributed entirely to malnutrition. Prealbumin (half-life ~2 days) and direct intake documentation must be tracked alongside biochemical markers."
+    }
+  ]
+}
