@@ -15,6 +15,24 @@
       "term": "Spring 2026"
     },
     {
+      "id": "renal",
+      "name": "Renal & Urinary System",
+      "code": "Anatomy & Physiology",
+      "color": "#0D4F3C",
+      "accent": "#10B981",
+      "icon": "🫘",
+      "term": "Spring 2026"
+    },
+    {
+      "id": "pharm",
+      "name": "Pharmacology",
+      "code": "PHARM",
+      "color": "#7C2D12",
+      "accent": "#F97316",
+      "icon": "💊",
+      "term": "Spring 2026"
+    },
+    {
       "id": "psych",
       "name": "Psychology 2",
       "code": "PSY 202",
@@ -25,118 +43,6 @@
     }
   ],
   "content": [
-    {
-      "id": "nutrition-mod1-digestive-nclex",
-      "file": "nutrition_mod1_digestive_nclex_quiz.json",
-      "class": "nutrition",
-      "module": 1,
-      "type": "quiz",
-      "title": "Module 1 — Digestive System NCLEX Quiz",
-      "description": "37-question NCLEX-style quiz covering GI tract organization, digestive organs, absorption, accessory organs, and clinical digestive disorders.",
-      "topics": [
-        "digestive system",
-        "GI tract",
-        "esophagus",
-        "stomach",
-        "small intestine",
-        "large intestine",
-        "liver",
-        "gallbladder",
-        "pancreas",
-        "absorption",
-        "peristalsis",
-        "chyme",
-        "villi",
-        "microvilli",
-        "lacteals",
-        "portal circulation",
-        "gastric acid",
-        "pepsin",
-        "bile",
-        "amylase",
-        "lipase",
-        "GERD",
-        "ulcers",
-        "Crohn disease",
-        "celiac disease"
-      ],
-      "questionCount": 37,
-      "tags": [
-        "NCLEX",
-        "Module 1",
-        "digestive system",
-        "SATA"
-      ]
-    },
-    {
-      "id": "nutrition-mod1-part3",
-      "file": "nutrition_mod1_part3_digestive_quiz.json",
-      "class": "nutrition",
-      "module": 1,
-      "type": "quiz",
-      "title": "Module 1 — Part 3 Digestive System Quiz",
-      "description": "32-question quiz covering digestive system anatomy, GI wall layers, absorption mechanisms, and accessory organ functions.",
-      "topics": [
-        "GI tract organization",
-        "mucosa",
-        "submucosa",
-        "muscularis",
-        "enteric nervous system",
-        "stomach anatomy",
-        "fundus",
-        "pylorus",
-        "duodenum",
-        "jejunum",
-        "ileum",
-        "cecum",
-        "colon",
-        "ileocecal valve",
-        "sphincters",
-        "gastric emptying",
-        "segmentation"
-      ],
-      "questionCount": 32,
-      "tags": [
-        "Module 1",
-        "digestive system",
-        "anatomy",
-        "SATA"
-      ]
-    },
-    {
-      "id": "nutrition-ch1-nclex-full",
-      "file": "nutrition_ch1_nclex_full_quiz.json",
-      "class": "nutrition",
-      "module": 1,
-      "type": "quiz",
-      "title": "Chapter 1 — Full Coverage NCLEX Quiz",
-      "description": "39-question comprehensive NCLEX-style quiz covering nutrition foundations, dietary guidelines, health definitions, and nutrient roles.",
-      "topics": [
-        "WHO health definition",
-        "dietary guidelines",
-        "nutrient density",
-        "macronutrients",
-        "micronutrients",
-        "energy balance",
-        "MyPlate",
-        "food labels",
-        "DRI",
-        "EAR",
-        "RDA",
-        "UL",
-        "AMDR",
-        "phytochemicals",
-        "functional foods",
-        "nutritional genomics"
-      ],
-      "questionCount": 39,
-      "tags": [
-        "NCLEX",
-        "Chapter 1",
-        "full coverage",
-        "SATA"
-      ]
-    },
     {
       "id": "nutrition-ch1-diseases",
       "file": "nutrition_ch1_diseases_quiz.json",
@@ -170,10 +76,38 @@
       ],
       "questionCount": 35,
       "tags": [
-        "Chapter 1",
-        "deficiency diseases",
-        "NCLEX",
-        "SATA"
+        "NCLEX"
+      ]
+    },
+    {
+      "id": "nutrition-ch1-nclex-full",
+      "file": "nutrition_ch1_nclex_full_quiz.json",
+      "class": "nutrition",
+      "module": 1,
+      "type": "quiz",
+      "title": "Chapter 1 — Full Coverage NCLEX Quiz",
+      "description": "39-question comprehensive NCLEX-style quiz covering nutrition foundations, dietary guidelines, health definitions, and nutrient roles.",
+      "topics": [
+        "WHO health definition",
+        "dietary guidelines",
+        "nutrient density",
+        "macronutrients",
+        "micronutrients",
+        "energy balance",
+        "MyPlate",
+        "food labels",
+        "DRI",
+        "EAR",
+        "RDA",
+        "UL",
+        "AMDR",
+        "phytochemicals",
+        "functional foods",
+        "nutritional genomics"
+      ],
+      "questionCount": 39,
+      "tags": [
+        "NCLEX"
       ]
     },
     {
@@ -198,8 +132,7 @@
       ],
       "questionCount": 10,
       "tags": [
-        "Chapter 1",
-        "reading quiz"
+        "NCLEX"
       ]
     },
     {
@@ -234,9 +167,86 @@
       ],
       "questionCount": 37,
       "tags": [
-        "Chapter 1",
-        "macronutrients",
-        "SATA"
+        "NCLEX"
+      ]
+    },
+    {
+      "id": "nutrition-mod1-digestive-nclex",
+      "file": "nutrition_mod1_digestive_nclex_quiz.json",
+      "class": "nutrition",
+      "module": 1,
+      "type": "quiz",
+      "title": "Module 1 — Digestive System NCLEX Quiz",
+      "description": "37-question NCLEX-style quiz covering GI tract organization, digestive organs, absorption sites, accessory organs, and clinical digestive disorders.",
+      "topics": [
+        "digestive system",
+        "GI tract",
+        "mouth",
+        "esophagus",
+        "stomach",
+        "small intestine",
+        "large intestine",
+        "liver",
+        "gallbladder",
+        "pancreas",
+        "absorption",
+        "peristalsis",
+        "chyme",
+        "villi",
+        "microvilli",
+        "brush border",
+        "lacteals",
+        "portal circulation",
+        "gastric acid",
+        "pepsin",
+        "bile",
+        "amylase",
+        "lipase",
+        "GERD",
+        "ulcers",
+        "Crohn disease",
+        "celiac disease",
+        "IBD"
+      ],
+      "questionCount": 37,
+      "tags": [
+        "NCLEX"
+      ]
+    },
+    {
+      "id": "nutrition-mod1-part3",
+      "file": "nutrition_mod1_part3_digestive_quiz.json",
+      "class": "nutrition",
+      "module": 1,
+      "type": "quiz",
+      "title": "Module 1 — Part 3 Digestive System Quiz",
+      "description": "32-question quiz covering digestive system organization, GI tract anatomy, absorption mechanisms, and accessory organ functions.",
+      "topics": [
+        "GI tract organization",
+        "layers of GI wall",
+        "mucosa",
+        "submucosa",
+        "muscularis",
+        "serosa",
+        "enteric nervous system",
+        "stomach anatomy",
+        "fundus",
+        "pylorus",
+        "duodenum",
+        "jejunum",
+        "ileum",
+        "cecum",
+        "colon",
+        "rectum",
+        "ileocecal valve",
+        "sphincters",
+        "gastric emptying",
+        "segmentation",
+        "haustra"
+      ],
+      "questionCount": 32,
+      "tags": [
+        "NCLEX"
       ]
     },
     {
@@ -252,6 +262,7 @@
         "monosaccharides",
         "disaccharides",
         "polysaccharides",
+        "glycogen",
         "dietary fiber",
         "soluble fiber",
         "insoluble fiber",
@@ -262,13 +273,11 @@
         "lactose intolerance",
         "cellulose",
         "starch",
-        "glycogen"
+        "photosynthesis"
       ],
       "questionCount": 30,
       "tags": [
-        "Section 3",
-        "carbohydrates",
-        "SATA"
+        "NCLEX"
       ]
     },
     {
@@ -290,13 +299,12 @@
         "set point theory",
         "weight regulation",
         "bariatric surgery",
+        "physical activity",
         "satiety"
       ],
       "questionCount": 10,
       "tags": [
-        "Module 2",
-        "hunger hormones",
-        "obesity"
+        "NCLEX"
       ]
     },
     {
@@ -327,10 +335,7 @@
       ],
       "questionCount": 38,
       "tags": [
-        "Module 3",
-        "carbohydrates",
-        "NCLEX",
-        "SATA"
+        "NCLEX"
       ]
     },
     {
@@ -357,9 +362,7 @@
       ],
       "questionCount": 10,
       "tags": [
-        "Module 3",
-        "digestion",
-        "enzymes"
+        "NCLEX"
       ]
     },
     {
@@ -385,6 +388,7 @@
         "folate",
         "B12",
         "biotin",
+        "pantothenic acid",
         "minerals",
         "calcium",
         "iron",
@@ -396,16 +400,12 @@
         "electrolytes",
         "hydration",
         "dehydration",
+        "water intoxication",
         "bioavailability"
       ],
       "questionCount": 38,
       "tags": [
-        "NCLEX",
-        "Module 4",
-        "micronutrients",
-        "vitamins",
-        "minerals",
-        "SATA"
+        "NCLEX"
       ]
     },
     {
@@ -432,10 +432,7 @@
       ],
       "questionCount": 10,
       "tags": [
-        "Module 4",
-        "reading quiz",
-        "B vitamins",
-        "minerals"
+        "NCLEX"
       ]
     },
     {
@@ -453,8 +450,10 @@
         "folate",
         "folic acid",
         "weight gain",
+        "macronutrients in pregnancy",
         "iron in pregnancy",
         "calcium",
+        "vitamin D",
         "omega-3",
         "DHA",
         "breastfeeding",
@@ -470,12 +469,7 @@
       ],
       "questionCount": 38,
       "tags": [
-        "NCLEX",
-        "Module 5",
-        "pregnancy",
-        "breastfeeding",
-        "lifecycle",
-        "SATA"
+        "NCLEX"
       ]
     },
     {
@@ -500,9 +494,7 @@
       ],
       "questionCount": 10,
       "tags": [
-        "Module 5",
-        "reading quiz",
-        "lifecycle"
+        "NCLEX"
       ]
     },
     {
@@ -512,7 +504,7 @@
       "module": 5,
       "type": "quiz",
       "title": "Module 5 — Vocabulary & NCLEX Quiz",
-      "description": "14-question quiz covering Module 5 key terms and NCLEX clinical applications: prolactin, oxytocin, colostrum, and infant reflexes.",
+      "description": "14-question quiz covering Module 5 key terms and NCLEX-style clinical applications: prolactin, oxytocin, colostrum, and infant reflexes.",
       "topics": [
         "prolactin",
         "oxytocin",
@@ -524,14 +516,12 @@
         "teratogen",
         "neural tube",
         "placenta",
-        "amniotic fluid"
+        "amniotic fluid",
+        "meconium"
       ],
       "questionCount": 14,
       "tags": [
-        "Module 5",
-        "vocabulary",
-        "NCLEX",
-        "SATA"
+        "NCLEX"
       ]
     },
     {
@@ -564,11 +554,7 @@
       ],
       "questionCount": 35,
       "tags": [
-        "Module 6",
-        "antioxidants",
-        "phytochemicals",
-        "NCLEX",
-        "SATA"
+        "NCLEX"
       ]
     },
     {
@@ -578,7 +564,7 @@
       "module": 6,
       "type": "quiz",
       "title": "Module 6 — Reading Quiz",
-      "description": "10-question true/false and multiple-choice quiz on Module 6 reading: cruciferous vegetables, antioxidants, and phytochemical mechanisms.",
+      "description": "10-question true/false and multiple-choice quiz on Module 6 reading content: cruciferous vegetables, antioxidants, and phytochemical mechanisms.",
       "topics": [
         "cruciferous vegetables",
         "phytochemicals",
@@ -593,9 +579,7 @@
       ],
       "questionCount": 10,
       "tags": [
-        "Module 6",
-        "reading quiz",
-        "antioxidants"
+        "NCLEX"
       ]
     },
     {
@@ -612,19 +596,21 @@
         "silent killer",
         "fatty liver",
         "NAFLD",
+        "AFLD",
         "nephron",
         "glomerulus",
         "kidney stones",
         "CKD",
+        "protein restriction",
         "type 2 diabetes",
         "obesity",
+        "modifiable risk factors",
         "gallstones",
-        "modifiable risk factors"
+        "risk factors vs causation"
       ],
       "questionCount": 10,
       "tags": [
-        "Module 7",
-        "chapter quiz"
+        "NCLEX"
       ]
     },
     {
@@ -640,64 +626,30 @@
         "trans fats",
         "soluble fiber",
         "hypertensive crisis",
+        "orthostatic hypotension",
+        "blood pressure",
         "HbA1c",
         "hypoglycemia",
         "gestational diabetes",
         "prediabetes",
         "DPP trial",
         "foot care",
+        "three Ps of diabetes",
         "antioxidants",
         "processed meat",
+        "benign vs malignant",
         "metabolic syndrome",
         "insulin resistance",
+        "cholesterol targets",
         "omega-3",
+        "plant-based diet",
         "cancer prevention",
         "added sugar",
-        "cholesterol targets"
+        "fiber recommendations"
       ],
       "questionCount": 30,
       "tags": [
-        "Module 7",
-        "companion quiz",
-        "NCLEX",
-        "SATA"
-      ]
-    },
-    {
-      "id": "nutrition-mod7-quiz",
-      "file": "nutrition_mod7_quiz.json",
-      "class": "nutrition",
-      "module": 7,
-      "type": "quiz",
-      "title": "Module 7 — Practice Quiz",
-      "description": "35-question NCLEX-style quiz covering liver functions, gallbladder disease, kidney disease, CVD, diabetes, and cancer nutrition.",
-      "topics": [
-        "liver functions",
-        "albumin synthesis",
-        "bile",
-        "cirrhosis",
-        "hepatic encephalopathy",
-        "cholecystitis",
-        "Murphy's sign",
-        "GFR",
-        "CKD staging",
-        "nephrotic syndrome",
-        "proteinuria",
-        "hemodialysis",
-        "LDL",
-        "HDL",
-        "DASH diet",
-        "Mediterranean diet",
-        "A1C",
-        "cancer cachexia",
-        "phytochemicals"
-      ],
-      "questionCount": 35,
-      "tags": [
-        "Module 7",
-        "practice quiz",
-        "NCLEX",
-        "SATA"
+        "NCLEX"
       ]
     },
     {
@@ -717,9 +669,11 @@
         "trans fats",
         "soluble fiber",
         "DASH diet",
+        "Mediterranean diet",
         "omega-3",
         "fatty liver",
         "NAFLD",
+        "AFLD",
         "cirrhosis",
         "hepatic encephalopathy",
         "gallstones",
@@ -731,6 +685,7 @@
         "renal diet",
         "hemodialysis",
         "kidney stones",
+        "type 1 diabetes",
         "type 2 diabetes",
         "HbA1c",
         "hypoglycemia",
@@ -742,110 +697,52 @@
         "processed meat",
         "phytochemicals",
         "cancer prevention",
+        "modifiable risk factors",
         "obesity"
       ],
       "questionCount": 58,
       "tags": [
-        "NCLEX",
-        "Module 7",
-        "full coverage",
-        "SATA"
+        "NCLEX"
       ]
     },
     {
-      "id": "nutrition-mod8-full",
-      "file": "nutrition_mod8_full_quiz.json",
+      "id": "nutrition-mod7-quiz",
+      "file": "nutrition_mod7_quiz.json",
       "class": "nutrition",
-      "module": 8,
+      "module": 7,
       "type": "quiz",
-      "title": "Module 8 — Full Coverage NCLEX Quiz",
-      "description": "57-question comprehensive quiz covering all Module 8 sections: nutrition assessment, therapeutic diets, enteral nutrition, parenteral nutrition, drug interactions, energy estimation, and documentation.",
+      "title": "Module 7 — Practice Quiz",
+      "description": "35-question NCLEX-style quiz covering liver functions, gallbladder disease, kidney disease, CVD, diabetes, and cancer nutrition with SATA questions.",
       "topics": [
-        "nutrition assessment",
-        "nutrition screening",
-        "biochemical data",
-        "anthropometrics",
-        "therapeutic diets",
-        "enteral nutrition",
-        "parenteral nutrition",
-        "drug interactions",
-        "energy estimation",
-        "documentation",
-        "ADIME",
-        "SOAP",
-        "PES statement",
-        "albumin",
-        "prealbumin",
-        "CRP",
-        "tube feeding",
-        "TPN",
-        "warfarin",
-        "grapefruit",
-        "liver",
-        "refeeding syndrome",
-        "aspiration",
-        "indirect calorimetry",
-        "Mifflin St Jeor"
+        "liver functions",
+        "albumin synthesis",
+        "bile production",
+        "detoxification",
+        "cirrhosis",
+        "hepatic encephalopathy",
+        "cholecystitis",
+        "gallstones",
+        "Murphy's sign",
+        "choledocholithiasis",
+        "GFR",
+        "CKD staging",
+        "nephrotic syndrome",
+        "proteinuria",
+        "hemodialysis",
+        "renal diet",
+        "LDL cholesterol",
+        "HDL cholesterol",
+        "DASH diet",
+        "Mediterranean diet",
+        "insulin resistance",
+        "A1C",
+        "cancer cachexia",
+        "carcinogens",
+        "phytochemicals"
       ],
-      "questionCount": 57,
+      "questionCount": 35,
       "tags": [
-        "NCLEX",
-        "Module 8",
-        "full coverage",
-        "SATA"
-      ]
-    },
-    {
-      "id": "nutrition-mod8-short",
-      "file": "nutrition_mod8_short_quiz.json",
-      "class": "nutrition",
-      "module": 8,
-      "type": "quiz",
-      "title": "Module 8 — Short Answer Practice",
-      "description": "10-question short answer quiz on key Module 8 concepts.",
-      "topics": [
-        "nutrition screening",
-        "malnutrition risks",
-        "COPD nutrition",
-        "protein energy malnutrition",
-        "high calorie diet",
-        "multidisciplinary care",
-        "CRP",
-        "liver",
-        "inflammation"
-      ],
-      "questionCount": 10,
-      "tags": [
-        "Module 8",
-        "short answer"
-      ]
-    },
-    {
-      "id": "nutrition-mod8-case",
-      "file": "nutrition_mod8_case_quiz.json",
-      "class": "nutrition",
-      "module": 8,
-      "type": "quiz",
-      "title": "Module 8 — Case Study Questions",
-      "description": "10-question quiz based on Module 8 assessment and intervention concepts.",
-      "topics": [
-        "nutrition screening",
-        "malnutrition",
-        "therapeutic diet",
-        "enteral nutrition",
-        "parenteral nutrition",
-        "bolus feeding",
-        "continuous feeding",
-        "TPN",
-        "low residue diet",
-        "CRP",
-        "liver",
-        "BMI"
-      ],
-      "questionCount": 10,
-      "tags": [
-        "Module 8",
-        "case study"
+        "NCLEX"
       ]
     },
     {
@@ -875,13 +772,115 @@
         "leptin",
         "ghrelin",
         "weight management",
-        "BMI"
+        "BMI",
+        "weight loss interventions"
       ],
       "questionCount": 38,
       "tags": [
+        "NCLEX"
+      ]
+    },
+    {
+      "id": "renal-ch11-full",
+      "file": "renal_ch11_full_quiz.json",
+      "class": "renal",
+      "module": 11,
+      "type": "quiz",
+      "title": "Chapter 11 — Renal System Full Quiz",
+      "description": "81-question NCLEX-style quiz covering renal anatomy, kidney physiology, urine formation, UTIs, renal calculi, AKI, CKD, and clinical case studies.",
+      "topics": [
+        "renal system",
+        "urinary system",
+        "kidney anatomy",
+        "nephron",
+        "Bowman's capsule",
+        "proximal convoluted tubule",
+        "loop of Henle",
+        "distal convoluted tubule",
+        "ADH",
+        "aldosterone",
+        "RAAS",
+        "erythropoietin",
+        "vitamin D",
+        "glomerular filtration",
+        "GFR",
+        "urine formation",
+        "glycosuria",
+        "renal blood supply",
+        "ureters",
+        "urinary bladder",
+        "urethra",
+        "cystitis",
+        "UTI",
+        "pyelonephritis",
+        "urosepsis",
+        "ciprofloxacin",
+        "renal calculi",
+        "kidney stones",
+        "AKI",
+        "acute kidney injury",
+        "KDIGO staging",
+        "CKD",
+        "chronic kidney disease",
+        "ESRD",
+        "dialysis",
+        "azotemia",
+        "proteinuria",
+        "hyperkalaemia",
+        "acid-base balance",
+        "digoxin",
+        "ACE inhibitors"
+      ],
+      "questionCount": 81,
+      "tags": [
         "NCLEX",
-        "Chapter 9",
-        "energy balance",
+        "Chapter 11",
+        "renal",
+        "SATA"
+      ]
+    },
+    {
+      "id": "pharm-urinary-ch34-35",
+      "file": "pharm_urinary_ch34_35_quiz.json",
+      "class": "pharm",
+      "module": 34,
+      "type": "quiz",
+      "title": "Pharmacology — Urinary System (Ch. 34–35)",
+      "description": "65-question NCLEX-style pharmacology quiz covering diuretics, urinary anti-infectives, antispasmodics, analgesics, stimulants, and PDE5 inhibitors with clinical reasoning.",
+      "topics": [
+        "diuretics",
+        "loop diuretics",
+        "furosemide",
+        "osmotic diuretics",
+        "mannitol",
+        "potassium-sparing diuretics",
+        "spironolactone",
+        "thiazide diuretics",
+        "hydrochlorothiazide",
+        "urinary anti-infectives",
+        "nitrofurantoin",
+        "trimethoprim",
+        "antispasmodics",
+        "antimuscarinics",
+        "oxybutynin",
+        "bladder spasms",
+        "urinary analgesics",
+        "phenazopyridine",
+        "urinary stimulants",
+        "bethanechol",
+        "PDE5 inhibitors",
+        "sildenafil",
+        "electrolyte imbalance",
+        "hypokalemia",
+        "ototoxicity",
+        "clinical reasoning"
+      ],
+      "questionCount": 65,
+      "tags": [
+        "NCLEX",
+        "pharmacology",
+        "urinary",
+        "diuretics",
         "SATA"
       ]
     }

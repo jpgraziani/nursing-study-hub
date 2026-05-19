@@ -1,0 +1,1178 @@
+{
+  "id": "pharm-urinary-ch34-35",
+  "class": "pharm",
+  "module": 34,
+  "title": "Pharmacology — Urinary System (Ch. 34–35)",
+  "description": "65-question NCLEX-style pharmacology quiz covering diuretics, urinary anti-infectives, antispasmodics, analgesics, stimulants, and PDE5 inhibitors with clinical reasoning.",
+  "topics": [
+    "diuretics",
+    "loop diuretics",
+    "furosemide",
+    "Lasix",
+    "osmotic diuretics",
+    "mannitol",
+    "potassium-sparing diuretics",
+    "spironolactone",
+    "thiazide diuretics",
+    "hydrochlorothiazide",
+    "urinary anti-infectives",
+    "nitrofurantoin",
+    "trimethoprim",
+    "sulfonamides",
+    "antispasmodics",
+    "antimuscarinics",
+    "oxybutynin",
+    "bladder spasms",
+    "urinary analgesics",
+    "phenazopyridine",
+    "urinary stimulants",
+    "bethanechol",
+    "PDE5 inhibitors",
+    "sildenafil",
+    "erectile dysfunction",
+    "electrolyte imbalance",
+    "hypokalemia",
+    "ototoxicity",
+    "clinical reasoning"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "diuretics",
+      "topic": "Intro to Diuretics",
+      "type": "mc",
+      "q": "A patient develops fluid volume excess. The nurse knows the kidneys respond intrinsically through autoregulation. Which two physiologic processes make up renal autoregulation?",
+      "opts": [
+        "ANP secretion and ADH suppression",
+        "The myogenic response and tubuloglomerular feedback",
+        "Aldosterone release and renin inhibition",
+        "Natriuresis and osmotic diuresis"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Renal autoregulation consists of (1) the myogenic response — when increased volume stretches afferent arteriole smooth muscle, causing it to contract and reduce GFR — and (2) tubuloglomerular feedback — the macula densa senses changes in sodium delivery and signals further afferent arteriole constriction while inhibiting renin. ANP and ADH are part of the EXTRINSIC (hormonal) response, not the intrinsic autoregulatory system. | NURSING HOOK: NCLEX tip: Intrinsic = myogenic + tubuloglomerular. Extrinsic = ANP + ADH (hormonal). Know the difference."
+    },
+    {
+      "id": 2,
+      "unit": "diuretics",
+      "topic": "Intro to Diuretics",
+      "type": "mc",
+      "q": "Atrial natriuretic peptide (ANP) is released in response to fluid volume excess. Which action does ANP perform to help restore fluid balance?",
+      "opts": [
+        "Constricts afferent arterioles and dilates efferent arterioles",
+        "Dilates afferent arterioles, constricts efferent arterioles, and inhibits RAAS",
+        "Stimulates aldosterone secretion to increase sodium retention",
+        "Increases ADH secretion to retain water"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "ANP dilates afferent arterioles and constricts efferent arterioles — both increase GFR, which increases filtration. ANP also decreases sodium reabsorption in the collecting duct and inhibits RAAS. The net effect is increased sodium and water excretion. ANP does NOT stimulate aldosterone or ADH — those increase fluid retention. | NURSING HOOK: Remember: ANP = ANtinatriuretic Peptide... wait, actually it promotes natriuresis. \"A\" for AGAINST fluid retention."
+    },
+    {
+      "id": 3,
+      "unit": "diuretics",
+      "topic": "Intro to Diuretics",
+      "type": "mc",
+      "q": "A patient has an estimated GFR (eGFR) of 18 mL/minute/1.73m². What clinical condition does this value indicate?",
+      "opts": [
+        "Normal kidney function for a 70-year-old",
+        "Chronic kidney disease (CKD)",
+        "End-stage renal disease (ESRD)",
+        "Hyperfiltration — possible early diabetes"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "An eGFR  180 = hyperfiltration (possible early diabetes sign). Normal adult range is 120–130 mL/min/1.73m². | NURSING HOOK: Numbers to memorize: eGFR < 60 = CKD; eGFR < 15 = ESRD. eGFR < 30 = shift from thiazides to loop diuretics."
+    },
+    {
+      "id": 4,
+      "unit": "diuretics",
+      "topic": "Intro to Diuretics",
+      "type": "mc",
+      "q": "A patient on furosemide stops responding adequately — increasing the dose produces no additional diuresis. The nurse recognizes this as which phenomenon?",
+      "opts": [
+        "Diuretic braking",
+        "Diuretic resistance",
+        "Nephrotoxicity",
+        "Aldosterone escape"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Diuretic resistance occurs when the maximum dose of a loop diuretic fails to produce the expected effect. The mechanism involves hypertrophy of the distal tubule from repeated drug exposure — the distal tubule compensates by reabsorbing MORE sodium than it normally would, offsetting the effect of the drug at the loop. Diuretic braking is different: it is a progressive decrease in urinary output after repeated doses (not failure at max dose). Both involve sodium retention but are distinct. | NURSING HOOK: Resistance = max dose fails entirely. Braking = repeated doses produce progressively less effect. Both = add a different class of diuretic."
+    },
+    {
+      "id": 5,
+      "unit": "diuretics",
+      "topic": "Intro to Diuretics",
+      "type": "mc",
+      "q": "Which laboratory value is the MOST accurate single indicator of kidney function and is used to calculate eGFR?",
+      "opts": [
+        "Blood urea nitrogen (BUN)",
+        "Uric acid",
+        "Serum creatinine",
+        "Serum sodium"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Serum creatinine is completely cleared by the kidneys and is used to calculate eGFR. It is the most reliable single marker of renal function. BUN is influenced by many factors (fluid status, protein intake, GI bleeding) and is NOT considered the primary indicator of diuretic effectiveness. Uric acid reflects purine metabolism. Sodium reflects fluid balance, not renal clearance function. | NURSING HOOK: Creatinine = waste of muscle metabolism, completely cleared by kidneys = best single renal function marker. BUN is influenced by too many external factors to be primary."
+    },
+    {
+      "id": 6,
+      "unit": "diuretics",
+      "topic": "Intro to Diuretics",
+      "type": "sata",
+      "q": "The nurse is caring for a patient with fluid volume excess. Select ALL findings that indicate the patient is oliguric and may require immediate intervention.",
+      "opts": [
+        "Urine output of 0.3 mL/kg/hour",
+        "Urine output of 40 mL/hour",
+        "Urine output of 25 mL over the past hour",
+        "Urine output of 0.6 mL/kg/hour",
+        "BUN of 12 mg/dL"
+      ],
+      "correct": [
+        0,
+        2
+      ],
+      "rationale": "Oliguria is defined as urine output < 0.5 mL/kg/hour OR < 30 mL/hour. Option A (0.3 mL/kg/hr) and Option C (25 mL/hr — both are below the thresholds) are oliguric. Option B (40 mL/hr) and Option D (0.6 mL/kg/hr) are adequate. BUN of 12 mg/dL is within the normal range (8–20 mg/dL) and is not an indicator of oliguria. | NURSING HOOK: Minimum urine output = 30 mL/hr = 0.5 mL/kg/hr. Both thresholds must be memorized for NCLEX calculations."
+    },
+    {
+      "id": 7,
+      "unit": "diuretics",
+      "topic": "Intro to Diuretics",
+      "type": "mc",
+      "q": "Which diuretic class is most commonly used in patients with acute kidney injury (AKI) to decrease the risk of additional renal damage and prevent hypervolemia?",
+      "opts": [
+        "Thiazide diuretics",
+        "Osmotic diuretics",
+        "Loop diuretics",
+        "Potassium-sparing diuretics"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Loop diuretics are most frequently prescribed for AKI. They are the most potent class, can increase urine output rapidly, and help manage the hypervolemia that commonly develops with AKI. Osmotic diuretics (mannitol) are used for ICP/IOP, not AKI in routine practice. Thiazides are used when eGFR ≥ 30 (not for AKI management). K+-sparing diuretics are too weak and can cause dangerous hyperkalemia in AKI patients who already have impaired potassium excretion. | NURSING HOOK: Loop diuretics = AKI. But remember: loops prevent progression — they do NOT prevent AKI from occurring in the first place."
+    },
+    {
+      "id": 8,
+      "unit": "diuretics",
+      "topic": "Loop Diuretics",
+      "type": "mc",
+      "q": "Furosemide exerts its diuretic effect by blocking which transporter in the nephron?",
+      "opts": [
+        "Na-Cl cotransporter in the distal convoluted tubule",
+        "Na-K-2Cl (NKCC2) cotransporter in the ascending loop of Henle",
+        "Aldosterone receptor in the collecting duct",
+        "Na-glucose cotransporter in the proximal tubule"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Loop diuretics block the Na-K-2Cl (NKCC2) cotransporter in the thick ascending loop of Henle. This prevents reabsorption of sodium, potassium, and chloride. Water follows the sodium osmotically and is excreted. This also destroys the medullary concentration gradient needed for the collecting duct to reabsorb water, compounding the diuretic effect. Na-Cl cotransporter = thiazides. Aldosterone receptor = spironolactone. Na-glucose = SGLT2 inhibitors. | NURSING HOOK: Loop diuretic target = NKCC2. The \"2\" in NKCC2 reflects the 2 chloride ions transported. Na, K, 2Cl — remember this stoichiometry for NCLEX questions about electrolyte loss patterns."
+    },
+    {
+      "id": 9,
+      "unit": "diuretics",
+      "topic": "Loop Diuretics",
+      "type": "mc",
+      "q": "A patient is prescribed furosemide and digoxin. Which electrolyte imbalance increases the risk of digoxin toxicity, and why?",
+      "opts": [
+        "Hypernatremia — excess sodium competes with digoxin for cardiac receptors",
+        "Hypokalemia — low potassium increases the sensitivity of cardiac cells to digoxin",
+        "Hypercalcemia — calcium potentiates digoxin's effect on the AV node",
+        "Hyperkalemia — elevated potassium changes cardiac cell membrane potential"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Furosemide causes hypokalemia by blocking NKCC2. Low serum potassium increases the affinity and sensitivity of cardiac cells to digoxin — the drug binds more tightly to myocardial Na-K-ATPase when potassium is depleted. This produces digoxin toxicity even at therapeutic digoxin levels. Signs: bradycardia, nausea, vomiting, visual halos (yellow-green), cardiac arrhythmias. This is one of the most clinically dangerous and commonly tested drug interactions. | NURSING HOOK: Furosemide + Digoxin = hypokalemia → digoxin toxicity. Monitor: K+ levels, heart rate, ECG. Report bradycardia and visual changes immediately."
+    },
+    {
+      "id": 10,
+      "unit": "diuretics",
+      "topic": "Loop Diuretics",
+      "type": "mc",
+      "q": "A nurse is administering furosemide 40 mg intravenously. What is the correct administration rate and the primary risk associated with rapid IV infusion of this medication?",
+      "opts": [
+        "Administer over 1–2 minutes; risk of nephrotoxicity",
+        "Administer over 1–2 minutes; risk of ototoxicity (hearing loss)",
+        "Administer over 30 minutes; risk of orthostatic hypotension",
+        "Administer over 10 minutes; risk of anaphylaxis"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "IV furosemide bolus should be administered SLOWLY over 1–2 minutes. Rapid infusion rates are associated with ototoxicity — temporary or permanent damage to the cochlear hair cells of the inner ear, resulting in hearing loss. This risk is compounded in patients who are also receiving aminoglycosides (gentamicin, tobramycin), which also cause ototoxicity through a similar mechanism. The rate is not 30 minutes — that is for continuous infusions. | NURSING HOOK: Furosemide IV: slow push over 1–2 minutes. Fast push = hearing loss. Fast = ototoxicity. Combine with aminoglycosides = double ototoxicity risk."
+    },
+    {
+      "id": 11,
+      "unit": "diuretics",
+      "topic": "Loop Diuretics",
+      "type": "mc",
+      "q": "A patient taking furosemide is also prescribed lithium carbonate for bipolar disorder. The nurse should monitor for which complication?",
+      "opts": [
+        "Lithium toxicity — furosemide inhibits renal excretion of lithium",
+        "Furosemide toxicity — lithium competes for the same tubular secretion site",
+        "Hyperkalemia — lithium and furosemide both retain potassium",
+        "Metabolic acidosis — the combination lowers serum bicarbonate"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "Furosemide (and other diuretics) inhibit the kidneys' ability to excrete lithium. As a result, lithium accumulates to toxic levels in the blood. Signs of lithium toxicity: tremor, confusion, nausea, vomiting, diarrhea, ataxia, seizures, coma. Lithium has an extremely narrow therapeutic index — small increases in serum levels can produce serious toxicity. Serum lithium levels must be monitored closely in any patient who is also taking a diuretic. | NURSING HOOK: Diuretics + Lithium = lithium toxicity. Mechanism: diuretics reduce renal lithium clearance. Monitor lithium levels and symptoms of toxicity."
+    },
+    {
+      "id": 12,
+      "unit": "diuretics",
+      "topic": "Loop Diuretics",
+      "type": "sata",
+      "q": "The nurse is preparing discharge teaching for a patient being sent home on furosemide (Lasix). Select ALL instructions the nurse should include.",
+      "opts": [
+        "Take furosemide at bedtime to allow overnight diuresis",
+        "Weigh yourself daily at the same time on the same scale",
+        "Report weight gain of more than 2 pounds per day or 5 pounds per week",
+        "Avoid black licorice and excessive alcohol consumption",
+        "Change positions slowly to prevent dizziness when standing"
+      ],
+      "correct": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Furosemide should NOT be taken at bedtime — it causes frequent urination and nocturia, disrupting sleep. It should be taken in the morning. Daily weights (same time, same scale, same clothing) track fluid status. Weight gain thresholds of > 2 lb/day or > 5 lb/week indicate fluid retention and require provider notification. Black licorice has aldosterone-like effects that worsen K+ loss; alcohol worsens hypotension. Slow position changes prevent orthostatic hypotension from volume depletion. | NURSING HOOK: Loop diuretic timing: MORNING — not at night. Daytime diuresis = better sleep. Classic NCLEX teaching question."
+    },
+    {
+      "id": 13,
+      "unit": "diuretics",
+      "topic": "Loop Diuretics",
+      "type": "mc",
+      "q": "Which loop diuretic is approved specifically for subcutaneous home administration via an on-body infuser for patients with New York Heart Association Class II–III chronic heart failure?",
+      "opts": [
+        "Torsemide (Demadex)",
+        "Bumetanide (Bumex)",
+        "Furosemide — Furoscix formulation",
+        "Chlorothiazide (Diuril)"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Furoscix was FDA approved in 2022 as a subcutaneous delivery system specifically for outpatient heart failure management in patients with NYHA Class II–III CHF. It delivers 30 mg in the first hour followed by 12.5 mg/hour for 4 hours, via an on-body infuser device. Clinical outcomes were equivalent to IV furosemide. It is intended for home settings where oral furosemide has limited effectiveness. Torsemide and bumetanide are not available in this formulation. Chlorothiazide is a thiazide, not a loop diuretic. | NURSING HOOK: Furoscix = subcutaneous loop diuretic for home use, approved 2022. Outcomes equal to IV administration. Clinical innovation worth knowing."
+    },
+    {
+      "id": 14,
+      "unit": "diuretics",
+      "topic": "Loop Diuretics",
+      "type": "mc",
+      "q": "A patient on furosemide has a serum potassium of 2.4 mEq/L. Which assessment finding would the nurse prioritize as MOST concerning?",
+      "opts": [
+        "Mild fatigue and muscle cramps",
+        "Irregular heart rhythm and widened QRS on ECG",
+        "Increased thirst and dry mucous membranes",
+        "Headache and dizziness with position change"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Potassium of 2.4 mEq/L is critically low (normal 3.5–5.0 mEq/L; < 2.5 = severe). At this level, life-threatening ECG changes occur — including flat or inverted T-waves, U-waves, prolonged QT, and eventually widened QRS and ventricular arrhythmias (ventricular fibrillation, torsades de pointes). This is a cardiac emergency. Muscle cramps, fatigue, thirst, and dizziness are expected low-priority findings compared to cardiac dysrhythmia. The ECG change must be addressed first. | NURSING HOOK: K+ < 2.5 mEq/L = severe hypokalemia = cardiac emergency. ECG changes are life-threatening and override all other assessment priorities."
+    },
+    {
+      "id": 15,
+      "unit": "diuretics",
+      "topic": "Loop Diuretics",
+      "type": "mc",
+      "q": "Which adverse metabolic effect of loop diuretics results from excess loss of chloride ions?",
+      "opts": [
+        "Metabolic acidosis",
+        "Metabolic alkalosis",
+        "Respiratory alkalosis",
+        "Hyperchloremic acidosis"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Loss of chloride (Cl−) through loop diuretic use creates a compensatory rise in bicarbonate (HCO3−) because the two anions maintain charge balance. As Cl− drops, HCO3− rises, increasing blood pH — this is metabolic alkalosis. Metabolic acidosis (low pH, low HCO3−) would occur with renal tubular acidosis or diarrhea, not diuretics. Respiratory alkalosis involves CO2, not bicarbonate-based shifts. | NURSING HOOK: Loop diuretics → Cl− loss → HCO3− compensatory rise → metabolic alkalosis. Remember: loops cause alkalosis, not acidosis."
+    },
+    {
+      "id": 16,
+      "unit": "diuretics",
+      "topic": "Osmotic Diuretics",
+      "type": "mc",
+      "q": "A patient is admitted with a traumatic brain injury and rising intracranial pressure (ICP). The provider orders mannitol. How does mannitol reduce ICP?",
+      "opts": [
+        "It blocks the NKCC2 cotransporter in the loop of Henle, reducing sodium reabsorption",
+        "It creates an osmotic gradient that draws water across the blood-brain barrier from brain tissue into circulation",
+        "It blocks aldosterone receptors in the collecting duct, reducing water retention",
+        "It increases cGMP levels, causing vasodilation and decreased cerebral vascular resistance"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Mannitol is a large sugar molecule that is filtered but not reabsorbed by the renal tubules, creating osmotic force in the tubular lumen. In the brain, mannitol creates an osmotic gradient that draws water from the hypertonic brain tissue across the blood-brain barrier into the vasculature. This reduces brain water content and ICP. In the eye, a similar mechanism draws water from the vitreous humor. NKCC2 = loop diuretics. Aldosterone receptor = spironolactone. cGMP pathway = PDE5 inhibitors. | NURSING HOOK: Mannitol = osmotic draw. Works by physics, not receptor binding. The sugar stays in the blood, creates gradient, water follows. This is WHY it must not be given in CHF — the water shifts INTO the circulation."
+    },
+    {
+      "id": 17,
+      "unit": "diuretics",
+      "topic": "Osmotic Diuretics",
+      "type": "mc",
+      "q": "A nurse is preparing to administer mannitol and notices crystals in the IV vial. What is the correct action?",
+      "opts": [
+        "Discard the vial and obtain a new one, as crystals indicate contamination",
+        "Warm the vial to 140°F, vigorously agitate it, then cool to body temperature before administering",
+        "Shake the vial vigorously and administer immediately",
+        "Filter the solution through a 0.2 micron filter and administer"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Mannitol crystallizes when cooled below its saturation temperature — this does NOT mean the vial is contaminated or must be discarded. The correct procedure: (1) warm the solution to 140°F (60°C), (2) vigorously agitate the vial to dissolve the crystals, (3) cool to body temperature before administration. You must ALWAYS use filtered tubing regardless, and check the vial before every administration. Undissolved crystals entering the vasculature can cause vascular damage and end-organ injury. | NURSING HOOK: Mannitol crystal protocol: 140°F → agitate → cool to body temp → filtered tubing. Do NOT discard — crystals are expected with temperature changes, not contamination."
+    },
+    {
+      "id": 18,
+      "unit": "diuretics",
+      "topic": "Osmotic Diuretics",
+      "type": "mc",
+      "q": "A patient receiving IV mannitol begins to experience worsening headache and declining neurological status 2 hours after administration. What complication does the nurse suspect?",
+      "opts": [
+        "Pulmonary edema from rapid fluid shift into the vasculature",
+        "Rebound increase in intracranial pressure from mannitol crossing the blood-brain barrier",
+        "Ototoxicity from high-dose mannitol administration",
+        "Hypovolemic shock from excessive diuresis"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Mannitol normally cannot cross the blood-brain barrier. However, if the barrier is disrupted (as in traumatic injury or inflammation), mannitol can leak into the brain tissue. Once there, it creates an osmotic gradient in the OPPOSITE direction — drawing water INTO the brain from the circulation, worsening cerebral edema and raising ICP. This rebound increase in ICP is a recognized complication. Pulmonary edema is a risk but presents with respiratory symptoms. Ototoxicity is a loop diuretic risk, not mannitol. | NURSING HOOK: Mannitol complication: rebound ICP from barrier leak. Monitor neuro status closely. Worsening neuro signs after mannitol = suspect rebound, not improvement."
+    },
+    {
+      "id": 19,
+      "unit": "diuretics",
+      "topic": "Osmotic Diuretics",
+      "type": "mc",
+      "q": "Which condition is an ABSOLUTE contraindication to mannitol administration?",
+      "opts": [
+        "Hypertension",
+        "Pulmonary edema and congestive heart failure",
+        "Mild hyponatremia",
+        "Chronic renal disease with eGFR of 40 mL/min"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Mannitol rapidly shifts fluid from tissues into the intravascular space. In a patient with pulmonary edema or CHF, the vasculature is already overloaded — adding more fluid volume triggers acute decompensation and flash pulmonary edema, which can be fatal. Mannitol is also contraindicated in anuria, severe hypovolemia, intracranial bleeding, and existing electrolyte abnormalities. Hypertension alone is not a contraindication. Mild hyponatremia and moderate CKD are caution points, not absolute contraindications. | NURSING HOOK: CHF + Mannitol = fatal volume overload. This is the most tested contraindication for mannitol. The fluid shifts into the vasculature = drowning from the inside."
+    },
+    {
+      "id": 20,
+      "unit": "diuretics",
+      "topic": "Osmotic Diuretics",
+      "type": "mc",
+      "q": "The nurse administering mannitol notes swelling and pain at the IV infusion site. What is the priority nursing action?",
+      "opts": [
+        "Slow the infusion rate and apply a warm compress",
+        "Stop the infusion immediately and assess for compartment syndrome",
+        "Apply ice to the site to reduce inflammation",
+        "Continue the infusion and notify the provider at the end of the shift"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Extravasation of mannitol into surrounding tissue can cause compartment syndrome — a dangerous condition involving elevated pressure in a closed fascial compartment (containing bone, muscle, and nerves) that leads to ischemia and tissue death. Stop the infusion immediately. Do NOT continue infusing. The provider must be notified promptly. Warm compresses are not the priority. Ice does not address compartment syndrome. This is a vascular emergency. | NURSING HOOK: Mannitol extravasation = compartment syndrome risk. Stop infusion immediately. Monitor for 5 P's of compartment syndrome: Pain, Pressure, Pallor, Paresthesia, Paralysis."
+    },
+    {
+      "id": 21,
+      "unit": "diuretics",
+      "topic": "Osmotic Diuretics",
+      "type": "sata",
+      "q": "The nurse is caring for a critically ill patient with increased ICP. The provider is deciding between mannitol and hypertonic saline. Select ALL statements that accurately describe advantages of hypertonic saline over mannitol.",
+      "opts": [
+        "Does not cause hypovolemia in patients who may already be hypotensive or bleeding",
+        "Can be infused temporarily through a peripheral vein until central access is established",
+        "Reduces ICP more rapidly than mannitol in all clinical scenarios",
+        "Does not require special reconstitution or delivery systems",
+        "Associated with improved cerebral perfusion and cellular oxygenation"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "Hypertonic saline advantages over mannitol: (1) Does NOT cause hypovolemia — important for bleeding or hypotensive critically ill patients; (2) Can run temporarily through peripheral IV — mannitol requires large central vein; (3) No special reconstitution — mannitol requires crystal checks and filtered tubing; (4) Also improves cerebral perfusion and oxygenation. Option C is incorrect — studies show SIMILAR clinical outcomes between the two; neither is definitively faster. The choice is patient-specific, not universally superior for one drug. | NURSING HOOK: Hypertonic saline vs. mannitol: similar outcomes overall. Choose hypertonic saline when patient is already hypotensive, bleeding, or lacks central access."
+    },
+    {
+      "id": 22,
+      "unit": "diuretics",
+      "topic": "K⁺-Sparing Diuretics",
+      "type": "mc",
+      "q": "A patient is prescribed spironolactone for heart failure. The nurse explains the mechanism of action. Which statement best describes how spironolactone increases urine output while retaining potassium?",
+      "opts": [
+        "It blocks the NKCC2 cotransporter, preventing sodium and potassium loss equally",
+        "It blocks aldosterone receptors in the collecting duct, preventing sodium reabsorption without stimulating potassium secretion",
+        "It increases GFR by dilating afferent arterioles, allowing more sodium filtration",
+        "It blocks sodium-glucose cotransporters in the proximal tubule, forcing glucose excretion"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Aldosterone normally binds receptors in the collecting duct, causing insertion of sodium channels (ENaC) and potassium secretion channels (ROMK) into the luminal membrane. This allows Na+ to enter cells and K+ to be secreted into the lumen. Spironolactone blocks aldosterone receptors — so sodium channels are NOT inserted, Na+ stays in the lumen (gets excreted with water), but because ROMK channels are also not stimulated, K+ is NOT secreted — it is retained in the body. This is the mechanism of potassium sparing. | NURSING HOOK: Spironolactone = aldosterone blocker. No aldosterone action = no K+ loss. Think: if aldosterone is the \"K+ pump out\" signal, blocking it = K+ stays in."
+    },
+    {
+      "id": 23,
+      "unit": "diuretics",
+      "topic": "K⁺-Sparing Diuretics",
+      "type": "mc",
+      "q": "A patient with heart failure is on spironolactone. The nurse checks the morning labs and finds: Na+ 138 mEq/L, K+ 5.8 mEq/L. What is the nurse's priority action?",
+      "opts": [
+        "Administer the spironolactone and continue monitoring",
+        "Hold the spironolactone and notify the provider — the patient has hyperkalemia",
+        "Give a dose of sodium polystyrene sulfonate (Kayexalate) and administer the spironolactone as ordered",
+        "Encourage the patient to eat more potassium-rich foods to balance the excess potassium"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "K+ of 5.8 mEq/L indicates hyperkalemia (normal 3.5–5.0 mEq/L). Spironolactone retains potassium, so administering it to a patient already hyperkalemic would worsen the imbalance and risk fatal cardiac arrhythmias (peaked T-waves, wide QRS, ventricular fibrillation occur at K+ > 6.5 mEq/L). HOLD the medication and notify the provider immediately. Kayexalate may be ordered separately to treat the hyperkalemia, but that is the provider's decision — the nurse's immediate action is to hold and notify. | NURSING HOOK: Spironolactone + hyperkalemia = HOLD + NOTIFY. Never give a K+-sparing diuretic when K+ is already elevated. This is a test-favorite scenario."
+    },
+    {
+      "id": 24,
+      "unit": "diuretics",
+      "topic": "K⁺-Sparing Diuretics",
+      "type": "mc",
+      "q": "A patient on spironolactone tells the nurse he has been using a potassium-based salt substitute to flavor his food instead of regular salt. How should the nurse respond?",
+      "opts": [
+        "Encourage continued use — potassium-based salt substitutes are heart-healthy and complementary to spironolactone therapy",
+        "Instruct the patient to discontinue the salt substitute immediately — it contains potassium chloride, which can cause dangerous hyperkalemia combined with spironolactone",
+        "Advise the patient to reduce the amount of salt substitute used, but small quantities are acceptable",
+        "Recommend the patient switch to a sodium-based salt substitute instead"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Potassium-based salt substitutes (often potassium chloride, KCl) can dramatically increase potassium intake. When combined with spironolactone — which already retains potassium — this creates a dangerous additive effect leading to potentially fatal hyperkalemia. Patients commonly believe that \"water pills\" make them lose potassium and try to compensate, not realizing their specific diuretic is K+-sparing. This education point is critically important and frequently tested. | NURSING HOOK: Patient education critical point: NEVER use potassium salt substitutes with K+-sparing diuretics. This is the #1 patient education question for spironolactone on NCLEX."
+    },
+    {
+      "id": 25,
+      "unit": "diuretics",
+      "topic": "K⁺-Sparing Diuretics",
+      "type": "mc",
+      "q": "A male patient on spironolactone reports tenderness and enlargement of his breast tissue. Which term describes this side effect, and what is the mechanism?",
+      "opts": [
+        "Gynecomastia — spironolactone binds androgen receptors, causing feminizing effects in males",
+        "Mastitis — spironolactone causes fluid retention in breast tissue",
+        "Galactorrhea — spironolactone stimulates prolactin secretion",
+        "Lipodystrophy — spironolactone causes abnormal fat distribution"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "Spironolactone is not completely selective for aldosterone receptors — it also binds androgen (testosterone) and progesterone receptors. In males, this produces feminizing effects: gynecomastia (breast tissue enlargement and tenderness), decreased libido, and erectile dysfunction. In females, it can cause menstrual irregularities. This is why eplerenone (a more selective aldosterone antagonist) is preferred when endocrine side effects are a concern. The nurse should document this and notify the provider. | NURSING HOOK: Spironolactone + males = gynecomastia. Mechanism = binds androgen receptors (not selective). Switch to eplerenone if problematic."
+    },
+    {
+      "id": 26,
+      "unit": "diuretics",
+      "topic": "K⁺-Sparing Diuretics",
+      "type": "mc",
+      "q": "According to the RALES trial findings, how does spironolactone benefit patients with severe heart failure?",
+      "opts": [
+        "It reduces all-cause mortality by 30% and decreases hospital readmission rates",
+        "It eliminates the need for ACE inhibitors in Class IV heart failure",
+        "It is the preferred first-line diuretic for all patients with heart failure",
+        "It prevents ventricular hypertrophy by directly inhibiting cardiac muscle growth"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "The Randomized Aldactone Evaluation Study (RALES) demonstrated that spironolactone reduces all-cause mortality by 30% in patients with Class III–IV heart failure. It also decreased hospital readmission rates, myocardial fibrosis, and cardiac muscle hypertrophy. The AHA recommends spironolactone for Class II–IV heart failure patients with K+  30 mL/hr. It does not replace ACE inhibitors and is not first-line for all HF patients. | NURSING HOOK: RALES trial: spironolactone = 30% reduction in all-cause mortality in HF. This number and study are NCLEX-testable. Indication criteria: K+  30 mL/hr."
+    },
+    {
+      "id": 27,
+      "unit": "diuretics",
+      "topic": "K⁺-Sparing Diuretics",
+      "type": "sata",
+      "q": "The nurse is reviewing medications for a patient newly prescribed spironolactone. Select ALL medications that could cause DANGEROUS additive hyperkalemia when combined with spironolactone.",
+      "opts": [
+        "ACE inhibitors (e.g., lisinopril)",
+        "Angiotensin II receptor blockers (ARBs, e.g., losartan)",
+        "Potassium supplements (e.g., K-Dur)",
+        "Furosemide (Lasix)",
+        "NSAIDs (e.g., ibuprofen)"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "All options except furosemide can increase serum potassium when combined with spironolactone. ACE inhibitors and ARBs both reduce aldosterone levels → less K+ secretion. Potassium supplements directly add K+. NSAIDs reduce renal blood flow, decreasing potassium excretion. Combined with spironolactone's K+-sparing effect, all create hyperkalemia risk. Furosemide (a loop diuretic) actually LOSES potassium — it is often intentionally combined with K+-sparing diuretics to counteract K+ loss, making it the exception here. | NURSING HOOK: K+-sparing + ACE inhibitor + ARB + K+ supplements + NSAIDs = stacking hyperkalemia risk. Furosemide is the intentional K+ counterbalance partner."
+    },
+    {
+      "id": 28,
+      "unit": "diuretics",
+      "topic": "Thiazide Diuretics",
+      "type": "mc",
+      "q": "Unlike loop diuretics, thiazide diuretics INCREASE calcium reabsorption. What is the clinical implication of this unique property?",
+      "opts": [
+        "Thiazides are contraindicated in patients with osteoporosis because they worsen bone density",
+        "Thiazides are preferred for hypertensive patients with osteoporosis because they help retain calcium",
+        "Thiazides cause hypocalcemia as a primary adverse effect",
+        "Thiazides increase urinary calcium excretion, making them useful for kidney stone prevention in hypercalciuric patients"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Thiazides increase calcium reabsorption in the distal tubule via two mechanisms: directly enhancing Ca²+ transport and indirectly through volume contraction-induced proximal tubule calcium reabsorption. This makes thiazides BENEFICIAL in patients with osteoporosis — they reduce calcium loss through the urine. Conversely, loop diuretics INCREASE calcium excretion (used to treat hypercalcemia). Thiazides can cause HYPERCALCEMIA as an adverse effect (too much calcium retained), not hypocalcemia. | NURSING HOOK: Thiazides = KEEP calcium. Loops = LOSE calcium. Thiazide + osteoporosis patient = clinically favorable. This contrast is heavily tested."
+    },
+    {
+      "id": 29,
+      "unit": "diuretics",
+      "topic": "Thiazide Diuretics",
+      "type": "mc",
+      "q": "A patient taking hydrochlorothiazide is found unresponsive with a serum sodium of 118 mEq/L. Which patient population is at HIGHEST risk for this degree of hyponatremia from thiazide use?",
+      "opts": [
+        "Young males with hypertension",
+        "Older adults who consume large amounts of water",
+        "Patients with chronic renal failure on dialysis",
+        "Athletes who restrict fluid intake"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Severe hyponatremia (Na+ < 120 mEq/L) from thiazides occurs most commonly in older adults — particularly older females — who also consume large amounts of water. Thiazides block sodium reabsorption in the distal tubule, and when combined with excess free water intake, the sodium dilution can become life-threatening. Symptoms progress from nausea and malaise → headache, lethargy → seizures → coma → death. This is more severe and more common with thiazides than with loop diuretics in this specific population. | NURSING HOOK: Thiazide + elderly + high water intake = dangerous hyponatremia. This patient profile is a classic NCLEX adverse effect scenario."
+    },
+    {
+      "id": 30,
+      "unit": "diuretics",
+      "topic": "Thiazide Diuretics",
+      "type": "mc",
+      "q": "A patient with a known sulfonamide (sulfa) allergy is prescribed hydrochlorothiazide for hypertension. What action should the nurse take?",
+      "opts": [
+        "Administer the medication as ordered — sulfa allergy does not apply to diuretics",
+        "Hold the medication and notify the prescriber — thiazides have a sulfonamide chemical structure and may cause hypersensitivity",
+        "Administer a reduced dose and monitor for rash for 30 minutes before giving the full dose",
+        "Premedicate with diphenhydramine and then administer the hydrochlorothiazide"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Hydrochlorothiazide and all thiazide diuretics have a sulfonamide chemical structure. Patients with sulfa allergy may experience hypersensitivity reactions ranging from rash and hives to angioedema, wheezing, and anaphylaxis. This is listed as a contraindication. The nurse must hold the medication and notify the prescriber so an alternative can be selected (e.g., a non-sulfa-structure diuretic like a loop diuretic or chlorthalidone, though chlorthalidone is also thiazide-like). Never premedicate and administer a contraindicated drug without provider guidance. | NURSING HOOK: Thiazides = sulfonamide structure = contraindicated in sulfa allergy. Always ask about sulfa allergy before starting any thiazide. This is the #1 thiazide contraindication on NCLEX."
+    },
+    {
+      "id": 31,
+      "unit": "diuretics",
+      "topic": "Thiazide Diuretics",
+      "type": "mc",
+      "q": "Which thiazide-like diuretic is uniquely effective in patients with chronic renal disease because it does NOT affect GFR or trigger the renin-angiotensin-aldosterone system (RAAS)?",
+      "opts": [
+        "Hydrochlorothiazide (HCTZ)",
+        "Chlorothiazide (Diuril)",
+        "Chlorthalidone (Thalitone)",
+        "Metolazone (Zaroxolyn)"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Metolazone (Zaroxolyn) is a thiazide-LIKE diuretic with two key advantages: (1) it remains effective even in CKD because it does not affect GFR, allowing it to work when other thiazides lose efficacy; (2) it does not trigger RAAS, which means when combined with a loop diuretic, it minimizes diuretic resistance. HCTZ loses effectiveness at lower GFRs. Chlorthalidone has a prolonged action (48–72 hours) and is useful for hypertension. Chlorothiazide is one of the few thiazides with an IV formulation. | NURSING HOOK: Metolazone = thiazide-like that works in CKD + does NOT trigger RAAS = ideal for combining with loops to overcome diuretic resistance. Clinically, this drug is the \"secret weapon\" for resistant fluid overload."
+    },
+    {
+      "id": 32,
+      "unit": "diuretics",
+      "topic": "Thiazide Diuretics",
+      "type": "sata",
+      "q": "A nurse is providing discharge teaching for a patient newly prescribed hydrochlorothiazide. Select ALL instructions that are appropriate.",
+      "opts": [
+        "Wear sunscreen and avoid prolonged sun exposure — thiazides increase photosensitivity and skin cancer risk",
+        "Take the medication at bedtime for optimal effect",
+        "Monitor blood glucose closely, especially if diabetic — thiazides can worsen glucose control",
+        "Report leg cramps, muscle weakness, or irregular heartbeat",
+        "Avoid taking ibuprofen or naproxen for pain — NSAIDs reduce diuretic effectiveness"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Option A: Correct — photosensitivity reactions including increased risk of skin cancer are documented with thiazide use. Option B: INCORRECT — take in the morning (not bedtime) to avoid nocturia. Option C: Correct — thiazides cause hyperglycemia through inhibition of insulin secretion; monitor glucose especially in diabetics. Option D: Correct — hypokalemia from thiazides causes muscle weakness, cramps, and arrhythmias — must report. Option E: Correct — NSAIDs reduce renal blood flow, diminishing diuretic effectiveness and worsening renal function. | NURSING HOOK: Thiazide teaching: morning dosing, sunscreen, glucose monitoring, report K+ symptoms, no NSAIDs. These are the five most testable teaching points."
+    },
+    {
+      "id": 33,
+      "unit": "diuretics",
+      "topic": "Thiazide Diuretics",
+      "type": "mc",
+      "q": "Gordon Jefferson (from your case study) was prescribed metolazone for edema and returns 3 months later with K+ of 2.9 mEq/L and complaints of generalized weakness. The provider prescribes a potassium supplement. Gordon says, \"I have a salt substitute I use on my food.\" How does the nurse respond?",
+      "opts": [
+        "Encourage this — potassium-based salt substitutes are a great way to increase potassium intake naturally",
+        "Explain that salt substitutes often contain potassium chloride and must be used cautiously because unmonitored K+ intake combined with supplements can cause hyperkalemia",
+        "Advise Gordon to use the salt substitute freely since he has hypokalemia and needs more potassium",
+        "Recommend switching to a sodium chloride-based salt substitute to avoid interference with his thiazide"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Salt substitutes typically contain potassium chloride (KCl), not sodium chloride. While Gordon is currently hypokalemic (K+ 2.9 mEq/L), unmonitored use of KCl salt substitute on top of a prescribed K+ supplement creates risk of overcorrection to hyperkalemia — which carries its own cardiac dangers. The nurse should explain the content of the salt substitute, instruct Gordon to use it only as directed by his provider, and monitor K+ levels closely. This is different from the scenario with K+-sparing diuretics — here K+ is low, but the interaction still needs careful management. | NURSING HOOK: Salt substitutes + K+ supplements simultaneously = double-loading potassium. Risk of rebound hyperkalemia. Patient education must address this, even when K+ is low."
+    },
+    {
+      "id": 34,
+      "unit": "anti_infective",
+      "topic": "Urinary Anti-infectives",
+      "type": "mc",
+      "q": "A patient taking trimethoprim/sulfamethoxazole (TMP/SMX) for a UTI calls the nurse reporting that her urine has turned an orange-red color. What is the nurse's best response?",
+      "opts": [
+        "Reassure the patient — this is an expected effect of TMP/SMX and is harmless",
+        "Instruct the patient to stop the medication immediately and come to the clinic — this may indicate kidney damage",
+        "Advise the patient that orange urine indicates the medication is working against the bacteria",
+        "Inform the patient this is a side effect of nitrofurantoin, not TMP/SMX — confirm which medication she is taking"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "TMP/SMX does NOT cause orange-red urine. Orange-red urine is the characteristic side effect of PHENAZOPYRIDINE hydrochloride (Pyridium), a urinary analgesic. If this patient is only prescribed TMP/SMX, the orange-red urine is unexpected and requires investigation — it could indicate hematuria, or the patient may be taking a phenazopyridine OTC product. The nurse must confirm which medication is actually causing the color change. Nitrofurantoin causes BROWN urine (dark, tea-colored), not orange-red. | NURSING HOOK: Urine color chart: Nitrofurantoin = brown. Phenazopyridine = orange-red. TMP/SMX = no color change. Always confirm which drug the patient is actually taking."
+    },
+    {
+      "id": 35,
+      "unit": "anti_infective",
+      "topic": "Urinary Anti-infectives",
+      "type": "mc",
+      "q": "Nitrofurantoin is prescribed for a patient with a UTI. Which lab value would cause the nurse to hold the medication and notify the provider before administration?",
+      "opts": [
+        "Serum sodium of 132 mEq/L",
+        "Creatinine clearance (CrCl) of 45 mL/min",
+        "Serum potassium of 4.2 mEq/L",
+        "White blood cell count of 14,000/mm³"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Nitrofurantoin is contraindicated in patients with creatinine clearance < 60 mL/min. The drug is renally excreted — when renal function is impaired, nitrofurantoin accumulates to toxic levels in the blood instead of being excreted into the urine where it needs to be to treat the UTI. This also means it fails therapeutically because it cannot reach adequate concentration in the urine. CrCl of 45 mL/min is below the 60 threshold — HOLD and notify. The other lab values are not contraindications for nitrofurantoin. | NURSING HOOK: Nitrofurantoin + CrCl < 60 mL/min = HOLD. Dual reason: (1) drug accumulates → systemic toxicity; (2) drug cannot reach therapeutic urine concentration → treatment failure."
+    },
+    {
+      "id": 36,
+      "unit": "anti_infective",
+      "topic": "Urinary Anti-infectives",
+      "type": "mc",
+      "q": "TMP/SMX (Bactrim) works by inhibiting which step in bacterial metabolism?",
+      "opts": [
+        "Cell wall synthesis — blocks peptidoglycan cross-linking",
+        "Protein synthesis — binds the 30S ribosomal subunit",
+        "DNA replication — inhibits DNA gyrase (topoisomerase II)",
+        "Folic acid synthesis — inhibits bacterial production of tetrahydrofolic acid, required for DNA synthesis"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "TMP/SMX inhibits two sequential steps in bacterial folic acid synthesis. Trimethoprim inhibits dihydrofolate reductase, and sulfamethoxazole inhibits dihydropteroate synthase. Together, they block production of tetrahydrofolic acid, which bacteria need to synthesize thymidine, purines, and ultimately DNA. Human cells obtain folate from diet and are not affected by this mechanism — this is the basis of TMP/SMX's selectivity for bacteria. Cell wall = beta-lactams/vancomycin. 30S ribosome = aminoglycosides/tetracyclines. DNA gyrase = fluoroquinolones. | NURSING HOOK: TMP/SMX mechanism: blocks bacterial folic acid synthesis → no DNA → bacteria cannot replicate. Humans get folate from diet, so we are spared. This is classic biochemical pharmacology."
+    },
+    {
+      "id": 37,
+      "unit": "anti_infective",
+      "topic": "Urinary Anti-infectives",
+      "type": "mc",
+      "q": "A patient taking TMP/SMX has a potassium level of 5.6 mEq/L. The nurse is aware that TMP/SMX can cause hyperkalemia. What is the mechanism?",
+      "opts": [
+        "TMP/SMX blocks aldosterone production, reducing potassium secretion",
+        "The trimethoprim component blocks potassium secretion channels in the renal tubules, similar to a potassium-sparing diuretic effect",
+        "TMP/SMX causes renal cell destruction, releasing intracellular potassium into the bloodstream",
+        "The sulfamethoxazole component increases potassium reabsorption in the proximal tubule"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Trimethoprim has a chemical structure similar to potassium-sparing diuretics (like amiloride). It blocks the epithelial sodium channel (ENaC) in the collecting duct, which reduces sodium reabsorption AND reduces the electrochemical gradient that drives potassium secretion. The result is hyperkalemia — potassium is retained in the body. This effect is clinically relevant, particularly in patients who are elderly, have renal impairment, or are also taking ACE inhibitors, ARBs, or K+-sparing diuretics. | NURSING HOOK: TMP/SMX → hyperkalemia. Mechanism: trimethoprim acts like a K+-sparing diuretic. Monitor K+ in patients on TMP/SMX, especially if also on ACE inhibitors, ARBs, or spironolactone."
+    },
+    {
+      "id": 38,
+      "unit": "anti_infective",
+      "topic": "Urinary Anti-infectives",
+      "type": "mc",
+      "q": "A patient prescribed TMP/SMX also takes warfarin for atrial fibrillation. What does the nurse anticipate?",
+      "opts": [
+        "TMP/SMX reduces warfarin efficacy — the INR will decrease and anticoagulation will be inadequate",
+        "TMP/SMX inhibits warfarin metabolism — the INR will increase and bleeding risk will rise",
+        "TMP/SMX and warfarin have no significant interaction at standard doses",
+        "TMP/SMX displaces warfarin from protein binding sites, reducing its effect"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "TMP/SMX inhibits CYP2C9, the primary enzyme responsible for metabolizing warfarin. When this enzyme is blocked, warfarin is broken down more slowly, accumulating to higher blood levels. The INR rises, increasing bleeding risk. The nurse must notify the provider, anticipate INR monitoring, and watch for signs of excessive anticoagulation: unusual bruising, prolonged bleeding from cuts, blood in urine or stool, headache (intracranial bleed risk). | NURSING HOOK: TMP/SMX + warfarin = ↑ INR = bleeding risk. Monitor INR closely. This interaction is clinically important and testable on NCLEX and pharm exams."
+    },
+    {
+      "id": 39,
+      "unit": "anti_infective",
+      "topic": "Urinary Anti-infectives",
+      "type": "mc",
+      "q": "A patient is prescribed nitrofurantoin for a recurrent UTI. She reports taking the medication for 8 weeks continuously. The nurse recognizes which serious adverse effect to monitor for with long-term nitrofurantoin use?",
+      "opts": [
+        "Peripheral neuropathy and pulmonary fibrosis",
+        "Sensorineural hearing loss",
+        "Aplastic anemia and agranulocytosis",
+        "Stevens-Johnson syndrome and toxic epidermal necrolysis"
+      ],
+      "correct": [
+        0
+      ],
+      "rationale": "The FDA Black Box Warning for nitrofurantoin includes risk of acute, subacute, or CHRONIC pulmonary reactions — including diffuse interstitial pneumonitis and pulmonary fibrosis with long-term use. Neurological effects including peripheral neuropathy are also documented. These are serious and potentially irreversible adverse effects of prolonged therapy. Stevens-Johnson syndrome is more associated with TMP/SMX. Hearing loss is associated with loop diuretics and aminoglycosides. Aplastic anemia is associated with chloramphenicol. | NURSING HOOK: Nitrofurantoin BBW: pulmonary fibrosis + peripheral neuropathy with long-term use. Monitor for dyspnea, cough, chest pain at every visit in patients on chronic suppressive nitrofurantoin."
+    },
+    {
+      "id": 40,
+      "unit": "anti_infective",
+      "topic": "Urinary Anti-infectives",
+      "type": "mc",
+      "q": "Which urinary anti-infective is appropriate ONLY as prophylaxis or suppression of recurrent UTIs — NOT for treating an active infection?",
+      "opts": [
+        "Nitrofurantoin (Furadantin)",
+        "Trimethoprim/Sulfamethoxazole (Bactrim)",
+        "Methenamine Hippurate (Hiprex)",
+        "Fosfomycin (Monurol)"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Methenamine hippurate is specifically indicated for prophylactic or suppressive treatment of frequently recurring UTIs. It should only be used AFTER other appropriate antimicrobials have already eradicated the active infection. It is not used for acute treatment. Nitrofurantoin, TMP/SMX, and fosfomycin are all used for active UTI treatment. Fosfomycin is unique in being a single-dose oral treatment for uncomplicated acute cystitis. | NURSING HOOK: Methenamine = suppression/prophylaxis ONLY. Active infection must be cleared first by another antibiotic before starting methenamine maintenance therapy."
+    },
+    {
+      "id": 41,
+      "unit": "anti_infective",
+      "topic": "Urinary Anti-infectives",
+      "type": "sata",
+      "q": "The nurse is providing discharge teaching to a patient starting TMP/SMX for a UTI. Select ALL correct instructions.",
+      "opts": [
+        "Avoid direct sun exposure — TMP/SMX causes photosensitivity that can cause sunburn or skin rash",
+        "Stop taking the medication when your symptoms resolve to prevent antibiotic resistance",
+        "Complete the full prescribed course of medication even after symptoms improve",
+        "Do not crush the tablets — they may cause esophageal irritation",
+        "Report sore throat, fever, or pallor immediately — these may be early signs of blood dyscrasias"
+      ],
+      "correct": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rationale": "Option A: Correct — TMP/SMX causes photosensitivity; sunscreen and sun avoidance are essential. Option B: INCORRECT — this is dangerous advice. Stopping antibiotics early → treatment failure and antibiotic resistance. ALWAYS complete the full course. Option C: Correct — complete the full course regardless of symptom resolution. Option D: Correct — do not crush; risk of esophageal or stomach irritation. Option E: Correct — blood dyscrasias (agranulocytosis, thrombocytopenia) are serious adverse effects. Sore throat + fever + pallor = early hematologic warning signs. Report immediately. | NURSING HOOK: TMP/SMX teaching: complete full course (NEVER stop early), photosensitivity protection, no crushing, report blood dyscrasia signs. Stopping early is the #1 incorrect patient behavior."
+    },
+    {
+      "id": 42,
+      "unit": "antispasmodic",
+      "topic": "Antispasmodics/Antimuscarinics",
+      "type": "mc",
+      "q": "A patient is prescribed oxybutynin for overactive bladder. The nurse explains how the medication works. Which statement best describes its mechanism?",
+      "opts": [
+        "It stimulates beta-3 adrenergic receptors to increase bladder capacity",
+        "It directly relaxes bladder smooth muscle AND blocks muscarinic acetylcholine receptors, reducing involuntary detrusor contractions",
+        "It inhibits phosphodiesterase 5, increasing cGMP levels and relaxing smooth muscle",
+        "It blocks alpha-1 adrenergic receptors in the bladder neck and prostate, reducing obstruction"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Oxybutynin has a dual mechanism: (1) direct antispasmodic effect on detrusor smooth muscle, and (2) inhibition of muscarinic action of acetylcholine on smooth muscle. Together, these relax the bladder muscle, increase bladder capacity, and reduce the involuntary urge to void. Mirabegron works via beta-3 receptors. PDE5 inhibitors (tadalafil) work via cGMP. Alpha-1 blockers (tamsulosin) are used for BPH/prostate obstruction, not OAB. | NURSING HOOK: Oxybutynin = dual action: direct muscle relaxation + antimuscarinic. This is what makes it an antispasmodic rather than just an antimuscarinic."
+    },
+    {
+      "id": 43,
+      "unit": "antispasmodic",
+      "topic": "Antispasmodics/Antimuscarinics",
+      "type": "mc",
+      "q": "A nurse is reviewing oxybutynin for a patient with overactive bladder. Which existing condition would be an ABSOLUTE contraindication to prescribing oxybutynin?",
+      "opts": [
+        "Type 2 diabetes mellitus",
+        "Uncontrolled narrow-angle glaucoma",
+        "Hypertension",
+        "Mild renal impairment (CrCl 55 mL/min)"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Oxybutynin blocks muscarinic receptors throughout the body. In the eye, acetylcholine normally constricts the pupil and opens the canal of Schlemm for aqueous humor drainage. When muscarinic receptors are blocked, the pupil dilates, the lens changes shape, and the drainage canal narrows — in a patient with narrow-angle glaucoma, this can trigger acute angle-closure crisis with sudden severe eye pain, blurred vision, and permanent vision loss. This is an absolute contraindication, not just a caution. Diabetes, hypertension, and mild renal impairment are not contraindications. | NURSING HOOK: Anticholinergics + narrow-angle glaucoma = dangerous. Mechanism: pupil dilation → drainage angle closure → acute IOP spike → vision loss. Contraindication applies to all antimuscarinics."
+    },
+    {
+      "id": 44,
+      "unit": "antispasmodic",
+      "topic": "Antispasmodics/Antimuscarinics",
+      "type": "mc",
+      "q": "A patient on oxybutynin for overactive bladder has not voided in 8 hours and is visibly anxious, with a firm, distended lower abdomen. The nurse recognizes this as which complication?",
+      "opts": [
+        "Constipation secondary to anticholinergic effects",
+        "Urinary retention — the primary anticholinergic adverse effect on the bladder",
+        "Bladder spasm unresponsive to oxybutynin",
+        "Stress incontinence worsened by the medication"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Oxybutynin relaxes the detrusor muscle — this is therapeutic for OAB but can tip over into causing urinary RETENTION if the bladder cannot contract adequately to void. Signs: no void for > 6–8 hours, distended bladder (firm, suprapubic fullness), patient anxiety or discomfort. The nurse must notify the provider immediately and prepare for urinary straight catheterization to drain the bladder. This is a serious adverse effect requiring prompt intervention. | NURSING HOOK: Anticholinergics intended to reduce urgency can paradoxically cause urinary retention. Firm suprapubic area + no voiding = retention emergency → catheterize."
+    },
+    {
+      "id": 45,
+      "unit": "antispasmodic",
+      "topic": "Antispasmodics/Antimuscarinics",
+      "type": "mc",
+      "q": "A patient on oxybutynin reports planning to work outdoors in 100°F heat this summer. Which risk does the nurse MOST need to address?",
+      "opts": [
+        "Increased photosensitivity — the patient should wear SPF 50 sunscreen",
+        "Heat stroke — oxybutynin blocks sweating, impairing thermoregulation",
+        "Dehydration from excessive urination in hot weather",
+        "Skin irritation from transdermal patch in heat"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Anticholinergic drugs block muscarinic receptors in sweat glands, impairing sweating. Sweat is the body's primary mechanism for dissipating heat. Without adequate sweating in extreme heat, body temperature rises rapidly, leading to heat exhaustion and heat stroke — a potentially fatal condition. The nurse must explicitly teach this patient to avoid overheating, stay in cool environments during extreme heat, and recognize early signs of heat exhaustion (dizziness, headache, hot dry skin). | NURSING HOOK: Anticholinergics block sweating → heat stroke risk. This is a CRITICAL safety teaching point for all patients on antimuscarinics. Hot summer + anticholinergic = high heat stroke risk."
+    },
+    {
+      "id": 46,
+      "unit": "antispasmodic",
+      "topic": "Antispasmodics/Antimuscarinics",
+      "type": "mc",
+      "q": "Mirabegron (Myrbetriq) is prescribed instead of oxybutynin for a patient with overactive bladder who cannot tolerate dry mouth and constipation. How does mirabegron's mechanism differ from oxybutynin's?",
+      "opts": [
+        "Mirabegron blocks muscarinic receptors more selectively, causing fewer side effects than oxybutynin",
+        "Mirabegron activates beta-3 adrenergic receptors in the bladder, causing smooth muscle relaxation through a non-anticholinergic pathway",
+        "Mirabegron inhibits phosphodiesterase 5, increasing cGMP and relaxing the detrusor",
+        "Mirabegron directly relaxes smooth muscle without affecting any receptors"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Mirabegron is a selective beta-3 adrenoceptor agonist — a completely different drug class from antimuscarinics. It relaxes the detrusor muscle by activating beta-3 receptors rather than blocking acetylcholine receptors. Because it does not work through the muscarinic pathway, it avoids the classic anticholinergic side effects (dry mouth, constipation, retention, blurred vision). Its primary adverse effect is hypertension. This is its key clinical advantage: effective for OAB without anticholinergic burden. | NURSING HOOK: Mirabegron = beta-3 agonist, NOT antimuscarinic. Same bladder relaxation result, completely different mechanism. Key advantage: no dry mouth, constipation, or retention. Primary adverse effect: hypertension."
+    },
+    {
+      "id": 47,
+      "unit": "antispasmodic",
+      "topic": "Antispasmodics/Antimuscarinics",
+      "type": "sata",
+      "q": "The nurse is providing education to a patient starting oxybutynin (Ditropan). Select ALL statements that are correct teaching points for this medication.",
+      "opts": [
+        "Take oxybutynin on an empty stomach with water for better absorption",
+        "If dry mouth occurs, use sugarless gum or hard candy to stimulate saliva",
+        "This medication increases sweating — stay well hydrated in hot weather",
+        "Wear sunglasses outdoors — eye sensitivity and blurred vision may occur",
+        "Do not take extra doses if urgency breaks through — this can cause urinary retention"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "Option A: Correct — oxybutynin is better absorbed on an empty stomach. Option B: Correct — sugarless gum/candy or saliva substitutes manage dry mouth without adding sugar. Option C: INCORRECT — oxybutynin BLOCKS sweating (anticholinergic). Option D: Correct — photophobia and blurred vision are anticholinergic effects; sunglasses help. Option E: Correct — extra doses increase anticholinergic effects, risking urinary retention and reflex UTI from incomplete emptying. | NURSING HOOK: Oxybutynin patient teaching: empty stomach, sugarless candy for dry mouth, sunglasses, no extra doses. Critical correction: it BLOCKS sweating, does NOT increase it."
+    },
+    {
+      "id": 48,
+      "unit": "analgesic",
+      "topic": "Urinary Analgesics",
+      "type": "mc",
+      "q": "A patient with a UTI is prescribed phenazopyridine hydrochloride (Pyridium). She asks the nurse why she needs antibiotics if she has already been given Pyridium. What is the nurse's best response?",
+      "opts": [
+        "Phenazopyridine works together with antibiotics to help kill bacteria in the urinary tract",
+        "Phenazopyridine only relieves pain and burning — it has NO antibacterial activity and does NOT treat the infection. Antibiotics are required to eliminate the bacteria causing the UTI",
+        "Phenazopyridine is effective for mild UTIs without antibiotics, but your infection is more severe",
+        "You can stop the antibiotic once your pain is gone, as Pyridium will maintain the benefit"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Phenazopyridine is a urinary analgesic (azo dye) that numbs the lining of the urinary tract mucosa, providing symptomatic relief of pain, burning, urgency, and frequency. It has ZERO antibacterial activity. Using it without antibiotics allows the infection to progress — potentially ascending to the kidneys (pyelonephritis). Patients must understand this critical distinction. Using Pyridium alone is dangerous because symptom relief may mask worsening infection. | NURSING HOOK: Phenazopyridine = pain relief ONLY. It does NOT treat infection. The most important patient education point: never use instead of antibiotics for UTI."
+    },
+    {
+      "id": 49,
+      "unit": "analgesic",
+      "topic": "Urinary Analgesics",
+      "type": "mc",
+      "q": "A patient taking phenazopyridine calls reporting that her skin looks yellowish and her eyes appear to have a yellow tinge. What does this indicate, and what action should the nurse take?",
+      "opts": [
+        "This is an expected effect of phenazopyridine — the dye in the medication causes yellow discoloration of skin and eyes",
+        "This indicates drug accumulation due to impaired renal excretion — stop the medication immediately and notify the provider",
+        "The patient is likely developing jaundice from a liver condition unrelated to phenazopyridine — refer to primary care",
+        "The yellowing is from orange-red urine staining clothing, not actual skin — reassure the patient"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "A yellowish tinge to the skin or sclera (whites of the eyes) in a patient taking phenazopyridine is a toxicity signal — it indicates drug accumulation because the kidneys are not excreting the medication adequately. This is different from the expected reddish-orange color of the urine, saliva, and tears. Yellow skin/sclera = STOP the drug, notify provider, assess renal function. This is specifically listed in the adverse effects as a sign of impaired renal excretion. | NURSING HOOK: Phenazopyridine: orange urine/saliva/tears = normal. Yellow SKIN or SCLERA = TOXICITY → stop the drug. This distinction is critically testable."
+    },
+    {
+      "id": 50,
+      "unit": "analgesic",
+      "topic": "Urinary Analgesics",
+      "type": "mc",
+      "q": "A patient is prescribed phenazopyridine. Why must the nurse instruct the patient to remove contact lenses before starting this medication?",
+      "opts": [
+        "Phenazopyridine causes blurred vision that makes contact lens use dangerous",
+        "The medication will permanently stain contact lenses reddish-orange",
+        "Phenazopyridine causes dry eyes, increasing the risk of corneal abrasion with contact lenses",
+        "The medication increases IOP, which is worsened by contact lens pressure"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Phenazopyridine is an azo dye that colors not only urine but also saliva and tears reddish-orange. Tears that drain over contact lenses will permanently stain them — soft contact lenses are especially susceptible to irreversible discoloration. The patient must remove and NOT wear contact lenses for the duration of phenazopyridine therapy (maximum 2 days). Glasses should be worn instead. | NURSING HOOK: Phenazopyridine + contacts = permanent staining. Remove lenses before starting. Remind every patient about this — many discover it the hard way."
+    },
+    {
+      "id": 51,
+      "unit": "analgesic",
+      "topic": "Urinary Analgesics",
+      "type": "mc",
+      "q": "A patient with a UTI is prescribed both fosfomycin (Monurol) and phenazopyridine. After 2 days, her pain is resolved and she wants to continue the phenazopyridine for a few more days \"just in case.\" What is the correct nursing response?",
+      "opts": [
+        "Allow continued use — phenazopyridine is safe long-term and may prevent symptom recurrence",
+        "Instruct the patient to stop the phenazopyridine — use beyond 2 days can mask symptoms of an ongoing or worsening infection that requires treatment",
+        "Allow continued use if the fosfomycin course is complete — there is no interaction between the two medications",
+        "Tell the patient she can take phenazopyridine on an as-needed basis indefinitely for UTI symptom relief"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Phenazopyridine is approved for a MAXIMUM of 2 consecutive days. Using it longer masks urinary symptoms that would otherwise alert the patient (and provider) to a worsening or unresolved infection. If the bacteria are not eliminated (e.g., resistant organism, incomplete treatment), the patient would feel comfortable while the infection silently progresses to pyelonephritis or sepsis. Two-day limit is a patient safety boundary — not a pharmaceutical convenience. | NURSING HOOK: Phenazopyridine: 2 days MAXIMUM. Beyond 2 days = dangerous symptom masking. This time limit is one of the most tested facts about this medication."
+    },
+    {
+      "id": 52,
+      "unit": "stimulant",
+      "topic": "Urinary Stimulants",
+      "type": "mc",
+      "q": "A patient is 4 hours post-operatively from abdominal surgery and has not voided. She is uncomfortable. The provider orders bethanechol chloride. How does bethanechol work to promote urination?",
+      "opts": [
+        "It blocks muscarinic receptors in the bladder, causing the detrusor to relax and fill more completely before voiding",
+        "It activates the parasympathetic nervous system through muscarinic receptor stimulation, increasing detrusor muscle tone and promoting bladder contraction",
+        "It inhibits the sympathetic nervous system, reducing urethral sphincter tone and allowing urine to flow freely",
+        "It directly stimulates alpha-1 adrenergic receptors in the bladder neck, opening the urethral outlet"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Bethanechol is a cholinergic agonist — it mimics acetylcholine by stimulating muscarinic receptors on the detrusor muscle. This increases bladder muscle tone, causing contraction, which promotes voiding and bladder emptying. It is used for FUNCTIONAL (non-obstructive) urinary retention — meaning the problem is the bladder muscle not contracting, not a physical blockage. Blocking muscarinic receptors (option A) = anticholinergic = relaxes the bladder = the opposite. Bethanechol is the STIMULANT — it makes the bladder work harder, not less. | NURSING HOOK: Bethanechol = cholinergic = STIMULATES bladder contraction. Opposite of anticholinergics/antispasmodics which RELAX the bladder. Stimulant vs. relaxant: know the direction."
+    },
+    {
+      "id": 53,
+      "unit": "stimulant",
+      "topic": "Urinary Stimulants",
+      "type": "mc",
+      "q": "A patient with asthma is prescribed bethanechol for post-surgical urinary retention. The nurse should take which action?",
+      "opts": [
+        "Administer as ordered but have albuterol available at the bedside",
+        "Hold the medication and notify the provider — asthma is a contraindication to bethanechol",
+        "Administer with a reduced dose since asthma patients have increased sensitivity to cholinergic drugs",
+        "Administer as ordered and monitor for respiratory depression"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Bethanechol stimulates muscarinic receptors throughout the body — not just the bladder. In the lungs, cholinergic stimulation causes bronchoconstriction (airway narrowing). In a patient with asthma, whose airways are already hyperresponsive, bethanechol can trigger severe bronchospasm, asthma exacerbation, and respiratory failure. Asthma is listed as an absolute contraindication to bethanechol. Hold the medication, do not modify the dose, and notify the provider for an alternative approach (e.g., catheterization). | NURSING HOOK: Bethanechol + asthma = bronchospasm → respiratory emergency. Asthma is a contraindication. Remember: cholinergic = bronchoconstriction. Anticholinergic = bronchodilation. They are opposites."
+    },
+    {
+      "id": 54,
+      "unit": "stimulant",
+      "topic": "Urinary Stimulants",
+      "type": "mc",
+      "q": "A patient taking bethanechol reports dizziness and feels like she might faint when she stands up from the bed. What is the nurse's assessment of this symptom?",
+      "opts": [
+        "This is unrelated to bethanechol — assess for dehydration as the cause",
+        "This is a vasomotor response — bethanechol's cholinergic stimulation causes systemic vasodilation, leading to orthostatic hypotension",
+        "This indicates the medication is working — bladder contraction can temporarily cause vasovagal responses",
+        "This is a sign of urinary retention worsening despite bethanechol treatment"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Bethanechol causes a vasomotor response through cholinergic stimulation — it causes peripheral vasodilation and can drop blood pressure, particularly with positional changes (orthostatic hypotension). Symptoms: dizziness, lightheadedness, vertigo, and syncope when standing. The nurse should instruct the patient to rise slowly, sit at the edge of the bed before standing, and use a call bell when ambulating. The provider should be notified, and vital signs should be monitored. Do NOT give double doses — this worsens the vasomotor response dramatically. | NURSING HOOK: Bethanechol vasomotor response = orthostatic hypotension from vasodilation. Teach slow position changes. Double dosing can cause severe hypotension — absolute rule: never double dose."
+    },
+    {
+      "id": 55,
+      "unit": "stimulant",
+      "topic": "Urinary Stimulants",
+      "type": "mc",
+      "q": "A patient receiving bethanechol for bladder atony has not voided 2 hours after the first dose. The nurse is about to contact the provider. What is the expected window in which bethanechol effects should appear?",
+      "opts": [
+        "Effects should appear within 5–10 minutes; if no response by 30 minutes, notify provider",
+        "Effects begin within 30 minutes, peak between 60–90 minutes, and persist approximately 1 hour",
+        "Effects take 4–6 hours to develop; the nurse should wait before notifying the provider",
+        "Effects are delayed by 24 hours; continued dosing is required before reassessment"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "According to the prescribing information, bethanechol effects sometimes appear within 30 minutes, usually peak at 60–90 minutes, and persist for approximately 1 hour. The provider should be notified if there is no improvement within 90 minutes — the treatment plan may need modification (e.g., catheterization or alternative medication). Dosing is 5–10 mg initially, repeated at hourly intervals until a satisfactory response or maximum of 50 mg. The nurse should not wait 4–6 hours to notify. | NURSING HOOK: Bethanechol timeline: onset 30 min, peak 60–90 min, duration ~1 hour. No response by 90 minutes = notify provider. This is patient monitoring critical information."
+    },
+    {
+      "id": 56,
+      "unit": "pde5",
+      "topic": "PDE5 Inhibitors",
+      "type": "mc",
+      "q": "A patient with benign prostatic hyperplasia (BPH) is prescribed tadalafil (Cialis). His wife asks why he is getting a medication \"for erectile dysfunction\" for a prostate problem. How does the nurse explain tadalafil's mechanism for BPH?",
+      "opts": [
+        "Tadalafil shrinks the prostate gland by blocking dihydrotestosterone (DHT), reducing the size of the obstruction",
+        "Tadalafil inhibits PDE5, increasing cGMP levels, which relaxes smooth muscle in the prostate and bladder neck — reducing urinary obstruction without shrinking the gland",
+        "Tadalafil improves BPH by blocking alpha-1 receptors in the prostate, reducing muscle tone at the outlet",
+        "Tadalafil works by stimulating beta-3 receptors in the prostate, similar to its effect on the heart"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Tadalafil inhibits phosphodiesterase type 5 (PDE5), the enzyme that breaks down cyclic guanosine monophosphate (cGMP). When PDE5 is blocked, cGMP accumulates. High cGMP levels signal smooth muscle to RELAX. In the prostate and bladder neck, this relaxation reduces urethral obstruction and improves urine flow — relieving LUTS from BPH. Tadalafil does NOT shrink the prostate (that's finasteride/dutasteride — 5-alpha reductase inhibitors). Alpha-1 blockers (tamsulosin) also relax prostate smooth muscle but via a different receptor. The erectile dysfunction effect uses the same cGMP pathway in penile vasculature. | NURSING HOOK: Tadalafil for BPH = relaxes prostate/bladder neck smooth muscle via cGMP. Does NOT shrink the prostate. Same mechanism as ED — different tissue. One drug, two clinical uses."
+    },
+    {
+      "id": 57,
+      "unit": "pde5",
+      "topic": "PDE5 Inhibitors",
+      "type": "mc",
+      "q": "A patient with BPH is prescribed tadalafil. During medication reconciliation, the nurse notes he also takes isosorbide mononitrate for angina. What is the nurse's priority action?",
+      "opts": [
+        "Administer both medications as ordered — they target different organ systems and are safe together",
+        "Hold the tadalafil, do not administer, and notify the provider immediately — this combination causes potentially fatal hypotension",
+        "Administer the tadalafil but hold the isosorbide mononitrate while the patient is taking PDE5 inhibitors",
+        "Reduce the tadalafil dose to 2.5 mg daily and continue both medications with close blood pressure monitoring"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "This is one of the most critical and most tested drug interactions in pharmacology. Isosorbide mononitrate is a nitrate — nitrates cause vasodilation by increasing nitric oxide → increasing cGMP. Tadalafil inhibits PDE5, preventing cGMP breakdown. Together: cGMP accumulates dramatically → massive, uncontrolled vasodilation → severe, potentially FATAL hypotension, syncope, and myocardial infarction. This is an ABSOLUTE contraindication — no dose reduction makes it safe. HOLD tadalafil, notify provider immediately, and document the interaction. | NURSING HOOK: PDE5 inhibitor + ANY nitrate = ABSOLUTE contraindication. Fatal hypotension from cGMP overload. This interaction appears on nearly every NCLEX pharmacology section. No dose reduction is safe."
+    },
+    {
+      "id": 58,
+      "unit": "pde5",
+      "topic": "PDE5 Inhibitors",
+      "type": "mc",
+      "q": "A patient on tadalafil for BPH calls the nurse reporting an erection that has lasted 5 hours and is painful. What is the priority nursing response?",
+      "opts": [
+        "Reassure the patient this is an expected side effect of tadalafil and will resolve on its own",
+        "Instruct the patient to go to the emergency department immediately — this is priapism, a urologic emergency",
+        "Advise the patient to apply a cold pack and elevate the affected area to reduce blood flow",
+        "Tell the patient to take an extra dose of tadalafil to restore normal erectile function"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "A painful erection lasting more than 6 hours is called priapism — a urologic emergency. The patient's erection has lasted 5 hours (approaching the 6-hour danger zone) and is already painful, indicating reduced venous outflow. The blood trapped in the erectile tissue becomes hypoxic and acidic. If untreated, priapism causes permanent damage to erectile tissue, resulting in irreversible erectile dysfunction. Emergency treatment involves aspiration of blood from the corpora cavernosa and injection of sympathomimetic agents. The patient needs emergency care immediately. | NURSING HOOK: Priapism: painful erection > 6 hours = emergency. Erection > 4 hours = medical attention needed. Do NOT wait. Permanent ED results from untreated priapism. Tadalafil risk applies to all PDE5 inhibitors."
+    },
+    {
+      "id": 59,
+      "unit": "pde5",
+      "topic": "PDE5 Inhibitors",
+      "type": "mc",
+      "q": "A patient taking tadalafil for BPH suddenly reports losing vision in his right eye during a routine activity. The nurse's priority response is to:",
+      "opts": [
+        "Assess the eye with a penlight and document the finding for the provider at the next visit",
+        "Instruct the patient to stop tadalafil immediately and seek emergency medical evaluation — sudden vision loss is a serious adverse effect",
+        "Reassure the patient that transient vision changes are common with PDE5 inhibitors and usually resolve within an hour",
+        "Reduce the tadalafil dose and monitor for further visual symptoms over the next 24 hours"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Sudden vision loss — specifically non-arteritic anterior ischemic optic neuropathy (NAION) — is a rare but serious adverse effect of PDE5 inhibitors. It results from reduced blood flow to the optic nerve. The patient must STOP the drug and seek emergency ophthalmologic evaluation immediately. Delay can result in permanent vision loss. Similarly, sudden hearing loss is another rare serious adverse effect requiring the same response — stop the drug, seek emergency care. | NURSING HOOK: PDE5 inhibitors: sudden vision or hearing loss = STOP drug immediately + emergency evaluation. These are rare but permanently disabling adverse effects requiring immediate action."
+    },
+    {
+      "id": 60,
+      "unit": "pde5",
+      "topic": "PDE5 Inhibitors",
+      "type": "sata",
+      "q": "A nurse is providing discharge teaching to a patient starting tadalafil 5 mg daily for BPH. Select ALL correct patient education points.",
+      "opts": [
+        "Do not take with any form of nitrates — this combination can cause a severe, potentially fatal drop in blood pressure",
+        "Take the medication at approximately the same time every day for consistent effect",
+        "Seek emergency care for an erection lasting longer than 4 hours or any painful erection",
+        "Avoid substantial amounts of alcohol — it can worsen the blood pressure-lowering effect of tadalafil",
+        "This medication will reduce the size of your prostate gland over time with consistent use"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Option A: Correct — absolute contraindication: any nitrate combined with tadalafil causes dangerous hypotension. Option B: Correct — once daily dosing is most effective when taken at a consistent time. Option C: Correct — erection > 4 hours needs medical attention; painful erection > 6 hours (priapism) is an emergency. Option D: Correct — substantial alcohol + tadalafil = additive hypotension from combined vasodilation. Option E: INCORRECT — tadalafil relaxes smooth muscle in the prostate and bladder neck but does NOT shrink the prostate. Prostate size reduction is achieved with 5-alpha reductase inhibitors (finasteride, dutasteride). | NURSING HOOK: Tadalafil does NOT shrink the prostate. It relaxes smooth muscle to improve urine flow. For prostate size reduction, 5-alpha reductase inhibitors are needed. This distinction is testable."
+    },
+    {
+      "id": 61,
+      "unit": "diuretics",
+      "topic": "Clinical Reasoning — Diuretics",
+      "type": "mc",
+      "q": "An older adult female with hypertension and osteoporosis needs to start a diuretic. Which class of diuretic would be MOST beneficial for this patient's combined conditions?",
+      "opts": [
+        "Loop diuretics — they are the most potent and will control blood pressure most effectively",
+        "Potassium-sparing diuretics — they prevent potassium loss and reduce bone density loss",
+        "Thiazide diuretics — they are first-line for hypertension AND increase calcium reabsorption, which benefits bone health",
+        "Osmotic diuretics — they reduce fluid volume without electrolyte loss"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Thiazide diuretics are first-line for essential hypertension (addressing HTN) and uniquely increase calcium reabsorption in the distal tubule (benefiting osteoporosis by reducing urinary calcium loss). This makes them the ideal choice for this patient. Loop diuretics are MORE potent but lose calcium — worsening osteoporosis. K+-sparing diuretics are weak antihypertensives and don't help with calcium. Osmotic diuretics are for ICP/IOP, not hypertension or osteoporosis. | NURSING HOOK: Thiazide + HTN + osteoporosis = triple benefit. First-line for HTN + keeps calcium = preferred in postmenopausal women with both conditions. This is a classic NCLEX priority patient scenario."
+    },
+    {
+      "id": 62,
+      "unit": "diuretics",
+      "topic": "Clinical Reasoning — Loop Diuretics",
+      "type": "mc",
+      "q": "A patient with heart failure is on furosemide and digoxin. The nurse assesses the patient and finds HR 48, nausea, and the patient reports seeing yellow-green halos around lights. Which nursing action is the PRIORITY?",
+      "opts": [
+        "Administer the scheduled furosemide dose and continue routine monitoring",
+        "Hold furosemide only — the heart rate will recover with time",
+        "Hold both furosemide and digoxin, check K+ level immediately, and notify the provider — the patient has signs of digoxin toxicity",
+        "Increase IV fluid rate to correct suspected dehydration causing bradycardia"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Bradycardia (HR 48), nausea, and visual halos (yellow-green) are the classic triad of digoxin toxicity. The mechanism: furosemide causes hypokalemia → hypokalemia increases cardiac cell sensitivity to digoxin → toxicity at therapeutic digoxin levels. Priority actions: (1) Hold both medications immediately. (2) Check serum K+ and serum digoxin level STAT. (3) Notify provider immediately. (4) Prepare for IV potassium replacement if K+ is low. (5) Monitor continuous ECG. | NURSING HOOK: Digoxin toxicity triad: bradycardia + nausea/vomiting + visual halos (yellow-green). Furosemide-induced hypokalemia is the trigger. This clinical scenario is high-yield for NCLEX."
+    },
+    {
+      "id": 63,
+      "unit": "anti_infective",
+      "topic": "Clinical Reasoning — Anti-infectives",
+      "type": "mc",
+      "q": "A nurse receives an order to start nitrofurantoin for an 80-year-old patient admitted with a UTI. Which action should the nurse take FIRST before administering?",
+      "opts": [
+        "Administer as ordered — nitrofurantoin is safe in all elderly patients because it stays in the urinary tract",
+        "Check the patient's creatinine clearance (CrCl) — nitrofurantoin is contraindicated if CrCl < 60 mL/min",
+        "Check for sulfa allergy before administering — nitrofurantoin is a sulfonamide",
+        "Confirm the patient is not pregnant — nitrofurantoin is absolutely contraindicated in all trimesters of pregnancy"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Before administering nitrofurantoin, the nurse must verify renal function — specifically CrCl. Older adults commonly have reduced renal function even with \"normal\" appearing serum creatinine (because reduced muscle mass lowers creatinine production, making the creatinine look normal even when GFR is low). Nitrofurantoin is on the Beers Criteria for older adults specifically because of this risk. If CrCl < 60 mL/min, hold and notify the provider. Nitrofurantoin is NOT a sulfonamide. Pregnancy is a contraindication in the third trimester/labor — not all trimesters. | NURSING HOOK: Nitrofurantoin in elderly: always check CrCl FIRST. Beers Criteria drug. Normal-appearing creatinine in elderly ≠ normal GFR due to reduced muscle mass. Calculate CrCl before every dose."
+    },
+    {
+      "id": 64,
+      "unit": "diuretics",
+      "topic": "Clinical Reasoning — Lab Values",
+      "type": "sata",
+      "q": "A patient on hydrochlorothiazide for hypertension comes in for a follow-up. The nurse reviews labs and identifies which values as WITHIN normal limits. Select ALL that are normal.",
+      "opts": [
+        "Serum sodium: 139 mEq/L",
+        "Serum potassium: 3.1 mEq/L",
+        "eGFR: 72 mL/min/1.73m²",
+        "Serum creatinine: 0.9 mg/dL (female patient)",
+        "Uric acid: 9.5 mg/dL"
+      ],
+      "correct": [
+        0,
+        2,
+        3
+      ],
+      "rationale": "Option A: Normal (136–145 mEq/L). Option B: ABNORMAL — K+ 3.1 mEq/L is below normal (3.5–5.0); this is hypokalemia, a common thiazide adverse effect requiring assessment and possibly supplementation. Option C: Normal — eGFR 72 is above 60, ruling out CKD (< 60 for 3 months = CKD; < 15 = ESRD). Option D: Normal — female creatinine range is 0.5–1.0 mg/dL; 0.9 is within range. Option E: ABNORMAL — uric acid 9.5 mg/dL is above normal (2.5–8.0 mg/dL); thiazides increase uric acid reabsorption, causing hyperuricemia and gout risk. | NURSING HOOK: Thiazide lab monitoring: expect K+ to drop and uric acid to rise. These are the two most common lab abnormalities from thiazide use requiring intervention."
+    },
+    {
+      "id": 65,
+      "unit": "antispasmodic",
+      "topic": "Clinical Reasoning — Anticholinergics vs. Stimulants",
+      "type": "mc",
+      "q": "Two patients are admitted with urinary complaints. Patient A has overactive bladder with urgency incontinence. Patient B has post-operative urinary retention after abdominal surgery. Which drug pairing is correct?",
+      "opts": [
+        "Patient A: bethanechol; Patient B: oxybutynin",
+        "Patient A: oxybutynin; Patient B: bethanechol",
+        "Patient A: tadalafil; Patient B: mirabegron",
+        "Patient A: phenazopyridine; Patient B: spironolactone"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Patient A (OAB, urgency incontinence) needs the bladder to RELAX — oxybutynin (antispasmodic/antimuscarinic) blocks detrusor overactivity. Patient B (post-op retention) needs the bladder to CONTRACT — bethanechol (cholinergic stimulant) activates detrusor muscle to promote voiding. These are opposite mechanisms for opposite problems. Tadalafil is for BPH. Mirabegron is for OAB (via beta-3, not anticholinergic). Phenazopyridine is an analgesic. Spironolactone is a diuretic. | NURSING HOOK: OAB = RELAX the bladder = anticholinergic/antispasmodic (oxybutynin, mirabegron). Retention = STIMULATE the bladder = cholinergic (bethanechol). Opposite problems, opposite drugs."
+    }
+  ]
+}

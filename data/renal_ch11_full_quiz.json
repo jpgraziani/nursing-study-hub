@@ -1,0 +1,1492 @@
+{
+  "id": "renal-ch11-full",
+  "class": "renal",
+  "module": 11,
+  "title": "Chapter 11 — Renal System Full Quiz",
+  "description": "81-question NCLEX-style quiz covering renal anatomy, kidney physiology, urine formation, UTIs, renal calculi, AKI, CKD, and clinical case studies.",
+  "topics": [
+    "renal system",
+    "urinary system",
+    "kidney anatomy",
+    "nephron",
+    "Bowman's capsule",
+    "proximal convoluted tubule",
+    "loop of Henle",
+    "distal convoluted tubule",
+    "ADH",
+    "aldosterone",
+    "RAAS",
+    "erythropoietin",
+    "vitamin D",
+    "glomerular filtration",
+    "GFR",
+    "urine formation",
+    "glycosuria",
+    "renal blood supply",
+    "ureters",
+    "urinary bladder",
+    "urethra",
+    "cystitis",
+    "UTI",
+    "pyelonephritis",
+    "urosepsis",
+    "ciprofloxacin",
+    "renal calculi",
+    "kidney stones",
+    "IVP",
+    "AKI",
+    "acute kidney injury",
+    "KDIGO staging",
+    "CKD",
+    "chronic kidney disease",
+    "ESRD",
+    "dialysis",
+    "azotemia",
+    "proteinuria",
+    "hyperkalaemia",
+    "acid-base balance",
+    "NEWS2",
+    "digoxin",
+    "ACE inhibitors"
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "unit": "anatomy",
+      "topic": "Renal System Overview",
+      "type": "mc",
+      "q": "The renal system is also known as the:",
+      "opts": [
+        "The reproductive system",
+        "The gastrointestinal system",
+        "The urinary system",
+        "The nervous system"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The renal system and urinary system are interchangeable terms. It consists of two kidneys, two ureters, the urinary bladder, and the urethra. It is not part of the reproductive, GI, or nervous systems, though it works closely with all of them."
+    },
+    {
+      "id": 2,
+      "unit": "anatomy",
+      "topic": "Renal System Components",
+      "type": "sata",
+      "q": "Which of the following are components of the renal system? (Select all that apply)",
+      "opts": [
+        "Kidneys",
+        "Ureters",
+        "Urinary bladder",
+        "Liver",
+        "Urethra"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "The four structures of the renal system are: kidneys (filtration), ureters (transport urine to bladder), urinary bladder (storage), and urethra (excretion). The liver is not part of the renal system — it is part of the digestive system and plays a role in detoxification."
+    },
+    {
+      "id": 3,
+      "unit": "anatomy",
+      "topic": "Kidney Anatomy",
+      "type": "mc",
+      "q": "Each kidney is approximately how large?",
+      "opts": [
+        "5 cm long, 2 cm wide",
+        "11 cm long, 5–6 cm wide",
+        "15 cm long, 8 cm wide",
+        "7 cm long, 3 cm wide"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Each kidney is approximately 11 cm long, 5–6 cm wide, and 3–4 cm thick — roughly the size of your fist. This is important context for imaging interpretation: kidneys that appear significantly smaller on ultrasound suggest chronic damage and nephron loss (CKD)."
+    },
+    {
+      "id": 4,
+      "unit": "anatomy",
+      "topic": "Kidney Position",
+      "type": "mc",
+      "q": "Why is the right kidney positioned lower than the left kidney?",
+      "opts": [
+        "The left kidney is larger",
+        "The liver's right lobe pushes the right kidney downward",
+        "The right ureter is shorter",
+        "The right renal artery is longer"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The liver occupies much of the right upper abdominal quadrant, and its large right lobe displaces the right kidney approximately 2–4 cm lower than the left. This is clinically important when interpreting imaging — it's normal anatomy, not a pathological finding."
+    },
+    {
+      "id": 5,
+      "unit": "anatomy",
+      "topic": "Kidney Layers",
+      "type": "mc",
+      "q": "Which is the correct order of the kidney's protective layers from outermost to innermost?",
+      "opts": [
+        "Renal capsule → Adipose tissue → Renal fascia",
+        "Adipose tissue → Renal capsule → Renal fascia",
+        "Renal fascia → Adipose tissue → Renal capsule",
+        "Renal fascia → Renal capsule → Adipose tissue"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "From outside to inside: (1) Renal fascia — dense connective tissue anchoring the kidney; (2) Adipose tissue (perirenal fat) — cushions and protects from trauma; (3) Renal capsule — smooth fibrous membrane directly covering the organ. Think: FAC — Fascia, Adipose, Capsule."
+    },
+    {
+      "id": 6,
+      "unit": "anatomy",
+      "topic": "Kidney Internal Structure",
+      "type": "mc",
+      "q": "Which internal region of the kidney contains the glomeruli and is the site of filtration?",
+      "opts": [
+        "Renal medulla",
+        "Renal pelvis",
+        "Renal cortex",
+        "Renal pyramid"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The renal cortex is the outermost internal region — reddish-brown and granular in appearance due to the dense packing of nephrons and their glomeruli. Most filtration occurs here. The medulla contains tubules (loops of Henle and collecting ducts). The renal pelvis collects urine and funnels it to the ureter."
+    },
+    {
+      "id": 7,
+      "unit": "anatomy",
+      "topic": "Renal Medulla",
+      "type": "mc",
+      "q": "The renal medulla contains approximately how many renal pyramids?",
+      "opts": [
+        "2–4",
+        "8–12",
+        "15–20",
+        "1–2"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The renal medulla contains 8–12 renal pyramids — cone-shaped tissue masses. Their tips (renal papillae) point inward toward the renal pelvis. Each pyramid contains collecting ducts and loops of Henle. The renal pyramids are what give the medulla its striated appearance."
+    },
+    {
+      "id": 8,
+      "unit": "anatomy",
+      "topic": "Renal Pelvis",
+      "type": "mc",
+      "q": "The renal pelvis is best described as:",
+      "opts": [
+        "The outermost part of the kidney",
+        "A network of capillaries in the nephron",
+        "The funnel-shaped chamber that collects urine from the calyces",
+        "The middle layer of the kidney"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The renal pelvis is the funnel-shaped internal chamber formed from the expanded upper end of the ureter. It collects urine from the minor and major calyces (small cup-shaped chambers) and funnels it down into the ureter for transport to the bladder."
+    },
+    {
+      "id": 9,
+      "unit": "anatomy",
+      "topic": "Hilum",
+      "type": "mc",
+      "q": "The hilum (hilus) of the kidney is the site where:",
+      "opts": [
+        "Filtration occurs",
+        "Urine is concentrated",
+        "Renal arteries, veins, nerves, and the ureter enter and exit",
+        "The nephrons are located"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The hilum is the concave inner border of the kidney — the 'notch' you see in a kidney diagram. This is the entry/exit point for the renal artery (bringing blood in), renal vein (returning blood), lymphatics, nerves, and the ureter. Think of it as the kidney's 'gateway.'"
+    },
+    {
+      "id": 10,
+      "unit": "anatomy",
+      "topic": "Nephron",
+      "type": "mc",
+      "q": "How many nephrons does each kidney contain approximately?",
+      "opts": [
+        "1 thousand",
+        "10 thousand",
+        "1 million",
+        "10 million"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Each kidney contains over 1 million nephrons. This massive number explains why significant nephron loss (from diabetes, hypertension, or repeated infections) can occur before kidney function visibly declines — the remaining nephrons compensate by hyperfiltrating. This is why CKD is often silent for years."
+    },
+    {
+      "id": 11,
+      "unit": "physiology",
+      "topic": "Nephron — Bowman's Capsule",
+      "type": "mc",
+      "q": "What occurs in the Bowman's capsule?",
+      "opts": [
+        "Selective reabsorption of glucose",
+        "Secretion of potassium and hydrogen ions",
+        "Filtration of blood — plasma is forced into the capsular space",
+        "Concentration of urine by ADH"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The Bowman's capsule (glomerular capsule) surrounds the glomerulus. Blood pressure (hydrostatic pressure) in the glomerular capillaries pushes water, electrolytes, urea, creatinine, and other small molecules out of the blood and into the capsular space. Large proteins and blood cells remain in the blood. The resulting fluid is called the glomerular filtrate."
+    },
+    {
+      "id": 12,
+      "unit": "physiology",
+      "topic": "Nephron — PCT",
+      "type": "mc",
+      "q": "The proximal convoluted tubule (PCT) is primarily responsible for:",
+      "opts": [
+        "Concentrating urine under ADH control",
+        "Actively reabsorbing water, nutrients, and ions from the filtrate",
+        "Secreting renin to regulate blood pressure",
+        "Forming the glomerular filtrate"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The PCT is the workhorse of reabsorption — approximately 65% of filtered sodium and water, plus glucose, amino acids, and bicarbonate are reclaimed here. The cells lining the PCT have microvilli to maximize surface area. The PCT is also where many drugs are actively secreted into the tubular lumen for excretion."
+    },
+    {
+      "id": 13,
+      "unit": "physiology",
+      "topic": "Loop of Henle",
+      "type": "mc",
+      "q": "The primary function of the Loop of Henle is to:",
+      "opts": [
+        "Filter blood",
+        "Produce erythropoietin",
+        "Create a concentration gradient in the medulla essential for urine concentration",
+        "Secrete renin into the bloodstream"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The Loop of Henle creates an osmotic concentration gradient in the renal medulla. The descending limb is permeable to water (water exits by osmosis). The ascending limb is impermeable to water but actively pumps sodium and chloride out, building up solute concentration in the medulla. This gradient is what allows the collecting duct (under ADH) to produce concentrated urine."
+    },
+    {
+      "id": 14,
+      "unit": "physiology",
+      "topic": "ADH and the Loop",
+      "type": "mc",
+      "q": "A patient is taking alcohol in excess. You would expect their urine to be:",
+      "opts": [
+        "Dark amber and very concentrated",
+        "Pale and dilute with high volume",
+        "Normal in color and volume",
+        "Pink, indicating haematuria"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Alcohol inhibits the release of ADH (antidiuretic hormone) from the posterior pituitary. Without ADH, the collecting ducts become impermeable to water — water stays in the tubular lumen and is excreted. The result is large volumes of dilute, pale urine. This is the mechanism behind alcohol-related dehydration and the 'hangover' thirst."
+    },
+    {
+      "id": 15,
+      "unit": "physiology",
+      "topic": "Distal Convoluted Tubule",
+      "type": "sata",
+      "q": "The distal convoluted tubule (DCT) is an important site for: (Select all that apply)",
+      "opts": [
+        "Active secretion of ions and acids",
+        "Selective reabsorption of sodium (aldosterone-regulated)",
+        "Selective reabsorption of calcium and water",
+        "Formation of the glomerular filtrate",
+        "Blood pressure regulation via renin secretion"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "The DCT performs fine-tuning of the filtrate: (1) Actively secretes potassium, hydrogen ions, and drugs into the tubule; (2) Reabsorbs sodium under aldosterone control (aldosterone = more sodium in, more potassium out); (3) Reabsorbs calcium and water. Filtrate formation occurs in the glomerulus/Bowman's capsule, not the DCT. Renin is secreted by juxtaglomerular cells near the DCT, not by the DCT itself."
+    },
+    {
+      "id": 16,
+      "unit": "physiology",
+      "topic": "Aldosterone",
+      "type": "mc",
+      "q": "Aldosterone acts on the distal convoluted tubule to:",
+      "opts": [
+        "Increase water reabsorption by opening aquaporin channels",
+        "Increase sodium reabsorption and increase potassium excretion",
+        "Decrease sodium reabsorption to lower blood pressure",
+        "Increase bicarbonate reabsorption"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Aldosterone (from the adrenal cortex) stimulates the DCT to reabsorb more sodium from the filtrate, which causes water to follow osmotically (raising blood volume and blood pressure). To maintain electrochemical balance, potassium is excreted in exchange. This is why hyperaldosteronism causes hypokalemia and why diuretics that block aldosterone (e.g., spironolactone) cause potassium retention."
+    },
+    {
+      "id": 17,
+      "unit": "physiology",
+      "topic": "Kidney Functions",
+      "type": "sata",
+      "q": "Which of the following are functions of the kidney? (Select all that apply)",
+      "opts": [
+        "Excretion of nitrogenous waste",
+        "Erythropoiesis regulation",
+        "Activation of Vitamin D",
+        "Secretion of insulin",
+        "Control of blood pressure via renin",
+        "Acid-base balance"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "The kidneys perform seven major functions: (1) excrete urea/creatinine; (2) regulate water balance; (3) regulate electrolytes; (4) control blood pressure (renin→RAAS); (5) stimulate RBC production via erythropoietin; (6) activate Vitamin D; (7) maintain acid-base balance by reabsorbing bicarbonate and secreting H+ ions. Insulin is produced by the pancreatic beta cells — not the kidneys."
+    },
+    {
+      "id": 18,
+      "unit": "physiology",
+      "topic": "Erythropoietin",
+      "type": "mc",
+      "q": "A patient with Stage 4 CKD presents with fatigue, pallor, and shortness of breath. The most likely cause related to kidney dysfunction is:",
+      "opts": [
+        "Reduced ADH secretion",
+        "Impaired erythropoietin production leading to anaemia",
+        "Excessive potassium excretion",
+        "Overproduction of renin"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Erythropoietin (EPO) is produced by the kidneys and signals the bone marrow to produce red blood cells. As CKD progresses and nephrons are destroyed, EPO production falls → fewer RBCs → normocytic normochromic anaemia → fatigue, pallor, dyspnoea. Treatment includes EPO injections (e.g., epoetin alfa) and iron/folate supplementation."
+    },
+    {
+      "id": 19,
+      "unit": "physiology",
+      "topic": "Renin-RAAS",
+      "type": "mc",
+      "q": "Renin, secreted by the kidneys, primarily functions to:",
+      "opts": [
+        "Stimulate red blood cell production",
+        "Activate Vitamin D to its usable form",
+        "Initiate the RAAS pathway to raise systemic blood pressure",
+        "Regulate bicarbonate reabsorption in the tubules"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Renin is released by juxtaglomerular cells when renal blood flow drops. It converts angiotensinogen → angiotensin I, which is then converted to angiotensin II (a potent vasoconstrictor) by ACE in the lungs. Angiotensin II raises blood pressure by vasoconstriction AND by stimulating aldosterone release (sodium/water retention). This is why ACE inhibitors and ARBs are first-line for CKD hypertension — they interrupt this pathway."
+    },
+    {
+      "id": 20,
+      "unit": "physiology",
+      "topic": "Vitamin D and Kidneys",
+      "type": "mc",
+      "q": "A patient with advanced CKD develops bone pain and hypocalcaemia. The most likely renal cause is:",
+      "opts": [
+        "Excessive calcium excretion in urine",
+        "Failure of the kidneys to activate Vitamin D to its active form",
+        "Overproduction of parathyroid hormone by the kidneys",
+        "Excess phosphate reabsorption"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The kidneys convert Vitamin D (from diet/sun) to its active form (calcitriol/1,25-dihydroxycholecalciferol). Without active Vitamin D, calcium cannot be absorbed from the gut → hypocalcaemia. The body responds by releasing parathyroid hormone (secondary hyperparathyroidism) which pulls calcium from bones → renal osteodystrophy. This is managed with alfacalcidol (active Vitamin D supplement) and calcium binders."
+    },
+    {
+      "id": 21,
+      "unit": "physiology",
+      "topic": "Urine Formation",
+      "type": "mc",
+      "q": "Which of the following correctly lists the three processes of urine formation in order?",
+      "opts": [
+        "Secretion → Filtration → Reabsorption",
+        "Reabsorption → Secretion → Filtration",
+        "Filtration → Selective reabsorption → Secretion",
+        "Filtration → Secretion → Selective reabsorption"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Urine formation occurs in three sequential steps: (1) Filtration — blood pressure forces plasma into Bowman's capsule at the glomerulus; (2) Selective reabsorption — tubular cells reclaim substances the body needs (glucose, sodium, water, amino acids); (3) Secretion — substances not effectively filtered (drugs, H+ ions, potassium) are actively moved from peritubular capillaries into the tubular lumen. This order reflects the anatomical progression through the nephron."
+    },
+    {
+      "id": 22,
+      "unit": "physiology",
+      "topic": "Glomerular Filtration",
+      "type": "mc",
+      "q": "Which substances are filtered out of the blood at the glomerulus and appear in the filtrate?",
+      "opts": [
+        "Red blood cells and large proteins",
+        "Urea, creatinine, electrolytes, and glucose",
+        "Erythropoietin and renin",
+        "Albumin and immunoglobulins"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The glomerular filter allows small molecules to pass through: water, electrolytes (sodium, potassium, chloride), glucose, urea, creatinine, uric acid. Large molecules — proteins (albumin, globulins), blood cells, and platelets — are too large and are retained in the blood. Finding protein or blood cells in urine always indicates glomerular damage."
+    },
+    {
+      "id": 23,
+      "unit": "physiology",
+      "topic": "Glycosuria",
+      "type": "mc",
+      "q": "A diabetic patient with a blood glucose of 350 mg/dL has glucose in their urine. The correct explanation is:",
+      "opts": [
+        "The kidneys are secreting glucose to lower blood sugar",
+        "The tubular maximum for glucose reabsorption has been exceeded",
+        "The glomerulus is damaged and cannot filter glucose",
+        "Glucose cannot be reabsorbed without ADH"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The tubular maximum (Tm) for glucose is approximately 180–200 mg/dL. Above this threshold, glucose overwhelms the reabsorption transporters in the PCT and 'spills' into the urine. In uncontrolled diabetes, blood glucose far exceeds the Tm → glycosuria. This is also the basis for SGLT-2 inhibitors — they intentionally block glucose reabsorption to lower blood glucose."
+    },
+    {
+      "id": 24,
+      "unit": "physiology",
+      "topic": "Urine Composition",
+      "type": "mc",
+      "q": "Normal urine is approximately:",
+      "opts": [
+        "50% water, 50% solutes",
+        "80% water, 20% waste products",
+        "96% water, 4% solutes",
+        "60% water, 40% nitrogenous waste"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Normal urine is 96% water and approximately 4% solutes (electrolytes, urea, creatinine, uric acid, phosphates, oxalates, ammonia). Urine is sterile, clear, and ranges from pale yellow to amber. Its pH can range from 4.5 to 8.0 depending on diet. Dark, concentrated urine = dehydration; very pale urine = excess fluid or diabetes insipidus."
+    },
+    {
+      "id": 25,
+      "unit": "physiology",
+      "topic": "Urine pH",
+      "type": "mc",
+      "q": "A patient who follows a strict vegetarian diet would be expected to have urine that is:",
+      "opts": [
+        "More acidic (lower pH) due to high fiber intake",
+        "More alkaline (higher pH) due to plant-based diet",
+        "More concentrated due to lower fluid intake",
+        "Pink due to plant pigments"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Diet directly influences urine pH. Animal protein (meat, fish, poultry) produces acidic metabolic byproducts → urine pH decreases (more acidic). Vegetarian/plant-based diets produce fewer acidic byproducts → urine is more alkaline. This matters clinically: very alkaline urine can promote certain kidney stone types, and very acidic urine promotes others."
+    },
+    {
+      "id": 26,
+      "unit": "physiology",
+      "topic": "Renal Blood Supply",
+      "type": "mc",
+      "q": "The rate at which blood flows through both kidneys each minute is approximately:",
+      "opts": [
+        "100 mL/min",
+        "400 mL/min",
+        "1200 mL/min",
+        "2500 mL/min"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Approximately 1200 mL of blood flows through both kidneys per minute — representing about 20–25% of total cardiac output. This massive perfusion is necessary to support their filtration function. When cardiac output drops (as in heart failure, sepsis, or hemorrhage), renal blood flow drops proportionally → prerenal AKI."
+    },
+    {
+      "id": 27,
+      "unit": "anatomy",
+      "topic": "Ureters",
+      "type": "mc",
+      "q": "How many ureters are present in the urinary system?",
+      "opts": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "There are two ureters — one draining each kidney. Each ureter is approximately 25–30 cm long and only 3 mm in diameter. Urine is propelled through the ureters by peristaltic contractions of smooth muscle. The narrow diameter is why kidney stones (>3 mm) can become impacted in the ureter, causing severe colicky pain."
+    },
+    {
+      "id": 28,
+      "unit": "anatomy",
+      "topic": "Ureter Wall",
+      "type": "sata",
+      "q": "The three layers of the ureter wall include: (Select all that apply)",
+      "opts": [
+        "Transitional epithelial mucosa (inner)",
+        "Smooth muscle layer (middle)",
+        "Fibrous connective tissue (outer)",
+        "Striated skeletal muscle",
+        "Endothelium"
+      ],
+      "correct": [
+        0,
+        1,
+        2
+      ],
+      "rationale": "The ureter wall has three layers: (1) Transitional epithelial mucosa (inner) — can stretch; (2) Smooth muscle (middle) — creates peristaltic waves to move urine toward the bladder; (3) Fibrous connective tissue (outer) — structural support. The ureters do NOT contain striated muscle or endothelium in their walls."
+    },
+    {
+      "id": 29,
+      "unit": "anatomy",
+      "topic": "Urinary Bladder",
+      "type": "mc",
+      "q": "The urinary bladder normally holds approximately how much urine before the urge to void is felt?",
+      "opts": [
+        "100 mL",
+        "200 mL",
+        "350 mL",
+        "500 mL"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The bladder normally distends to hold approximately 350 mL before generating a strong urge to void, though it can stretch to hold considerably more. Its transitional epithelium and rugae (mucosal folds) allow expansion without significant rise in internal pressure — an important feature that protects the ureters from backflow."
+    },
+    {
+      "id": 30,
+      "unit": "anatomy",
+      "topic": "Urethral Sphincters",
+      "type": "mc",
+      "q": "A patient with a spinal cord injury at T10 has lost voluntary control of urination. Which sphincter is affected?",
+      "opts": [
+        "Internal urethral sphincter — involuntary, smooth muscle",
+        "External urethral sphincter — voluntary, skeletal muscle",
+        "Detrusor muscle — responsible for bladder contraction",
+        "Trigone muscle — controls ureteral openings"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The external urethral sphincter is composed of skeletal muscle and is under VOLUNTARY control (somatic nervous system). Spinal cord injuries above the sphincter level can eliminate voluntary control → neurogenic bladder. The internal urethral sphincter is smooth muscle at the bladder-urethra junction and is under INVOLUNTARY (autonomic) control — it remains intact after cord injury but cannot be voluntarily overridden."
+    },
+    {
+      "id": 31,
+      "unit": "anatomy",
+      "topic": "Urethra — Sex Differences",
+      "type": "mc",
+      "q": "Why are women significantly more prone to cystitis than men?",
+      "opts": [
+        "Women produce less concentrated urine",
+        "The female urethra is approximately 4 cm long, providing a short path for bacteria to reach the bladder",
+        "Women have a weaker immune response to E. coli",
+        "The female bladder lacks a protective mucosal layer"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The female urethra is only approximately 4 cm long, compared to approximately 20 cm in males. This anatomical difference means bacteria from the perineum (particularly E. coli from the GI tract) have a very short distance to travel to reach the bladder. Factors that increase risk: sexual intercourse, back-to-front wiping, catheterization, pregnancy."
+    },
+    {
+      "id": 32,
+      "unit": "clinical",
+      "topic": "Cystitis — Aetiology",
+      "type": "mc",
+      "q": "The most common causative organism of cystitis is:",
+      "opts": [
+        "Staphylococcus aureus",
+        "Escherichia coli (E. coli)",
+        "Pseudomonas aeruginosa",
+        "Streptococcus pyogenes"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Escherichia coli (E. coli), a gram-negative bacterium normally found in the lower GI tract, is responsible for approximately 80% of UTIs. It gains access to the bladder by ascending through the short female urethra. Proteus mirabilis is another common pathogen. The gram-negative classification is important — it guides antibiotic selection (e.g., ciprofloxacin, trimethoprim)."
+    },
+    {
+      "id": 33,
+      "unit": "clinical",
+      "topic": "Cystitis — Signs & Symptoms",
+      "type": "sata",
+      "q": "Which signs and symptoms are characteristic of cystitis? (Select all that apply)",
+      "opts": [
+        "Dysuria (painful urination)",
+        "Urgency",
+        "Flank pain and rigors",
+        "Pyuria (WBCs in urine)",
+        "Haematuria",
+        "Frequency and nocturia"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4,
+        5
+      ],
+      "rationale": "Classic cystitis presents with: dysuria (burning/painful urination from inflamed mucosa), urgency (hypersensitive bladder wall), pyuria (WBCs from immune response), haematuria (hemorrhage from inflamed wall), and frequency/nocturia. Flank pain and rigors (chills/shaking) suggest infection has ascended to the kidneys (pyelonephritis) — a more serious condition requiring escalated management."
+    },
+    {
+      "id": 34,
+      "unit": "clinical",
+      "topic": "Cystitis — Management",
+      "type": "mc",
+      "q": "How much fluid per day should a patient with cystitis be encouraged to drink?",
+      "opts": [
+        "1–1.5 L/day",
+        "2.5–3 L/day",
+        "4–5 L/day",
+        "Fluids should be restricted to concentrate antibiotics in the urine"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Patients with cystitis should be encouraged to drink 2.5–3 L of fluid per day. This helps flush bacteria out of the urinary tract, increases urine production, and dilutes the urine to reduce mucosal irritation. The idea of restricting fluids to concentrate antibiotics is a dangerous misconception — more fluid = better clearance."
+    },
+    {
+      "id": 35,
+      "unit": "clinical",
+      "topic": "Cystitis — Red Flag",
+      "type": "mc",
+      "q": "You perform a urine dipstick on a 70-year-old patient with an indwelling catheter who has no urinary symptoms. The dipstick shows bacteria. The correct action is:",
+      "opts": [
+        "Immediately start antibiotics to prevent sepsis",
+        "Document the finding but do not treat — this is normal in catheterized patients",
+        "Remove the catheter immediately",
+        "Notify the physician and request a stat urine culture and sensitivity"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Up to 50% of adults over 65 and patients with indwelling catheters have bacteria in their urine (asymptomatic bacteriuria) without an actual infection. Urine dipstick is considered UNRELIABLE for bacteriuria in this population. Treating asymptomatic bacteriuria leads to antibiotic resistance without clinical benefit. Only treat if the patient is SYMPTOMATIC (dysuria, fever, changed mental status, increased confusion in elderly)."
+    },
+    {
+      "id": 36,
+      "unit": "clinical",
+      "topic": "Pyelonephritis — Definition",
+      "type": "mc",
+      "q": "Pyelonephritis is best defined as inflammation of the:",
+      "opts": [
+        "Urinary bladder and urethra",
+        "Renal pelvis and functional units (nephrons) of the kidney",
+        "Renal capsule and perirenal fat",
+        "Ureters and urinary bladder"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Pyelonephritis involves inflammation of the renal pelvis AND the nephrons — it affects the parenchyma (cortex and medulla). This distinguishes it from cystitis (bladder only). It is more serious because it involves actual kidney tissue, creating risk of scarring, permanent nephron loss, and if untreated, septicaemia (urosepsis). The term 'pyelo' refers to the renal pelvis."
+    },
+    {
+      "id": 37,
+      "unit": "clinical",
+      "topic": "Pyelonephritis — Symptoms",
+      "type": "sata",
+      "q": "Which of the following signs and symptoms are characteristic of acute pyelonephritis? (Select all that apply)",
+      "opts": [
+        "Sudden onset fever and rigors",
+        "Flank/loin pain",
+        "Nausea and vomiting",
+        "Dysuria and haematuria",
+        "Gradual onset over weeks",
+        "Dull suprapubic ache"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "Acute pyelonephritis presents dramatically: sudden high fever and rigors (shaking chills), unilateral or bilateral flank/loin pain (costovertebral angle tenderness), nausea and vomiting (vagal response to pain and infection), and urinary symptoms (dysuria, haematuria). Gradual onset over weeks suggests CKD or chronic pyelonephritis. Dull suprapubic ache is more typical of bladder stones or cystitis."
+    },
+    {
+      "id": 38,
+      "unit": "clinical",
+      "topic": "Pyelonephritis — Urosepsis",
+      "type": "mc",
+      "q": "Up to what percentage of septic shock cases originate from a urinary tract source (urosepsis)?",
+      "opts": [
+        "5%",
+        "15%",
+        "40%",
+        "70%"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Up to 40% of septic shock cases stem from urosepsis — sepsis originating from a urinary tract infection. This makes UTIs/pyelonephritis one of the most common sources of life-threatening sepsis. The progression is: UTI → pyelonephritis → bacteraemia → septic shock. Using NEWS2 to identify early deterioration and escalating promptly is critical. Signs: tachycardia, hypotension, fever, confusion, tachypnoea."
+    },
+    {
+      "id": 39,
+      "unit": "clinical",
+      "topic": "Ciprofloxacin — Nursing",
+      "type": "sata",
+      "q": "When educating a patient prescribed ciprofloxacin for pyelonephritis, which instructions are correct? (Select all that apply)",
+      "opts": [
+        "Do not take with dairy products alone — reduces absorption",
+        "Can be taken safely with any meal that includes dairy products",
+        "May worsen muscle weakness in patients with myasthenia gravis",
+        "Stops working if taken with water",
+        "Patients should complete the full course even if feeling better"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "Ciprofloxacin education: (1) Do NOT take with dairy products or calcium-fortified juice ALONE — calcium binds ciprofloxacin and reduces absorption. However, taking it as part of a full meal that includes dairy is acceptable. (2) Must be used with extreme caution in myasthenia gravis — can worsen muscle weakness and cause severe breathing difficulty or death. (3) Complete the FULL course — stopping early allows resistant bacteria to survive and repopulate. Water does not affect absorption."
+    },
+    {
+      "id": 40,
+      "unit": "clinical",
+      "topic": "Chronic Pyelonephritis",
+      "type": "mc",
+      "q": "Chronic pyelonephritis most commonly results from:",
+      "opts": [
+        "A single severe episode of AKI",
+        "Repeated urinary tract infections causing progressive scarring and fibrosis",
+        "Long-term NSAID use",
+        "Autoimmune destruction of the renal cortex"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Chronic pyelonephritis typically begins in childhood and progresses from repeated UTIs. Each infection causes more scarring and fibrosis of the calyces, renal pelvis, and parenchyma. Over time, the kidneys become small and irregular (detectable on ultrasound), function progressively diminishes, and eventually ESRD may result. This is why aggressively treating UTIs in children matters."
+    },
+    {
+      "id": 41,
+      "unit": "clinical",
+      "topic": "Renal Calculi — Definition",
+      "type": "mc",
+      "q": "Renal calculi are best described as:",
+      "opts": [
+        "Inflammation of the kidney tubules",
+        "Crystallized mineral deposits forming stones within the urinary tract",
+        "Blockages of the renal artery causing ischaemia",
+        "Cysts replacing functional kidney tissue"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Renal calculi are crystallized mineral deposits (stones) that form within the urinary collecting system. They are the most common cause of upper urinary tract obstruction. Men are at higher risk than women. Stones can form anywhere — from the collecting ducts in the kidney to the ureter or bladder — and obstruct flow at any point."
+    },
+    {
+      "id": 42,
+      "unit": "clinical",
+      "topic": "Renal Calculi — Causes",
+      "type": "sata",
+      "q": "Which of the following are recognized risk factors for renal calculi? (Select all that apply)",
+      "opts": [
+        "Dehydration",
+        "Immobility",
+        "Gout (elevated uric acid)",
+        "Hyperparathyroidism",
+        "High fluid intake",
+        "Family history"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "rationale": "Risk factors for kidney stones: Dehydration (concentrated urine → crystal precipitation), immobility (reduces urine flow, promotes stasis), gout (elevated uric acid → urate stones), hyperparathyroidism (elevated PTH → high serum calcium → calcium stones), and family history (genetic predisposition). High fluid intake is PROTECTIVE — it dilutes urine and prevents crystal formation. Excessive dietary protein, calcium, oxalates, and Vitamin D also contribute."
+    },
+    {
+      "id": 43,
+      "unit": "clinical",
+      "topic": "Renal Calculi — Pain",
+      "type": "mc",
+      "q": "The severe, colicky flank pain associated with a ureteral kidney stone is caused by:",
+      "opts": [
+        "Inflammation of the renal cortex",
+        "Peristaltic spasms of the ureter wall as it tries to push the stone past the obstruction",
+        "Direct pressure of the stone on the renal artery",
+        "Haemorrhage within the kidney parenchyma"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Renal colic is caused by violent peristaltic spasms of the ureter's smooth muscle as it attempts to propel the stone past the obstruction point. The ureter (only 3 mm diameter) stretches around the stone — stretching the ureteral wall triggers intense pain that comes in waves (colic). The pain typically radiates from flank to groin following the path of the ureter. It is often described as some of the most severe pain a person can experience."
+    },
+    {
+      "id": 44,
+      "unit": "clinical",
+      "topic": "Renal Calculi — Stone Size",
+      "type": "mc",
+      "q": "According to clinical guidelines, stones of what diameter may pass spontaneously in the urine without intervention?",
+      "opts": [
+        "Less than 0.1 cm",
+        "Less than 0.5 cm",
+        "Less than 1.0 cm",
+        "Less than 2.0 cm"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Stones less than 0.5 cm (5 mm) in diameter may pass spontaneously in the urine without surgical intervention. This is why patient education includes straining all urine to catch any passed stones. Larger stones (or those causing obstruction, infection, or persistent pain) may require lithotripsy (shock wave stone breaking) or ureteroscopy (direct removal)."
+    },
+    {
+      "id": 45,
+      "unit": "clinical",
+      "topic": "Renal Calculi — Nursing Care",
+      "type": "sata",
+      "q": "A patient is discharged after treatment for renal calculi. Which discharge instructions are appropriate? (Select all that apply)",
+      "opts": [
+        "Drink 2.5–3 L of fluid daily",
+        "Strain all urine and save any stones passed for laboratory analysis",
+        "Avoid all exercise to prevent stone movement",
+        "Follow dietary modifications based on stone type (e.g., reduce oxalates if calcium oxalate stones)",
+        "Complete prescribed antibiotics if UTI was present"
+      ],
+      "correct": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "rationale": "Renal calculi discharge teaching: Encourage 2.5–3 L/day fluid to dilute urine and prevent new stones. Strain urine — stones <0.5 cm can pass unnoticed; analysis guides prevention. Dietary modification based on stone type (oxalate stones: reduce chocolate, rhubarb, nuts; uric acid stones: reduce purine intake). Complete antibiotics if concurrent UTI. Exercise is NOT contraindicated — in fact, exercise promotes urinary flow and helps prevent stasis."
+    },
+    {
+      "id": 46,
+      "unit": "clinical",
+      "topic": "IVP/IVU",
+      "type": "mc",
+      "q": "An intravenous pyelogram (IVP) uses what type of contrast to visualize the urinary system?",
+      "opts": [
+        "Barium sulfate swallowed orally",
+        "Iodinated contrast dye injected intravenously",
+        "Air injected into the bladder",
+        "Gadolinium dye injected into the ureter"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "An IVP (also called IVU — intravenous urogram) is an X-ray study that uses iodinated contrast dye injected into a vein. The contrast is filtered by the kidneys and appears in the collecting system, showing the kidneys, ureters, bladder, and stone location. Key nursing considerations: assess for contrast allergy; warn pregnant patients (radiation risk); monitor for allergic reactions (warmth sensation is normal; rash or bronchospasm = allergic reaction)."
+    },
+    {
+      "id": 47,
+      "unit": "clinical",
+      "topic": "AKI — Definition",
+      "type": "mc",
+      "q": "Acute Kidney Injury (AKI) was previously known as:",
+      "opts": [
+        "Chronic renal disease",
+        "Acute renal failure",
+        "Chronic kidney failure",
+        "Renal insufficiency"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "AKI was previously called Acute Renal Failure (ARF). The terminology was updated to 'AKI' because even relatively small, acute declines in renal function (that don't meet full 'failure' criteria) carry significant clinical consequences. AKI is characterized by an abrupt decline in GFR leading to azotemia (nitrogenous waste accumulation) and fluid/electrolyte imbalance."
+    },
+    {
+      "id": 48,
+      "unit": "clinical",
+      "topic": "AKI — Categories",
+      "type": "mc",
+      "q": "The most common category of AKI is:",
+      "opts": [
+        "Intrarenal (direct kidney damage)",
+        "Postrenal (obstruction)",
+        "Prerenal (reduced blood flow to kidneys)",
+        "Functional (tubular dysfunction without structural damage)"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Prerenal AKI is the most common category, accounting for approximately 60% of cases. It results from insufficient blood flow to the kidneys — from dehydration, haemorrhage, septic shock, or heart failure. Crucially, in prerenal AKI, the kidney tissue itself is initially intact — the problem is perfusion. Prompt fluid resuscitation can reverse prerenal AKI before permanent tubular damage occurs."
+    },
+    {
+      "id": 49,
+      "unit": "clinical",
+      "topic": "AKI — Prerenal vs Intrarenal",
+      "type": "mc",
+      "q": "A 68-year-old has been having severe diarrhoea and vomiting for 5 days and now has oliguria and rising creatinine. This presentation is most consistent with:",
+      "opts": [
+        "Intrarenal AKI from glomerulonephritis",
+        "Prerenal AKI from severe dehydration",
+        "Postrenal AKI from ureteral obstruction",
+        "CKD from long-standing hypertension"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Severe diarrhoea and vomiting cause significant fluid loss → hypovolaemia → reduced cardiac output → decreased renal perfusion → prerenal AKI. Oliguria and rising creatinine confirm declining GFR. The kidney tissue is initially healthy but ischemic. Treatment: IV fluid resuscitation to restore renal perfusion. This is the classic Barbara Brathwaite scenario from the case study."
+    },
+    {
+      "id": 50,
+      "unit": "clinical",
+      "topic": "AKI — NSAIDs",
+      "type": "mc",
+      "q": "Why are NSAIDs (ibuprofen, aspirin) dangerous for patients with renal dysfunction or reduced perfusion?",
+      "opts": [
+        "They directly destroy tubular cells by nephrotoxicity",
+        "They inhibit prostaglandins that dilate the afferent arteriole, reducing glomerular filtration pressure",
+        "They cause excessive fluid retention leading to fluid overload",
+        "They block aldosterone receptors, causing hypernatraemia"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Prostaglandins normally dilate the afferent arteriole to maintain adequate glomerular filtration pressure — especially important when renal perfusion is already compromised. NSAIDs inhibit prostaglandin synthesis (via COX enzyme blockade), causing afferent arteriole vasoconstriction → reduced blood flow into the glomerulus → reduced GFR → AKI. This is why NSAIDs are contraindicated in dehydrated patients, elderly patients, and those with CHF or existing CKD."
+    },
+    {
+      "id": 51,
+      "unit": "clinical",
+      "topic": "AKI — Phases",
+      "type": "mc",
+      "q": "During the oliguric phase of AKI, which of the following is the greatest immediate life threat?",
+      "opts": [
+        "Metabolic alkalosis",
+        "Hypokalaemia",
+        "Hyperkalaemia",
+        "Hyponatraemia"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "During the oliguric phase, the kidneys cannot excrete potassium → hyperkalaemia (elevated serum K+). Hyperkalaemia is immediately life-threatening because potassium affects cardiac membrane potential → peaked T-waves → widened QRS → ventricular fibrillation → cardiac arrest. Emergency treatment: IV calcium gluconate (cardiac membrane stabilization), insulin + dextrose (shifts K+ into cells), salbutamol, kayexalate, or dialysis."
+    },
+    {
+      "id": 52,
+      "unit": "clinical",
+      "topic": "AKI — Diuretic Phase",
+      "type": "mc",
+      "q": "During the diuretic phase of AKI, urine output can increase to approximately how much per day?",
+      "opts": [
+        "500 mL/day",
+        "1 L/day",
+        "3 L/day",
+        "6 L/day"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "During the diuretic phase, kidney function begins recovering and urine output can surge to up to 3 L per day (diuresis). However, although large volumes are produced, the kidneys still cannot selectively concentrate urine or reabsorb electrolytes properly. This creates a paradoxical risk of dehydration and electrolyte loss. Fluid monitoring and electrolyte replacement are critical priorities during this phase."
+    },
+    {
+      "id": 53,
+      "unit": "clinical",
+      "topic": "AKI Staging — KDIGO",
+      "type": "mc",
+      "q": "According to KDIGO staging, a patient with a serum creatinine rise of 2.5 times baseline and urine output of <0.5 mL/kg/hr for 14 hours is classified as AKI Stage:",
+      "opts": [
+        "Stage 1",
+        "Stage 2",
+        "Stage 3",
+        "Not AKI — within normal variation"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "KDIGO AKI staging: Stage 1 = creatinine 1.5–1.9× baseline OR UO <0.5 mL/kg/hr for 6 hrs. Stage 2 = creatinine 2.0–2.9× baseline OR UO <0.5 mL/kg/hr for 12 hours. Stage 3 = creatinine ≥3× baseline OR UO <0.3 mL/kg/hr for 24 hrs or anuria. This patient has a 2.5× rise (Stage 2 range) and UO <0.5 mL/kg/hr for 14 hrs (Stage 2 range) → Stage 2 AKI."
+    },
+    {
+      "id": 54,
+      "unit": "clinical",
+      "topic": "Minimum Urine Output",
+      "type": "mc",
+      "q": "The minimum acceptable urine output for an adult is:",
+      "opts": [
+        "0.1 mL/kg/hr",
+        "0.3 mL/kg/hr",
+        "0.5 mL/kg/hr",
+        "1.0 mL/kg/hr"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The minimum acceptable urine output is 0.5 mL/kg/hr. For a 70 kg adult: 0.5 × 70 = 35 mL/hr. Clinically, oliguria is defined as <30 mL/hr. Any urine output below this threshold must be reported. The classic Board/NCLEX number is 30 mL/hour as the oliguria threshold. AKI Stage 3 criteria include <0.3 mL/kg/hr for 24 hours or anuria."
+    },
+    {
+      "id": 55,
+      "unit": "clinical",
+      "topic": "AKI — GFR Rate",
+      "type": "mc",
+      "q": "The rate at which blood is filtered per minute in the kidneys is known as the:",
+      "opts": [
+        "Creatinine clearance rate",
+        "Blood urea nitrogen level",
+        "Glomerular filtration rate (GFR)",
+        "Tubular maximum"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The Glomerular Filtration Rate (GFR) is the volume of blood filtered per minute through the glomeruli of both kidneys. Normal GFR is approximately 125 mL/min. The eGFR (estimated GFR) is calculated from serum creatinine, age, and sex. It is the primary measure used to stage CKD and monitor AKI progression. A falling GFR = worsening kidney function."
+    },
+    {
+      "id": 56,
+      "unit": "clinical",
+      "topic": "AKI — Nephrotoxic Drugs",
+      "type": "sata",
+      "q": "Which medications should be reviewed and potentially discontinued in a patient with AKI? (Select all that apply)",
+      "opts": [
+        "NSAIDs (e.g., ibuprofen)",
+        "Aminoglycoside antibiotics (e.g., gentamicin)",
+        "ACE inhibitors (e.g., lisinopril)",
+        "Paracetamol (acetaminophen) at standard doses",
+        "Digoxin (dose may need adjustment)"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rationale": "Nephrotoxic drugs to review in AKI: NSAIDs (reduce afferent arteriole dilation); aminoglycosides like gentamicin (directly toxic to tubular cells); ACE inhibitors (reduce efferent arteriole constriction → drop in filtration pressure — may need temporary discontinuation); Digoxin (renally cleared → accumulates in AKI → toxicity → arrhythmias — dose reduction needed). Paracetamol at standard therapeutic doses is generally safe for patients with AKI and is preferred over NSAIDs for pain management."
+    },
+    {
+      "id": 57,
+      "unit": "clinical",
+      "topic": "CKD — Definition",
+      "type": "mc",
+      "q": "Chronic kidney disease (CKD) was previously known as:",
+      "opts": [
+        "Acute renal failure",
+        "Chronic renal failure",
+        "Renal insufficiency syndrome",
+        "Nephropathy syndrome"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "CKD was previously called Chronic Renal Failure (CRF). CKD is defined as the progressive, irreversible reduction in renal function over months to years. It is diagnosed when the eGFR is persistently below 60 mL/min/1.73m² for 3 months or more — or when markers of kidney damage (proteinuria, haematuria, structural abnormalities) are present for 3 months."
+    },
+    {
+      "id": 58,
+      "unit": "clinical",
+      "topic": "CKD — Aetiology",
+      "type": "sata",
+      "q": "Which of the following are recognized major causes of CKD? (Select all that apply)",
+      "opts": [
+        "Diabetic nephropathy",
+        "Hypertension",
+        "Chronic glomerulonephritis",
+        "Acute viral gastroenteritis",
+        "Polycystic kidney disease",
+        "Prostatic hypertrophy"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "Major causes of CKD: Diabetic nephropathy (most common worldwide — hyperglycaemia destroys glomeruli), hypertension (pressure damages glomerular capillaries), chronic glomerulonephritis (immune-mediated damage), polycystic kidney disease (genetic — cysts replace nephrons), and prostatic hypertrophy (chronic outflow obstruction → backpressure damage). Acute viral gastroenteritis can cause prerenal AKI but does not typically cause CKD unless it leads to prolonged ischemia."
+    },
+    {
+      "id": 59,
+      "unit": "clinical",
+      "topic": "CKD — Staging",
+      "type": "mc",
+      "q": "A patient's eGFR is 22 mL/min/1.73 m². According to KDIGO staging, this is:",
+      "opts": [
+        "Stage 2 — mildly decreased",
+        "Stage 3b — moderately to severely decreased",
+        "Stage 4 — severely decreased",
+        "Stage 5 — end-stage renal disease"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "KDIGO CKD staging by eGFR: Stage 1 >90, Stage 2: 60–89, Stage 3a: 45–59, Stage 3b: 30–44, Stage 4: 15–29, Stage 5 (ESRD): <15. An eGFR of 22 falls in the 15–29 range → Stage 4 CKD. At Stage 4, preparation for renal replacement therapy (dialysis or transplant education) should begin."
+    },
+    {
+      "id": 60,
+      "unit": "clinical",
+      "topic": "CKD — ESRD",
+      "type": "mc",
+      "q": "End-stage renal disease (ESRD) is defined by an eGFR of:",
+      "opts": [
+        "<60 mL/min",
+        "<45 mL/min",
+        "<30 mL/min",
+        "<15 mL/min"
+      ],
+      "correct": [
+        3
+      ],
+      "rationale": "Stage 5 CKD (ESRD) is defined by an eGFR below 15 mL/min/1.73 m². At this level, the kidneys can no longer meet the body's excretory needs. Renal replacement therapy is required — either haemodialysis, peritoneal dialysis, or kidney transplantation. Dialysis is typically initiated when eGFR falls to 10–15 mL/min or when uraemic symptoms become intolerable."
+    },
+    {
+      "id": 61,
+      "unit": "clinical",
+      "topic": "CKD — Signs & Symptoms",
+      "type": "sata",
+      "q": "Which of the following are signs and symptoms of advanced CKD? (Select all that apply)",
+      "opts": [
+        "Lethargy and fatigue from anaemia",
+        "Hypertension from renin overproduction",
+        "Pallor from reduced erythropoietin",
+        "Polyuria with concentrated urine",
+        "Proteinuria and haematuria",
+        "Bone pain from renal osteodystrophy"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ],
+      "rationale": "Advanced CKD causes: fatigue/lethargy (uraemia + anaemia from low EPO), hypertension (renin overproduction → RAAS activation), pallor (normocytic normochromic anaemia), proteinuria/haematuria (glomerular damage), and bone pain (renal osteodystrophy from failure to activate Vitamin D → hypocalcaemia → secondary hyperparathyroidism → bone demineralization). CKD causes OLIGURIA or ANURIA — not polyuria. Polyuria with dilute urine suggests diabetes insipidus or early renal tubular damage."
+    },
+    {
+      "id": 62,
+      "unit": "clinical",
+      "topic": "CKD — eGFR Test",
+      "type": "mc",
+      "q": "The eGFR is calculated using which patient values?",
+      "opts": [
+        "Urine creatinine, urine volume, and urine osmolarity",
+        "Serum creatinine, patient age, and sex",
+        "BUN level, blood pressure, and weight",
+        "Serum uric acid, albumin, and creatinine"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "The eGFR (estimated GFR) is calculated from serum creatinine (a muscle metabolism byproduct normally cleared by kidneys), patient age (muscle mass decreases with age), and sex (men generally have more muscle mass → more creatinine production). Some formulas also incorporate race. A rising serum creatinine signals that the kidneys are clearing it less efficiently → GFR is falling."
+    },
+    {
+      "id": 63,
+      "unit": "clinical",
+      "topic": "CKD — Medications",
+      "type": "sata",
+      "q": "Which medications may be prescribed to manage complications of CKD? (Select all that apply)",
+      "opts": [
+        "Erythropoietin (EPO injections) for anaemia",
+        "Iron and folic acid supplementation",
+        "Calcium binders and alfacalcidol for bone disease",
+        "Antihypertensives (ACE inhibitors/ARBs)",
+        "High-dose NSAIDs for joint pain"
+      ],
+      "correct": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "rationale": "CKD pharmacological management targets specific complications: EPO injections replace deficient erythropoietin → stimulate RBC production; iron and folic acid support RBC synthesis; calcium binders (prevent phosphate absorption) and alfacalcidol (active Vitamin D) manage renal bone disease; antihypertensives (especially ACE inhibitors/ARBs) protect remaining nephrons by reducing intraglomerular pressure. NSAIDs are CONTRAINDICATED in CKD — they further reduce GFR and accelerate kidney damage."
+    },
+    {
+      "id": 64,
+      "unit": "clinical",
+      "topic": "CKD — Dialysis",
+      "type": "mc",
+      "q": "A patient on haemodialysis would have which access device?",
+      "opts": [
+        "A peritoneal catheter in the abdomen",
+        "An arteriovenous (AV) fistula or tunnelled central line",
+        "A urinary catheter for urine removal",
+        "A nephrostomy tube through the back"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Haemodialysis requires high-flow vascular access — typically an arteriovenous (AV) fistula (a surgically created connection between an artery and vein in the arm, allowing the vein to enlarge and thicken) or a tunnelled dialysis catheter (a central venous catheter for patients without a mature fistula). Peritoneal catheters are used for peritoneal dialysis, which uses the abdominal cavity's peritoneum as the filtration membrane."
+    },
+    {
+      "id": 65,
+      "unit": "clinical",
+      "topic": "NEWS2 Scoring",
+      "type": "mc",
+      "q": "A patient with AKI has the following observations: RR 24, SpO2 93%, BP 95/60, Pulse 115, Temperature 38.9°C, confused. This NEWS2 score indicates:",
+      "opts": [
+        "Low risk — routine monitoring",
+        "Medium risk — increase monitoring frequency",
+        "High risk — urgent medical review required",
+        "Critical — immediate resuscitation team activation"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Each abnormal parameter scores points in NEWS2. This patient has: elevated RR (score 2), low SpO2 (score 2), hypotension (score 2), tachycardia (score 2), pyrexia (score 1), confusion (score 3) → total approximately 12 — HIGH risk. A total NEWS2 score of ≥7 typically triggers an urgent medical review and escalation. Delayed response to deteriorating NEWS2 scores is a leading cause of preventable deaths in hospital."
+    },
+    {
+      "id": 66,
+      "unit": "clinical",
+      "topic": "Acid-Base Balance and Kidneys",
+      "type": "mc",
+      "q": "For acid-base balance, what does the kidney do? (Select the most complete answer)",
+      "opts": [
+        "Only reabsorbs bicarbonate",
+        "Only excretes potassium",
+        "Reabsorbs bicarbonate AND excretes hydrogen ions to regulate blood pH",
+        "Produces bicarbonate from CO2 in the blood"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "The kidney regulates acid-base balance through two mechanisms working together: (1) Reabsorbs bicarbonate (HCO3-) from the filtrate back into the blood — bicarbonate is the major blood buffer; (2) Excretes hydrogen ions (H+) into the tubular lumen to be eliminated in urine. Failure of both → metabolic acidosis (low pH, low bicarbonate) — a hallmark of AKI and CKD. ABGs showing pH <7.35 and low HCO3- in a renal patient = metabolic acidosis from kidney failure."
+    },
+    {
+      "id": 67,
+      "unit": "clinical",
+      "topic": "Azotemia",
+      "type": "mc",
+      "q": "Azotemia is defined as:",
+      "opts": [
+        "Protein in the urine",
+        "Accumulation of nitrogenous waste (urea and creatinine) in the blood",
+        "Blood in the urine",
+        "Excess glucose in the urine"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Azotemia is the accumulation of nitrogenous waste products — specifically urea, creatinine, and uric acid — in the bloodstream as a result of impaired renal filtration. It is a hallmark of both AKI and CKD. When azotemia becomes severe (uraemia), it causes neurological symptoms: confusion, lethargy, nausea, vomiting, and eventually seizures and coma if untreated."
+    },
+    {
+      "id": 68,
+      "unit": "clinical",
+      "topic": "Urine Specific Gravity",
+      "type": "mc",
+      "q": "A patient has very low urine specific gravity (very dilute urine) with large volumes. Which condition should be considered?",
+      "opts": [
+        "Dehydration",
+        "SIADH (syndrome of inappropriate ADH)",
+        "Diabetes Insipidus",
+        "CKD Stage 5"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Diabetes Insipidus (DI) is characterized by absent or ineffective ADH. Without ADH, the collecting ducts are impermeable to water → massive volumes of extremely dilute urine (low specific gravity, low osmolarity). Patients with DI can produce 3–20 L of urine per day. This contrasts with SIADH (too much ADH → concentrated urine, fluid retention, hyponatraemia) and dehydration (concentrated, dark urine, high specific gravity)."
+    },
+    {
+      "id": 69,
+      "unit": "clinical",
+      "topic": "Proteinuria — Clinical Significance",
+      "type": "mc",
+      "q": "A diabetic patient's annual urinalysis shows microalbuminuria (small amounts of albumin in urine). This finding indicates:",
+      "opts": [
+        "Normal — albumin is always present in small amounts in diabetic patients",
+        "Early glomerular damage — the filtration barrier is becoming leaky",
+        "The patient has a urinary tract infection",
+        "The patient needs a higher protein diet"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Microalbuminuria (small but detectable amounts of albumin in urine) is an early warning sign of diabetic nephropathy — it means the glomerular filtration barrier is beginning to fail. In healthy kidneys, albumin (a large protein) should not pass through the filter. Its presence signals early glomerular damage. Detecting microalbuminuria early allows intervention (tighter glucose control, ACE inhibitors) to slow CKD progression."
+    },
+    {
+      "id": 70,
+      "unit": "clinical",
+      "topic": "Hyperkalaemia — Danger",
+      "type": "mc",
+      "q": "Why is hyperkalaemia (high serum potassium) especially dangerous in patients with AKI?",
+      "opts": [
+        "It causes severe dehydration",
+        "It disrupts cardiac membrane potential and can cause fatal arrhythmias",
+        "It raises blood pressure dangerously",
+        "It causes osmotic demyelination syndrome"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Potassium is the primary intracellular cation — it is critical for cardiac action potentials. Elevated serum potassium depolarizes cardiac muscle cells prematurely → ECG changes (peaked T-waves → widened QRS → sine wave pattern) → ventricular fibrillation → cardiac arrest. In AKI, the oliguric kidneys cannot excrete potassium → it accumulates rapidly. Emergency treatment: IV calcium gluconate (cardiac membrane protection), insulin + dextrose, salbutamol nebulization, and dialysis for severe cases."
+    },
+    {
+      "id": 71,
+      "unit": "clinical",
+      "topic": "Case Study — Barbara (AKI)",
+      "type": "mc",
+      "q": "Barbara, a 71-year-old admitted with confusion, dry mucous membranes, and a 5-day history of vomiting/diarrhoea, has a NEWS2 score of 7. What does this NEWS2 score indicate?",
+      "opts": [
+        "Low risk — increase oral fluids and monitor",
+        "Medium risk — review medications only",
+        "High risk — requires urgent medical review and escalation",
+        "Stable — routine nursing care is appropriate"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "A NEWS2 score of 7 or above indicates HIGH risk, requiring urgent clinical response — escalation to the medical team and possibly critical care outreach. Barbara's high score reflects multiple abnormal observations: elevated respiratory rate, low SpO2, confusion, hypotension, and tachycardia. In Barbara's case, this correctly prompted IV fluid resuscitation, blood tests confirming AKI, and treatment for hyperkalaemia."
+    },
+    {
+      "id": 72,
+      "unit": "clinical",
+      "topic": "Case Study — Barbara (AKI)",
+      "type": "mc",
+      "q": "Barbara's potassium is 6.2 mmol/L. The medical team prescribes medication to lower it. Which mechanism would insulin plus dextrose use?",
+      "opts": [
+        "It causes the kidneys to excrete more potassium in urine",
+        "It shifts potassium from the extracellular space into cells temporarily",
+        "It neutralizes potassium with calcium ions",
+        "It removes potassium through the GI tract"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Insulin stimulates the Na+/K+ ATPase pump in cell membranes, shifting potassium from the extracellular (blood) compartment into cells — temporarily lowering serum potassium without actually removing it from the body. Dextrose is given simultaneously to prevent hypoglycaemia. This buys time for more definitive treatment (kayexalate to remove K+ via GI tract, or dialysis). Calcium gluconate is given first for cardiac protection."
+    },
+    {
+      "id": 73,
+      "unit": "clinical",
+      "topic": "Case Study — Abigail (Pyelonephritis)",
+      "type": "mc",
+      "q": "Abigail, a 22-year-old presenting with dysuria, haematuria, fever of 38.8°C, and flank pain, most likely has:",
+      "opts": [
+        "Simple cystitis — treat with oral antibiotics at home",
+        "Acute pyelonephritis — may require hospital admission and IV antibiotics",
+        "Renal calculi — requires urgent imaging",
+        "Chronic kidney disease — begin eGFR monitoring"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Abigail's combination of urinary symptoms (dysuria, haematuria) PLUS systemic signs (38.8°C fever, tachycardia at 110 bpm) PLUS flank/loin pain distinguishes acute pyelonephritis from simple cystitis. Cystitis alone typically does NOT cause systemic fever or flank pain. Elevated WBC (16 × 10⁹/L) and neutrophilia confirm active infection. Pyelonephritis with fever requires careful monitoring for sepsis, IV antibiotics if oral not tolerated, and possible hospital admission."
+    },
+    {
+      "id": 74,
+      "unit": "clinical",
+      "topic": "Case Study — Mr Lee Hong (Renal Colic)",
+      "type": "mc",
+      "q": "Mr Lee Hong passes 100 mL of urine containing blood. His BP is 92/60 and pulse is 102. His pain is severe. Which immediate nursing action is the priority?",
+      "opts": [
+        "Administer ciprofloxacin for suspected UTI",
+        "Obtain IV access and anticipate IV fluids and analgesia",
+        "Encourage oral fluids to flush the stone",
+        "Prepare the patient for immediate surgical stone removal"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Mr Lee Hong is hypotensive (92/60) and tachycardic (102 bpm) — he may be in pain-related vasovagal response and/or volume depleted. Immediate priorities: IV access, IV fluid resuscitation for hypotension, and IV/IM analgesia for severe renal colic. Haematuria alone does not require immediate surgery — imaging should first determine stone size, location, and whether surgical intervention (lithotripsy/ureteroscopy) is needed. Oral fluids are not appropriate while the patient is in severe pain."
+    },
+    {
+      "id": 75,
+      "unit": "clinical",
+      "topic": "Cranberry Juice and UTIs",
+      "type": "mc",
+      "q": "Cranberry and blueberry juices may help prevent UTIs by:",
+      "opts": [
+        "Directly killing E. coli bacteria",
+        "Containing benzoic acid that prevents bacteria from adhering to the bladder wall",
+        "Alkalinizing the urine to destroy bacterial cell walls",
+        "Blocking bacterial fimbriae attachment to the urethra"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Cranberry and blueberry juices contain benzoic acid, which coats the lining of the bladder wall and may prevent bacteria (particularly E. coli) from adhering to and infiltrating the bladder wall. However, the evidence is conflicting and their use is debated. They should NOT replace antibiotics in treating active infections — they may have a preventive role in recurrent UTI patients as an adjunct."
+    },
+    {
+      "id": 76,
+      "unit": "clinical",
+      "topic": "Digoxin and AKI",
+      "type": "mc",
+      "q": "A patient with AKI is taking digoxin for atrial fibrillation. Why is this medication a concern?",
+      "opts": [
+        "Digoxin damages the glomeruli directly",
+        "Digoxin is renally cleared — impaired kidneys cannot clear it, causing accumulation and toxicity",
+        "Digoxin causes hyperkalaemia by blocking sodium channels",
+        "Digoxin destroys tubular cells at therapeutic doses"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Digoxin is primarily cleared by the kidneys. In AKI, reduced GFR means digoxin is not excreted efficiently → drug accumulates to toxic levels (digoxin toxicity). Signs of digoxin toxicity include nausea, vomiting, visual disturbances (yellow-green halos), bradycardia, and life-threatening arrhythmias. Dose must be reduced or the drug held. Serum digoxin levels must be monitored closely in any patient with declining renal function."
+    },
+    {
+      "id": 77,
+      "unit": "clinical",
+      "topic": "ACE Inhibitors and CKD",
+      "type": "mc",
+      "q": "ACE inhibitors (e.g., lisinopril, ramipril) are first-line antihypertensives for CKD patients because:",
+      "opts": [
+        "They increase GFR by dilating the afferent arteriole",
+        "They block aldosterone, preventing sodium retention in the DCT",
+        "They reduce intraglomerular pressure by dilating the efferent arteriole, slowing nephron damage",
+        "They increase erythropoietin production to treat anaemia"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "In CKD, the efferent arteriole is often constricted (by angiotensin II) to maintain glomerular pressure. While this maintains filtration short-term, the sustained high intraglomerular pressure causes progressive glomerular damage. ACE inhibitors block angiotensin II → efferent arteriole dilates → intraglomerular pressure falls → nephron damage slows. This is nephroprotective. They also reduce proteinuria. However, in AKI or severe bilateral renal artery stenosis, ACE inhibitors can acutely worsen GFR and may need to be held."
+    },
+    {
+      "id": 78,
+      "unit": "anatomy",
+      "topic": "Vocabulary",
+      "type": "mc",
+      "q": "The term 'micturition' refers to:",
+      "opts": [
+        "The filtration of blood at the glomerulus",
+        "The act of voiding urine",
+        "The measurement of urine specific gravity",
+        "The secretion of renin by the kidney"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Micturition is the medical/anatomical term for the act of voiding (passing) urine. It involves a coordinated reflex: bladder fills → stretch receptors signal the CNS → detrusor muscle contracts → internal sphincter relaxes (involuntary) → external sphincter relaxes (voluntary) → urine is expelled. Abnormal micturition patterns (frequency, urgency, hesitancy, retention) are important clinical findings."
+    },
+    {
+      "id": 79,
+      "unit": "anatomy",
+      "topic": "Vocabulary",
+      "type": "mc",
+      "q": "'Pyuria' is defined as:",
+      "opts": [
+        "Blood in the urine",
+        "Protein in the urine",
+        "White blood cells (pus) in the urine",
+        "Glucose in the urine"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Pyuria is the presence of white blood cells (WBCs/leukocytes) in the urine — it means there are pus cells in the urine and strongly indicates urinary tract infection. It is detected on urine dipstick (leukocyte esterase positive) and confirmed on microscopy. Compare: haematuria = blood; proteinuria = protein; glycosuria = glucose. All are abnormal and require investigation."
+    },
+    {
+      "id": 80,
+      "unit": "anatomy",
+      "topic": "Vocabulary",
+      "type": "mc",
+      "q": "Specific gravity of urine refers to:",
+      "opts": [
+        "The color intensity of the urine sample",
+        "The density of urine relative to distilled water",
+        "The pH level of the urine",
+        "The volume of urine produced per hour"
+      ],
+      "correct": [
+        1
+      ],
+      "rationale": "Specific gravity measures urine density relative to pure distilled water (SG 1.000). Normal urine specific gravity is approximately 1.010–1.030. High SG (>1.030) = concentrated urine = dehydration. Low SG (<1.005) = very dilute urine = excess fluid intake, diabetes insipidus, or early CKD (tubules losing concentrating ability). It is a quick bedside indicator of hydration status and renal concentrating ability."
+    },
+    {
+      "id": 81,
+      "unit": "physiology",
+      "topic": "Secretion — Nephron",
+      "type": "mc",
+      "q": "The process of secretion in the nephron involves:",
+      "opts": [
+        "Forcing plasma out of the glomerulus by blood pressure",
+        "Reclaiming substances from the filtrate back into the blood",
+        "Moving substances from the peritubular capillaries INTO the tubular lumen for excretion",
+        "Concentrating urine in the collecting duct under ADH influence"
+      ],
+      "correct": [
+        2
+      ],
+      "rationale": "Secretion is the active transport of substances from the peritubular capillaries (surrounding blood supply) INTO the tubular lumen to be excreted in the urine. It removes substances not effectively filtered at the glomerulus — including hydrogen ions, potassium, drugs (penicillin, aspirin), and certain toxins. This is why some medications accumulate dangerously in renal failure: the kidneys cannot secrete (or filter) them effectively."
+    }
+  ]
+}
