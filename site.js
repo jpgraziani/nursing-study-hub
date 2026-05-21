@@ -6,7 +6,7 @@
 // ── STATE ────────────────────────────────────────────
 const STATE = {
   manifest: null,
-  quizzes: {},           // id → quiz data
+  quizzes: {},
   currentView: 'home',
   currentClass: null,
   quiz: {
@@ -19,9 +19,9 @@ const STATE = {
     answered: false,
     selected: null,
     selectedSATA: new Set(),
-    mode: 'quiz'         // 'quiz' | 'missed'
+    mode: 'quiz'
   },
-  scores: {},            // quizId → {score, total, date}
+  scores: {},
   theme: 'dark',
   searchFilter: 'all'
 };
@@ -79,6 +79,7 @@ function buildSidebarNav() {
 
   STATE.manifest.classes.forEach(cls => {
     const modules = getModulesForClass(cls.id);
+    const hasNotes = STATE.manifest.content.some(c => c.class === cls.id && c.type === 'note');
     const item = document.createElement('div');
     item.className = 'class-nav-item';
     item.innerHTML = `
@@ -91,6 +92,7 @@ function buildSidebarNav() {
           <a class="module-nav-link" onclick="showClassView('${cls.id}', ${m})">
             Module ${m}
           </a>`).join('')}
+        ${hasNotes ? `<a class="module-nav-link note-nav-link" onclick="showNotesView('${cls.id}')">📖 Notes</a>` : ''}
       </div>`;
     nav.appendChild(item);
   });
@@ -99,7 +101,7 @@ function buildSidebarNav() {
 function getModulesForClass(classId) {
   const mods = new Set();
   STATE.manifest.content
-    .filter(c => c.class === classId)
+    .filter(c => c.class === classId && c.type !== 'note')
     .forEach(c => mods.add(c.module));
   return Array.from(mods).sort((a, b) => a - b);
 }
@@ -125,7 +127,7 @@ function buildHomeView() {
 
   STATE.manifest.classes.forEach(cls => {
     const items = STATE.manifest.content.filter(c => c.class === cls.id);
-    const quizItems = items.filter(c => c.type === 'quiz');
+    const quizItems = items.filter(c => c.type !== 'note');
     const noteItems = items.filter(c => c.type === 'note');
     const totalQ = quizItems.reduce((sum, i) => sum + (i.questionCount || 0), 0);
     const card = document.createElement('div');
@@ -200,7 +202,6 @@ async function showClassView(classId, scrollToModule = null) {
 
   setBreadcrumb([{ label: 'Home', action: () => showView('home') }, { label: cls.name }]);
 
-  // Toggle module nav
   document.querySelectorAll('[id^="mod-nav-"]').forEach(el => el.style.display = 'none');
   const modNav = document.getElementById(`mod-nav-${classId}`);
   if (modNav) modNav.style.display = 'block';
@@ -220,7 +221,10 @@ async function showClassView(classId, scrollToModule = null) {
   const content = document.getElementById('class-content');
   content.innerHTML = '<div class="loading"><div class="loading-spinner">⟳</div><p>Loading content…</p></div>';
 
-  const items = STATE.manifest.content.filter(c => c.class === classId);
+  // Only quizzes in the module view — notes get their own view
+  const items = STATE.manifest.content.filter(c => c.class === classId && c.type !== 'note');
+  const noteItems = STATE.manifest.content.filter(c => c.class === classId && c.type === 'note');
+
   const moduleGroups = {};
   items.forEach(item => {
     if (!moduleGroups[item.module]) moduleGroups[item.module] = [];
@@ -236,67 +240,44 @@ async function showClassView(classId, scrollToModule = null) {
     section.id = `module-section-${mod}`;
     section.innerHTML = `<div class="module-title">Module ${mod}</div>`;
 
-    // Notes first
-    const notes = moduleGroups[mod].filter(i => i.type === 'note');
-    const quizzes = moduleGroups[mod].filter(i => i.type !== 'note');
-
-    if (notes.length > 0) {
-      const notesGroup = document.createElement('div');
-      notesGroup.className = 'content-type-group';
-      notesGroup.innerHTML = '<div class="content-type-label">📖 Study Notes</div>';
-      notes.forEach(item => {
-        const card = document.createElement('div');
-        card.className = 'quiz-card note-card';
-        card.onclick = () => openNote(item);
-        card.innerHTML = `
-          <div class="quiz-card-icon">📖</div>
-          <div class="quiz-card-info">
-            <div class="quiz-card-title">${item.title}</div>
-            <div class="quiz-card-desc">${item.description || ''}</div>
-            <div class="quiz-card-tags">
-              ${(item.tags || []).map(t => `<span class="quiz-tag note-tag">${t}</span>`).join('')}
-            </div>
+    for (const item of moduleGroups[mod]) {
+      const score = STATE.scores[item.id];
+      const pct = score ? Math.round(score.score / score.total * 100) : null;
+      const card = document.createElement('div');
+      card.className = 'quiz-card';
+      card.onclick = () => startQuiz(item.id);
+      card.innerHTML = `
+        <div class="quiz-card-icon">📝</div>
+        <div class="quiz-card-info">
+          <div class="quiz-card-title">${item.title}</div>
+          <div class="quiz-card-desc">${item.description || ''}</div>
+          <div class="quiz-card-tags">
+            ${(item.tags || []).map(t => `<span class="quiz-tag">${t}</span>`).join('')}
           </div>
-          <div class="quiz-card-right">
-            <div class="note-open-btn">Open →</div>
-          </div>`;
-        notesGroup.appendChild(card);
-      });
-      section.appendChild(notesGroup);
+        </div>
+        <div class="quiz-card-right">
+          <div class="quiz-q-count">${item.questionCount}</div>
+          <div class="quiz-q-label">Questions</div>
+          ${pct !== null ? `<div class="${scoreClass(pct)} quiz-score-badge">${pct}%</div>` : ''}
+        </div>`;
+      section.appendChild(card);
     }
-
-    if (quizzes.length > 0) {
-      const quizzesGroup = document.createElement('div');
-      quizzesGroup.className = 'content-type-group';
-      if (notes.length > 0) {
-        quizzesGroup.innerHTML = '<div class="content-type-label">📝 Quizzes</div>';
-      }
-      quizzes.forEach(item => {
-        const score = STATE.scores[item.id];
-        const pct = score ? Math.round(score.score / score.total * 100) : null;
-        const card = document.createElement('div');
-        card.className = 'quiz-card';
-        card.onclick = () => startQuiz(item.id);
-        card.innerHTML = `
-          <div class="quiz-card-icon">📝</div>
-          <div class="quiz-card-info">
-            <div class="quiz-card-title">${item.title}</div>
-            <div class="quiz-card-desc">${item.description || ''}</div>
-            <div class="quiz-card-tags">
-              ${(item.tags || []).map(t => `<span class="quiz-tag">${t}</span>`).join('')}
-            </div>
-          </div>
-          <div class="quiz-card-right">
-            <div class="quiz-q-count">${item.questionCount}</div>
-            <div class="quiz-q-label">Questions</div>
-            ${pct !== null ? `<div class="${scoreClass(pct)} quiz-score-badge">${pct}%</div>` : ''}
-          </div>`;
-        quizzesGroup.appendChild(card);
-      });
-      section.appendChild(quizzesGroup);
-    }
-
     content.appendChild(section);
+  }
+
+  // Notes banner at the bottom — only if notes exist
+  if (noteItems.length > 0) {
+    const notesBanner = document.createElement('div');
+    notesBanner.className = 'notes-banner';
+    notesBanner.onclick = () => showNotesView(classId);
+    notesBanner.innerHTML = `
+      <div class="notes-banner-icon">📖</div>
+      <div class="notes-banner-text">
+        <div class="notes-banner-title">Study Notes</div>
+        <div class="notes-banner-sub">${noteItems.length} visual explainer${noteItems.length !== 1 ? 's' : ''} for ${cls.name}</div>
+      </div>
+      <div class="notes-banner-arrow">→</div>`;
+    content.appendChild(notesBanner);
   }
 
   if (scrollToModule) {
@@ -307,11 +288,81 @@ async function showClassView(classId, scrollToModule = null) {
   }
 }
 
-// ── NOTE VIEWER ──────────────────────────────────────
-function openNote(item) {
-  const cls = getClassById(item.class);
-  // Open the HTML file in a new tab
-  window.open(`data/${item.file}`, '_blank');
+// ── NOTES VIEW ───────────────────────────────────────
+function showNotesView(classId) {
+  STATE.currentView = 'notes';
+  setActiveView('view-notes');
+  setNavActive(classId);
+
+  const cls = getClassById(classId);
+  if (!cls) return;
+
+  setBreadcrumb([
+    { label: 'Home', action: () => showView('home') },
+    { label: cls.name, action: () => showClassView(classId) },
+    { label: 'Study Notes' }
+  ]);
+
+  const notes = STATE.manifest.content.filter(c => c.class === classId && c.type === 'note');
+
+  // Group notes by category
+  const categories = {};
+  notes.forEach(note => {
+    const cat = note.category || 'General';
+    if (!categories[cat]) categories[cat] = [];
+    categories[cat].push(note);
+  });
+
+  const header = document.getElementById('notes-header');
+  header.innerHTML = `
+    <div class="class-hero">
+      <div class="class-hero-top">
+        <span class="class-hero-icon">📖</span>
+        <div>
+          <div class="class-hero-code">${cls.code} · ${cls.term || ''}</div>
+          <div class="class-hero-name">Study Notes</div>
+        </div>
+      </div>
+    </div>`;
+
+  const notesContent = document.getElementById('notes-content');
+  notesContent.innerHTML = '';
+
+  Object.entries(categories).forEach(([cat, catNotes]) => {
+    const section = document.createElement('div');
+    section.className = 'module-section';
+    section.innerHTML = `<div class="module-title">${cat}</div>`;
+
+    catNotes.forEach(note => {
+      const card = document.createElement('div');
+      card.className = 'quiz-card note-card';
+      card.onclick = () => openNote(note, classId);
+      card.innerHTML = `
+        <div class="quiz-card-icon">📖</div>
+        <div class="quiz-card-info">
+          <div class="quiz-card-title">${note.title}</div>
+          <div class="quiz-card-desc">${note.description || ''}</div>
+          <div class="quiz-card-tags">
+            ${(note.tags || []).map(t => `<span class="quiz-tag note-tag">${t}</span>`).join('')}
+          </div>
+        </div>
+        <div class="quiz-card-right">
+          <div class="note-open-label">Open</div>
+          <div class="note-open-arrow">→</div>
+        </div>`;
+      section.appendChild(card);
+    });
+
+    notesContent.appendChild(section);
+  });
+
+  closeSidebarMobile();
+}
+
+function openNote(note, classId) {
+  // Store return info so the note page can navigate back
+  sessionStorage.setItem('note-return-class', classId);
+  window.open(`data/${note.file}`, '_blank');
 }
 
 // ── QUIZ ENGINE ──────────────────────────────────────
@@ -329,7 +380,6 @@ async function startQuiz(contentId) {
     return;
   }
 
-  // Shuffle and init
   const cls = getClassById(item.class);
   STATE.quiz.data = { ...data, item, cls };
   STATE.quiz.questions = data.questions.map(q => shuffleQuestion(JSON.parse(JSON.stringify(q))));
@@ -375,7 +425,6 @@ function renderQuizQuestion() {
   const isSATA = q.type === 'sata';
   const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
   const color = UNIT_COLORS[q.unit] || '#1565C0';
-  const cls = quiz.data.cls;
 
   quiz.answered = false;
   quiz.selected = null;
@@ -457,7 +506,6 @@ function submitAnswer() {
   const cSet = new Set(q.correct);
   const uSet = new Set(userSel);
   const isCorrect = q.correct.length === userSel.length && q.correct.every(c => uSet.has(c));
-  const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
 
   document.querySelectorAll('.q-opt').forEach((el, i) => {
     el.classList.add('locked');
@@ -493,7 +541,6 @@ function showResults() {
   const quizId = quiz.data.item?.id;
   const cssPct = `${pct * 3.6}deg`;
 
-  // Save score
   if (quizId) {
     STATE.scores[quizId] = { score: quiz.correct, total, date: new Date().toISOString() };
     saveScores();
@@ -566,9 +613,8 @@ function exitQuiz() {
 // ── SEARCH ───────────────────────────────────────────
 async function ensureAllQuizzesLoaded() {
   for (const item of STATE.manifest.content) {
-    if (item.type !== 'note' && !STATE.quizzes[item.id]) {
-      await loadQuiz(item);
-    }
+    if (item.type === 'note') continue;
+    if (!STATE.quizzes[item.id]) await loadQuiz(item);
   }
 }
 
@@ -579,9 +625,7 @@ function getAllQuestions() {
     const quiz = STATE.quizzes[item.id];
     if (!quiz || !quiz.questions) return;
     const cls = getClassById(item.class);
-    quiz.questions.forEach(q => {
-      results.push({ q, item, cls });
-    });
+    quiz.questions.forEach(q => results.push({ q, item, cls }));
   });
   return results;
 }
@@ -589,15 +633,10 @@ function getAllQuestions() {
 function searchQuestions(query, classFilter = 'all') {
   if (!query || query.trim().length < 2) return [];
   const lower = query.toLowerCase();
-  const allQ = getAllQuestions();
-  return allQ
+  return getAllQuestions()
     .filter(({ q, item }) => {
       if (classFilter !== 'all' && item.class !== classFilter) return false;
-      const haystack = [
-        q.q, q.rationale, q.topic,
-        ...(q.opts || []),
-        ...(item.topics || [])
-      ].join(' ').toLowerCase();
+      const haystack = [q.q, q.rationale, q.topic, ...(q.opts || []), ...(item.topics || [])].join(' ').toLowerCase();
       return lower.split(' ').every(word => haystack.includes(word));
     })
     .slice(0, 40);
@@ -661,7 +700,6 @@ async function fullSearch(val) {
     resultsEl.innerHTML = `<div class="search-empty"><div class="se-icon">🔍</div><p>No results for "<strong>${val}</strong>"</p></div>`;
     return;
   }
-
   resultsEl.innerHTML = `<p style="color:var(--text3);font-size:0.82rem;margin-bottom:16px">${results.length} result${results.length !== 1 ? 's' : ''} for "<strong style="color:var(--text)">${val}</strong>"</p>` +
     results.map(({ q, item, cls }) => {
       const color = UNIT_COLORS[q.unit] || '#1565C0';
@@ -707,7 +745,6 @@ function showView(view) {
     buildSearchFilters();
     document.getElementById('full-search')?.focus();
   }
-  // Close mini search
   document.getElementById('search-mini-results')?.classList.remove('open');
   document.getElementById('hero-search-results')?.classList.remove('open');
   closeSidebarMobile();
@@ -737,9 +774,8 @@ function setBreadcrumb(items) {
   bc.innerHTML = items.map((item, i) => {
     const isLast = i === items.length - 1;
     if (isLast) return `<span style="color:var(--text2)">${item.label}</span>`;
-    return `<a onclick="${item.action ? item.action.toString().replace(/"/g, "'") : ''}" style="cursor:pointer;color:var(--text3)">${item.label}</a><span class="bc-sep">/</span>`;
+    return `<a onclick="" style="cursor:pointer;color:var(--text3)">${item.label}</a><span class="bc-sep">/</span>`;
   }).join('');
-  // Re-bind onclick for breadcrumb items
   const links = bc.querySelectorAll('a');
   items.filter(i => i.action).forEach((item, i) => {
     if (links[i]) links[i].onclick = item.action;
@@ -757,16 +793,11 @@ function toggleSidebar() {
 }
 
 function closeSidebarMobile() {
-  if (window.innerWidth <= 768) {
-    document.body.classList.remove('sidebar-open');
-  }
+  if (window.innerWidth <= 768) document.body.classList.remove('sidebar-open');
 }
 
 function handleMobileInit() {
-  if (window.innerWidth <= 768) {
-    document.body.classList.remove('sidebar-open');
-  }
-  // Close search results when clicking outside
+  if (window.innerWidth <= 768) document.body.classList.remove('sidebar-open');
   document.addEventListener('click', (e) => {
     if (!e.target.closest('#search-mini-wrap')) {
       document.getElementById('search-mini-results')?.classList.remove('open');
