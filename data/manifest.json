@@ -2,7 +2,7 @@
   "site": {
     "title": "Nursing Study Hub",
     "subtitle": "Jonathan's Interactive Study Center",
-    "version": "1.2.1"
+    "version": "1.3.0"
   },
   "classes": [
     {
@@ -30,6 +30,24 @@
       "color": "#7B3F00",
       "accent": "#F97316",
       "icon": "🫀",
+      "term": ""
+    },
+    {
+      "id": "renal",
+      "name": "Renal & Urinary System",
+      "code": "BIO 201",
+      "color": "#0C4A6E",
+      "accent": "#38BDF8",
+      "icon": "🫘",
+      "term": ""
+    },
+    {
+      "id": "pharm",
+      "name": "Pharmacology",
+      "code": "PHARM",
+      "color": "#14532D",
+      "accent": "#4ADE80",
+      "icon": "💊",
       "term": ""
     }
   ],
@@ -91,6 +109,30 @@
       "description": "Step-by-step cascade diagram: how the body rescues falling blood pressure, plus ACE inhibitors, ARBs, and aldosterone antagonists",
       "topics": ["renin", "angiotensin", "RAAS", "aldosterone", "ACE inhibitor", "ARB", "lisinopril", "losartan", "spironolactone", "vasoconstriction", "blood pressure", "hypertension", "heart failure", "ADH", "juxtaglomerular"],
       "tags": ["visual", "diagram", "cardiac", "pharmacology"]
+    },
+    {
+      "id": "renal-ch11-full",
+      "file": "renal_ch11_full_quiz.json",
+      "class": "renal",
+      "module": 11,
+      "type": "quiz",
+      "title": "Chapter 11 — Renal System Full Quiz",
+      "description": "81-question NCLEX-style quiz covering renal anatomy, kidney physiology, urine formation, UTIs, renal calculi, AKI, CKD, and clinical case studies",
+      "topics": ["renal system", "urinary system", "kidney anatomy", "nephron", "Bowman's capsule", "loop of Henle", "ADH", "aldosterone", "RAAS", "erythropoietin", "GFR", "urine formation", "cystitis", "UTI", "pyelonephritis", "urosepsis", "ciprofloxacin", "renal calculi", "kidney stones", "AKI", "acute kidney injury", "KDIGO staging", "CKD", "chronic kidney disease", "ESRD", "dialysis", "azotemia", "proteinuria", "hyperkalemia", "acid-base balance", "ACE inhibitors", "digoxin"],
+      "questionCount": 81,
+      "tags": ["NCLEX", "Chapter 11", "renal", "full coverage"]
+    },
+    {
+      "id": "pharm-urinary-ch34-35",
+      "file": "pharm_urinary_ch34_35_quiz.json",
+      "class": "pharm",
+      "module": 34,
+      "type": "quiz",
+      "title": "Pharmacology — Urinary System (Ch. 34–35)",
+      "description": "65-question NCLEX-style pharmacology quiz covering diuretics, urinary anti-infectives, antispasmodics, analgesics, stimulants, and PDE5 inhibitors",
+      "topics": ["diuretics", "loop diuretics", "furosemide", "Lasix", "osmotic diuretics", "mannitol", "potassium-sparing diuretics", "spironolactone", "thiazide diuretics", "hydrochlorothiazide", "urinary anti-infectives", "nitrofurantoin", "trimethoprim", "sulfonamides", "antispasmodics", "oxybutynin", "bladder spasms", "phenazopyridine", "bethanechol", "PDE5 inhibitors", "sildenafil", "hypokalemia", "ototoxicity", "electrolyte imbalance"],
+      "questionCount": 65,
+      "tags": ["NCLEX", "pharmacology", "Ch. 34-35", "urinary", "diuretics"]
     }
   ]
 }
