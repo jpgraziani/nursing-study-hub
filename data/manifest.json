@@ -2,7 +2,7 @@
   "site": {
     "title": "Nursing Study Hub",
     "subtitle": "Jonathan's Interactive Study Center",
-    "version": "1.2.0"
+    "version": "1.2.1"
   },
   "classes": [
     {
@@ -80,6 +80,17 @@
       "description": "Visual step-by-step explainer: why failing kidneys cause calcium to drop and bones to hurt",
       "topics": ["CKD", "chronic kidney disease", "vitamin D", "calcitriol", "hypocalcemia", "renal osteodystrophy", "PTH", "parathyroid hormone", "secondary hyperparathyroidism"],
       "tags": ["visual", "diagram", "renal"]
+    },
+    {
+      "id": "anatomy-note-ras",
+      "file": "ras_diagram.html",
+      "class": "anatomy",
+      "type": "note",
+      "category": "Cardiac",
+      "title": "Renin-Angiotensin System (RAAS)",
+      "description": "Step-by-step cascade diagram: how the body rescues falling blood pressure, plus ACE inhibitors, ARBs, and aldosterone antagonists",
+      "topics": ["renin", "angiotensin", "RAAS", "aldosterone", "ACE inhibitor", "ARB", "lisinopril", "losartan", "spironolactone", "vasoconstriction", "blood pressure", "hypertension", "heart failure", "ADH", "juxtaglomerular"],
+      "tags": ["visual", "diagram", "cardiac", "pharmacology"]
     }
   ]
 }
