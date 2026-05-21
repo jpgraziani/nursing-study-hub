@@ -62,15 +62,16 @@
       "tags": ["Module 8", "case study"]
     },
     {
-      "id": "nutrition-mod8-note-ckd-vitd",
+      "id": "nutrition-note-ckd-vitd",
       "file": "vitamin_d_ckd_explainer.html",
       "class": "nutrition",
       "module": 8,
       "type": "note",
+      "category": "Renal",
       "title": "CKD → Bone Pain & Hypocalcemia",
-      "description": "Visual diagram explaining why failing kidneys cause calcium to drop and bones to hurt",
-      "topics": ["CKD", "chronic kidney disease", "vitamin D", "calcitriol", "hypocalcemia", "renal osteodystrophy", "PTH", "parathyroid hormone", "bone pain", "secondary hyperparathyroidism"],
-      "tags": ["visual", "diagram", "renal", "Module 8"]
+      "description": "Visual step-by-step explainer: why failing kidneys cause calcium to drop and bones to hurt",
+      "topics": ["CKD", "chronic kidney disease", "vitamin D", "calcitriol", "hypocalcemia", "renal osteodystrophy", "PTH", "parathyroid hormone", "secondary hyperparathyroidism"],
+      "tags": ["visual", "renal", "diagram"]
     }
   ]
 }
