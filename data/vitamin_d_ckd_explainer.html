@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CKD → Bone Pain Explained</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0F1117;
+    color: #E8EDF5;
+    padding: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  h1 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: #4A9EDB;
+    margin-bottom: 6px;
+    text-align: center;
+  }
+  .subtitle {
+    text-align: center;
+    color: #8A94A6;
+    font-size: 0.82rem;
+    margin-bottom: 24px;
+  }
+
+  /* FLOW CHAIN */
+  .chain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 32px;
+  }
+
+  .step {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 14px;
+    padding: 16px 18px;
+    position: relative;
+  }
+  .step-icon { font-size: 2rem; margin-bottom: 6px; display: block; }
+  .step-label {
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 4px;
+  }
+  .step-title { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+  .step-body { font-size: 0.82rem; color: #B0BAC8; line-height: 1.55; }
+
+  .step-normal { background: #1E2A3A; border: 1.5px solid #2E4A6A; }
+  .step-normal .step-label { color: #4A9EDB; }
+
+  .step-fail { background: #2A1A1A; border: 1.5px solid #6A2020; }
+  .step-fail .step-label { color: #EF4444; }
+
+  .step-result { background: #1A2A1A; border: 1.5px solid #2E6A2E; }
+  .step-result .step-label { color: #22C55E; }
+
+  .step-bone { background: #2A2010; border: 1.5px solid #6A5010; }
+  .step-bone .step-label { color: #F59E0B; }
+
+  .arrow {
+    font-size: 1.5rem;
+    color: #5A6478;
+    margin: 4px 0;
+    line-height: 1;
+  }
+  .arrow-red { color: #EF4444; }
+
+  /* COMPARISON TABLE */
+  .section-title {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #5A6478;
+    margin-bottom: 12px;
+    margin-top: 8px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  th {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-align: left;
+  }
+  th:first-child { background: #1A3A5C; color: #4A9EDB; }
+  th:last-child { background: #2A1A1A; color: #EF4444; }
+  td {
+    padding: 10px 14px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #2A3246;
+    vertical-align: top;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:nth-child(even) td { background: #161B26; }
+  tr:nth-child(odd) td { background: #1E2536; }
+  td:first-child { color: #8A94A6; font-weight: 600; }
+
+  /* CALLOUT BOXES */
+  .callout {
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 16px;
+    border-left: 4px solid;
+  }
+  .callout-nclex {
+    background: rgba(239,68,68,0.08);
+    border-color: #EF4444;
+  }
+  .callout-tip {
+    background: rgba(34,197,94,0.08);
+    border-color: #22C55E;
+  }
+  .callout-title {
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+  .callout-nclex .callout-title { color: #EF4444; }
+  .callout-tip .callout-title { color: #22C55E; }
+  .callout p, .callout li { font-size: 0.83rem; color: #C0C8D8; line-height: 1.6; }
+  .callout ul { padding-left: 16px; }
+
+  /* HORMONE LOOP */
+  .loop-box {
+    background: #1A1A2A;
+    border: 1.5px solid #4A2080;
+    border-radius: 14px;
+    padding: 16px 18px;
+    margin-bottom: 24px;
+  }
+  .loop-title {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: #A855F7;
+    margin-bottom: 12px;
+  }
+  .loop-step {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    align-items: flex-start;
+  }
+  .loop-num {
+    min-width: 24px; height: 24px;
+    border-radius: 50%;
+    background: #4A2080;
+    color: #E0C0FF;
+    font-size: 0.72rem;
+    font-weight: 800;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+  .loop-text { font-size: 0.83rem; color: #C0B0D8; line-height: 1.5; }
+  .loop-text strong { color: #E0C0FF; }
+
+  .badge {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 20px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .badge-red { background: rgba(239,68,68,0.2); color: #EF4444; }
+  .badge-green { background: rgba(34,197,94,0.2); color: #22C55E; }
+</style>
+</head>
+<body>
+
+<h1>🦴 CKD → Bone Pain & Hypocalcemia</h1>
+<p class="subtitle">Why kidneys failing = calcium dropping = bones hurting</p>
+
+<!-- STEP BY STEP FLOW -->
+<div class="section-title">What normally happens ✓</div>
+<div class="chain">
+
+  <div class="step step-normal">
+    <span class="step-icon">☀️🍽️</span>
+    <div class="step-label">Step 1 — You get Vitamin D</div>
+    <div class="step-title">Inactive Vitamin D enters your body</div>
+    <div class="step-body">From sunlight hitting your skin, or from food. But this form is <strong>inactive</strong> — your body can't use it yet.</div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="step step-normal">
+    <span class="step-icon">🫘</span>
+    <div class="step-label">Step 2 — Kidneys activate it</div>
+    <div class="step-title">Kidneys convert it to Calcitriol (active Vitamin D)</div>
+    <div class="step-body">Healthy kidneys perform the final activation step, turning inactive Vitamin D into <strong>calcitriol</strong> — the form your body can actually use.</div>
+  </div>
+
+  <div class="arrow">↓</div>
+
+  <div class="step step-normal">
+    <span class="step-icon">🦷</span>
+    <div class="step-label">Step 3 — Calcium gets absorbed</div>
+    <div class="step-title">Active Vitamin D helps your gut absorb calcium</div>
+    <div class="step-body">Calcitriol tells the intestines to pull calcium out of food and into your bloodstream. Calcium levels stay normal. Bones stay strong.</div>
+  </div>
+
+</div>
+
+<!-- WHAT GOES WRONG -->
+<div class="section-title">What happens in CKD ✗</div>
+<div class="chain">
+
+  <div class="step step-fail">
+    <span class="step-icon">💔</span>
+    <div class="step-label">CKD — Kidneys failing</div>
+    <div class="step-title">Kidneys can no longer activate Vitamin D</div>
+    <div class="step-body">Damaged kidney tissue loses the ability to perform the activation step. Inactive Vitamin D stays inactive — it piles up, useless.</div>
+  </div>
+
+  <div class="arrow arrow-red">↓</div>
+
+  <div class="step step-fail">
+    <span class="step-icon">📉</span>
+    <div class="step-label">Consequence — No active Vitamin D</div>
+    <div class="step-title">Gut can't absorb calcium from food</div>
+    <div class="step-body">Without calcitriol signaling the intestines, calcium passes through unabsorbed. Blood calcium drops. This is <strong>hypocalcemia</strong>.</div>
+  </div>
+
+  <div class="arrow arrow-red">↓</div>
+
+  <div class="step step-bone">
+    <span class="step-icon">🦴</span>
+    <div class="step-label">Consequence — Bones pay the price</div>
+    <div class="step-title">Body pulls calcium from bones → Renal Osteodystrophy</div>
+    <div class="step-body">Low blood calcium triggers PTH release (see below). PTH raids the bones for calcium to bring blood levels back up. Bones weaken, causing bone pain, fractures, and deformity.</div>
+  </div>
+
+</div>
+
+<!-- PTH LOOP -->
+<div class="loop-box">
+  <div class="loop-title">🔁 The PTH (Parathyroid Hormone) Rescue Loop</div>
+
+  <div class="loop-step">
+    <div class="loop-num">1</div>
+    <div class="loop-text">Blood calcium drops (hypocalcemia)</div>
+  </div>
+  <div class="loop-step">
+    <div class="loop-num">2</div>
+    <div class="loop-text">Parathyroid glands detect the drop and release <strong>PTH</strong></div>
+  </div>
+  <div class="loop-step">
+    <div class="loop-num">3</div>
+    <div class="loop-text">PTH tells bones to release calcium into the blood <span class="badge badge-red">Bones weaken</span></div>
+  </div>
+  <div class="loop-step">
+    <div class="loop-num">4</div>
+    <div class="loop-text">Blood calcium temporarily rises, but kidneys still can't fix the root cause</div>
+  </div>
+  <div class="loop-step">
+    <div class="loop-num">5</div>
+    <div class="loop-text">Cycle repeats → <strong>Secondary Hyperparathyroidism</strong> + progressive bone destruction</div>
+  </div>
+</div>
+
+<!-- COMPARISON TABLE -->
+<div class="section-title">Normal vs CKD — at a glance</div>
+<table>
+  <tr>
+    <th>Normal Kidneys ✓</th>
+    <th>CKD (Failing Kidneys) ✗</th>
+  </tr>
+  <tr>
+    <td>Activate Vitamin D</td>
+    <td>Cannot activate Vitamin D</td>
+  </tr>
+  <tr>
+    <td>Gut absorbs calcium well</td>
+    <td>Gut cannot absorb calcium</td>
+  </tr>
+  <tr>
+    <td>Blood calcium normal</td>
+    <td>Hypocalcemia (low blood calcium)</td>
+  </tr>
+  <tr>
+    <td>PTH stays in normal range</td>
+    <td>PTH chronically elevated (2° hyperparathyroidism)</td>
+  </tr>
+  <tr>
+    <td>Bones stay strong</td>
+    <td>Renal osteodystrophy — pain, weakness, fractures</td>
+  </tr>
+</table>
+
+<!-- WHY THE WRONG ANSWERS WERE WRONG -->
+<div class="section-title">Why the other answer choices were wrong</div>
+
+<table>
+  <tr>
+    <th style="background:#1A2A1A; color:#22C55E;">Answer Choice</th>
+    <th style="background:#2A1A1A; color:#EF4444;">Why It's Wrong</th>
+  </tr>
+  <tr>
+    <td>B — Excess phosphate reabsorption</td>
+    <td>CKD actually causes phosphate retention (can't excrete it), but this doesn't directly cause hypocalcemia or the bone pain cascade in the way the question describes. Phosphate issues ARE a real CKD problem, but they're a separate mechanism.</td>
+  </tr>
+  <tr>
+    <td>C — Overproduction of PTH by the kidneys</td>
+    <td>PTH comes from the parathyroid glands (4 tiny glands in your neck) — NOT the kidneys. The kidneys don't make PTH.</td>
+  </tr>
+  <tr>
+    <td>D — Excessive calcium excretion in urine</td>
+    <td>Failing kidneys actually retain things they should excrete (like phosphate and potassium). The problem is calcium can't get INTO the blood from the gut — not that it's being dumped into urine.</td>
+  </tr>
+</table>
+
+<!-- TREATMENT -->
+<div class="section-title">How it's treated</div>
+<div class="callout callout-tip">
+  <div class="callout-title">✓ Clinical Application</div>
+  <ul>
+    <li><strong>Alfacalcidol or Calcitriol supplements</strong> — give the patient active Vitamin D directly, bypassing the broken kidney activation step</li>
+    <li><strong>Calcium binders / supplements</strong> — restore blood calcium levels</li>
+    <li><strong>Phosphate binders</strong> — taken with meals to reduce phosphate absorption (phosphate + calcium problems often occur together in CKD)</li>
+    <li><strong>Dialysis</strong> — helps manage mineral balance overall in end-stage CKD</li>
+  </ul>
+</div>
+
+<!-- NCLEX CALLOUT -->
+<div class="callout callout-nclex">
+  <div class="callout-title">🎯 NCLEX Priority — Remember This</div>
+  <ul>
+    <li><strong>Kidneys</strong> → activate Vitamin D (inactive → calcitriol)</li>
+    <li><strong>No active Vitamin D</strong> → gut can't absorb calcium → hypocalcemia</li>
+    <li><strong>Low calcium</strong> → PTH released → bones raided for calcium → bone pain</li>
+    <li>This is called <strong>Renal Osteodystrophy</strong></li>
+    <li>Treatment = <strong>active Vitamin D supplement</strong> (alfacalcidol/calcitriol) — not regular Vitamin D, because regular D still needs kidney activation</li>
+  </ul>
+</div>
+
+</body>
+</html>
