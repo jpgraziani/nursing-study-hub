@@ -2,7 +2,7 @@
   "site": {
     "title": "Nursing Study Hub",
     "subtitle": "Jonathan's Interactive Study Center",
-    "version": "1.3.0"
+    "version": "1.3.1"
   },
   "classes": [
     {
@@ -109,6 +109,17 @@
       "description": "Step-by-step cascade diagram: how the body rescues falling blood pressure, plus ACE inhibitors, ARBs, and aldosterone antagonists",
       "topics": ["renin", "angiotensin", "RAAS", "aldosterone", "ACE inhibitor", "ARB", "lisinopril", "losartan", "spironolactone", "vasoconstriction", "blood pressure", "hypertension", "heart failure", "ADH", "juxtaglomerular"],
       "tags": ["visual", "diagram", "cardiac", "pharmacology"]
+    },
+    {
+      "id": "anatomy-note-homeostasis-sim",
+      "file": "homeostasis_simulator.html",
+      "class": "anatomy",
+      "type": "note",
+      "category": "Fluid & Electrolytes",
+      "title": "Fluid & Electrolyte Simulator",
+      "description": "Interactive simulator — slide Na⁺, K⁺, fluid volume, aldosterone, ADH, and pH to watch blood pressure, urine output, and heart rhythm respond in real time",
+      "topics": ["sodium", "potassium", "fluid volume", "aldosterone", "ADH", "vasopressin", "pH", "acid-base", "blood pressure", "urine output", "osmolarity", "hyponatremia", "hypernatremia", "hypokalemia", "hyperkalemia", "SIADH", "diabetes insipidus", "RAAS", "homeostasis"],
+      "tags": ["interactive", "simulator", "electrolytes", "fluid balance"]
     },
     {
       "id": "renal-ch11-full",

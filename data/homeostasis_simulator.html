@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fluid & Electrolyte Homeostasis Simulator</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:       #0F1117;
+  --bg2:      #161B26;
+  --bg3:      #1E2536;
+  --border:   #2A3246;
+  --text:     #E8EDF5;
+  --text2:    #8A94A6;
+  --text3:    #5A6478;
+  --accent:   #4A9EDB;
+  --green:    #22C55E;
+  --yellow:   #F59E0B;
+  --red:      #EF4444;
+  --radius:   10px;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ── TOPBAR ── */
+.topbar {
+  display: flex; align-items: center; gap: 14px;
+  padding: 0 20px; height: 48px; flex-shrink: 0;
+  background: var(--bg2); border-bottom: 1px solid var(--border);
+}
+.back-btn {
+  background: var(--bg3); border: 1px solid var(--border);
+  color: var(--text2); font-size: 0.82rem; font-weight: 600;
+  padding: 6px 14px; border-radius: 7px; cursor: pointer;
+  font-family: inherit; transition: all 0.15s; white-space: nowrap;
+}
+.back-btn:hover { color: var(--text); border-color: var(--accent); }
+.topbar-title { font-size: 0.95rem; font-weight: 700; color: var(--text); }
+
+/* MODE TABS in topbar */
+.mode-tabs { display: flex; gap: 6px; margin-left: auto; }
+.mode-tab {
+  padding: 6px 16px; border-radius: 7px; font-size: 0.8rem;
+  font-weight: 700; cursor: pointer; font-family: inherit;
+  border: 1.5px solid var(--border); background: none; color: var(--text2);
+  transition: all 0.15s;
+}
+.mode-tab.active { background: var(--accent); border-color: var(--accent); color: white; }
+.mode-tab:hover:not(.active) { border-color: var(--accent); color: var(--text); }
+
+.reset-top {
+  padding: 6px 14px; border-radius: 7px; font-size: 0.8rem;
+  font-weight: 600; cursor: pointer; font-family: inherit;
+  border: 1px solid var(--border); background: none; color: var(--text3);
+  transition: all 0.15s;
+}
+.reset-top:hover { color: var(--text); border-color: var(--accent); }
+
+/* ── MAIN BODY ── */
+.main {
+  display: grid;
+  grid-template-columns: 300px 1fr 340px;
+  flex: 1;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.panel {
+  overflow-y: auto;
+  padding: 18px 16px;
+  border-right: 1px solid var(--border);
+}
+.panel:last-child { border-right: none; }
+
+/* ── TYPOGRAPHY ── */
+.sec {
+  font-size: 0.62rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 1.5px; color: var(--text3); margin: 18px 0 10px;
+}
+.sec:first-child { margin-top: 0; }
+
+/* ── SCENARIO CARDS ── */
+.sc-card {
+  border-radius: var(--radius); padding: 12px 14px; margin-bottom: 8px;
+  cursor: pointer; border: 1px solid var(--border); background: var(--bg3);
+  transition: all 0.15s;
+}
+.sc-card:hover { border-color: var(--accent); background: rgba(74,158,219,0.07); }
+.sc-card.active { border-color: var(--accent); background: rgba(74,158,219,0.12); }
+.sc-pill {
+  display: inline-block; font-size: 0.6rem; font-weight: 800;
+  text-transform: uppercase; letter-spacing: 0.8px; padding: 2px 7px;
+  border-radius: 4px; margin-bottom: 5px;
+}
+.sc-pill.easy   { background: rgba(34,197,94,0.15);  color: var(--green); }
+.sc-pill.medium { background: rgba(245,158,11,0.15); color: var(--yellow); }
+.sc-pill.hard   { background: rgba(239,68,68,0.15);  color: var(--red); }
+.sc-name { font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 3px; }
+.sc-desc { font-size: 0.73rem; color: var(--text2); line-height: 1.45; }
+.sc-hint {
+  margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--border);
+  font-size: 0.68rem; color: var(--text3); line-height: 1.4; font-style: italic;
+}
+
+/* ── SLIDERS ── */
+.slider-block {
+  background: var(--bg3); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 10px 12px; margin-bottom: 7px;
+}
+.slider-top { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 5px; }
+.slider-name { font-size: 0.82rem; font-weight: 700; color: var(--text); }
+.slider-val  { font-size: 0.82rem; font-weight: 700; color: var(--accent); }
+input[type=range] {
+  width: 100%; height: 4px; margin: 2px 0 4px;
+  -webkit-appearance: none; appearance: none;
+  background: var(--border); border-radius: 2px; outline: none; cursor: pointer;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 17px; height: 17px;
+  border-radius: 50%; background: var(--accent); cursor: pointer;
+  border: 2px solid var(--bg);
+}
+input[type=range]:disabled { opacity: 0.35; cursor: not-allowed; }
+input[type=range]:disabled::-webkit-slider-thumb { cursor: not-allowed; }
+.slider-limits { display: flex; justify-content: space-between; font-size: 0.62rem; color: var(--text3); }
+
+/* ── OUTCOME CARDS ── */
+.outcomes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 8px; }
+.oc {
+  background: var(--bg2); border: 1.5px solid var(--border);
+  border-radius: var(--radius); padding: 10px 12px;
+  transition: border-color 0.3s;
+}
+.oc.ok     { border-color: rgba(34,197,94,0.45); }
+.oc.warn   { border-color: rgba(245,158,11,0.55); }
+.oc.danger { border-color: rgba(239,68,68,0.6); }
+.oc-label  { font-size: 0.62rem; color: var(--text2); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 2px; }
+.oc-value  { font-size: 1.3rem; font-weight: 800; color: var(--text); line-height: 1.1; }
+.oc-unit   { font-size: 0.62rem; color: var(--text3); margin-bottom: 2px; }
+.oc-status { font-size: 0.7rem; font-weight: 700; }
+.ok-txt     { color: var(--green); }
+.warn-txt   { color: var(--yellow); }
+.danger-txt { color: var(--red); }
+
+/* BALANCE BAR */
+.bal-row { display: flex; align-items: center; gap: 10px; margin: 4px 0 16px; }
+.bal-bar { flex: 1; height: 8px; border-radius: 4px; background: var(--border); overflow: hidden; }
+.bal-fill { height: 100%; border-radius: 4px; transition: width 0.4s, background 0.4s; }
+.bal-pct { font-size: 0.75rem; font-weight: 700; min-width: 84px; text-align: right; }
+
+/* ── MIDDLE PANEL ── */
+.scenario-banner {
+  background: rgba(74,158,219,0.08); border: 1px solid rgba(74,158,219,0.25);
+  border-left: 4px solid var(--accent); border-radius: var(--radius);
+  padding: 12px 14px; margin-bottom: 14px; display: none;
+}
+.sb-eyebrow { font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: var(--accent); margin-bottom: 4px; }
+.sb-name    { font-size: 0.95rem; font-weight: 800; color: var(--text); margin-bottom: 4px; }
+.sb-goal    { font-size: 0.75rem; color: var(--text2); line-height: 1.5; }
+
+.howto-box {
+  background: rgba(74,158,219,0.05); border: 1px solid rgba(74,158,219,0.15);
+  border-left: 4px solid var(--accent); border-radius: var(--radius);
+  padding: 14px 16px; margin-bottom: 16px;
+}
+.howto-title { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: var(--accent); margin-bottom: 10px; }
+.howto-step { display: flex; gap: 9px; margin-bottom: 7px; align-items: flex-start; }
+.howto-num {
+  min-width: 20px; height: 20px; border-radius: 50%;
+  background: rgba(74,158,219,0.2); color: var(--accent);
+  font-size: 0.65rem; font-weight: 800;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.howto-text { font-size: 0.78rem; color: var(--text2); line-height: 1.5; }
+.howto-text strong { color: var(--text); }
+
+/* FEEDBACK */
+.feedback {
+  border-radius: var(--radius); padding: 12px 14px; margin-bottom: 12px;
+  border-left: 4px solid; display: none; font-size: 0.78rem; line-height: 1.55;
+}
+.feedback.good { border-left-color:var(--green);  background:rgba(34,197,94,0.07);  border-color:rgba(34,197,94,0.2); }
+.feedback.warn { border-left-color:var(--yellow); background:rgba(245,158,11,0.07); border-color:rgba(245,158,11,0.2); }
+.feedback.bad  { border-left-color:var(--red);    background:rgba(239,68,68,0.07);  border-color:rgba(239,68,68,0.2); }
+.fb-title { font-weight: 800; font-size: 0.82rem; margin-bottom: 4px; }
+.feedback.good .fb-title { color:var(--green); }
+.feedback.warn .fb-title { color:var(--yellow); }
+.feedback.bad  .fb-title { color:var(--red); }
+.fb-body { color: var(--text2); }
+
+/* IV BUTTONS */
+.iv-group { font-size: 0.62rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 1.3px; color: var(--text3); margin: 14px 0 6px; }
+.iv-group:first-of-type { margin-top: 0; }
+.iv-btn {
+  width: 100%; padding: 11px 14px; border-radius: var(--radius);
+  font-size: 0.82rem; font-weight: 600; cursor: pointer;
+  font-family: inherit; text-align: left; margin-bottom: 6px;
+  background: var(--bg3); border: 1px solid var(--border); color: var(--text2);
+  transition: all 0.15s; display: flex; justify-content: space-between; align-items: center;
+  gap: 10px;
+}
+.iv-btn:hover { border-color: var(--accent); color: var(--text); background: rgba(74,158,219,0.07); }
+.iv-content { flex: 1; }
+.iv-name { font-weight: 700; color: var(--text); display: block; margin-bottom: 2px; font-size: 0.83rem; }
+.iv-sub  { font-size: 0.7rem; color: var(--text3); line-height: 1.35; }
+.iv-arr  { color: var(--accent); font-size: 1rem; flex-shrink: 0; }
+
+/* ── RIGHT PANEL — CASCADE ── */
+.cascade-box {
+  border-radius: var(--radius); padding: 11px 13px; margin-bottom: 8px;
+  border-left: 4px solid; border: 1px solid;
+}
+.cascade-box.ok     { border-left: 4px solid var(--green);  border-color: rgba(34,197,94,0.2);  background: rgba(34,197,94,0.05); }
+.cascade-box.warn   { border-left: 4px solid var(--yellow); border-color: rgba(245,158,11,0.2); background: rgba(245,158,11,0.05); }
+.cascade-box.danger { border-left: 4px solid var(--red);    border-color: rgba(239,68,68,0.2);  background: rgba(239,68,68,0.05); }
+.cascade-title { font-size: 0.8rem; font-weight: 800; margin-bottom: 3px; }
+.cascade-title.ok     { color: var(--green); }
+.cascade-title.warn   { color: var(--yellow); }
+.cascade-title.danger { color: var(--red); }
+.cascade-desc { font-size: 0.73rem; color: var(--text2); line-height: 1.55; }
+
+.nclex-box {
+  background: rgba(239,68,68,0.06); border: 1px solid rgba(239,68,68,0.18);
+  border-left: 4px solid var(--red); border-radius: var(--radius);
+  padding: 12px 14px; margin-top: 10px;
+}
+.nclex-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 1.3px; color: var(--red); margin-bottom: 8px; }
+.nclex-text { font-size: 0.75rem; color: var(--text2); line-height: 1.7; }
+.nclex-text strong { color: #FCA5A5; }
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <button class="back-btn" onclick="window.close(); history.back();">← Back</button>
+  <span class="topbar-title">⚗️ Fluid & Electrolyte Simulator</span>
+  <div class="mode-tabs">
+    <button class="mode-tab active" id="tab-fp" onclick="setMode('freeplay')">🎛 Free Play</button>
+    <button class="mode-tab" id="tab-sc" onclick="setMode('scenario')">🏥 Patient Cases</button>
+    <button class="mode-tab" id="tab-iv" onclick="setMode('interventions')">💉 Treat</button>
+  </div>
+  <button class="reset-top" onclick="resetAll()">↺ Reset</button>
+</div>
+
+<!-- MAIN GRID -->
+<div class="main">
+
+  <!-- ══ LEFT — SLIDERS + OUTCOMES ══ -->
+  <div class="panel">
+
+    <!-- FREE PLAY HINT -->
+    <div id="fp-hint" style="font-size:0.75rem;color:var(--text3);margin-bottom:14px;line-height:1.5;">
+      Drag any slider to explore how it affects the body. Switch to <strong style="color:var(--text2)">Patient Cases</strong> to load a broken scenario, then <strong style="color:var(--text2)">Treat</strong> to fix it.
+    </div>
+
+    <!-- SCENARIO LIST (hidden in freeplay) -->
+    <div id="sc-panel" style="display:none">
+      <div class="sec" style="margin-top:0">Choose a Patient Case</div>
+
+      <div class="sc-card" id="sc-lasix" onclick="loadScenario('lasix')">
+        <span class="sc-pill medium">Medium</span>
+        <div class="sc-name">💊 3 Days on Furosemide</div>
+        <div class="sc-desc">Heart failure patient on loop diuretic — fluid removed but electrolytes crashed</div>
+        <div class="sc-hint">What did Lasix do to K⁺? What compensatory hormones fired up?</div>
+      </div>
+      <div class="sc-card" id="sc-siadh" onclick="loadScenario('siadh')">
+        <span class="sc-pill medium">Medium</span>
+        <div class="sc-name">🧠 SIADH</div>
+        <div class="sc-desc">Brain tumor patient — ADH too high, Na⁺ falling, fluid overloaded</div>
+        <div class="sc-hint">Too much free water retained. Na⁺ is diluted, not depleted.</div>
+      </div>
+      <div class="sc-card" id="sc-addison" onclick="loadScenario('addison')">
+        <span class="sc-pill hard">Hard</span>
+        <div class="sc-name">⚠️ Addison's Crisis</div>
+        <div class="sc-desc">Adrenal failure — no aldosterone, BP crashing, K⁺ climbing fast</div>
+        <div class="sc-hint">Multi-step fix. No aldosterone = lose Na⁺, retain K⁺. Needs hormone replacement.</div>
+      </div>
+      <div class="sc-card" id="sc-dka" onclick="loadScenario('dka')">
+        <span class="sc-pill hard">Hard</span>
+        <div class="sc-name">🩸 Diabetic Ketoacidosis</div>
+        <div class="sc-desc">Type 1 diabetic — acidotic, dehydrated. K⁺ looks high now but will crash after insulin</div>
+        <div class="sc-hint">Acidosis pushes K⁺ out of cells. Fixing acid shifts it back in — replace K⁺ early.</div>
+      </div>
+      <div class="sc-card" id="sc-di" onclick="loadScenario('di')">
+        <span class="sc-pill medium">Medium</span>
+        <div class="sc-name">💧 Diabetes Insipidus</div>
+        <div class="sc-desc">Post head trauma — ADH gone, urinating massive volumes, Na⁺ rising fast</div>
+        <div class="sc-hint">No ADH = free water pours out. Blood concentrates → hypernatremia.</div>
+      </div>
+      <div class="sc-card" id="sc-overload" onclick="loadScenario('overload')">
+        <span class="sc-pill easy">Easier</span>
+        <div class="sc-name">🏥 IV Fluid Overload</div>
+        <div class="sc-desc">Post-op patient got too much NS — BP up, crackles in lungs</div>
+        <div class="sc-hint">Straightforward — remove excess volume. But which diuretic and why?</div>
+      </div>
+      <div class="sc-card" id="sc-vomiting" onclick="loadScenario('vomiting')">
+        <span class="sc-pill medium">Medium</span>
+        <div class="sc-name">🤢 Prolonged Vomiting (48h)</div>
+        <div class="sc-desc">Losing H⁺ and Cl⁻ — alkalotic, volume depleted, K⁺ dropping</div>
+        <div class="sc-hint">Losing stomach acid raises pH. Volume loss fires aldosterone. Three things to fix.</div>
+      </div>
+      <div class="sc-card" id="sc-ckd" onclick="loadScenario('ckd')">
+        <span class="sc-pill hard">Hard</span>
+        <div class="sc-name">🫘 End-Stage CKD</div>
+        <div class="sc-desc">Kidneys failed — can't excrete K⁺, H⁺, or fluid. Everything accumulating</div>
+        <div class="sc-hint">Protect the heart from K⁺ first. Kidneys can't self-correct anything.</div>
+      </div>
+    </div>
+
+    <!-- SLIDERS — always visible -->
+    <div class="sec">Electrolytes & Hormones</div>
+
+    <div class="slider-block">
+      <div class="slider-top"><span class="slider-name">Sodium (Na⁺)</span><span class="slider-val" id="na-val">140 mEq/L</span></div>
+      <input type="range" id="na" min="120" max="160" step="1" value="140">
+      <div class="slider-limits"><span>120 — low</span><span>160 — high</span></div>
+    </div>
+    <div class="slider-block">
+      <div class="slider-top"><span class="slider-name">Potassium (K⁺)</span><span class="slider-val" id="k-val">4.0 mEq/L</span></div>
+      <input type="range" id="k" min="2.5" max="7.0" step="0.1" value="4.0">
+      <div class="slider-limits"><span>2.5 — low</span><span>7.0 — high</span></div>
+    </div>
+    <div class="slider-block">
+      <div class="slider-top"><span class="slider-name">Fluid Volume</span><span class="slider-val" id="fv-val">100%</span></div>
+      <input type="range" id="fv" min="60" max="140" step="1" value="100">
+      <div class="slider-limits"><span>60% — dehydrated</span><span>140% — overloaded</span></div>
+    </div>
+    <div class="slider-block">
+      <div class="slider-top"><span class="slider-name">Aldosterone</span><span class="slider-val" id="aldo-val">Normal</span></div>
+      <input type="range" id="aldo" min="1" max="5" step="1" value="3">
+      <div class="slider-limits"><span>Very low</span><span>Very high</span></div>
+    </div>
+    <div class="slider-block">
+      <div class="slider-top"><span class="slider-name">ADH (Vasopressin)</span><span class="slider-val" id="adh-val">Normal</span></div>
+      <input type="range" id="adh" min="1" max="5" step="1" value="3">
+      <div class="slider-limits"><span>Very low</span><span>Very high</span></div>
+    </div>
+    <div class="slider-block">
+      <div class="slider-top"><span class="slider-name">Blood pH</span><span class="slider-val" id="ph-val">7.40</span></div>
+      <input type="range" id="ph" min="7.00" max="7.80" step="0.01" value="7.40">
+      <div class="slider-limits"><span>7.0 — acidosis</span><span>7.8 — alkalosis</span></div>
+    </div>
+
+
+  </div>
+
+  <!-- ══ MIDDLE — TREAT ══ -->
+  <div class="panel">
+
+    <div class="scenario-banner" id="sc-banner">
+      <div class="sb-eyebrow">Active Case</div>
+      <div class="sb-name" id="sc-banner-name"></div>
+      <div class="sb-goal" id="sc-banner-goal"></div>
+    </div>
+
+    <div class="howto-box" id="howto-box">
+      <div class="howto-title">How the simulator works</div>
+      <div class="howto-step"><div class="howto-num">1</div><div class="howto-text"><strong>Free Play</strong> — drag sliders, see effects instantly on the right</div></div>
+      <div class="howto-step"><div class="howto-num">2</div><div class="howto-text"><strong>Patient Cases</strong> — pick a broken scenario. Sliders show what's wrong</div></div>
+      <div class="howto-step"><div class="howto-num">3</div><div class="howto-text"><strong>Treat</strong> — sliders lock. Use intervention buttons to fix the patient</div></div>
+      <div class="howto-step"><div class="howto-num">4</div><div class="howto-text">Watch the <strong>cascade on the right</strong> — it explains what the body is doing and why</div></div>
+      <div class="howto-step"><div class="howto-num">5</div><div class="howto-text">Goal: get the <strong>balance bar to 100% green</strong>. Most cases need 2–3 interventions</div></div>
+    </div>
+
+    <div id="feedback-area"></div>
+
+    <div class="iv-group">💧 Fluids</div>
+    <button class="iv-btn" onclick="applyIV('ns')"><div class="iv-content"><span class="iv-name">IV Normal Saline (0.9% NaCl)</span><span class="iv-sub">Raises volume, isotonic — Na⁺ stays roughly the same</span></div><span class="iv-arr">→</span></button>
+    <button class="iv-btn" onclick="applyIV('d5w')"><div class="iv-content"><span class="iv-name">IV D5W (free water)</span><span class="iv-sub">Dilutes Na⁺, raises volume — used for hypernatremia</span></div><span class="iv-arr">→</span></button>
+    <button class="iv-btn" onclick="applyIV('hypertonic')"><div class="iv-content"><span class="iv-name">Hypertonic Saline (3% NaCl)</span><span class="iv-sub">Raises Na⁺ fast — severe symptomatic hyponatremia only</span></div><span class="iv-arr">→</span></button>
+    <button class="iv-btn" onclick="applyIV('fluidrestrict')"><div class="iv-content"><span class="iv-name">Fluid Restriction</span><span class="iv-sub">Reduces volume — for overload, SIADH</span></div><span class="iv-arr">→</span></button>
+
+    <div class="iv-group">💊 Diuretics</div>
+    <button class="iv-btn" onclick="applyIV('lasix')"><div class="iv-content"><span class="iv-name">Furosemide / Lasix (loop diuretic)</span><span class="iv-sub">Removes fluid + Na⁺ — wastes K⁺, monitor closely</span></div><span class="iv-arr">→</span></button>
+    <button class="iv-btn" onclick="applyIV('spiro')"><div class="iv-content"><span class="iv-name">Spironolactone (K⁺-sparing diuretic)</span><span class="iv-sub">Blocks aldosterone — removes fluid, preserves K⁺</span></div><span class="iv-arr">→</span></button>
+    <button class="iv-btn" onclick="applyIV('hctz')"><div class="iv-content"><span class="iv-name">HCTZ (thiazide diuretic)</span><span class="iv-sub">Mild diuresis — wastes Na⁺ and K⁺</span></div><span class="iv-arr">→</span></button>
+
+    <div class="iv-group">🧂 Electrolyte Replacement</div>
+    <button class="iv-btn" onclick="applyIV('kcl')"><div class="iv-content"><span class="iv-name">KCl Supplement (oral or slow IV)</span><span class="iv-sub">Raises K⁺ — never give as IV bolus, always diluted</span></div><span class="iv-arr">→</span></button>
+    <button class="iv-btn" onclick="applyIV('bicarb')"><div class="iv-content"><span class="iv-name">Sodium Bicarbonate (NaHCO₃)</span><span class="iv-sub">Raises pH, corrects acidosis — raises Na⁺ slightly</span></div><span class="iv-arr">→</span></button>
+    <button class="iv-btn" onclick="applyIV('calciumgluc')"><div class="iv-content"><span class="iv-name">Calcium Gluconate IV</span><span class="iv-sub">Protects heart in hyperkalemia — does NOT lower K⁺</span></div><span class="iv-arr">→</span></button>
+
+    <div class="iv-group">💉 Hormones & Other</div>
+    <button class="iv-btn" onclick="applyIV('ddavp')"><div class="iv-content"><span class="iv-name">DDAVP (synthetic ADH / desmopressin)</span><span class="iv-sub">Raises ADH — kidneys retain water. For diabetes insipidus</span></div><span class="iv-arr">→</span></button>
+    <button class="iv-btn" onclick="applyIV('fludrocortisone')"><div class="iv-content"><span class="iv-name">Fludrocortisone (synthetic aldosterone)</span><span class="iv-sub">Retains Na⁺+water, excretes K⁺ — for Addison's crisis</span></div><span class="iv-arr">→</span></button>
+    <button class="iv-btn" onclick="applyIV('insulin')"><div class="iv-content"><span class="iv-name">Insulin + Dextrose IV</span><span class="iv-sub">Drives K⁺ into cells temporarily — fast hyperkalemia fix</span></div><span class="iv-arr">→</span></button>
+
+  </div>
+
+  <!-- ══ RIGHT — OUTCOMES + CASCADE ══ -->
+  <div class="panel">
+
+    <!-- OUTCOMES -->
+    <div class="sec" style="margin-top:0">Outcomes</div>
+    <div class="outcomes-grid">
+      <div class="oc" id="card-bp">
+        <div class="oc-label">Blood Pressure</div>
+        <div class="oc-value" id="bp-val">120/80</div>
+        <div class="oc-unit">mmHg</div>
+        <div class="oc-status" id="bp-status"></div>
+      </div>
+      <div class="oc" id="card-uo">
+        <div class="oc-label">Urine Output</div>
+        <div class="oc-value" id="uo-val">60</div>
+        <div class="oc-unit">mL/hr</div>
+        <div class="oc-status" id="uo-status"></div>
+      </div>
+      <div class="oc" id="card-hr">
+        <div class="oc-label">Heart Rhythm</div>
+        <div class="oc-value" id="hr-val">72</div>
+        <div class="oc-unit">bpm</div>
+        <div class="oc-status" id="hr-status"></div>
+      </div>
+      <div class="oc" id="card-osm">
+        <div class="oc-label">Osmolarity</div>
+        <div class="oc-value" id="osm-val">290</div>
+        <div class="oc-unit">mOsm/kg</div>
+        <div class="oc-status" id="osm-status"></div>
+      </div>
+    </div>
+
+    <!-- BALANCE BAR -->
+    <div class="sec">Homeostasis Balance</div>
+    <div class="bal-row">
+      <div class="bal-bar"><div class="bal-fill" id="bal-fill" style="width:100%;background:var(--green)"></div></div>
+      <span class="bal-pct" id="bal-pct" style="color:var(--green)">100% balanced</span>
+    </div>
+
+    <div class="sec">What the Body Is Doing</div>
+    <div id="cascade-area"></div>
+    <div class="nclex-box">
+      <div class="nclex-label">🎯 NCLEX Priority</div>
+      <div class="nclex-text">
+        <strong>Furosemide always risks hypokalemia</strong> — check K⁺ before giving.<br>
+        <strong>Na⁺ follows water</strong> — hyponatremia is often dilutional, not depletion.<br>
+        <strong>K⁺ and pH move opposite</strong> — acidosis → hyperkalemia; alkalosis → hypokalemia.<br>
+        <strong>Never bolus KCl IV</strong> — always diluted, always slow. Direct cardiac toxicity.<br>
+        <strong>Calcium gluconate</strong> protects the heart but does NOT lower K⁺.<br>
+        <strong>DKA</strong> — K⁺ looks high but crashes after insulin. Replace K⁺ early.<br>
+        <strong>Oliguria &lt;30 mL/hr</strong> — always investigate cause before treating.
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const LL = ['Very low','Low','Normal','High','Very high'];
+let mode = 'freeplay';
+let activeScenario = null;
+const S = { na:140, k:4.0, fv:100, aldo:3, adh:3, ph:7.40 };
+
+const SCENARIOS = {
+  lasix:    { name:'3 Days on Furosemide',       goal:'Restore volume, fix hypokalemia, and settle high aldosterone. Expect 2–3 interventions.', state:{ na:136, k:2.8, fv:78,  aldo:4, adh:3, ph:7.48 } },
+  siadh:    { name:'SIADH',                       goal:'Reduce free water and raise Na⁺. Fluid restriction is first-line. Na⁺ is diluted, not depleted.', state:{ na:124, k:4.0, fv:118, aldo:3, adh:5, ph:7.40 } },
+  addison:  { name:"Addison's Crisis",            goal:'Replace aldosterone, restore Na⁺ and volume, lower K⁺. Multi-step — hardest case here.', state:{ na:128, k:6.2, fv:70,  aldo:1, adh:4, ph:7.28 } },
+  dka:      { name:'Diabetic Ketoacidosis (DKA)', goal:'Fix acidosis, replace volume. Watch K⁺ crash after insulin — give KCl proactively.', state:{ na:132, k:6.0, fv:72,  aldo:4, adh:4, ph:7.10 } },
+  di:       { name:'Diabetes Insipidus',          goal:'Replace ADH with DDAVP. Give D5W to dilute high Na⁺. Watch urine output normalize.', state:{ na:155, k:4.1, fv:74,  aldo:4, adh:1, ph:7.40 } },
+  overload: { name:'IV Fluid Overload',           goal:'Remove excess fluid safely. Check K⁺ before picking your diuretic.', state:{ na:142, k:4.0, fv:135, aldo:2, adh:2, ph:7.40 } },
+  vomiting: { name:'Prolonged Vomiting (48h)',    goal:'Restore volume, correct alkalosis, replace K⁺. Three separate problems — all need fixing.', state:{ na:138, k:2.9, fv:80,  aldo:4, adh:3, ph:7.55 } },
+  ckd:      { name:'End-Stage CKD',               goal:'Protect heart from K⁺ first. Then reduce fluid and acidosis. Kidneys cannot self-correct.', state:{ na:136, k:6.5, fv:128, aldo:2, adh:3, ph:7.18 } }
+};
+
+const IVS = {
+  ns:           { name:'IV Normal Saline',        ch:{ fv:+12, na:+1 },                    good:'Raises volume effectively — isotonic, so Na⁺ stays roughly the same. Correct choice for hypovolemia without hypernatremia.', warn:'Na⁺ is already high — NS worsens hypernatremia. Give D5W (free water) instead to dilute it.', warnIf:v=>v.na>145 },
+  d5w:          { name:'IV D5W',                  ch:{ fv:+8, na:-4, adh:-0.5 },           good:'Free water dilutes Na⁺ and raises volume slightly. Correct for hypernatremia. Also suppresses ADH as osmolarity normalizes.', warn:'Na⁺ is already low — D5W dilutes it further and worsens hyponatremia. Fluid restrict or use hypertonic saline.', warnIf:v=>v.na<135 },
+  hypertonic:   { name:'Hypertonic Saline (3%)',  ch:{ na:+8, fv:+5 },                     good:'Raises Na⁺ quickly. Reserved for severe symptomatic hyponatremia (seizures, coma). Must be given slowly — too fast causes osmotic demyelination syndrome.', warn:'Na⁺ is normal or high — hypertonic saline causes dangerous hypernatremia here. Not indicated.', warnIf:v=>v.na>=135 },
+  fluidrestrict:{ name:'Fluid Restriction',       ch:{ fv:-10, adh:+0.3 },                 good:'Reduces volume. First-line for SIADH and dilutional hyponatremia. Na⁺ rises as free water is removed. Also helps fluid overload.', warn:'Volume is already low — fluid restriction worsens hypovolemia and drops BP dangerously. Not safe here.', warnIf:v=>v.fv<90 },
+  lasix:        { name:'Furosemide (Lasix)',       ch:{ fv:-15, na:-2, k:-0.6 },            good:'Removes excess fluid and Na⁺. Effective for fluid overload and hypertension. Watch K⁺ closely — loop diuretics waste potassium aggressively.', warn:'K⁺ is already low — furosemide worsens hypokalemia and risks fatal arrhythmia. Give KCl first, or switch to spironolactone.', warnIf:v=>v.k<3.5 },
+  spiro:        { name:'Spironolactone',           ch:{ fv:-10, aldo:-1, k:+0.4 },          good:'Blocks aldosterone — removes fluid without wasting K⁺. Ideal when K⁺ is low or aldosterone is high. K⁺ may rise slightly — monitor.', warn:'K⁺ is already high — spironolactone retains K⁺ and worsens hyperkalemia. Dangerous choice here.', warnIf:v=>v.k>5.0 },
+  hctz:         { name:'HCTZ (thiazide)',          ch:{ fv:-8, na:-3, k:-0.4 },             good:'Mild diuresis. Reduces Na⁺ and volume. Good for long-term BP control. Wastes K⁺ but less aggressively than furosemide.', warn:'K⁺ is already low — HCTZ worsens hypokalemia. Pair with KCl or choose spironolactone.', warnIf:v=>v.k<3.5 },
+  kcl:          { name:'KCl Supplement',           ch:{ k:+0.8 },                           good:'Raises K⁺. Correct for hypokalemia. Always give diluted and slow IV — never bolus. Oral route preferred when possible and gut is working.', warn:'K⁺ is already normal or high — adding more potassium risks hyperkalemia and fatal cardiac arrhythmia.', warnIf:v=>v.k>=4.5 },
+  bicarb:       { name:'Sodium Bicarbonate',       ch:{ ph:+0.08, na:+2 },                  good:'Raises pH — corrects metabolic acidosis. Also shifts K⁺ into cells, helping lower serum K⁺. Raises Na⁺ slightly as a side effect to monitor.', warn:'pH is already normal or alkalotic — bicarb causes alkalosis and shifts K⁺ into cells, risking dangerous hypokalemia.', warnIf:v=>v.ph>=7.35 },
+  calciumgluc:  { name:'Calcium Gluconate IV',     ch:{},                                   good:'Stabilizes cardiac membranes against the depolarizing effect of high K⁺. Does NOT lower K⁺ — it buys time while you prepare definitive treatment. Always the FIRST step in dangerous hyperkalemia.', warn:'K⁺ is not at dangerous levels — calcium gluconate is not indicated here and does nothing to fix the underlying problem.', warnIf:v=>v.k<5.5 },
+  ddavp:        { name:'DDAVP (synthetic ADH)',    ch:{ adh:+1.2, fv:+6 },                 good:'Raises ADH — kidneys reabsorb more free water, urine drops, volume rises. Correct for diabetes insipidus where ADH is absent. Watch Na⁺ come down as blood is diluted.', warn:'ADH is already high — more ADH causes water retention and worsens dilutional hyponatremia. Dangerous here.', warnIf:v=>v.adh>=4 },
+  fludrocortisone:{ name:'Fludrocortisone',        ch:{ aldo:+1.2, fv:+8, na:+3, k:-0.4 }, good:"Synthetic aldosterone — retains Na⁺ and water, raises BP, excretes K⁺. Correct for Addison's crisis. Watch K⁺ — it will drop as aldosterone effect is restored.", warn:'Aldosterone is already normal or high — fludrocortisone causes dangerous fluid overload, hypertension, and hypokalemia.', warnIf:v=>v.aldo>=4 },
+  insulin:      { name:'Insulin + Dextrose IV',    ch:{ k:-0.8 },                           good:'Drives K⁺ from blood into cells fast — correct treatment for hyperkalemia. Dextrose prevents hypoglycemia. Effect lasts 4–6 hours — definitive removal still needed (dialysis or kayexalate).', warn:'K⁺ is not elevated — insulin causes dangerous hypokalemia and hypoglycemia here. Not indicated.', warnIf:v=>v.k<5.0 }
+};
+
+function clamp(v,mn,mx){ return Math.max(mn,Math.min(mx,v)); }
+
+function setMode(m) {
+  mode = m;
+  ['fp','sc','iv'].forEach(t => document.getElementById('tab-'+t).classList.remove('active'));
+  const tabMap = { freeplay:'fp', scenario:'sc', interventions:'iv' };
+  document.getElementById('tab-'+tabMap[m]).classList.add('active');
+  document.getElementById('fp-hint').style.display   = m==='freeplay' ? '' : 'none';
+  document.getElementById('sc-panel').style.display  = m==='scenario' ? '' : 'none';
+  document.getElementById('howto-box').style.display = m==='interventions' && !activeScenario ? '' : 'none';
+  document.getElementById('sc-banner').style.display = activeScenario && m==='interventions' ? 'block' : 'none';
+  const lock = m==='interventions';
+  ['na','k','fv','aldo','adh','ph'].forEach(id => document.getElementById(id).disabled = lock);
+  if(m!=='interventions') document.getElementById('feedback-area').innerHTML='';
+  update();
+}
+
+function loadScenario(key) {
+  const sc = SCENARIOS[key];
+  activeScenario = key;
+  Object.assign(S, JSON.parse(JSON.stringify(sc.state)));
+  syncSliders();
+  document.querySelectorAll('.sc-card').forEach(c=>c.classList.remove('active'));
+  document.getElementById('sc-'+key).classList.add('active');
+  document.getElementById('sc-banner-name').textContent = sc.name;
+  document.getElementById('sc-banner-goal').textContent = sc.goal;
+  document.getElementById('feedback-area').innerHTML='';
+  document.getElementById('howto-box').style.display='none';
+  setMode('interventions');
+}
+
+function applyIV(key) {
+  const iv = IVS[key];
+  const before = calcBalance(S);
+  const isWarn = iv.warnIf && iv.warnIf(S);
+  Object.entries(iv.ch).forEach(([p,d])=>{
+    if(p==='na')   S.na   = clamp(S.na+d,120,160);
+    if(p==='k')    S.k    = clamp(parseFloat((S.k+d).toFixed(1)),2.5,7.0);
+    if(p==='fv')   S.fv   = clamp(S.fv+d,60,140);
+    if(p==='aldo') S.aldo = clamp(parseFloat((S.aldo+d).toFixed(1)),1,5);
+    if(p==='adh')  S.adh  = clamp(parseFloat((S.adh+d).toFixed(1)),1,5);
+    if(p==='ph')   S.ph   = clamp(parseFloat((S.ph+d).toFixed(2)),7.00,7.80);
+  });
+  syncSliders(); update();
+  const after = calcBalance(S);
+  const improved = after > before;
+  const cls   = isWarn ? 'warn' : improved ? 'good' : 'bad';
+  const title = isWarn ? '⚠ Caution — '+iv.name : improved ? '✓ Good choice — '+iv.name : '✗ Made things worse — '+iv.name;
+  document.getElementById('feedback-area').innerHTML =
+    `<div class="feedback ${cls}" style="display:block"><div class="fb-title">${title}</div><div class="fb-body">${isWarn?iv.warn:iv.good}</div></div>`;
+}
+
+function syncSliders(){
+  const s=(id,v)=>{const e=document.getElementById(id);if(e)e.value=v;};
+  s('na',S.na);s('k',S.k);s('fv',S.fv);
+  s('aldo',Math.round(S.aldo));s('adh',Math.round(S.adh));s('ph',S.ph);
+}
+
+function update(){
+  if(mode==='freeplay'){
+    S.na   = parseFloat(document.getElementById('na').value);
+    S.k    = parseFloat(document.getElementById('k').value);
+    S.fv   = parseFloat(document.getElementById('fv').value);
+    S.aldo = parseInt(document.getElementById('aldo').value);
+    S.adh  = parseInt(document.getElementById('adh').value);
+    S.ph   = parseFloat(document.getElementById('ph').value);
+  }
+  const aN=Math.round(S.aldo), dN=Math.round(S.adh);
+  document.getElementById('na-val').textContent   = S.na+' mEq/L';
+  document.getElementById('k-val').textContent    = S.k.toFixed(1)+' mEq/L';
+  document.getElementById('fv-val').textContent   = S.fv+'%';
+  document.getElementById('aldo-val').textContent = LL[aN-1]||'Normal';
+  document.getElementById('adh-val').textContent  = LL[dN-1]||'Normal';
+  document.getElementById('ph-val').textContent   = S.ph.toFixed(2);
+
+  const sys = Math.round(120+(S.na-140)*0.5+(S.fv-100)*0.4+(aN-3)*4+(dN-3)*2);
+  const dia = Math.round(80 +(S.na-140)*0.3+(S.fv-100)*0.3+(aN-3)*2.5);
+  const uo  = Math.max(0,Math.round(60-(dN-3)*12-(aN-3)*6+(S.fv-100)*0.5));
+  let hr=72;
+  if(S.fv<80)  hr+=Math.round((80-S.fv)*1.2);
+  if(S.fv>120) hr-=Math.round((S.fv-120)*0.8);
+  if(S.na<130) hr+=8; hr=Math.round(hr);
+  let rhythm='Normal sinus',rCls='ok';
+  if(S.k<3.0){rhythm='Flat T, U waves';rCls='warn';}
+  if(S.k<2.5){rhythm='Risk: V-fib';rCls='danger';}
+  if(S.k>5.5){rhythm='Peaked T waves';rCls='warn';}
+  if(S.k>6.5){rhythm='Risk: arrest';rCls='danger';}
+  if(S.ph<7.2){rhythm='Dysrhythmia risk';rCls='warn';}
+  const osm=Math.round(2*S.na+(S.fv<100?(100-S.fv)*0.3:-(S.fv-100)*0.2));
+
+  document.getElementById('bp-val').textContent  = sys+'/'+dia;
+  document.getElementById('uo-val').textContent  = uo;
+  document.getElementById('hr-val').textContent  = hr;
+  document.getElementById('osm-val').textContent = osm;
+
+  const bpOk=sys>=90&&sys<=140&&dia>=60&&dia<=90;
+  badge('bp-status','card-bp',(sys>180||sys<70)?'danger':bpOk?'ok':'warn',bpOk?'Normal':sys>140?'Hypertension':'Hypotension');
+  badge('uo-status','card-uo',uo<30?'danger':uo>100?'warn':'ok',uo<30?'Oliguria':uo>100?'Polyuria':'Normal');
+  badge('hr-status','card-hr',rCls,rhythm);
+  const osmOk=osm>=275&&osm<=295;
+  badge('osm-status','card-osm',(osm<260||osm>320)?'danger':osmOk?'ok':'warn',osmOk?'Normal':osm>295?'Hyperosmolar':'Hypoosmolar');
+
+  const score=calcBalance(S);
+  const fill=document.getElementById('bal-fill');
+  const pct=document.getElementById('bal-pct');
+  const color=score>75?'var(--green)':score>40?'var(--yellow)':'var(--red)';
+  fill.style.width=score+'%'; fill.style.background=color;
+  pct.textContent=score+'% balanced'; pct.style.color=color;
+
+  buildCascade(S,sys,dia,uo,osm,rhythm,rCls);
+}
+
+function calcBalance(v){
+  let p=0;
+  p+=Math.abs(v.na-140)*2; p+=Math.abs(v.k-4.0)*15;
+  p+=Math.abs(v.fv-100)*0.8; p+=Math.abs(Math.round(v.aldo)-3)*5;
+  p+=Math.abs(Math.round(v.adh)-3)*5; p+=Math.abs(v.ph-7.40)*150;
+  const sys=Math.round(120+(v.na-140)*0.5+(v.fv-100)*0.4+(Math.round(v.aldo)-3)*4+(Math.round(v.adh)-3)*2);
+  const uo=Math.max(0,Math.round(60-(Math.round(v.adh)-3)*12-(Math.round(v.aldo)-3)*6+(v.fv-100)*0.5));
+  p+=Math.abs(sys-120)*0.8; p+=Math.abs(uo-60)*0.4;
+  return Math.max(0,Math.round(100-p));
+}
+
+function badge(sId,cId,cls,txt){
+  const el=document.getElementById(sId);
+  el.className='oc-status '+(cls==='ok'?'ok-txt':cls==='warn'?'warn-txt':'danger-txt');
+  el.textContent=txt;
+  document.getElementById(cId).className='oc '+cls;
+}
+
+function buildCascade(v,sys,dia,uo,osm,rhythm,rCls){
+  const msgs=[];
+  if(v.na>145) msgs.push({s:v.na>155?'danger':'warn',t:'Hypernatremia — Na⁺ '+v.na+' mEq/L',d:'High Na⁺ pulls water out of cells via osmosis → cells shrink. Brain cell shrinkage → confusion, seizures. The body triggers ADH to retain free water and dilute Na⁺ back to normal. Fix: give D5W (free water) to dilute Na⁺.'});
+  if(v.na<135) msgs.push({s:v.na<125?'danger':'warn',t:'Hyponatremia — Na⁺ '+v.na+' mEq/L',d:'Low Na⁺ allows water to shift into cells → cells swell. Brain swelling → headache, lethargy, seizures. Often dilutional — too much water, not too little Na⁺. Fix: fluid restrict if dilutional; hypertonic saline only for severe symptomatic cases.'});
+  if(v.k>5.5)  msgs.push({s:v.k>6.0?'danger':'warn',t:'Hyperkalemia — K⁺ '+v.k.toFixed(1)+' mEq/L',d:'High K⁺ depolarizes cardiac cell membranes → peaked T waves → wide QRS → fatal arrhythmia risk. Fix: calcium gluconate first (cardiac protection — buys time), then insulin+dextrose (shifts K⁺ into cells).'});
+  if(v.k<3.5)  msgs.push({s:v.k<3.0?'danger':'warn',t:'Hypokalemia — K⁺ '+v.k.toFixed(1)+' mEq/L',d:'Low K⁺ → flat T waves, prominent U waves, V-fib risk. Very common after loop diuretics or prolonged vomiting. Fix: KCl supplement — always slow IV or oral, never bolus. Avoid more furosemide until corrected.'});
+  if(v.fv>115) msgs.push({s:v.fv>130?'danger':'warn',t:'Fluid overload — '+v.fv+'% volume',d:'Excess volume increases cardiac preload → elevated BP → risk of pulmonary edema and respiratory failure. Fix: furosemide if K⁺ is safe, spironolactone if K⁺ is low. Fluid restrict as adjunct.'});
+  if(v.fv<85)  msgs.push({s:v.fv<75?'danger':'warn', t:'Hypovolemia — '+v.fv+'% volume',d:'Low volume → ↓ BP → poor organ perfusion → RAAS fires → renin → angiotensin II → aldosterone → Na⁺ and water retention. Heart rate rises via baroreceptor reflex. Fix: IV normal saline to restore volume.'});
+  if(Math.round(v.aldo)>3) msgs.push({s:'warn',t:'High aldosterone',d:'Kidneys retaining Na⁺ and water → BP rising. K⁺ is being excreted in exchange → hypokalemia risk building. Fix: spironolactone blocks aldosterone at the kidney tubule.'});
+  if(Math.round(v.aldo)<3) msgs.push({s:'warn',t:'Low aldosterone',d:'Kidneys losing Na⁺ and water → BP falling. K⁺ is being retained → hyperkalemia. Classic finding in Addison\'s disease (adrenal insufficiency). Fix: fludrocortisone (synthetic aldosterone).'});
+  if(Math.round(v.adh)>3)  msgs.push({s:'warn',t:'High ADH',d:'Kidneys reabsorbing free water → concentrated urine, low output. Blood dilutes → osmolarity falls → dilutional hyponatremia (SIADH pattern). Fix: fluid restriction is first-line for SIADH — reduces free water load.'});
+  if(Math.round(v.adh)<3)  msgs.push({s:'warn',t:'Low ADH',d:'Kidneys cannot reabsorb free water → massive dilute urine (polyuria) → blood concentrates → hypernatremia → intense thirst. Classic diabetes insipidus pattern. Fix: DDAVP (synthetic ADH) replaces what\'s missing.'});
+  if(v.ph<7.35) msgs.push({s:v.ph<7.2?'danger':'warn',t:'Acidosis — pH '+v.ph.toFixed(2),d:'Acidic blood shifts K⁺ out of cells → hyperkalemia risk. Myocardial depression reduces cardiac output → low BP. Lungs compensate (deep Kussmaul breathing to blow off CO₂). Fix: sodium bicarbonate corrects metabolic acidosis.'});
+  if(v.ph>7.45) msgs.push({s:v.ph>7.6?'danger':'warn',t:'Alkalosis — pH '+v.ph.toFixed(2),d:'Alkalotic blood shifts K⁺ into cells → hypokalemia risk. Increased neuro excitability → tetany, seizures. Often from prolonged vomiting (losing H⁺) or over-diuresis. Fix: treat underlying cause and replace K⁺.'});
+  if(sys>140)  msgs.push({s:sys>180?'danger':'warn',t:'Hypertension — '+sys+'/'+dia+' mmHg',d:'Elevated afterload strains the left ventricle over time. Kidneys respond with pressure natriuresis — increase urine output to reduce volume. Fix: diuretics to reduce volume, address high Na⁺ or aldosterone.'});
+  if(sys<90)   msgs.push({s:'danger',t:'Hypotension — '+sys+'/'+dia+' mmHg',d:'Poor organ perfusion → RAAS activates to raise pressure → oliguria to preserve volume. Heart rate rises reflexively. Fix: IV normal saline to restore volume if hypovolemic is the cause.'});
+  if(uo<30)    msgs.push({s:'danger',t:'Oliguria — '+uo+' mL/hr',d:'< 30 mL/hr — kidneys protecting volume (prerenal) or injured (intrinsic). Always ask: Is BP low? Is ADH high? Is aldosterone high? Or is the kidney itself failing? Answer determines treatment.'});
+  if(uo>100)   msgs.push({s:'warn',  t:'Polyuria — '+uo+' mL/hr',d:'Kidney cannot concentrate urine — low ADH means free water pours out. Blood concentrates → hypernatremia risk. Dehydration follows if fluid intake doesn\'t keep pace. Fix: DDAVP for diabetes insipidus.'});
+  if(msgs.length===0) msgs.push({s:'ok',t:'Homeostasis maintained',d:'All values within normal range. No compensatory response needed. The body\'s feedback systems are balanced.'});
+  document.getElementById('cascade-area').innerHTML=msgs.map(m=>`<div class="cascade-box ${m.s}"><div class="cascade-title ${m.s}">${m.t}</div><div class="cascade-desc">${m.d}</div></div>`).join('');
+}
+
+function resetAll(){
+  S.na=140;S.k=4.0;S.fv=100;S.aldo=3;S.adh=3;S.ph=7.40;
+  activeScenario=null;
+  syncSliders();
+  document.getElementById('feedback-area').innerHTML='';
+  document.getElementById('sc-banner').style.display='none';
+  document.getElementById('howto-box').style.display='';
+  document.querySelectorAll('.sc-card').forEach(c=>c.classList.remove('active'));
+  setMode('freeplay');
+}
+
+['na','k','fv','aldo','adh','ph'].forEach(id=>{
+  document.getElementById(id).addEventListener('input',update);
+});
+update();
+</script>
+</body>
+</html>
