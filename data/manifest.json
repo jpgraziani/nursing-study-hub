@@ -2,7 +2,7 @@
   "site": {
     "title": "Nursing Study Hub",
     "subtitle": "Jonathan's Interactive Study Center",
-    "version": "1.1.0"
+    "version": "1.2.0"
   },
   "classes": [
     {
@@ -22,6 +22,15 @@
       "accent": "#A855F7",
       "icon": "🧠",
       "term": "Summer 2026"
+    },
+    {
+      "id": "anatomy",
+      "name": "Human Anatomy & Physiology",
+      "code": "BIO 201",
+      "color": "#7B3F00",
+      "accent": "#F97316",
+      "icon": "🫀",
+      "term": ""
     }
   ],
   "content": [
@@ -62,16 +71,15 @@
       "tags": ["Module 8", "case study"]
     },
     {
-      "id": "nutrition-note-ckd-vitd",
+      "id": "anatomy-note-ckd-vitd",
       "file": "vitamin_d_ckd_explainer.html",
-      "class": "nutrition",
-      "module": 8,
+      "class": "anatomy",
       "type": "note",
       "category": "Renal",
       "title": "CKD → Bone Pain & Hypocalcemia",
       "description": "Visual step-by-step explainer: why failing kidneys cause calcium to drop and bones to hurt",
       "topics": ["CKD", "chronic kidney disease", "vitamin D", "calcitriol", "hypocalcemia", "renal osteodystrophy", "PTH", "parathyroid hormone", "secondary hyperparathyroidism"],
-      "tags": ["visual", "renal", "diagram"]
+      "tags": ["visual", "diagram", "renal"]
     }
   ]
 }
