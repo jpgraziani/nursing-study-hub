@@ -78,8 +78,20 @@ function buildSidebarNav() {
   nav.innerHTML = '';
 
   STATE.manifest.classes.forEach(cls => {
-    const modules = getModulesForClass(cls.id);
-    const hasNotes = STATE.manifest.content.some(c => c.class === cls.id && c.type === 'note');
+    const allItems  = STATE.manifest.content.filter(c => c.class === cls.id);
+    const quizItems = allItems.filter(c => c.type === 'quiz');
+    const noteItems = allItems.filter(c => c.type === 'note');
+    const modules   = getModulesForClass(cls.id);
+
+    let subLinks = '';
+    modules.forEach(m => {
+      subLinks += `<a class="module-nav-link" onclick="showClassView('${cls.id}', ${m})">Module ${m}</a>`;
+    });
+    if (noteItems.length > 0 && quizItems.length === 0) {
+      // Notes-only class — no module links, just one Notes link
+      subLinks = `<a class="module-nav-link note-nav-link" onclick="showClassView('${cls.id}')">📖 All Notes</a>`;
+    }
+
     const item = document.createElement('div');
     item.className = 'class-nav-item';
     item.innerHTML = `
@@ -88,11 +100,7 @@ function buildSidebarNav() {
         <span>${cls.icon} ${cls.name}</span>
       </button>
       <div class="module-nav-list" id="mod-nav-${cls.id}" style="display:none">
-        ${modules.map(m => `
-          <a class="module-nav-link" onclick="showClassView('${cls.id}', ${m})">
-            Module ${m}
-          </a>`).join('')}
-        ${hasNotes ? `<a class="module-nav-link note-nav-link" onclick="showNotesView('${cls.id}')">📖 Notes</a>` : ''}
+        ${subLinks}
       </div>`;
     nav.appendChild(item);
   });
@@ -101,7 +109,7 @@ function buildSidebarNav() {
 function getModulesForClass(classId) {
   const mods = new Set();
   STATE.manifest.content
-    .filter(c => c.class === classId && c.type !== 'note')
+    .filter(c => c.class === classId && c.type === 'quiz')
     .forEach(c => mods.add(c.module));
   return Array.from(mods).sort((a, b) => a - b);
 }
@@ -116,34 +124,43 @@ function buildHomeView() {
   const grid = document.getElementById('home-classes');
   if (!grid) return;
 
+  grid.innerHTML = '';
   const title = document.createElement('h2');
   title.className = 'section-title';
   title.textContent = 'Your Classes';
-  grid.innerHTML = '';
   grid.appendChild(title);
 
   const cards = document.createElement('div');
   cards.className = 'class-grid';
 
   STATE.manifest.classes.forEach(cls => {
-    const items = STATE.manifest.content.filter(c => c.class === cls.id);
-    const quizItems = items.filter(c => c.type !== 'note');
-    const noteItems = items.filter(c => c.type === 'note');
-    const totalQ = quizItems.reduce((sum, i) => sum + (i.questionCount || 0), 0);
+    const items      = STATE.manifest.content.filter(c => c.class === cls.id);
+    const quizItems  = items.filter(c => c.type === 'quiz');
+    const noteItems  = items.filter(c => c.type === 'note');
+    const totalQ     = quizItems.reduce((sum, i) => sum + (i.questionCount || 0), 0);
+    const notesOnly  = quizItems.length === 0 && noteItems.length > 0;
+
     const card = document.createElement('div');
     card.className = 'class-card';
     card.onclick = () => showClassView(cls.id);
+
+    let statsHtml = '';
+    if (notesOnly) {
+      statsHtml = `<div class="class-stat"><strong>${noteItems.length}</strong>Notes</div>`;
+    } else {
+      statsHtml = `
+        <div class="class-stat"><strong>${quizItems.length}</strong>Quizzes</div>
+        <div class="class-stat"><strong>${totalQ}</strong>Questions</div>
+        ${noteItems.length > 0 ? `<div class="class-stat"><strong>${noteItems.length}</strong>Notes</div>` : ''}`;
+    }
+
     card.innerHTML = `
       <div class="class-card-accent" style="background:${cls.color}"></div>
       <div class="class-card-icon">${cls.icon}</div>
       <div class="class-card-code">${cls.code}</div>
       <div class="class-card-name">${cls.name}</div>
       <div class="class-card-term">${cls.term || ''}</div>
-      <div class="class-card-stats">
-        <div class="class-stat"><strong>${quizItems.length}</strong>Quizzes</div>
-        <div class="class-stat"><strong>${totalQ}</strong>Questions</div>
-        ${noteItems.length > 0 ? `<div class="class-stat"><strong>${noteItems.length}</strong>Notes</div>` : ''}
-      </div>`;
+      <div class="class-card-stats">${statsHtml}</div>`;
     cards.appendChild(card);
   });
 
@@ -153,35 +170,34 @@ function buildHomeView() {
 
 function buildRecentScores() {
   if (Object.keys(STATE.scores).length === 0) return;
-  const section = document.getElementById('home-recent');
+  const section   = document.getElementById('home-recent');
   const container = document.getElementById('recent-scores');
   if (!section || !container) return;
   section.style.display = 'block';
   container.innerHTML = '';
 
-  const entries = Object.entries(STATE.scores)
+  Object.entries(STATE.scores)
     .sort((a, b) => new Date(b[1].date) - new Date(a[1].date))
-    .slice(0, 6);
-
-  entries.forEach(([id, score]) => {
-    const item = STATE.manifest.content.find(c => c.id === id);
-    if (!item) return;
-    const cls = getClassById(item.class);
-    const pct = Math.round(score.score / score.total * 100);
-    const div = document.createElement('div');
-    div.className = 'quiz-card';
-    div.onclick = () => showClassView(item.class);
-    div.innerHTML = `
-      <div class="quiz-card-icon">📊</div>
-      <div class="quiz-card-info">
-        <div class="quiz-card-title">${item.title}</div>
-        <div class="quiz-card-desc">${cls?.name || ''} · ${new Date(score.date).toLocaleDateString()}</div>
-      </div>
-      <div class="quiz-card-right">
-        <div class="${scoreClass(pct)} quiz-score-badge">${pct}%</div>
-      </div>`;
-    container.appendChild(div);
-  });
+    .slice(0, 6)
+    .forEach(([id, score]) => {
+      const item = STATE.manifest.content.find(c => c.id === id);
+      if (!item) return;
+      const cls = getClassById(item.class);
+      const pct = Math.round(score.score / score.total * 100);
+      const div = document.createElement('div');
+      div.className = 'quiz-card';
+      div.onclick = () => showClassView(item.class);
+      div.innerHTML = `
+        <div class="quiz-card-icon">📊</div>
+        <div class="quiz-card-info">
+          <div class="quiz-card-title">${item.title}</div>
+          <div class="quiz-card-desc">${cls?.name || ''} · ${new Date(score.date).toLocaleDateString()}</div>
+        </div>
+        <div class="quiz-card-right">
+          <div class="${scoreClass(pct)} quiz-score-badge">${pct}%</div>
+        </div>`;
+      container.appendChild(div);
+    });
 }
 
 function scoreClass(pct) {
@@ -206,13 +222,12 @@ async function showClassView(classId, scrollToModule = null) {
   const modNav = document.getElementById(`mod-nav-${classId}`);
   if (modNav) modNav.style.display = 'block';
 
-  const header = document.getElementById('class-header');
-  header.innerHTML = `
+  document.getElementById('class-header').innerHTML = `
     <div class="class-hero">
       <div class="class-hero-top">
         <span class="class-hero-icon">${cls.icon}</span>
         <div>
-          <div class="class-hero-code">${cls.code} · ${cls.term || ''}</div>
+          <div class="class-hero-code">${cls.code}${cls.term ? ' · ' + cls.term : ''}</div>
           <div class="class-hero-name">${cls.name}</div>
         </div>
       </div>
@@ -221,19 +236,28 @@ async function showClassView(classId, scrollToModule = null) {
   const content = document.getElementById('class-content');
   content.innerHTML = '<div class="loading"><div class="loading-spinner">⟳</div><p>Loading content…</p></div>';
 
-  // Only quizzes in the module view — notes get their own view
-  const items = STATE.manifest.content.filter(c => c.class === classId && c.type !== 'note');
-  const noteItems = STATE.manifest.content.filter(c => c.class === classId && c.type === 'note');
+  const allItems  = STATE.manifest.content.filter(c => c.class === classId);
+  const quizItems = allItems.filter(c => c.type === 'quiz');
+  const noteItems = allItems.filter(c => c.type === 'note');
+  const notesOnly = quizItems.length === 0 && noteItems.length > 0;
 
+  content.innerHTML = '';
+
+  // ── NOTES-ONLY CLASS ─────────────────────────────
+  if (notesOnly) {
+    renderNotesGrid(noteItems, content, cls);
+    closeSidebarMobile();
+    return;
+  }
+
+  // ── QUIZ CLASS (with optional notes banner) ──────
   const moduleGroups = {};
-  items.forEach(item => {
+  quizItems.forEach(item => {
     if (!moduleGroups[item.module]) moduleGroups[item.module] = [];
     moduleGroups[item.module].push(item);
   });
 
-  content.innerHTML = '';
   const modules = Object.keys(moduleGroups).map(Number).sort((a, b) => a - b);
-
   for (const mod of modules) {
     const section = document.createElement('div');
     section.className = 'module-section';
@@ -242,8 +266,8 @@ async function showClassView(classId, scrollToModule = null) {
 
     for (const item of moduleGroups[mod]) {
       const score = STATE.scores[item.id];
-      const pct = score ? Math.round(score.score / score.total * 100) : null;
-      const card = document.createElement('div');
+      const pct   = score ? Math.round(score.score / score.total * 100) : null;
+      const card  = document.createElement('div');
       card.className = 'quiz-card';
       card.onclick = () => startQuiz(item.id);
       card.innerHTML = `
@@ -265,78 +289,38 @@ async function showClassView(classId, scrollToModule = null) {
     content.appendChild(section);
   }
 
-  // Notes banner at the bottom — only if notes exist
-  if (noteItems.length > 0) {
-    const notesBanner = document.createElement('div');
-    notesBanner.className = 'notes-banner';
-    notesBanner.onclick = () => showNotesView(classId);
-    notesBanner.innerHTML = `
-      <div class="notes-banner-icon">📖</div>
-      <div class="notes-banner-text">
-        <div class="notes-banner-title">Study Notes</div>
-        <div class="notes-banner-sub">${noteItems.length} visual explainer${noteItems.length !== 1 ? 's' : ''} for ${cls.name}</div>
-      </div>
-      <div class="notes-banner-arrow">→</div>`;
-    content.appendChild(notesBanner);
-  }
-
   if (scrollToModule) {
     setTimeout(() => {
       const el = document.getElementById(`module-section-${scrollToModule}`);
       if (el) el.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   }
+
+  closeSidebarMobile();
 }
 
-// ── NOTES VIEW ───────────────────────────────────────
-function showNotesView(classId) {
-  STATE.currentView = 'notes';
-  setActiveView('view-notes');
-  setNavActive(classId);
-
-  const cls = getClassById(classId);
-  if (!cls) return;
-
-  setBreadcrumb([
-    { label: 'Home', action: () => showView('home') },
-    { label: cls.name, action: () => showClassView(classId) },
-    { label: 'Study Notes' }
-  ]);
-
-  const notes = STATE.manifest.content.filter(c => c.class === classId && c.type === 'note');
-
-  // Group notes by category
-  const categories = {};
-  notes.forEach(note => {
+// ── RENDER NOTES GRID ────────────────────────────────
+function renderNotesGrid(noteItems, container, cls) {
+  // Group by body system (category field)
+  const groups = {};
+  noteItems.forEach(note => {
     const cat = note.category || 'General';
-    if (!categories[cat]) categories[cat] = [];
-    categories[cat].push(note);
+    if (!groups[cat]) groups[cat] = [];
+    groups[cat].push(note);
   });
 
-  const header = document.getElementById('notes-header');
-  header.innerHTML = `
-    <div class="class-hero">
-      <div class="class-hero-top">
-        <span class="class-hero-icon">📖</span>
-        <div>
-          <div class="class-hero-code">${cls.code} · ${cls.term || ''}</div>
-          <div class="class-hero-name">Study Notes</div>
-        </div>
-      </div>
-    </div>`;
+  // Sort categories alphabetically
+  const sortedCats = Object.keys(groups).sort();
 
-  const notesContent = document.getElementById('notes-content');
-  notesContent.innerHTML = '';
-
-  Object.entries(categories).forEach(([cat, catNotes]) => {
+  sortedCats.forEach(cat => {
     const section = document.createElement('div');
     section.className = 'module-section';
     section.innerHTML = `<div class="module-title">${cat}</div>`;
 
-    catNotes.forEach(note => {
+    groups[cat].forEach(note => {
       const card = document.createElement('div');
       card.className = 'quiz-card note-card';
-      card.onclick = () => openNote(note, classId);
+      card.onclick = () => openNote(note);
       card.innerHTML = `
         <div class="quiz-card-icon">📖</div>
         <div class="quiz-card-info">
@@ -353,15 +337,11 @@ function showNotesView(classId) {
       section.appendChild(card);
     });
 
-    notesContent.appendChild(section);
+    container.appendChild(section);
   });
-
-  closeSidebarMobile();
 }
 
-function openNote(note, classId) {
-  // Store return info so the note page can navigate back
-  sessionStorage.setItem('note-return-class', classId);
+function openNote(note) {
   window.open(`data/${note.file}`, '_blank');
 }
 
@@ -376,7 +356,8 @@ async function startQuiz(contentId) {
 
   const data = await loadQuiz(item);
   if (!data) {
-    document.getElementById('quiz-area').innerHTML = '<p style="color:var(--red);padding:40px;text-align:center">Could not load quiz data.</p>';
+    document.getElementById('quiz-area').innerHTML =
+      '<p style="color:var(--red);padding:40px;text-align:center">Could not load quiz data.</p>';
     return;
   }
 
@@ -385,16 +366,16 @@ async function startQuiz(contentId) {
   STATE.quiz.questions = data.questions.map(q => shuffleQuestion(JSON.parse(JSON.stringify(q))));
   STATE.quiz.current = 0;
   STATE.quiz.correct = 0;
-  STATE.quiz.wrong = 0;
-  STATE.quiz.missed = [];
+  STATE.quiz.wrong   = 0;
+  STATE.quiz.missed  = [];
   STATE.quiz.answered = false;
   STATE.quiz.selected = null;
   STATE.quiz.selectedSATA = new Set();
   STATE.quiz.mode = 'quiz';
 
   setBreadcrumb([
-    { label: 'Home', action: () => showView('home') },
-    { label: cls?.name || '', action: () => showClassView(item.class) },
+    { label: 'Home',            action: () => showView('home') },
+    { label: cls?.name || '',   action: () => showClassView(item.class) },
     { label: `Module ${item.module}`, action: () => showClassView(item.class, item.module) },
     { label: item.title }
   ]);
@@ -411,7 +392,7 @@ function shuffleQuestion(q) {
   }
   return {
     ...q,
-    opts: idx.map(i => q.opts[i]),
+    opts:    idx.map(i => q.opts[i]),
     correct: q.correct.map(c => idx.indexOf(c))
   };
 }
@@ -419,12 +400,12 @@ function shuffleQuestion(q) {
 function renderQuizQuestion() {
   const { quiz } = STATE;
   if (quiz.current >= quiz.questions.length) { showResults(); return; }
-  const q = quiz.questions[quiz.current];
-  const total = quiz.questions.length;
-  const pct = Math.round((quiz.current / total) * 100);
+  const q      = quiz.questions[quiz.current];
+  const total  = quiz.questions.length;
+  const pct    = Math.round((quiz.current / total) * 100);
   const isSATA = q.type === 'sata';
   const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
-  const color = UNIT_COLORS[q.unit] || '#1565C0';
+  const color  = UNIT_COLORS[q.unit] || '#1565C0';
 
   quiz.answered = false;
   quiz.selected = null;
@@ -500,18 +481,18 @@ function submitAnswer() {
   if (quiz.answered) return;
   quiz.answered = true;
 
-  const q = quiz.questions[quiz.current];
+  const q      = quiz.questions[quiz.current];
   const isSATA = q.type === 'sata';
   const userSel = isSATA ? Array.from(quiz.selectedSATA) : (quiz.selected !== null ? [quiz.selected] : []);
-  const cSet = new Set(q.correct);
-  const uSet = new Set(userSel);
+  const cSet   = new Set(q.correct);
+  const uSet   = new Set(userSel);
   const isCorrect = q.correct.length === userSel.length && q.correct.every(c => uSet.has(c));
 
   document.querySelectorAll('.q-opt').forEach((el, i) => {
     el.classList.add('locked');
     el.disabled = true;
-    if (cSet.has(i)) { el.classList.add('correct'); el.querySelector('.opt-icon').textContent = '✓'; }
-    else if (uSet.has(i)) { el.classList.add('wrong'); el.querySelector('.opt-icon').textContent = '✗'; }
+    if (cSet.has(i))      { el.classList.add('correct'); el.querySelector('.opt-icon').textContent = '✓'; }
+    else if (uSet.has(i)) { el.classList.add('wrong');   el.querySelector('.opt-icon').textContent = '✗'; }
   });
 
   const rat = document.getElementById('rationale');
@@ -536,8 +517,8 @@ function nextQuestion() {
 
 function showResults() {
   const { quiz } = STATE;
-  const total = quiz.questions.length;
-  const pct = Math.round(quiz.correct / total * 100);
+  const total  = quiz.questions.length;
+  const pct    = Math.round(quiz.correct / total * 100);
   const quizId = quiz.data.item?.id;
   const cssPct = `${pct * 3.6}deg`;
 
@@ -580,11 +561,11 @@ function restartQuiz() {
 }
 
 function reviewMissed() {
-  const { quiz } = STATE;
-  const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
+  const { quiz }  = STATE;
+  const letters   = ['A', 'B', 'C', 'D', 'E', 'F'];
   let html = '<div class="missed-review"><h3>Missed Questions Review</h3>';
   quiz.missed.forEach(idx => {
-    const q = quiz.questions[idx];
+    const q     = quiz.questions[idx];
     const color = UNIT_COLORS[q.unit] || '#1565C0';
     html += `
       <div class="missed-card">
@@ -694,7 +675,7 @@ async function fullSearch(val) {
     return;
   }
   await ensureAllQuizzesLoaded();
-  const filter = STATE.searchFilter || 'all';
+  const filter  = STATE.searchFilter || 'all';
   const results = searchQuestions(val, filter);
   if (results.length === 0) {
     resultsEl.innerHTML = `<div class="search-empty"><div class="se-icon">🔍</div><p>No results for "<strong>${val}</strong>"</p></div>`;
@@ -785,11 +766,8 @@ function setBreadcrumb(items) {
 // ── SIDEBAR & MOBILE ─────────────────────────────────
 function toggleSidebar() {
   const isMobile = window.innerWidth <= 768;
-  if (isMobile) {
-    document.body.classList.toggle('sidebar-open');
-  } else {
-    document.body.classList.toggle('sidebar-closed');
-  }
+  if (isMobile) document.body.classList.toggle('sidebar-open');
+  else document.body.classList.toggle('sidebar-closed');
 }
 
 function closeSidebarMobile() {
@@ -818,7 +796,7 @@ function toggleTheme() {
 
 function applyTheme() {
   document.body.classList.toggle('light', STATE.theme === 'light');
-  document.getElementById('theme-icon').textContent = STATE.theme === 'dark' ? '☾' : '☀';
+  document.getElementById('theme-icon').textContent  = STATE.theme === 'dark' ? '☾' : '☀';
   document.getElementById('theme-label').textContent = STATE.theme === 'dark' ? 'Dark Mode' : 'Light Mode';
 }
 
