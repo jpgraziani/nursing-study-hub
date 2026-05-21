@@ -125,7 +125,9 @@ function buildHomeView() {
 
   STATE.manifest.classes.forEach(cls => {
     const items = STATE.manifest.content.filter(c => c.class === cls.id);
-    const totalQ = items.reduce((sum, i) => sum + (i.questionCount || 0), 0);
+    const quizItems = items.filter(c => c.type === 'quiz');
+    const noteItems = items.filter(c => c.type === 'note');
+    const totalQ = quizItems.reduce((sum, i) => sum + (i.questionCount || 0), 0);
     const card = document.createElement('div');
     card.className = 'class-card';
     card.onclick = () => showClassView(cls.id);
@@ -136,8 +138,9 @@ function buildHomeView() {
       <div class="class-card-name">${cls.name}</div>
       <div class="class-card-term">${cls.term || ''}</div>
       <div class="class-card-stats">
-        <div class="class-stat"><strong>${items.length}</strong>Quizzes</div>
+        <div class="class-stat"><strong>${quizItems.length}</strong>Quizzes</div>
         <div class="class-stat"><strong>${totalQ}</strong>Questions</div>
+        ${noteItems.length > 0 ? `<div class="class-stat"><strong>${noteItems.length}</strong>Notes</div>` : ''}
       </div>`;
     cards.appendChild(card);
   });
@@ -233,28 +236,66 @@ async function showClassView(classId, scrollToModule = null) {
     section.id = `module-section-${mod}`;
     section.innerHTML = `<div class="module-title">Module ${mod}</div>`;
 
-    for (const item of moduleGroups[mod]) {
-      const score = STATE.scores[item.id];
-      const pct = score ? Math.round(score.score / score.total * 100) : null;
-      const card = document.createElement('div');
-      card.className = 'quiz-card';
-      card.onclick = () => startQuiz(item.id);
-      card.innerHTML = `
-        <div class="quiz-card-icon">📝</div>
-        <div class="quiz-card-info">
-          <div class="quiz-card-title">${item.title}</div>
-          <div class="quiz-card-desc">${item.description || ''}</div>
-          <div class="quiz-card-tags">
-            ${(item.tags || []).map(t => `<span class="quiz-tag">${t}</span>`).join('')}
+    // Notes first
+    const notes = moduleGroups[mod].filter(i => i.type === 'note');
+    const quizzes = moduleGroups[mod].filter(i => i.type !== 'note');
+
+    if (notes.length > 0) {
+      const notesGroup = document.createElement('div');
+      notesGroup.className = 'content-type-group';
+      notesGroup.innerHTML = '<div class="content-type-label">📖 Study Notes</div>';
+      notes.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'quiz-card note-card';
+        card.onclick = () => openNote(item);
+        card.innerHTML = `
+          <div class="quiz-card-icon">📖</div>
+          <div class="quiz-card-info">
+            <div class="quiz-card-title">${item.title}</div>
+            <div class="quiz-card-desc">${item.description || ''}</div>
+            <div class="quiz-card-tags">
+              ${(item.tags || []).map(t => `<span class="quiz-tag note-tag">${t}</span>`).join('')}
+            </div>
           </div>
-        </div>
-        <div class="quiz-card-right">
-          <div class="quiz-q-count">${item.questionCount}</div>
-          <div class="quiz-q-label">Questions</div>
-          ${pct !== null ? `<div class="${scoreClass(pct)} quiz-score-badge">${pct}%</div>` : ''}
-        </div>`;
-      section.appendChild(card);
+          <div class="quiz-card-right">
+            <div class="note-open-btn">Open →</div>
+          </div>`;
+        notesGroup.appendChild(card);
+      });
+      section.appendChild(notesGroup);
     }
+
+    if (quizzes.length > 0) {
+      const quizzesGroup = document.createElement('div');
+      quizzesGroup.className = 'content-type-group';
+      if (notes.length > 0) {
+        quizzesGroup.innerHTML = '<div class="content-type-label">📝 Quizzes</div>';
+      }
+      quizzes.forEach(item => {
+        const score = STATE.scores[item.id];
+        const pct = score ? Math.round(score.score / score.total * 100) : null;
+        const card = document.createElement('div');
+        card.className = 'quiz-card';
+        card.onclick = () => startQuiz(item.id);
+        card.innerHTML = `
+          <div class="quiz-card-icon">📝</div>
+          <div class="quiz-card-info">
+            <div class="quiz-card-title">${item.title}</div>
+            <div class="quiz-card-desc">${item.description || ''}</div>
+            <div class="quiz-card-tags">
+              ${(item.tags || []).map(t => `<span class="quiz-tag">${t}</span>`).join('')}
+            </div>
+          </div>
+          <div class="quiz-card-right">
+            <div class="quiz-q-count">${item.questionCount}</div>
+            <div class="quiz-q-label">Questions</div>
+            ${pct !== null ? `<div class="${scoreClass(pct)} quiz-score-badge">${pct}%</div>` : ''}
+          </div>`;
+        quizzesGroup.appendChild(card);
+      });
+      section.appendChild(quizzesGroup);
+    }
+
     content.appendChild(section);
   }
 
@@ -264,6 +305,13 @@ async function showClassView(classId, scrollToModule = null) {
       if (el) el.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   }
+}
+
+// ── NOTE VIEWER ──────────────────────────────────────
+function openNote(item) {
+  const cls = getClassById(item.class);
+  // Open the HTML file in a new tab
+  window.open(`data/${item.file}`, '_blank');
 }
 
 // ── QUIZ ENGINE ──────────────────────────────────────
@@ -518,7 +566,7 @@ function exitQuiz() {
 // ── SEARCH ───────────────────────────────────────────
 async function ensureAllQuizzesLoaded() {
   for (const item of STATE.manifest.content) {
-    if (!STATE.quizzes[item.id]) {
+    if (item.type !== 'note' && !STATE.quizzes[item.id]) {
       await loadQuiz(item);
     }
   }
@@ -527,6 +575,7 @@ async function ensureAllQuizzesLoaded() {
 function getAllQuestions() {
   const results = [];
   STATE.manifest.content.forEach(item => {
+    if (item.type === 'note') return;
     const quiz = STATE.quizzes[item.id];
     if (!quiz || !quiz.questions) return;
     const cls = getClassById(item.class);
