@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sodium (Na⁺)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0F1117; color: #E8EDF5;
+  font-size: 15px; line-height: 1.6; padding: 0 0 48px;
+}
+
+.back-bar {
+  position: sticky; top: 0; z-index: 100;
+  background: #161B26; border-bottom: 1px solid #2A3246;
+  padding: 12px 20px; display: flex; align-items: center; gap: 12px;
+}
+.back-btn {
+  background: #1E2536; border: 1px solid #2A3246; color: #8A94A6;
+  font-size: 0.82rem; font-weight: 600; padding: 7px 14px;
+  border-radius: 8px; cursor: pointer; font-family: inherit; transition: all 0.15s;
+}
+.back-btn:hover { color: #E8EDF5; border-color: #4A9EDB; }
+.back-bar-title { font-size: 0.88rem; font-weight: 700; color: #8A94A6; }
+
+.page { max-width: 560px; margin: 0 auto; padding: 28px 20px 0; }
+
+h1 { font-size: 1.4rem; font-weight: 800; color: #4A9EDB; margin-bottom: 6px; }
+.intro { font-size: 0.88rem; color: #8A94A6; margin-bottom: 28px; line-height: 1.6; }
+
+.sec {
+  font-size: 0.65rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 1.5px; color: #5A6478; margin: 28px 0 12px;
+}
+
+/* NORMAL RANGE BADGE */
+.normal-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(74,158,219,0.1); border: 1px solid rgba(74,158,219,0.3);
+  border-radius: 10px; padding: 10px 16px; margin-bottom: 14px;
+}
+.nb-label { font-size: 0.7rem; color: #8A94A6; }
+.nb-value { font-size: 1.1rem; font-weight: 800; color: #4A9EDB; }
+
+/* CORE CONCEPT */
+.concept-card {
+  background: #1E2536; border: 1px solid #2A3246;
+  border-radius: 12px; padding: 18px 20px; margin-bottom: 10px;
+}
+.concept-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+.concept-title { font-size: 0.95rem; font-weight: 800; color: #E8EDF5; margin-bottom: 8px; }
+.concept-body { font-size: 0.83rem; color: #9BAAB8; line-height: 1.7; }
+.concept-body strong { color: #E8EDF5; }
+
+/* OSMOSIS VISUAL */
+.osmosis-visual {
+  background: #161B26; border: 1px solid #2A3246;
+  border-radius: 12px; padding: 20px; margin-bottom: 10px;
+}
+.osm-row {
+  display: flex; align-items: center; gap: 0; margin-bottom: 16px;
+}
+.osm-row:last-child { margin-bottom: 0; }
+.osm-cell {
+  flex: 1; border-radius: 8px; padding: 12px 10px; text-align: center;
+}
+.osm-cell.blood { background: rgba(74,158,219,0.12); border: 1.5px solid rgba(74,158,219,0.3); }
+.osm-cell.tissue { background: rgba(34,197,94,0.08); border: 1.5px solid rgba(34,197,94,0.25); }
+.osm-cell.danger { background: rgba(239,68,68,0.08); border: 1.5px solid rgba(239,68,68,0.3); }
+.osm-label { font-size: 0.62rem; color: #8A94A6; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 4px; }
+.osm-value { font-size: 1rem; font-weight: 800; }
+.osm-blue { color: #4A9EDB; }
+.osm-green { color: #22C55E; }
+.osm-red { color: #EF4444; }
+.osm-divider {
+  width: 32px; text-align: center; flex-shrink: 0;
+  font-size: 0.7rem; color: #5A6478; padding: 0 4px;
+  display: flex; flex-direction: column; align-items: center; gap: 2px;
+}
+.osm-arrow { font-size: 1rem; color: #F59E0B; }
+.osm-note { font-size: 0.58rem; color: #5A6478; }
+.osm-scenario-label {
+  font-size: 0.68rem; font-weight: 700; color: #8A94A6; margin-bottom: 8px;
+}
+
+/* CONDITION CARDS */
+.condition-card {
+  border-radius: 12px; padding: 18px 20px; margin-bottom: 10px;
+  border-left: 4px solid; border-top: 1px solid; border-right: 1px solid; border-bottom: 1px solid;
+}
+.condition-card.low {
+  border-left-color: #4A9EDB; border-color: rgba(74,158,219,0.2);
+  background: rgba(74,158,219,0.05);
+}
+.condition-card.high {
+  border-left-color: #EF4444; border-color: rgba(239,68,68,0.2);
+  background: rgba(239,68,68,0.05);
+}
+.cond-top { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.cond-icon { font-size: 1.6rem; }
+.cond-name { font-size: 1rem; font-weight: 800; }
+.cond-name.blue { color: #4A9EDB; }
+.cond-name.red { color: #EF4444; }
+.cond-range { font-size: 0.72rem; font-weight: 700; padding: 3px 9px; border-radius: 5px; }
+.cond-range.blue { background: rgba(74,158,219,0.15); color: #4A9EDB; }
+.cond-range.red  { background: rgba(239,68,68,0.15);  color: #EF4444; }
+
+.cond-body { font-size: 0.82rem; color: #9BAAB8; line-height: 1.65; margin-bottom: 12px; }
+.cond-body strong { color: #E8EDF5; }
+
+.symptom-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.symptom-chip {
+  font-size: 0.7rem; font-weight: 600; padding: 4px 10px;
+  border-radius: 20px; border: 1px solid;
+}
+.chip-blue { background: rgba(74,158,219,0.1); border-color: rgba(74,158,219,0.3); color: #7DC8FF; }
+.chip-red  { background: rgba(239,68,68,0.1);  border-color: rgba(239,68,68,0.3);  color: #FCA5A5; }
+
+.causes-label { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #5A6478; margin-bottom: 6px; }
+.cause-item { font-size: 0.78rem; color: #9BAAB8; padding: 4px 0; border-bottom: 1px solid #1E2536; line-height: 1.5; }
+.cause-item:last-child { border-bottom: none; }
+.cause-item strong { color: #C0C8D8; }
+
+/* NURSE ACTIONS */
+.nurse-box {
+  background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2);
+  border-left: 4px solid #22C55E; border-radius: 10px;
+  padding: 14px 16px; margin-top: 12px;
+}
+.nurse-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #22C55E; margin-bottom: 8px; }
+.nurse-step { display: flex; gap: 9px; margin-bottom: 7px; align-items: flex-start; }
+.nurse-num {
+  min-width: 20px; height: 20px; border-radius: 50%;
+  background: rgba(34,197,94,0.2); color: #22C55E;
+  font-size: 0.65rem; font-weight: 800;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 1px;
+}
+.nurse-text { font-size: 0.78rem; color: #9BAAB8; line-height: 1.5; }
+.nurse-text strong { color: #C0C8D8; }
+
+/* COMPARISON TABLE */
+.compare-table { width: 100%; border-collapse: collapse; border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+.compare-table th { padding: 10px 14px; font-size: 0.75rem; font-weight: 700; text-align: left; }
+.compare-table th:nth-child(1) { background: #1E2536; color: #8A94A6; }
+.compare-table th:nth-child(2) { background: rgba(74,158,219,0.15); color: #4A9EDB; }
+.compare-table th:nth-child(3) { background: rgba(239,68,68,0.15); color: #EF4444; }
+.compare-table td { padding: 9px 14px; font-size: 0.78rem; border-bottom: 1px solid #2A3246; vertical-align: top; color: #9BAAB8; }
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr:nth-child(even) td { background: #161B26; }
+.compare-table tr:nth-child(odd) td { background: #1A1F2E; }
+.compare-table td:first-child { color: #8A94A6; font-weight: 600; font-size: 0.75rem; }
+
+/* NCLEX */
+.nclex-box {
+  background: rgba(239,68,68,0.07); border: 1px solid rgba(239,68,68,0.2);
+  border-left: 4px solid #EF4444; border-radius: 10px;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.nclex-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #EF4444; margin-bottom: 8px; }
+.nclex-item { font-size: 0.8rem; color: #C0C8D8; line-height: 1.6; margin-bottom: 5px; padding-left: 12px; position: relative; }
+.nclex-item::before { content: '★'; position: absolute; left: 0; color: #EF4444; font-size: 0.6rem; top: 4px; }
+.nclex-item strong { color: #FCA5A5; }
+
+/* MEMORY TRICK */
+.memory-box {
+  background: rgba(168,85,247,0.07); border: 1px solid rgba(168,85,247,0.2);
+  border-left: 4px solid #A855F7; border-radius: 10px;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.memory-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #A855F7; margin-bottom: 8px; }
+.memory-text { font-size: 0.82rem; color: #C0B8D8; line-height: 1.65; }
+.memory-text strong { color: #E0C8FF; }
+
+/* NEXT */
+.next-up {
+  background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2);
+  border-left: 4px solid #22C55E; border-radius: 10px; padding: 14px 16px;
+}
+.next-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #22C55E; margin-bottom: 5px; }
+.next-text { font-size: 0.8rem; color: #9BAAB8; line-height: 1.55; }
+.next-text strong { color: #C0C8D8; }
+</style>
+</head>
+<body>
+
+<div class="back-bar">
+  <button class="back-btn" onclick="window.close(); history.back();">← Back to Notes</button>
+  <span class="back-bar-title">Foundation 2 of 8 — Sodium (Na⁺)</span>
+</div>
+
+<div class="page">
+
+  <h1>🧂 Sodium (Na⁺)</h1>
+  <p class="intro">Sodium is the most important electrolyte for a nurse to understand. It controls where water goes in your body — and water going to the wrong place is what causes almost every serious complication.</p>
+
+  <div class="normal-badge">
+    <span class="nb-label">Normal range</span>
+    <span class="nb-value">135 – 145 mEq/L</span>
+  </div>
+
+  <!-- THE ONE RULE -->
+  <div class="sec">The one rule that explains everything</div>
+
+  <div class="concept-card">
+    <span class="concept-icon">🧲</span>
+    <div class="concept-title">Sodium is a magnet for water</div>
+    <div class="concept-body">
+      Wherever sodium goes, water follows. This is the single most important thing to understand about sodium.<br><br>
+      Your kidneys use this fact to control blood pressure every second of every day. <strong>More sodium in the blood = more water pulled into the blood = higher blood volume = higher blood pressure.</strong><br><br>
+      Less sodium in the blood = less water pulled in = lower volume = lower blood pressure.<br><br>
+      This is exactly why a low-sodium diet helps hypertension. And why IV saline raises blood pressure in a patient who is dehydrated and crashing.
+    </div>
+  </div>
+
+  <!-- OSMOSIS VISUAL -->
+  <div class="sec">How sodium moves water — visually</div>
+
+  <div class="osmosis-visual">
+
+    <div class="osm-scenario-label">✓ Normal — sodium balanced on both sides</div>
+    <div class="osm-row">
+      <div class="osm-cell blood">
+        <div class="osm-label">Blood</div>
+        <div class="osm-value osm-blue">Na⁺ 140</div>
+      </div>
+      <div class="osm-divider"><span class="osm-arrow">⇌</span><span class="osm-note">balanced</span></div>
+      <div class="osm-cell tissue">
+        <div class="osm-label">Cells</div>
+        <div class="osm-value osm-green">normal size</div>
+      </div>
+    </div>
+
+    <div style="height:1px;background:#2A3246;margin:14px 0;"></div>
+
+    <div class="osm-scenario-label">↓ Low sodium — water rushes INTO cells</div>
+    <div class="osm-row">
+      <div class="osm-cell danger">
+        <div class="osm-label">Blood</div>
+        <div class="osm-value osm-red">Na⁺ 120</div>
+      </div>
+      <div class="osm-divider"><span class="osm-arrow">→</span><span class="osm-note">water flows in</span></div>
+      <div class="osm-cell danger">
+        <div class="osm-label">Cells</div>
+        <div class="osm-value osm-red">SWOLLEN 🫧</div>
+      </div>
+    </div>
+
+    <div style="height:1px;background:#2A3246;margin:14px 0;"></div>
+
+    <div class="osm-scenario-label">↑ High sodium — water is pulled OUT of cells</div>
+    <div class="osm-row">
+      <div class="osm-cell" style="background:rgba(245,158,11,0.08);border:1.5px solid rgba(245,158,11,0.3)">
+        <div class="osm-label">Blood</div>
+        <div class="osm-value" style="color:#F59E0B">Na⁺ 158</div>
+      </div>
+      <div class="osm-divider"><span class="osm-arrow">←</span><span class="osm-note">water pulled out</span></div>
+      <div class="osm-cell" style="background:rgba(245,158,11,0.08);border:1.5px solid rgba(245,158,11,0.3)">
+        <div class="osm-label">Cells</div>
+        <div class="osm-value" style="color:#F59E0B">SHRUNKEN 🍇</div>
+      </div>
+    </div>
+
+    <div style="font-size:0.7rem;color:#5A6478;margin-top:14px;line-height:1.5;">
+      Brain cells are inside a rigid skull. When they swell or shrink, pressure builds fast — which is why sodium problems cause headache, confusion, seizures, and coma.
+    </div>
+  </div>
+
+  <!-- HYPONATREMIA -->
+  <div class="sec">When sodium is too low — Hyponatremia</div>
+
+  <div class="condition-card low">
+    <div class="cond-top">
+      <span class="cond-icon">📉</span>
+      <div>
+        <div class="cond-name blue">Hyponatremia</div>
+        <span class="cond-range blue">Na⁺ below 135 mEq/L</span>
+      </div>
+    </div>
+
+    <div class="cond-body">
+      Low sodium means there is <strong>too much water relative to sodium</strong> — the blood is diluted. Water rushes into cells to try to balance things out. Cells swell. Brain cells swelling inside the skull = pressure = neurological symptoms.<br><br>
+      <strong>Important:</strong> hyponatremia is usually not about losing sodium. It's about having too much water diluting the sodium that's there. This is why the fix is often removing water — not adding salt.
+    </div>
+
+    <div class="symptom-row">
+      <span class="symptom-chip chip-blue">Headache</span>
+      <span class="symptom-chip chip-blue">Nausea</span>
+      <span class="symptom-chip chip-blue">Confusion</span>
+      <span class="symptom-chip chip-blue">Lethargy</span>
+      <span class="symptom-chip chip-blue">Seizures</span>
+      <span class="symptom-chip chip-blue">Coma (severe)</span>
+    </div>
+
+    <div class="causes-label">Common causes</div>
+    <div class="cause-item"><strong>Too much plain water / IV D5W</strong> — dilutes sodium without replacing it</div>
+    <div class="cause-item"><strong>SIADH</strong> — the body retains too much free water due to excess ADH hormone (you'll learn this in note 5)</div>
+    <div class="cause-item"><strong>Heart failure, liver failure, kidney failure</strong> — fluid backs up and dilutes sodium</div>
+    <div class="cause-item"><strong>Prolonged vomiting or diarrhea</strong> — losing fluid that contains sodium</div>
+    <div class="cause-item"><strong>Diuretics (especially thiazides)</strong> — cause sodium loss through urine</div>
+
+    <div class="nurse-box">
+      <div class="nurse-label">🩺 What the nurse does</div>
+      <div class="nurse-step"><div class="nurse-num">1</div><div class="nurse-text"><strong>Fluid restrict</strong> if the cause is dilutional (too much water) — removing water raises Na⁺ concentration</div></div>
+      <div class="nurse-step"><div class="nurse-num">2</div><div class="nurse-text"><strong>Hypertonic saline (3% NaCl)</strong> only for severe symptomatic cases (seizures, coma) — given very slowly because raising Na⁺ too fast causes osmotic demyelination syndrome (permanent brain damage)</div></div>
+      <div class="nurse-step"><div class="nurse-num">3</div><div class="nurse-text"><strong>Monitor neurological status</strong> — confusion and seizure risk. Safety precautions, fall prevention</div></div>
+      <div class="nurse-step"><div class="nurse-num">4</div><div class="nurse-text"><strong>Treat the underlying cause</strong> — if SIADH, address the ADH problem. If heart failure, address fluid overload</div></div>
+    </div>
+  </div>
+
+  <!-- HYPERNATREMIA -->
+  <div class="sec">When sodium is too high — Hypernatremia</div>
+
+  <div class="condition-card high">
+    <div class="cond-top">
+      <span class="cond-icon">📈</span>
+      <div>
+        <div class="cond-name red">Hypernatremia</div>
+        <span class="cond-range red">Na⁺ above 145 mEq/L</span>
+      </div>
+    </div>
+
+    <div class="cond-body">
+      High sodium means there is <strong>too little water relative to sodium</strong> — the blood is concentrated. Water is pulled OUT of cells to try to balance things out. Cells shrink. Brain cells shrinking = they pull away from the skull = tearing of blood vessels = bleeding.<br><br>
+      <strong>The most common cause is simply dehydration</strong> — not drinking enough water, or losing water without replacing it. Patients who can't access water (confused, intubated, infants, elderly) are most at risk.
+    </div>
+
+    <div class="symptom-row">
+      <span class="symptom-chip chip-red">Intense thirst</span>
+      <span class="symptom-chip chip-red">Dry mouth</span>
+      <span class="symptom-chip chip-red">Confusion</span>
+      <span class="symptom-chip chip-red">Muscle twitching</span>
+      <span class="symptom-chip chip-red">Seizures</span>
+      <span class="symptom-chip chip-red">Coma (severe)</span>
+    </div>
+
+    <div class="causes-label">Common causes</div>
+    <div class="cause-item"><strong>Not drinking enough water</strong> — dehydration, especially in patients who can't self-hydrate</div>
+    <div class="cause-item"><strong>Diabetes insipidus</strong> — no ADH means massive water loss through urine (you'll learn this in note 5)</div>
+    <div class="cause-item"><strong>Excessive sweating, fever, diarrhea</strong> — water lost without adequate replacement</div>
+    <div class="cause-item"><strong>Too much IV normal saline</strong> — adding sodium without enough free water</div>
+    <div class="cause-item"><strong>Tube feeding without enough free water</strong> — formulas are high in solutes</div>
+
+    <div class="nurse-box">
+      <div class="nurse-label">🩺 What the nurse does</div>
+      <div class="nurse-step"><div class="nurse-num">1</div><div class="nurse-text"><strong>Give free water</strong> — oral water if the patient can drink, or IV D5W (dextrose in water — the dextrose gets metabolized and only pure water remains)</div></div>
+      <div class="nurse-step"><div class="nurse-num">2</div><div class="nurse-text"><strong>Correct slowly</strong> — dropping Na⁺ too fast causes water to rush into brain cells, causing cerebral edema. The goal is no faster than 10–12 mEq/L per 24 hours</div></div>
+      <div class="nurse-step"><div class="nurse-num">3</div><div class="nurse-text"><strong>Monitor neurological status</strong> — same as hyponatremia, the brain is at risk either way</div></div>
+      <div class="nurse-step"><div class="nurse-num">4</div><div class="nurse-text"><strong>Identify and treat the cause</strong> — if diabetes insipidus, give DDAVP. If dehydration, ensure ongoing fluid access</div></div>
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <div class="sec">Side by side — hypo vs hyper</div>
+
+  <table class="compare-table">
+    <tr>
+      <th></th>
+      <th>⬇ Hyponatremia (low)</th>
+      <th>⬆ Hypernatremia (high)</th>
+    </tr>
+    <tr>
+      <td>Na⁺ level</td>
+      <td>Below 135 mEq/L</td>
+      <td>Above 145 mEq/L</td>
+    </tr>
+    <tr>
+      <td>The problem</td>
+      <td>Too much water — dilutes sodium</td>
+      <td>Too little water — concentrates sodium</td>
+    </tr>
+    <tr>
+      <td>What cells do</td>
+      <td>Swell — water rushes IN</td>
+      <td>Shrink — water pulled OUT</td>
+    </tr>
+    <tr>
+      <td>Brain effect</td>
+      <td>Swelling → pressure builds</td>
+      <td>Shrinking → vessels tear</td>
+    </tr>
+    <tr>
+      <td>Symptoms</td>
+      <td>Confusion, seizure, lethargy</td>
+      <td>Thirst, confusion, twitching</td>
+    </tr>
+    <tr>
+      <td>IV fluid fix</td>
+      <td>Restrict water or hypertonic saline</td>
+      <td>D5W (free water) or oral water</td>
+    </tr>
+    <tr>
+      <td>Speed of fix</td>
+      <td>Slow — max 10–12 mEq/L per day</td>
+      <td>Slow — max 10–12 mEq/L per day</td>
+    </tr>
+    <tr>
+      <td>Main risk if fixed too fast</td>
+      <td>Osmotic demyelination — brain damage</td>
+      <td>Cerebral edema — brain swelling</td>
+    </tr>
+  </table>
+
+  <!-- MEMORY TRICKS -->
+  <div class="memory-box">
+    <div class="memory-label">🧠 Memory tricks that stick</div>
+    <div class="memory-text">
+      <strong>"Salt sucks water"</strong> — high sodium sucks water out of cells. Low sodium lets water rush in.<br><br>
+      <strong>"Hypo = swollen cells, Hyper = shrunken cells"</strong> — both cause brain symptoms but for opposite reasons.<br><br>
+      <strong>"Correct slowly or cause damage"</strong> — fixing sodium too fast in either direction causes a different brain injury than the one you're trying to treat. The correction rate matters just as much as the correction itself.<br><br>
+      <strong>"The thirsty patient has high sodium"</strong> — intense thirst is the body's first alarm for hypernatremia. A confused patient who keeps asking for water needs a sodium check.
+    </div>
+  </div>
+
+  <!-- NCLEX PRIORITIES -->
+  <div class="nclex-box">
+    <div class="nclex-label">🎯 NCLEX Priority — Sodium</div>
+    <div class="nclex-item"><strong>Both hypo and hypernatremia cause neurological symptoms</strong> — always assess neuro status (orientation, level of consciousness) when sodium is abnormal</div>
+    <div class="nclex-item"><strong>Never correct sodium rapidly</strong> — NCLEX will test this. Too-fast correction of hyponatremia = osmotic demyelination syndrome. Too-fast correction of hypernatremia = cerebral edema. Both are worse than the original problem.</div>
+    <div class="nclex-item"><strong>Hypertonic saline (3% NaCl) is dangerous</strong> — requires an ICU, a central line, and continuous monitoring. Never given fast.</div>
+    <div class="nclex-item"><strong>Seizure precautions</strong> — any patient with Na⁺ below 125 or above 158 needs seizure precautions, padded side rails, oxygen at bedside</div>
+    <div class="nclex-item"><strong>D5W is free water</strong> — even though it looks like sugar water, the dextrose metabolizes and what remains is pure water. Used to dilute high sodium, not to feed the patient.</div>
+  </div>
+
+  <!-- NEXT UP -->
+  <div class="next-up">
+    <div class="next-label">Up next — Foundation 3 of 8</div>
+    <div class="next-text"><strong>Potassium (K⁺)</strong> — the heart electrolyte. Even tiny changes in potassium cause life-threatening arrhythmias. You'll learn why it's the one electrolyte nurses are most afraid of getting wrong — and exactly what to do when it's off.</div>
+  </div>
+
+</div>
+</body>
+</html>

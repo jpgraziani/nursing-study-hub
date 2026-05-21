@@ -359,6 +359,33 @@
         "electrolytes",
         "visual"
       ]
+    },
+    {
+      "id": "anatomy-note-foundation-02",
+      "file": "02_sodium.html",
+      "class": "anatomy",
+      "type": "note",
+      "category": "Fluid & Electrolytes \u2014 Foundation",
+      "title": "2 of 8 \u2014 Sodium (Na\u207a)",
+      "description": "The most important electrolyte. How sodium controls where water goes, hyponatremia vs hypernatremia, causes, symptoms, and exactly what the nurse does.",
+      "topics": [
+        "sodium",
+        "hyponatremia",
+        "hypernatremia",
+        "osmosis",
+        "SIADH",
+        "fluid balance",
+        "D5W",
+        "hypertonic saline",
+        "osmotic demyelination",
+        "cerebral edema"
+      ],
+      "tags": [
+        "foundation",
+        "sodium",
+        "electrolytes",
+        "NCLEX"
+      ]
     }
   ],
   "version": "1.4.0"
