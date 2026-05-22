@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Potassium (K⁺)</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0F1117; color: #E8EDF5;
+  font-size: 15px; line-height: 1.6; padding: 0 0 48px;
+}
+.back-bar {
+  position: sticky; top: 0; z-index: 100;
+  background: #161B26; border-bottom: 1px solid #2A3246;
+  padding: 12px 20px; display: flex; align-items: center; gap: 12px;
+}
+.back-btn {
+  background: #1E2536; border: 1px solid #2A3246; color: #8A94A6;
+  font-size: 0.82rem; font-weight: 600; padding: 7px 14px;
+  border-radius: 8px; cursor: pointer; font-family: inherit; transition: all 0.15s;
+}
+.back-btn:hover { color: #E8EDF5; border-color: #A855F7; }
+.back-bar-title { font-size: 0.88rem; font-weight: 700; color: #8A94A6; }
+
+.page { max-width: 560px; margin: 0 auto; padding: 28px 20px 0; }
+h1 { font-size: 1.4rem; font-weight: 800; color: #A855F7; margin-bottom: 6px; }
+.intro { font-size: 0.88rem; color: #8A94A6; margin-bottom: 28px; line-height: 1.6; }
+
+.normal-badge {
+  display: inline-flex; align-items: center; gap: 10px;
+  background: rgba(168,85,247,0.1); border: 1px solid rgba(168,85,247,0.3);
+  border-radius: 10px; padding: 10px 16px; margin-bottom: 6px;
+}
+.nb-label { font-size: 0.7rem; color: #8A94A6; }
+.nb-value { font-size: 1.1rem; font-weight: 800; color: #A855F7; }
+.nb-note { font-size: 0.72rem; color: #8A94A6; margin-bottom: 20px; margin-top: 6px; line-height: 1.5; }
+
+.sec {
+  font-size: 0.65rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 1.5px; color: #5A6478; margin: 28px 0 12px;
+}
+
+/* CONCEPT CARD */
+.concept-card {
+  background: #1E2536; border: 1px solid #2A3246;
+  border-radius: 12px; padding: 18px 20px; margin-bottom: 10px;
+}
+.concept-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+.concept-title { font-size: 0.95rem; font-weight: 800; color: #E8EDF5; margin-bottom: 8px; }
+.concept-body { font-size: 0.83rem; color: #9BAAB8; line-height: 1.7; }
+.concept-body strong { color: #E8EDF5; }
+
+/* WHERE K LIVES */
+.where-visual {
+  display: flex; gap: 10px; margin-bottom: 14px;
+}
+.where-box {
+  flex: 1; border-radius: 10px; padding: 14px 12px; text-align: center; border: 1.5px solid;
+}
+.where-box.inside  { background: rgba(168,85,247,0.1); border-color: rgba(168,85,247,0.4); }
+.where-box.outside { background: rgba(74,158,219,0.07); border-color: rgba(74,158,219,0.25); }
+.where-pct  { font-size: 1.8rem; font-weight: 900; margin-bottom: 4px; }
+.where-label { font-size: 0.75rem; font-weight: 700; color: #E8EDF5; margin-bottom: 4px; }
+.where-desc  { font-size: 0.68rem; color: #8A94A6; line-height: 1.4; }
+
+/* HEART EXPLAINER */
+.heart-card {
+  background: #1A1020; border: 1px solid rgba(168,85,247,0.25);
+  border-left: 4px solid #A855F7; border-radius: 12px;
+  padding: 18px 20px; margin-bottom: 10px;
+}
+.heart-title { font-size: 0.88rem; font-weight: 800; color: #A855F7; margin-bottom: 10px; }
+.heart-body  { font-size: 0.82rem; color: #C0B0D8; line-height: 1.7; }
+.heart-body strong { color: #E0C8FF; }
+
+/* EKG STRIPS */
+.ekg-section { margin-bottom: 10px; }
+.ekg-card {
+  background: #0A1A0A; border: 1px solid #1A3A1A;
+  border-radius: 10px; padding: 14px 16px; margin-bottom: 8px;
+}
+.ekg-card.danger-low  { background: #0A100A; border-color: rgba(74,158,219,0.3); }
+.ekg-card.danger-high { background: #1A0A0A; border-color: rgba(239,68,68,0.3); }
+.ekg-label { font-size: 0.68rem; font-weight: 800; margin-bottom: 6px; }
+.ekg-label.normal { color: #22C55E; }
+.ekg-label.low    { color: #4A9EDB; }
+.ekg-label.high   { color: #EF4444; }
+.ekg-wave {
+  font-family: 'Courier New', monospace; font-size: 1.1rem;
+  letter-spacing: 1px; margin-bottom: 6px; line-height: 1.2;
+}
+.ekg-wave.green  { color: #22C55E; }
+.ekg-wave.blue   { color: #4A9EDB; }
+.ekg-wave.red    { color: #EF4444; }
+.ekg-desc { font-size: 0.74rem; color: #9BAAB8; line-height: 1.5; }
+.ekg-desc strong { color: #C0C8D8; }
+
+/* CONDITION CARDS */
+.condition-card {
+  border-radius: 12px; padding: 18px 20px; margin-bottom: 10px;
+  border-left: 4px solid; border: 1px solid;
+}
+.condition-card.low  { border-left: 4px solid #4A9EDB; border-color: rgba(74,158,219,0.2);  background: rgba(74,158,219,0.04); }
+.condition-card.high { border-left: 4px solid #EF4444; border-color: rgba(239,68,68,0.2);   background: rgba(239,68,68,0.04); }
+.cond-top  { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.cond-icon { font-size: 1.6rem; }
+.cond-name { font-size: 1rem; font-weight: 800; }
+.cond-name.blue { color: #4A9EDB; }
+.cond-name.red  { color: #EF4444; }
+.cond-range { font-size: 0.72rem; font-weight: 700; padding: 3px 9px; border-radius: 5px; }
+.cond-range.blue { background: rgba(74,158,219,0.15); color: #4A9EDB; }
+.cond-range.red  { background: rgba(239,68,68,0.15);  color: #EF4444; }
+.cond-body { font-size: 0.82rem; color: #9BAAB8; line-height: 1.65; margin-bottom: 12px; }
+.cond-body strong { color: #E8EDF5; }
+
+.symptom-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.symptom-chip { font-size: 0.7rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; border: 1px solid; }
+.chip-blue { background: rgba(74,158,219,0.1);  border-color: rgba(74,158,219,0.3); color: #7DC8FF; }
+.chip-red  { background: rgba(239,68,68,0.1);   border-color: rgba(239,68,68,0.3);  color: #FCA5A5; }
+
+.causes-label { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #5A6478; margin-bottom: 6px; }
+.cause-item { font-size: 0.78rem; color: #9BAAB8; padding: 5px 0; border-bottom: 1px solid #1E2536; line-height: 1.5; }
+.cause-item:last-child { border-bottom: none; }
+.cause-item strong { color: #C0C8D8; }
+
+/* NURSE BOX */
+.nurse-box {
+  background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2);
+  border-left: 4px solid #22C55E; border-radius: 10px;
+  padding: 14px 16px; margin-top: 12px;
+}
+.nurse-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #22C55E; margin-bottom: 8px; }
+.nurse-step { display: flex; gap: 9px; margin-bottom: 7px; align-items: flex-start; }
+.nurse-num {
+  min-width: 20px; height: 20px; border-radius: 50%;
+  background: rgba(34,197,94,0.2); color: #22C55E;
+  font-size: 0.65rem; font-weight: 800;
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px;
+}
+.nurse-text { font-size: 0.78rem; color: #9BAAB8; line-height: 1.5; }
+.nurse-text strong { color: #C0C8D8; }
+
+/* WARNING BOX */
+.warning-box {
+  background: rgba(239,68,68,0.08); border: 1px solid rgba(239,68,68,0.25);
+  border-left: 4px solid #EF4444; border-radius: 10px;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.warning-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #EF4444; margin-bottom: 8px; }
+.warning-text { font-size: 0.82rem; color: #C0C8D8; line-height: 1.65; }
+.warning-text strong { color: #FCA5A5; }
+
+/* K + pH LINK */
+.link-card {
+  background: #1A1520; border: 1px solid rgba(245,158,11,0.25);
+  border-left: 4px solid #F59E0B; border-radius: 12px;
+  padding: 16px 18px; margin-bottom: 10px;
+}
+.link-title { font-size: 0.88rem; font-weight: 800; color: #F59E0B; margin-bottom: 10px; }
+.link-row { display: flex; gap: 8px; margin-bottom: 8px; align-items: flex-start; }
+.link-arrow { font-size: 1rem; color: #F59E0B; flex-shrink: 0; width: 20px; text-align: center; }
+.link-text { font-size: 0.8rem; color: #C0B090; line-height: 1.5; }
+.link-text strong { color: #F0D080; }
+
+/* COMPARE TABLE */
+.compare-table { width: 100%; border-collapse: collapse; border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+.compare-table th { padding: 10px 14px; font-size: 0.75rem; font-weight: 700; text-align: left; }
+.compare-table th:nth-child(1) { background: #1E2536; color: #8A94A6; }
+.compare-table th:nth-child(2) { background: rgba(74,158,219,0.15);  color: #4A9EDB; }
+.compare-table th:nth-child(3) { background: rgba(239,68,68,0.15);   color: #EF4444; }
+.compare-table td { padding: 9px 14px; font-size: 0.78rem; border-bottom: 1px solid #2A3246; vertical-align: top; color: #9BAAB8; }
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr:nth-child(even) td { background: #161B26; }
+.compare-table tr:nth-child(odd)  td { background: #1A1F2E; }
+.compare-table td:first-child { color: #8A94A6; font-weight: 600; font-size: 0.75rem; }
+
+/* MEMORY */
+.memory-box {
+  background: rgba(168,85,247,0.07); border: 1px solid rgba(168,85,247,0.2);
+  border-left: 4px solid #A855F7; border-radius: 10px;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.memory-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #A855F7; margin-bottom: 8px; }
+.memory-text { font-size: 0.82rem; color: #C0B8D8; line-height: 1.7; }
+.memory-text strong { color: #E0C8FF; }
+
+/* NCLEX */
+.nclex-box {
+  background: rgba(239,68,68,0.07); border: 1px solid rgba(239,68,68,0.2);
+  border-left: 4px solid #EF4444; border-radius: 10px;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.nclex-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #EF4444; margin-bottom: 8px; }
+.nclex-item { font-size: 0.8rem; color: #C0C8D8; line-height: 1.6; margin-bottom: 6px; padding-left: 14px; position: relative; }
+.nclex-item::before { content: '★'; position: absolute; left: 0; color: #EF4444; font-size: 0.6rem; top: 4px; }
+.nclex-item strong { color: #FCA5A5; }
+
+/* NEXT */
+.next-up {
+  background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2);
+  border-left: 4px solid #22C55E; border-radius: 10px; padding: 14px 16px;
+}
+.next-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #22C55E; margin-bottom: 5px; }
+.next-text { font-size: 0.8rem; color: #9BAAB8; line-height: 1.55; }
+.next-text strong { color: #C0C8D8; }
+</style>
+</head>
+<body>
+
+<div class="back-bar">
+  <button class="back-btn" onclick="window.close(); history.back();">← Back to Notes</button>
+  <span class="back-bar-title">Foundation 3 of 8 — Potassium (K⁺)</span>
+</div>
+
+<div class="page">
+
+  <h1>⚡ Potassium (K⁺)</h1>
+  <p class="intro">Potassium is the electrolyte nurses are most careful about because even a small change from normal can stop the heart. Understanding it deeply could save someone's life.</p>
+
+  <div class="normal-badge">
+    <span class="nb-label">Normal range</span>
+    <span class="nb-value">3.5 – 5.0 mEq/L</span>
+  </div>
+  <p class="nb-note">Notice how narrow that range is compared to sodium (135–145). A potassium of 2.5 or 6.5 is a medical emergency. A sodium of 125 or 155 is serious but gives you more time. Potassium is less forgiving.</p>
+
+  <!-- WHERE K LIVES -->
+  <div class="sec">Where potassium actually lives</div>
+
+  <div class="where-visual">
+    <div class="where-box inside">
+      <div class="where-pct" style="color:#A855F7">98%</div>
+      <div class="where-label">Inside cells</div>
+      <div class="where-desc">Intracellular. This is the reservoir — a massive amount stored inside every cell in your body.</div>
+    </div>
+    <div class="where-box outside">
+      <div class="where-pct" style="color:#4A9EDB">2%</div>
+      <div class="where-label">In the blood</div>
+      <div class="where-desc">Extracellular. This tiny amount is what labs measure — and what controls heart rhythm.</div>
+    </div>
+  </div>
+
+  <div class="concept-card">
+    <span class="concept-icon">⚠️</span>
+    <div class="concept-title">Why that 2% matters so much</div>
+    <div class="concept-body">
+      Your lab result shows the K⁺ floating in the blood — just 2% of the total. But <strong>it's that 2% that directly controls how heart muscle cells fire</strong>. Even a tiny shift in that small pool causes massive electrical changes in the heart.<br><br>
+      The other 98% inside cells acts like a buffer. Potassium constantly moves in and out of cells based on pH changes, hormones, and medications. This movement is what makes K⁺ so unpredictable — <strong>the serum level you measure is a snapshot, and it can shift fast.</strong>
+    </div>
+  </div>
+
+  <!-- HOW K CONTROLS THE HEART -->
+  <div class="sec">How potassium controls the heart</div>
+
+  <div class="heart-card">
+    <div class="heart-title">The resting membrane potential — in plain English</div>
+    <div class="heart-body">
+      Think of a heart cell like a spring-loaded trap. At rest, the cell is negatively charged inside compared to outside. Potassium is the main ion responsible for maintaining that resting negative charge.<br><br>
+      When the heart is supposed to beat, the trap springs — the cell rapidly becomes positive (depolarization), contracts, then resets back to negative (repolarization).<br><br>
+      <strong>Too little K⁺ (hypokalemia)</strong> — the resting charge becomes too negative. The trap is too tightly wound. It becomes unstable and can fire randomly or incompletely.<br><br>
+      <strong>Too much K⁺ (hyperkalemia)</strong> — the resting charge becomes less negative. The trap is too loosely wound. It can't reset properly between beats, causing dangerous arrhythmias.<br><br>
+      Either way — <strong>wrong potassium = wrong heart rhythm</strong>.
+    </div>
+  </div>
+
+  <!-- EKG CHANGES -->
+  <div class="sec">What you see on the heart monitor</div>
+
+  <!-- LEGEND -->
+  <div class="concept-card" style="margin-bottom:14px;">
+    <div class="concept-title" style="font-size:0.88rem;margin-bottom:10px;">📖 Reading an EKG strip — the labels</div>
+    <div style="display:flex;flex-direction:column;gap:0;margin-bottom:14px;">
+      <!-- Labeled SVG -->
+      <svg viewBox="0 0 520 130" style="width:100%;height:auto;" xmlns="http://www.w3.org/2000/svg">
+        <!-- Grid lines -->
+        <rect width="520" height="130" fill="#0F1117" rx="6"/>
+        <line x1="0" y1="65" x2="520" y2="65" stroke="#2A3246" stroke-width="1"/>
+        <!-- Baseline -->
+        <polyline points="10,65 60,65 70,55 80,65 130,65 150,30 165,110 175,40 185,65 220,65 240,52 255,52 265,65 290,65 310,55 320,65 370,65 390,30 405,110 415,40 425,65 460,65 480,52 495,52 505,65 510,65"
+          fill="none" stroke="#22C55E" stroke-width="2.5" stroke-linejoin="round"/>
+        <!-- P wave label -->
+        <line x1="75" y1="50" x2="75" y2="20" stroke="#8A94A6" stroke-width="1" stroke-dasharray="3,2"/>
+        <text x="68" y="15" fill="#8A94A6" font-size="11" font-family="Segoe UI,Arial,sans-serif" font-weight="700">P</text>
+        <!-- QRS label -->
+        <line x1="165" y1="55" x2="165" y2="15" stroke="#8A94A6" stroke-width="1" stroke-dasharray="3,2"/>
+        <text x="148" y="12" fill="#8A94A6" font-size="11" font-family="Segoe UI,Arial,sans-serif" font-weight="700">QRS</text>
+        <!-- T wave label -->
+        <line x1="247" y1="48" x2="247" y2="18" stroke="#8A94A6" stroke-width="1" stroke-dasharray="3,2"/>
+        <text x="240" y="14" fill="#8A94A6" font-size="11" font-family="Segoe UI,Arial,sans-serif" font-weight="700">T</text>
+        <!-- Baseline label -->
+        <text x="12" y="80" fill="#5A6478" font-size="10" font-family="Segoe UI,Arial,sans-serif">baseline</text>
+        <!-- Bracket for PR interval -->
+        <line x1="70" y1="120" x2="150" y2="120" stroke="#5A6478" stroke-width="1"/>
+        <line x1="70" y1="116" x2="70" y2="124" stroke="#5A6478" stroke-width="1"/>
+        <line x1="150" y1="116" x2="150" y2="124" stroke="#5A6478" stroke-width="1"/>
+        <text x="85" y="130" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial,sans-serif">PR interval</text>
+      </svg>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <span style="min-width:32px;font-size:0.82rem;font-weight:800;color:#4A9EDB;background:rgba(74,158,219,0.12);border-radius:4px;padding:1px 6px;text-align:center;">P</span>
+        <span style="font-size:0.78rem;color:#9BAAB8;line-height:1.5;"><strong style="color:#C0C8D8;">P wave</strong> — the atria (upper chambers) contract to push blood into the ventricles. Small bump before the big spike.</span>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <span style="min-width:32px;font-size:0.78rem;font-weight:800;color:#22C55E;background:rgba(34,197,94,0.12);border-radius:4px;padding:1px 4px;text-align:center;">QRS</span>
+        <span style="font-size:0.78rem;color:#9BAAB8;line-height:1.5;"><strong style="color:#C0C8D8;">QRS complex</strong> — the ventricles (lower chambers) fire and pump blood to the body. The big spike you see on the monitor.</span>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <span style="min-width:32px;font-size:0.82rem;font-weight:800;color:#F59E0B;background:rgba(245,158,11,0.12);border-radius:4px;padding:1px 6px;text-align:center;">T</span>
+        <span style="font-size:0.78rem;color:#9BAAB8;line-height:1.5;"><strong style="color:#C0C8D8;">T wave</strong> — the ventricles reset (repolarize) ready for the next beat. The small bump after the spike. <strong style="color:#F59E0B;">This is the one that changes with potassium.</strong></span>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <span style="min-width:32px;font-size:0.78rem;font-weight:800;color:#8A94A6;background:rgba(138,148,166,0.12);border-radius:4px;padding:1px 2px;text-align:center;">PR</span>
+        <span style="font-size:0.78rem;color:#9BAAB8;line-height:1.5;"><strong style="color:#C0C8D8;">PR interval</strong> — the pause between atrial and ventricular firing. Widens in hyperkalemia as conduction slows.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NORMAL EKG -->
+  <div class="ekg-card">
+    <div class="ekg-label normal">✓ Normal K⁺ (3.5–5.0 mEq/L)</div>
+    <svg viewBox="0 0 520 90" style="width:100%;height:auto;margin:8px 0;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="520" height="90" fill="#0A1A0A" rx="6"/>
+      <line x1="0" y1="50" x2="520" y2="50" stroke="#1A3A1A" stroke-width="1"/>
+      <polyline points="0,50 40,50 52,42 62,50 100,50 115,18 125,80 132,28 140,50 170,50 188,38 200,38 210,50 240,50 252,42 262,50 300,50 315,18 325,80 332,28 340,50 370,50 388,38 400,38 410,50 440,50 452,42 462,50 500,50 520,50"
+        fill="none" stroke="#22C55E" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <!-- Labels -->
+      <text x="54" y="36" fill="#22C55E" font-size="9" font-family="Segoe UI,Arial" opacity="0.8">P</text>
+      <text x="118" y="14" fill="#22C55E" font-size="9" font-family="Segoe UI,Arial" opacity="0.8">QRS</text>
+      <text x="192" y="32" fill="#22C55E" font-size="9" font-family="Segoe UI,Arial" opacity="0.8">T</text>
+    </svg>
+    <div class="ekg-desc">Normal rounded T wave after every QRS. The heart fires, pumps, and resets cleanly every cycle. P → QRS → T — steady and regular.</div>
+  </div>
+
+  <!-- HYPOKALEMIA EKG -->
+  <div class="ekg-card danger-low">
+    <div class="ekg-label low">↓ Low K⁺ — Flat T wave + U wave appears</div>
+    <svg viewBox="0 0 520 90" style="width:100%;height:auto;margin:8px 0;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="520" height="90" fill="#0A1015" rx="6"/>
+      <line x1="0" y1="50" x2="520" y2="50" stroke="#1A2040" stroke-width="1"/>
+      <!-- Flat T wave + U wave pattern -->
+      <polyline points="0,50 40,50 52,42 62,50 100,50 115,18 125,80 132,28 140,50 165,50 172,47 180,47 188,50 202,44 212,44 220,50 250,50 262,42 272,50 310,50 325,18 335,80 342,28 350,50 375,50 382,47 390,47 398,50 412,44 422,44 430,50 460,50 472,42 482,50 520,50"
+        fill="none" stroke="#4A9EDB" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <!-- Labels -->
+      <text x="54" y="36" fill="#4A9EDB" font-size="9" font-family="Segoe UI,Arial" opacity="0.9">P</text>
+      <text x="118" y="14" fill="#4A9EDB" font-size="9" font-family="Segoe UI,Arial" opacity="0.9">QRS</text>
+      <text x="168" y="42" fill="#4A9EDB" font-size="9" font-family="Segoe UI,Arial" opacity="0.9">flat T</text>
+      <text x="200" y="38" fill="#4A9EDB" font-size="9" font-family="Segoe UI,Arial" opacity="0.9">U</text>
+    </svg>
+    <div class="ekg-desc"><strong>T wave flattens</strong> — the ventricle is struggling to repolarize because K⁺ is needed for that reset. <strong>U wave appears</strong> — a small extra bump after the T, almost like an echo. Classic sign of hypokalemia. Risk of V-fib — the heart can start quivering instead of pumping.</div>
+  </div>
+
+  <!-- HYPERKALEMIA EKG -->
+  <div class="ekg-card danger-high">
+    <div class="ekg-label high">↑ High K⁺ — Peaked T waves → wide QRS → arrest</div>
+    <svg viewBox="0 0 520 100" style="width:100%;height:auto;margin:8px 0;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="520" height="100" fill="#150A0A" rx="6"/>
+      <line x1="0" y1="60" x2="520" y2="60" stroke="#3A1A1A" stroke-width="1"/>
+      <!-- Peaked T waves, wide QRS -->
+      <polyline points="0,60 35,60 47,52 57,60 90,60 102,30 115,90 120,40 128,60 148,60 160,10 172,60 210,60 222,52 232,60 265,60 277,30 290,90 295,40 303,60 323,60 335,10 347,60 385,60 397,52 407,60 440,60 452,30 465,90 470,40 478,60 498,60 510,10 520,55"
+        fill="none" stroke="#EF4444" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <!-- Labels -->
+      <text x="49" y="46" fill="#EF4444" font-size="9" font-family="Segoe UI,Arial" opacity="0.9">P</text>
+      <text x="98" y="26" fill="#EF4444" font-size="9" font-family="Segoe UI,Arial" opacity="0.9">QRS</text>
+      <text x="156" y="8" fill="#EF4444" font-size="9" font-family="Segoe UI,Arial" font-weight="800" opacity="0.9">PEAKED T ⚠</text>
+      <!-- Wide QRS bracket -->
+      <line x1="102" y1="95" x2="128" y2="95" stroke="#EF4444" stroke-width="1" opacity="0.5"/>
+      <text x="105" y="103" fill="#EF4444" font-size="8" font-family="Segoe UI,Arial" opacity="0.6">wider</text>
+    </svg>
+    <div class="ekg-desc"><strong>Tall, peaked, tent-shaped T waves</strong> are the first warning sign — the repolarization is too fast and too strong. As K⁺ climbs higher: <strong>PR interval lengthens → QRS widens</strong> (you can see it getting broader) → eventually forms a sine wave → cardiac arrest. Each change is a step closer to the edge. This is a progressive emergency — act at peaked T waves, do not wait.</div>
+  </div>
+
+  <!-- HYPOKALEMIA -->
+  <div class="sec">When potassium is too low — Hypokalemia</div>
+
+  <div class="condition-card low">
+    <div class="cond-top">
+      <span class="cond-icon">📉</span>
+      <div>
+        <div class="cond-name blue">Hypokalemia</div>
+        <span class="cond-range blue">K⁺ below 3.5 mEq/L</span>
+      </div>
+    </div>
+    <div class="cond-body">
+      Low potassium is extremely common in hospitalized patients — especially anyone on diuretics, vomiting, or not eating. The heart and muscles are the first to show it. <strong>The lower K⁺ drops, the more dangerous the rhythm becomes.</strong> Below 2.5 is a cardiac emergency.
+    </div>
+    <div class="symptom-row">
+      <span class="symptom-chip chip-blue">Muscle weakness</span>
+      <span class="symptom-chip chip-blue">Leg cramps</span>
+      <span class="symptom-chip chip-blue">Fatigue</span>
+      <span class="symptom-chip chip-blue">Constipation</span>
+      <span class="symptom-chip chip-blue">Flat T waves on EKG</span>
+      <span class="symptom-chip chip-blue">U waves on EKG</span>
+      <span class="symptom-chip chip-blue">V-fib risk</span>
+    </div>
+    <div class="causes-label">Common causes</div>
+    <div class="cause-item"><strong>Furosemide (Lasix) and other loop diuretics</strong> — most common cause in the hospital. The kidneys dump K⁺ into the urine along with the fluid</div>
+    <div class="cause-item"><strong>Vomiting and nasogastric suction</strong> — losing gastric contents removes potassium</div>
+    <div class="cause-item"><strong>Diarrhea</strong> — large amounts of K⁺ lost through the GI tract</div>
+    <div class="cause-item"><strong>High aldosterone</strong> — aldosterone causes the kidney to excrete K⁺ in exchange for keeping Na⁺</div>
+    <div class="cause-item"><strong>Not eating (NPO, poor intake)</strong> — not enough potassium coming in</div>
+    <div class="cause-item"><strong>Alkalosis</strong> — when blood pH rises, K⁺ shifts into cells, dropping the serum level</div>
+    <div class="nurse-box">
+      <div class="nurse-label">🩺 What the nurse does</div>
+      <div class="nurse-step"><div class="nurse-num">1</div><div class="nurse-text"><strong>Replace potassium</strong> — oral KCl if patient can swallow and gut works. IV KCl if severe or NPO. Always check the order for rate and concentration</div></div>
+      <div class="nurse-step"><div class="nurse-num">2</div><div class="nurse-text"><strong>NEVER give IV KCl as a bolus</strong> — it must always be diluted and infused slowly. Direct injection causes immediate cardiac arrest. This is one of the most critical safety rules in nursing</div></div>
+      <div class="nurse-step"><div class="nurse-num">3</div><div class="nurse-text"><strong>Check magnesium</strong> — low magnesium makes hypokalemia impossible to correct. You have to fix Mg²⁺ first or the K⁺ will not stay up no matter how much you give</div></div>
+      <div class="nurse-step"><div class="nurse-num">4</div><div class="nurse-text"><strong>Monitor the heart</strong> — continuous cardiac monitoring. Watch for T wave changes and dangerous rhythms</div></div>
+      <div class="nurse-step"><div class="nurse-num">5</div><div class="nurse-text"><strong>Hold or reduce the diuretic</strong> — if furosemide caused the problem, discuss with the provider whether to continue it</div></div>
+    </div>
+  </div>
+
+  <!-- HYPERKALEMIA -->
+  <div class="sec">When potassium is too high — Hyperkalemia</div>
+
+  <div class="condition-card high">
+    <div class="cond-top">
+      <span class="cond-icon">📈</span>
+      <div>
+        <div class="cond-name red">Hyperkalemia</div>
+        <span class="cond-range red">K⁺ above 5.0 mEq/L</span>
+      </div>
+    </div>
+    <div class="cond-body">
+      High potassium is less common than low potassium but far more immediately dangerous. It can cause cardiac arrest with very little warning. <strong>A K⁺ of 6.0 or above is a medical emergency — you notify the provider immediately and prepare to act fast.</strong>
+    </div>
+    <div class="symptom-row">
+      <span class="symptom-chip chip-red">Muscle weakness</span>
+      <span class="symptom-chip chip-red">Tingling / numbness</span>
+      <span class="symptom-chip chip-red">Nausea</span>
+      <span class="symptom-chip chip-red">Peaked T waves</span>
+      <span class="symptom-chip chip-red">Wide QRS</span>
+      <span class="symptom-chip chip-red">Cardiac arrest</span>
+    </div>
+    <div class="causes-label">Common causes</div>
+    <div class="cause-item"><strong>Kidney failure (CKD / AKI)</strong> — kidneys can't excrete K⁺, so it builds up in the blood</div>
+    <div class="cause-item"><strong>ACE inhibitors and ARBs</strong> — reduce aldosterone → less K⁺ excreted → K⁺ rises</div>
+    <div class="cause-item"><strong>Potassium-sparing diuretics (spironolactone)</strong> — blocks aldosterone, retains K⁺</div>
+    <div class="cause-item"><strong>Acidosis</strong> — when blood pH drops, K⁺ shifts OUT of cells into the blood</div>
+    <div class="cause-item"><strong>Tissue destruction (burns, crush injury, hemolysis)</strong> — cells rupture and dump K⁺ into the bloodstream</div>
+    <div class="cause-item"><strong>Too much IV potassium</strong> — given too fast or too concentrated</div>
+    <div class="nurse-box">
+      <div class="nurse-label">🩺 What the nurse does — in order of priority</div>
+      <div class="nurse-step"><div class="nurse-num">1</div><div class="nurse-text"><strong>Calcium gluconate IV first</strong> — protects the heart immediately by stabilizing the cardiac membrane. Does NOT lower K⁺ — it just buys time. This is always the first step when K⁺ is dangerously high and EKG changes are present</div></div>
+      <div class="nurse-step"><div class="nurse-num">2</div><div class="nurse-text"><strong>Insulin + dextrose IV</strong> — insulin drives K⁺ from the blood into cells, lowering the serum level fast. Dextrose prevents hypoglycemia. Effect lasts 4–6 hours</div></div>
+      <div class="nurse-step"><div class="nurse-num">3</div><div class="nurse-text"><strong>Sodium bicarbonate</strong> — if the patient is also acidotic, correcting the pH shifts K⁺ back into cells</div></div>
+      <div class="nurse-step"><div class="nurse-num">4</div><div class="nurse-text"><strong>Kayexalate or patiromer</strong> — binds K⁺ in the gut so it's excreted in stool. Slower acting — used for less urgent situations</div></div>
+      <div class="nurse-step"><div class="nurse-num">5</div><div class="nurse-text"><strong>Dialysis</strong> — the definitive fix when kidneys can't excrete K⁺ on their own. Used in kidney failure</div></div>
+    </div>
+  </div>
+
+  <!-- K AND pH -->
+  <div class="sec">The potassium-pH connection</div>
+
+  <div class="link-card">
+    <div class="link-title">⚠️ K⁺ and pH always move in opposite directions</div>
+    <div class="link-row"><div class="link-arrow">↓</div><div class="link-text"><strong>Acidosis (low pH)</strong> → H⁺ ions move INTO cells → K⁺ gets pushed OUT of cells → serum K⁺ rises → <strong>hyperkalemia</strong></div></div>
+    <div class="link-row"><div class="link-arrow">↑</div><div class="link-text"><strong>Alkalosis (high pH)</strong> → H⁺ ions move OUT of cells → K⁺ gets pulled INTO cells → serum K⁺ drops → <strong>hypokalemia</strong></div></div>
+    <div style="margin-top:12px;font-size:0.78rem;color:#C0A870;line-height:1.6;">
+      This is why <strong>DKA patients look like they have high K⁺</strong> — the acidosis pushed K⁺ out of cells. But when you give insulin and fix the acidosis, K⁺ rushes back into cells and the serum level crashes. If you didn't replace K⁺ proactively, the patient can go into fatal hypokalemia right after treatment. This is one of the trickiest clinical situations in nursing.
+    </div>
+  </div>
+
+  <!-- WARNING -->
+  <div class="warning-box">
+    <div class="warning-label">⛔ The most important safety rule in nursing</div>
+    <div class="warning-text">
+      <strong>Never give potassium chloride (KCl) as an IV push or bolus.</strong> Ever. Under any circumstances.<br><br>
+      Potassium injected directly into the bloodstream causes immediate cardiac arrest. It is one of the medications on the high-alert list in every hospital. KCl must always be diluted in IV fluid and infused slowly over hours through a pump with a nurse monitoring. Many hospitals require two nurses to verify IV potassium orders before they are given.
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <div class="sec">Side by side — hypo vs hyperkalemia</div>
+  <table class="compare-table">
+    <tr>
+      <th></th>
+      <th>⬇ Hypokalemia (low)</th>
+      <th>⬆ Hyperkalemia (high)</th>
+    </tr>
+    <tr><td>K⁺ level</td><td>Below 3.5 mEq/L</td><td>Above 5.0 mEq/L</td></tr>
+    <tr><td>Most common cause</td><td>Furosemide (Lasix)</td><td>Kidney failure</td></tr>
+    <tr><td>pH connection</td><td>Alkalosis shifts K⁺ into cells</td><td>Acidosis shifts K⁺ out of cells</td></tr>
+    <tr><td>EKG changes</td><td>Flat T waves, U waves</td><td>Peaked T waves, wide QRS</td></tr>
+    <tr><td>Immediate risk</td><td>V-fib</td><td>Cardiac arrest</td></tr>
+    <tr><td>First intervention</td><td>KCl supplement (slow)</td><td>Calcium gluconate (protect heart)</td></tr>
+    <tr><td>What NOT to do</td><td>Never give KCl as a bolus</td><td>Never give more K⁺</td></tr>
+    <tr><td>Check this too</td><td>Magnesium — must fix first</td><td>pH — treat acidosis helps</td></tr>
+  </table>
+
+  <!-- MEMORY -->
+  <div class="memory-box">
+    <div class="memory-label">🧠 Memory tricks</div>
+    <div class="memory-text">
+      <strong>"Low K⁺ = U waves and V-fib. High K⁺ = peaked T and arrest."</strong> — these EKG patterns are high-yield NCLEX.<br><br>
+      <strong>"Calcium first, then insulin, then dig it out"</strong> — the order of hyperkalemia treatment: protect the heart, shift K⁺ into cells, remove it from the body.<br><br>
+      <strong>"Can't fix K⁺ without fixing Mg²⁺"</strong> — if magnesium is low, potassium won't stay in the blood no matter how much you give. Always check both.<br><br>
+      <strong>"Acidosis pushes K⁺ out, Alkalosis pulls K⁺ in"</strong> — pH and K⁺ always move opposite. This comes up constantly.
+    </div>
+  </div>
+
+  <!-- NCLEX -->
+  <div class="nclex-box">
+    <div class="nclex-label">🎯 NCLEX Priority — Potassium</div>
+    <div class="nclex-item"><strong>Never give IV KCl as a bolus</strong> — this is THE most tested potassium safety rule. Always diluted, always slow, always on a pump.</div>
+    <div class="nclex-item"><strong>Calcium gluconate is always first in hyperkalemia</strong> — it does not lower K⁺, it protects the heart while you prepare treatment.</div>
+    <div class="nclex-item"><strong>Check magnesium before and during K⁺ replacement</strong> — hypomagnesemia makes hypokalemia refractory (won't correct).</div>
+    <div class="nclex-item"><strong>DKA K⁺ trap</strong> — K⁺ looks high before treatment but crashes after insulin. Always replace K⁺ when treating DKA.</div>
+    <div class="nclex-item"><strong>Furosemide patients need K⁺ monitoring every shift</strong> — most common cause of hypokalemia in the hospital.</div>
+    <div class="nclex-item"><strong>Peaked T waves on the monitor = call the provider NOW</strong> — do not wait for symptoms to appear. Arrest can come with little warning.</div>
+  </div>
+
+  <div class="next-up">
+    <div class="next-label">Up next — Foundation 4 of 8</div>
+    <div class="next-text"><strong>The Kidneys</strong> — how they regulate everything you just learned. Sodium, potassium, fluid volume, acid-base balance — the kidneys are in charge of all of it. Understanding what they do makes every other concept click into place.</div>
+  </div>
+
+</div>
+</body>
+</html>

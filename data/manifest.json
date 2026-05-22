@@ -386,6 +386,37 @@
         "electrolytes",
         "NCLEX"
       ]
+    },
+    {
+      "id": "anatomy-note-foundation-03",
+      "file": "03_potassium.html",
+      "class": "anatomy",
+      "type": "note",
+      "category": "Fluid & Electrolytes \u2014 Foundation",
+      "title": "3 of 8 \u2014 Potassium (K\u207a)",
+      "description": "The heart electrolyte. How K\u207a controls heart rhythm, EKG changes in hypo vs hyperkalemia, causes, nurse interventions, and the critical K\u207a-pH connection.",
+      "topics": [
+        "potassium",
+        "hypokalemia",
+        "hyperkalemia",
+        "EKG",
+        "cardiac arrhythmia",
+        "furosemide",
+        "calcium gluconate",
+        "insulin dextrose",
+        "magnesium",
+        "DKA",
+        "pH",
+        "acidosis",
+        "alkalosis",
+        "KCl"
+      ],
+      "tags": [
+        "foundation",
+        "potassium",
+        "cardiac",
+        "NCLEX"
+      ]
     }
   ],
   "version": "1.4.0"
