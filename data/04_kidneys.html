@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Kidneys</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #0F1117; color: #E8EDF5;
+  font-size: 15px; line-height: 1.6; padding: 0 0 48px;
+}
+.back-bar {
+  position: sticky; top: 0; z-index: 100;
+  background: #161B26; border-bottom: 1px solid #2A3246;
+  padding: 12px 20px; display: flex; align-items: center; gap: 12px;
+}
+.back-btn {
+  background: #1E2536; border: 1px solid #2A3246; color: #8A94A6;
+  font-size: 0.82rem; font-weight: 600; padding: 7px 14px;
+  border-radius: 8px; cursor: pointer; font-family: inherit; transition: all 0.15s;
+}
+.back-btn:hover { color: #E8EDF5; border-color: #38BDF8; }
+.back-bar-title { font-size: 0.88rem; font-weight: 700; color: #8A94A6; }
+
+.page { max-width: 560px; margin: 0 auto; padding: 28px 20px 0; }
+h1 { font-size: 1.4rem; font-weight: 800; color: #38BDF8; margin-bottom: 6px; }
+.intro { font-size: 0.88rem; color: #8A94A6; margin-bottom: 28px; line-height: 1.6; }
+
+.sec {
+  font-size: 0.65rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 1.5px; color: #5A6478; margin: 28px 0 12px;
+}
+
+/* CARDS */
+.card {
+  background: #1E2536; border: 1px solid #2A3246;
+  border-radius: 12px; padding: 18px 20px; margin-bottom: 10px;
+}
+.card-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+.card-title { font-size: 0.95rem; font-weight: 800; color: #E8EDF5; margin-bottom: 8px; }
+.card-body { font-size: 0.83rem; color: #9BAAB8; line-height: 1.7; }
+.card-body strong { color: #E8EDF5; }
+
+/* NEPHRON DIAGRAM */
+.nephron-wrap {
+  background: #161B26; border: 1px solid #2A3246;
+  border-radius: 12px; padding: 20px; margin-bottom: 10px;
+}
+.nephron-title { font-size: 0.82rem; font-weight: 800; color: #38BDF8; margin-bottom: 14px; }
+
+/* FUNCTION STEPS */
+.fn-step {
+  display: flex; gap: 14px; align-items: flex-start;
+  margin-bottom: 12px; padding-bottom: 12px;
+  border-bottom: 1px solid #2A3246;
+}
+.fn-step:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+.fn-num {
+  min-width: 32px; height: 32px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.8rem; font-weight: 800; flex-shrink: 0;
+}
+.fn-content { flex: 1; }
+.fn-title { font-size: 0.85rem; font-weight: 800; margin-bottom: 3px; }
+.fn-body  { font-size: 0.78rem; color: #9BAAB8; line-height: 1.55; }
+.fn-body strong { color: #C0C8D8; }
+.fn-tag {
+  display: inline-block; font-size: 0.6rem; font-weight: 700;
+  padding: 2px 7px; border-radius: 4px; margin-left: 6px;
+  vertical-align: middle;
+}
+
+/* WHAT URINE TELLS YOU */
+.urine-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.urine-card {
+  border-radius: 10px; padding: 12px 14px; border: 1px solid;
+}
+.urine-card.dark {
+  background: rgba(245,158,11,0.07); border-color: rgba(245,158,11,0.25);
+}
+.urine-card.pale {
+  background: rgba(74,158,219,0.06); border-color: rgba(74,158,219,0.2);
+}
+.urine-emoji { font-size: 1.6rem; margin-bottom: 6px; display: block; }
+.urine-label { font-size: 0.75rem; font-weight: 800; margin-bottom: 4px; }
+.urine-label.amber { color: #F59E0B; }
+.urine-label.pale  { color: #4A9EDB; }
+.urine-means { font-size: 0.72rem; color: #9BAAB8; line-height: 1.5; }
+.urine-means strong { color: #C0C8D8; }
+
+/* GFR VISUAL */
+.gfr-bar-wrap { margin: 12px 0; }
+.gfr-row { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.gfr-label { font-size: 0.72rem; font-weight: 700; min-width: 100px; }
+.gfr-bar-bg { flex: 1; height: 10px; background: #2A3246; border-radius: 5px; overflow: hidden; }
+.gfr-bar-fill { height: 100%; border-radius: 5px; }
+.gfr-val { font-size: 0.7rem; font-weight: 700; min-width: 80px; text-align: right; }
+
+/* WHAT KIDNEYS REGULATE */
+.regulate-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 10px; }
+.reg-card {
+  background: #1E2536; border: 1px solid #2A3246;
+  border-radius: 10px; padding: 12px 14px; border-top: 3px solid;
+}
+.reg-icon  { font-size: 1.3rem; margin-bottom: 5px; display: block; }
+.reg-title { font-size: 0.78rem; font-weight: 800; margin-bottom: 4px; }
+.reg-body  { font-size: 0.7rem; color: #9BAAB8; line-height: 1.5; }
+.reg-body strong { color: #C0C8D8; }
+
+/* WHEN KIDNEYS FAIL */
+.fail-cascade {
+  display: flex; flex-direction: column; gap: 0; margin-bottom: 10px;
+}
+.fail-step {
+  display: flex; gap: 12px; align-items: flex-start;
+  background: #1E2536; border: 1px solid #2A3246;
+  padding: 12px 14px; position: relative;
+}
+.fail-step:first-child { border-radius: 10px 10px 0 0; }
+.fail-step:last-child  { border-radius: 0 0 10px 10px; }
+.fail-step:not(:last-child) { border-bottom: none; }
+.fail-icon  { font-size: 1.2rem; flex-shrink: 0; margin-top: 1px; }
+.fail-title { font-size: 0.8rem; font-weight: 800; color: #EF4444; margin-bottom: 2px; }
+.fail-body  { font-size: 0.75rem; color: #9BAAB8; line-height: 1.5; }
+.fail-body strong { color: #C0C8D8; }
+
+/* FLUID BALANCE */
+.balance-card {
+  background: #1A2030; border: 1px solid #2A3246;
+  border-left: 4px solid #38BDF8; border-radius: 12px;
+  padding: 16px 18px; margin-bottom: 10px;
+}
+.balance-title { font-size: 0.85rem; font-weight: 800; color: #38BDF8; margin-bottom: 10px; }
+.balance-row {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 6px 0; border-bottom: 1px solid #2A3246; font-size: 0.78rem;
+}
+.balance-row:last-child { border-bottom: none; }
+.balance-in  { color: #22C55E; font-weight: 600; }
+.balance-out { color: #EF4444; font-weight: 600; }
+.balance-neutral { color: #9BAAB8; }
+
+/* CONNECT BOX */
+.connect-box {
+  background: rgba(56,189,248,0.06); border: 1px solid rgba(56,189,248,0.2);
+  border-left: 4px solid #38BDF8; border-radius: 10px;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.connect-title { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #38BDF8; margin-bottom: 10px; }
+.connect-item { display: flex; gap: 9px; margin-bottom: 8px; align-items: flex-start; }
+.connect-dot {
+  min-width: 8px; height: 8px; border-radius: 50%;
+  background: #38BDF8; flex-shrink: 0; margin-top: 6px;
+}
+.connect-text { font-size: 0.8rem; color: #C0D8E8; line-height: 1.5; }
+.connect-text strong { color: #E8EDF5; }
+
+/* NCLEX */
+.nclex-box {
+  background: rgba(239,68,68,0.07); border: 1px solid rgba(239,68,68,0.2);
+  border-left: 4px solid #EF4444; border-radius: 10px;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.nclex-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #EF4444; margin-bottom: 8px; }
+.nclex-item { font-size: 0.8rem; color: #C0C8D8; line-height: 1.6; margin-bottom: 6px; padding-left: 14px; position: relative; }
+.nclex-item::before { content: '★'; position: absolute; left: 0; color: #EF4444; font-size: 0.6rem; top: 4px; }
+.nclex-item strong { color: #FCA5A5; }
+
+/* MEMORY */
+.memory-box {
+  background: rgba(56,189,248,0.06); border: 1px solid rgba(56,189,248,0.18);
+  border-left: 4px solid #38BDF8; border-radius: 10px;
+  padding: 14px 16px; margin-bottom: 10px;
+}
+.memory-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #38BDF8; margin-bottom: 8px; }
+.memory-text { font-size: 0.82rem; color: #B0D0E0; line-height: 1.7; }
+.memory-text strong { color: #E0F0FF; }
+
+/* NEXT */
+.next-up {
+  background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2);
+  border-left: 4px solid #22C55E; border-radius: 10px; padding: 14px 16px;
+}
+.next-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #22C55E; margin-bottom: 5px; }
+.next-text { font-size: 0.8rem; color: #9BAAB8; line-height: 1.55; }
+.next-text strong { color: #C0C8D8; }
+</style>
+</head>
+<body>
+
+<div class="back-bar">
+  <button class="back-btn" onclick="window.close(); history.back();">← Back to Notes</button>
+  <span class="back-bar-title">Foundation 4 of 8 — The Kidneys</span>
+</div>
+
+<div class="page">
+
+  <h1>🫘 The Kidneys</h1>
+  <p class="intro">The kidneys are the master regulators of everything you learned in notes 1–3. Sodium, potassium, fluid volume, acid-base balance — the kidneys control all of it, every second of every day. Understanding what they do makes every other concept click into place.</p>
+
+  <!-- THE BIG PICTURE -->
+  <div class="sec">What the kidneys actually do</div>
+
+  <div class="card">
+    <span class="card-icon">🏭</span>
+    <div class="card-title">The kidneys are a 24-hour filtration and fine-tuning factory</div>
+    <div class="card-body">
+      Your kidneys filter your <strong>entire blood volume about 60 times every day</strong> — roughly once every 25 minutes. That's about 180 liters of fluid filtered per day, but only 1–2 liters leaves as urine. The rest is carefully reclaimed.<br><br>
+      Think of it like a coffee filter — blood goes in, waste and excess gets removed, and everything the body still needs gets reabsorbed back into the bloodstream. But unlike a coffee filter, <strong>the kidneys actively decide what to keep and what to throw out based on what the body needs right now.</strong><br><br>
+      That decision changes every minute. Blood pressure too high? Kidneys dump more sodium and water into urine. Potassium getting too high? Kidneys excrete more K⁺. Blood getting too acidic? Kidneys excrete acid and retain bicarbonate. This is why kidney failure is so catastrophic — every system breaks at once.
+    </div>
+  </div>
+
+  <!-- THE NEPHRON -->
+  <div class="sec">The nephron — the kidney's working unit</div>
+
+  <div class="nephron-wrap">
+    <div class="nephron-title">Each kidney contains about 1 million nephrons — tiny filtering tubes</div>
+
+    <svg viewBox="0 0 520 340" style="width:100%;height:auto;margin-bottom:16px;" xmlns="http://www.w3.org/2000/svg">
+      <rect width="520" height="340" fill="#0F1117" rx="8"/>
+
+      <!-- Glomerulus circle -->
+      <circle cx="120" cy="80" r="38" fill="none" stroke="#38BDF8" stroke-width="2.5"/>
+      <circle cx="120" cy="80" r="24" fill="rgba(56,189,248,0.15)" stroke="#38BDF8" stroke-width="1.5" stroke-dasharray="4,2"/>
+      <text x="120" y="76" text-anchor="middle" fill="#38BDF8" font-size="10" font-family="Segoe UI,Arial" font-weight="700">Bowman's</text>
+      <text x="120" y="88" text-anchor="middle" fill="#38BDF8" font-size="10" font-family="Segoe UI,Arial" font-weight="700">Capsule</text>
+
+      <!-- Arrow from glomerulus right -->
+      <text x="60" y="35" text-anchor="middle" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">Blood in</text>
+      <line x1="60" y1="42" x2="90" y2="62" stroke="#5A6478" stroke-width="1.5" marker-end="url(#arr)"/>
+
+      <!-- PCT tube going right -->
+      <path d="M158,70 Q200,50 240,70 Q280,90 240,110 Q200,130 240,150" fill="none" stroke="#22C55E" stroke-width="3" stroke-linecap="round"/>
+      <text x="270" y="90" fill="#22C55E" font-size="10" font-family="Segoe UI,Arial" font-weight="700">Proximal</text>
+      <text x="270" y="102" fill="#22C55E" font-size="10" font-family="Segoe UI,Arial" font-weight="700">Convoluted</text>
+      <text x="270" y="114" fill="#22C55E" font-size="10" font-family="Segoe UI,Arial" font-weight="700">Tubule (PCT)</text>
+      <text x="270" y="128" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">Most reabsorption</text>
+      <text x="270" y="140" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">happens here</text>
+
+      <!-- Loop of Henle going down -->
+      <path d="M240,150 Q230,200 220,240 Q215,270 220,290 Q230,310 250,310 Q270,310 280,290 Q285,270 280,240 Q270,200 260,150" fill="none" stroke="#A855F7" stroke-width="3" stroke-linecap="round"/>
+      <text x="310" y="240" fill="#A855F7" font-size="10" font-family="Segoe UI,Arial" font-weight="700">Loop of</text>
+      <text x="310" y="252" fill="#A855F7" font-size="10" font-family="Segoe UI,Arial" font-weight="700">Henle</text>
+      <text x="310" y="268" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">Concentrates</text>
+      <text x="310" y="280" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">or dilutes urine.</text>
+      <text x="310" y="292" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">Where Lasix acts.</text>
+
+      <!-- DCT going up-left -->
+      <path d="M260,150 Q240,130 200,140 Q160,150 140,140 Q110,128 90,140" fill="none" stroke="#F59E0B" stroke-width="3" stroke-linecap="round"/>
+      <text x="50" y="155" fill="#F59E0B" font-size="10" font-family="Segoe UI,Arial" font-weight="700">DCT</text>
+      <text x="22" y="168" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">Aldosterone</text>
+      <text x="22" y="180" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">acts here —</text>
+      <text x="22" y="192" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">Na⁺/K⁺ swap</text>
+
+      <!-- Collecting duct going down -->
+      <line x1="90" y1="140" x2="90" y2="310" stroke="#EF4444" stroke-width="3" stroke-linecap="round"/>
+      <text x="22" y="230" fill="#EF4444" font-size="10" font-family="Segoe UI,Arial" font-weight="700">Collecting</text>
+      <text x="22" y="242" fill="#EF4444" font-size="10" font-family="Segoe UI,Arial" font-weight="700">Duct</text>
+      <text x="22" y="258" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">ADH acts here —</text>
+      <text x="22" y="270" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">water reabsorption</text>
+
+      <!-- Urine arrow out -->
+      <text x="90" y="328" text-anchor="middle" fill="#5A6478" font-size="9" font-family="Segoe UI,Arial">→ Urine out</text>
+
+      <!-- Arrow markers -->
+      <defs>
+        <marker id="arr" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+          <path d="M0,0 L6,3 L0,6 Z" fill="#5A6478"/>
+        </marker>
+      </defs>
+    </svg>
+
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <span style="min-width:12px;height:12px;border-radius:50%;background:#38BDF8;flex-shrink:0;margin-top:4px;display:inline-block;"></span>
+        <span style="font-size:0.76rem;color:#9BAAB8;line-height:1.5;"><strong style="color:#38BDF8;">Bowman's Capsule / Glomerulus</strong> — blood is pushed under pressure through tiny capillaries. Water, electrolytes, glucose, and waste all filter out. Large proteins and blood cells stay in the blood.</span>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <span style="min-width:12px;height:12px;border-radius:50%;background:#22C55E;flex-shrink:0;margin-top:4px;display:inline-block;"></span>
+        <span style="font-size:0.76rem;color:#9BAAB8;line-height:1.5;"><strong style="color:#22C55E;">Proximal Convoluted Tubule (PCT)</strong> — about 65% of filtered sodium, water, glucose, and bicarbonate is reabsorbed here. Almost all glucose is reclaimed (unless blood glucose is too high, like in diabetes).</span>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <span style="min-width:12px;height:12px;border-radius:50%;background:#A855F7;flex-shrink:0;margin-top:4px;display:inline-block;"></span>
+        <span style="font-size:0.76rem;color:#9BAAB8;line-height:1.5;"><strong style="color:#A855F7;">Loop of Henle</strong> — creates a concentration gradient that determines how concentrated the final urine will be. The descending limb allows water out; the ascending limb pumps sodium out. <strong style="color:#C0C8D8;">This is exactly where furosemide (Lasix) blocks sodium reabsorption</strong> — which is why it's the most powerful diuretic.</span>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <span style="min-width:12px;height:12px;border-radius:50%;background:#F59E0B;flex-shrink:0;margin-top:4px;display:inline-block;"></span>
+        <span style="font-size:0.76rem;color:#9BAAB8;line-height:1.5;"><strong style="color:#F59E0B;">Distal Convoluted Tubule (DCT)</strong> — fine-tuning happens here. <strong style="color:#C0C8D8;">Aldosterone acts on this segment</strong> — it tells the cells here to swap sodium in for potassium out. Keep Na⁺, dump K⁺.</span>
+      </div>
+      <div style="display:flex;gap:10px;align-items:flex-start;">
+        <span style="min-width:12px;height:12px;border-radius:50%;background:#EF4444;flex-shrink:0;margin-top:4px;display:inline-block;"></span>
+        <span style="font-size:0.76rem;color:#9BAAB8;line-height:1.5;"><strong style="color:#EF4444;">Collecting Duct</strong> — the final decision on water. <strong style="color:#C0C8D8;">ADH (vasopressin) acts here</strong> — if ADH is present, water channels open and water is reabsorbed back into the blood. If ADH is absent, water stays in the tube and becomes dilute urine.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- WHAT THE KIDNEYS REGULATE -->
+  <div class="sec">The six things kidneys regulate</div>
+
+  <div class="regulate-grid">
+    <div class="reg-card" style="border-top-color:#38BDF8">
+      <span class="reg-icon">💧</span>
+      <div class="reg-title" style="color:#38BDF8">Fluid Volume</div>
+      <div class="reg-body">Controls how much water stays in the body. More fluid in = more urine out. Less fluid in = concentrated urine to conserve water.</div>
+    </div>
+    <div class="reg-card" style="border-top-color:#4A9EDB">
+      <span class="reg-icon">🧂</span>
+      <div class="reg-title" style="color:#4A9EDB">Sodium (Na⁺)</div>
+      <div class="reg-body">The main driver of fluid balance. Aldosterone tells kidneys to keep Na⁺. Pressure natriuresis dumps Na⁺ when BP is too high.</div>
+    </div>
+    <div class="reg-card" style="border-top-color:#A855F7">
+      <span class="reg-icon">⚡</span>
+      <div class="reg-title" style="color:#A855F7">Potassium (K⁺)</div>
+      <div class="reg-body">Kidneys are the main route for K⁺ excretion. In kidney failure, K⁺ builds up fast — which is why CKD causes dangerous hyperkalemia.</div>
+    </div>
+    <div class="reg-card" style="border-top-color:#22C55E">
+      <span class="reg-icon">⚗️</span>
+      <div class="reg-title" style="color:#22C55E">Acid-Base (pH)</div>
+      <div class="reg-body">Kidneys excrete H⁺ (acid) and retain HCO₃⁻ (bicarbonate/base). Slower than the lungs but more powerful long-term correction.</div>
+    </div>
+    <div class="reg-card" style="border-top-color:#F59E0B">
+      <span class="reg-icon">🔴</span>
+      <div class="reg-title" style="color:#F59E0B">Red Blood Cells</div>
+      <div class="reg-body">Kidneys produce erythropoietin (EPO) — the hormone that tells bone marrow to make red blood cells. CKD patients become anemic because EPO production drops.</div>
+    </div>
+    <div class="reg-card" style="border-top-color:#EF4444">
+      <span class="reg-icon">☀️</span>
+      <div class="reg-title" style="color:#EF4444">Vitamin D</div>
+      <div class="reg-body">Kidneys activate Vitamin D into its usable form (calcitriol). Without this, calcium can't be absorbed from food — leading to bone disease in CKD patients.</div>
+    </div>
+  </div>
+
+  <!-- WHAT URINE TELLS YOU -->
+  <div class="sec">What urine tells you about the kidneys</div>
+
+  <div class="card" style="margin-bottom:10px;">
+    <div class="card-body">
+      Urine is not just waste — it's a window into what the kidneys are doing right now. <strong>As a nurse you will assess urine every shift.</strong> Color, amount, concentration, and smell all give you information. The two most important things to track are color and output volume.
+    </div>
+  </div>
+
+  <div class="urine-grid">
+    <div class="urine-card dark">
+      <span class="urine-emoji">🟤</span>
+      <div class="urine-label amber">Dark / concentrated urine</div>
+      <div class="urine-means">
+        <strong>Means:</strong> kidneys are conserving water. Patient is dehydrated, ADH is high, or fluid volume is low.<br><br>
+        <strong>Think:</strong> not enough fluid in, or too much lost.
+      </div>
+    </div>
+    <div class="urine-card pale">
+      <span class="urine-emoji">💛</span>
+      <div class="urine-label pale">Pale / dilute urine</div>
+      <div class="urine-means">
+        <strong>Means:</strong> kidneys are excreting water. Patient is well hydrated, ADH is low, or on diuretics.<br><br>
+        <strong>Think:</strong> too much fluid in, or ADH is absent (diabetes insipidus).
+      </div>
+    </div>
+  </div>
+
+  <!-- URINE OUTPUT -->
+  <div class="sec">Urine output — the number every nurse watches</div>
+
+  <div class="balance-card">
+    <div class="balance-title">Normal urine output = 0.5 mL/kg/hour — or about 30–60 mL/hr in adults</div>
+    <div class="balance-row">
+      <span class="balance-neutral">Below 30 mL/hr</span>
+      <span style="color:#EF4444;font-weight:700;font-size:0.8rem;">Oliguria ⚠ — call the provider</span>
+    </div>
+    <div class="balance-row">
+      <span class="balance-neutral">30–60 mL/hr</span>
+      <span style="color:#22C55E;font-weight:700;font-size:0.8rem;">Normal ✓</span>
+    </div>
+    <div class="balance-row">
+      <span class="balance-neutral">Above 100 mL/hr</span>
+      <span style="color:#F59E0B;font-weight:700;font-size:0.8rem;">Polyuria — investigate why</span>
+    </div>
+    <div class="balance-row">
+      <span class="balance-neutral">Zero output</span>
+      <span style="color:#EF4444;font-weight:700;font-size:0.8rem;">Anuria — kidney failure or obstruction</span>
+    </div>
+    <div style="margin-top:12px;font-size:0.75rem;color:#8A94A6;line-height:1.5;">
+      In the ICU nurses measure urine output every hour using a Foley catheter connected to a measuring bag. A drop in urine output is often the first sign something is wrong — before labs change, before BP drops, before the patient complains of anything.
+    </div>
+  </div>
+
+  <!-- GFR -->
+  <div class="sec">GFR — how we measure kidney function</div>
+
+  <div class="card">
+    <div class="card-title">GFR = Glomerular Filtration Rate</div>
+    <div class="card-body" style="margin-bottom:14px;">
+      GFR measures how much blood the kidneys filter per minute. It's calculated from a blood test called <strong>creatinine</strong> — a waste product from muscle metabolism that healthy kidneys constantly clear. When kidneys fail, creatinine builds up and GFR drops.
+    </div>
+    <div class="gfr-bar-wrap">
+      <div class="gfr-row">
+        <span class="gfr-label" style="color:#22C55E;">Normal</span>
+        <div class="gfr-bar-bg"><div class="gfr-bar-fill" style="width:100%;background:#22C55E;"></div></div>
+        <span class="gfr-val" style="color:#22C55E;">≥ 90 mL/min</span>
+      </div>
+      <div class="gfr-row">
+        <span class="gfr-label" style="color:#A3E635;">Mild CKD</span>
+        <div class="gfr-bar-bg"><div class="gfr-bar-fill" style="width:70%;background:#A3E635;"></div></div>
+        <span class="gfr-val" style="color:#A3E635;">60–89</span>
+      </div>
+      <div class="gfr-row">
+        <span class="gfr-label" style="color:#F59E0B;">Moderate CKD</span>
+        <div class="gfr-bar-bg"><div class="gfr-bar-fill" style="width:45%;background:#F59E0B;"></div></div>
+        <span class="gfr-val" style="color:#F59E0B;">30–59</span>
+      </div>
+      <div class="gfr-row">
+        <span class="gfr-label" style="color:#F97316;">Severe CKD</span>
+        <div class="gfr-bar-bg"><div class="gfr-bar-fill" style="width:25%;background:#F97316;"></div></div>
+        <span class="gfr-val" style="color:#F97316;">15–29</span>
+      </div>
+      <div class="gfr-row">
+        <span class="gfr-label" style="color:#EF4444;">Kidney Failure</span>
+        <div class="gfr-bar-bg"><div class="gfr-bar-fill" style="width:10%;background:#EF4444;"></div></div>
+        <span class="gfr-val" style="color:#EF4444;">Below 15</span>
+      </div>
+    </div>
+    <div style="font-size:0.74rem;color:#8A94A6;margin-top:4px;line-height:1.5;">
+      GFR below 15 = end-stage renal disease (ESRD) — dialysis is needed to do what the kidneys can no longer do.
+    </div>
+  </div>
+
+  <!-- WHEN KIDNEYS FAIL -->
+  <div class="sec">What happens when the kidneys fail</div>
+
+  <div class="fail-cascade">
+    <div class="fail-step">
+      <span class="fail-icon">🚫</span>
+      <div>
+        <div class="fail-title">Can't excrete potassium → Hyperkalemia</div>
+        <div class="fail-body">K⁺ builds up in the blood → peaked T waves → risk of cardiac arrest. This happens fast — within hours to days in acute kidney injury.</div>
+      </div>
+    </div>
+    <div class="fail-step">
+      <span class="fail-icon">🚫</span>
+      <div>
+        <div class="fail-title">Can't excrete acid → Metabolic acidosis</div>
+        <div class="fail-body">H⁺ accumulates → blood pH drops → acidosis worsens hyperkalemia by shifting more K⁺ out of cells. A vicious cycle.</div>
+      </div>
+    </div>
+    <div class="fail-step">
+      <span class="fail-icon">🚫</span>
+      <div>
+        <div class="fail-title">Can't excrete fluid → Fluid overload</div>
+        <div class="fail-body">Water and sodium accumulate → hypertension → pulmonary edema → the patient drowns in their own fluid if not dialyzed.</div>
+      </div>
+    </div>
+    <div class="fail-step">
+      <span class="fail-icon">🚫</span>
+      <div>
+        <div class="fail-title">Can't activate Vitamin D → Hypocalcemia + bone disease</div>
+        <div class="fail-body">Inactive Vitamin D → no calcium absorbed from gut → bones are raided for calcium → renal osteodystrophy (bone pain and fractures). This is what the CKD note in your A&P section explains.</div>
+      </div>
+    </div>
+    <div class="fail-step">
+      <span class="fail-icon">🚫</span>
+      <div>
+        <div class="fail-title">Can't make EPO → Anemia</div>
+        <div class="fail-body">No erythropoietin → bone marrow stops making red blood cells → fatigue, pallor, shortness of breath. CKD patients need synthetic EPO injections (epoetin alfa).</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLUID BALANCE -->
+  <div class="sec">Fluid balance — what nurses track every shift</div>
+
+  <div class="balance-card">
+    <div class="balance-title">Ins and Outs — calculated every shift</div>
+    <div class="balance-row">
+      <span class="balance-in">IN: IV fluids</span>
+      <span class="balance-neutral">measured exactly from the IV pump</span>
+    </div>
+    <div class="balance-row">
+      <span class="balance-in">IN: oral intake</span>
+      <span class="balance-neutral">estimated from what patient drinks/eats</span>
+    </div>
+    <div class="balance-row">
+      <span class="balance-in">IN: tube feeding</span>
+      <span class="balance-neutral">measured from the pump rate</span>
+    </div>
+    <div class="balance-row">
+      <span class="balance-out">OUT: urine</span>
+      <span class="balance-neutral">measured from Foley catheter bag</span>
+    </div>
+    <div class="balance-row">
+      <span class="balance-out">OUT: wound drainage</span>
+      <span class="balance-neutral">measured from drain bulbs or bags</span>
+    </div>
+    <div class="balance-row">
+      <span class="balance-out">OUT: GI losses</span>
+      <span class="balance-neutral">vomiting, diarrhea, NG suction — estimated</span>
+    </div>
+    <div style="margin-top:12px;padding-top:10px;border-top:1px solid #2A3246;">
+      <div style="font-size:0.8rem;color:#E8EDF5;font-weight:700;margin-bottom:4px;">What the total means:</div>
+      <div style="font-size:0.75rem;color:#22C55E;margin-bottom:3px;">Ins = Outs → balanced ✓</div>
+      <div style="font-size:0.75rem;color:#F59E0B;margin-bottom:3px;">Ins much greater than Outs → fluid overload risk</div>
+      <div style="font-size:0.75rem;color:#EF4444;">Outs much greater than Ins → dehydration risk</div>
+    </div>
+  </div>
+
+  <!-- HOW IT ALL CONNECTS -->
+  <div class="sec">How this connects to everything you've learned</div>
+
+  <div class="connect-box">
+    <div class="connect-title">The kidney is the control center for notes 1–3</div>
+    <div class="connect-item">
+      <div class="connect-dot"></div>
+      <div class="connect-text"><strong>Sodium (Note 2)</strong> — kidneys decide how much Na⁺ to keep vs excrete. Aldosterone tells them to keep it. High blood pressure tells them to dump it (pressure natriuresis).</div>
+    </div>
+    <div class="connect-item">
+      <div class="connect-dot"></div>
+      <div class="connect-text"><strong>Potassium (Note 3)</strong> — kidneys are the only meaningful route for K⁺ excretion. When they fail, K⁺ has nowhere to go. This is why kidney failure always causes hyperkalemia.</div>
+    </div>
+    <div class="connect-item">
+      <div class="connect-dot"></div>
+      <div class="connect-text"><strong>Furosemide (Lasix)</strong> — works in the Loop of Henle by blocking the sodium pump there. No sodium reabsorption = sodium and water pour out in urine = powerful diuresis. Now you know exactly where and why.</div>
+    </div>
+    <div class="connect-item">
+      <div class="connect-dot"></div>
+      <div class="connect-text"><strong>ADH (coming in Note 5)</strong> — acts on the collecting duct to decide how much water to keep. High ADH = water stays = concentrated urine. Low ADH = water pours out = dilute urine. The kidney is the target organ for ADH.</div>
+    </div>
+    <div class="connect-item">
+      <div class="connect-dot"></div>
+      <div class="connect-text"><strong>Aldosterone (coming in Note 6)</strong> — acts on the DCT to swap Na⁺ in for K⁺ out. The kidney is the target organ for aldosterone. Spironolactone blocks it right here.</div>
+    </div>
+  </div>
+
+  <!-- MEMORY -->
+  <div class="memory-box">
+    <div class="memory-label">🧠 Memory tricks</div>
+    <div class="memory-text">
+      <strong>"60 times a day, 180 liters filtered, 1–2 liters out"</strong> — the scale of what kidneys do every day. Most of it gets reclaimed.<br><br>
+      <strong>"Lasix hits the Loop, Aldosterone hits the DCT, ADH hits the Collecting Duct"</strong> — knowing where each drug acts explains why it does what it does.<br><br>
+      <strong>"Less than 30 mL/hr = call the provider"</strong> — oliguria threshold. Never ignore it. It's the first warning sign of kidney trouble or shock.<br><br>
+      <strong>"When kidneys fail everything fails"</strong> — K⁺ rises, pH drops, fluid accumulates, bones weaken, RBCs drop. All at once. This is why CKD patients are the most complex patients you'll care for.
+    </div>
+  </div>
+
+  <!-- NCLEX -->
+  <div class="nclex-box">
+    <div class="nclex-label">🎯 NCLEX Priority — The Kidneys</div>
+    <div class="nclex-item"><strong>Urine output below 30 mL/hr = notify the provider</strong> — this is the threshold you must know. No exceptions.</div>
+    <div class="nclex-item"><strong>Creatinine rising = kidneys struggling</strong> — creatinine is the most reliable lab marker of kidney function. A doubling of creatinine = significant kidney injury.</div>
+    <div class="nclex-item"><strong>CKD patients cannot excrete K⁺</strong> — avoid high-potassium foods (bananas, oranges, potatoes) and K⁺-sparing drugs. Hyperkalemia is the most life-threatening CKD complication.</div>
+    <div class="nclex-item"><strong>CKD causes anemia</strong> — from low EPO, not iron deficiency. Treatment is epoetin alfa (synthetic EPO), not iron supplements alone.</div>
+    <div class="nclex-item"><strong>Contrast dye used in CT scans is nephrotoxic</strong> — always check kidney function (creatinine/GFR) before giving IV contrast. Patients with CKD need hydration protocols.</div>
+    <div class="nclex-item"><strong>NSAIDs (ibuprofen, naproxen) are nephrotoxic</strong> — teach CKD patients to avoid them. They reduce blood flow to the kidneys and can cause acute kidney injury.</div>
+  </div>
+
+  <div class="next-up">
+    <div class="next-label">Up next — Foundation 5 of 8</div>
+    <div class="next-text"><strong>ADH (Antidiuretic Hormone)</strong> — the water hormone. Now that you know the kidneys are the target, you'll understand exactly how ADH controls urine concentration, what happens when it's too high (SIADH) or too low (diabetes insipidus), and why these conditions look like opposite sodium problems.</div>
+  </div>
+
+</div>
+</body>
+</html>

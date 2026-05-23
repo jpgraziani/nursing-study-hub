@@ -417,6 +417,39 @@
         "cardiac",
         "NCLEX"
       ]
+    },
+    {
+      "id": "anatomy-note-foundation-04",
+      "file": "04_kidneys.html",
+      "class": "anatomy",
+      "type": "note",
+      "category": "Fluid & Electrolytes \u2014 Foundation",
+      "title": "4 of 8 \u2014 The Kidneys",
+      "description": "How the kidneys filter blood, the nephron diagram, GFR, what urine tells you, fluid balance ins and outs, and what happens when kidneys fail.",
+      "topics": [
+        "kidneys",
+        "nephron",
+        "GFR",
+        "creatinine",
+        "glomerulus",
+        "loop of Henle",
+        "aldosterone",
+        "ADH",
+        "urine output",
+        "oliguria",
+        "CKD",
+        "AKI",
+        "EPO",
+        "erythropoietin",
+        "furosemide",
+        "fluid balance"
+      ],
+      "tags": [
+        "foundation",
+        "kidneys",
+        "renal",
+        "NCLEX"
+      ]
     }
   ],
   "version": "1.4.0"
