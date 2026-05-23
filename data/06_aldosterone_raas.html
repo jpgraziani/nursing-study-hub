@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aldosterone & the RAAS</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #0F1117; color: #E8EDF5; font-size: 15px; line-height: 1.6; padding: 0 0 48px; }
+.back-bar { position: sticky; top: 0; z-index: 100; background: #161B26; border-bottom: 1px solid #2A3246; padding: 12px 20px; display: flex; align-items: center; gap: 12px; }
+.back-btn { background: #1E2536; border: 1px solid #2A3246; color: #8A94A6; font-size: 0.82rem; font-weight: 600; padding: 7px 14px; border-radius: 8px; cursor: pointer; font-family: inherit; }
+.back-btn:hover { color: #E8EDF5; border-color: #F97316; }
+.back-bar-title { font-size: 0.88rem; font-weight: 700; color: #8A94A6; }
+.page { max-width: 560px; margin: 0 auto; padding: 28px 20px 0; }
+h1 { font-size: 1.4rem; font-weight: 800; color: #F97316; margin-bottom: 6px; }
+.intro { font-size: 0.88rem; color: #8A94A6; margin-bottom: 28px; line-height: 1.6; }
+.sec { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #5A6478; margin: 28px 0 12px; }
+.card { background: #1E2536; border: 1px solid #2A3246; border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; }
+.card-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+.card-title { font-size: 0.95rem; font-weight: 800; color: #E8EDF5; margin-bottom: 8px; }
+.card-body { font-size: 0.83rem; color: #9BAAB8; line-height: 1.7; }
+.card-body strong { color: #E8EDF5; }
+
+/* CASCADE */
+.cascade { display: flex; flex-direction: column; align-items: stretch; gap: 0; margin-bottom: 14px; }
+.cas-step { border-radius: 0; padding: 13px 16px; border: 1px solid; border-bottom: none; display: flex; gap: 14px; align-items: flex-start; }
+.cas-step:first-child { border-radius: 10px 10px 0 0; }
+.cas-step:last-child  { border-radius: 0 0 10px 10px; border-bottom: 1px solid; }
+.cas-num { min-width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 800; flex-shrink: 0; margin-top: 2px; }
+.cas-content { flex: 1; }
+.cas-title { font-size: 0.85rem; font-weight: 800; margin-bottom: 3px; }
+.cas-body  { font-size: 0.76rem; color: #9BAAB8; line-height: 1.5; }
+.cas-body strong { color: #C0C8D8; }
+.cas-organ { font-size: 0.6rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+
+/* DRUG CARDS */
+.drug-card { background: #1A2030; border: 1px solid #2A3246; border-left: 4px solid; border-radius: 10px; padding: 14px 16px; margin-bottom: 8px; }
+.drug-name { font-size: 0.88rem; font-weight: 800; margin-bottom: 2px; }
+.drug-examples { font-size: 0.72rem; font-weight: 700; color: #F59E0B; margin-bottom: 6px; }
+.drug-mechanism { font-size: 0.78rem; color: #9BAAB8; line-height: 1.55; }
+.drug-mechanism strong { color: #C0C8D8; }
+.drug-watch { font-size: 0.72rem; color: #FCA5A5; margin-top: 6px; font-weight: 600; }
+
+.effect-row { display: flex; gap: 8px; margin-bottom: 8px; }
+.effect-card { flex: 1; border-radius: 9px; padding: 12px; border: 1px solid; text-align: center; }
+.effect-icon { font-size: 1.4rem; margin-bottom: 4px; display: block; }
+.effect-label { font-size: 0.72rem; font-weight: 800; margin-bottom: 4px; }
+.effect-desc  { font-size: 0.68rem; color: #9BAAB8; line-height: 1.4; }
+
+.compare-table { width: 100%; border-collapse: collapse; border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+.compare-table th { padding: 10px 14px; font-size: 0.75rem; font-weight: 700; text-align: left; }
+.compare-table th:nth-child(1) { background: #1E2536; color: #8A94A6; }
+.compare-table th:nth-child(2) { background: rgba(249,115,22,0.15); color: #F97316; }
+.compare-table th:nth-child(3) { background: rgba(96,165,250,0.15);  color: #60A5FA; }
+.compare-table td { padding: 9px 14px; font-size: 0.78rem; border-bottom: 1px solid #2A3246; vertical-align: top; color: #9BAAB8; }
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr:nth-child(even) td { background: #161B26; }
+.compare-table tr:nth-child(odd)  td { background: #1A1F2E; }
+.compare-table td:first-child { color: #8A94A6; font-weight: 600; font-size: 0.75rem; }
+
+.condition-card { border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; border-left: 4px solid; border: 1px solid; }
+.cond-name { font-size: 1rem; font-weight: 800; margin-bottom: 4px; }
+.cond-body { font-size: 0.82rem; color: #9BAAB8; line-height: 1.65; margin-bottom: 12px; }
+.cond-body strong { color: #E8EDF5; }
+.symptom-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.chip { font-size: 0.7rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; border: 1px solid; }
+.chip-orange { background: rgba(249,115,22,0.1);  border-color: rgba(249,115,22,0.3); color: #FDB89A; }
+.chip-blue   { background: rgba(96,165,250,0.1);   border-color: rgba(96,165,250,0.3); color: #93C5FD; }
+.causes-label { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #5A6478; margin-bottom: 6px; }
+.cause-item { font-size: 0.78rem; color: #9BAAB8; padding: 5px 0; border-bottom: 1px solid #1E2536; line-height: 1.5; }
+.cause-item:last-child { border-bottom: none; }
+.cause-item strong { color: #C0C8D8; }
+.nurse-box { background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2); border-left: 4px solid #22C55E; border-radius: 10px; padding: 14px 16px; margin-top: 12px; }
+.nurse-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #22C55E; margin-bottom: 8px; }
+.nurse-step { display: flex; gap: 9px; margin-bottom: 7px; align-items: flex-start; }
+.nurse-num { min-width: 20px; height: 20px; border-radius: 50%; background: rgba(34,197,94,0.2); color: #22C55E; font-size: 0.65rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.nurse-text { font-size: 0.78rem; color: #9BAAB8; line-height: 1.5; }
+.nurse-text strong { color: #C0C8D8; }
+.memory-box { background: rgba(249,115,22,0.06); border: 1px solid rgba(249,115,22,0.18); border-left: 4px solid #F97316; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.memory-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #F97316; margin-bottom: 8px; }
+.memory-text { font-size: 0.82rem; color: #E0C8A0; line-height: 1.7; }
+.memory-text strong { color: #FFE0B0; }
+.nclex-box { background: rgba(239,68,68,0.07); border: 1px solid rgba(239,68,68,0.2); border-left: 4px solid #EF4444; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.nclex-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #EF4444; margin-bottom: 8px; }
+.nclex-item { font-size: 0.8rem; color: #C0C8D8; line-height: 1.6; margin-bottom: 6px; padding-left: 14px; position: relative; }
+.nclex-item::before { content: '★'; position: absolute; left: 0; color: #EF4444; font-size: 0.6rem; top: 4px; }
+.nclex-item strong { color: #FCA5A5; }
+.next-up { background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2); border-left: 4px solid #22C55E; border-radius: 10px; padding: 14px 16px; }
+.next-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #22C55E; margin-bottom: 5px; }
+.next-text { font-size: 0.8rem; color: #9BAAB8; line-height: 1.55; }
+.next-text strong { color: #C0C8D8; }
+</style>
+</head>
+<body>
+<div class="back-bar">
+  <button class="back-btn" onclick="window.close(); history.back();">← Back to Notes</button>
+  <span class="back-bar-title">Foundation 6 of 8 — Aldosterone & RAAS</span>
+</div>
+<div class="page">
+
+  <h1>🔁 Aldosterone & the RAAS</h1>
+  <p class="intro">The RAAS (Renin-Angiotensin-Aldosterone System) is the body's emergency blood pressure rescue system. You already have the RAAS diagram in your A&P notes — this note explains how aldosterone fits into that cascade and why it matters for every patient with heart failure, hypertension, or kidney disease.</p>
+
+  <div class="sec">What aldosterone does — one rule</div>
+  <div class="card">
+    <span class="card-icon">🧂</span>
+    <div class="card-title">Aldosterone tells the kidney: keep sodium, dump potassium</div>
+    <div class="card-body">
+      Aldosterone is a hormone made by the adrenal glands (two small glands sitting on top of the kidneys). It acts on the distal convoluted tubule (DCT) — from note 4 — and does one specific swap:<br><br>
+      <strong>Sodium (Na⁺) gets pulled back into the blood. Potassium (K⁺) gets pushed out into the urine.</strong><br><br>
+      Why does this raise blood pressure? Because where sodium goes, water follows (note 1). More sodium retained = more water retained = more blood volume = higher blood pressure.<br><br>
+      This is exactly why <strong>high aldosterone causes hypertension AND hypokalemia at the same time</strong> — and why <strong>low aldosterone causes hypotension AND hyperkalemia at the same time.</strong>
+    </div>
+  </div>
+
+  <div class="sec">The full RAAS cascade — step by step</div>
+  <div class="cascade">
+    <div class="cas-step" style="background:rgba(249,115,22,0.06);border-color:rgba(249,115,22,0.2);">
+      <div class="cas-num" style="background:rgba(249,115,22,0.2);color:#F97316;">1</div>
+      <div class="cas-content">
+        <div class="cas-organ" style="color:#F97316;">KIDNEYS</div>
+        <div class="cas-title" style="color:#F97316;">Blood pressure drops → Kidneys release Renin</div>
+        <div class="cas-body">JG cells in the kidney detect low pressure, low sodium, or increased sympathetic signals. They release renin — the enzyme that starts the whole cascade.</div>
+      </div>
+    </div>
+    <div class="cas-step" style="background:rgba(245,158,11,0.06);border-color:rgba(245,158,11,0.2);">
+      <div class="cas-num" style="background:rgba(245,158,11,0.2);color:#F59E0B;">2</div>
+      <div class="cas-content">
+        <div class="cas-organ" style="color:#F59E0B;">LIVER</div>
+        <div class="cas-title" style="color:#F59E0B;">Renin converts Angiotensinogen → Angiotensin I</div>
+        <div class="cas-body">The liver makes angiotensinogen constantly. Renin cuts it into angiotensin I — still inactive, but one step closer.</div>
+      </div>
+    </div>
+    <div class="cas-step" style="background:rgba(96,165,250,0.06);border-color:rgba(96,165,250,0.2);">
+      <div class="cas-num" style="background:rgba(96,165,250,0.2);color:#60A5FA;">3</div>
+      <div class="cas-content">
+        <div class="cas-organ" style="color:#60A5FA;">LUNGS — where ACE inhibitors act</div>
+        <div class="cas-title" style="color:#60A5FA;">ACE converts Angiotensin I → Angiotensin II</div>
+        <div class="cas-body">ACE (angiotensin-converting enzyme) in the lungs activates Angiotensin II — the powerful active form. <strong>ACE inhibitors block this step.</strong></div>
+      </div>
+    </div>
+    <div class="cas-step" style="background:rgba(239,68,68,0.06);border-color:rgba(239,68,68,0.2);">
+      <div class="cas-num" style="background:rgba(239,68,68,0.2);color:#EF4444;">4</div>
+      <div class="cas-content">
+        <div class="cas-organ" style="color:#EF4444;">BLOOD VESSELS + ADRENAL GLANDS</div>
+        <div class="cas-title" style="color:#EF4444;">Angiotensin II acts — vasoconstriction + aldosterone release</div>
+        <div class="cas-body">Angiotensin II squeezes blood vessels (raises BP immediately) and signals the adrenal glands to release aldosterone. <strong>ARBs block angiotensin II receptors here.</strong></div>
+      </div>
+    </div>
+    <div class="cas-step" style="background:rgba(34,197,94,0.06);border-color:rgba(34,197,94,0.2);">
+      <div class="cas-num" style="background:rgba(34,197,94,0.2);color:#22C55E;">5</div>
+      <div class="cas-content">
+        <div class="cas-organ" style="color:#22C55E;">KIDNEYS (DCT) — where spironolactone acts</div>
+        <div class="cas-title" style="color:#22C55E;">Aldosterone → retain Na⁺, excrete K⁺ → BP rises</div>
+        <div class="cas-body">Aldosterone hits the DCT: Na⁺ retained → water follows → volume rises → BP rises. K⁺ dumped into urine. <strong>Spironolactone blocks aldosterone right here.</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">The drugs that target the RAAS</div>
+
+  <div class="drug-card" style="border-left-color:#60A5FA;">
+    <div class="drug-name" style="color:#60A5FA;">ACE Inhibitors — Block Step 3</div>
+    <div class="drug-examples">lisinopril, enalapril, ramipril — anything ending in -pril</div>
+    <div class="drug-mechanism">Block ACE in the lungs → angiotensin I never becomes angiotensin II → no vasoconstriction, less aldosterone, lower BP and less fluid retention. Used for hypertension, heart failure, and post-MI protection.</div>
+    <div class="drug-watch">⚠ Side effect: dry persistent cough — ACE also breaks down bradykinin. When blocked, bradykinin builds up and irritates airways. Not dangerous but annoying enough that patients stop taking it.</div>
+    <div class="drug-watch">⚠ Monitor: hyperkalemia and rising creatinine — less aldosterone = less K⁺ excreted. Check K⁺ and kidney function after starting.</div>
+  </div>
+
+  <div class="drug-card" style="border-left-color:#A855F7;">
+    <div class="drug-name" style="color:#A855F7;">ARBs — Block Step 4</div>
+    <div class="drug-examples">losartan, valsartan, irbesartan — anything ending in -sartan</div>
+    <div class="drug-mechanism">Angiotensin II is still made, but can't bind to its receptor. Same BP-lowering benefit as ACE inhibitors without the cough — bradykinin is unaffected. Preferred for patients who can't tolerate ACE inhibitor cough.</div>
+    <div class="drug-watch">⚠ Monitor: same hyperkalemia and creatinine risks as ACE inhibitors. Never give ACE inhibitor and ARB together.</div>
+  </div>
+
+  <div class="drug-card" style="border-left-color:#22C55E;">
+    <div class="drug-name" style="color:#22C55E;">Spironolactone — Block Step 5</div>
+    <div class="drug-examples">spironolactone, eplerenone — aldosterone antagonists / K⁺-sparing diuretics</div>
+    <div class="drug-mechanism">Blocks aldosterone receptors in the DCT → sodium is NOT retained → fluid is removed → BP drops. Because the Na⁺/K⁺ swap is blocked, potassium is NOT lost — hence "potassium-sparing."</div>
+    <div class="drug-watch">⚠ Monitor: hyperkalemia — K⁺ is retained instead of excreted. Never give with other K⁺-sparing drugs or high K⁺ diet without monitoring.</div>
+  </div>
+
+  <div class="drug-card" style="border-left-color:#EF4444;">
+    <div class="drug-name" style="color:#EF4444;">Furosemide (Lasix) — Acts on the Loop of Henle</div>
+    <div class="drug-examples">furosemide (Lasix), bumetanide — loop diuretics</div>
+    <div class="drug-mechanism">Not technically part of the RAAS but always discussed alongside it. Blocks sodium reabsorption in the Loop of Henle — the most powerful diuretic site. Removes massive amounts of fluid AND potassium.</div>
+    <div class="drug-watch">⚠ Always wastes K⁺ — the opposite of spironolactone. Often given together in heart failure to balance fluid removal with K⁺ conservation.</div>
+  </div>
+
+  <div class="sec">High vs low aldosterone — what it looks like</div>
+  <table class="compare-table">
+    <tr><th></th><th>⬆ High aldosterone</th><th>⬇ Low aldosterone</th></tr>
+    <tr><td>Condition</td><td>Hyperaldosteronism, heart failure, RAAS overactivation</td><td>Addison's disease (adrenal failure)</td></tr>
+    <tr><td>Na⁺</td><td>Retained → rises</td><td>Lost → drops</td></tr>
+    <tr><td>K⁺</td><td>Excreted → drops (hypokalemia)</td><td>Retained → rises (hyperkalemia)</td></tr>
+    <tr><td>Fluid volume</td><td>Retained → overloaded</td><td>Lost → dehydrated</td></tr>
+    <tr><td>Blood pressure</td><td>High (hypertension)</td><td>Low (hypotension)</td></tr>
+    <tr><td>Treatment</td><td>Spironolactone, ACE inhibitor</td><td>Fludrocortisone (synthetic aldosterone)</td></tr>
+  </table>
+
+  <div class="sec">Addison's Disease — when aldosterone disappears</div>
+  <div class="condition-card" style="border-left-color:#60A5FA;border-color:rgba(96,165,250,0.2);background:rgba(96,165,250,0.04);">
+    <div class="cond-name" style="color:#60A5FA;">Addison's Disease (Primary Adrenal Insufficiency)</div>
+    <div class="cond-body">
+      The adrenal glands fail and stop making both aldosterone and cortisol. Without aldosterone, <strong>the kidneys cannot retain sodium or excrete potassium</strong>. Sodium and volume pour out, potassium climbs, blood pressure crashes. An Addisonian crisis is a life-threatening emergency with refractory hypotension that won't respond to IV fluids alone — the hormones must be replaced.
+    </div>
+    <div class="symptom-row">
+      <span class="chip chip-blue">Profound hypotension</span>
+      <span class="chip chip-blue">Low Na⁺</span>
+      <span class="chip chip-blue">High K⁺</span>
+      <span class="chip chip-blue">Extreme fatigue</span>
+      <span class="chip chip-blue">Hyperpigmentation</span>
+      <span class="chip chip-blue">Nausea, vomiting</span>
+    </div>
+    <div class="nurse-box">
+      <div class="nurse-label">🩺 What the nurse does</div>
+      <div class="nurse-step"><div class="nurse-num">1</div><div class="nurse-text"><strong>IV hydrocortisone (cortisol replacement)</strong> — given immediately in a crisis. This is the most urgent intervention</div></div>
+      <div class="nurse-step"><div class="nurse-num">2</div><div class="nurse-text"><strong>Fludrocortisone (aldosterone replacement)</strong> — oral, given daily for long-term management. Restores the Na⁺/K⁺ balance</div></div>
+      <div class="nurse-step"><div class="nurse-num">3</div><div class="nurse-text"><strong>IV normal saline</strong> — restores volume. The BP won't respond until hormones are replaced</div></div>
+      <div class="nurse-step"><div class="nurse-num">4</div><div class="nurse-text"><strong>Monitor K⁺ closely</strong> — as aldosterone is replaced, K⁺ will start dropping. Watch for overcorrection</div></div>
+    </div>
+  </div>
+
+  <div class="memory-box">
+    <div class="memory-label">🧠 Memory tricks</div>
+    <div class="memory-text">
+      <strong>"Aldosterone = Salt and Dump" — keeps Salt (Na⁺), Dumps K⁺."</strong><br><br>
+      <strong>"-pril = ACE inhibitor, -sartan = ARB"</strong> — the drug endings tell you the class. Lisinopril, enalapril, ramipril. Losartan, valsartan, irbesartan.<br><br>
+      <strong>"ACE inhibitors cause a dry cough because of bradykinin buildup"</strong> — the cough is the most tested ACE inhibitor side effect. When it happens, switch to an ARB.<br><br>
+      <strong>"Spironolactone and ACE inhibitors both raise K⁺"</strong> — both reduce aldosterone effect. Never give together without careful K⁺ monitoring.<br><br>
+      <strong>"Addison's = No aldosterone = Low Na⁺ + High K⁺ + Low BP"</strong> — the triple that defines it.
+    </div>
+  </div>
+
+  <div class="nclex-box">
+    <div class="nclex-label">🎯 NCLEX Priority — Aldosterone & RAAS</div>
+    <div class="nclex-item"><strong>ACE inhibitor + ARB = never together</strong> — double RAAS blockade causes dangerous hypotension and hyperkalemia. NCLEX will test this.</div>
+    <div class="nclex-item"><strong>ACE inhibitor dry cough = expected, not an allergy</strong> — teach the patient this is a known side effect. Switch to ARB if intolerable, but do not label it an allergic reaction.</div>
+    <div class="nclex-item"><strong>Spironolactone + ACE inhibitor = monitor K⁺</strong> — both retain potassium. Together they risk dangerous hyperkalemia especially in kidney disease.</div>
+    <div class="nclex-item"><strong>Furosemide + spironolactone together</strong> — a classic heart failure combination. Lasix removes fluid (and K⁺), spironolactone blocks aldosterone (and keeps K⁺). They balance each other out.</div>
+    <div class="nclex-item"><strong>Addisonian crisis = give steroids first</strong> — hydrocortisone IV is the priority intervention. Fluids alone will not fix the blood pressure without cortisol replacement.</div>
+  </div>
+
+  <div class="next-up">
+    <div class="next-label">Up next — Foundation 7 of 8</div>
+    <div class="next-text"><strong>Acid-Base Balance</strong> — pH, acidosis, alkalosis, and how the lungs and kidneys work together to keep the blood's acidity in a razor-thin range. You've already seen how pH connects to potassium — now you'll understand the full picture and the four main acid-base disorders.</div>
+  </div>
+
+</div>
+</body>
+</html>

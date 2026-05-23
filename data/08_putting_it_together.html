@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Putting It All Together</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #0F1117; color: #E8EDF5; font-size: 15px; line-height: 1.6; padding: 0 0 48px; }
+.back-bar { position: sticky; top: 0; z-index: 100; background: #161B26; border-bottom: 1px solid #2A3246; padding: 12px 20px; display: flex; align-items: center; gap: 12px; }
+.back-btn { background: #1E2536; border: 1px solid #2A3246; color: #8A94A6; font-size: 0.82rem; font-weight: 600; padding: 7px 14px; border-radius: 8px; cursor: pointer; font-family: inherit; }
+.back-btn:hover { color: #E8EDF5; border-color: #F59E0B; }
+.back-bar-title { font-size: 0.88rem; font-weight: 700; color: #8A94A6; }
+.page { max-width: 560px; margin: 0 auto; padding: 28px 20px 0; }
+h1 { font-size: 1.4rem; font-weight: 800; color: #F59E0B; margin-bottom: 6px; }
+.intro { font-size: 0.88rem; color: #8A94A6; margin-bottom: 28px; line-height: 1.6; }
+.sec { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #5A6478; margin: 28px 0 12px; }
+.card { background: #1E2536; border: 1px solid #2A3246; border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; }
+.card-body { font-size: 0.83rem; color: #9BAAB8; line-height: 1.7; }
+.card-body strong { color: #E8EDF5; }
+
+/* CONNECTION MAP */
+.conn-map { background: #161B26; border: 1px solid #2A3246; border-radius: 12px; padding: 20px; margin-bottom: 14px; }
+.conn-center {
+  background: rgba(245,158,11,0.12); border: 2px solid rgba(245,158,11,0.4);
+  border-radius: 50%; width: 90px; height: 90px;
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 16px; text-align: center;
+  font-size: 0.75rem; font-weight: 800; color: #F59E0B; line-height: 1.3;
+}
+.conn-spokes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.conn-spoke { border-radius: 8px; padding: 10px 12px; border: 1px solid; }
+.conn-spoke-label { font-size: 0.68rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 3px; }
+.conn-spoke-body  { font-size: 0.7rem; color: #9BAAB8; line-height: 1.45; }
+.conn-spoke-body strong { color: #C0C8D8; }
+
+/* SCENARIO WALKTHROUGH */
+.scenario { border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; border: 1px solid; border-left: 4px solid; }
+.sc-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+.sc-icon { font-size: 1.8rem; flex-shrink: 0; }
+.sc-title { font-size: 0.95rem; font-weight: 800; margin-bottom: 3px; }
+.sc-subtitle { font-size: 0.75rem; color: #8A94A6; }
+.sc-step { display: flex; gap: 10px; margin-bottom: 8px; align-items: flex-start; }
+.sc-num { min-width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.68rem; font-weight: 800; flex-shrink: 0; margin-top: 1px; }
+.sc-text { font-size: 0.78rem; color: #9BAAB8; line-height: 1.5; }
+.sc-text strong { color: #C0C8D8; }
+.sc-nursing { background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2); border-left: 3px solid #22C55E; border-radius: 8px; padding: 10px 12px; margin-top: 10px; font-size: 0.76rem; color: #9BAAB8; line-height: 1.55; }
+.sc-nursing strong { color: #86EFAC; }
+
+/* REFERENCE TABLE */
+.ref-table { width: 100%; border-collapse: collapse; border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+.ref-table th { padding: 10px 14px; font-size: 0.72rem; font-weight: 700; text-align: left; background: #1E2536; color: #8A94A6; }
+.ref-table td { padding: 8px 14px; font-size: 0.75rem; border-bottom: 1px solid #2A3246; vertical-align: middle; }
+.ref-table tr:last-child td { border-bottom: none; }
+.ref-table tr:nth-child(even) td { background: #161B26; }
+.ref-table tr:nth-child(odd)  td { background: #1A1F2E; }
+.ref-table td:first-child { font-weight: 700; font-size: 0.8rem; }
+.ref-table td:nth-child(2) { color: #22C55E; font-weight: 700; }
+.ref-table td:nth-child(3) { color: #9BAAB8; font-size: 0.72rem; }
+
+/* CHEAT SHEET */
+.cheat-section { margin-bottom: 14px; }
+.cheat-title { font-size: 0.75rem; font-weight: 800; color: #E8EDF5; margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.cheat-item { display: flex; gap: 8px; margin-bottom: 5px; align-items: flex-start; }
+.cheat-dot { min-width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+.cheat-text { font-size: 0.78rem; color: #9BAAB8; line-height: 1.5; }
+.cheat-text strong { color: #E8EDF5; }
+
+/* SIMULATOR BRIDGE */
+.sim-bridge { background: rgba(74,158,219,0.07); border: 1px solid rgba(74,158,219,0.2); border-left: 4px solid #4A9EDB; border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; }
+.sim-title { font-size: 0.88rem; font-weight: 800; color: #4A9EDB; margin-bottom: 10px; }
+.sim-scenario { background: #1A2536; border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; }
+.sim-name { font-size: 0.8rem; font-weight: 700; color: #E8EDF5; margin-bottom: 3px; }
+.sim-explain { font-size: 0.73rem; color: #9BAAB8; line-height: 1.5; }
+.sim-explain strong { color: #7DC8FF; }
+
+.congrats-box { background: rgba(245,158,11,0.08); border: 1px solid rgba(245,158,11,0.25); border-left: 4px solid #F59E0B; border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; }
+.congrats-title { font-size: 1rem; font-weight: 800; color: #F59E0B; margin-bottom: 8px; }
+.congrats-body { font-size: 0.82rem; color: #C0A870; line-height: 1.7; }
+.congrats-body strong { color: #F0D080; }
+
+.nclex-box { background: rgba(239,68,68,0.07); border: 1px solid rgba(239,68,68,0.2); border-left: 4px solid #EF4444; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.nclex-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #EF4444; margin-bottom: 8px; }
+.nclex-item { font-size: 0.8rem; color: #C0C8D8; line-height: 1.6; margin-bottom: 6px; padding-left: 14px; position: relative; }
+.nclex-item::before { content: '★'; position: absolute; left: 0; color: #EF4444; font-size: 0.6rem; top: 4px; }
+.nclex-item strong { color: #FCA5A5; }
+</style>
+</head>
+<body>
+<div class="back-bar">
+  <button class="back-btn" onclick="window.close(); history.back();">← Back to Notes</button>
+  <span class="back-bar-title">Foundation 8 of 8 — Putting It All Together</span>
+</div>
+<div class="page">
+
+  <h1>🧩 Putting It All Together</h1>
+  <p class="intro">You now have all the pieces. This final note connects them into one complete picture — showing how sodium, potassium, the kidneys, ADH, aldosterone, and acid-base all talk to each other in a living patient. After this, the simulator will make complete sense.</p>
+
+  <div class="sec">The system at a glance</div>
+  <div class="conn-map">
+    <div class="conn-center">THE<br>KIDNEYS<br>🫘</div>
+    <div class="conn-spokes">
+      <div class="conn-spoke" style="background:rgba(74,158,219,0.07);border-color:rgba(74,158,219,0.25);">
+        <div class="conn-spoke-label" style="color:#4A9EDB;">Na⁺ (Note 2)</div>
+        <div class="conn-spoke-body">Kidneys decide how much to keep vs. excrete. <strong>Water follows Na⁺ everywhere it goes.</strong></div>
+      </div>
+      <div class="conn-spoke" style="background:rgba(168,85,247,0.07);border-color:rgba(168,85,247,0.25);">
+        <div class="conn-spoke-label" style="color:#A855F7;">K⁺ (Note 3)</div>
+        <div class="conn-spoke-body">Kidneys are the only real exit for K⁺. In failure, K⁺ builds up and <strong>the heart goes into fatal arrhythmia.</strong></div>
+      </div>
+      <div class="conn-spoke" style="background:rgba(96,165,250,0.07);border-color:rgba(96,165,250,0.25);">
+        <div class="conn-spoke-label" style="color:#60A5FA;">ADH (Note 5)</div>
+        <div class="conn-spoke-body">Acts on collecting duct. <strong>High ADH = keep water (SIADH). Low ADH = dump water (DI).</strong></div>
+      </div>
+      <div class="conn-spoke" style="background:rgba(249,115,22,0.07);border-color:rgba(249,115,22,0.25);">
+        <div class="conn-spoke-label" style="color:#F97316;">Aldosterone (Note 6)</div>
+        <div class="conn-spoke-body">Acts on DCT. <strong>Keep Na⁺, dump K⁺.</strong> RAAS activates it when BP drops.</div>
+      </div>
+      <div class="conn-spoke" style="background:rgba(52,211,153,0.07);border-color:rgba(52,211,153,0.25);">
+        <div class="conn-spoke-label" style="color:#34D399;">Acid-Base (Note 7)</div>
+        <div class="conn-spoke-body">Kidneys excrete H⁺ and retain HCO₃⁻. <strong>Acidosis raises K⁺. Alkalosis lowers K⁺.</strong></div>
+      </div>
+      <div class="conn-spoke" style="background:rgba(245,158,11,0.07);border-color:rgba(245,158,11,0.25);">
+        <div class="conn-spoke-label" style="color:#F59E0B;">RAAS (Note 6)</div>
+        <div class="conn-spoke-body">Kidneys trigger the whole cascade when BP falls. <strong>Renin → Angiotensin II → Aldosterone → Na⁺ and water retained → BP up.</strong></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec">Three real clinical scenarios — fully traced</div>
+
+  <!-- SCENARIO 1 -->
+  <div class="scenario" style="border-left-color:#EF4444;border-color:rgba(239,68,68,0.2);background:rgba(239,68,68,0.03);">
+    <div class="sc-header">
+      <span class="sc-icon">💊</span>
+      <div>
+        <div class="sc-title" style="color:#EF4444;">Patient on Furosemide for 3 days</div>
+        <div class="sc-subtitle">Heart failure patient — fluid removed but now electrolytes are crashing</div>
+      </div>
+    </div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(239,68,68,0.2);color:#EF4444;">1</div><div class="sc-text">Furosemide blocks the Loop of Henle → massive Na⁺ and water lost in urine → fluid volume drops → <strong>BP starts falling</strong></div></div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(239,68,68,0.2);color:#EF4444;">2</div><div class="sc-text">Furosemide also wastes K⁺ → <strong>hypokalemia develops</strong> → flat T waves appear on monitor</div></div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(239,68,68,0.2);color:#EF4444;">3</div><div class="sc-text">Low BP triggers RAAS → aldosterone rises → kidneys try to retain Na⁺ but also dump more K⁺ → <strong>hypokalemia worsens</strong></div></div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(239,68,68,0.2);color:#EF4444;">4</div><div class="sc-text">Low volume also triggers ADH → water retained → <strong>urine output drops</strong></div></div>
+    <div class="sc-nursing"><strong>Nurse's response:</strong> IV normal saline to restore volume → KCl replacement (slow IV) → check magnesium → consider holding further Lasix → monitor K⁺ every 4–6 hours → watch cardiac monitor for rhythm changes.</div>
+  </div>
+
+  <!-- SCENARIO 2 -->
+  <div class="scenario" style="border-left-color:#A855F7;border-color:rgba(168,85,247,0.2);background:rgba(168,85,247,0.03);">
+    <div class="sc-header">
+      <span class="sc-icon">🧠</span>
+      <div>
+        <div class="sc-title" style="color:#A855F7;">Post-neurosurgery patient — sudden massive urine output</div>
+        <div class="sc-subtitle">Hours after brain surgery — urine output climbs to 400 mL/hr</div>
+      </div>
+    </div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(168,85,247,0.2);color:#A855F7;">1</div><div class="sc-text">Surgery damaged the pituitary → <strong>ADH production stops</strong> → collecting duct water channels never open</div></div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(168,85,247,0.2);color:#A855F7;">2</div><div class="sc-text">Water pours out in massive dilute urine → blood concentrates → <strong>Na⁺ rising (hypernatremia)</strong></div></div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(168,85,247,0.2);color:#A855F7;">3</div><div class="sc-text">Patient becomes intensely thirsty. If they can't drink fast enough → <strong>dehydration and dangerous hypernatremia</strong></div></div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(168,85,247,0.2);color:#A855F7;">4</div><div class="sc-text">Brain cells shrink as water is pulled out → <strong>confusion, seizure risk</strong></div></div>
+    <div class="sc-nursing"><strong>Nurse's response:</strong> measure urine output hourly → check specific gravity (will be below 1.005) → notify provider → give DDAVP (synthetic ADH) → replace free water with D5W → monitor Na⁺ closely → correct slowly (no faster than 10–12 mEq/L per 24 hours).</div>
+  </div>
+
+  <!-- SCENARIO 3 -->
+  <div class="scenario" style="border-left-color:#F97316;border-color:rgba(249,115,22,0.2);background:rgba(249,115,22,0.03);">
+    <div class="sc-header">
+      <span class="sc-icon">🩸</span>
+      <div>
+        <div class="sc-title" style="color:#F97316;">Type 1 diabetic brought in unconscious — DKA</div>
+        <div class="sc-subtitle">No insulin for 2 days — everything going wrong at once</div>
+      </div>
+    </div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(249,115,22,0.2);color:#F97316;">1</div><div class="sc-text">No insulin → glucose can't enter cells → cells starve → break down fat → <strong>ketones produced → metabolic acidosis</strong></div></div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(249,115,22,0.2);color:#F97316;">2</div><div class="sc-text">Acidosis pushes K⁺ out of cells → <strong>serum K⁺ looks high</strong> (even though total body K⁺ is depleted from vomiting and osmotic diuresis)</div></div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(249,115,22,0.2);color:#F97316;">3</div><div class="sc-text">High blood glucose acts as an osmotic diuretic → massive urine output → <strong>dehydration</strong> → RAAS fires → aldosterone rises</div></div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(249,115,22,0.2);color:#F97316;">4</div><div class="sc-text">Lungs compensate for acidosis → Kussmaul breathing (deep, rapid) to blow off CO₂ → <strong>this is a clinical sign you'll recognize at the bedside</strong></div></div>
+    <div class="sc-step"><div class="sc-num" style="background:rgba(249,115,22,0.2);color:#F97316;">5</div><div class="sc-text">Give insulin → acidosis corrects → K⁺ rushes back into cells → <strong>serum K⁺ crashes → hypokalemia → fatal arrhythmia risk</strong></div></div>
+    <div class="sc-nursing"><strong>Nurse's response:</strong> IV normal saline to restore volume → start insulin drip → check K⁺ before and continuously during insulin therapy → replace K⁺ aggressively → monitor pH hourly via ABG → watch cardiac monitor → never give insulin if K⁺ below 3.5 without replacing first.</div>
+  </div>
+
+  <div class="sec">The quick reference — every key number</div>
+  <table class="ref-table">
+    <tr><th>Value</th><th>Normal range</th><th>Why it matters</th></tr>
+    <tr><td style="color:#4A9EDB;">Na⁺</td><td>135–145 mEq/L</td><td>Controls water distribution. Brain cells swell or shrink when off.</td></tr>
+    <tr><td style="color:#A855F7;">K⁺</td><td>3.5–5.0 mEq/L</td><td>Controls heart rhythm. Below 2.5 or above 6.5 = cardiac emergency.</td></tr>
+    <tr><td style="color:#34D399;">pH</td><td>7.35–7.45</td><td>Overall blood acidity. All body systems fail outside this range.</td></tr>
+    <tr><td style="color:#60A5FA;">CO₂</td><td>35–45 mmHg</td><td>Respiratory acid marker. High = acidosis. Low = alkalosis.</td></tr>
+    <tr><td style="color:#F97316;">HCO₃⁻</td><td>22–26 mEq/L</td><td>Metabolic buffer. Low = acidosis. High = alkalosis.</td></tr>
+    <tr><td style="color:#38BDF8;">Urine output</td><td>30–60 mL/hr</td><td>Below 30 = call the provider. Reflects kidney perfusion.</td></tr>
+    <tr><td style="color:#22C55E;">GFR</td><td>≥ 90 mL/min</td><td>Kidney function. Below 15 = kidney failure, dialysis needed.</td></tr>
+    <tr><td style="color:#F59E0B;">Creatinine</td><td>0.6–1.2 mg/dL</td><td>Kidney waste marker. Rising creatinine = kidneys struggling.</td></tr>
+  </table>
+
+  <div class="sec">Now you're ready for the simulator</div>
+  <div class="sim-bridge">
+    <div class="sim-title">What each simulator scenario means — now that you know the foundation</div>
+    <div class="sim-scenario">
+      <div class="sim-name">💊 3 Days on Furosemide</div>
+      <div class="sim-explain">Loop diuretic → wasted K⁺ + dropped volume → RAAS fired → high aldosterone → more K⁺ lost. <strong>Fix: NS to restore volume + KCl to replace K⁺</strong></div>
+    </div>
+    <div class="sim-scenario">
+      <div class="sim-name">🧠 SIADH</div>
+      <div class="sim-explain">ADH too high → free water retained → Na⁺ diluted → brain cells swell. <strong>Fix: fluid restrict to concentrate Na⁺ back up</strong></div>
+    </div>
+    <div class="sim-scenario">
+      <div class="sim-name">⚠️ Addison's Crisis</div>
+      <div class="sim-explain">No aldosterone → Na⁺ lost + K⁺ retained + volume crashed + BP unresponsive to fluids. <strong>Fix: fludrocortisone + NS + monitor K⁺ as it drops</strong></div>
+    </div>
+    <div class="sim-scenario">
+      <div class="sim-name">🩸 DKA</div>
+      <div class="sim-explain">Metabolic acidosis → K⁺ pushed out of cells → looks high. Insulin fixes acid → K⁺ crashes. <strong>Fix: NS + insulin + aggressive K⁺ replacement before K⁺ drops</strong></div>
+    </div>
+    <div class="sim-scenario">
+      <div class="sim-name">💧 Diabetes Insipidus</div>
+      <div class="sim-explain">No ADH → water pours out → Na⁺ rises → brain cells shrink. <strong>Fix: DDAVP + D5W to replace free water slowly</strong></div>
+    </div>
+  </div>
+
+  <div class="nclex-box">
+    <div class="nclex-label">🎯 Final NCLEX Priority — The Big Rules</div>
+    <div class="nclex-item"><strong>Never correct Na⁺ or K⁺ too fast</strong> — the correction kills. Max Na⁺ correction is 10–12 mEq/L per day. KCl always slow IV, never bolus.</div>
+    <div class="nclex-item"><strong>Furosemide = always check K⁺ first</strong> — and always have a plan to replace it.</div>
+    <div class="nclex-item"><strong>Peaked T waves = call the provider immediately</strong> — hyperkalemia with EKG changes is a cardiac emergency. Calcium gluconate first.</div>
+    <div class="nclex-item"><strong>Urine output below 30 mL/hr = always notify</strong> — it's the earliest warning sign of deterioration.</div>
+    <div class="nclex-item"><strong>Kussmaul breathing = metabolic acidosis</strong> — the lungs are compensating. Think DKA or kidney failure.</div>
+    <div class="nclex-item"><strong>SIADH = fluid restrict (not salt)</strong> — Na⁺ is diluted, not depleted. Adding Na⁺ without restricting water doesn't work.</div>
+    <div class="nclex-item"><strong>ACE inhibitor dry cough ≠ allergy</strong> — switch to ARB. Do not document as allergic reaction.</div>
+    <div class="nclex-item"><strong>In DKA, never give insulin if K⁺ is below 3.5</strong> — insulin will drive K⁺ into cells and the patient can arrest from hypokalemia before the DKA is corrected.</div>
+  </div>
+
+  <div class="congrats-box">
+    <div class="congrats-title">🎉 You built the foundation</div>
+    <div class="congrats-body">
+      You started not knowing what Na⁺ meant. You now understand how sodium controls water movement, how potassium governs heart rhythm, how the kidneys regulate every electrolyte simultaneously, how ADH and aldosterone act as fine-tuning hormones, and how the lungs and kidneys maintain the blood's pH together.<br><br>
+      More importantly — you understand the <strong>why</strong> behind all of it. Not just facts to memorize, but a connected system you can reason through.<br><br>
+      <strong>When you start nursing school, this framework is what you'll hang every new detail on.</strong> The drug names, the specific protocols, the exact numbers — those will come. But the conceptual foundation is the hard part, and you've already built it.<br><br>
+      Now go back to the simulator and try a patient case. You'll notice it feels completely different.
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

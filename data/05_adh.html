@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ADH — The Water Hormone</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #0F1117; color: #E8EDF5; font-size: 15px; line-height: 1.6; padding: 0 0 48px; }
+.back-bar { position: sticky; top: 0; z-index: 100; background: #161B26; border-bottom: 1px solid #2A3246; padding: 12px 20px; display: flex; align-items: center; gap: 12px; }
+.back-btn { background: #1E2536; border: 1px solid #2A3246; color: #8A94A6; font-size: 0.82rem; font-weight: 600; padding: 7px 14px; border-radius: 8px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+.back-btn:hover { color: #E8EDF5; border-color: #60A5FA; }
+.back-bar-title { font-size: 0.88rem; font-weight: 700; color: #8A94A6; }
+.page { max-width: 560px; margin: 0 auto; padding: 28px 20px 0; }
+h1 { font-size: 1.4rem; font-weight: 800; color: #60A5FA; margin-bottom: 6px; }
+.intro { font-size: 0.88rem; color: #8A94A6; margin-bottom: 28px; line-height: 1.6; }
+.sec { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #5A6478; margin: 28px 0 12px; }
+.card { background: #1E2536; border: 1px solid #2A3246; border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; }
+.card-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+.card-title { font-size: 0.95rem; font-weight: 800; color: #E8EDF5; margin-bottom: 8px; }
+.card-body { font-size: 0.83rem; color: #9BAAB8; line-height: 1.7; }
+.card-body strong { color: #E8EDF5; }
+
+/* FLOW DIAGRAM */
+.flow { display: flex; flex-direction: column; align-items: center; gap: 0; margin-bottom: 14px; }
+.flow-step { width: 100%; border-radius: 10px; padding: 12px 16px; border: 1px solid; }
+.flow-arrow { font-size: 1.2rem; color: #5A6478; margin: 3px 0; text-align: center; width: 100%; }
+.flow-label { font-size: 0.6rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 3px; }
+.flow-title { font-size: 0.85rem; font-weight: 800; margin-bottom: 3px; }
+.flow-body { font-size: 0.74rem; color: #9BAAB8; line-height: 1.5; }
+.flow-body strong { color: #C0C8D8; }
+
+/* COMPARE */
+.compare-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+.cmp-card { border-radius: 12px; padding: 16px; border: 1px solid; border-top: 4px solid; }
+.cmp-title { font-size: 0.88rem; font-weight: 800; margin-bottom: 6px; }
+.cmp-body { font-size: 0.76rem; color: #9BAAB8; line-height: 1.55; }
+.cmp-body strong { color: #C0C8D8; }
+.cmp-item { font-size: 0.74rem; color: #9BAAB8; padding: 4px 0; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.cmp-item:last-child { border-bottom: none; }
+.cmp-item strong { color: #C0C8D8; }
+
+.condition-card { border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; border-left: 4px solid; border: 1px solid; }
+.condition-card.low  { border-left: 4px solid #60A5FA; border-color: rgba(96,165,250,0.2);  background: rgba(96,165,250,0.04); }
+.condition-card.high { border-left: 4px solid #EF4444; border-color: rgba(239,68,68,0.2);   background: rgba(239,68,68,0.04); }
+.cond-name { font-size: 1rem; font-weight: 800; margin-bottom: 4px; }
+.cond-range { font-size: 0.72rem; font-weight: 700; padding: 3px 9px; border-radius: 5px; display: inline-block; margin-bottom: 10px; }
+.cond-body { font-size: 0.82rem; color: #9BAAB8; line-height: 1.65; margin-bottom: 12px; }
+.cond-body strong { color: #E8EDF5; }
+.symptom-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 12px; }
+.chip { font-size: 0.7rem; font-weight: 600; padding: 4px 10px; border-radius: 20px; border: 1px solid; }
+.chip-blue { background: rgba(96,165,250,0.1);  border-color: rgba(96,165,250,0.3); color: #93C5FD; }
+.chip-red  { background: rgba(239,68,68,0.1);   border-color: rgba(239,68,68,0.3);  color: #FCA5A5; }
+.causes-label { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; color: #5A6478; margin-bottom: 6px; }
+.cause-item { font-size: 0.78rem; color: #9BAAB8; padding: 5px 0; border-bottom: 1px solid #1E2536; line-height: 1.5; }
+.cause-item:last-child { border-bottom: none; }
+.cause-item strong { color: #C0C8D8; }
+.nurse-box { background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2); border-left: 4px solid #22C55E; border-radius: 10px; padding: 14px 16px; margin-top: 12px; }
+.nurse-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #22C55E; margin-bottom: 8px; }
+.nurse-step { display: flex; gap: 9px; margin-bottom: 7px; align-items: flex-start; }
+.nurse-num { min-width: 20px; height: 20px; border-radius: 50%; background: rgba(34,197,94,0.2); color: #22C55E; font-size: 0.65rem; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+.nurse-text { font-size: 0.78rem; color: #9BAAB8; line-height: 1.5; }
+.nurse-text strong { color: #C0C8D8; }
+
+.compare-table { width: 100%; border-collapse: collapse; border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+.compare-table th { padding: 10px 14px; font-size: 0.75rem; font-weight: 700; text-align: left; }
+.compare-table th:nth-child(1) { background: #1E2536; color: #8A94A6; }
+.compare-table th:nth-child(2) { background: rgba(96,165,250,0.15);  color: #60A5FA; }
+.compare-table th:nth-child(3) { background: rgba(239,68,68,0.15);   color: #EF4444; }
+.compare-table td { padding: 9px 14px; font-size: 0.78rem; border-bottom: 1px solid #2A3246; vertical-align: top; color: #9BAAB8; }
+.compare-table tr:last-child td { border-bottom: none; }
+.compare-table tr:nth-child(even) td { background: #161B26; }
+.compare-table tr:nth-child(odd)  td { background: #1A1F2E; }
+.compare-table td:first-child { color: #8A94A6; font-weight: 600; font-size: 0.75rem; }
+
+.memory-box { background: rgba(96,165,250,0.06); border: 1px solid rgba(96,165,250,0.18); border-left: 4px solid #60A5FA; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.memory-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #60A5FA; margin-bottom: 8px; }
+.memory-text { font-size: 0.82rem; color: #B0C8E8; line-height: 1.7; }
+.memory-text strong { color: #E0F0FF; }
+
+.nclex-box { background: rgba(239,68,68,0.07); border: 1px solid rgba(239,68,68,0.2); border-left: 4px solid #EF4444; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.nclex-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #EF4444; margin-bottom: 8px; }
+.nclex-item { font-size: 0.8rem; color: #C0C8D8; line-height: 1.6; margin-bottom: 6px; padding-left: 14px; position: relative; }
+.nclex-item::before { content: '★'; position: absolute; left: 0; color: #EF4444; font-size: 0.6rem; top: 4px; }
+.nclex-item strong { color: #FCA5A5; }
+
+.next-up { background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2); border-left: 4px solid #22C55E; border-radius: 10px; padding: 14px 16px; }
+.next-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #22C55E; margin-bottom: 5px; }
+.next-text { font-size: 0.8rem; color: #9BAAB8; line-height: 1.55; }
+.next-text strong { color: #C0C8D8; }
+</style>
+</head>
+<body>
+<div class="back-bar">
+  <button class="back-btn" onclick="window.close(); history.back();">← Back to Notes</button>
+  <span class="back-bar-title">Foundation 5 of 8 — ADH</span>
+</div>
+<div class="page">
+
+  <h1>💧 ADH — The Water Hormone</h1>
+  <p class="intro">ADH stands for Antidiuretic Hormone — antidiuretic means "against urination." Its only job is to tell the kidneys how much water to keep. Understanding ADH explains two conditions that look like opposite sodium problems: SIADH and Diabetes Insipidus.</p>
+
+  <div class="sec">What ADH does — one job, one location</div>
+  <div class="card">
+    <span class="card-icon">🚰</span>
+    <div class="card-title">ADH controls the water tap in the collecting duct</div>
+    <div class="card-body">
+      From note 4 you know the collecting duct is the last segment of the nephron — the final decision point for water. ADH is the hormone that opens or closes the water channels in that duct.<br><br>
+      <strong>ADH present → water channels open → water reabsorbed back into blood → concentrated urine, low output.</strong><br><br>
+      <strong>ADH absent → water channels closed → water stays in the tube → dilute urine, high output.</strong><br><br>
+      That's the entire mechanism. Everything else about ADH is just applying this in different situations.
+    </div>
+  </div>
+
+  <div class="sec">When does the body release ADH?</div>
+  <div class="flow">
+    <div class="flow-step" style="background:rgba(96,165,250,0.07);border-color:rgba(96,165,250,0.25);">
+      <div class="flow-label" style="color:#60A5FA;">Trigger 1</div>
+      <div class="flow-title" style="color:#60A5FA;">Blood osmolarity rises (blood gets too concentrated)</div>
+      <div class="flow-body">When sodium or other solutes rise in the blood, sensors in the hypothalamus detect the concentration. <strong>The hypothalamus makes ADH and the pituitary gland releases it.</strong></div>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-step" style="background:rgba(96,165,250,0.07);border-color:rgba(96,165,250,0.25);">
+      <div class="flow-label" style="color:#60A5FA;">Trigger 2</div>
+      <div class="flow-title" style="color:#60A5FA;">Blood volume drops (dehydration, blood loss)</div>
+      <div class="flow-body">Pressure receptors in the heart and blood vessels detect low volume. They signal the brain to release ADH to retain water and restore volume.</div>
+    </div>
+    <div class="flow-arrow">↓</div>
+    <div class="flow-step" style="background:rgba(34,197,94,0.07);border-color:rgba(34,197,94,0.25);">
+      <div class="flow-label" style="color:#22C55E;">Result</div>
+      <div class="flow-title" style="color:#22C55E;">Kidneys retain water → blood dilutes → osmolarity drops → ADH turns off</div>
+      <div class="flow-body">A perfect feedback loop. The body monitors its own concentration and adjusts ADH release accordingly, constantly fine-tuning the water balance.</div>
+    </div>
+  </div>
+
+  <div class="sec">When ADH is too LOW — Diabetes Insipidus (DI)</div>
+  <div class="condition-card low">
+    <div class="cond-name" style="color:#60A5FA;">Diabetes Insipidus (DI)</div>
+    <span class="cond-range" style="background:rgba(96,165,250,0.15);color:#60A5FA;">ADH absent or ineffective</span>
+    <div class="cond-body">
+      Without ADH the water channels in the collecting duct never open. <strong>Water pours out in massive amounts of very dilute urine</strong> — sometimes 3–20 liters per day. The blood becomes dangerously concentrated (hypernatremia) because water is leaving faster than the patient can drink.<br><br>
+      <strong>Important:</strong> despite the word "diabetes," this has nothing to do with blood sugar. The name comes from the massive urine output — similar to diabetes mellitus. "Insipidus" means tasteless (dilute urine), versus "mellitus" which means sweet (glucose in urine).
+    </div>
+    <div class="symptom-row">
+      <span class="chip chip-blue">Massive urine output (polyuria)</span>
+      <span class="chip chip-blue">Extreme thirst (polydipsia)</span>
+      <span class="chip chip-blue">Very dilute pale urine</span>
+      <span class="chip chip-blue">Rising Na⁺ (hypernatremia)</span>
+      <span class="chip chip-blue">Dehydration if can't drink</span>
+    </div>
+    <div class="causes-label">Common causes</div>
+    <div class="cause-item"><strong>Traumatic brain injury or neurosurgery</strong> — damage to the hypothalamus or pituitary disrupts ADH production or release. Classic post-op neurosurgery complication</div>
+    <div class="cause-item"><strong>Brain tumors or meningitis</strong> — pressure or inflammation affecting the hypothalamus-pituitary axis</div>
+    <div class="cause-item"><strong>Central DI</strong> — the brain doesn't make enough ADH</div>
+    <div class="cause-item"><strong>Nephrogenic DI</strong> — the kidneys don't respond to ADH even when it's present. Caused by lithium toxicity or kidney disease</div>
+    <div class="nurse-box">
+      <div class="nurse-label">🩺 What the nurse does</div>
+      <div class="nurse-step"><div class="nurse-num">1</div><div class="nurse-text"><strong>DDAVP (desmopressin)</strong> — synthetic ADH given intranasally, orally, or IV. Replaces what the brain isn't making. Works for central DI but not nephrogenic DI</div></div>
+      <div class="nurse-step"><div class="nurse-num">2</div><div class="nurse-text"><strong>Replace free water</strong> — D5W IV or oral water to dilute the rising Na⁺. Monitor Na⁺ closely — correct slowly</div></div>
+      <div class="nurse-step"><div class="nurse-num">3</div><div class="nurse-text"><strong>Measure urine output hourly</strong> — volumes over 200–300 mL/hr are a red flag. Strict I&amp;Os are critical</div></div>
+      <div class="nurse-step"><div class="nurse-num">4</div><div class="nurse-text"><strong>Monitor specific gravity</strong> — DI urine is very dilute, specific gravity below 1.005. Healthy concentrated urine is 1.010–1.030</div></div>
+    </div>
+  </div>
+
+  <div class="sec">When ADH is too HIGH — SIADH</div>
+  <div class="condition-card high">
+    <div class="cond-name" style="color:#EF4444;">SIADH</div>
+    <span class="cond-range" style="background:rgba(239,68,68,0.15);color:#EF4444;">Syndrome of Inappropriate ADH Secretion</span>
+    <div class="cond-body">
+      Too much ADH means the kidneys keep reabsorbing free water even when they shouldn't. <strong>The blood becomes diluted — sodium drops (dilutional hyponatremia)</strong> even though the body's total sodium hasn't really changed. There's just too much water relative to the sodium.<br><br>
+      The name says it all — the ADH is being secreted when it shouldn't be. The body is holding onto water inappropriately. The result is a waterlogged, low-sodium state.
+    </div>
+    <div class="symptom-row">
+      <span class="chip chip-red">Low Na⁺ (hyponatremia)</span>
+      <span class="chip chip-red">Concentrated urine (paradox)</span>
+      <span class="chip chip-red">Fluid overload</span>
+      <span class="chip chip-red">Headache, confusion</span>
+      <span class="chip chip-red">Nausea, seizures (severe)</span>
+    </div>
+    <div class="causes-label">Common causes</div>
+    <div class="cause-item"><strong>Brain conditions</strong> — meningitis, brain tumors, stroke, head injury — the brain misfires ADH release</div>
+    <div class="cause-item"><strong>Lung conditions</strong> — pneumonia, small cell lung cancer (tumor produces its own ADH), tuberculosis</div>
+    <div class="cause-item"><strong>Medications</strong> — SSRIs (antidepressants), certain chemotherapy drugs, carbamazepine, opioids</div>
+    <div class="cause-item"><strong>Pain, nausea, stress</strong> — all stimulate ADH release as a survival mechanism — can cause SIADH in post-op patients</div>
+    <div class="nurse-box">
+      <div class="nurse-label">🩺 What the nurse does</div>
+      <div class="nurse-step"><div class="nurse-num">1</div><div class="nurse-text"><strong>Fluid restriction</strong> — first-line treatment. Limiting water intake (often 800–1000 mL/day) allows the kidneys to gradually concentrate the blood and raise Na⁺. No free water IV fluids</div></div>
+      <div class="nurse-step"><div class="nurse-num">2</div><div class="nurse-text"><strong>Monitor Na⁺ closely</strong> — goal is to raise Na⁺ slowly (max 10–12 mEq/L per 24 hours). Too fast causes osmotic demyelination syndrome — permanent brain damage</div></div>
+      <div class="nurse-step"><div class="nurse-num">3</div><div class="nurse-text"><strong>Hypertonic saline (3% NaCl)</strong> — only if Na⁺ is critically low with active seizures. Requires ICU monitoring</div></div>
+      <div class="nurse-step"><div class="nurse-num">4</div><div class="nurse-text"><strong>Treat the underlying cause</strong> — stopping the offending medication or treating the lung/brain condition often resolves SIADH</div></div>
+      <div class="nurse-step"><div class="nurse-num">5</div><div class="nurse-text"><strong>Seizure precautions</strong> — fall prevention, padded rails, oxygen at bedside when Na⁺ is critically low</div></div>
+    </div>
+  </div>
+
+  <div class="sec">DI vs SIADH — the opposite pair</div>
+  <table class="compare-table">
+    <tr><th></th><th>⬇ Diabetes Insipidus (DI)</th><th>⬆ SIADH</th></tr>
+    <tr><td>ADH level</td><td>Too low (or ineffective)</td><td>Too high</td></tr>
+    <tr><td>Water retained</td><td>None — all pours out</td><td>Too much — held in</td></tr>
+    <tr><td>Urine output</td><td>Massive (polyuria)</td><td>Low (concentrated)</td></tr>
+    <tr><td>Urine concentration</td><td>Very dilute</td><td>Very concentrated</td></tr>
+    <tr><td>Blood Na⁺</td><td>High (hypernatremia)</td><td>Low (hyponatremia)</td></tr>
+    <tr><td>Blood osmolarity</td><td>High (concentrated)</td><td>Low (diluted)</td></tr>
+    <tr><td>Patient feels</td><td>Intensely thirsty, dehydrated</td><td>Headache, confused, nauseous</td></tr>
+    <tr><td>Treatment</td><td>DDAVP + free water</td><td>Fluid restriction</td></tr>
+  </table>
+
+  <div class="memory-box">
+    <div class="memory-label">🧠 Memory tricks</div>
+    <div class="memory-text">
+      <strong>"ADH = Anti-Diuretic — it's AGAINST urination"</strong> — high ADH means less urine. Low ADH means floods of urine. The name tells you everything.<br><br>
+      <strong>"DI = Dry and high Na⁺. SIADH = Soggy and low Na⁺"</strong> — opposite conditions. If you can picture one you can reason out the other.<br><br>
+      <strong>"SIADH urine is concentrated even though the blood is diluted"</strong> — this seems backwards but makes sense: ADH is telling the kidneys to keep water. So blood gets watered down but the little urine that forms is concentrated.<br><br>
+      <strong>"SSRIs cause SIADH"</strong> — antidepressants are one of the most common medication causes. Very NCLEX-testable. Any patient on an SSRI with confusion and low Na⁺ — think SIADH.
+    </div>
+  </div>
+
+  <div class="nclex-box">
+    <div class="nclex-label">🎯 NCLEX Priority — ADH</div>
+    <div class="nclex-item"><strong>DI after brain surgery = expected complication</strong> — always monitor urine output hourly after neurosurgery. Output over 200–300 mL/hr = notify provider immediately.</div>
+    <div class="nclex-item"><strong>SIADH paradox</strong> — urine is concentrated BUT blood Na⁺ is low. NCLEX loves testing this seeming contradiction. It makes sense once you know ADH is inappropriately high.</div>
+    <div class="nclex-item"><strong>Fluid restriction is first-line for SIADH</strong> — not salt tablets, not diuretics. Restrict water so the body gradually concentrates its own sodium.</div>
+    <div class="nclex-item"><strong>SSRIs, opioids, carbamazepine</strong> — common medication causes of SIADH. Always review the med list when a patient has unexplained hyponatremia.</div>
+    <div class="nclex-item"><strong>Specific gravity</strong> — DI urine is below 1.005 (very dilute). SIADH urine is above 1.020 (very concentrated). These numbers come up on NCLEX.</div>
+  </div>
+
+  <div class="next-up">
+    <div class="next-label">Up next — Foundation 6 of 8</div>
+    <div class="next-text"><strong>Aldosterone & the RAAS System</strong> — the pressure and sodium hormone. You've already seen the RAAS diagram in your notes. Now you'll understand exactly how it connects to everything you've learned so far — and why drugs like Lasix, spironolactone, ACE inhibitors, and ARBs all target different parts of the same system.</div>
+  </div>
+
+</div>
+</body>
+</html>

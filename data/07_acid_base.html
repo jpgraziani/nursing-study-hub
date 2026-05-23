@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acid-Base Balance</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #0F1117; color: #E8EDF5; font-size: 15px; line-height: 1.6; padding: 0 0 48px; }
+.back-bar { position: sticky; top: 0; z-index: 100; background: #161B26; border-bottom: 1px solid #2A3246; padding: 12px 20px; display: flex; align-items: center; gap: 12px; }
+.back-btn { background: #1E2536; border: 1px solid #2A3246; color: #8A94A6; font-size: 0.82rem; font-weight: 600; padding: 7px 14px; border-radius: 8px; cursor: pointer; font-family: inherit; }
+.back-btn:hover { color: #E8EDF5; border-color: #34D399; }
+.back-bar-title { font-size: 0.88rem; font-weight: 700; color: #8A94A6; }
+.page { max-width: 560px; margin: 0 auto; padding: 28px 20px 0; }
+h1 { font-size: 1.4rem; font-weight: 800; color: #34D399; margin-bottom: 6px; }
+.intro { font-size: 0.88rem; color: #8A94A6; margin-bottom: 28px; line-height: 1.6; }
+.sec { font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.5px; color: #5A6478; margin: 28px 0 12px; }
+.card { background: #1E2536; border: 1px solid #2A3246; border-radius: 12px; padding: 18px 20px; margin-bottom: 10px; }
+.card-icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+.card-title { font-size: 0.95rem; font-weight: 800; color: #E8EDF5; margin-bottom: 8px; }
+.card-body { font-size: 0.83rem; color: #9BAAB8; line-height: 1.7; }
+.card-body strong { color: #E8EDF5; }
+
+/* pH SCALE */
+.ph-scale { background: #161B26; border: 1px solid #2A3246; border-radius: 12px; padding: 20px; margin-bottom: 14px; }
+.ph-bar { height: 28px; border-radius: 6px; background: linear-gradient(to right, #EF4444 0%, #F59E0B 25%, #34D399 45%, #34D399 55%, #60A5FA 75%, #A855F7 100%); margin-bottom: 12px; position: relative; }
+.ph-markers { display: flex; justify-content: space-between; font-size: 0.68rem; color: #8A94A6; margin-bottom: 10px; }
+.ph-zones { display: flex; justify-content: space-between; }
+.ph-zone { text-align: center; }
+.ph-zone-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; }
+.ph-zone-val   { font-size: 0.68rem; color: #8A94A6; }
+
+/* 4 DISORDERS */
+.disorder-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 10px; }
+.disorder-card { border-radius: 12px; padding: 15px; border: 1px solid; border-top: 4px solid; }
+.dis-icon  { font-size: 1.4rem; margin-bottom: 6px; display: block; }
+.dis-name  { font-size: 0.82rem; font-weight: 800; margin-bottom: 4px; }
+.dis-ph    { font-size: 0.7rem; font-weight: 700; padding: 2px 7px; border-radius: 4px; display: inline-block; margin-bottom: 6px; }
+.dis-cause { font-size: 0.72rem; color: #9BAAB8; line-height: 1.5; margin-bottom: 6px; }
+.dis-cause strong { color: #C0C8D8; }
+.dis-comp  { font-size: 0.68rem; color: #5A6478; line-height: 1.4; font-style: italic; }
+
+/* COMPENSATION */
+.comp-card { background: #1A2030; border: 1px solid #2A3246; border-left: 4px solid #34D399; border-radius: 12px; padding: 16px 18px; margin-bottom: 10px; }
+.comp-title { font-size: 0.85rem; font-weight: 800; color: #34D399; margin-bottom: 10px; }
+.comp-row { display: flex; gap: 12px; margin-bottom: 8px; align-items: flex-start; }
+.comp-organ { min-width: 50px; font-size: 0.65rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.8px; padding-top: 2px; }
+.comp-text { font-size: 0.78rem; color: #9BAAB8; line-height: 1.5; }
+.comp-text strong { color: #C0C8D8; }
+
+/* ABG */
+.abg-table { width: 100%; border-collapse: collapse; border-radius: 10px; overflow: hidden; margin-bottom: 10px; }
+.abg-table th { padding: 9px 12px; font-size: 0.72rem; font-weight: 700; text-align: left; background: #1E2536; color: #8A94A6; }
+.abg-table td { padding: 8px 12px; font-size: 0.75rem; border-bottom: 1px solid #2A3246; vertical-align: top; color: #9BAAB8; }
+.abg-table tr:last-child td { border-bottom: none; }
+.abg-table tr:nth-child(even) td { background: #161B26; }
+.abg-table tr:nth-child(odd)  td { background: #1A1F2E; }
+.abg-table td:first-child { color: #34D399; font-weight: 700; font-size: 0.72rem; }
+.abg-table td:nth-child(2) { color: #E8EDF5; font-weight: 700; }
+
+/* K link */
+.k-link { background: rgba(245,158,11,0.07); border: 1px solid rgba(245,158,11,0.2); border-left: 4px solid #F59E0B; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.k-link-title { font-size: 0.82rem; font-weight: 800; color: #F59E0B; margin-bottom: 8px; }
+.k-link-body  { font-size: 0.8rem; color: #C0B090; line-height: 1.6; }
+.k-link-body strong { color: #F0D080; }
+
+.memory-box { background: rgba(52,211,153,0.06); border: 1px solid rgba(52,211,153,0.18); border-left: 4px solid #34D399; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.memory-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #34D399; margin-bottom: 8px; }
+.memory-text { font-size: 0.82rem; color: #A0D8C0; line-height: 1.7; }
+.memory-text strong { color: #C0F0D8; }
+
+.nclex-box { background: rgba(239,68,68,0.07); border: 1px solid rgba(239,68,68,0.2); border-left: 4px solid #EF4444; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; }
+.nclex-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.3px; color: #EF4444; margin-bottom: 8px; }
+.nclex-item { font-size: 0.8rem; color: #C0C8D8; line-height: 1.6; margin-bottom: 6px; padding-left: 14px; position: relative; }
+.nclex-item::before { content: '★'; position: absolute; left: 0; color: #EF4444; font-size: 0.6rem; top: 4px; }
+.nclex-item strong { color: #FCA5A5; }
+
+.next-up { background: rgba(34,197,94,0.06); border: 1px solid rgba(34,197,94,0.2); border-left: 4px solid #22C55E; border-radius: 10px; padding: 14px 16px; }
+.next-label { font-size: 0.62rem; font-weight: 800; text-transform: uppercase; letter-spacing: 1.2px; color: #22C55E; margin-bottom: 5px; }
+.next-text { font-size: 0.8rem; color: #9BAAB8; line-height: 1.55; }
+.next-text strong { color: #C0C8D8; }
+</style>
+</head>
+<body>
+<div class="back-bar">
+  <button class="back-btn" onclick="window.close(); history.back();">← Back to Notes</button>
+  <span class="back-bar-title">Foundation 7 of 8 — Acid-Base Balance</span>
+</div>
+<div class="page">
+
+  <h1>⚗️ Acid-Base Balance</h1>
+  <p class="intro">Your blood's acidity must stay within an extremely narrow range — even small deviations cause heart, brain, and muscle dysfunction. The lungs and kidneys are the two systems that keep pH in balance, and understanding how they work together is essential for reading lab results and understanding sick patients.</p>
+
+  <div class="sec">The pH scale — what normal means</div>
+  <div class="ph-scale">
+    <div style="font-size:0.75rem;color:#8A94A6;margin-bottom:10px;">Blood pH must stay between <strong style="color:#34D399;">7.35 – 7.45</strong>. That's a tiny window on a scale of 0–14.</div>
+    <div class="ph-bar"></div>
+    <div class="ph-markers">
+      <span>7.0</span><span>7.1</span><span>7.2</span><span>7.3</span><span style="color:#34D399;font-weight:700;">7.35</span><span style="color:#34D399;font-weight:700;">7.45</span><span>7.5</span><span>7.6</span><span>7.7</span><span>7.8</span>
+    </div>
+    <div class="ph-zones">
+      <div class="ph-zone"><div class="ph-zone-label" style="color:#EF4444;">Severe acidosis</div><div class="ph-zone-val">below 7.2</div></div>
+      <div class="ph-zone"><div class="ph-zone-label" style="color:#F59E0B;">Acidosis</div><div class="ph-zone-val">7.2–7.35</div></div>
+      <div class="ph-zone"><div class="ph-zone-label" style="color:#34D399;">Normal</div><div class="ph-zone-val">7.35–7.45</div></div>
+      <div class="ph-zone"><div class="ph-zone-label" style="color:#60A5FA;">Alkalosis</div><div class="ph-zone-val">7.45–7.6</div></div>
+      <div class="ph-zone"><div class="ph-zone-label" style="color:#A855F7;">Severe alkalosis</div><div class="ph-zone-val">above 7.6</div></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="card-body">
+      <strong>Acidosis</strong> = pH below 7.35 — too much acid in the blood. Everything slows down: heart contracts less forcefully, brain function dulls, vasodilation drops BP.<br><br>
+      <strong>Alkalosis</strong> = pH above 7.45 — too little acid (too much base). Nerves become hyperexcitable: muscle spasms, tingling, tetany, seizures. Heart rhythm destabilizes.<br><br>
+      <strong>The "osis" means the primary problem. The body always tries to compensate.</strong> Compensation never fully corrects — it just reduces how far off the pH gets.
+    </div>
+  </div>
+
+  <div class="sec">The four acid-base disorders</div>
+  <div class="disorder-grid">
+    <div class="disorder-card" style="border-top-color:#EF4444;border-color:rgba(239,68,68,0.2);background:rgba(239,68,68,0.04);">
+      <span class="dis-icon">🫁</span>
+      <div class="dis-name" style="color:#EF4444;">Respiratory Acidosis</div>
+      <span class="dis-ph" style="background:rgba(239,68,68,0.15);color:#EF4444;">pH ↓ CO₂ ↑</span>
+      <div class="dis-cause"><strong>Cause:</strong> lungs can't blow off CO₂. CO₂ + H₂O = H₂CO₃ (carbonic acid) — blood becomes acidic.<br>COPD, pneumonia, opioid overdose, hypoventilation, respiratory failure.</div>
+      <div class="dis-comp">Kidneys compensate: retain HCO₃⁻ to buffer the acid. Takes hours to days.</div>
+    </div>
+    <div class="disorder-card" style="border-top-color:#60A5FA;border-color:rgba(96,165,250,0.2);background:rgba(96,165,250,0.04);">
+      <span class="dis-icon">🫁</span>
+      <div class="dis-name" style="color:#60A5FA;">Respiratory Alkalosis</div>
+      <span class="dis-ph" style="background:rgba(96,165,250,0.15);color:#60A5FA;">pH ↑ CO₂ ↓</span>
+      <div class="dis-cause"><strong>Cause:</strong> breathing too fast blows off too much CO₂. Blood loses acid → becomes alkalotic.<br>Anxiety, panic attacks, pain, fever, mechanical ventilator set too fast.</div>
+      <div class="dis-comp">Kidneys compensate: excrete HCO₃⁻ to reduce buffering. Takes hours to days.</div>
+    </div>
+    <div class="disorder-card" style="border-top-color:#F97316;border-color:rgba(249,115,22,0.2);background:rgba(249,115,22,0.04);">
+      <span class="dis-icon">🫘</span>
+      <div class="dis-name" style="color:#F97316;">Metabolic Acidosis</div>
+      <span class="dis-ph" style="background:rgba(249,115,22,0.15);color:#F97316;">pH ↓ HCO₃⁻ ↓</span>
+      <div class="dis-cause"><strong>Cause:</strong> acid builds up or bicarbonate is lost. Kidneys can't excrete acid fast enough.<br>DKA, kidney failure, lactic acidosis (shock), severe diarrhea (losing HCO₃⁻), aspirin overdose.</div>
+      <div class="dis-comp">Lungs compensate: breathe faster and deeper (Kussmaul respirations) to blow off CO₂ and raise pH. Happens within minutes.</div>
+    </div>
+    <div class="disorder-card" style="border-top-color:#A855F7;border-color:rgba(168,85,247,0.2);background:rgba(168,85,247,0.04);">
+      <span class="dis-icon">🫘</span>
+      <div class="dis-name" style="color:#A855F7;">Metabolic Alkalosis</div>
+      <span class="dis-ph" style="background:rgba(168,85,247,0.15);color:#A855F7;">pH ↑ HCO₃⁻ ↑</span>
+      <div class="dis-cause"><strong>Cause:</strong> acid is lost or too much bicarbonate is given. Stomach acid is mostly HCl — lose it, blood becomes alkalotic.<br>Prolonged vomiting, nasogastric suction, excessive antacids, loop diuretics.</div>
+      <div class="dis-comp">Lungs compensate: breathe slower and shallower to retain CO₂ and add acid back. But this is limited — the brain won't let CO₂ rise too high before forcing a breath.</div>
+    </div>
+  </div>
+
+  <div class="sec">How to quickly tell respiratory from metabolic</div>
+  <div class="card">
+    <div class="card-body">
+      There's one simple rule: <strong>in respiratory disorders, CO₂ causes the problem. In metabolic disorders, HCO₃⁻ reflects the problem.</strong><br><br>
+      CO₂ is an acid — too much makes blood acidic. Too little makes it alkalotic.<br>
+      HCO₃⁻ (bicarbonate) is a base — too much makes blood alkalotic. Too little makes it acidic.<br><br>
+      <strong>If pH and CO₂ move in OPPOSITE directions → respiratory cause.</strong><br>
+      (High CO₂ + low pH = respiratory acidosis. Low CO₂ + high pH = respiratory alkalosis.)<br><br>
+      <strong>If pH and HCO₃⁻ move in the SAME direction → metabolic cause.</strong><br>
+      (Low HCO₃⁻ + low pH = metabolic acidosis. High HCO₃⁻ + high pH = metabolic alkalosis.)
+    </div>
+  </div>
+
+  <div class="sec">ABG values — what you're reading</div>
+  <table class="abg-table">
+    <tr><th>Value</th><th>Normal</th><th>What it measures</th></tr>
+    <tr><td>pH</td><td>7.35–7.45</td><td>Overall blood acidity. The result of everything below.</td></tr>
+    <tr><td>PaCO₂</td><td>35–45 mmHg</td><td>Carbon dioxide. The respiratory component. Controlled by breathing rate.</td></tr>
+    <tr><td>HCO₃⁻</td><td>22–26 mEq/L</td><td>Bicarbonate. The metabolic component. Controlled by the kidneys.</td></tr>
+    <tr><td>PaO₂</td><td>80–100 mmHg</td><td>Oxygen level in arterial blood. Not directly part of acid-base but always checked.</td></tr>
+    <tr><td>SaO₂</td><td>95–100%</td><td>Oxygen saturation. What the pulse oximeter measures.</td></tr>
+  </table>
+
+  <div class="sec">How lungs and kidneys compensate</div>
+  <div class="comp-card">
+    <div class="comp-title">Two systems, different speeds</div>
+    <div class="comp-row">
+      <div class="comp-organ" style="color:#60A5FA;">LUNGS</div>
+      <div class="comp-text"><strong>Fast — responds in minutes.</strong> Breathe faster to blow off CO₂ (raises pH). Breathe slower to retain CO₂ (lowers pH). The brain stem detects blood acidity and adjusts breathing rate automatically. Compensates for metabolic disorders.</div>
+    </div>
+    <div class="comp-row">
+      <div class="comp-organ" style="color:#38BDF8;">KIDNEYS</div>
+      <div class="comp-text"><strong>Slow — takes hours to days.</strong> Excrete H⁺ into urine to remove acid. Retain HCO₃⁻ to add buffer. Or excrete HCO₃⁻ if too alkalotic. Powerful but slow. Compensates for respiratory disorders.</div>
+    </div>
+    <div style="margin-top:10px;font-size:0.76rem;color:#8A94A6;line-height:1.5;">
+      Compensation is never perfect — it reduces the severity but never fully returns pH to 7.40. The body always prioritizes keeping the patient alive over perfect chemistry.
+    </div>
+  </div>
+
+  <div class="sec">The potassium-pH connection revisited</div>
+  <div class="k-link">
+    <div class="k-link-title">⚠️ pH always shifts potassium — you saw this in note 3</div>
+    <div class="k-link-body">
+      Now it makes more sense in context. When blood is acidic (too many H⁺ ions floating around), cells try to buffer by pulling H⁺ inside. To maintain electrical balance, <strong>K⁺ gets pushed out of cells into the blood → serum K⁺ rises → hyperkalemia.</strong><br><br>
+      When blood is alkalotic (too few H⁺), H⁺ moves out of cells. <strong>K⁺ moves in to maintain balance → serum K⁺ drops → hypokalemia.</strong><br><br>
+      This is why in DKA (diabetic ketoacidosis) — a severe metabolic acidosis — the serum K⁺ looks high before treatment. But when you fix the acidosis with insulin and fluids, K⁺ rushes back into cells and the serum level crashes fast. Always replace K⁺ during DKA treatment.
+    </div>
+  </div>
+
+  <div class="memory-box">
+    <div class="memory-label">🧠 Memory tricks</div>
+    <div class="memory-text">
+      <strong>"ROME" — Respiratory Opposite, Metabolic Equal</strong><br>
+      In Respiratory disorders: pH and CO₂ move in Opposite directions.<br>
+      In Metabolic disorders: pH and HCO₃⁻ move in Equal (same) directions.<br><br>
+      <strong>"CO₂ = acid, HCO₃⁻ = base"</strong> — keep this anchored and the rest follows logically.<br><br>
+      <strong>"Lungs = fast, Kidneys = slow"</strong> — respiratory compensation happens in minutes. Renal compensation takes hours to days.<br><br>
+      <strong>"Kussmaul breathing = metabolic acidosis"</strong> — deep, rapid, sighing breaths are the lungs trying to blow off CO₂ to compensate. Classic in DKA. NCLEX tests this constantly.
+    </div>
+  </div>
+
+  <div class="nclex-box">
+    <div class="nclex-label">🎯 NCLEX Priority — Acid-Base</div>
+    <div class="nclex-item"><strong>Normal pH = 7.35–7.45, CO₂ = 35–45, HCO₃⁻ = 22–26</strong> — memorize these three ranges. Every ABG question starts here.</div>
+    <div class="nclex-item"><strong>Kussmaul respirations = metabolic acidosis</strong> — the body is trying to blow off CO₂ to compensate. Classic in DKA and kidney failure.</div>
+    <div class="nclex-item"><strong>COPD patients have chronically high CO₂</strong> — their kidneys have compensated with high HCO₃⁻. Do not give high-flow oxygen — they rely on hypoxia to drive their breathing. This is tested repeatedly.</div>
+    <div class="nclex-item"><strong>Vomiting = metabolic alkalosis</strong> — losing stomach acid (HCl) removes H⁺ and raises pH. The nurse replaces volume with normal saline (not D5W) and corrects K⁺.</div>
+    <div class="nclex-item"><strong>DKA = metabolic acidosis + fake hyperkalemia</strong> — treat acidosis, replace K⁺ before and during insulin therapy. K⁺ will crash when pH is corrected.</div>
+  </div>
+
+  <div class="next-up">
+    <div class="next-label">Up next — Foundation 8 of 8</div>
+    <div class="next-text"><strong>Putting It All Together</strong> — the final note connects every concept from notes 1–7 into one complete clinical picture. You'll see how sodium, potassium, the kidneys, ADH, aldosterone, and acid-base all interact — and you'll be ready to go back to the simulator and actually understand what you're doing.</div>
+  </div>
+
+</div>
+</body>
+</html>

@@ -450,6 +450,135 @@
         "renal",
         "NCLEX"
       ]
+    },
+    {
+      "id": "anatomy-note-foundation-05",
+      "file": "05_adh.html",
+      "class": "anatomy",
+      "type": "note",
+      "category": "Fluid & Electrolytes \u2014 Foundation",
+      "title": "5 of 8 \u2014 ADH (The Water Hormone)",
+      "description": "How ADH controls water reabsorption in the collecting duct, Diabetes Insipidus (too little ADH), SIADH (too much ADH), and why they are opposite sodium problems.",
+      "topics": [
+        "ADH",
+        "vasopressin",
+        "antidiuretic hormone",
+        "SIADH",
+        "diabetes insipidus",
+        "DDAVP",
+        "collecting duct",
+        "hyponatremia",
+        "hypernatremia",
+        "urine concentration",
+        "polyuria",
+        "fluid restriction"
+      ],
+      "tags": [
+        "foundation",
+        "ADH",
+        "SIADH",
+        "diabetes insipidus",
+        "NCLEX"
+      ]
+    },
+    {
+      "id": "anatomy-note-foundation-06",
+      "file": "06_aldosterone_raas.html",
+      "class": "anatomy",
+      "type": "note",
+      "category": "Fluid & Electrolytes \u2014 Foundation",
+      "title": "6 of 8 \u2014 Aldosterone & the RAAS",
+      "description": "How aldosterone swaps Na\u207a for K\u207a in the DCT, the full RAAS cascade step by step, ACE inhibitors, ARBs, spironolactone, furosemide, and Addison's disease.",
+      "topics": [
+        "aldosterone",
+        "RAAS",
+        "renin",
+        "angiotensin",
+        "ACE inhibitor",
+        "ARB",
+        "spironolactone",
+        "furosemide",
+        "Addison disease",
+        "hypokalemia",
+        "hyperkalemia",
+        "hypertension",
+        "lisinopril",
+        "losartan",
+        "fludrocortisone"
+      ],
+      "tags": [
+        "foundation",
+        "aldosterone",
+        "RAAS",
+        "pharmacology",
+        "NCLEX"
+      ]
+    },
+    {
+      "id": "anatomy-note-foundation-07",
+      "file": "07_acid_base.html",
+      "class": "anatomy",
+      "type": "note",
+      "category": "Fluid & Electrolytes \u2014 Foundation",
+      "title": "7 of 8 \u2014 Acid-Base Balance",
+      "description": "pH scale, the four acid-base disorders, respiratory vs metabolic, how lungs and kidneys compensate, ABG values, Kussmaul breathing, and the K\u207a-pH connection.",
+      "topics": [
+        "pH",
+        "acidosis",
+        "alkalosis",
+        "respiratory acidosis",
+        "respiratory alkalosis",
+        "metabolic acidosis",
+        "metabolic alkalosis",
+        "ABG",
+        "bicarbonate",
+        "CO2",
+        "Kussmaul breathing",
+        "DKA",
+        "COPD",
+        "compensation",
+        "ROME"
+      ],
+      "tags": [
+        "foundation",
+        "acid-base",
+        "ABG",
+        "pH",
+        "NCLEX"
+      ]
+    },
+    {
+      "id": "anatomy-note-foundation-08",
+      "file": "08_putting_it_together.html",
+      "class": "anatomy",
+      "type": "note",
+      "category": "Fluid & Electrolytes \u2014 Foundation",
+      "title": "8 of 8 \u2014 Putting It All Together",
+      "description": "Final note connecting all 7 concepts with three full clinical scenarios (furosemide, DI, DKA), a quick reference table of all key values, and how each simulator case maps to the foundation.",
+      "topics": [
+        "fluid balance",
+        "sodium",
+        "potassium",
+        "ADH",
+        "aldosterone",
+        "RAAS",
+        "acid-base",
+        "DKA",
+        "SIADH",
+        "diabetes insipidus",
+        "Addison disease",
+        "furosemide",
+        "clinical reasoning",
+        "ABG",
+        "urine output"
+      ],
+      "tags": [
+        "foundation",
+        "clinical reasoning",
+        "synthesis",
+        "NCLEX",
+        "simulator"
+      ]
     }
   ],
   "version": "1.4.0"
