@@ -6,7 +6,7 @@
 // ── STATE ────────────────────────────────────────────
 const STATE = {
   manifest: null,
-  quizzes: {},
+  quizzes: {},           // id → quiz data
   currentView: 'home',
   currentClass: null,
   quiz: {
@@ -19,9 +19,9 @@ const STATE = {
     answered: false,
     selected: null,
     selectedSATA: new Set(),
-    mode: 'quiz'
+    mode: 'quiz'         // 'quiz' | 'missed'
   },
-  scores: {},
+  scores: {},            // quizId → {score, total, date}
   theme: 'dark',
   searchFilter: 'all'
 };
@@ -78,20 +78,7 @@ function buildSidebarNav() {
   nav.innerHTML = '';
 
   STATE.manifest.classes.forEach(cls => {
-    const allItems  = STATE.manifest.content.filter(c => c.class === cls.id);
-    const quizItems = allItems.filter(c => c.type === 'quiz');
-    const noteItems = allItems.filter(c => c.type === 'note');
-    const modules   = getModulesForClass(cls.id);
-
-    let subLinks = '';
-    modules.forEach(m => {
-      subLinks += `<a class="module-nav-link" onclick="showClassView('${cls.id}', ${m})">Module ${m}</a>`;
-    });
-    if (noteItems.length > 0 && quizItems.length === 0) {
-      // Notes-only class — no module links, just one Notes link
-      subLinks = `<a class="module-nav-link note-nav-link" onclick="showClassView('${cls.id}')">📖 All Notes</a>`;
-    }
-
+    const modules = getModulesForClass(cls.id);
     const item = document.createElement('div');
     item.className = 'class-nav-item';
     item.innerHTML = `
@@ -100,7 +87,10 @@ function buildSidebarNav() {
         <span>${cls.icon} ${cls.name}</span>
       </button>
       <div class="module-nav-list" id="mod-nav-${cls.id}" style="display:none">
-        ${subLinks}
+        ${modules.map(m => `
+          <a class="module-nav-link" onclick="showClassView('${cls.id}', ${m})">
+            Module ${m}
+          </a>`).join('')}
       </div>`;
     nav.appendChild(item);
   });
@@ -109,7 +99,7 @@ function buildSidebarNav() {
 function getModulesForClass(classId) {
   const mods = new Set();
   STATE.manifest.content
-    .filter(c => c.class === classId && c.type === 'quiz')
+    .filter(c => c.class === classId)
     .forEach(c => mods.add(c.module));
   return Array.from(mods).sort((a, b) => a - b);
 }
@@ -124,43 +114,31 @@ function buildHomeView() {
   const grid = document.getElementById('home-classes');
   if (!grid) return;
 
-  grid.innerHTML = '';
   const title = document.createElement('h2');
   title.className = 'section-title';
   title.textContent = 'Your Classes';
+  grid.innerHTML = '';
   grid.appendChild(title);
 
   const cards = document.createElement('div');
   cards.className = 'class-grid';
 
   STATE.manifest.classes.forEach(cls => {
-    const items      = STATE.manifest.content.filter(c => c.class === cls.id);
-    const quizItems  = items.filter(c => c.type === 'quiz');
-    const noteItems  = items.filter(c => c.type === 'note');
-    const totalQ     = quizItems.reduce((sum, i) => sum + (i.questionCount || 0), 0);
-    const notesOnly  = quizItems.length === 0 && noteItems.length > 0;
-
+    const items = STATE.manifest.content.filter(c => c.class === cls.id);
+    const totalQ = items.reduce((sum, i) => sum + (i.questionCount || 0), 0);
     const card = document.createElement('div');
     card.className = 'class-card';
     card.onclick = () => showClassView(cls.id);
-
-    let statsHtml = '';
-    if (notesOnly) {
-      statsHtml = `<div class="class-stat"><strong>${noteItems.length}</strong>Notes</div>`;
-    } else {
-      statsHtml = `
-        <div class="class-stat"><strong>${quizItems.length}</strong>Quizzes</div>
-        <div class="class-stat"><strong>${totalQ}</strong>Questions</div>
-        ${noteItems.length > 0 ? `<div class="class-stat"><strong>${noteItems.length}</strong>Notes</div>` : ''}`;
-    }
-
     card.innerHTML = `
       <div class="class-card-accent" style="background:${cls.color}"></div>
       <div class="class-card-icon">${cls.icon}</div>
       <div class="class-card-code">${cls.code}</div>
       <div class="class-card-name">${cls.name}</div>
       <div class="class-card-term">${cls.term || ''}</div>
-      <div class="class-card-stats">${statsHtml}</div>`;
+      <div class="class-card-stats">
+        <div class="class-stat"><strong>${items.length}</strong>Quizzes</div>
+        <div class="class-stat"><strong>${totalQ}</strong>Questions</div>
+      </div>`;
     cards.appendChild(card);
   });
 
@@ -170,34 +148,35 @@ function buildHomeView() {
 
 function buildRecentScores() {
   if (Object.keys(STATE.scores).length === 0) return;
-  const section   = document.getElementById('home-recent');
+  const section = document.getElementById('home-recent');
   const container = document.getElementById('recent-scores');
   if (!section || !container) return;
   section.style.display = 'block';
   container.innerHTML = '';
 
-  Object.entries(STATE.scores)
+  const entries = Object.entries(STATE.scores)
     .sort((a, b) => new Date(b[1].date) - new Date(a[1].date))
-    .slice(0, 6)
-    .forEach(([id, score]) => {
-      const item = STATE.manifest.content.find(c => c.id === id);
-      if (!item) return;
-      const cls = getClassById(item.class);
-      const pct = Math.round(score.score / score.total * 100);
-      const div = document.createElement('div');
-      div.className = 'quiz-card';
-      div.onclick = () => showClassView(item.class);
-      div.innerHTML = `
-        <div class="quiz-card-icon">📊</div>
-        <div class="quiz-card-info">
-          <div class="quiz-card-title">${item.title}</div>
-          <div class="quiz-card-desc">${cls?.name || ''} · ${new Date(score.date).toLocaleDateString()}</div>
-        </div>
-        <div class="quiz-card-right">
-          <div class="${scoreClass(pct)} quiz-score-badge">${pct}%</div>
-        </div>`;
-      container.appendChild(div);
-    });
+    .slice(0, 6);
+
+  entries.forEach(([id, score]) => {
+    const item = STATE.manifest.content.find(c => c.id === id);
+    if (!item) return;
+    const cls = getClassById(item.class);
+    const pct = Math.round(score.score / score.total * 100);
+    const div = document.createElement('div');
+    div.className = 'quiz-card';
+    div.onclick = () => showClassView(item.class);
+    div.innerHTML = `
+      <div class="quiz-card-icon">📊</div>
+      <div class="quiz-card-info">
+        <div class="quiz-card-title">${item.title}</div>
+        <div class="quiz-card-desc">${cls?.name || ''} · ${new Date(score.date).toLocaleDateString()}</div>
+      </div>
+      <div class="quiz-card-right">
+        <div class="${scoreClass(pct)} quiz-score-badge">${pct}%</div>
+      </div>`;
+    container.appendChild(div);
+  });
 }
 
 function scoreClass(pct) {
@@ -218,16 +197,18 @@ async function showClassView(classId, scrollToModule = null) {
 
   setBreadcrumb([{ label: 'Home', action: () => showView('home') }, { label: cls.name }]);
 
+  // Toggle module nav
   document.querySelectorAll('[id^="mod-nav-"]').forEach(el => el.style.display = 'none');
   const modNav = document.getElementById(`mod-nav-${classId}`);
   if (modNav) modNav.style.display = 'block';
 
-  document.getElementById('class-header').innerHTML = `
+  const header = document.getElementById('class-header');
+  header.innerHTML = `
     <div class="class-hero">
       <div class="class-hero-top">
         <span class="class-hero-icon">${cls.icon}</span>
         <div>
-          <div class="class-hero-code">${cls.code}${cls.term ? ' · ' + cls.term : ''}</div>
+          <div class="class-hero-code">${cls.code} · ${cls.term || ''}</div>
           <div class="class-hero-name">${cls.name}</div>
         </div>
       </div>
@@ -236,28 +217,16 @@ async function showClassView(classId, scrollToModule = null) {
   const content = document.getElementById('class-content');
   content.innerHTML = '<div class="loading"><div class="loading-spinner">⟳</div><p>Loading content…</p></div>';
 
-  const allItems  = STATE.manifest.content.filter(c => c.class === classId);
-  const quizItems = allItems.filter(c => c.type === 'quiz');
-  const noteItems = allItems.filter(c => c.type === 'note');
-  const notesOnly = quizItems.length === 0 && noteItems.length > 0;
-
-  content.innerHTML = '';
-
-  // ── NOTES-ONLY CLASS ─────────────────────────────
-  if (notesOnly) {
-    renderNotesGrid(noteItems, content, cls);
-    closeSidebarMobile();
-    return;
-  }
-
-  // ── QUIZ CLASS (with optional notes banner) ──────
+  const items = STATE.manifest.content.filter(c => c.class === classId);
   const moduleGroups = {};
-  quizItems.forEach(item => {
+  items.forEach(item => {
     if (!moduleGroups[item.module]) moduleGroups[item.module] = [];
     moduleGroups[item.module].push(item);
   });
 
+  content.innerHTML = '';
   const modules = Object.keys(moduleGroups).map(Number).sort((a, b) => a - b);
+
   for (const mod of modules) {
     const section = document.createElement('div');
     section.className = 'module-section';
@@ -265,13 +234,14 @@ async function showClassView(classId, scrollToModule = null) {
     section.innerHTML = `<div class="module-title">Module ${mod}</div>`;
 
     for (const item of moduleGroups[mod]) {
+      const isRef = item.type === 'reference';
       const score = STATE.scores[item.id];
-      const pct   = score ? Math.round(score.score / score.total * 100) : null;
-      const card  = document.createElement('div');
+      const pct = score ? Math.round(score.score / score.total * 100) : null;
+      const card = document.createElement('div');
       card.className = 'quiz-card';
-      card.onclick = () => startQuiz(item.id);
+      card.onclick = () => isRef ? showReferencePage(item.id) : startQuiz(item.id);
       card.innerHTML = `
-        <div class="quiz-card-icon">📝</div>
+        <div class="quiz-card-icon">${isRef ? '📖' : '📝'}</div>
         <div class="quiz-card-info">
           <div class="quiz-card-title">${item.title}</div>
           <div class="quiz-card-desc">${item.description || ''}</div>
@@ -280,9 +250,11 @@ async function showClassView(classId, scrollToModule = null) {
           </div>
         </div>
         <div class="quiz-card-right">
-          <div class="quiz-q-count">${item.questionCount}</div>
-          <div class="quiz-q-label">Questions</div>
-          ${pct !== null ? `<div class="${scoreClass(pct)} quiz-score-badge">${pct}%</div>` : ''}
+          ${isRef
+            ? `<div class="quiz-q-label" style="font-size:0.78rem;font-weight:700;color:var(--accent);margin-top:8px">READ</div>`
+            : `<div class="quiz-q-count">${item.questionCount}</div>
+               <div class="quiz-q-label">Questions</div>
+               ${pct !== null ? `<div class="${scoreClass(pct)} quiz-score-badge">${pct}%</div>` : ''}`}
         </div>`;
       section.appendChild(card);
     }
@@ -295,54 +267,44 @@ async function showClassView(classId, scrollToModule = null) {
       if (el) el.scrollIntoView({ behavior: 'smooth' });
     }, 100);
   }
-
-  closeSidebarMobile();
 }
 
-// ── RENDER NOTES GRID ────────────────────────────────
-function renderNotesGrid(noteItems, container, cls) {
-  // Group by body system (category field)
-  const groups = {};
-  noteItems.forEach(note => {
-    const cat = note.category || 'General';
-    if (!groups[cat]) groups[cat] = [];
-    groups[cat].push(note);
-  });
+// ── REFERENCE PAGES ──────────────────────────────────
+async function showReferencePage(contentId) {
+  const item = STATE.manifest.content.find(c => c.id === contentId);
+  if (!item) return;
 
-  // Sort categories alphabetically
-  const sortedCats = Object.keys(groups).sort();
+  setActiveView('view-reference');
+  document.getElementById('reference-area').innerHTML =
+    '<div class="loading"><div class="loading-spinner">⟳</div><p>Loading…</p></div>';
 
-  sortedCats.forEach(cat => {
-    const section = document.createElement('div');
-    section.className = 'module-section';
-    section.innerHTML = `<div class="module-title">${cat}</div>`;
+  const data = await loadQuiz(item); // generic JSON fetch/cache, works for reference files too
+  if (!data) {
+    document.getElementById('reference-area').innerHTML = '<p style="color:var(--red);padding:40px;text-align:center">Could not load this page.</p>';
+    return;
+  }
 
-    groups[cat].forEach(note => {
-      const card = document.createElement('div');
-      card.className = 'quiz-card note-card';
-      card.onclick = () => openNote(note);
-      card.innerHTML = `
-        <div class="quiz-card-icon">📖</div>
-        <div class="quiz-card-info">
-          <div class="quiz-card-title">${note.title}</div>
-          <div class="quiz-card-desc">${note.description || ''}</div>
-          <div class="quiz-card-tags">
-            ${(note.tags || []).map(t => `<span class="quiz-tag note-tag">${t}</span>`).join('')}
-          </div>
-        </div>
-        <div class="quiz-card-right">
-          <div class="note-open-label">Open</div>
-          <div class="note-open-arrow">→</div>
-        </div>`;
-      section.appendChild(card);
-    });
+  const cls = getClassById(item.class);
+  setBreadcrumb([
+    { label: 'Home', action: () => showView('home') },
+    { label: cls?.name || '', action: () => showClassView(item.class) },
+    { label: item.title }
+  ]);
 
-    container.appendChild(section);
-  });
+  document.getElementById('reference-area').innerHTML = `
+    <div class="ref-topbar">
+      <h2>${item.title}</h2>
+      <button class="quiz-exit-btn" onclick="exitReference('${item.class}')">✕ Close</button>
+    </div>
+    <div class="ref-content">${data.content}</div>
+    <div style="text-align:center;margin-top:28px">
+      <button class="btn-home" onclick="exitReference('${item.class}')">Back to Class</button>
+    </div>`;
 }
 
-function openNote(note) {
-  window.open(`data/${note.file}`, '_blank');
+function exitReference(classId) {
+  if (classId) showClassView(classId);
+  else showView('home');
 }
 
 // ── QUIZ ENGINE ──────────────────────────────────────
@@ -356,26 +318,26 @@ async function startQuiz(contentId) {
 
   const data = await loadQuiz(item);
   if (!data) {
-    document.getElementById('quiz-area').innerHTML =
-      '<p style="color:var(--red);padding:40px;text-align:center">Could not load quiz data.</p>';
+    document.getElementById('quiz-area').innerHTML = '<p style="color:var(--red);padding:40px;text-align:center">Could not load quiz data.</p>';
     return;
   }
 
+  // Shuffle and init
   const cls = getClassById(item.class);
   STATE.quiz.data = { ...data, item, cls };
   STATE.quiz.questions = data.questions.map(q => shuffleQuestion(JSON.parse(JSON.stringify(q))));
   STATE.quiz.current = 0;
   STATE.quiz.correct = 0;
-  STATE.quiz.wrong   = 0;
-  STATE.quiz.missed  = [];
+  STATE.quiz.wrong = 0;
+  STATE.quiz.missed = [];
   STATE.quiz.answered = false;
   STATE.quiz.selected = null;
   STATE.quiz.selectedSATA = new Set();
   STATE.quiz.mode = 'quiz';
 
   setBreadcrumb([
-    { label: 'Home',            action: () => showView('home') },
-    { label: cls?.name || '',   action: () => showClassView(item.class) },
+    { label: 'Home', action: () => showView('home') },
+    { label: cls?.name || '', action: () => showClassView(item.class) },
     { label: `Module ${item.module}`, action: () => showClassView(item.class, item.module) },
     { label: item.title }
   ]);
@@ -392,7 +354,7 @@ function shuffleQuestion(q) {
   }
   return {
     ...q,
-    opts:    idx.map(i => q.opts[i]),
+    opts: idx.map(i => q.opts[i]),
     correct: q.correct.map(c => idx.indexOf(c))
   };
 }
@@ -400,12 +362,13 @@ function shuffleQuestion(q) {
 function renderQuizQuestion() {
   const { quiz } = STATE;
   if (quiz.current >= quiz.questions.length) { showResults(); return; }
-  const q      = quiz.questions[quiz.current];
-  const total  = quiz.questions.length;
-  const pct    = Math.round((quiz.current / total) * 100);
+  const q = quiz.questions[quiz.current];
+  const total = quiz.questions.length;
+  const pct = Math.round((quiz.current / total) * 100);
   const isSATA = q.type === 'sata';
   const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
-  const color  = UNIT_COLORS[q.unit] || '#1565C0';
+  const color = UNIT_COLORS[q.unit] || '#1565C0';
+  const cls = quiz.data.cls;
 
   quiz.answered = false;
   quiz.selected = null;
@@ -481,18 +444,19 @@ function submitAnswer() {
   if (quiz.answered) return;
   quiz.answered = true;
 
-  const q      = quiz.questions[quiz.current];
+  const q = quiz.questions[quiz.current];
   const isSATA = q.type === 'sata';
   const userSel = isSATA ? Array.from(quiz.selectedSATA) : (quiz.selected !== null ? [quiz.selected] : []);
-  const cSet   = new Set(q.correct);
-  const uSet   = new Set(userSel);
+  const cSet = new Set(q.correct);
+  const uSet = new Set(userSel);
   const isCorrect = q.correct.length === userSel.length && q.correct.every(c => uSet.has(c));
+  const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
 
   document.querySelectorAll('.q-opt').forEach((el, i) => {
     el.classList.add('locked');
     el.disabled = true;
-    if (cSet.has(i))      { el.classList.add('correct'); el.querySelector('.opt-icon').textContent = '✓'; }
-    else if (uSet.has(i)) { el.classList.add('wrong');   el.querySelector('.opt-icon').textContent = '✗'; }
+    if (cSet.has(i)) { el.classList.add('correct'); el.querySelector('.opt-icon').textContent = '✓'; }
+    else if (uSet.has(i)) { el.classList.add('wrong'); el.querySelector('.opt-icon').textContent = '✗'; }
   });
 
   const rat = document.getElementById('rationale');
@@ -517,11 +481,12 @@ function nextQuestion() {
 
 function showResults() {
   const { quiz } = STATE;
-  const total  = quiz.questions.length;
-  const pct    = Math.round(quiz.correct / total * 100);
+  const total = quiz.questions.length;
+  const pct = Math.round(quiz.correct / total * 100);
   const quizId = quiz.data.item?.id;
   const cssPct = `${pct * 3.6}deg`;
 
+  // Save score
   if (quizId) {
     STATE.scores[quizId] = { score: quiz.correct, total, date: new Date().toISOString() };
     saveScores();
@@ -561,11 +526,11 @@ function restartQuiz() {
 }
 
 function reviewMissed() {
-  const { quiz }  = STATE;
-  const letters   = ['A', 'B', 'C', 'D', 'E', 'F'];
+  const { quiz } = STATE;
+  const letters = ['A', 'B', 'C', 'D', 'E', 'F'];
   let html = '<div class="missed-review"><h3>Missed Questions Review</h3>';
   quiz.missed.forEach(idx => {
-    const q     = quiz.questions[idx];
+    const q = quiz.questions[idx];
     const color = UNIT_COLORS[q.unit] || '#1565C0';
     html += `
       <div class="missed-card">
@@ -594,19 +559,21 @@ function exitQuiz() {
 // ── SEARCH ───────────────────────────────────────────
 async function ensureAllQuizzesLoaded() {
   for (const item of STATE.manifest.content) {
-    if (item.type === 'note') continue;
-    if (!STATE.quizzes[item.id]) await loadQuiz(item);
+    if (!STATE.quizzes[item.id]) {
+      await loadQuiz(item);
+    }
   }
 }
 
 function getAllQuestions() {
   const results = [];
   STATE.manifest.content.forEach(item => {
-    if (item.type === 'note') return;
     const quiz = STATE.quizzes[item.id];
     if (!quiz || !quiz.questions) return;
     const cls = getClassById(item.class);
-    quiz.questions.forEach(q => results.push({ q, item, cls }));
+    quiz.questions.forEach(q => {
+      results.push({ q, item, cls });
+    });
   });
   return results;
 }
@@ -614,10 +581,15 @@ function getAllQuestions() {
 function searchQuestions(query, classFilter = 'all') {
   if (!query || query.trim().length < 2) return [];
   const lower = query.toLowerCase();
-  return getAllQuestions()
+  const allQ = getAllQuestions();
+  return allQ
     .filter(({ q, item }) => {
       if (classFilter !== 'all' && item.class !== classFilter) return false;
-      const haystack = [q.q, q.rationale, q.topic, ...(q.opts || []), ...(item.topics || [])].join(' ').toLowerCase();
+      const haystack = [
+        q.q, q.rationale, q.topic,
+        ...(q.opts || []),
+        ...(item.topics || [])
+      ].join(' ').toLowerCase();
       return lower.split(' ').every(word => haystack.includes(word));
     })
     .slice(0, 40);
@@ -675,12 +647,13 @@ async function fullSearch(val) {
     return;
   }
   await ensureAllQuizzesLoaded();
-  const filter  = STATE.searchFilter || 'all';
+  const filter = STATE.searchFilter || 'all';
   const results = searchQuestions(val, filter);
   if (results.length === 0) {
     resultsEl.innerHTML = `<div class="search-empty"><div class="se-icon">🔍</div><p>No results for "<strong>${val}</strong>"</p></div>`;
     return;
   }
+
   resultsEl.innerHTML = `<p style="color:var(--text3);font-size:0.82rem;margin-bottom:16px">${results.length} result${results.length !== 1 ? 's' : ''} for "<strong style="color:var(--text)">${val}</strong>"</p>` +
     results.map(({ q, item, cls }) => {
       const color = UNIT_COLORS[q.unit] || '#1565C0';
@@ -726,6 +699,7 @@ function showView(view) {
     buildSearchFilters();
     document.getElementById('full-search')?.focus();
   }
+  // Close mini search
   document.getElementById('search-mini-results')?.classList.remove('open');
   document.getElementById('hero-search-results')?.classList.remove('open');
   closeSidebarMobile();
@@ -755,8 +729,9 @@ function setBreadcrumb(items) {
   bc.innerHTML = items.map((item, i) => {
     const isLast = i === items.length - 1;
     if (isLast) return `<span style="color:var(--text2)">${item.label}</span>`;
-    return `<a onclick="" style="cursor:pointer;color:var(--text3)">${item.label}</a><span class="bc-sep">/</span>`;
+    return `<a onclick="${item.action ? item.action.toString().replace(/"/g, "'") : ''}" style="cursor:pointer;color:var(--text3)">${item.label}</a><span class="bc-sep">/</span>`;
   }).join('');
+  // Re-bind onclick for breadcrumb items
   const links = bc.querySelectorAll('a');
   items.filter(i => i.action).forEach((item, i) => {
     if (links[i]) links[i].onclick = item.action;
@@ -766,16 +741,24 @@ function setBreadcrumb(items) {
 // ── SIDEBAR & MOBILE ─────────────────────────────────
 function toggleSidebar() {
   const isMobile = window.innerWidth <= 768;
-  if (isMobile) document.body.classList.toggle('sidebar-open');
-  else document.body.classList.toggle('sidebar-closed');
+  if (isMobile) {
+    document.body.classList.toggle('sidebar-open');
+  } else {
+    document.body.classList.toggle('sidebar-closed');
+  }
 }
 
 function closeSidebarMobile() {
-  if (window.innerWidth <= 768) document.body.classList.remove('sidebar-open');
+  if (window.innerWidth <= 768) {
+    document.body.classList.remove('sidebar-open');
+  }
 }
 
 function handleMobileInit() {
-  if (window.innerWidth <= 768) document.body.classList.remove('sidebar-open');
+  if (window.innerWidth <= 768) {
+    document.body.classList.remove('sidebar-open');
+  }
+  // Close search results when clicking outside
   document.addEventListener('click', (e) => {
     if (!e.target.closest('#search-mini-wrap')) {
       document.getElementById('search-mini-results')?.classList.remove('open');
@@ -796,7 +779,7 @@ function toggleTheme() {
 
 function applyTheme() {
   document.body.classList.toggle('light', STATE.theme === 'light');
-  document.getElementById('theme-icon').textContent  = STATE.theme === 'dark' ? '☾' : '☀';
+  document.getElementById('theme-icon').textContent = STATE.theme === 'dark' ? '☾' : '☀';
   document.getElementById('theme-label').textContent = STATE.theme === 'dark' ? 'Dark Mode' : 'Light Mode';
 }
 

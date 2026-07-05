@@ -469,6 +469,43 @@ mark { background: rgba(74,158,219,0.3); color: var(--accent); border-radius: 3p
 .missed-rat { margin-top: 10px; padding: 12px; background: var(--bg3); border-radius: 8px; font-size: 0.82rem; line-height: 1.65; color: var(--text2); }
 .missed-rat strong { color: var(--red); display: block; margin-bottom: 4px; }
 
+/* ── REFERENCE PAGES ─────────────────────────── */
+#reference-area { max-width: 780px; margin: 0 auto; }
+
+.ref-topbar {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 20px; flex-wrap: wrap; gap: 12px;
+}
+.ref-topbar h2 { font-size: 1.2rem; font-weight: 700; color: var(--text); }
+
+.ref-content {
+  background: var(--bg2); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 32px;
+  box-shadow: var(--shadow); line-height: 1.7; color: var(--text);
+}
+.ref-content h2 {
+  font-size: 1.1rem; font-weight: 800; color: white;
+  background: #1A3A5C; padding: 10px 16px; border-radius: 8px;
+  margin: 28px 0 16px;
+}
+.ref-content h2:first-child { margin-top: 0; }
+.ref-content h3 { font-size: 1rem; font-weight: 700; color: #4A9EDB; margin: 20px 0 10px; }
+.ref-content p { margin-bottom: 12px; font-size: 0.92rem; }
+.ref-content ul, .ref-content ol { margin: 0 0 14px 22px; font-size: 0.92rem; }
+.ref-content li { margin-bottom: 6px; }
+.ref-content strong { color: var(--text); }
+.ref-content em { color: var(--text2); }
+
+.ref-callout {
+  border-radius: 8px; padding: 14px 18px; margin: 16px 0;
+  font-size: 0.88rem; border-left: 4px solid var(--accent);
+  background: rgba(74,158,219,0.07);
+}
+.ref-callout.strength { border-left-color: var(--green); background: rgba(34,197,94,0.07); }
+.ref-callout.friction { border-left-color: var(--gold); background: rgba(245,158,11,0.07); }
+.ref-callout.practical { border-left-color: var(--purple); background: rgba(168,85,247,0.07); }
+.ref-callout strong.callout-label { display: block; margin-bottom: 4px; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; }
+
 /* ── LOADING ────────────────────────────────── */
 .loading { text-align: center; padding: 60px; color: var(--text3); }
 .loading-spinner { font-size: 2rem; animation: spin 1s linear infinite; margin-bottom: 12px; }
@@ -493,28 +530,3 @@ mark { background: rgba(74,158,219,0.3); color: var(--accent); border-radius: 3p
   .q-card { padding: 18px; }
   .quiz-stats-row { gap: 8px; }
 }
-
-/* ── NOTE CARDS ─────────────────────────────────────── */
-.note-card {
-  border-color: rgba(34,197,94,0.2);
-}
-.note-card:hover {
-  border-color: var(--green) !important;
-  background: rgba(34,197,94,0.05) !important;
-}
-.note-tag {
-  background: rgba(34,197,94,0.1);
-  color: #22C55E;
-  border-color: rgba(34,197,94,0.2);
-}
-.note-open-label {
-  font-size: 0.72rem; font-weight: 700;
-  color: var(--green); text-transform: uppercase; letter-spacing: 1px;
-}
-.note-open-arrow {
-  font-size: 1.3rem; color: var(--green);
-  text-align: right; margin-top: 2px;
-}
-
-/* ── SIDEBAR NOTE LINK ──────────────────────────────── */
-.note-nav-link { color: var(--green) !important; }
