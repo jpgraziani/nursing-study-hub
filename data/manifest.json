@@ -2,7 +2,7 @@
   "site": {
     "title": "Nursing Study Hub",
     "subtitle": "Jonathan's Interactive Study Center",
-    "version": "1.3.1"
+    "version": "1.0.0"
   },
   "classes": [
     {
@@ -11,7 +11,7 @@
       "code": "BIO 127IN",
       "color": "#1A3A5C",
       "accent": "#4A9EDB",
-      "icon": "\ud83e\uddec",
+      "icon": "🧬",
       "term": "Spring 2026"
     },
     {
@@ -20,35 +20,17 @@
       "code": "PSY 202",
       "color": "#4A1570",
       "accent": "#A855F7",
-      "icon": "\ud83e\udde0",
+      "icon": "🧠",
       "term": "Summer 2026"
     },
     {
-      "id": "anatomy",
-      "name": "Human Anatomy & Physiology",
-      "code": "BIO 201",
-      "color": "#7B3F00",
-      "accent": "#F97316",
-      "icon": "\ud83e\udec0",
-      "term": ""
-    },
-    {
-      "id": "renal",
-      "name": "Renal & Urinary System",
-      "code": "BIO 201",
-      "color": "#0C4A6E",
-      "accent": "#38BDF8",
-      "icon": "\ud83e\uded8",
-      "term": ""
-    },
-    {
-      "id": "pharm",
-      "name": "Pharmacology",
-      "code": "PHARM",
-      "color": "#14532D",
-      "accent": "#4ADE80",
-      "icon": "\ud83d\udc8a",
-      "term": ""
+      "id": "resources",
+      "name": "Learning & Study Skills",
+      "code": "META",
+      "color": "#00695C",
+      "accent": "#26A69A",
+      "icon": "🧭",
+      "term": "Reference"
     }
   ],
   "content": [
@@ -58,41 +40,11 @@
       "class": "nutrition",
       "module": 8,
       "type": "quiz",
-      "title": "Module 8 \u2014 Full Coverage NCLEX Quiz",
+      "title": "Module 8 — Full Coverage NCLEX Quiz",
       "description": "57-question comprehensive quiz covering all Module 8 sections",
-      "topics": [
-        "nutrition assessment",
-        "nutrition screening",
-        "biochemical data",
-        "anthropometrics",
-        "therapeutic diets",
-        "enteral nutrition",
-        "parenteral nutrition",
-        "drug interactions",
-        "energy estimation",
-        "documentation",
-        "ADIME",
-        "SOAP",
-        "PES statement",
-        "albumin",
-        "prealbumin",
-        "CRP",
-        "tube feeding",
-        "TPN",
-        "warfarin",
-        "grapefruit",
-        "liver",
-        "refeeding syndrome",
-        "aspiration",
-        "indirect calorimetry",
-        "Mifflin St Jeor"
-      ],
+      "topics": ["nutrition assessment", "nutrition screening", "biochemical data", "anthropometrics", "therapeutic diets", "enteral nutrition", "parenteral nutrition", "drug interactions", "energy estimation", "documentation", "ADIME", "SOAP", "PES statement", "albumin", "prealbumin", "CRP", "tube feeding", "TPN", "warfarin", "grapefruit", "liver", "refeeding syndrome", "aspiration", "indirect calorimetry", "Mifflin St Jeor"],
       "questionCount": 57,
-      "tags": [
-        "NCLEX",
-        "Module 8",
-        "full coverage"
-      ]
+      "tags": ["NCLEX", "Module 8", "full coverage"]
     },
     {
       "id": "nutrition-mod8-short",
@@ -100,24 +52,11 @@
       "class": "nutrition",
       "module": 8,
       "type": "quiz",
-      "title": "Module 8 \u2014 Short Answer Practice",
+      "title": "Module 8 — Short Answer Practice",
       "description": "10-question short answer quiz on key Module 8 concepts",
-      "topics": [
-        "nutrition screening",
-        "malnutrition risks",
-        "COPD nutrition",
-        "protein energy malnutrition",
-        "high calorie diet",
-        "multidisciplinary care",
-        "CRP",
-        "liver",
-        "inflammation"
-      ],
+      "topics": ["nutrition screening", "malnutrition risks", "COPD nutrition", "protein energy malnutrition", "high calorie diet", "multidisciplinary care", "CRP", "liver", "inflammation"],
       "questionCount": 10,
-      "tags": [
-        "Module 8",
-        "short answer"
-      ]
+      "tags": ["Module 8", "short answer"]
     },
     {
       "id": "nutrition-mod8-case",
@@ -125,461 +64,23 @@
       "class": "nutrition",
       "module": 8,
       "type": "quiz",
-      "title": "Module 8 \u2014 Case Study Questions",
+      "title": "Module 8 — Case Study Questions",
       "description": "10-question quiz based on module 8 assessment and intervention concepts",
-      "topics": [
-        "nutrition screening",
-        "malnutrition",
-        "therapeutic diet",
-        "enteral nutrition",
-        "parenteral nutrition",
-        "bolus feeding",
-        "continuous feeding",
-        "TPN",
-        "low residue diet",
-        "CRP",
-        "liver",
-        "BMI"
-      ],
+      "topics": ["nutrition screening", "malnutrition", "therapeutic diet", "enteral nutrition", "parenteral nutrition", "bolus feeding", "continuous feeding", "TPN", "low residue diet", "CRP", "liver", "BMI"],
       "questionCount": 10,
-      "tags": [
-        "Module 8",
-        "case study"
-      ]
+      "tags": ["Module 8", "case study"]
     },
     {
-      "id": "anatomy-note-ckd-vitd",
-      "file": "vitamin_d_ckd_explainer.html",
-      "class": "anatomy",
-      "type": "note",
-      "category": "Renal",
-      "title": "CKD \u2192 Bone Pain & Hypocalcemia",
-      "description": "Visual step-by-step explainer: why failing kidneys cause calcium to drop and bones to hurt",
-      "topics": [
-        "CKD",
-        "chronic kidney disease",
-        "vitamin D",
-        "calcitriol",
-        "hypocalcemia",
-        "renal osteodystrophy",
-        "PTH",
-        "parathyroid hormone",
-        "secondary hyperparathyroidism"
-      ],
-      "tags": [
-        "visual",
-        "diagram",
-        "renal"
-      ]
-    },
-    {
-      "id": "anatomy-note-ras",
-      "file": "ras_diagram.html",
-      "class": "anatomy",
-      "type": "note",
-      "category": "Cardiac",
-      "title": "Renin-Angiotensin System (RAAS)",
-      "description": "Step-by-step cascade diagram: how the body rescues falling blood pressure, plus ACE inhibitors, ARBs, and aldosterone antagonists",
-      "topics": [
-        "renin",
-        "angiotensin",
-        "RAAS",
-        "aldosterone",
-        "ACE inhibitor",
-        "ARB",
-        "lisinopril",
-        "losartan",
-        "spironolactone",
-        "vasoconstriction",
-        "blood pressure",
-        "hypertension",
-        "heart failure",
-        "ADH",
-        "juxtaglomerular"
-      ],
-      "tags": [
-        "visual",
-        "diagram",
-        "cardiac",
-        "pharmacology"
-      ]
-    },
-    {
-      "id": "anatomy-note-homeostasis-sim",
-      "file": "homeostasis_simulator.html",
-      "class": "anatomy",
-      "type": "note",
-      "category": "Fluid & Electrolytes",
-      "title": "Fluid & Electrolyte Simulator",
-      "description": "Interactive simulator \u2014 slide Na\u207a, K\u207a, fluid volume, aldosterone, ADH, and pH to watch blood pressure, urine output, and heart rhythm respond in real time",
-      "topics": [
-        "sodium",
-        "potassium",
-        "fluid volume",
-        "aldosterone",
-        "ADH",
-        "vasopressin",
-        "pH",
-        "acid-base",
-        "blood pressure",
-        "urine output",
-        "osmolarity",
-        "hyponatremia",
-        "hypernatremia",
-        "hypokalemia",
-        "hyperkalemia",
-        "SIADH",
-        "diabetes insipidus",
-        "RAAS",
-        "homeostasis"
-      ],
-      "tags": [
-        "interactive",
-        "simulator",
-        "electrolytes",
-        "fluid balance"
-      ]
-    },
-    {
-      "id": "renal-ch11-full",
-      "file": "renal_ch11_full_quiz.json",
-      "class": "renal",
-      "module": 11,
-      "type": "quiz",
-      "title": "Chapter 11 \u2014 Renal System Full Quiz",
-      "description": "81-question NCLEX-style quiz covering renal anatomy, kidney physiology, urine formation, UTIs, renal calculi, AKI, CKD, and clinical case studies",
-      "topics": [
-        "renal system",
-        "urinary system",
-        "kidney anatomy",
-        "nephron",
-        "Bowman's capsule",
-        "loop of Henle",
-        "ADH",
-        "aldosterone",
-        "RAAS",
-        "erythropoietin",
-        "GFR",
-        "urine formation",
-        "cystitis",
-        "UTI",
-        "pyelonephritis",
-        "urosepsis",
-        "ciprofloxacin",
-        "renal calculi",
-        "kidney stones",
-        "AKI",
-        "acute kidney injury",
-        "KDIGO staging",
-        "CKD",
-        "chronic kidney disease",
-        "ESRD",
-        "dialysis",
-        "azotemia",
-        "proteinuria",
-        "hyperkalemia",
-        "acid-base balance",
-        "ACE inhibitors",
-        "digoxin"
-      ],
-      "questionCount": 81,
-      "tags": [
-        "NCLEX",
-        "Chapter 11",
-        "renal",
-        "full coverage"
-      ]
-    },
-    {
-      "id": "pharm-urinary-ch34-35",
-      "file": "pharm_urinary_ch34_35_quiz.json",
-      "class": "pharm",
-      "module": 34,
-      "type": "quiz",
-      "title": "Pharmacology \u2014 Urinary System (Ch. 34\u201335)",
-      "description": "65-question NCLEX-style pharmacology quiz covering diuretics, urinary anti-infectives, antispasmodics, analgesics, stimulants, and PDE5 inhibitors",
-      "topics": [
-        "diuretics",
-        "loop diuretics",
-        "furosemide",
-        "Lasix",
-        "osmotic diuretics",
-        "mannitol",
-        "potassium-sparing diuretics",
-        "spironolactone",
-        "thiazide diuretics",
-        "hydrochlorothiazide",
-        "urinary anti-infectives",
-        "nitrofurantoin",
-        "trimethoprim",
-        "sulfonamides",
-        "antispasmodics",
-        "oxybutynin",
-        "bladder spasms",
-        "phenazopyridine",
-        "bethanechol",
-        "PDE5 inhibitors",
-        "sildenafil",
-        "hypokalemia",
-        "ototoxicity",
-        "electrolyte imbalance"
-      ],
-      "questionCount": 65,
-      "tags": [
-        "NCLEX",
-        "pharmacology",
-        "Ch. 34-35",
-        "urinary",
-        "diuretics"
-      ]
-    },
-    {
-      "id": "anatomy-note-foundation-01",
-      "file": "01_what_are_electrolytes.html",
-      "class": "anatomy",
-      "type": "note",
-      "category": "Fluid & Electrolytes \u2014 Foundation",
-      "title": "1 of 8 \u2014 What Are Electrolytes?",
-      "description": "Start here. Saltwater bag analogy, where fluid lives in the body, what each electrolyte does, and why imbalance causes heart, brain, and muscle symptoms.",
-      "topics": [
-        "electrolytes",
-        "sodium",
-        "potassium",
-        "calcium",
-        "magnesium",
-        "osmosis",
-        "intracellular",
-        "extracellular",
-        "fluid balance",
-        "homeostasis"
-      ],
-      "tags": [
-        "foundation",
-        "beginner",
-        "electrolytes",
-        "visual"
-      ]
-    },
-    {
-      "id": "anatomy-note-foundation-02",
-      "file": "02_sodium.html",
-      "class": "anatomy",
-      "type": "note",
-      "category": "Fluid & Electrolytes \u2014 Foundation",
-      "title": "2 of 8 \u2014 Sodium (Na\u207a)",
-      "description": "The most important electrolyte. How sodium controls where water goes, hyponatremia vs hypernatremia, causes, symptoms, and exactly what the nurse does.",
-      "topics": [
-        "sodium",
-        "hyponatremia",
-        "hypernatremia",
-        "osmosis",
-        "SIADH",
-        "fluid balance",
-        "D5W",
-        "hypertonic saline",
-        "osmotic demyelination",
-        "cerebral edema"
-      ],
-      "tags": [
-        "foundation",
-        "sodium",
-        "electrolytes",
-        "NCLEX"
-      ]
-    },
-    {
-      "id": "anatomy-note-foundation-03",
-      "file": "03_potassium.html",
-      "class": "anatomy",
-      "type": "note",
-      "category": "Fluid & Electrolytes \u2014 Foundation",
-      "title": "3 of 8 \u2014 Potassium (K\u207a)",
-      "description": "The heart electrolyte. How K\u207a controls heart rhythm, EKG changes in hypo vs hyperkalemia, causes, nurse interventions, and the critical K\u207a-pH connection.",
-      "topics": [
-        "potassium",
-        "hypokalemia",
-        "hyperkalemia",
-        "EKG",
-        "cardiac arrhythmia",
-        "furosemide",
-        "calcium gluconate",
-        "insulin dextrose",
-        "magnesium",
-        "DKA",
-        "pH",
-        "acidosis",
-        "alkalosis",
-        "KCl"
-      ],
-      "tags": [
-        "foundation",
-        "potassium",
-        "cardiac",
-        "NCLEX"
-      ]
-    },
-    {
-      "id": "anatomy-note-foundation-04",
-      "file": "04_kidneys.html",
-      "class": "anatomy",
-      "type": "note",
-      "category": "Fluid & Electrolytes \u2014 Foundation",
-      "title": "4 of 8 \u2014 The Kidneys",
-      "description": "How the kidneys filter blood, the nephron diagram, GFR, what urine tells you, fluid balance ins and outs, and what happens when kidneys fail.",
-      "topics": [
-        "kidneys",
-        "nephron",
-        "GFR",
-        "creatinine",
-        "glomerulus",
-        "loop of Henle",
-        "aldosterone",
-        "ADH",
-        "urine output",
-        "oliguria",
-        "CKD",
-        "AKI",
-        "EPO",
-        "erythropoietin",
-        "furosemide",
-        "fluid balance"
-      ],
-      "tags": [
-        "foundation",
-        "kidneys",
-        "renal",
-        "NCLEX"
-      ]
-    },
-    {
-      "id": "anatomy-note-foundation-05",
-      "file": "05_adh.html",
-      "class": "anatomy",
-      "type": "note",
-      "category": "Fluid & Electrolytes \u2014 Foundation",
-      "title": "5 of 8 \u2014 ADH (The Water Hormone)",
-      "description": "How ADH controls water reabsorption in the collecting duct, Diabetes Insipidus (too little ADH), SIADH (too much ADH), and why they are opposite sodium problems.",
-      "topics": [
-        "ADH",
-        "vasopressin",
-        "antidiuretic hormone",
-        "SIADH",
-        "diabetes insipidus",
-        "DDAVP",
-        "collecting duct",
-        "hyponatremia",
-        "hypernatremia",
-        "urine concentration",
-        "polyuria",
-        "fluid restriction"
-      ],
-      "tags": [
-        "foundation",
-        "ADH",
-        "SIADH",
-        "diabetes insipidus",
-        "NCLEX"
-      ]
-    },
-    {
-      "id": "anatomy-note-foundation-06",
-      "file": "06_aldosterone_raas.html",
-      "class": "anatomy",
-      "type": "note",
-      "category": "Fluid & Electrolytes \u2014 Foundation",
-      "title": "6 of 8 \u2014 Aldosterone & the RAAS",
-      "description": "How aldosterone swaps Na\u207a for K\u207a in the DCT, the full RAAS cascade step by step, ACE inhibitors, ARBs, spironolactone, furosemide, and Addison's disease.",
-      "topics": [
-        "aldosterone",
-        "RAAS",
-        "renin",
-        "angiotensin",
-        "ACE inhibitor",
-        "ARB",
-        "spironolactone",
-        "furosemide",
-        "Addison disease",
-        "hypokalemia",
-        "hyperkalemia",
-        "hypertension",
-        "lisinopril",
-        "losartan",
-        "fludrocortisone"
-      ],
-      "tags": [
-        "foundation",
-        "aldosterone",
-        "RAAS",
-        "pharmacology",
-        "NCLEX"
-      ]
-    },
-    {
-      "id": "anatomy-note-foundation-07",
-      "file": "07_acid_base.html",
-      "class": "anatomy",
-      "type": "note",
-      "category": "Fluid & Electrolytes \u2014 Foundation",
-      "title": "7 of 8 \u2014 Acid-Base Balance",
-      "description": "pH scale, the four acid-base disorders, respiratory vs metabolic, how lungs and kidneys compensate, ABG values, Kussmaul breathing, and the K\u207a-pH connection.",
-      "topics": [
-        "pH",
-        "acidosis",
-        "alkalosis",
-        "respiratory acidosis",
-        "respiratory alkalosis",
-        "metabolic acidosis",
-        "metabolic alkalosis",
-        "ABG",
-        "bicarbonate",
-        "CO2",
-        "Kussmaul breathing",
-        "DKA",
-        "COPD",
-        "compensation",
-        "ROME"
-      ],
-      "tags": [
-        "foundation",
-        "acid-base",
-        "ABG",
-        "pH",
-        "NCLEX"
-      ]
-    },
-    {
-      "id": "anatomy-note-foundation-08",
-      "file": "08_putting_it_together.html",
-      "class": "anatomy",
-      "type": "note",
-      "category": "Fluid & Electrolytes \u2014 Foundation",
-      "title": "8 of 8 \u2014 Putting It All Together",
-      "description": "Final note connecting all 7 concepts with three full clinical scenarios (furosemide, DI, DKA), a quick reference table of all key values, and how each simulator case maps to the foundation.",
-      "topics": [
-        "fluid balance",
-        "sodium",
-        "potassium",
-        "ADH",
-        "aldosterone",
-        "RAAS",
-        "acid-base",
-        "DKA",
-        "SIADH",
-        "diabetes insipidus",
-        "Addison disease",
-        "furosemide",
-        "clinical reasoning",
-        "ABG",
-        "urine output"
-      ],
-      "tags": [
-        "foundation",
-        "clinical reasoning",
-        "synthesis",
-        "NCLEX",
-        "simulator"
-      ]
+      "id": "learning-profile-critical-thinking",
+      "file": "learning_profile_reference.json",
+      "class": "resources",
+      "module": 1,
+      "type": "reference",
+      "title": "Learning Profile & Critical Thinking Reference",
+      "description": "Your INTP + VARK learning profile and the 7-step critical thinking framework, with a worked clinical example.",
+      "topics": ["INTP", "VARK", "critical thinking framework", "learning style", "study workflow", "bias check"],
+      "questionCount": 0,
+      "tags": ["reference", "study skills"]
     }
-  ],
-  "version": "1.4.0"
+  ]
 }
